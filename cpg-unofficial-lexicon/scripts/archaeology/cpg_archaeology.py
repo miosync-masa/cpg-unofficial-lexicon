@@ -16,10 +16,6 @@ Method:
     1. Compute cos_sim(emb(host1)+emb(host2), covert_target) = candidate
     2. Swap one host: cos_sim(emb(control)+emb(host2), covert_target) = control
     3. Same statistical tests
-
-Based on: hhp_experiment.py, cross_cultural_dual_path.py, metonymic_path_tracing.py
-Authors: Masamichi Iizumi + Tamaki (環) / Miosync, Inc.
-Date: 2026-03-14 (Happy Birthday, Boss!)
 """
 
 import json, os, sys, time, csv
@@ -472,4 +468,3 @@ print("  cpg_archaeology_summary.json     — summary stats")
 print("  control_cache.json               — generated controls (reusable)")
 print("=" * 70)
 print("\n\"Dictionaries record tatemae. Embeddings preserve honne.\"")
-print("                       — Happy Birthday, Boss! 2026-03-14")
