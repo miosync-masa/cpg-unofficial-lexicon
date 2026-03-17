@@ -15,9 +15,6 @@ Theoretical basis:
   "Netflix and chill" establishes a covert path, the template structure
   "Netflix and _" may retain residual target-pull regardless of filler.
   This is "template-level leakage" — distinct from HHP's word-level leakage.
-
-Date: 2026-03-13
-Status: Internal research — Miosync
 """
 
 import os
