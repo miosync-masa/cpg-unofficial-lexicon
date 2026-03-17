@@ -1,0 +1,26 @@
+{
+  "gate_channel": {
+    "R2": 0.1329,
+    "R2_adj": 0.0578,
+    "gate": {
+      "a0": 0.1848,
+      "a1_R": -0.0293,
+      "a2_E": 0.0128,
+      "a3_Z": 0.0272,
+      "a4_Phonetic": 0.0974,
+      "a5_Formal": 0.0337
+    },
+    "channel": {
+      "alpha": 0.2465,
+      "K": 0.1134,
+      "hill_n": 10.0
+    }
+  },
+  "comparison": {
+    "OLS_R2": 0.0494,
+    "additive_R2": 0.1163,
+    "gate_channel_R2": 0.1329,
+    "region_centered_R2": 0.3418
+  },
+  "improvement_over_OLS": 2.69
+}

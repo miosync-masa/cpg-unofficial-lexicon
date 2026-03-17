@@ -1,0 +1,8 @@
+{
+  "heaviside": {
+    "K_crit": 0.1286,
+    "alpha": 0.2533,
+    "R2": 0.1368
+  },
+  "region_heaviside_R2": 0.3375
+}

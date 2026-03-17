@@ -1,0 +1,49 @@
+{
+  "model1": {
+    "R2": 0.0795,
+    "coefficients": {
+      "intercept": -0.0235,
+      "R": 0.1692,
+      "E": 0.1494,
+      "Z": 0.0419
+    }
+  },
+  "model2": {
+    "R2": 0.1047,
+    "coefficients": {
+      "intercept": 0.4066,
+      "R": -0.3406,
+      "E": -0.404,
+      "Z": 0.3009,
+      "RxZ": -0.229,
+      "ExZ": -0.2178,
+      "SxZ": -0.4099
+    }
+  },
+  "model3": {
+    "R2": 0.1991,
+    "coefficients": {
+      "intercept": -0.6222,
+      "R": 0.723,
+      "E": 0.6321,
+      "Z": 0.6076,
+      "RxZ": -0.5717,
+      "ExZ": -0.5138,
+      "SxZ": -0.4032,
+      "V_Behavior": -0.0386,
+      "V_Chromati": -0.0019,
+      "V_Formal": 0.0815,
+      "V_Metonymi": 0.0751,
+      "V_Morpholo": 0.0675,
+      "V_Phonetic": 0.019,
+      "V_Structur": 0.0048
+    }
+  },
+  "s_analysis": {
+    "s0_mean": 0.2392,
+    "s_nonzero_mean": 0.214,
+    "s_dom_mean": 0.1726,
+    "welch_t": 0.734,
+    "cohens_d": 0.207
+  }
+}
