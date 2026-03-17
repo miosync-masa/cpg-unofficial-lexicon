@@ -24,7 +24,6 @@ cpg-unofficial-lexicon/
 │   ├── metonymic/       # Kurisu's Method 3 (phrasal differential)
 │   └── regression/      # Supplementary HLM + Gate×Channel (appendix only)
 ├── results/             # Analysis outputs
-├── paper/               # Manuscript drafts and figures
 └── docs/                # Design documents, session reports, coding instructions
 ```
 
