@@ -1,0 +1,674 @@
+# ================================================================
+# CPG World Cultural Synthesis v3.0 — Cross-Cultural Integrated Analysis
+# ================================================================
+# Analyst: Gunshi (軍師)
+# Task: subtask_004h Phase D (parent: cmd_004)
+# Date: 2026-03-13
+# Input: 7 ashigaru reports (114 items, 8 cultural domains)
+# Schema: v3.0 (X=ternary, Y=8 vectors incl. Formal, Z=level+velocity)
+# Previous version: subtask_003h (cmd_003) — v2.0 scalar X, 7 Y vectors
+# ================================================================
+
+metadata:
+  analyst: gunshi
+  task_id: subtask_005h
+  parent_cmd: cmd_005
+  timestamp: "2026-03-13T18:00:00"
+  schema_version: "v3.1"
+  previous_version: "v3.0 (subtask_004h, cmd_004)"
+  total_items: 114
+  cultural_domains: 8
+  source_reports:
+    - { file: "results/ashigaru1_africa.yaml", region: "Africa", items: 15 }
+    - { file: "results/ashigaru2_southeast_asia.yaml", region: "Southeast Asia", items: 15 }
+    - { file: "results/ashigaru3_central_south_america.yaml", region: "Central/South America", items: 20 }
+    - { file: "results/ashigaru4_northern_europe.yaml", region: "Northern Europe", items: 18 }
+    - { file: "results/ashigaru5_middle_east.yaml", region: "Middle East", items: 16 }
+    - { file: "results/ashigaru6_eastern_europe.yaml", region: "Eastern Europe", items: 15 }
+    - { file: "results/ashigaru7_oceania_internet.yaml", region: "Oceania + Internet", items: 15 }
+  confidence_distribution:
+    high: 82
+    medium: 28
+    low: 0
+    flagged_items: 19
+  kenning_review:
+    status: "completed — S三条件正当化済み (裁定[2])"
+    items_reviewed: 12
+    verdict: "ALL APPROVE — S-dominant確定、S三条件全件充足"
+    reviewer: gunshi
+  cmd_005_changes:
+    description: "将軍裁定書第二号 — S三条件再検査 + Formal vector裁定 + surveillance-velocity対応表"
+    s_corrections: ["AFR_009 s=0.1→0.0", "EEU_012 s=0.15→0.0"]
+    formal_changes: ["AFR_008,012 APPROVED (+2)", "MET_010,011 REJECTED (-2)", "EEU all flags REJECTED"]
+    new_sections: ["s_three_conditions_aggregate", "surveillance_velocity_correspondence"]
+
+# ================================================================
+# 1. X-AXIS ANALYSIS: Ternary Coordinates (r, e, s)
+# ================================================================
+
+x_axis_v3:
+  title: "Refuge / Enchant / Synthesis — Triangular Directionality"
+  note: |
+    v3.0 replaces the v2.0 scalar (0.0-1.0) with ternary (r, e, s) where r+e+s=1.0.
+    Classification thresholds: r_dominant (r≥0.6), e_dominant (e≥0.6), s_dominant (s≥0.4), hybrid (none of the above).
+    Categories are NOT mutually exclusive (e.g., NEU_006 is both e_dominant and s_dominant).
+
+  regional_distribution:
+    africa:
+      r_dominant: 7   # AFR_001,002,003,004,008,012,015
+      e_dominant: 3   # AFR_006,009,011 (AFR_009: s=0.1→0.0 by 裁定[2], remains E-dominant)
+      s_dominant: 4   # AFR_007(0.5),010(0.45),013(0.7),014(0.5)
+      hybrid: 1       # AFR_005
+      s_mean: 0.10    # v3.1: was 0.11; AFR_009 s=0.1→0.0 (条件1 JUXTAPOSITION不成立)
+      s_max: { id: "AFR_013", value: 0.7, mechanism: "Sankofa: returning+forgotten → cultural recovery mandate" }
+
+    southeast_asia:
+      r_dominant: 5   # SEA_005,006,007,011,012
+      e_dominant: 5   # SEA_003,004,009,010,014
+      s_dominant: 0   # max s=0.35 (below 0.4 threshold)
+      hybrid: 5       # SEA_001,002,008,013,015
+      s_mean: 0.24
+      s_max: { id: "SEA_002/004/008/010/013/015", value: 0.35, mechanism: "pantun pembayang/isi juxtaposition" }
+      note: "SE Asia has the highest S floor (s_mean=0.24) without any s_dominant items — ubiquitous moderate S from pantun structural juxtaposition."
+
+    central_south_america:
+      r_dominant: 3   # QCH_002,004; MAYA_004
+      e_dominant: 1   # QCH_005
+      s_dominant: 14  # NAH_001-008, QCH_001,003; MAYA_001,002,003,005
+      hybrid: 2       # QCH_006, MAYA_006
+      s_mean: 0.52
+      s_max: { id: "NAH_006", value: 0.8, mechanism: "altepetl: water+mountain → city-state" }
+      note: "Difrasismo is the purest S mechanism in the dataset. 14/20 items S-dominant."
+
+    northern_europe:
+      r_dominant: 6   # NEU_007,008,009,010,013,014
+      e_dominant: 1   # NEU_006 (also s_dominant)
+      s_dominant: 12  # NEU_001-006,011,012,015-018
+      hybrid: 0
+      s_mean: 0.46
+      s_max: { id: "NEU_001-005,011,012,017,018", value: 0.6, mechanism: "kenning compound A+B→C synthesis" }
+      note: |
+        v3.0 MAJOR REVISION: v2.0 classified Northern Europe as 'E-dominant (bimodal)'.
+        v3.0 reveals it is S-dominant (12/18). The kenning tradition is Synthesis, not Enchantment.
+        The bimodal pattern remains (riddles=R, kennings=S) but the E pole has collapsed into S.
+
+    middle_east:
+      r_dominant: 4   # MET_006,007,008,009 (kinaya)
+      e_dominant: 5   # MET_001,002,013,014,016 (tawriya + tevriye)
+      s_dominant: 0   # max s=0.05
+      hybrid: 7       # MET_003,004,005,010,011,012,015
+      s_mean: 0.05
+      s_max: { id: "all", value: 0.05, mechanism: "trace only" }
+      note: |
+        Middle East is the S-zero region. All three traditions (tawriya, kinaya, tevriye)
+        operate on single words with polysemy — no binary juxtaposition mechanism.
+        v3.0 MAJOR REVISION: kinaya reclassified from E-dominant (v2.0) to R-dominant (indirect expression = refuge).
+
+    eastern_europe:
+      r_dominant: 9   # EEU_001,002,003,005,010,011,013,014,015
+      e_dominant: 4   # EEU_006,007,008,009
+      s_dominant: 0   # max s=0.35 (EEU_009)
+      hybrid: 2       # EEU_004,012 (EEU_012: s=0.15→0.0 by 裁定[2], primary class unchanged)
+      s_mean: 0.08    # v3.1: was 0.09; EEU_012 s=0.15→0.0 (条件1 JUXTAPOSITION不成立)
+      s_max: { id: "EEU_009", value: 0.35, mechanism: "белые руки compound: white+hands → class marker" }
+      note: "Eastern Europe is R-dominant (zagadka tradition) with moderate-S bylina compounds."
+
+    oceania_internet:
+      r_dominant: 8   # OCE_004,006; NET_001-003,005-007
+      e_dominant: 6   # OCE_001,002,003,005,008; NET_004
+      s_dominant: 1   # OCE_007(0.40)
+      hybrid: 0
+      s_mean: 0.13
+      s_max: { id: "OCE_007", value: 0.40, mechanism: "land permanence + human mortality → collective land rights" }
+
+  global_totals:
+    r_dominant: 42   # 36.8% of 114
+    e_dominant: 25   # 21.9%
+    s_dominant: 31   # 27.2%
+    hybrid: 17       # 14.9%
+    note: "Totals exceed 114 due to non-exclusive categories. Primary classification uses highest component."
+
+  s_component_deep_dive:
+    title: "Synthesis Dimension — The v3.0 Discovery (v3.1 S三条件再検査反映)"
+    global_s_nonzero: 77   # v3.1: was 79; AFR_009(-1) + EEU_012(-1) = -2. 67.5% of items have s > 0
+    global_s_dominant: 31  # 27.2% have s ≥ 0.4 (unchanged — corrections were below threshold)
+    global_s_mean: 0.21    # v3.1: was 0.22; (0.22*114 - 0.1 - 0.15) / 114 ≈ 0.21
+    s_by_mechanism:
+      binary_juxtaposition:
+        description: "A+B → C: two elements juxtaposed to generate a third concept"
+        regions: ["Central/South America (difrasismo)", "Northern Europe (kenning)", "Africa (compound epithets)"]
+        typical_s: "0.5-0.8"
+        item_count: 26
+      structural_juxtaposition:
+        description: "pembayang/isi couplet, parallel structure, or formal opposition generating synthesis"
+        regions: ["Southeast Asia (pantun)", "Central/South America (Quechua parallelism)"]
+        typical_s: "0.25-0.40"
+        item_count: 11
+      compound_epithet:
+        description: "Adjective+noun compound generating archetype/category beyond either element"
+        regions: ["Eastern Europe (bylina)", "Africa (izibongo)"]
+        typical_s: "0.15-0.45"
+        item_count: 8
+    key_finding: |
+      The S dimension is the most significant v3.0 discovery. 69.3% of items have non-zero S,
+      but S-dominance is geographically concentrated: Central/South America (70% s-dominant)
+      and Northern Europe (67% s-dominant) account for 84% of all s-dominant items.
+      The Middle East and Eastern Europe show near-zero S — their CPG operates through
+      single-word polysemy (tawriya, kinaya, tevriye, zagadka), not binary juxtaposition.
+      This represents a fundamental typological split: COMPOUND vs. UNITARY CPG traditions.
+
+# ================================================================
+# 2. Y-AXIS ANALYSIS: 8 Vectors (v3.0 adds Formal)
+# ================================================================
+
+y_axis_v3:
+  title: "Enchantment Vectors — Now Including Formal (8th Vector)"
+
+  global_vector_frequency:
+    Conceptual: 34
+    Metonymic: 22
+    Structural: 18
+    Behavioral: 14
+    Phonetic: 13
+    Morphological: 8
+    Chromatic: 5
+    Formal: 32         # v3.1: 32 maintained (AFR+2, MET-2 = net ±0). Definition confirmed by 裁定[2]
+    compound_vectors: 68  # 59.6% — up from 45.6% in v2.0 (Formal additions increase compound count)
+
+  formal_vector_distribution:
+    title: "Formal Vector — Where Form Carries the Covert Path (v3.1 裁定[2]反映)"
+    total_confirmed: 32  # 28.1% of all items (AFR+2, MET-2 = net ±0)
+    by_region:
+      africa: { count: 2, flagged: 0, note: "AFR_008 (oríkì genre_template) + AFR_012 (imbongi genre_template) — 裁定[2] APPROVED" }
+      southeast_asia: { count: 9, note: "6 pantun + 2 macapat + 1 phleng choi" }
+      central_south_america: { count: 14, note: "8 difrasismo + 1 Quechua parallelism + 5 Maya diphrasis" }
+      northern_europe: { count: 2, note: "NEU_017 (dúnad) + NEU_018 (Pangur Bán)" }
+      middle_east: { count: 2, note: "MET_005 (maqama genre) + MET_012 (Fuzuli maqta') — MET_010,011 (bilā kayf) REJECTED by 裁定[2]: 概念的制約であり形式的制約ではない" }
+      eastern_europe: { count: 0, flagged: 0, note: "全候補 REJECTED by 裁定[2]: bylina crystallization=保存メカニズム(Y≠Z), zagadka=enable≠generate, agricultural=meta-level schema" }
+      oceania_internet: { count: 3, note: "OCE_001,002 (songlines) + NET_003 (algospeak graphemic)" }
+    key_finding: |
+      v3.1 裁定[2]により Formal vector の定義境界が確定:
+      - 6地域中6地域で確定 (Africa が新規参入、Eastern Europe は全候補棄却)
+      - 32件維持 (AFR+2, MET-2 = net ±0)
+      - 定義: 「表現の形式が covert meaning を生成/構成的に担う。形式を除去すると covert path が消滅する」
+      - 除外: enable≠generate (zagadka), 保存≠生成 (bylina), 概念的制約≠形式的制約 (bilā kayf)
+
+  # ---- FORMAL VECTOR DEFINITION ANALYSIS (将軍裁定[2]確定) ----
+  formal_definition_analysis:
+    title: "Formal Vector Boundary — 将軍裁定書第二号により確定"
+    status: "RESOLVED (裁定[2] 2026-03-13)"
+
+    confirmed_formal_types:
+      type_1_ring_composition:
+        description: "Poem's end returns to opening, creating circular semantic claim"
+        items: ["NEU_017 (dúnad)", "NEU_018 (Pangur Bán)"]
+        mechanism: "Synchronic structural form encodes meaning"
+        confidence: "Definitive — this is the founding case"
+
+      type_2_couplet_pairing:
+        description: "Fixed two-element pairing form (difrasismo XiX, pantun pembayang/isi)"
+        items: ["NAH_001-008", "MAYA_001-005", "QCH_001", "SEA_001-005,009,010,013,015"]
+        mechanism: "The pairing FORM is necessary for synthesis — without it, elements don't generate the third concept"
+        confidence: "High — pairing form is integral to CPG generation"
+
+      type_3_sequential_form:
+        description: "Performance sequence encodes information (songline verse order = geographic route)"
+        items: ["OCE_001", "OCE_002"]
+        mechanism: "Sequential position in performance carries geographic meaning"
+        confidence: "High — the form IS the map"
+
+      type_4_genre_template:  # NEW: 裁定[2] APPROVED
+        description: "Genre form itself carries covert path — the act of performing in this genre encodes meaning"
+        items: ["AFR_008 (oríkì)", "AFR_012 (imbongi)"]
+        mechanism: "oríkì形式で語られること自体が敬意・権威を意味する; imbongiの接近→偉業→批判パフォーマンス形式がcritique pathを担う"
+        confidence: "High — genre_template型。形式を除去するとcovert pathが消滅"
+        ruling: "裁定[2] APPROVED"
+
+      type_5_graphemic_manipulation:
+        description: "Written form structurally altered for machine opacity (s3x, le$bean)"
+        items: ["NET_003"]
+        mechanism: "Character-level form manipulation carries covert path"
+        confidence: "Medium-high — form IS the encoding mechanism"
+
+    # 将軍裁定[2]により全候補が確定:
+    resolved_formal_candidates:
+      candidate_A_bylina_crystallization:
+        source: "ashigaru6 (EEU_006,007,008,009)"
+        ruling: "REJECTED (裁定[2])"
+        reason: "通時的反復は保存メカニズムであり生成メカニズムではない (Y軸 ≠ Z軸)"
+        z_velocity_note: "z_velocity: static を記録。bylina formulaic crystallization = 保存メカニズム"
+
+      candidate_B_agricultural_schema:
+        source: "ashigaru6 (EEU_011)"
+        ruling: "REJECTED (裁定[2])"
+        reason: "Generative schema はメタレベルの生成規則であり個別表現の形式ではない"
+
+      candidate_C_zagadka_enable:
+        source: "ashigaru6 (EEU_001,002,005,013)"
+        ruling: "REJECTED (裁定[2])"
+        reason: "enable ≠ generate。zagadka問答構造は表示環境であり生成チャネルではない"
+
+      candidate_D_doctrinal_stabilization:
+        source: "MET_010, MET_011 (bilā kayf)"
+        ruling: "REJECTED (裁定[2]) — Formal除外、Conceptualに再分類"
+        reason: "神学教義は概念的制約であり形式的制約ではない。enable ≠ generate"
+        previous_status: "Was type_4 in v3.0 — removed"
+
+    formal_definition_confirmed:
+      title: "Formal Vector — Confirmed Definition (裁定[2])"
+      definition: |
+        Formal vector applies when the FORM/STRUCTURE of the expression GENERATES or
+        CONSTITUTIVELY CARRIES the covert meaning, such that removing the form would
+        eliminate the covert path entirely.
+      litmus_test: "形式を変えたらcovert pathが消えるか？ YES → Formal適用。NO → 他ベクター"
+      principles:
+        - "enable ≠ generate: 形式がCPGを表示環境として可能にするだけなら Formal 非適用"
+        - "生成 ≠ 保存: 通時的反復は保存メカニズムであり生成メカニズムではない (Y軸 ≠ Z軸)"
+      confirmed_types:
+        - "Form generates: without the form, covert meaning cannot exist (dúnad, difrasismo pairing)"
+        - "Form carries: sequential/structural position IS the meaning (songline, macapat)"
+        - "Form templates: genre form itself encodes meaning (oríkì, imbongi)"
+        - "Form encodes: character-level manipulation carries covert path (algospeak)"
+      excludes:
+        - "Form enables but content generates (zagadka — content polysemy is primary)"
+        - "Generative paradigm operates at meta-level (agricultural schema)"
+        - "Doctrinal constraint is conceptual, not formal (bilā kayf)"
+        - "Diachronic repetition is preservation, not generation (bylina crystallization)"
+
+# ================================================================
+# 3. Z-AXIS ANALYSIS: Level + Velocity (v3.0)
+# ================================================================
+
+z_axis_v3:
+  title: "Register-Dependent Leakage — Level and Velocity"
+
+  level_distribution:
+    z1_dyadic: 4       # 3.5%
+    z2_seasonal: 28     # 24.6%
+    z3_public: 82       # 71.9%
+    # Unchanged from v2.0 — level coding not affected by v3.0 schema
+
+  velocity_distribution:
+    title: "Z-Velocity — Rate of Leakage Intensification (v3.0 NEW)"
+    note: "Only Internet items (NET_001-007) have z_velocity coded. Traditional items default to null (timeless/stable)."
+    weeks: 1      # NET_003 (TikTok adversarial algospeak)
+    months: 2     # NET_005 (May 35th), NET_006 (304 calculator)
+    years: 4      # NET_001 (ramyeon), NET_002 (emoji), NET_004 (草泥马), NET_007 (Netflix and chill)
+    null: 107     # All non-internet items (timeless/stable)
+    pattern: |
+      Adversarial algospeak (anti-NLP) cycles fastest (weeks).
+      Political censorship evasion (anti-state filter) cycles at months.
+      Social euphemisms (anti-social norm) cycle at years.
+      Correlation: velocity ∝ 1/censor_adaptability.
+      NLP retrains faster than state filters, which adapt faster than social conventions.
+
+  # ---- SURVEILLANCE-VELOCITY CORRESPONDENCE TABLE (v3.1 NEW) ----
+  surveillance_velocity_correspondence:
+    title: "Surveillance Type × Z-Velocity — Systematic Correspondence (裁定[2] 追記)"
+    source: "ashigaru7 (subtask_005g) — Web検索確認済み"
+    table:
+      - surveillance_type: "NLP/algorithmic"
+        velocity: "weeks"
+        items: ["NET_003 (algospeak)"]
+        mechanism: "Platform NLP classifiers retrain rapidly → covert forms must cycle fast"
+        note: "Definitional adversarial algospeak. Fastest arms race."
+      - surveillance_type: "State censorship"
+        velocity: "months"
+        items: ["NET_005 (May 35th)"]
+        mechanism: "State keyword blacklists update on monthly cycles + human moderator lag"
+        note: "Pure state censorship of Tiananmen. Keyword + human moderator system."
+      - surveillance_type: "Social convention"
+        velocity: "years"
+        items: ["NET_001 (ramyeon)", "NET_006 (304)", "NET_007 (Netflix and chill)"]
+        mechanism: "Social norms evolve slowly → euphemisms remain stable for years"
+        note: "Face-saving / social taboo evasion. No algorithmic pressure."
+      - surveillance_type: "Hybrid (State + NLP)"
+        velocity: "years (post-stabilization)"
+        items: ["NET_004 (草泥马)"]
+        mechanism: "State censorship origin → NLP detection evolved → but symbol stabilized culturally"
+        note: "Evolved from state censorship to hybrid as Chinese NLP detects pinyin homophones."
+      - surveillance_type: "Hybrid (Social + NLP)"
+        velocity: "months-years"
+        items: ["NET_002 (emoji)"]
+        mechanism: "Dual: social face-saving (initial) + Instagram NLP ban (2015/2019)"
+        note: "Social origin → platform policy intervention added algorithmic layer."
+    principle: |
+      監視機構の適応速度がcovert languageのサイクル速度を決定する (逆関数):
+        velocity ∝ 1/censor_adaptability
+      NLP (週単位で再訓練) > 国家検閲 (月単位で更新) > 社会慣習 (年単位で変化)
+      これはCPGの「生態学的ニッチ」理論を支持: covert languageは監視環境に適応する。
+
+# ================================================================
+# 4. CROSS-CULTURAL SYNTHESIS: v3.0 Revisions to Universal Patterns
+# ================================================================
+
+universal_patterns_v3:
+  title: "Five Universal Patterns — v3.0 Updates"
+
+  pattern_1_sexual_taboo:
+    name: "Sexual Taboo as Universal R-Driver"
+    status: "CONFIRMED (unchanged from v2.0)"
+    regions: 7  # All except Central/South America (where S-dominant difrasismo replaces R-type sexual coding)
+
+  pattern_2_power_encoding:
+    name: "Power Encoded Through Natural World"
+    status: "CONFIRMED (unchanged)"
+
+  pattern_3_compound_vectors:
+    name: "Compound Vectors Are the Rule"
+    status: "STRENGTHENED — 59.6% compound (up from 45.6% in v2.0, due to Formal additions)"
+
+  pattern_4_public_covertness:
+    name: "Public Repetition Preserves Covertness"
+    status: "CONFIRMED (unchanged)"
+
+  pattern_5_named_genres:
+    name: "Named CPG Genres Exist Cross-Culturally"
+    status: "CONFIRMED (unchanged)"
+
+  # NEW in v3.0:
+  pattern_6_compound_vs_unitary:
+    name: "COMPOUND vs. UNITARY CPG Typological Split"
+    status: "NEW v3.0 DISCOVERY"
+    detail: |
+      The S-dimension reveals a fundamental typological split in world CPG traditions:
+
+      COMPOUND CPG (s ≥ 0.4 common): Binary juxtaposition generates emergent third meanings.
+        - Central/South America: difrasismo (70% s-dominant)
+        - Northern Europe: kenning compound (67% s-dominant)
+        - Africa: compound epithets (27% s-dominant)
+
+      UNITARY CPG (s ≈ 0): Single-word polysemy, inferential chains, or substitution.
+        - Middle East: tawriya/kinaya/tevriye (0% s-dominant, mean s=0.05)
+        - Eastern Europe: zagadka/bylina (0% s-dominant, mean s=0.09)
+
+      MIXED: Both mechanisms coexist in the tradition.
+        - Southeast Asia: pantun has moderate S (mean=0.24) but no s-dominant items
+        - Oceania/Internet: mostly unitary, one s-dominant (OCE_007)
+
+      This split correlates with linguistic structure: COMPOUND CPG traditions tend to use
+      fixed pairing forms (difrasismo XiX, kenning A+B, pantun pembayang/isi) that
+      STRUCTURALLY enable synthesis. UNITARY traditions lack such pairing forms.
+
+# ================================================================
+# 5. CULTURAL SINGULARITIES (v3.0 Update)
+# ================================================================
+
+cultural_singularities_v3:
+  # All 9 singularities from v2.0 retained. Two updated:
+
+  singularity_3_dunad:
+    status: "CONFIRMED AND EXPANDED"
+    update: |
+      Dúnad is now the founding case for v3.0's Formal vector. NEU_017/018 kenning review
+      APPROVED by gunshi. The Formal vector has been applied to 32 items across 5 regions,
+      validating the singularity's theoretical significance.
+
+  singularity_8_double_motion:
+    status: "CONFIRMED — Formal vector NOT applied"
+    update: |
+      Gunshi rules that zagadka double-motion form is an 'enabling form' not a 'generating form'.
+      Content-level polysemy (головка, встаёт) generates the erotic meaning; the riddle form
+      delivers it. Formal vector not applied to zagadka items.
+
+  # NEW singularity from v3.0:
+  singularity_10:
+    region: "Cross-regional (v3.0 discovery)"
+    name: "S-Dimension Geographic Concentration"
+    detail: |
+      84% of s-dominant items come from just two regions (Central/South America + Northern Europe).
+      These regions share a structural feature: fixed binary pairing forms (difrasismo, kenning).
+      S-dominance is not a gradual spectrum but a discrete typological feature that a tradition
+      either has (via pairing forms) or lacks. This suggests the S-dimension may be more a
+      property of TRADITION STRUCTURE than of individual CPG items.
+
+# ================================================================
+# 6. v3.0 REGRESSION MODEL DESIGN VALIDATION
+# ================================================================
+
+regression_model_v3:
+  title: "v3.0 Regression Model Design — Feasibility Check"
+
+  proposed_model: |
+    pull_strength ≈ β₀ + β_e(E) + β_s(S) + Σᵢ β_Yᵢ(Yᵢ) + β_Z(Z_level) + interactions + ε
+    where R is reference category (dropped due to r+e+s=1 constraint)
+
+  parameter_count:
+    intercept: 1
+    x_axis: 2           # E, S (R = reference)
+    y_axis: 8           # 8 binary dummies (Phonetic through Formal; compounds → multiple 1s)
+    z_axis: 1           # Z ordinal (1-3)
+    baseline_total: 12
+    interaction_terms:
+      e_x_y: 8          # E × each Y dummy
+      s_x_y: 8          # S × each Y dummy
+      interaction_total: 16
+    full_model_total: 28
+
+  feasibility:
+    n: 114
+    df_baseline: 102     # 114 - 12 → adequate
+    df_full: 86          # 114 - 28 → acceptable but tight
+    rule_of_thumb: "10 observations per parameter → max 11 parameters. Baseline OK. Full model: use stepwise selection or regularization."
+    recommendation: |
+      Phase 1: Fit baseline model (12 params, df=102). Check R², residuals, VIF.
+      Phase 2: Add interactions via forward stepwise (AIC/BIC criterion).
+      Phase 3: If n insufficient, use ridge/LASSO regularization for full model.
+
+  multicollinearity_risks:
+    r_e_s_constraint:
+      risk: "LOW after dropping R"
+      note: "r+e+s=1 creates perfect collinearity if all three entered. Dropping R eliminates this. E and S may still correlate negatively (high S ↔ lower E in difrasismo/kenning traditions)."
+      mitigation: "Check VIF for E and S. If VIF > 5, consider PCA on (E, S) space."
+
+    y_formal_frequency:
+      risk: "LOW"
+      count: 32           # 28.1% of items have Formal=1
+      note: "32/114 is adequate for binary predictor. Minimum recommended: ~10 items in minority class."
+      regional_concentration: "Formal is concentrated in C/S America (14) and SE Asia (9). Regional confounding possible."
+      mitigation: "Include region as random effect or control variable if Formal coefficient is unstable."
+
+    y_chromatic_frequency:
+      risk: "MODERATE"
+      count: 5             # 4.4% of items have Chromatic=1
+      note: "Only 5 items. This dummy may be unstable in regression."
+      mitigation: "Consider merging Chromatic into Morphological or dropping from regression."
+
+    compound_y_correlation:
+      risk: "LOW-MODERATE"
+      note: "59.6% of items have multiple Y=1 values. Some Y pairs may correlate (e.g., Conceptual often co-occurs with Structural)."
+      mitigation: "Check pairwise phi coefficients between Y dummies. Merge highly correlated pairs if needed."
+
+  s_dimension_specific_risks:
+    coding_precision:
+      risk: "S values are coded at ±0.1 precision. At n=114, can the model detect s=0.5 vs s=0.6?"
+      mitigation: "Sensitivity analysis: refit model with S rounded to nearest 0.2 and compare coefficients."
+
+    geographic_confounding:
+      risk: "S correlates strongly with region (C/S America and N Europe have high S; Middle East has s≈0)."
+      note: "If region is the true driver, S coefficient may be spurious."
+      mitigation: "Test S with and without region fixed effects. If S coefficient drops to zero when region is included, S is a proxy for region, not an independent predictor."
+
+  z_velocity_in_model:
+    recommendation: |
+      z_velocity is coded only for 7 internet items. Do NOT include in regression —
+      insufficient variance. z_velocity is Phase 1 record-only (per SKILL.md).
+      Future use: when internet CPG dataset expands to 30+ items, z_velocity can enter
+      as a separate internet-specific sub-model.
+
+  formal_dummy_note: |
+    If Formal vector is NOT confirmed by Shogun (i.e., boundary remains unclear for bylina/zagadka):
+    regression proceeds with current 32 confirmed Formal items. If Shogun expands definition to
+    include bylina crystallization (+4 items) or praise-genre (+2 items), Formal count increases
+    to 34-38 — still adequate for regression.
+
+# ================================================================
+# 7. SHOGUN ESCALATION ITEMS (将軍上申案件)
+# ================================================================
+
+shogun_escalation:
+  title: "将軍裁定を要する事項 (v3.1 更新)"
+
+  item_1_formal_definition:
+    priority: "RESOLVED (裁定[2] 2026-03-13)"
+    resolution: |
+      将軍裁定書第二号により確定:
+      - Formal vector リトマス試験紙: 「形式を変えたらcovert pathが消えるか？」
+      - enable ≠ generate, 生成 ≠ 保存 (Y軸 ≠ Z軸)
+      - AFR_008,012 APPROVED (genre_template型)
+      - MET_010,011 REJECTED (概念的制約)
+      - EEU全候補 REJECTED (bylina=保存, zagadka=enable, agricultural=meta-level)
+      - 確定数: 32件 (5 types across 6 regions)
+    selected_option: "Option A variant (strict + genre_template, minus doctrinal stabilization)"
+
+  item_2_kenning_s_generalization:
+    priority: MEDIUM
+    status: "S三条件として実質確定済み"
+    resolution: |
+      裁定[2]のS三条件が事実上の一般化ルールとなった:
+      条件1: JUXTAPOSITION — 二つの語/概念/シンボルが並置
+      条件2: NON-COMPOSITIONALITY — 個々の意味から第三の意味が計算不能
+      条件3: CULTURAL CONVENTION — 共同体レベルで意味が共有
+      三条件全て満たす → S成分付与。いずれか欠ける → S=0。
+      kenning全12件はこの三条件を完全充足 (ashigaru4検証済み)。
+    gunshi_recommendation: |
+      三条件をSKILL.mdに明記済み (Phase A)。今後の文化圏拡張でも同じ三条件で
+      coding consistency を保証可能。追加ルール策定は不要。
+
+  item_3_formal_cross_region_survey:
+    priority: LOW
+    question: |
+      Formal vector の他地域での有無を調査するか。
+      候補: Hebraic chiasmus, Arabic saj' rhyme-return, Sanskrit yamaka structural constraint,
+      Chinese parallel couplet (duilian 対聯).
+    note: "15-20 文化圏拡張の一環として実施可能。裁定[2]のFormal定義が基準となる。"
+
+# ================================================================
+# 8. ASHIGARU4 KENNING REVIEW — INTEGRATED RESULTS
+# ================================================================
+
+kenning_review_integration:
+  title: "Kenning S-Dominant Confirmation — S三条件正当化完了 (裁定[2])"
+  review_date: "2026-03-13"
+  items_reviewed: 12
+  verdict: "ALL APPROVE — S三条件全件充足確認"
+  s_dominant_confirmed: true
+  summary:
+    category_1_kenning_e_to_s:
+      items: ["NEU_001-005", "NEU_011", "NEU_012"]
+      count: 7
+      ruling: "S-DOMINANT確定 — kenning compound (A+B→C) is archetypal S operation"
+      s_value: 0.6
+      s_three_conditions: "全件PASS (JUXTAPOSITION/NON-COMPOSITIONALITY/CULTURAL CONVENTION)"
+    category_2_edge_case:
+      items: ["NEU_006"]
+      ruling: "APPROVE_WITH_NOTE — s=0.4 (E-dominant維持), S三条件確認済み"
+    category_3_finnish:
+      items: ["NEU_015", "NEU_016"]
+      count: 2
+      ruling: "S-DOMINANT確定 — s=0.5, S三条件充足, confidence:medium維持"
+    category_4_formal:
+      items: ["NEU_017", "NEU_018"]
+      count: 2
+      ruling: "S-DOMINANT確定 — Formal vector + S三条件の構造層適用確認"
+    special_cases:
+      NEU_005_tvikent: "二重S合成 — S三条件を2段階で適用。各段階で独立に三条件充足。"
+  phase_d_carryover:
+    note_1: "NEU_006 s=0.4 — compare with other homonym-type CPG in future regions"
+    note_2: "NEU_015/016 推定的CPG — may need separate category in synthesis"
+    note_3: "tvíkent (NEU_005) s=0.6 vs potential s=0.7 — consistency prioritized over precision"
+
+# ================================================================
+# 9. S三条件再検査 集約結果 (v3.1 NEW — 裁定[2])
+# ================================================================
+
+s_three_conditions_aggregate:
+  title: "S三条件 (JUXTAPOSITION / NON-COMPOSITIONALITY / CULTURAL CONVENTION) 全114件再検査"
+  ruling: "裁定[2] (将軍裁定書第二号)"
+  timestamp: "2026-03-13T18:00:00"
+
+  conditions_definition:
+    condition_1: "JUXTAPOSITION — 二つの語/概念/シンボルが並置"
+    condition_2: "NON-COMPOSITIONALITY — 個々の意味から第三の意味が計算不能"
+    condition_3: "CULTURAL CONVENTION — 共同体レベルで意味が共有"
+    rule: "三条件全て満たす → S成分付与。いずれか欠ける → S=0"
+
+  by_region:
+    africa:
+      worker: ashigaru1
+      items_checked: 15
+      corrections: 1
+      detail: "AFR_009 s=0.1→0.0 (条件1不成立: 単一動物上皮号に二語並置構造なし)"
+      s_nonzero_after: 9
+      s_dominant_after: 4
+      notable: "AFR_013(Sankofa s=0.7) 最強S事例として三条件完全充足確認"
+
+    southeast_asia:
+      worker: ashigaru2
+      items_checked: 15
+      corrections: 0
+      detail: "全15件既存S値が三条件に照らして妥当。SEA_008の三素材並置も三条件充足確認"
+      borderline: ["SEA_007 (声調多義, s=0.15)", "SEA_011 (語彙多義, s=0.15)"]
+
+    central_south_america:
+      worker: ashigaru3
+      items_checked: 20
+      corrections: 0
+      detail: "NAH_006 lexicalization_note追加のみ。difrasismo全8件・Maya diphrasis全4件で三条件確認"
+      notable: "NAH_006 altepetl: S三条件を歴史的に充足した語彙化事例 — 通時的プロセスの証例"
+
+    northern_europe:
+      worker: ashigaru4
+      items_checked: 18
+      corrections: 0
+      detail: "kenning全12件のS三条件正当化注記付与。残6件(riddles)は全件R-dominant確認、二語並置型S項目なし"
+      notable: "NEU_005(tvíkent) S三条件2段階適用、NEU_017-018(dúnad) Formal層でのS三条件適用"
+
+    middle_east:
+      worker: ashigaru5
+      items_checked: 16
+      corrections: 0
+      detail: "全16件S=0維持確認。kinaya(MET_006-011)は条件1成立だが条件2不成立 — 推論連鎖は合成的"
+      notable: "中東は条件2(非合成性)が決定的。kinayaの推論連鎖はdifrasismoの合成とは質的に異なる"
+
+    eastern_europe:
+      worker: ashigaru6
+      items_checked: 15
+      corrections: 1
+      detail: "EEU_012 s=0.15→0.0 (条件1不成立: grochは単一語)。EEU_008/009の三条件完全充足確認"
+      s_nonzero_after: 5
+      s_dominant_after: 0
+
+    oceania_internet:
+      worker: ashigaru7
+      items_checked: 15
+      corrections: 0
+      detail: "OCE_007 s=0.40 三条件完全充足確認。surveillance_type全7件追加"
+      notable: "OCE_007は全データセット中Oceania唯一のs-dominant (永続性+有限性→集団的土地権)"
+
+  global_summary:
+    total_checked: 114
+    total_corrections: 2
+    corrections_list: ["AFR_009 s=0.1→0.0", "EEU_012 s=0.15→0.0"]
+    s_nonzero_after: 77  # was 79
+    s_dominant_after: 31  # unchanged
+    key_findings:
+      - "S三条件は全114件に一貫して適用可能。2件の訂正はいずれも条件1(並置)不成立"
+      - "条件2(非合成性)が中東CPGとMesoamerican CPGの構造的差異を明確に記述"
+      - "三条件は今後の文化圏拡張におけるcoding consistencyの基準として機能する"
+      - "語彙化(NAH_006 altepetl)は「三条件充足→固定化」の通時的プロセスとして記録"
+
+# ================================================================
+# SKILL CANDIDATE
+# ================================================================
+
+skill_candidate:
+  found: true
+  inherited_from: "ashigaru4 (cmd_003), ashigaru7 (cmd_005)"
+  description: |
+    1. Formal vector (NEU_017/018) — form-level CPG. 裁定[2]により定義確定。32 items across 6 regions.
+    2. Surveillance-velocity correspondence (ashigaru7 cmd_005) — 監視機構×サイクル速度の対応原則。
+    Follow-up skill candidates:
+    - Cross-regional Formal survey (Hebraic chiasmus, Arabic saj', Chinese duilian)
+    - S三条件の自動コーディング支援ツール
+  status: "Formal RESOLVED (裁定[2]); surveillance-velocity VALIDATED (cmd_005)"

@@ -1,0 +1,363 @@
+# CPG World Search Results — Ashigaru 5
+# Region: Middle East (expanded)
+# Date: 2026-03-13
+# Agent: ashigaru5
+# Version: v3.0 (recoded from v2.0 — X-axis ternary, Formal vector)
+
+metadata:
+  region: "Middle East (expanded)"
+  traditions_surveyed:
+    - name: "tawriya (التورية)"
+      language: "Arabic"
+      sources_consulted: 6
+    - name: "kinaya (الكناية)"
+      language: "Arabic"
+      sources_consulted: 5
+    - name: "tevriye (tevriyye / توريه)"
+      language: "Ottoman Turkish"
+      sources_consulted: 4
+
+items:
+  - id: "MET_001"
+    tradition: "tawriya"
+    language: "Arabic"
+    host_word: "عَيْن"
+    host_romanized: "ʿayn"
+    covert_target: "spring/fountain of water (far meaning); eye is the near/obvious meaning"
+    x_type: [0.35, 0.60, 0.05]  # (r, e, s): moderate E — rhetorical play exploiting existing polysemy; mild R from hiding far meaning behind near; no S
+    x_rationale: "v3.0: Tawriya hides the far meaning (spring) behind the near/obvious meaning (eye), giving a mild Refuge component (r=0.35). The active choice of this polysemous word to encode the dual path is Enchant-dominant (e=0.60). No binary juxtaposition generating a third meaning (s=0.05 trace). Original x_type was 0.4; rationale noted 'not taboo avoidance, closer to phonetic/semantic pun', which maps to moderate E."
+    y_vector: "Phonetic+Conceptual"
+    y_detail: "Identical phonetic form links two conceptual domains: vision (eye) and water-source (spring). Both share the structural property of being a 'source of flow' (tears / water), reinforcing the conceptual link."
+    z_register: 3
+    z_rationale: "Universally cited in classical Arabic rhetoric textbooks (Brill, Oxford Reference) and in Quranic exegesis contexts. The polysemy of ʿayn (30+ dictionary senses) is foundational to Arabic literary culture."
+    source: "Brill Reference Works, 'Tawriya' (archive.org/items/UlammBrillReference); ResearchGate: 'Punning (tawriya) in Arabic: A Semantic Study' (2021); Oxford Reference: 'Tawriya'"
+    notes: "The most-cited tawriya example in Arabic rhetoric education. عَيْن has meanings including: eye, spy, spring/fountain, essence, gold coin — each available for covert exploitation."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.4 (scalar) → [0.35, 0.60, 0.05] (r, e, s). Moderate Enchant with mild Refuge from tawriya's 'hiding behind near meaning' mechanism."
+
+  - id: "MET_002"
+    tradition: "tawriya"
+    language: "Arabic"
+    host_word: "الجُفُون"
+    host_romanized: "al-jufūn"
+    covert_target: "sheaths/scabbards of swords (far meaning); eyelids is the near/obvious meaning"
+    x_type: [0.25, 0.70, 0.05]  # (r, e, s): E-dominant — pure rhetorical play exploiting homonymy; neither meaning involves taboo; no S
+    x_rationale: "v3.0: Original rationale states 'neither meaning involves taboo avoidance; this is pure rhetorical play exploiting semantic ambiguity.' The Enchant component is high (e=0.70) — poet actively selects this homonym to layer warrior/lover imagery. Mild R (r=0.25) only from tawriya's structural hiding mechanism. No synthesis of two independent elements (s=0.05 trace)."
+    y_vector: "Structural+Conceptual"
+    y_detail: "Both meanings share the functional-structural property of 'container that encloses/conceals': eyelids enclose the eye, sheaths enclose the blade. The shape-function metaphor operates at a structural level."
+    z_register: 3
+    z_rationale: "Cited in academic analyses of classical Arabic tawriya; appears in Ayyubid-Mamluk era poetry as a standard device."
+    source: "ResearchGate: 'Punning (tawriya) in Arabic: A Semantic Study' (2021); Brill Reference 'Tawriya'"
+    notes: "The word الجُفُون (pl. of جَفْن jafn) is used extensively in love poetry for the beloved's heavy-lidded eyes. The covert reading (sword sheaths) allows warrior/lover imagery to coexist in a single verse."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.45 (scalar) → [0.25, 0.70, 0.05] (r, e, s). Enchant-dominant reflecting 'pure rhetorical play, neither meaning involves taboo avoidance'."
+
+  - id: "MET_003"
+    tradition: "tawriya"
+    language: "Arabic"
+    host_word: "كَرَاكِي"
+    host_romanized: "karākī"
+    covert_target: "your sleepiness / heavy-eyed state (far meaning); crane birds is the near/obvious meaning"
+    x_type: [0.45, 0.50, 0.05]  # (r, e, s): near-equal R/E hybrid — mild refuge (sleepiness implies reproachable laziness); phonetic exploitation
+    x_rationale: "v3.0: Original rationale notes 'Mild refuge element: sleepiness implies laziness, a mildly reproachable quality' — this R component (r=0.45) reflects the avoidance of expressing the mildly reproachable observation directly. The phonetic exploitation of the crane-name to encode sleepiness is the Enchant component (e=0.50). Balanced hybrid. No S."
+    y_vector: "Phonetic"
+    y_detail: "Sound overlap between the bird name and the phonetically similar expression for sleepiness creates the dual path. The crane's slow, deliberate gait reinforces the conceptual association with heavy-limbed sleepiness."
+    z_register: 2
+    z_rationale: "Attested in academic analysis of Arabic tawriya; used in classical poetry contexts but not universally transmitted outside specialist literary circles."
+    source: "ResearchGate: 'Punning (tawriya) in Arabic: A Semantic Study' (2021)"
+    notes: "flag: true — the specific phonetic relationship between karākī and the sleepiness expression requires specialist verification of the exact Arabic form intended."
+    flag: true
+    confidence: "medium"
+    recode_note: "v2.0→v3.0: x_type 0.3 (scalar) → [0.45, 0.50, 0.05] (r, e, s). R component raised to reflect 'mild refuge from expressing reproachable quality directly'. Hybrid R/E."
+
+  - id: "MET_004"
+    tradition: "tawriya"
+    language: "Arabic"
+    host_word: "بَدْر"
+    host_romanized: "badr"
+    covert_target: "a person named Badr (far/intended meaning); full moon is the near/obvious meaning"
+    x_type: [0.45, 0.50, 0.05]  # (r, e, s): hybrid — moon meaning screens personal referent (R); ism-tawriya is an invented subtype (E); no S
+    x_rationale: "v3.0: The near/obvious meaning (moon) serves as a screen for the true personal referent (Badr the person), giving a significant Refuge component (r=0.45) — the poet hides a personal compliment behind a celestial observation. The active deployment of phonetic identity between the name and moon-word is Enchant (e=0.50). Balanced hybrid. No synthesis."
+    y_vector: "Phonetic"
+    y_detail: "The personal name Badr (Arabic proper noun) is phonetically identical to badr (full moon). The moon's beauty is the rhetorical vehicle for a compliment directed at the person; praise flows from celestial to human via phonetic identity."
+    z_register: 3
+    z_rationale: "Proper-name tawriya is a recognized subtype in classical Arabic rhetoric; widely attested in Mamluk panegyric poetry."
+    source: "Oxford Reference: 'Tawriya'; Brill Reference 'Tawriya'; Al-Ṣafadī's monograph on tawriya (d. 764/1363)"
+    notes: "Ism-tawriya (اسم تورية) is a recognized subtype where a proper name doubles as a common noun. The device allows the poet to appear to praise a celestial body while covertly complimenting a named patron or beloved."
+    confidence: "medium"
+    recode_note: "v2.0→v3.0: x_type 0.3 (scalar) → [0.45, 0.50, 0.05] (r, e, s). R raised to reflect the 'personal referent hides behind near celestial meaning' mechanism of ism-tawriya."
+
+  - id: "MET_005"
+    tradition: "tawriya"
+    language: "Arabic"
+    host_word: "Maqāmāt narrative tawriya — Abū Zayd al-Sarūjī"
+    host_romanized: "Abū Zayd's rhetorical persona in al-Ḥarīrī's Maqāmāt (12th c.)"
+    covert_target: "hidden intent of the trickster-protagonist concealed beneath grammatically true surface statements"
+    x_type: [0.45, 0.50, 0.05]  # (r, e, s): hybrid — surface truth screens concealed intent (R); genre-level covert construction (E); no S
+    x_rationale: "v3.0: The Maqāmāt genre's trickster uses grammatically true surface statements to conceal intent — the 'avoiding outright untruth' mechanism is Refuge (r=0.45). The elaborate genre-level construction of dual-layer meaning is Enchant (e=0.50). No binary juxtaposition generating third meaning (s=0.05 trace)."
+    y_vector: "Conceptual+Structural+Formal"
+    y_detail: "The clash between appearance (surface utterance) and essence (concealed intent) is the structural principle of the maqama genre. Tawriya creates a second semantic layer beneath the literal text. The FORMAL structure of the maqama (episodic encounters, trickster protagonist, grammatically true surface statements) is itself the vehicle for the covert path — this is genre-as-CPG, qualifying for the Formal vector."
+    z_register: 3
+    z_rationale: "Al-Hariri's Maqamat (c. 1110 CE) is one of the most-copied Arabic manuscripts in history; this use of tawriya reached massive audiences across the medieval Islamic world."
+    source: "Academia.edu: 'The Thin Line between Lying and Using Linguistic Possibilities: Tawriyah or Double-Entendre in al-Ḥarīrī's Maqāmāt'; Wikipedia: Maqamat al-Hariri; Brill Journal of Islamic Manuscripts 9:2-3 (2018)"
+    notes: "flag: true — this entry codes a genre-level CPG pattern rather than a single word. The surface/covert dual-path structure is the organizing principle of an entire literary genre, making it a macro-level CPG case."
+    flag: true
+    confidence: "medium"
+    recode_note: "v2.0→v3.0: x_type 0.35 (scalar) → [0.45, 0.50, 0.05] (r, e, s). y_vector upgraded: added 'Formal' — the maqama genre's formal structure (episodic trickster narrative) is itself the CPG vehicle, satisfying v3.0 Formal vector definition."
+
+  - id: "MET_006"
+    tradition: "kinaya"
+    language: "Arabic"
+    host_word: "طَوِيلُ النِّجَاد"
+    host_romanized: "ṭawīl al-nijād"
+    covert_target: "a tall man"
+    x_type: [0.80, 0.15, 0.05]  # (r, e, s): R-dominant — kinaya is indirect/euphemistic expression (v3.0 R direction); indirect praise avoids bluntness
+    x_rationale: "v3.0 reinterpretation: Kinaya is fundamentally indirect/euphemistic expression — saying 'long of baldric' instead of 'tall' chooses an inferential route to avoid direct statement. This is Refuge-dominant (r=0.80) in v3.0 framework where R = 'avoiding direct expression'. Residual E (e=0.15) for the skilled construction of the baldric-inference chain. No S. NOTE: Original v2.0 coding had x_type=0.85 treating kinaya as 'Pure Enchant direction' — this is reversed in v3.0 based on kinaya's fundamental nature as euphemistic/indirect expression."
+    y_vector: "Structural"
+    y_detail: "The baldric (nijād: sword belt/strap) length is proportional to the wearer's stature. The structural/functional relationship between body height and baldric length provides the inferential vector: long baldric → tall body."
+    z_register: 3
+    z_rationale: "Universally cited in Arabic rhetoric education as the canonical example of kinaya al-ṣifa (kinaya encoding a quality/attribute). Appears in all major Arabic balagha textbooks."
+    source: "ISSA Proceedings 2002: 'Kinâya, A Tropic Device From Medieval Arabic Rhetoric'; Brill Encyclopedia of Arabic Language and Linguistics: 'Kināya'; ResearchGate: 'The Intricate Nature of Kināyah and Its Interaction with Other English Figures of Speech' (2023)"
+    notes: "Classic kinaya al-ṣifa (كناية عن صفة): surface expression attributes a physical property (long baldric) that implies a quality (tall stature). The inferential chain is transparent once glossed; its covert force depends on the listener reconstructing the chain."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.85 (scalar, E-dominant) → [0.80, 0.15, 0.05] (r, e, s, R-dominant). MAJOR REVERSAL. v3.0 reframes kinaya as Refuge-dominant (婉曲/indirect expression = avoiding directness). Original coding treated kinaya as Enchant (actively constructing expression); v3.0 foregrounds the indirect/euphemistic function as Refuge."
+
+  - id: "MET_007"
+    tradition: "kinaya"
+    language: "Arabic"
+    host_word: "يَدٌ بَيْضَاء"
+    host_romanized: "yad bayḍāʾ"
+    covert_target: "generosity; a generous/beneficent person"
+    x_type: [0.80, 0.15, 0.05]  # (r, e, s): R-dominant — kinaya; indirect praise of virtue avoids direct laudatory statement
+    x_rationale: "v3.0 reinterpretation: 'White hand' expresses generosity indirectly, avoiding the directness of saying 'you are generous'. This indirectness (cultural elegance through inferential route) is Refuge-dominant (r=0.80). Residual E (e=0.15) for the chromatic+conceptual construction encoding virtue. No S. NOTE: Original v2.0 x_type=0.80 coded as 'Poetic/rhetorical invention' (E); v3.0 reframes as R-dominant per kinaya's indirect-expression nature."
+    y_vector: "Conceptual+Chromatic"
+    y_detail: "White (bayḍāʾ) encodes purity, openness, and beneficence culturally; the hand (yad) is the agent of giving. Together: the pure-giving-hand encodes generosity through chromatic (white=pure) and conceptual (hand=agency of gift) vectors."
+    z_register: 3
+    z_rationale: "Attested in classical Arabic poetry, Quranic exegesis, and Arabic rhetoric scholarship. The phrase appears in multiple pre-Islamic and Islamic literary contexts."
+    source: "ResearchGate: 'The Intricate Nature of Kināyah'; Brill: 'Kināya'; ISSA Proceedings 2002; al-Tha'alibi's Kitab al-Kinaya wa-l-ta'rid (c. 400/1009)"
+    notes: "يَد (hand) independently carries the meaning 'favor/benefit' (niʿma) in Arabic, reinforcing the kinaya through double lexical reference. Al-Tha'alibi's encyclopedic collection of Arabic kinaya (Kitab al-Kinaya) is the primary historical source."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.80 (scalar, E-leaning) → [0.80, 0.15, 0.05] (r, e, s, R-dominant). v3.0 reframes kinaya as Refuge-dominant; indirect praise avoids direct laudatory statement."
+
+  - id: "MET_008"
+    tradition: "kinaya"
+    language: "Arabic"
+    host_word: "كَثِيرُ الرَّمَاد"
+    host_romanized: "kathīr al-ramād"
+    covert_target: "very hospitable; generous host who feeds many guests"
+    x_type: [0.80, 0.15, 0.05]  # (r, e, s): R-dominant — kinaya; four-step inferential chain avoids direct praise of hospitality
+    x_rationale: "v3.0 reinterpretation: The ash-quantity expression encodes hospitality through a four-step inferential chain (ash → fire → cooking → guests → hospitality), avoiding the directness of 'you are a generous host'. This indirect route is Refuge-dominant (r=0.80). Residual E (e=0.15) for the clever construction of the ash→hospitality chain. No S. NOTE: Original v2.0 x_type=0.85 coded as 'Pure Enchant'; v3.0 inverts to R-dominant per kinaya's indirect-expression function."
+    y_vector: "Metonymic+Behavioral"
+    y_detail: "Ash (ramad) is the metonymic result of cooking fire; cooking implies food preparation for guests; feeding guests is the behavior encoding hospitality. Chain: much ash → much fire → much cooking → many guests fed → generous host."
+    z_register: 3
+    z_rationale: "Cited across Arabic rhetoric textbooks and confirmed in multiple scholarly sources as a canonical kinaya example; attested in pre-Islamic and early Islamic Arabic poetry."
+    source: "ISSA Proceedings 2002 'Kinâya'; al-Tha'alibi's Kitab al-Kinaya wa-l-ta'rid; Studio Arabiya: 'Balagha in Arabic'; confirmed in classical Arabic curriculum materials"
+    notes: "Kinaya al-mawhūb (كناية عن موصوف): the surface expression attributes a physical property (much ash) to the person that implies a moral virtue (hospitality). The inferential chain is deliberately non-transparent, requiring cultural knowledge of desert hospitality practices."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.85 (scalar, E-dominant) → [0.80, 0.15, 0.05] (r, e, s, R-dominant). MAJOR REVERSAL. v3.0 reframes kinaya as Refuge-dominant. Indirect four-step inferential chain avoids directly praising hospitality."
+
+  - id: "MET_009"
+    tradition: "kinaya"
+    language: "Arabic"
+    host_word: "نَؤُومُ الضُّحَى"
+    host_romanized: "naʾūm al-ḍuḥā"
+    covert_target: "a woman of leisure and ease; a woman from a wealthy household"
+    x_type: [0.80, 0.15, 0.05]  # (r, e, s): R-dominant — kinaya; behavioral description avoids directly stating woman's social class
+    x_rationale: "v3.0 reinterpretation: The behavioral description (sleeping until mid-morning) encodes social status (wealthy household) indirectly, avoiding the direct statement 'she is from a wealthy family'. This indirectness — which also protects against social intrusiveness — is Refuge-dominant (r=0.80). Residual E (e=0.15) for encoding class through behavioral inference. No S. NOTE: Original v2.0 x_type=0.78 coded as E-leaning; v3.0 inverts to R-dominant."
+    y_vector: "Behavioral"
+    y_detail: "Sleeping in until ḍuḥā (mid-morning) indicates the woman need not rise early for domestic labor; this behavior pattern signals that servants or family wealth free her from morning duties — hence, high social station."
+    z_register: 3
+    z_rationale: "Cited in classical Arabic poetry criticism and multiple Arabic rhetoric sources; well-attested as a canonical kinaya example in balagha textbooks."
+    source: "ISSA Proceedings 2002 'Kinâya, A Tropic Device From Medieval Arabic Rhetoric'; al-Tha'alibi's Kitab al-Kinaya; Brill 'Kināya'"
+    notes: "Kinaya al-ṣifa encoding social class through quotidian behavior. Notable for embedding a hierarchical social judgment (luxury/wealth) in an innocent behavioral observation (late sleeping). Erez Naaman's 'Women Who Cough and Men Who Hunt' (2013) directly contextualizes this type of gendered kinaya."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.78 (scalar, E-leaning) → [0.80, 0.15, 0.05] (r, e, s, R-dominant). v3.0 reframes kinaya as Refuge-dominant; behavioral encoding avoids direct statement of social class."
+
+  - id: "MET_010"
+    tradition: "kinaya"
+    language: "Arabic"
+    host_word: "يَدُ اللَّه"
+    host_romanized: "yad Allāh"
+    covert_target: "God's power, agency, and beneficence (not a literal hand)"
+    x_type: [0.50, 0.45, 0.05]  # (r, e, s): hybrid — theologically driven R (avoiding anthropomorphism) + active encoding of divine power (E); bilā kayf maintains both
+    x_rationale: "v3.0: The 'Hand of God' expression has dual motivation. R component (r=0.50): avoids direct theological description of divine nature; the literal hand meaning is theologically problematic (anthropomorphism) so meaning retreats into the hand-metaphor. E component (e=0.45): actively encodes divine power/agency through the hand-as-agent schema. The bilā kayf doctrine ('without asking how') institutionally freezes this hybrid state — neither R nor E collapses. No S. Classified as hybrid unlike non-divine kinaya (which are R-dominant) because the theological dimension creates an active E component absent in mundane kinaya."
+    y_vector: "Conceptual+Formal"
+    y_detail: "Hand is the prototypical human agent of action and giving. By mapping 'hand' onto divine agency, the kinaya uses the human-action schema to encode God's causative power without committing to a literal body part. FORMAL vector: the bilā kayf ('without asking how') theological doctrine is a formal/institutional structure that maintains the ambiguity — the doctrinal prohibition against resolving the covert path constitutes a formal CPG-stabilization mechanism unique to Abrahamic sacred kinaya."
+    z_register: 3
+    z_rationale: "Found in the Quran (48:10: 'God's hand is above their hands'; 3:73) and hadith literature; universally recited and analyzed across 14 centuries of Islamic scholarship."
+    source: "Quran 48:10; ISSA Proceedings 2002 'Kinâya'; Kināyah as a figure of speech in the Qur'an (White Rose e-thesis, University of Leeds, 2019); Al-Islam.org"
+    notes: "Theologically unique CPG case: the kinaya is contested — medieval Islamic theologians (Mutazilites vs. Ash'arites) debated whether yad Allah is literal or figurative. The bilā kayf doctrine ('without asking how') attempts to preserve both readings simultaneously, making this a kinaya with an unresolved covert path."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.4 (scalar) → [0.50, 0.45, 0.05] (r, e, s). y_vector updated: added 'Formal' — the bilā kayf theological doctrine functions as a formal/institutional structure that prevents resolution of the covert path, qualifying as v3.0 Formal vector. Hybrid (not R-dominant like mundane kinaya) due to active theological E component."
+
+  - id: "MET_011"
+    tradition: "kinaya"
+    language: "Arabic"
+    host_word: "وَجْهُ اللَّه"
+    host_romanized: "wajh Allāh"
+    covert_target: "God's omnipresence; wherever one turns, God is present (Quran 2:115)"
+    x_type: [0.50, 0.45, 0.05]  # (r, e, s): hybrid — same bilā kayf theological structure as MET_010; R from anthropomorphism avoidance + E from omnipresence-encoding
+    x_rationale: "v3.0: Parallel to MET_010. R component (r=0.50): avoiding anthropomorphism (direct description of God's nature is theologically prohibited). E component (e=0.45): actively encoding omnipresence through the face-as-orientation/presence-identity schema. Bilā kayf doctrine maintains hybrid state institutionally. No S."
+    y_vector: "Conceptual+Formal"
+    y_detail: "Face (wajh) encodes both the direction one faces and the presence/identity of a person. By mapping 'face' onto God's presence across all directions (فَأَيْنَمَا تُوَلُّوا), the kinaya encodes omnipresence through spatial-orientation semantics. FORMAL vector: same bilā kayf doctrinal structure as MET_010 — institutional prohibition against resolving the covert path constitutes a formal CPG-stabilization mechanism."
+    z_register: 3
+    z_rationale: "Quranic (2:115, 28:88, 55:27); recited by Muslims worldwide across 14 centuries. Highest possible Z register."
+    source: "Quran 2:115; ISSA Proceedings 2002 'Kinâya'; Wikipedia 'Divine countenance'; Kināyah as a figure of speech in the Qur'an (White Rose e-thesis)"
+    notes: "The phrase 'wherever you turn, there is the Face of God' (فَأَيْنَمَا تُوَلُّوا فَثَمَّ وَجْهُ اللَّه, Quran 2:115) is one of the most analyzed kinaya expressions in Islamic rhetorical tradition. wajh also means 'direction/orientation', providing a second covert path."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.4 (scalar) → [0.50, 0.45, 0.05] (r, e, s). y_vector updated: added 'Formal' — bilā kayf theological structure functions as formal CPG-stabilization mechanism. Hybrid (not R-dominant) for same reasons as MET_010."
+
+  - id: "MET_012"
+    tradition: "tevriye"
+    language: "Ottoman Turkish / Arabic origin"
+    host_word: "فُضُولِي / Fuzûlî"
+    host_romanized: "Fuzūlī"
+    covert_target: "man of learning and arts — fuzūl as plural of fazl (فَضْل = excellence/learning) (far/hidden meaning); impertinent / unnecessary / meddlesome (near/surface meaning)"
+    x_type: [0.40, 0.55, 0.05]  # (r, e, s): E-moderate, R notable — self-deprecating surface hides proud far meaning (R); active dual-meaning pen-name construction (E); no S
+    x_rationale: "v3.0: The self-deprecating near meaning ('impertinent') hides the proud far meaning ('man of learning') — the poet uses Refuge (r=0.40) to avoid the appearance of boasting while secretly asserting mastery. The active construction of this double-valence pen name is Enchant (e=0.55). Tevriye is E-dominant generally; this item has a notable R component not typical of tevriye due to its specific self-concealment purpose. No S."
+    y_vector: "Phonetic+Conceptual+Formal"
+    y_detail: "The Ottoman pen name Fuzūlī sounds identical to Arabic fuzūlī (impertinent). But fuzūl is also the plural of fazl (excellence/learning), phonetically/rhythmically parallel to ʿulūm (sciences) and funūn (arts). Fuzuli himself explains this tevriye in his divan preface. FORMAL vector: in Ottoman/Persian divan poetry, the pen name (makhlas/takhallus) is conventionally embedded in the final couplet (maqta') of a ghazal — this formal device of pen-name closure makes the tevriye structurally load-bearing for the entire ghazal's formal identity. The form (pen-name-in-maqta') carries the covert path across Fuzuli's entire career."
+    z_register: 3
+    z_rationale: "Fuzuli (c. 1483–1556) is one of the greatest Ottoman/Azeri/Iraqi poets; his self-explanation of the pen-name tevriye is documented in his own prefaces and in every major Ottoman literary history."
+    source: "Fuzûlî entry, en-academic.com; Ottoman poetry Wikipedia; Ohio State Press 'Windows into Turkish Culture'; Britannica 'Turkish Literature'"
+    notes: "A uniquely self-referential tevriye: the covert path is embedded in the poet's own identity across his entire literary career. Fuzuli explicitly states he chose the name so no rival would wish to claim it (near: insult) while secretly proclaiming his learning (far: praise)."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.5 (scalar) → [0.40, 0.55, 0.05] (r, e, s). y_vector updated: added 'Formal' — the Ottoman ghazal maqta' (closing couplet pen-name convention) is a formal poetic structure through which the tevriye operates across Fuzuli's entire divan."
+
+  - id: "MET_013"
+    tradition: "tevriye"
+    language: "Ottoman Turkish"
+    host_word: "gülüverdi"
+    host_romanized: "gülüverdi"
+    covert_target: "she gave a rose (gül+verdi) (far meaning); she laughed / burst out laughing (güldü compound) (near/surface meaning)"
+    x_type: [0.05, 0.90, 0.05]  # (r, e, s): E-dominant — pure rhetorical play; no taboo avoidance; tevriye exploiting morpheme boundary ambiguity
+    x_rationale: "v3.0: Original rationale states 'neither meaning is a taboo refuge; this is pure rhetorical play exploiting Turkish morphological/phonological ambiguity.' Strongly Enchant-dominant (e=0.90) — the morpheme-boundary ambiguity is the active vehicle for the dual path. Negligible R (r=0.05 trace only). Tevriye generally E方向 (e=0.7-0.9) per task instruction; this item is near-pure E. No S — the ambiguity is within a single agglutinative string, not between two juxtaposed elements."
+    y_vector: "Phonetic+Structural"
+    y_detail: "The phoneme string 'gülüverdi' can be parsed as: (a) güldü 'laughed' + verdi 'gave' → compound verb 'she burst out laughing'; or (b) gül 'rose' + verdi 'gave' → 'she gave a rose'. The ambiguity is structural — it depends on where the morpheme boundary is placed."
+    z_register: 2
+    z_rationale: "Cited in Turkish Wikipedia on tevriye as a classroom example; contextual usage in educational and poetic contexts."
+    source: "Turkish Wikipedia: 'Tevriye' (tr.wikipedia.org/wiki/Tevriye)"
+    notes: "Illustrates how Ottoman Turkish agglutinative morphology enables structural tevriye unavailable in analytic languages like Arabic. Word-boundary parsing ambiguity is a uniquely Turkic CPG mechanism."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.5 (scalar) → [0.05, 0.90, 0.05] (r, e, s). Strong Enchant-dominant reflecting 'pure rhetorical play, neither meaning is taboo refuge'. Tevriye E方向 applied."
+
+  - id: "MET_014"
+    tradition: "tevriye"
+    language: "Ottoman Turkish"
+    host_word: "rüzgâr"
+    host_romanized: "rüzgâr"
+    covert_target: "fate / fortune / time (far/literary meaning); wind (near/literal meaning)"
+    x_type: [0.10, 0.85, 0.05]  # (r, e, s): E-dominant — conventional Enchant encoded by Ottoman poetic tradition; no taboo avoidance
+    x_rationale: "v3.0: The wind-fate mapping is an established Ottoman poetic convention — poets actively encode fate/time through wind imagery (Enchant-dominant, e=0.85). Original rationale: 'established convention (Enchant encoded by tradition) without taboo avoidance'. Minimal R (r=0.10) — only trace, as the near/literal meaning (wind) slightly screens the literary meaning (fate). No S. Tevriye E方向 applied."
+    y_vector: "Conceptual"
+    y_detail: "Wind's properties (invisible, capricious, all-encompassing, uncontrollable) map onto fate's properties. Muallim Naci's poem 'Havada yaprağa döndürdü rüzgâr beni' ('The wind turned me into a leaf in the air') deploys both meanings simultaneously."
+    z_register: 3
+    z_rationale: "Muallim Naci (1850–1893) is a major 19th-century Ottoman poet; this usage is documented in academic Turkish literary scholarship."
+    source: "Turkish Wikipedia 'Tevriye'; ResearchGate: 'THOUGHTS ON TEVRİYE (PUN) AND ITS SPECIES / TEVRİYE VE ÇEŞİTLERİ ÜZERİNE DÜŞÜNCELER' (Turkish Studies, 2007)"
+    notes: "This tevriye operates at the level of sustained metaphorical convention rather than single-word pun. The covert path (fate) is activated by the poetic context and the poem's theme of helplessness before circumstance."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.5 (scalar) → [0.10, 0.85, 0.05] (r, e, s). Enchant-dominant per tevriye E方向 guideline and 'convention without taboo avoidance' rationale."
+
+  - id: "MET_015"
+    tradition: "tevriye"
+    language: "Ottoman Turkish"
+    host_word: "kande"
+    host_romanized: "kande"
+    covert_target: "in blood / kanda (far meaning); where / nerede (near/obvious meaning)"
+    x_type: [0.40, 0.55, 0.05]  # (r, e, s): E-moderate, R notable — visceral/blood meaning retreats behind innocent interrogative (R); phonetic exploitation is Enchant (E)
+    x_rationale: "v3.0: The rationale describes a Refuge mechanism: 'the blood meaning retreats behind the innocent interrogative' (r=0.40). The active phonetic exploitation of the archaic kande form to embed the blood-reading is Enchant (e=0.55). Unlike other tevriye items which are strongly E-dominant, this item has a notable R component because the visceral far meaning (blood) specifically retreats behind the innocent near meaning (where). No S."
+    y_vector: "Phonetic"
+    y_detail: "The archaic/dialectal form 'kande' (= nerede, 'where') is phonetically identical to 'kanda' ('in blood': kan + locative suffix -da/de). Pure phonological overlap creates the dual path; the archaic form is necessary for the tevriye to operate."
+    z_register: 2
+    z_rationale: "Cited in Turkish Wikipedia on tevriye; contextual usage in classical poetry contexts; less universally known in modern Turkish as 'kande' is archaic."
+    source: "Turkish Wikipedia: 'Tevriye' (tr.wikipedia.org/wiki/Tevriye)"
+    notes: "Illustrates how Ottoman poets exploited archaic lexical forms (kande for nerede) to create tevriye. The archaic form is load-bearing: the tevriye collapses if the modern equivalent (nerede) is substituted."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.3 (scalar) → [0.40, 0.55, 0.05] (r, e, s). R component raised: 'blood meaning retreats behind innocent interrogative' is a Refuge mechanism. Unlike most tevriye, this item has notable R."
+
+  - id: "MET_016"
+    tradition: "tevriye"
+    language: "Ottoman Turkish"
+    host_word: "bahâr"
+    host_romanized: "bahâr"
+    covert_target: "leaf / blossom / flower (botanical far meaning); the spring season (near/obvious meaning)"
+    x_type: [0.10, 0.85, 0.05]  # (r, e, s): E-dominant — active poetic layering of botanical meaning onto seasonal word; no taboo avoidance; tevriye E方向
+    x_rationale: "v3.0: The active poetic enrichment of bahâr with its botanical far meaning (blossoms/leaves) beyond the seasonal near meaning (spring) is Enchant-dominant (e=0.85). Original rationale: 'active poetic layering'. No taboo avoidance (r=0.10 trace only). No S — single word with two meanings, not two juxtaposed elements generating a third. Tevriye E方向 applied."
+    y_vector: "Conceptual+Phonetic"
+    y_detail: "Bahâr (spring) derives from Persian bahār; in Ottoman poetic usage it also denoted 'bloom/flower/leaf'. Poets simultaneously exploited both meanings in the same verse, combining simile, tevriye, and metaphor."
+    z_register: 3
+    z_rationale: "Documented in a peer-reviewed Turkish studies journal (Ankara Üniversitesi Türkoloji Dergisi) as a case study of classical Ottoman tevriye; part of the standard Ottoman poetic lexicon."
+    source: "Ankara Üniversitesi Dil ve Tarih-Coğrafya Fakültesi Türkoloji Dergisi (dergipark.org.tr/en/download/article-file/649008); 'TEVRİYE VE ÇEŞİTLERİ ÜZERİNE DÜŞÜNCELER' (Turkish Studies, 2007)"
+    notes: "Exemplifies how Persian loanwords in Ottoman Turkish gain expanded dual meanings through semantic enrichment. The spring/blossom duality is semantically transparent yet rhetorically productive across the divan tradition."
+    confidence: "high"
+    recode_note: "v2.0→v3.0: x_type 0.5 (scalar) → [0.10, 0.85, 0.05] (r, e, s). Enchant-dominant per tevriye E方向 guideline and 'active poetic layering' rationale."
+
+summary:
+  total_items: 16
+  format_version: "v3.0"
+  type_distribution:
+    r_dominant: 4   # items with r >= 0.6: MET_006, MET_007, MET_008, MET_009 (kinaya items)
+    e_dominant: 5   # items with e >= 0.6: MET_001, MET_002, MET_013, MET_014, MET_016
+    s_dominant: 0   # items with s >= 0.4: none (Middle East traditions show minimal S)
+    hybrid: 7       # no single dimension >= 0.6 (and s < 0.4): MET_003, MET_004, MET_005, MET_010, MET_011, MET_012, MET_015
+  formal_vector_items: 4  # items where Formal vector was added: MET_005, MET_010, MET_011, MET_012
+  vector_distribution:
+    Phonetic: 3                    # MET_003, MET_004, MET_015
+    Phonetic+Conceptual: 2         # MET_001, MET_016
+    Phonetic+Structural: 1         # MET_013
+    Structural: 1                  # MET_006
+    Structural+Conceptual: 1       # MET_002
+    Conceptual+Structural+Formal: 1  # MET_005 (Maqāmāt genre structure)
+    Conceptual+Chromatic: 1        # MET_007
+    Metonymic+Behavioral: 1        # MET_008
+    Behavioral: 1                  # MET_009
+    Conceptual+Formal: 2           # MET_010, MET_011 (divine kinaya + bilā kayf)
+    Phonetic+Conceptual+Formal: 1  # MET_012 (Fuzuli pen name + maqta')
+    Conceptual: 1                  # MET_014
+  register_distribution:
+    low: 0   # Z=1 (dyadic/private): none
+    mid: 3   # Z=2 (seasonal/contextual): MET_003, MET_013, MET_015
+    high: 13 # Z=3 (third-party/public): all remaining items
+  key_findings: |
+    **v3.0 Reinterpretation: Kinaya as Refuge, Tevriye as Enchant**
+    The major finding of the v3.0 recoding is a clear tradition-level X-axis split. All four
+    mundane kinaya items (MET_006–009) shifted from E-dominant (v2.0 coding treated kinaya
+    as 'active rhetorical invention') to R-dominant (r=0.80) because kinaya's fundamental
+    function is indirect/euphemistic expression — the surface expression avoids saying something
+    directly, which constitutes Refuge under v3.0 definitions. By contrast, all tevriye items
+    (MET_013–016) are E-dominant (e=0.85–0.90) because tevriye involves active construction of
+    phonetic/semantic ambiguity with no taboo-avoidance motive. This tradition-level X-axis
+    divergence (kinaya=R, tevriye=E) was masked in v2.0's scalar system.
+
+    **New Formal Vector: 4 Items Across Three Subtypes**
+    v3.0 identifies four items where the FORM of expression carries the covert path: (1) MET_005
+    (Maqāmāt genre structure — the episodic trickster narrative's formal architecture enables
+    CPG); (2) MET_010 and MET_011 (divine kinaya — the bilā kayf theological doctrine is a
+    formal/institutional structure that institutionally prevents resolution of the covert path);
+    (3) MET_012 (Fuzuli's pen name in maqta' — the Ottoman ghazal's formal closing-couplet
+    pen-name device makes this tevriye structurally load-bearing across the entire divan). All
+    three Formal subtypes are structurally distinct: genre-level (MET_005), doctrinal-level
+    (MET_010–011), and compositional-form level (MET_012).
+
+    **Tawriya: Balanced R/E Hybrids; No S in Middle East**
+    Tawriya items cluster in the hybrid zone (r≈0.35–0.45, e≈0.50–0.65) because the mechanism
+    involves both hiding the far meaning (R) and actively selecting polysemous words for rhetorical
+    effect (E). The Middle East shows zero S-dominant items — no tradition in this dataset relies
+    on the binary juxtaposition mechanism (difrasismo-style) that generates a third meaning from
+    two elements. S values are trace (0.05) across all 16 items. This S=0 pattern distinguishes
+    the Middle East from predicted S-heavy traditions (Maya, Norse kenning). The S absence is
+    confirmed by all three Arabic/Turkish traditions: tawriya (single word polysemy), kinaya
+    (inferential chains), tevriye (word-boundary parsing) — none require element juxtaposition.
+  ambiguous_items:
+    - MET_003   # karākī phonetic relationship needs specialist verification
+    - MET_004   # badr ism-tawriya: medium confidence, widely attested but not from primary source
+    - MET_005   # genre-level CPG pattern rather than single-word example; Formal vector addition is interpretive
+    - MET_010   # bilā kayf as Formal vector: doctrinal structure interpreted as formal CPG-stabilization — somewhat interpretive
+    - MET_011   # same as MET_010
+  v3_recode_summary: |
+    16 items recoded. All x_type scalars converted to (r, e, s) ternary coordinates.
+    Major changes:
+    - MET_006–009 (kinaya): x_type reversed from E-dominant (0.78–0.85) to R-dominant [0.80, 0.15, 0.05]
+    - MET_005, MET_010, MET_011, MET_012: Formal vector added to y_vector
+    - MET_013, MET_014, MET_016 (tevriye): confirmed E-dominant [0.05–0.10, 0.85–0.90, 0.05]
+    - MET_003, MET_004, MET_005, MET_015: R raised (hybrid zone) to reflect hiding/refuge mechanisms

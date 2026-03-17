@@ -1,0 +1,803 @@
+# CPG World Search Results — Ashigaru 7
+# Region: Oceania + Modern Internet Memes
+# Version: v3.0 (re-coded 2026-03-13, subtask_004g)
+# Agent: ashigaru7
+# Note: Integrates ashigaru8 scope (Modern Internet Memes) as per task assignment
+# Changes from v2.0:
+#   - X axis: converted to triangular coordinates (x_r, x_e, x_s; sum=1.0)
+#   - Y axis: Formal vector (8th type) added where applicable
+#   - NET_001–007: z_velocity + z_velocity_note appended (algospeak lifecycle data)
+
+metadata:
+  region: "Oceania + Modern Internet Memes"
+  framework_version: "v3.0"
+  traditions_surveyed:
+    - name: "Aboriginal Australian Songlines (tjukurpa / inma)"
+      language: "Pitjantjatjara / Arrernte / multiple desert language groups"
+      sources_consulted: 4
+    - name: "Hawaiian Mele Kaona (hidden meaning in chant and song)"
+      language: "ʻŌlelo Hawaiʻi (Hawaiian)"
+      sources_consulted: 6
+    - name: "Māori Whakataukī (proverbs)"
+      language: "Te Reo Māori"
+      sources_consulted: 5
+    - name: "Modern Internet / Algospeak"
+      language: "Multilingual (English, Korean, Mandarin, Japanese)"
+      sources_consulted: 8
+
+items:
+  # ─── OCEANIA: ABORIGINAL AUSTRALIAN SONGLINES ───────────────────────────
+
+  - id: "OCE_001"
+    tradition: "Songlines / Tjukurpa (Aboriginal Australian)"
+    language: "Pitjantjatjara / multiple Western Desert languages"
+    host_word: "inma (ceremony/song sequence encoding ancestor journey)"
+    host_romanized: "inma"
+    covert_target: "Geographic map of waterholes, sacred sites, seasonal food resources, and kinship laws embedded in the narrative sequence of ancestral travel"
+    x_r: 0.00
+    x_e: 0.65
+    x_s: 0.35
+    x_rationale: |
+      Triangular coordinate (v3.0): E-dominant. The physical landscape is actively assigned
+      spiritual-narrative meaning; inversely, the narrative encodes geographic information.
+      S=0.35: the juxtaposition of geographic sequence + ancestral story generates a
+      third meaning system — practical navigation law + spiritual law + kinship law —
+      that emerges from the pairing and cannot be reduced to either element alone.
+    y_vector: "Formal+Conceptual"
+    y_detail: |
+      Formal (v3.0 addition): the sequential order of the performance IS the covert path.
+      Each verse's position in the inma sequence corresponds to a specific geographic
+      position along the route — the form/structure of the ceremony encodes the map.
+      Singing the song in order IS traversing the route; reordering verses would produce
+      geographic gibberish. The form carries the content in a way no single verse can.
+      Conceptual: ancestor's mythical journey is an analogy for seasonal migration and
+      resource management patterns.
+    z_register: 2
+    z_rationale: "Performed in seasonal/ceremonial contexts. Public version is open; inner sacred layer (tjukurpa restricted) is dyadic (Z=1). Assigned Z=2 for the accessible ceremonial register."
+    source: "Wikipedia 'Songline'; ANU Press 'Long History, Deep Time' ch.2; PACJA 'Contributions from Aboriginal Australian Psychology: Songlines, Memory, and Relational Knowledge Systems'"
+    notes: "One of the most structurally complex CPG systems found: the covert path is bidirectional (geography→narrative AND narrative→geography). The dual-layer (public/restricted) creates a nested CPG system unique among surveyed traditions."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: (1) x_type=0.7 converted to x_r=0.00, x_e=0.65, x_s=0.35 —
+      S成分を正式に計上。地形情報+祖先物語の並置が「実用ナビゲーション+法体系」という
+      第3の意味を生成するSynthesisとして評価。
+      (2) y_vector "Structural+Conceptual" → "Formal+Conceptual" — 歌の順序そのものが
+      地図であるFormal vector（第8番目）に該当すると判定。Structural (v2.0) は「構文/
+      算術操作」を指すが、Formalは「詩/パフォーマンスの形式自体がcovert pathを運ぶ」
+      より高次の構造。Songlineはこの定義の最も典型的な適用例。
+
+  - id: "OCE_002"
+    tradition: "Songlines / Tjukurpa — Kungkarangkalpa (Seven Sisters)"
+    language: "Pitjantjatjara"
+    host_word: "Kungkarangkalpa (Seven Sisters / Pleiades star cluster)"
+    host_romanized: "Kungkarangkalpa"
+    covert_target: "Navigation route from central Australia to the coast + social law encoding the prohibition on unwanted sexual pursuit (incest/harassment taboo), encoded as the story of seven ancestral women fleeing an unwanted suitor (Orion / Nyiru)"
+    x_r: 0.00
+    x_e: 0.70
+    x_s: 0.30
+    x_rationale: |
+      Triangular coordinate (v3.0): E-dominant. The star cluster is actively assigned
+      the combined meaning of navigation map and moral code via narrative.
+      S=0.30: the juxtaposition of stellar path + pursuit/flight story generates
+      a third meaning — a simultaneous geographic route AND social law — that neither
+      element produces independently.
+    y_vector: "Formal+Conceptual"
+    y_detail: |
+      Formal (v3.0 addition): the path of the Pleiades across the night sky is the
+      structural form that carries the covert geographic route. The sequential movement
+      of the star cluster from east to west mirrors the overland route sequence; the
+      formal trajectory (in which direction, in what order) IS the map. The sky-form
+      functions as a memory palace key organized by formal sequence.
+      Conceptual: the story of pursuit/flight encodes social prohibition against
+      unwanted advances.
+    z_register: 2
+    z_rationale: "Performed in inma ceremony; public version documented by researchers. Sacred inner layer restricted to initiated knowledge holders (Z=1)."
+    source: "Academia.edu 'So everyone can see: Kungkarangkalpa inma in Canberra' (2018); beastsoflegend.com 'Seven Sisters Songlines'; Wikipedia 'Songline'"
+    notes: "flag: true — The restricted sacred layer (Z=1) remains partially inaccessible to outside researchers. The coding here reflects the public/ceremonial version. Particularly striking example of celestial body used as dual geographic+legal mnemonic."
+    confidence: "medium"
+    recode_note: |
+      v2.0→v3.0: (1) x_type=0.75 → x_r=0.00, x_e=0.70, x_s=0.30。
+      S成分: 星団の経路+七姉妹物語の並置が「星図=地図=社会法」という
+      第3の意味体系を生成。
+      (2) y_vector "Structural+Conceptual" → "Formal+Conceptual"。
+      プレアデスの天空における軌跡（フォーマル形式）が陸路ルートを担うFormal vector。
+
+  # ─── OCEANIA: HAWAIIAN MELE KAONA ────────────────────────────────────────
+
+  - id: "OCE_003"
+    tradition: "Hawaiian Mele Kaona (hidden meaning in chant)"
+    language: "ʻŌlelo Hawaiʻi (Hawaiian)"
+    host_word: "lehua (ʻōhiʻa lehua blossom, Metrosideros polymorpha)"
+    host_romanized: "lehua"
+    covert_target: "A beloved person; a warrior of valor; a cherished lover — dependent on context of mele"
+    x_r: 0.00
+    x_e: 0.95
+    x_s: 0.05
+    x_rationale: |
+      Triangular coordinate (v3.0): Pure-E. The flower is actively assigned the meaning
+      of 'beloved/warrior' through poetic convention. x_s=0.05: minor Synthesis element —
+      the pairing of the flower's beauty (delicacy) + its growth in volcanic hardship
+      generates a third meaning (warrior resilience) beyond either element alone.
+    y_vector: "Conceptual+Chromatic"
+    y_detail: "Chromatic: the intense red color of lehua flowers evokes passion and warrior blood. Conceptual: the flower's delicate beauty maps onto the beloved; its growth in volcanic hardship maps onto warrior resilience. Both vectors operate simultaneously."
+    z_register: 3
+    z_rationale: "Publicly performed in mele; Hawaiian audiences widely recognize the kaona. The convention is taught and transmitted broadly."
+    source: "morningmanao.blogspot.com 'Kaona' (2009); keolamagazine.com 'The Hidden Power and Tradition of Oli'; University of Hawaiʻi 'Hawaiian Word of the Week: Kaona' (2023)"
+    notes: "Foundational example of Hawaiian kaona. The lehua → beloved/warrior mapping is one of the most well-attested CPG conventions in Hawaiian poetic tradition."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: x_type=0.90 → x_r=0.00, x_e=0.95, x_s=0.05。
+      微小S成分: 花の美+火山環境での生存が並置されることで「戦士の資質」という
+      第3の意味が僅かに生成される。y_vector変更なし。Formal不該当。
+
+  - id: "OCE_004"
+    tradition: "Hawaiian Mele Kaona — political resistance"
+    language: "ʻŌlelo Hawaiʻi (Hawaiian)"
+    host_word: "Aloha ʻOe (Farewell to Thee) — song composed c. 1878 by Princess Liliʻuokalani"
+    host_romanized: "Aloha ʻOe"
+    covert_target: "Political lament for lost Hawaiian sovereignty and resistance to American annexation; the queen's grief at the loss of the Hawaiian Kingdom (1893 overthrow)"
+    x_r: 0.90
+    x_e: 0.10
+    x_s: 0.00
+    x_rationale: |
+      Triangular coordinate (v3.0): Pure-R. Political resistance meaning retreats into
+      an existing love song. The political reading did not create the song — the song
+      existed as a genuine love composition, then the political meaning adopted it as
+      a safe harbor under colonial suppression. x_s=0.00: no Synthesis dimension;
+      the meanings are layered (love / political), not synthesized into a third meaning.
+    y_vector: "Conceptual"
+    y_detail: "The farewell to a departing lover maps onto the farewell to Hawaiian independence. Grief at parting = grief at loss of sovereignty. The surface love narrative provides plausible deniability for political expression under colonial observation."
+    z_register: 3
+    z_rationale: "Performed globally; the political kaona is documented in academic scholarship and is widely recognized by Native Hawaiians."
+    source: "Wikipedia 'Aloha ʻOe'; scholarworks.seattleu.edu 'Resistance in the Legacy of Aloha Oe' (2019); americansongwriter.com 'Meaning Behind Aloha Oe'"
+    notes: "Exceptional case: the song has three layers — (1) surface love song, (2) political resistance reading, (3) post-annexation, the political reading itself became the 'surface' meaning for many international audiences, displacing the love reading. Demonstrates Z-axis feedback: high public repetition can cause covert meaning to overtake overt meaning."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: x_type=0.10 → x_r=0.90, x_e=0.10, x_s=0.00。
+      S=0.00確定: 恋愛意味と政治的意味は「重層」しているが、第3の意味を生成する
+      Synthesisではない（それぞれ独立した解釈レイヤーとして共存）。
+      y_vector変更なし。Formal検討: 恋愛歌というジャンル形式が政治的カバーを提供するが、
+      形式そのものがcovert pathの担体ではなく内容ベースのConceptual mappingが主因 → 不該当。
+
+  - id: "OCE_005"
+    tradition: "Hawaiian Mele Kaona"
+    language: "ʻŌlelo Hawaiʻi (Hawaiian)"
+    host_word: "pua (blossom/flower)"
+    host_romanized: "pua"
+    covert_target: "Child, offspring, or beloved person — the product/fruit of love or lineage"
+    x_r: 0.00
+    x_e: 0.80
+    x_s: 0.20
+    x_rationale: |
+      Triangular coordinate (v3.0): Pure-E dominant. The flower is actively assigned
+      the meaning of 'offspring' or 'beloved' through poetic convention.
+      x_s=0.20: the pairing of the flower (plant's product) + lineage/love produces
+      a third meaning — the child as both biological product AND expression of care —
+      that draws on the synthesis of two life-giving processes (plant blooming / birth).
+    y_vector: "Conceptual+Behavioral"
+    y_detail: "Conceptual: flower as expression of a plant's life → child as expression of parent's lineage. Behavioral: the blooming process (flower opens from bud) maps onto child's emergence and growth."
+    z_register: 3
+    z_rationale: "Standard kaona convention in mele; documented as a recognized poetic register widely understood by Hawaiian audiences."
+    source: "morningmanao.blogspot.com 'Kaona'; kaiwakiloumoku.ksbe.edu 'Nā Mele ʻOhana'; jmattos3.wixsite.com 'Nā Kaona o Ke Mele o Ke Aliʻi Liliʻuokalani'"
+    notes: "One of the most frequent kaona conventions in Hawaiian poetry. Often co-occurs with lehua (OCE_003) in the same mele, creating layered metaphor."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: x_type=0.85 → x_r=0.00, x_e=0.80, x_s=0.20。
+      S成分0.20: 花(植物の産物)+系譜・愛が並置されることで「offspring/beloved」という
+      第3の意味が生成。開花という行為と子の誕生が並置されるSynthesisを正式計上。
+      y_vector変更なし。
+
+  - id: "OCE_006"
+    tradition: "Hawaiian Mele Kaona — 'Sanoe'"
+    language: "ʻŌlelo Hawaiʻi (Hawaiian)"
+    host_word: "Sanoe (sanoe = drifting mountain mist)"
+    host_romanized: "sanoe"
+    covert_target: "A secret lover drifting invisibly to visit his beloved; encodes a specific clandestine romance between Princess Likelike and Colonel Curtis Piehu Iaukea, both of whom were promised to others"
+    x_r: 0.70
+    x_e: 0.25
+    x_s: 0.05
+    x_rationale: |
+      Triangular coordinate (v3.0): R-dominant hybrid. The romantic meaning cannot be
+      openly expressed due to social/political constraints on both parties; the mist
+      metaphor provides cover. x_e=0.25: aesthetic choice of the mist image reflects
+      active creative construction (Enchant component). x_s=0.05: minimal Synthesis —
+      mist behavior + secret lover behavior are mapped rather than synthesized.
+    y_vector: "Behavioral"
+    y_detail: "The drifting, invisible nature of mountain mist maps onto the lover's need to move secretly. The mist is ephemeral and leaves no trace — mirrors the relationship's lack of public acknowledgment. The behavior of mist (drifting over without staying) encodes the transient, uncommitted nature of the affair."
+    z_register: 2
+    z_rationale: "Originally dyadic/private (Z=1) — known only within royal court circles. Now Z=2 as the kaona is documented in academic/cultural sources but not universally recognized."
+    source: "allclassical.org 'Songs of Liliʻuokalani'; jmattos3.wixsite.com 'Nā Kaona o Ke Mele o Ke Aliʻi Liliʻuokalani' (2015)"
+    notes: "flag: true — The specific identity coding (Princess Likelike and Colonel Iaukea) is a scholarly interpretation; the mist-as-lover convention is well attested, but the referential specificity is medium confidence. Demonstrates R-type CPG driven by social rather than political constraint."
+    confidence: "medium"
+    recode_note: |
+      v2.0→v3.0: x_type=0.30 → x_r=0.70, x_e=0.25, x_s=0.05。
+      x_sは最小限。霧の行動と恋人の行動はマッピングの関係（Behavioral vector）であり、
+      第3の意味を生成するSynthesisには達しない。y_vector変更なし。
+
+  # ─── OCEANIA: MĀORI WHAKATAUKĪ ───────────────────────────────────────────
+
+  - id: "OCE_007"
+    tradition: "Māori Whakataukī (proverb)"
+    language: "Te Reo Māori"
+    host_word: "Toitū te whenua, whatungarongaro te tangata"
+    host_romanized: "Toitū te whenua, whatungarongaro te tangata"
+    covert_target: "Legal and political assertion of tribal land rights; the land belongs to the collective lineage that outlasts any individual — used to argue against individual alienation of communal land"
+    x_r: 0.15
+    x_e: 0.45
+    x_s: 0.40
+    x_rationale: |
+      Triangular coordinate (v3.0): Balanced, S-significant. The surface is a genuine
+      philosophical observation (land outlasts people). x_s=0.40 is the highest S
+      component in this dataset: the juxtaposition of geological permanence (land's
+      10,000-year timescale) + human mortality generates a THIRD meaning — collective
+      tribal custodianship as the only entity that can honor the land's timescale —
+      that is neither a taboo evasion nor purely an enchantment of meaning. The argument
+      emerges from the synthesis itself.
+    y_vector: "Conceptual"
+    y_detail: "Geological permanence of land (10,000+ year timescale) is mapped as an argument against individual/temporary property claims. Human mortality (individual level) is contrasted with tribal continuity (collective level) to assert that only collective/tribal custodianship can honor the land's timescale."
+    z_register: 3
+    z_rationale: "Widely quoted in formal oratory (whaikōrero), Waitangi Tribunal proceedings, parliamentary debate, and public political discourse. High public repetition = strong leakage intensity."
+    source: "planeta.com/maori-proverbs; massey.ac.nz Whakataukī resource; womanmagazine.co.nz 'Māori proverbs and poetic relationship with land'"
+    notes: "The whakataukī does not hide its meaning in the same way as kakekotoba — both layers are acknowledged. The CPG operates at the level of rhetorical deployment: the speaker invokes the natural observation to activate the legal claim without stating it directly."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: x_type=0.40 → x_r=0.15, x_e=0.45, x_s=0.40。
+      S成分が全データセット中最大（0.40）: 大地の永続性+人間の個体有限性の並置が
+      「集団的土地権」という第3の意味/法的主張を生成するSynthesisとして評価。
+      y_vector変更なし。Formal不該当（言語の形式ではなくConceptual juxtapositionが主因）。
+      S三条件再検査 (subtask_005g, 裁定[2]):
+        条件1 JUXTAPOSITION ✓: 「大地の永続性（地質学的時間軸10,000年+）」と
+          「人間の死すべき運命（個体有限性）」の二概念が並置。
+        条件2 NON-COMPOSITIONALITY ✓: 「集団的土地管理権のみが大地の時間軸を尊重できる」
+          という法的結論は、大地の永続性単独からも、人間有限性単独からも導出不能。
+          juxtapositionによってのみ出現する第3の意味（legal argument）。
+        条件3 CULTURAL CONVENTION ✓: Māori共同体内で whaikōrero（演説）、
+          Waitangi Tribunal（条約法廷）、国会討論でZ=3レベルの公的共有確立。
+      → x_s=0.40 正当化確認。全データセット中の最高S値として維持。
+
+  - id: "OCE_008"
+    tradition: "Māori Whakataukī (proverb)"
+    language: "Te Reo Māori"
+    host_word: "Kua kaheko te tuna i roto i aku ringa"
+    host_romanized: "Kua kaheko te tuna i roto i aku ringa"
+    covert_target: "Something precious or important that has been lost or cannot be obtained despite effort; an opportunity that has slipped away"
+    x_r: 0.00
+    x_e: 0.70
+    x_s: 0.30
+    x_rationale: |
+      Triangular coordinate (v3.0): E-dominant. The eel is actively assigned the
+      metaphorical meaning of 'precious/unattainable thing.' x_s=0.30: the pairing of
+      eel slipperiness + the state of losing something precious generates a third meaning
+      — the specific emotional texture of effort-without-result frustration — that is
+      richer than either the eel's biology or the concept of loss alone.
+    y_vector: "Behavioral"
+    y_detail: "The eel's naturally slippery, sinuous body and ability to escape from hands is the vehicle. The behavior (escaping despite being caught) maps onto the frustrating experience of losing something precious despite one's efforts to hold it."
+    z_register: 3
+    z_rationale: "Used in formal oratory and everyday speech; documented in NIWA Māori cultural resources on tuna (eels) as taonga species."
+    source: "NIWA 'Tuna — ā tātou taonga: Freshwater eels'; ngaitahu.iwi.nz 'Tuna - adaptive, shape shifting, sustainers of life'; maorilanguage.net Proverbs"
+    notes: "Tuna (freshwater eel) appears in multiple whakataukī as a vehicle for metaphor — the species' high cultural value (taonga) enables rich CPG encoding. The eel's liminality (it lives between freshwater and ocean, visible and hidden) amplifies its metaphorical range."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: x_type=0.80 → x_r=0.00, x_e=0.70, x_s=0.30。
+      S成分0.30: ウナギの滑り逃げる行動+手中の珍重なものが並置されることで
+      「努力むなしく失う」という固有の感情的テクスチャーが第3の意味として生成。
+      y_vector変更なし。
+
+  # ─── MODERN INTERNET / DIGITAL MEMES ────────────────────────────────────
+
+  - id: "NET_001"
+    tradition: "Korean internet culture / K-drama meme"
+    language: "Korean (한국어)"
+    host_word: "라면 먹고 갈래?"
+    host_romanized: "Ramyeon meokgo gallae?"
+    covert_target: "Sexual/romantic invitation to stay the night; functionally equivalent to English 'Netflix and chill'"
+    x_r: 0.90
+    x_e: 0.05
+    x_s: 0.05
+    x_rationale: |
+      Triangular coordinate (v3.0): Pure-R. The sexual/romantic invitation retreats
+      into a food offer for face-saving social purposes. x_e=0.05: minimal creative
+      element in the selection of food frame. x_s=0.05: food invitation + domestic
+      space produces minor Synthesis (context-specific implication).
+    y_vector: "Metonymic"
+    y_detail: "Action-chain contiguity: food invitation → entering apartment → extended stay → sexual/romantic encounter. The metonymic path was activated by a famous 2001 film scene ('One Fine Spring Day') and reinforced through repeated K-drama usage."
+    z_register: 3
+    z_rationale: "Globally known through K-drama export; documented in mainstream media (South China Morning Post), language learning resources, and journalistic analysis. High public repetition has cemented the covert meaning."
+    z_velocity: "years"
+    z_velocity_note: |
+      初出推定日: 2001年頃（映画「봄날은 간다 / One Fine Spring Day」が当該シーン起源）
+      現在の使用状況: active
+      推定サイクル速度: years — 映画/K-dramaによって定着した文化的慣用表現。
+      プラットフォームアルゴリズムではなくsocial face-saving mechanismで維持されるため安定。
+      韓流コンテンツのグローバル普及により国際的認知度が高まっており、短期的陳腐化の
+      可能性は低い。
+    surveillance_type: "Social convention"
+    surveillance_type_note: |
+      Face-saving social euphemism driven purely by social convention.
+      Sexual invitation retreats into food offer for plausible deniability in interpersonal contexts.
+      No algorithmic evasion involved — the phrase is not flagged by platform NLP (content itself is
+      innocent). Maintained by K-drama media exposure and oral/cultural transmission.
+      Web確認: SCMP (2021), Korea Biz Wire — social face-saving mechanism confirmed as sole driver.
+    source: "myseouldream.com 'Korea's Netflix and Chill' (2016); South China Morning Post 'K-drama: why are ramyeon noodles an invitation for sex?' (2021); beelinelanguage.com 'Netflix and Chill in Korean'"
+    notes: "Notable for cultural mechanism: the covert path was activated by cinema rather than internet spread (unlike most NET entries). The film provided the original encoding event; subsequent K-drama repetition drove Z→3."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: x_type=0.10 → x_r=0.90, x_e=0.05, x_s=0.05。三角座標変換のみ。
+      z_velocity="years" 追記（Web確認: 2001年映画起源→文化的定着、短期変化なし）。
+
+  - id: "NET_002"
+    tradition: "Emoji semiotics / digital communication"
+    language: "Cross-linguistic (universal emoji script)"
+    host_word: "🍆 (eggplant emoji) and 🍑 (peach emoji)"
+    host_romanized: "eggplant emoji; peach emoji"
+    covert_target: "Penis (eggplant); buttocks (peach); used in sexual flirtation and anatomical reference on dating apps and social media"
+    x_r: 0.65
+    x_e: 0.25
+    x_s: 0.10
+    x_rationale: |
+      Triangular coordinate (v3.0): R-dominant hybrid. The sexual meaning retreats
+      into food/plant emojis to evade content moderation AND social directness.
+      x_e=0.25: active construction of visual-morphological analogy (Enchant component
+      in the creative visual mapping). x_s=0.10: pairing of food emoji + anatomical
+      form generates minor third meaning (the juxtaposition of "innocent food" + "body
+      part" produces the specifically humorous/deniable quality of the encoding).
+    y_vector: "Morphological+Metonymic"
+    y_detail: "Morphological: the shape of the eggplant visually resembles a penis; the peach's cleft resembles buttocks. Metonymic: once the visual mapping is established, the emoji enters an action-chain (food → body → sex). The Morphological vector created the initial mapping; Metonymic maintains its usage in sexual contexts."
+    z_register: 3
+    z_rationale: "Instagram and Facebook explicitly banned eggplant emoji in search functions (c. 2019) — demonstrates platform-level acknowledgment of the covert meaning. Scholarly analysis published (Weissman 2019)."
+    z_velocity: "years"
+    z_velocity_note: |
+      初出推定日: 2010-2014年頃（Twitter/Instagram/Grindrでの自然発生）
+      現在の使用状況: active
+      推定サイクル速度: years — 形態的類似性（eggplant形状≈ペニス）に基づく
+      視覚的マッピングは構造的に安定。2019年のInstagram検索禁止後も使用継続中。
+      プラットフォーム依存ではなく視覚的形態類似に基礎を置くため、
+      プラットフォーム変化に影響されにくい。
+    surveillance_type: "Social convention / NLP hybrid"
+    surveillance_type_note: |
+      Dual surveillance type — hybrid of two distinct evasion mechanisms:
+      (1) Social convention: face-saving / plausible deniability in interpersonal social contexts
+          (humor, deniability when family/employer might view). Initial driver; predates platform bans.
+      (2) NLP/algorithmic: Instagram banned eggplant emoji in search functions (2015) and formally
+          banned "sexual use" in Community Standards update (2019). Facebook followed simultaneously.
+          Platform NLP content moderation now actively enforces against sexual emoji usage — confirming
+          that algorithmic surveillance has become a co-driver alongside social convention.
+      Web確認: KSAT (2019), CNN, Fox News — Instagram/Facebook dual ban confirmed.
+      velocity correlation: Social convention → years; NLP enforcement layer → months-years.
+    source: "Weissman (2019) 'Peaches and eggplants or... something else?' Proceedings of the Linguistic Society of America; ETSU thesis 'Understanding Emoji Usage on Grindr'; ResearchGate 'The Semiotics of Emoji'"
+    notes: "The platform ban is a remarkable external validation: the covert meaning became so well-known (Z=3) that it triggered institutional response. Context-sensitivity remains: the same emoji in a recipe thread carries no covert charge (context override)."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: x_type=0.20 → x_r=0.65, x_e=0.25, x_s=0.10。三角座標変換。
+      z_velocity="years" 追記（形態的マッピングの安定性確認、Instagram禁止後も存続）。
+
+  - id: "NET_003"
+    tradition: "TikTok Algospeak"
+    language: "English (cross-platform)"
+    host_word: "unalive / corn / le dollar bean / seggs / grape"
+    host_romanized: "unalive (death/suicide); corn (pornography); le dollar bean (lesbian); seggs (sex); grape (rape)"
+    covert_target: "Death/suicide; pornography; lesbian; sex; rape — platform-censored concepts that cannot pass automated NLP content moderation under their standard lexical forms"
+    x_r: 0.90
+    x_e: 0.10
+    x_s: 0.00
+    x_rationale: |
+      Triangular coordinate (v3.0): Pure-R. The censored concepts retreat into
+      invented/modified lexical forms to evade algorithmic detection.
+      x_e=0.10: minimal Enchant component in the creative neologism construction
+      (e.g., 'unalive' as a novel compound). x_s=0.00: no Synthesis dimension —
+      the modified forms are containers for hidden meanings, not juxtapositions
+      creating new meanings.
+    y_vector: "Metonymic+Conceptual+Formal"
+    y_detail: |
+      Metonymic: action-chain logic (e.g., 'unalive' = kill/die via logical negation
+      sequence). Conceptual: the 'un-' prefix applies logical negation to 'alive' —
+      human readers decode via compositional semantics; NLP classifiers cannot retrain
+      fast enough on neologisms.
+      Formal (v3.0 addition): character-level form manipulation carries the covert path.
+      'seggs' (sex), 's3x' (sex), 'le$bean' (lesbian) operate at the graphemic/written
+      form level — the formal shape of the word is structurally altered to be
+      machine-opaque while remaining human-decodable. This is a Formal vector: the
+      form/structure of the written word itself is the encoding mechanism.
+    z_register: 3
+    z_rationale: "Documented in Washington Post (April 2022), academic paper by Steen et al. (2023), and Wikipedia. The term 'algospeak' now appears in mainstream media."
+    z_velocity: "weeks"
+    z_velocity_note: |
+      初出推定日: 2020-2021年頃（TikTok algospeakとして文書化; 「unalive」等の集中的使用）
+      現在の使用状況: active（急速に変化中）
+      推定サイクル速度: weeks — プラットフォームのNLPが個別語を学習するたびに
+      新語が生成されるcat-and-mouse game。2025年NPR報告によれば「unalive」自体が
+      フィルターに引っかかり始めており、さらに新しい語（例: "cute winter boots" =
+      ICE sightings; "Dior bags" = drone sightings 2024年12月）が出現し続けている。
+      この項目のz_velocity は NET_001-007 中で最も速い。
+    surveillance_type: "NLP/algorithmic"
+    surveillance_type_note: |
+      Definitional case of NLP/algorithmic surveillance evasion — the paradigmatic example.
+      The covert path is designed adversarially against platform AI content moderation specifically;
+      the "hidden" meaning is hidden ONLY from algorithmic NLP classifiers, not from human readers.
+      No social face-saving or state censorship dimension — users actively want human audiences to
+      understand. The surveillance target is the platform NLP system.
+      Web確認: Steen et al. (2023) SAGE, Washington Post (2022) — adversarial NLP design confirmed.
+      cat-and-mouse cycle velocity: weeks (NLP retraining → new neologism generation).
+    source: "Steen, Yurechko & Klug (2023) 'You Can (Not) Say What You Want: Using Algospeak to Contest and Evade Algorithmic Content Moderation on TikTok', Social Media + Society (SAGE); Washington Post 'Algospeak is changing our language in real time' (2022); Wikipedia 'Algospeak'; NPR 'TikTok, Censorship, & Algospeak' (2025)"
+    notes: "Unique CPG type: the covert path is designed adversarially against machine reading, not human secrecy. The community of users collectively encodes AND decodes; the 'hidden' meaning is hidden only from algorithmic surveillance. Demonstrates platform infrastructure as a new type of social force driving CPG formation."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0:
+      (1) x_type=0.10 → x_r=0.90, x_e=0.10, x_s=0.00。三角座標変換。
+      (2) y_vector "Metonymic+Conceptual" → "Metonymic+Conceptual+Formal"。
+          文字レベルの形式操作（s3x, le$bean等の graphemic manipulation）は
+          Formal vector（第8番目）に該当: 書かれた語の形式自体がcovert pathの
+          担体であり、詩の形式/構造がcpgを運ぶFormalの定義に合致。
+      (3) z_velocity="weeks" 追記（Web確認: 2025年NPR報告, 新語が継続的に生成中）。
+
+  - id: "NET_004"
+    tradition: "Chinese internet resistance language"
+    language: "Mandarin Chinese (普通话)"
+    host_word: "草泥马 (Grass Mud Horse — a fictitious alpaca-like creature)"
+    host_romanized: "Cǎonímǎ"
+    covert_target: "肏你妈 (Cào nǐ mā) — Mandarin obscenity 'fuck your mother'; broader meaning: symbolic resistance against Chinese internet censorship"
+    x_r: 0.30
+    x_e: 0.60
+    x_s: 0.10
+    x_rationale: |
+      Triangular coordinate (v3.0): E-dominant (shogun指示通り). The creation of an
+      elaborate fictional animal with its own mythology, children's song, plush toys,
+      and an extended allegorical world (fighting 'river crabs' = censorship) represents
+      high active meaning-invention. x_r=0.30: Refuge component is present (phonetic
+      near-homophony avoids censored characters), but the profound elaboration of the
+      meme ecosystem transcends mere evasion. x_s=0.10: the juxtaposition of animal
+      character + phonetic near-homophony generates a third meaning (satirical
+      resistance symbol that is simultaneously harmless and transgressive).
+    y_vector: "Phonetic"
+    y_detail: "Near-homophony exploiting tonal ambiguity in Mandarin: 草泥马 (cǎo-ní-mǎ, tones 3-2-3) vs 肏你妈 (cào-nǐ-mā, tones 4-3-1) — similar consonants/vowels, different tones and characters. Character-based censorship cannot detect it; phonetic overlap activates the hidden meaning for native speakers."
+    z_register: 3
+    z_rationale: "Viral across Chinese internet since 2009; documented in academic papers, Berkeley School of Information, and international media. The animal has its own Wikipedia article and ecosystem of related characters."
+    z_velocity: "years"
+    z_velocity_note: |
+      初出推定日: 2009年1月（百度百科イタズラ記事「百度十大神兽」の一つとして初出）
+      現在の使用状況: active
+      推定サイクル速度: years — ミーム化により文化的古典として定着。
+      2022年上海COVID抗議でも街頭使用が確認（Web検索確認）。
+      草泥馬キャラクター自体が独立した文化的シンボルとなっており、当初の
+      検閲回避機能を超えて存続。音声的類似性を基盤とするため、文字ベースの
+      フィルター変化に影響されにくい。
+    surveillance_type: "State censorship / NLP hybrid"
+    surveillance_type_note: |
+      Dual surveillance type — evolved from pure state censorship toward hybrid:
+      (1) State censorship (primary, initial): Chinese Great Firewall keyword/character filtering
+          and human content moderators blocked 肏你妈. The phonetic near-homophony (草泥马)
+          evaded character-based automated filters. EFF (2019) confirms "automated algorithms and
+          tens of thousands of human expurgators" as the censorship mechanism.
+      (2) NLP hybrid (secondary, evolving): As Chinese censorship infrastructure developed
+          AI-driven NLP detection of phonetic substitutions (pinyin-based homophony detection),
+          evasion became hybrid. Academic research (ToxiCloakCN, ACL 2024) confirms ML-based
+          detection now explicitly targets phonetic approximations including 草泥马 pattern.
+          Post-stabilization: meme has cultural-iconic status beyond evasion → z_velocity=years.
+      Web確認: Wikipedia 'Grass Mud Horse', Rest of World (2022), EFF (2019).
+    source: "Wikipedia 'Grass Mud Horse'; Abbott (2019) 'Of Grass Mud Horses and Rice Bunnies', Asian Politics & Policy (Wiley); UC Berkeley School of Information 'The Grass-Mud Horse, Online Censorship, and China's National Identity' (2012)"
+    notes: "The grass-mud horse became the center of a mythological resistance ecosystem: it fights 'river crabs' (河蟹 héxiè ≈ 和谐 héxié 'harmony' = censorship). The CPG extended from single-word homophony to a full allegorical world — a rare example of CPG scaling into narrative."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: x_type=0.15（Pure-R dominant）→ x_r=0.30, x_e=0.60, x_s=0.10。
+      これは将軍指示による重要な再評価: 音声的発明の詩的創造性と神話世界構築の規模を
+      鑑みるとE成分が支配的。v2.0の「Pure-R」評価は音声回避のみに着目した
+      過小評価であった。z_velocity="years" 追記（2009年初出→2022年現役確認）。
+
+  - id: "NET_005"
+    tradition: "Chinese internet censorship evasion"
+    language: "Mandarin Chinese (普通话)"
+    host_word: "五月三十五日 (May 35th)"
+    host_romanized: "Wǔyuè sānshíwǔrì"
+    covert_target: "June 4th (六四, Liùsì) — the date of the 1989 Tiananmen Square massacre; a heavily censored topic in China"
+    x_r: 0.95
+    x_e: 0.05
+    x_s: 0.00
+    x_rationale: |
+      Triangular coordinate (v3.0): Pure-R. The date retreats into an arithmetically
+      constructed impossible calendar date. No aesthetic or creative dimension —
+      purely evasive encoding to avoid character-based censorship filters.
+      x_e=0.05: minimal Enchant for the arithmetic ingenuity. x_s=0.00: no Synthesis.
+    y_vector: "Structural"
+    y_detail: "Arithmetic displacement: May has 31 days; May 31 + 4 additional days = June 4. The structural logic encodes the date in a form that contains no blocked characters (六, 四, 六四). As censors retrain on new encodings (e.g., '63+1', 'VIIV'), users cycle to new structural forms — an arms race of structural encoding."
+    z_register: 3
+    z_rationale: "Documented in LA Review of Books (China Channel), Quartz, Rest of World, and Berkman Klein Center. The encoding has been in use since at least 2009."
+    z_velocity: "months"
+    z_velocity_note: |
+      初出推定日: 2009年以前（Weibo前のRenren・各種フォーラムでの使用;
+      「May 35th」自体は少なくとも2009年以前からの長期使用が報告されている）
+      現在の使用状況: uncertain — 「五月三十五日」自体はWeibo等主要SNSでは
+      既に検閲対象となり、単純検索でエラーが返るほど知られた語となった。
+      代替エンコーディング（"63+1", "VIIV", "8×8", etc.）が継続的に生成されている。
+      推定サイクル速度: months — 特定の算術エンコーディングは検閲ブラックリストに
+      登録されるまで数ヶ月で陳腐化する。ただし6月4日という記念日の象徴的価値は
+      持続し、毎年新エンコーディングが生成される。
+    surveillance_type: "State censorship"
+    surveillance_type_note: |
+      Pure state censorship evasion. The encoding targets Chinese government censorship of
+      Tiananmen Square 1989 — a politically prohibited topic under party directives.
+      Surveillance mechanism: both automated keyword/character filtering (the Great Firewall)
+      AND human content moderators. EFF (2019) documents "automated algorithms and tens of
+      thousands of human expurgators" + VPN shutdowns, activist surveillance, and arrests.
+      Unlike NET_004, this has NOT substantially hybridized toward NLP — the censorship
+      responds primarily at the blacklist/keyword level; new encodings emerge faster than
+      NLP can retrain, keeping it in the state censorship category.
+      Web確認: EFF (2019), CBLDF (2019), HRW — Chinese state censorship mechanism confirmed.
+    source: "China Channel (LA Review of Books) 'How June 4th Became May 35th' (2018); Wikipedia 'Euphemisms for Internet censorship in China'; Quartz '261 ways to refer to the Tiananmen Square massacre in China'; Rest of World 'How Chinese citizens use puns to get past internet censors'"
+    notes: "Companion to NET_004 in the Chinese censorship-evasion CPG system. Where NET_004 uses Phonetic vector, NET_005 uses Structural (arithmetic). Together they illustrate that Chinese internet users have independently converged on multiple CPG vectors for the same political constraint. Also see 河蟹 héxiè (river crab) = censorship = 和谐 héxié — a Phonetic variant of the same evasion system."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: x_type=0.05 → x_r=0.95, x_e=0.05, x_s=0.00。三角座標変換のみ。
+      Formal vector検討: 算術的置換（May 31 + 4 = June 4）はStructural vector（既存）の
+      典型例。Formalは詩/パフォーマンスの形式的構造がcovert pathを担う場合に適用であり、
+      算術的日付変換にはStructuralが適切 → Formal不該当、y_vector変更なし。
+      z_velocity="months" 追記（Weibo検閲確認; 新エンコーディング生成サイクル確認）。
+
+  - id: "NET_006"
+    tradition: "Calculator spelling / TikTok number slang"
+    language: "English (cross-platform)"
+    host_word: "304 (three-digit number)"
+    host_romanized: "three-oh-four"
+    covert_target: "'HOE' — sexual slang for a promiscuous person, revealed by flipping a calculator/phone display upside down (3→E, 0→O, 4→H)"
+    x_r: 0.85
+    x_e: 0.10
+    x_s: 0.05
+    x_rationale: |
+      Triangular coordinate (v3.0): R-dominant. The derogatory/sexual word retreats
+      into a numeric representation to evade content moderation and social censure.
+      x_e=0.10: creative Enchant element in the visual inversion discovery.
+      x_s=0.05: pairing number + inverted display form generates minor third meaning
+      (the playful/game-like quality of the encoding).
+    y_vector: "Morphological"
+    y_detail: "Visual/spatial transformation: seven-segment display digits have rotational symmetry properties when inverted. 3 inverted = E, 0 inverted = O, 4 inverted = H. The covert path is entirely visual — no phonetic or conceptual overlap. This is the rarest CPG vector found in this survey."
+    z_register: 3
+    z_rationale: "Calculator spelling originated in schools c. 1970s–80s as a classroom game (Wikipedia attests). The TikTok revival (~2020–21) as algospeak drove it to Z=3 via viral spread."
+    z_velocity: "months"
+    z_velocity_note: |
+      初出推定日: 1970-80年代（電卓スペリングの教室ゲームとして）;
+      TikTok revival: 2020-2021年頃（algospeakとして文書化）
+      現在の使用状況: uncertain — 2020-21年TikTokでのピーク後、トレンドとしては下降傾向。
+      KnowYourMeme等での文書化は維持されており、"304tok" コミュニティが存続中。
+      推定サイクル速度: months — TikTokトレンドとしてのサイクルは数ヶ月。
+      ただし基盤となる形態的マッピング（数字反転）は永続的であり、
+      新しいコンテキストで再浮上する可能性がある。
+    surveillance_type: "Social convention"
+    surveillance_type_note: |
+      Social taboo evasion — primary driver is social context, not algorithmic evasion.
+      Users avoid explicit terminology due to social visibility (family, employers) in online posts.
+      Slangwise (2026) confirms: "Using 304 instead of explicit terms provides plausible deniability.
+      More importantly, discretion in public posts matters when family members or employers might
+      view content." The original form (1970s calculator spelling) predates platform algorithms by
+      decades — the encoding mechanism is pre-algorithmic in origin.
+      TikTok platform content moderation is a secondary contributing factor, but the primary
+      motivation identified is social (not algorithmic) based on web sources.
+      Web確認: Slangwise, Screenshot Media, Know Your Meme — social context confirmed as primary.
+    source: "Wikipedia 'Calculator spelling'; Slangwise '304 Meaning on TikTok'; Neon Music '304 Slang Explained — the Viral TikTok Code'; Know Your Meme '304 (Slang)'"
+    notes: "flag: true — The mechanism (digit inversion) is well-attested, but the scholarly treatment of 304 as TikTok algospeak is primarily journalistic, not academic. Confidence is medium for the TikTok context. Note: the original calculator spelling tradition dates to analog calculator toys and is fully documented; the TikTok revival layer is newer. Unusual example of a pre-digital CPG tradition repurposed for platform-evasion purposes."
+    confidence: "medium"
+    recode_note: |
+      v2.0→v3.0: x_type=0.10 → x_r=0.85, x_e=0.10, x_s=0.05。三角座標変換のみ。
+      z_velocity="months" 追記（Web確認: 2020-21年ピーク、現在下降傾向確認）。
+
+  - id: "NET_007"
+    tradition: "Internet meme / AAVE-origin euphemism"
+    language: "English (primarily American English; global adoption)"
+    host_word: "Netflix and chill"
+    host_romanized: "Netflix and chill"
+    covert_target: "Sexual encounter at home, framed as a casual invitation to watch streaming video together"
+    x_r: 0.90
+    x_e: 0.10
+    x_s: 0.00
+    x_rationale: |
+      Triangular coordinate (v3.0): Pure-R. The sexual invitation retreats into a
+      leisure/social framing. x_e=0.10: minor Enchant in the brand-metonymy construction
+      (creative use of streaming platform name as social frame). x_s=0.00: no Synthesis —
+      the meanings are layered (casual/sexual), not synthesized into a third meaning.
+    y_vector: "Metonymic"
+    y_detail: "Brand metonymy + action-chain: 'Netflix' substitutes for 'private domestic space with a screen-based pretext.' 'Chill' = face-saving frame. The invitation's covertness depends entirely on shared cultural knowledge of the meme: insiders read the sexual implication; outsiders take the invitation literally. The metonymic chain: streaming invitation → domestic privacy → extended time alone → sexual encounter."
+    z_register: 3
+    z_rationale: "Global phenomenon documented extensively since 2015. Wikipedia article; academic and journalistic coverage in multiple languages. Korean equivalent 라면 먹고 갈래 (NET_001) demonstrates cross-linguistic diffusion pattern."
+    z_velocity: "years"
+    z_velocity_note: |
+      初出推定日: 2014年（Black Twitterによる性的含意の確立）;
+      初出ツイート（文字通り使用）は2009年1月21日 (NoFaceNina)
+      現在の使用状況: active
+      推定サイクル速度: years — ストリーミングプラットフォームブランドとのメトニミー
+      結合が安定した文化的フレームを形成。2015年以降グローバルに普及し、韓国語・
+      フランス語等多言語に拡散した後は個別プラットフォームへの依存度が低下し、
+      より安定した文化的慣用表現として定着。
+    surveillance_type: "Social convention"
+    surveillance_type_note: |
+      Pure social euphemism. The sexual invitation retreats into a leisure/social framing
+      for interpersonal face-saving purposes. Not flagged by platform NLP algorithms (the
+      surface meaning is fully innocent content). The covert meaning is hidden from
+      uninitiated individuals, not from platform censors — the phrase circulates freely
+      on all platforms without triggering content moderation.
+      Maintained by social convention and cultural diffusion across languages.
+      Web確認: Wikipedia 'Netflix and chill', Know Your Meme — social convention confirmed.
+    source: "Wikipedia 'Netflix and chill'; Jezebel 'Netflix and chill: the complete history of a viral sex catchphrase' (2017); Beeline Korean 'Netflix and Chill in Korean'; Know Your Meme 'Netflix and Chill'"
+    notes: "The archetypal modern Metonymic CPG case. Unique among NET entries for demonstrating cross-linguistic diffusion: the mechanism (platform/activity brand + hangout frame = sexual invitation) has been independently replicated in Korean (NET_001), French ('voir Netflix'), and other languages, confirming that the metonymic template is generative rather than a one-time coinage."
+    confidence: "high"
+    recode_note: |
+      v2.0→v3.0: x_type=0.10 → x_r=0.90, x_e=0.10, x_s=0.00。三角座標変換のみ。
+      z_velocity="years" 追記（Web確認: 2014年確立→2025年現在も全球的active確認）。
+
+summary:
+  total_items: 15
+  framework_version: "v3.0"
+  recode_date: "2026-03-13"
+  recode_agent: "ashigaru7 (subtask_005g — surveillance_type + S三条件再検査)"
+  previous_agent: "ashigaru7 (subtask_004g)"
+
+  x_coordinate_summary:
+    note: "v3.0: x_type (scalar) → (x_r, x_e, x_s) triangular coordinates; r+e+s=1.0"
+    r_dominant:   # x_r >= 0.60
+      count: 8
+      items: ["OCE_004", "OCE_006", "NET_001", "NET_002", "NET_003", "NET_005", "NET_006", "NET_007"]
+    e_dominant:   # x_e >= 0.60
+      count: 5
+      items: ["OCE_001", "OCE_002", "OCE_003", "OCE_005", "NET_004"]
+    s_significant:  # x_s >= 0.20
+      count: 6
+      items: ["OCE_001(0.35)", "OCE_002(0.30)", "OCE_005(0.20)", "OCE_007(0.40)", "OCE_008(0.30)", "NET_002(0.10—minor)"]
+    s_highest: "OCE_007 (x_s=0.40) — 大地の永続性+人間の有限性の並置が「集団的土地権」という第3の意味を生成"
+    net004_note: "NET_004草泥马: v2.0ではx_r dominant評価だったが将軍指示によりx_e=0.60に再評価。神話世界構築の規模がEnchant成分を支配的に。"
+
+  vector_distribution:
+    Conceptual: 5     # OCE_001(+Formal), OCE_002(+Formal), OCE_003(+Chromatic), OCE_004, OCE_007
+    Formal: 3         # OCE_001, OCE_002, NET_003 (v3.0新規追加)
+    Structural: 2     # OCE_001[v2.0 label → Formal], NET_005
+    Behavioral: 3     # OCE_005(+Conceptual), OCE_006, OCE_008
+    Metonymic: 3      # NET_001, NET_002(+Morphological), NET_003(+Conceptual+Formal), NET_007
+    Morphological: 2  # NET_002(+Metonymic), NET_006
+    Phonetic: 1       # NET_004
+    Chromatic: 1      # OCE_003(+Conceptual)
+
+  surveillance_type_findings:
+    note: "Added in subtask_005g. OCE_001–008: surveillance_type not applicable (Ritual/literary tradition). NET_001–007: classified by primary evasion target."
+    NLP_algorithmic:
+      items: ["NET_003 (TikTok adversarial algospeak)"]
+      velocity: "weeks"
+      rationale: "Adversarially designed against platform NLP classifiers. Covert path targets machine, not humans."
+    State_censorship:
+      items: ["NET_005 (May 35th / 五月三十五日)"]
+      velocity: "months"
+      rationale: "Chinese state censorship of Tiananmen. Keyword blacklist + human moderators. New encodings monthly."
+    Social_convention:
+      items: ["NET_001 (ramyeon)", "NET_006 (304)", "NET_007 (Netflix and chill)"]
+      velocity: "years / months"
+      rationale: "Face-saving interpersonal euphemisms. Not targeted by platform NLP; invisible to content moderation."
+    Hybrid_State_NLP:
+      items: ["NET_004 (草泥马 Cǎonímǎ)"]
+      velocity: "years (post-stabilization)"
+      rationale: "Originated as state censorship evasion; evolved to hybrid as Chinese NLP systems now detect pinyin homophones (ToxiCloakCN). Cultural-iconic status stabilized velocity."
+    Hybrid_Social_NLP:
+      items: ["NET_002 (🍆🍑 emoji)"]
+      velocity: "months-years"
+      rationale: "Dual: social face-saving (initial driver) + platform NLP enforcement (Instagram ban 2015/2019). Both mechanisms now active."
+    surveillance_type_pattern: |
+      Clear mapping between surveillance_type and z_velocity:
+        NLP/algorithmic → weeks (fastest; NLP arms race)
+        State censorship → months (blacklist update cycle)
+        Social convention → years (stable social norms)
+        Hybrids → intermediate/compound velocity
+      This confirms the velocity_pattern in algospeak_velocity_findings below.
+
+  algospeak_velocity_findings:
+    weeks:
+      items: ["NET_003 (TikTok adversarial algospeak)"]
+      rationale: "NLP cat-and-mouse game: platform retrains → new words generated continuously"
+    months:
+      items: ["NET_005 (May 35th)", "NET_006 (304 calculator)"]
+      rationale: |
+        NET_005: specific encodings get censored within months; new arithmetic variants emerge annually.
+        NET_006: TikTok trend cycle; base morphological mapping is permanent but trend expression is short.
+    years:
+      items: ["NET_001 (ramyeon)", "NET_002 (🍆🍑)", "NET_004 (草泥马)", "NET_007 (Netflix and chill)"]
+      rationale: |
+        Cultural euphemisms anchored in cinema/oral tradition (NET_001), morphological stability (NET_002),
+        iconic meme status (NET_004), and multi-language diffusion (NET_007) resist rapid change.
+    velocity_pattern: |
+      Adversarial algospeak (machine-evasion) cycles fastest (weeks).
+      Political censorship evasion (state surveillance) cycles at months.
+      Social euphemisms (face-saving) cycle at years.
+      This maps onto the sophistication and adaptability of the censor: NLP > state filter > social convention.
+
+  register_distribution:
+    low: 0    # Z=1 — no items in purely dyadic register
+    mid: 2    # Z=2 — OCE_001, OCE_002 (ceremonial, restricted inner layer)
+    high: 13  # Z=3 — all other items
+
+  formal_vector_findings:
+    count: 3
+    items:
+      - id: "OCE_001"
+        rationale: "Verse sequence = geographic route; the order/form of performance IS the map"
+      - id: "OCE_002"
+        rationale: "Pleiades celestial path sequence mirrors overland navigation route"
+      - id: "NET_003"
+        rationale: "Graphemic/written form manipulation (s3x, le$bean) — formal structure of the word carries the covert path"
+    pattern: |
+      Formal vector appears at two structural extremes: (1) pre-literate oral traditions
+      where spatial/sequential form carries embodied geographic knowledge (songlines), and
+      (2) adversarial digital encoding where written form is structurally manipulated to
+      be machine-opaque. Both are cases where the form/structure itself is the encoding
+      mechanism, not the semantic content. The 8th vector bridges ancient and contemporary
+      CPG practice.
+
+  s_condition_review:
+    review_date: "2026-03-13"
+    review_task: "subtask_005g"
+    criteria: |
+      S三条件 (全て必須):
+        条件1 JUXTAPOSITION: 二つの語/概念/シンボルが並置
+        条件2 NON-COMPOSITIONALITY: 個々の意味から第三の意味が計算不能
+        条件3 CULTURAL CONVENTION: 共同体レベルで意味が共有
+    new_s_assignments: 0
+    note: "全15件を三条件で再検査。新たにS成分を追加すべき未コーディング項目は発見されなかった。既存のS値はすべて三条件を満たしていることを確認。"
+    confirmed_items:
+      - id: "OCE_007"
+        x_s: 0.40
+        status: "CONFIRMED — 三条件全て充足（recode_note参照）。全データセット最高S値を維持。"
+      - id: "OCE_001"
+        x_s: 0.35
+        status: "CONFIRMED — 地形情報+祖先物語の並置が「ナビ法+精神法+親族法」第3意味生成"
+      - id: "OCE_002"
+        x_s: 0.30
+        status: "CONFIRMED — 星団の軌跡+七姉妹物語の並置が「地図=社会法」第3意味生成"
+      - id: "OCE_008"
+        x_s: 0.30
+        status: "CONFIRMED — ウナギの滑走+珍重なもの喪失の並置が固有の感情的テクスチャー生成"
+      - id: "OCE_005"
+        x_s: 0.20
+        status: "CONFIRMED — 開花+系譜・愛の並置が「offspring/beloved」第3意味生成"
+      - id: "NET_004"
+        x_s: 0.10
+        status: "CONFIRMED — 動物キャラ+音声近似の並置が「無害かつ越境」という二重性生成"
+      - id: "NET_002"
+        x_s: 0.10
+        status: "CONFIRMED — 無害食品emoji+身体形態の並置が「humor/deniable」第3質感生成"
+    zero_s_items_reviewed:
+      - id: "OCE_004"
+        x_s: 0.00
+        status: "CONFIRMED ZERO — 恋愛+政治的嘆きは重層だがSynthesis不成立（並置でなく並存）"
+      - id: "NET_003"
+        x_s: 0.00
+        status: "CONFIRMED ZERO — 単一概念の符号変換。二概念並置なし"
+      - id: "NET_005"
+        x_s: 0.00
+        status: "CONFIRMED ZERO — 算術的日付変換。概念並置なし"
+      - id: "NET_007"
+        x_s: 0.00
+        status: "CONFIRMED ZERO — Netflix+chill: 意味は重層（カジュアル/性的）だが第3意味生成なし"
+
+  key_findings: |
+    OCEANIA FINDINGS (v3.0): Hawaiian mele kaona is the most formally documented CPG tradition
+    in Oceania, with institutionalized compositional practice (haku mele deliberately constructing
+    hidden meanings) and a stable lexicon of conventional mappings. E-dominant across all kaona
+    items, consistent with a prestige poetic tradition rewarding creative invention over evasion.
+
+    Aboriginal songlines received the most significant v3.0 upgrade: the y_vector is now
+    "Formal+Conceptual" (not "Structural+Conceptual") reflecting that the SEQUENTIAL FORM
+    of the performance IS the geographic map — the paradigmatic Formal vector case.
+    The S component (Synthesis) for songlines items (OCE_001: x_s=0.35, OCE_002: x_s=0.30)
+    reflects that geographic sequence + ancestral narrative generates a third meaning system.
+
+    Māori OCE_007 has the highest S component (x_s=0.40): the juxtaposition of geological
+    permanence and human mortality synthesizes a legal argument for collective land rights.
+
+    INTERNET FINDINGS (v3.0): NET_004 (草泥马) receives the most important re-evaluation —
+    x_r=0.30→E=0.60 per shogun instruction. The elaborate mythological world-building of the
+    grass-mud horse exceeds mere evasion; it is an active, creative, E-dominant CPG act.
+
+    Algospeak velocity analysis confirms: adversarial machine-evasion algospeak cycles fastest
+    (weeks), political evasion at months, social euphemism at years. This correlates inversely
+    with the adaptability of the surveillance mechanism targeted.
+
+    NET_003 gains Formal vector (3rd in dataset): character-level written form manipulation
+    (s3x, le$bean) qualifies as Formal — the structure of the written word is the encoding
+    mechanism, bridging contemporary digital CPG with ancient form-based traditions.
+
+  ambiguous_items:
+    - "OCE_002"   # Sacred inner layer of Kungkarangkalpa inaccessible; coding reflects public version only
+    - "OCE_006"   # Sanoe: identity coding (specific persons referenced) is scholarly inference
+    - "NET_006"   # 304 algospeak: TikTok usage primarily journalistic source, limited academic treatment

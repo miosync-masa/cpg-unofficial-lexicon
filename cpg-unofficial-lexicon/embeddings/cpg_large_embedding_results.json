@@ -1,0 +1,23 @@
+{
+  "model": "text-embedding-3-large",
+  "dimensions": 3072,
+  "n_total": 217,
+  "n_shogun": 114,
+  "n_torami": 103,
+  "ols": {
+    "R2": 0.0846
+  },
+  "hlm": {
+    "ICC": 0.2095
+  },
+  "heaviside": {
+    "R2": 0.11,
+    "K_crit": 0.3283,
+    "alpha": 0.2634
+  },
+  "region_heaviside": {
+    "R2": 0.2546
+  },
+  "mean_sim": 0.2777,
+  "std_sim": 0.1214
+}

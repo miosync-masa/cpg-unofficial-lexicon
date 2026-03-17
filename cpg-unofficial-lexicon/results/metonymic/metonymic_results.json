@@ -1,0 +1,954 @@
+[
+  {
+    "group_name": "English Sexual Metonymic",
+    "language": "en",
+    "target_type": "sexual",
+    "model": "text-embedding-3-large",
+    "dimensions": 3072,
+    "n_candidates": 8,
+    "n_controls": 8,
+    "timestamp": "2026-03-13T10:51:46.312429",
+    "differential_pull": {
+      "candidate_mean": 0.10496592970055531,
+      "control_mean": 0.06314356856601708,
+      "difference": 0.04182236113453823,
+      "mann_whitney_U": 43.0,
+      "p_value": 0.1393162393162393,
+      "hedges_g": 0.6990529451256173,
+      "significant": 0
+    },
+    "pull_amplification": {
+      "candidate_mean": 0.10288862965209603,
+      "control_mean": 0.06068075939092178,
+      "difference": 0.04220787026117424,
+      "mann_whitney_U": 43.0,
+      "p_value": 0.1393162393162393,
+      "hedges_g": 0.6784454432708296,
+      "significant": 0
+    },
+    "candidate_results": [
+      {
+        "phrase": "Netflix and chill",
+        "head_word": "Netflix",
+        "mechanism": "metonymic: activity sequence → sex",
+        "diff_pull": 0.18610589451221216,
+        "phrase_pull": 0.13518056948519502,
+        "head_pull": -0.03458295440041517,
+        "pull_amplification": 0.1697635238856102,
+        "diff_target_sim": 0.11478615372356395,
+        "diff_neutral_sim": -0.07131974078864822
+      },
+      {
+        "phrase": "come up for coffee",
+        "head_word": "coffee",
+        "mechanism": "metonymic: invitation sequence → sex",
+        "diff_pull": 0.0989133638562427,
+        "phrase_pull": 0.03279979134059624,
+        "head_pull": -0.06335501223384693,
+        "pull_amplification": 0.09615480357444317,
+        "diff_target_sim": -0.08209174405854823,
+        "diff_neutral_sim": -0.18100510791479094
+      },
+      {
+        "phrase": "spend the night",
+        "head_word": "night",
+        "mechanism": "metonymic: temporal frame → sex",
+        "diff_pull": 0.10564380576100019,
+        "phrase_pull": 0.08906821179159857,
+        "head_pull": -0.019722597420481935,
+        "pull_amplification": 0.10879080921208051,
+        "diff_target_sim": -0.008639679698939822,
+        "diff_neutral_sim": -0.11428348545994
+      },
+      {
+        "phrase": "go back to my place",
+        "head_word": "place",
+        "mechanism": "metonymic: location move → sex",
+        "diff_pull": 0.16382652843423523,
+        "phrase_pull": 0.0574515816782058,
+        "head_pull": -0.1288378580812527,
+        "pull_amplification": 0.1862894397594585,
+        "diff_target_sim": -0.00919426107082409,
+        "diff_neutral_sim": -0.1730207895050593
+      },
+      {
+        "phrase": "see my etchings",
+        "head_word": "etchings",
+        "mechanism": "metonymic: classic invitation → sex",
+        "diff_pull": 0.014992148509344737,
+        "phrase_pull": -0.01310371414446937,
+        "head_pull": -0.025228106061083444,
+        "pull_amplification": 0.012124391916614075,
+        "diff_target_sim": -0.057332104395333254,
+        "diff_neutral_sim": -0.07232425290467799
+      },
+      {
+        "phrase": "sleep together",
+        "head_word": "sleep",
+        "mechanism": "metonymic: bed-sharing → sex",
+        "diff_pull": 0.17686194214835108,
+        "phrase_pull": 0.19789797256518388,
+        "head_pull": 0.0203095097516226,
+        "pull_amplification": 0.17758846281356128,
+        "diff_target_sim": 0.10303019729592326,
+        "diff_neutral_sim": -0.07383174485242781
+      },
+      {
+        "phrase": "hook up",
+        "head_word": "hook",
+        "mechanism": "metonymic: connection → sex",
+        "diff_pull": 0.01988690757603482,
+        "phrase_pull": 0.052468733470363293,
+        "head_pull": 0.033748530385519726,
+        "pull_amplification": 0.018720203084843567,
+        "diff_target_sim": 0.06479752709871427,
+        "diff_neutral_sim": 0.04491061952267945
+      },
+      {
+        "phrase": "get lucky",
+        "head_word": "lucky",
+        "mechanism": "metonymic: fortune → sex",
+        "diff_pull": 0.07349684680702147,
+        "phrase_pull": 0.06846525861168251,
+        "head_pull": 0.014787855641525571,
+        "pull_amplification": 0.05367740297015694,
+        "diff_target_sim": -0.029042761416379514,
+        "diff_neutral_sim": -0.10253960822340098
+      }
+    ],
+    "control_results": [
+      {
+        "phrase": "watch a movie and relax",
+        "head_word": "movie",
+        "mechanism": "literal: entertainment",
+        "diff_pull": 0.10690409574899953,
+        "phrase_pull": 0.07539010144586261,
+        "head_pull": -0.039496673476716704,
+        "pull_amplification": 0.11488677492257932,
+        "diff_target_sim": -0.06771833439032601,
+        "diff_neutral_sim": -0.17462243013932555
+      },
+      {
+        "phrase": "come up for breakfast",
+        "head_word": "breakfast",
+        "mechanism": "literal: morning meal",
+        "diff_pull": 0.09962890460221697,
+        "phrase_pull": 0.03301166723754839,
+        "head_pull": -0.05235273087041087,
+        "pull_amplification": 0.08536439810795926,
+        "diff_target_sim": -0.08191581145687711,
+        "diff_neutral_sim": -0.18154471605909409
+      },
+      {
+        "phrase": "spend the day",
+        "head_word": "day",
+        "mechanism": "literal: time use",
+        "diff_pull": 0.07095041893150762,
+        "phrase_pull": 0.011120070074959298,
+        "head_pull": -0.06052406258093479,
+        "pull_amplification": 0.07164413265589409,
+        "diff_target_sim": -0.06263206458944552,
+        "diff_neutral_sim": -0.13358248352095314
+      },
+      {
+        "phrase": "go back to my desk",
+        "head_word": "desk",
+        "mechanism": "literal: return to work",
+        "diff_pull": 0.041890085978815744,
+        "phrase_pull": -0.08580656183829258,
+        "head_pull": -0.12893322331634283,
+        "pull_amplification": 0.04312666147805025,
+        "diff_target_sim": -0.08656434771959443,
+        "diff_neutral_sim": -0.12845443369841017
+      },
+      {
+        "phrase": "see my photos",
+        "head_word": "photos",
+        "mechanism": "literal: viewing images",
+        "diff_pull": 0.07733076409082731,
+        "phrase_pull": -0.021335351008745618,
+        "head_pull": -0.09496994107007661,
+        "pull_amplification": 0.073634590061331,
+        "diff_target_sim": -0.0795402819387763,
+        "diff_neutral_sim": -0.1568710460296036
+      },
+      {
+        "phrase": "rest peacefully",
+        "head_word": "rest",
+        "mechanism": "literal: relaxation",
+        "diff_pull": 0.09373840711259421,
+        "phrase_pull": 0.061975450971848534,
+        "head_pull": -0.02781729527551302,
+        "pull_amplification": 0.08979274624736155,
+        "diff_target_sim": -0.015572193386997382,
+        "diff_neutral_sim": -0.10931060049959158
+      },
+      {
+        "phrase": "hook up the printer",
+        "head_word": "hook",
+        "mechanism": "literal: connect device",
+        "diff_pull": -0.024995586603557995,
+        "phrase_pull": 0.005056029538748424,
+        "head_pull": 0.033748530385519726,
+        "pull_amplification": -0.0286925008467713,
+        "diff_target_sim": -0.12520833826738637,
+        "diff_neutral_sim": -0.10021275166382837
+      },
+      {
+        "phrase": "get lucky at poker",
+        "head_word": "lucky",
+        "mechanism": "literal: gambling fortune",
+        "diff_pull": 0.039701458666733136,
+        "phrase_pull": 0.050477128142495664,
+        "head_pull": 0.014787855641525571,
+        "pull_amplification": 0.03568927250097009,
+        "diff_target_sim": -0.1521251698268736,
+        "diff_neutral_sim": -0.19182662849360674
+      }
+    ]
+  },
+  {
+    "group_name": "Japanese Sexual Metonymic",
+    "language": "ja",
+    "target_type": "sexual",
+    "model": "text-embedding-3-large",
+    "dimensions": 3072,
+    "n_candidates": 8,
+    "n_controls": 8,
+    "timestamp": "2026-03-13T10:51:46.614739",
+    "differential_pull": {
+      "candidate_mean": 0.1357367370203929,
+      "control_mean": 0.08941940789405364,
+      "difference": 0.04631732912633926,
+      "mann_whitney_U": 49.0,
+      "p_value": 0.041491841491841486,
+      "hedges_g": 0.6713475962743819,
+      "significant": 1
+    },
+    "pull_amplification": {
+      "candidate_mean": 0.1217394893848506,
+      "control_mean": 0.08209582900618273,
+      "difference": 0.03964366037866787,
+      "mann_whitney_U": 46.0,
+      "p_value": 0.08026418026418025,
+      "hedges_g": 0.6449159073020538,
+      "significant": 0
+    },
+    "candidate_results": [
+      {
+        "phrase": "床を共にする",
+        "head_word": "床",
+        "mechanism": "metonymic: 寝具共有 → 性行為",
+        "diff_pull": 0.1950698632479785,
+        "phrase_pull": 0.10352277003576527,
+        "head_pull": -0.08646761422563404,
+        "pull_amplification": 0.1899903842613993,
+        "diff_target_sim": 0.03326816054508549,
+        "diff_neutral_sim": -0.161801702702893
+      },
+      {
+        "phrase": "手を出す",
+        "head_word": "手",
+        "mechanism": "metonymic: 身体接触の開始 → 性的接触",
+        "diff_pull": 0.16777481651016707,
+        "phrase_pull": 0.09105098292238883,
+        "head_pull": -0.09544997085726559,
+        "pull_amplification": 0.18650095377965442,
+        "diff_target_sim": 0.03189986598688593,
+        "diff_neutral_sim": -0.13587495052328113
+      },
+      {
+        "phrase": "一線を越える",
+        "head_word": "一線",
+        "mechanism": "metonymic: 境界侵犯 → 性的関係",
+        "diff_pull": 0.12376600253740458,
+        "phrase_pull": 0.043910586446289535,
+        "head_pull": -0.0457336666795391,
+        "pull_amplification": 0.08964425312582863,
+        "diff_target_sim": -0.041729057130475755,
+        "diff_neutral_sim": -0.16549505966788033
+      },
+      {
+        "phrase": "体の関係",
+        "head_word": "体",
+        "mechanism": "metonymic: 身体 → 性的関係",
+        "diff_pull": 0.13610688417401462,
+        "phrase_pull": 0.10325039385657908,
+        "head_pull": -0.029934285636994518,
+        "pull_amplification": 0.1331846794935736,
+        "diff_target_sim": 0.114749041658454,
+        "diff_neutral_sim": -0.02135784251556063
+      },
+      {
+        "phrase": "深い関係",
+        "head_word": "深い",
+        "mechanism": "metonymic: 関係の深度 → 性的関係",
+        "diff_pull": 0.16094121074797438,
+        "phrase_pull": 0.11798132764594532,
+        "head_pull": -0.0200639633146264,
+        "pull_amplification": 0.13804529096057172,
+        "diff_target_sim": 0.10116235118535996,
+        "diff_neutral_sim": -0.05977885956261442
+      },
+      {
+        "phrase": "大人の関係",
+        "head_word": "大人",
+        "mechanism": "metonymic: 成熟 → 性的関係",
+        "diff_pull": 0.26242492013849256,
+        "phrase_pull": 0.24772307953030276,
+        "head_pull": 0.05355388907489039,
+        "pull_amplification": 0.19416919045541237,
+        "diff_target_sim": 0.08985753361958289,
+        "diff_neutral_sim": -0.17256738651890968
+      },
+      {
+        "phrase": "最後まで",
+        "head_word": "最後",
+        "mechanism": "metonymic: 行為の終点 → 性行為完遂",
+        "diff_pull": -0.006497397482071392,
+        "phrase_pull": -0.004546754002384967,
+        "head_pull": 0.0004744511986580213,
+        "pull_amplification": -0.005021205201042989,
+        "diff_target_sim": -0.043882663245223975,
+        "diff_neutral_sim": -0.037385265763152584
+      },
+      {
+        "phrase": "お泊まり",
+        "head_word": "泊まり",
+        "mechanism": "metonymic: 宿泊 → 性行為",
+        "diff_pull": 0.04630759628918302,
+        "phrase_pull": 0.04163420742238494,
+        "head_pull": -0.005768160781022824,
+        "pull_amplification": 0.04740236820340776,
+        "diff_target_sim": 0.035667623492021586,
+        "diff_neutral_sim": -0.010639972797161428
+      }
+    ],
+    "control_results": [
+      {
+        "phrase": "床に就く",
+        "head_word": "床",
+        "mechanism": "literal: 就寝",
+        "diff_pull": 0.13126012866298833,
+        "phrase_pull": 0.038912419252272734,
+        "head_pull": -0.08645920248362926,
+        "pull_amplification": 0.125371621735902,
+        "diff_target_sim": 0.010245639162630289,
+        "diff_neutral_sim": -0.12101448950035804
+      },
+      {
+        "phrase": "手を洗う",
+        "head_word": "手",
+        "mechanism": "literal: 衛生行為",
+        "diff_pull": 0.11856455738664713,
+        "phrase_pull": 0.039573185946074785,
+        "head_pull": -0.09544997085726559,
+        "pull_amplification": 0.13502315680334037,
+        "diff_target_sim": -0.004732327323851123,
+        "diff_neutral_sim": -0.12329688471049825
+      },
+      {
+        "phrase": "一線を画す",
+        "head_word": "一線",
+        "mechanism": "literal/metaphorical: 区別する",
+        "diff_pull": 0.09939231232239515,
+        "phrase_pull": 0.02662282262526361,
+        "head_pull": -0.0457336666795391,
+        "pull_amplification": 0.0723564893048027,
+        "diff_target_sim": -0.04083112635202854,
+        "diff_neutral_sim": -0.1402234386744237
+      },
+      {
+        "phrase": "体の調子",
+        "head_word": "体",
+        "mechanism": "literal: 健康状態",
+        "diff_pull": 0.10173299175180728,
+        "phrase_pull": 0.07114583959357595,
+        "head_pull": -0.02981043911968373,
+        "pull_amplification": 0.10095627871325968,
+        "diff_target_sim": 0.049836580848507214,
+        "diff_neutral_sim": -0.05189641090330006
+      },
+      {
+        "phrase": "深い眠り",
+        "head_word": "深い",
+        "mechanism": "literal: 睡眠の質",
+        "diff_pull": 0.07601472422966679,
+        "phrase_pull": 0.04739363127476848,
+        "head_pull": -0.0200639633146264,
+        "pull_amplification": 0.06745759458939488,
+        "diff_target_sim": -0.01307264215406814,
+        "diff_neutral_sim": -0.08908736638373493
+      },
+      {
+        "phrase": "大人の対応",
+        "head_word": "大人",
+        "mechanism": "literal: 成熟した振る舞い",
+        "diff_pull": 0.1193706805404044,
+        "phrase_pull": 0.14263353493286446,
+        "head_pull": 0.05352876747658902,
+        "pull_amplification": 0.08910476745627544,
+        "diff_target_sim": -0.04433380244206644,
+        "diff_neutral_sim": -0.16370448298247084
+      },
+      {
+        "phrase": "最後まで読む",
+        "head_word": "最後",
+        "mechanism": "literal: 読書完遂",
+        "diff_pull": 0.036060534352687926,
+        "phrase_pull": 0.031698286690586164,
+        "head_pull": 0.0004744511986580213,
+        "pull_amplification": 0.031223835491928142,
+        "diff_target_sim": -0.0700641234842585,
+        "diff_neutral_sim": -0.10612465783694643
+      },
+      {
+        "phrase": "お泊まり保育",
+        "head_word": "泊まり",
+        "mechanism": "literal: 保育行事",
+        "diff_pull": 0.032959333905832146,
+        "phrase_pull": 0.02950472717353586,
+        "head_pull": -0.005768160781022824,
+        "pull_amplification": 0.035272887954558685,
+        "diff_target_sim": -0.04289620714316441,
+        "diff_neutral_sim": -0.07585554104899656
+      }
+    ]
+  },
+  {
+    "group_name": "English Drinking Metonymic",
+    "language": "en",
+    "target_type": "drinking/intoxication",
+    "model": "text-embedding-3-large",
+    "dimensions": 3072,
+    "n_candidates": 6,
+    "n_controls": 6,
+    "timestamp": "2026-03-13T10:51:46.841432",
+    "differential_pull": {
+      "candidate_mean": 0.14220318039613933,
+      "control_mean": 0.019123125406677214,
+      "difference": 0.12308005498946212,
+      "mann_whitney_U": 29.0,
+      "p_value": 0.046536796536796536,
+      "hedges_g": 1.152288718065467,
+      "significant": 1
+    },
+    "pull_amplification": {
+      "candidate_mean": 0.1474379035176729,
+      "control_mean": 0.015047336538025901,
+      "difference": 0.13239056697964702,
+      "mann_whitney_U": 30.0,
+      "p_value": 0.032467532467532464,
+      "hedges_g": 1.2932646799031686,
+      "significant": 1
+    },
+    "candidate_results": [
+      {
+        "phrase": "grab a drink",
+        "head_word": "drink",
+        "mechanism": "metonymic: single act → drinking session",
+        "diff_pull": -0.03363247619387401,
+        "phrase_pull": 0.2692505303993578,
+        "head_pull": 0.29919731818014855,
+        "pull_amplification": -0.02994678778079074,
+        "diff_target_sim": -0.13765595827853702,
+        "diff_neutral_sim": -0.10402348208466301
+      },
+      {
+        "phrase": "hit the bar",
+        "head_word": "bar",
+        "mechanism": "metonymic: arrival → drinking",
+        "diff_pull": 0.16683518023964256,
+        "phrase_pull": 0.18702155080601443,
+        "head_pull": 0.03648336252769002,
+        "pull_amplification": 0.1505381882783244,
+        "diff_target_sim": 0.032144818872513595,
+        "diff_neutral_sim": -0.13469036136712897
+      },
+      {
+        "phrase": "crack open a cold one",
+        "head_word": "cold",
+        "mechanism": "metonymic: opening act → drinking",
+        "diff_pull": 0.13382491918962378,
+        "phrase_pull": 0.21798375976918977,
+        "head_pull": 0.06712639047034996,
+        "pull_amplification": 0.1508573692988398,
+        "diff_target_sim": 0.035899446554045276,
+        "diff_neutral_sim": -0.09792547263557849
+      },
+      {
+        "phrase": "happy hour",
+        "head_word": "happy",
+        "mechanism": "metonymic: time frame → drinking",
+        "diff_pull": 0.1586896089659187,
+        "phrase_pull": 0.21564146865159634,
+        "head_pull": 0.037366722682436126,
+        "pull_amplification": 0.1782747459691602,
+        "diff_target_sim": 0.11689207932760645,
+        "diff_neutral_sim": -0.04179752963831223
+      },
+      {
+        "phrase": "liquid lunch",
+        "head_word": "liquid",
+        "mechanism": "metonymic: substance → drinking instead of eating",
+        "diff_pull": 0.18892375486575486,
+        "phrase_pull": 0.27951308013915394,
+        "head_pull": 0.09528449373538661,
+        "pull_amplification": 0.18422858640376732,
+        "diff_target_sim": 0.056423530865259364,
+        "diff_neutral_sim": -0.1325002240004955
+      },
+      {
+        "phrase": "nightcap",
+        "head_word": "night",
+        "mechanism": "metonymic: end-of-day → final drink",
+        "diff_pull": 0.23857809530977017,
+        "phrase_pull": 0.27098267501067863,
+        "head_pull": 0.02030735607394224,
+        "pull_amplification": 0.2506753189367364,
+        "diff_target_sim": 0.12886562709419203,
+        "diff_neutral_sim": -0.10971246821557815
+      }
+    ],
+    "control_results": [
+      {
+        "phrase": "grab a bite",
+        "head_word": "bite",
+        "mechanism": "literal: eating",
+        "diff_pull": -0.052482129190339594,
+        "phrase_pull": 0.04358378302105978,
+        "head_pull": 0.09537528855687066,
+        "pull_amplification": -0.05179150553581088,
+        "diff_target_sim": -0.06482482891253044,
+        "diff_neutral_sim": -0.012342699722190847
+      },
+      {
+        "phrase": "hit the gym",
+        "head_word": "gym",
+        "mechanism": "literal: exercise",
+        "diff_pull": 0.1844532290913141,
+        "phrase_pull": 0.009369713288515158,
+        "head_pull": -0.14583569982424327,
+        "pull_amplification": 0.15520541311275843,
+        "diff_target_sim": -0.0748201748799551,
+        "diff_neutral_sim": -0.2592734039712692
+      },
+      {
+        "phrase": "crack open a book",
+        "head_word": "book",
+        "mechanism": "literal: reading",
+        "diff_pull": 0.0915465583521333,
+        "phrase_pull": 0.01643525253575623,
+        "head_pull": -0.07859182730622188,
+        "pull_amplification": 0.09502707984197811,
+        "diff_target_sim": -0.08598747513817825,
+        "diff_neutral_sim": -0.17753403349031155
+      },
+      {
+        "phrase": "happy ending",
+        "head_word": "happy",
+        "mechanism": "literal/other: conclusion",
+        "diff_pull": -0.028075067319875538,
+        "phrase_pull": 0.008859806130865011,
+        "head_pull": 0.037381537343426086,
+        "pull_amplification": -0.028521731212561074,
+        "diff_target_sim": -0.09625715223023094,
+        "diff_neutral_sim": -0.0681820849103554
+      },
+      {
+        "phrase": "liquid assets",
+        "head_word": "liquid",
+        "mechanism": "literal: finance",
+        "diff_pull": -0.09894948261703836,
+        "phrase_pull": -0.0011940442030770049,
+        "head_pull": 0.09526447050207548,
+        "pull_amplification": -0.09645851470515249,
+        "diff_target_sim": -0.17407172220216668,
+        "diff_neutral_sim": -0.07512223958512833
+      },
+      {
+        "phrase": "night shift",
+        "head_word": "night",
+        "mechanism": "literal: work schedule",
+        "diff_pull": 0.018245644123869413,
+        "phrase_pull": 0.037214354252890214,
+        "head_pull": 0.020391076525946905,
+        "pull_amplification": 0.01682327772694331,
+        "diff_target_sim": -0.038462644112529164,
+        "diff_neutral_sim": -0.05670828823639858
+      }
+    ]
+  },
+  {
+    "group_name": "Japanese Drinking Metonymic",
+    "language": "ja",
+    "target_type": "drinking/intoxication",
+    "model": "text-embedding-3-large",
+    "dimensions": 3072,
+    "n_candidates": 6,
+    "n_controls": 6,
+    "timestamp": "2026-03-13T10:51:47.069716",
+    "differential_pull": {
+      "candidate_mean": 0.05799271035043626,
+      "control_mean": 0.040971010361057304,
+      "difference": 0.017021699989378955,
+      "mann_whitney_U": 26.0,
+      "p_value": 0.12012987012987013,
+      "hedges_g": 0.3249478650690092,
+      "significant": 0
+    },
+    "pull_amplification": {
+      "candidate_mean": 0.04372544839673926,
+      "control_mean": 0.030187855114382753,
+      "difference": 0.013537593282356507,
+      "mann_whitney_U": 26.0,
+      "p_value": 0.12012987012987013,
+      "hedges_g": 0.341142669854856,
+      "significant": 0
+    },
+    "candidate_results": [
+      {
+        "phrase": "一杯やる",
+        "head_word": "一杯",
+        "mechanism": "metonymic: 一杯で飲酒全体を指示",
+        "diff_pull": 0.08836653491177322,
+        "phrase_pull": 0.1551489477836791,
+        "head_pull": 0.08833300393594984,
+        "pull_amplification": 0.06681594384772926,
+        "diff_target_sim": 0.020430477209197846,
+        "diff_neutral_sim": -0.06793605770257538
+      },
+      {
+        "phrase": "飲みに行く",
+        "head_word": "飲み",
+        "mechanism": "metonymic: 飲む行為 → 飲み会全体",
+        "diff_pull": -0.04135121172926619,
+        "phrase_pull": 0.24308213581434862,
+        "head_pull": 0.2737336607259358,
+        "pull_amplification": -0.03065152491158718,
+        "diff_target_sim": -0.13814578203746408,
+        "diff_neutral_sim": -0.0967945703081979
+      },
+      {
+        "phrase": "ちょっと付き合って",
+        "head_word": "付き合い",
+        "mechanism": "metonymic: 同行要請 → 飲酒誘い",
+        "diff_pull": 0.09370966044680475,
+        "phrase_pull": 0.04511190291151068,
+        "head_pull": -0.03617922205593721,
+        "pull_amplification": 0.08129112496744789,
+        "diff_target_sim": -0.07950371866360888,
+        "diff_neutral_sim": -0.17321337911041362
+      },
+      {
+        "phrase": "二軒目行こう",
+        "head_word": "二軒目",
+        "mechanism": "metonymic: 次の店 → 飲み続行",
+        "diff_pull": 0.010287223098066442,
+        "phrase_pull": -0.02056351563908493,
+        "head_pull": -0.026841648766920856,
+        "pull_amplification": 0.006278133127835928,
+        "diff_target_sim": -0.09127976982193439,
+        "diff_neutral_sim": -0.10156699292000083
+      },
+      {
+        "phrase": "もう一杯だけ",
+        "head_word": "一杯",
+        "mechanism": "metonymic: 追加の一杯 → まだ終わらない",
+        "diff_pull": 0.08579476676901146,
+        "phrase_pull": 0.16919076623541346,
+        "head_pull": 0.08823229406493821,
+        "pull_amplification": 0.08095847217047525,
+        "diff_target_sim": -0.04993476578006841,
+        "diff_neutral_sim": -0.13572953254907988
+      },
+      {
+        "phrase": "乾杯しよう",
+        "head_word": "乾杯",
+        "mechanism": "metonymic: 開始の儀礼 → 飲み会",
+        "diff_pull": 0.11114928860622786,
+        "phrase_pull": 0.19936180385517271,
+        "head_pull": 0.1417012626766383,
+        "pull_amplification": 0.05766054117853442,
+        "diff_target_sim": 0.010233095532337,
+        "diff_neutral_sim": -0.10091619307389085
+      }
+    ],
+    "control_results": [
+      {
+        "phrase": "一杯のコーヒー",
+        "head_word": "一杯",
+        "mechanism": "literal: 一杯の飲料",
+        "diff_pull": -0.00601068902077273,
+        "phrase_pull": 0.08296449887849366,
+        "head_pull": 0.08823229406493821,
+        "pull_amplification": -0.005267795186444546,
+        "diff_target_sim": -0.15571598497320985,
+        "diff_neutral_sim": -0.14970529595243712
+      },
+      {
+        "phrase": "食べに行く",
+        "head_word": "食べ",
+        "mechanism": "literal: 食事",
+        "diff_pull": 0.0055808836876288515,
+        "phrase_pull": 0.03279587392307515,
+        "head_pull": 0.02803568259392647,
+        "pull_amplification": 0.0047601913291486775,
+        "diff_target_sim": -0.06944191679325072,
+        "diff_neutral_sim": -0.07502280048087957
+      },
+      {
+        "phrase": "ちょっと手伝って",
+        "head_word": "手伝い",
+        "mechanism": "literal: 手助け要請",
+        "diff_pull": 0.059335539075679775,
+        "phrase_pull": -0.06031466449398784,
+        "head_pull": -0.10725561607494916,
+        "pull_amplification": 0.046940951580961315,
+        "diff_target_sim": -0.06861580928688522,
+        "diff_neutral_sim": -0.127951348362565
+      },
+      {
+        "phrase": "二階に行こう",
+        "head_word": "二階",
+        "mechanism": "literal: 場所移動",
+        "diff_pull": 0.07452221618455392,
+        "phrase_pull": -0.05141570132543133,
+        "head_pull": -0.10341601512070009,
+        "pull_amplification": 0.05200031379526876,
+        "diff_target_sim": -0.09068339520948619,
+        "diff_neutral_sim": -0.1652056113940401
+      },
+      {
+        "phrase": "もう一回だけ",
+        "head_word": "一回",
+        "mechanism": "literal: 繰り返し",
+        "diff_pull": 0.05109100457202592,
+        "phrase_pull": 0.019532622486702844,
+        "head_pull": -0.02680072216692314,
+        "pull_amplification": 0.046333344653625985,
+        "diff_target_sim": -0.08188090068139386,
+        "diff_neutral_sim": -0.1329719052534198
+      },
+      {
+        "phrase": "出発しよう",
+        "head_word": "出発",
+        "mechanism": "literal: 行動開始",
+        "diff_pull": 0.06130710766722809,
+        "phrase_pull": -0.04948976037297592,
+        "head_pull": -0.08584988488671225,
+        "pull_amplification": 0.036360124513736325,
+        "diff_target_sim": -0.08401499037728176,
+        "diff_neutral_sim": -0.14532209804450985
+      }
+    ]
+  },
+  {
+    "group_name": "Ritual Type-E Metonymic (Cross-cultural)",
+    "language": "en",
+    "target_type": "respect/reverence",
+    "model": "text-embedding-3-large",
+    "dimensions": 3072,
+    "n_candidates": 8,
+    "n_controls": 8,
+    "timestamp": "2026-03-13T10:51:47.332032",
+    "differential_pull": {
+      "candidate_mean": 0.1353281342071037,
+      "control_mean": 0.05005890824648393,
+      "difference": 0.08526922596061978,
+      "mann_whitney_U": 50.0,
+      "p_value": 0.032478632478632474,
+      "hedges_g": 1.0745914219244546,
+      "significant": 1
+    },
+    "pull_amplification": {
+      "candidate_mean": 0.1175882514929331,
+      "control_mean": 0.04834040325498637,
+      "difference": 0.06924784823794673,
+      "mann_whitney_U": 49.0,
+      "p_value": 0.041491841491841486,
+      "hedges_g": 0.8759060871313886,
+      "significant": 1
+    },
+    "candidate_results": [
+      {
+        "phrase": "bow deeply",
+        "head_word": "bow",
+        "mechanism": "Type E metonymic: 身体前傾 → 敬意",
+        "diff_pull": 0.25934159094880965,
+        "phrase_pull": 0.24136099159630445,
+        "head_pull": 0.022581837687606743,
+        "pull_amplification": 0.2187791539086977,
+        "diff_target_sim": 0.1607001599554649,
+        "diff_neutral_sim": -0.09864143099334473
+      },
+      {
+        "phrase": "shake hands",
+        "head_word": "shake",
+        "mechanism": "Type E metonymic: 手の接触 → 合意/信頼",
+        "diff_pull": 0.05094299108385893,
+        "phrase_pull": 0.027782788314803297,
+        "head_pull": -0.024439694630397746,
+        "pull_amplification": 0.05222248294520104,
+        "diff_target_sim": 0.01698139631021064,
+        "diff_neutral_sim": -0.03396159477364828
+      },
+      {
+        "phrase": "raise a glass",
+        "head_word": "glass",
+        "mechanism": "Type E metonymic: グラス挙上 → 祝福",
+        "diff_pull": 0.23378098256201046,
+        "phrase_pull": 0.10289247774978055,
+        "head_pull": -0.14115007220400833,
+        "pull_amplification": 0.24404254995378888,
+        "diff_target_sim": 0.04985508740079499,
+        "diff_neutral_sim": -0.18392589516121546
+      },
+      {
+        "phrase": "tip your hat",
+        "head_word": "hat",
+        "mechanism": "Type E metonymic: 帽子操作 → 敬意",
+        "diff_pull": 0.16588839466115785,
+        "phrase_pull": 0.15694061903814274,
+        "head_pull": -0.015729308746684323,
+        "pull_amplification": 0.17266992778482707,
+        "diff_target_sim": 0.08872637515747894,
+        "diff_neutral_sim": -0.07716201950367889
+      },
+      {
+        "phrase": "kneel before",
+        "head_word": "kneel",
+        "mechanism": "Type E metonymic: 膝つき → 服従/敬意",
+        "diff_pull": 0.13730721896314474,
+        "phrase_pull": 0.2541440389996561,
+        "head_pull": 0.1654088723403414,
+        "pull_amplification": 0.08873516665931469,
+        "diff_target_sim": 0.07178166645856328,
+        "diff_neutral_sim": -0.06552555250458146
+      },
+      {
+        "phrase": "stand in silence",
+        "head_word": "silence",
+        "mechanism": "Type E metonymic: 静止 → 追悼",
+        "diff_pull": 0.12099245570989663,
+        "phrase_pull": 0.15047847011594448,
+        "head_pull": 0.05896895482966702,
+        "pull_amplification": 0.09150951528627746,
+        "diff_target_sim": -0.0715721269362536,
+        "diff_neutral_sim": -0.19256458264615023
+      },
+      {
+        "phrase": "clasp hands in prayer",
+        "head_word": "prayer",
+        "mechanism": "Type E metonymic: 合掌 → 祈り/敬意",
+        "diff_pull": 0.07783300136015064,
+        "phrase_pull": 0.1529276159378323,
+        "head_pull": 0.08022957233842509,
+        "pull_amplification": 0.07269804359940721,
+        "diff_target_sim": -0.1416945625947549,
+        "diff_neutral_sim": -0.21952756395490555
+      },
+      {
+        "phrase": "salute",
+        "head_word": "salute",
+        "mechanism": "Type E metonymic: 挙手 → 敬意/忠誠",
+        "diff_pull": 0.036538438367800984,
+        "phrase_pull": 0.24768997255335096,
+        "head_pull": 0.24764080074740025,
+        "pull_amplification": 4.917180595070958e-05,
+        "diff_target_sim": 0.055570604389128656,
+        "diff_neutral_sim": 0.019032166021327672
+      }
+    ],
+    "control_results": [
+      {
+        "phrase": "bend forward",
+        "head_word": "bend",
+        "mechanism": "literal: physical movement",
+        "diff_pull": 0.049221755320257514,
+        "phrase_pull": 0.03860571570262081,
+        "head_pull": -0.0009732874230268806,
+        "pull_amplification": 0.03957900312564769,
+        "diff_target_sim": -0.05990451604217014,
+        "diff_neutral_sim": -0.10912627136242765
+      },
+      {
+        "phrase": "shake vigorously",
+        "head_word": "shake",
+        "mechanism": "literal: physical action",
+        "diff_pull": 0.03068443033116454,
+        "phrase_pull": 0.0004442498527899297,
+        "head_pull": -0.024439694630397746,
+        "pull_amplification": 0.024883944483187675,
+        "diff_target_sim": -0.07474304666831773,
+        "diff_neutral_sim": -0.10542747699948227
+      },
+      {
+        "phrase": "raise a flag",
+        "head_word": "flag",
+        "mechanism": "literal: lifting object",
+        "diff_pull": 0.09442449848028586,
+        "phrase_pull": 0.04970654405537711,
+        "head_pull": -0.02805872405604698,
+        "pull_amplification": 0.07776526811142409,
+        "diff_target_sim": -0.041965119398533875,
+        "diff_neutral_sim": -0.13638961787881973
+      },
+      {
+        "phrase": "tip the bucket",
+        "head_word": "bucket",
+        "mechanism": "literal: tilting container",
+        "diff_pull": 0.0676319091526975,
+        "phrase_pull": -0.029365873113684854,
+        "head_pull": -0.09532392586830507,
+        "pull_amplification": 0.06595805275462022,
+        "diff_target_sim": 0.011998984526284727,
+        "diff_neutral_sim": -0.055632924626412776
+      },
+      {
+        "phrase": "kneel to tie shoes",
+        "head_word": "kneel",
+        "mechanism": "literal: practical action",
+        "diff_pull": -0.09820737609550245,
+        "phrase_pull": 0.08564941190371575,
+        "head_pull": 0.1654088723403414,
+        "pull_amplification": -0.07975946043662566,
+        "diff_target_sim": -0.2106583111095538,
+        "diff_neutral_sim": -0.11245093501405135
+      },
+      {
+        "phrase": "stand in line",
+        "head_word": "line",
+        "mechanism": "literal: queuing",
+        "diff_pull": 0.13653795673986652,
+        "phrase_pull": 0.029222225303323524,
+        "head_pull": -0.11180602445718102,
+        "pull_amplification": 0.14102824976050454,
+        "diff_target_sim": 0.022138382464547898,
+        "diff_neutral_sim": -0.11439957427531863
+      },
+      {
+        "phrase": "clasp a necklace",
+        "head_word": "necklace",
+        "mechanism": "literal: fastening",
+        "diff_pull": 0.053802511815547197,
+        "phrase_pull": 0.008327183156555756,
+        "head_pull": -0.03761464199653464,
+        "pull_amplification": 0.04594182515309039,
+        "diff_target_sim": -0.12377441638755761,
+        "diff_neutral_sim": -0.1775769282031048
+      },
+      {
+        "phrase": "wave goodbye",
+        "head_word": "wave",
+        "mechanism": "literal/conventional: farewell",
+        "diff_pull": 0.06637558022755477,
+        "phrase_pull": 0.011870131008626439,
+        "head_pull": -0.059456212079415593,
+        "pull_amplification": 0.07132634308804203,
+        "diff_target_sim": -0.035348656165174915,
+        "diff_neutral_sim": -0.10172423639272969
+      }
+    ]
+  }
+]

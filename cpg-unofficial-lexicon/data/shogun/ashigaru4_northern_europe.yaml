@@ -1,0 +1,418 @@
+# CPG World Search Results — Ashigaru 4
+# Region: Northern Europe
+# Date: 2026-03-13
+# Agent: ashigaru4
+# Version: v3.0 (re-coded from v2.0; triangular x-coords + Formal vector)
+
+metadata:
+  region: "Northern Europe"
+  traditions_surveyed:
+    - name: "Old Norse kenning (skaldic poetry)"
+      language: "Old Norse"
+      sources_consulted: 6
+    - name: "Anglo-Saxon riddles (Exeter Book)"
+      language: "Old English"
+      sources_consulted: 5
+    - name: "Finnish Kalevala-meter poetry & arvoitus (folk riddles)"
+      language: "Finnish / Proto-Finnic"
+      sources_consulted: 4
+    - name: "Celtic dúnad (Irish ring composition)"
+      language: "Old Irish"
+      sources_consulted: 3
+
+items:
+  - id: "NEU_001"
+    tradition: "Old Norse kenning (skaldic poetry)"
+    language: "Old Norse"
+    host_word: "hronrád / hwælweg"
+    host_romanized: "hron-rád / hwæl-weg"
+    covert_target: "the sea / ocean"
+    x_type: [0.0, 0.4, 0.6]
+    x_rationale: "S-dominant (s=0.6): 'whale + road' generates a third concept — 'the sea as living path traversed by its inhabitants' — that neither 'whale' nor 'road' alone yields. This specific quality of the sea (as a functional path defined by who travels it) is only accessible through the compound. E component (e=0.4): the compound is a deliberate poetic invention, actively coined. No R: no taboo avoidance. Consistent with SKILL.md canonical example (r=0, e=0.4, s=0.6)."
+    y_vector: "Structural"
+    y_detail: "The sea is re-conceptualised as the functional path (rád/weg) that whales travel, analogous to roads for humans. Physical-functional property of the sea (whale habitat = whale road) mediates the mapping."
+    z_register: 3
+    z_rationale: "Attested in Beowulf line 10 ('ofer hronrade') and in multiple Old Norse skaldic stanzas. Widely quoted in modern scholarship on kennings."
+    source: "Beowulf l.10 (hronrád); cf. Meissner, Rudolf. Die Kenningar der Skalden. Bonn: Schroeder, 1921. Also: Snorri Sturluson, Skáldskaparmál."
+    notes: "One of the most famous kennings in Germanic poetry. Distinct Old Norse forms include 'sævar hreinn' (sea-path). Structural metaphor is cross-cultural but the specific compound form is distinctively Germanic."
+    confidence: "high"
+    recode_note: "v2.0 x_type=1.0 (Pure E) → v3.0 [0.0, 0.4, 0.6] (S-dominant). The compound creates 'the sea as whale-path' — a 3rd concept not reducible to either element. SKILL.md uses this kenning as its canonical S example. E component retained (active invention). S三条件確認: (1)JUXTAPOSITION: 鯨(hron)+道(rád)の二語並置✓ (2)NON-COMPOSITIONALITY: 「鯨が横断する道としての海の質感」= 鯨でも道でもない3rd概念✓ (3)CULTURAL CONVENTION: Norse/OE詩人共同体で広く共有(Beowulf,スカルド詩)✓ → S-dominant確定: 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_002"
+    tradition: "Old Norse kenning (skaldic poetry)"
+    language: "Old Norse"
+    host_word: "hrafnvín"
+    host_romanized: "hrafn-vín"
+    covert_target: "blood"
+    x_type: [0.15, 0.25, 0.6]
+    x_rationale: "S-dominant (s=0.6): 'raven + wine' generates a third concept — 'blood as the feast-drink of battle-ravens' — creating a whole tableau of battlefield-as-feast-scene that neither 'raven' nor 'wine' alone conveys. E component (e=0.25): active compound invention elevating register. R component (r=0.15): some avoidance of naming blood directly in ritual/skaldic contexts."
+    y_vector: "Behavioral+Conceptual"
+    y_detail: "Ravens (hrafn) behaviorally consume blood from corpses on the battlefield — this behavioral fact grounds the kenning. 'Vín' (wine) provides the conceptual leap: blood = ravens' drink = wine. Two-stage mapping: real-world behavior → abstract drink category."
+    z_register: 3
+    z_rationale: "Attested in multiple skaldic stanzas; catalogued in the Skaldic Project Kenning Lexicon (skaldic.abdn.ac.uk). Widely studied in Old Norse scholarship."
+    source: "Skaldic Project Kenning Lexicon. https://skaldic.abdn.ac.uk/m.php?p=kenning&i=131. Also: Clunies Ross, Margaret. A History of Old Norse Poetry and Poetics. Cambridge: D.S. Brewer, 2005."
+    notes: "Related variants: valbjórr (corpse-beer), hræsjór (corpse-sea). Together these form a system of blood kennings centred on raven-behaviour and liquid metaphors."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.8 (E-dominant) → v3.0 [0.15, 0.25, 0.6] (S-dominant). The raven+wine synthesis creates 'blood as battle-feast-drink' — a 3rd concept transforming blood into a component of nightmarish feast imagery. Blood-kenning cluster (NEU_002, NEU_003) shares this S-dominant pattern. S三条件確認: (1)JUXTAPOSITION: 鴉(hrafn)+ワイン(vín)の二語並置✓ (2)NON-COMPOSITIONALITY: 「戦場の宴の飲み物としての血」= 鴉でもワインでもない3rd概念✓ (3)CULTURAL CONVENTION: Norse詩人共同体(スカルド詩Kenning Lexicon収録)で共有✓ → S-dominant確定: 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_003"
+    tradition: "Old Norse kenning (skaldic poetry)"
+    language: "Old Norse"
+    host_word: "valbjórr / hrælœkr"
+    host_romanized: "val-bjórr / hræ-lœkr"
+    covert_target: "blood"
+    x_type: [0.1, 0.3, 0.6]
+    x_rationale: "S-dominant (s=0.6): 'corpse/carrion + beer/brook' generates a third concept — 'blood as the liquid sustenance of battlefield carnage' — not derivable from either element. The macabre humor/register elevation (corpse-beer = the drink of dead warriors) is uniquely emergent. E component (e=0.3): active compound coinage. R component (r=0.1): mild avoidance of direct blood naming."
+    y_vector: "Conceptual+Structural"
+    y_detail: "val (corpse) + bjórr (beer) = the liquid that flows from corpses, consumed by ravens = blood. hræ (corpse) + lœkr (brook) = the stream that runs from corpses = blood. Both map the structural property (flowing liquid) onto blood."
+    z_register: 3
+    z_rationale: "Catalogued in Skaldic Project. Attested in skaldic verse from the 9th–13th centuries."
+    source: "Skaldic Project Kenning Lexicon. https://skaldic.org/m.php?p=kenning&i=89. Meissner 1921."
+    notes: "Related to NEU_002 (hrafnvín). This cluster of blood kennings demonstrates systematic metaphorical extension using the raven-battlefield-liquid schema."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.8 (E-dominant) → v3.0 [0.1, 0.3, 0.6] (S-dominant). Corpse+beer/brook creates 'blood as the slaughter-flow' — a 3rd concept embedding blood in the macabre economy of battle-feast. Related to NEU_002. S三条件確認: (1)JUXTAPOSITION: 死体(val/hræ)+飲料/流れ(bjórr/lœkr)の二語並置✓ (2)NON-COMPOSITIONALITY: 「殺戮の流れとしての血」= 死体でも飲料でもない3rd概念✓ (3)CULTURAL CONVENTION: Norse/スカルド詩人共同体(9–13世紀)で共有✓ → S-dominant確定: 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_004"
+    tradition: "Old Norse kenning (skaldic poetry)"
+    language: "Old Norse"
+    host_word: "Kvasirs blóð / skáldskapar mjǫðr"
+    host_romanized: "Kvasirs blóð / skáldskap-ar mjǫðr"
+    covert_target: "poetry / poetic inspiration"
+    x_type: [0.0, 0.4, 0.6]
+    x_rationale: "S-dominant (s=0.6): 'divine blood + mead' synthesizes into a third concept — 'poetic inspiration as a divine intoxicant that can be consumed and transmitted from person to person.' Neither 'blood' nor 'mead' alone yields this concept of inspiration as a transmissible liquid. E component (e=0.4): the entire mythological narrative actively constructs and fixes this meaning — strong invention. No R."
+    y_vector: "Conceptual"
+    y_detail: "Abstract conceptual metaphor: divine intoxication → inspiration → poetry. The mead (a physical, intoxicating liquid) becomes the vehicle for an abstract cognitive state (poetic genius). The mechanism is purely conceptual — no phonetic, morphological, or color overlap."
+    z_register: 3
+    z_rationale: "Fully embedded in the Eddic corpus (Prose Edda, Skáldskaparmál). Widely known throughout Norse-speaking culture; referenced in skaldic praise poetry."
+    source: "Snorri Sturluson. Skáldskaparmál. In Prose Edda. Trans. Anthony Faulkes. London: Dent, 1987. Ch. 1-5 (Kvasir myth)."
+    notes: "The mead of poetry (Óðrœrir) has three kennings: 'Kvasir's blood', 'dwarves' drink', and 'Óðinn's booty'. This is one of the most elaborated CPG systems in any tradition — a full mythological narrative constructed to explain the kenning's covert path."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.9 (Pure E) → v3.0 [0.0, 0.4, 0.6] (S-dominant). Mythological synthesis: Kvasir's blood + brewed mead = 'inspiration as divine consumable liquid' — a 3rd concept transcending both blood and mead. E component strong but S is the mechanism generating the unique 'poetry-as-drink' concept. S三条件確認: (1)JUXTAPOSITION: 神の血(Kvasirの血)+蜂蜜酒(mjǫðr)の並置✓ (2)NON-COMPOSITIONALITY: 「伝達可能な霊感の液体=詩的才能の飲料」= 血でも蜂蜜酒でもない3rd概念✓ (3)CULTURAL CONVENTION: Norse神話共同体(Prose Edda/Skáldskaparmál)で広く共有✓ → S-dominant確定: 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_005"
+    tradition: "Old Norse kenning (skaldic poetry)"
+    language: "Old Norse"
+    host_word: "grennir gunn-más"
+    host_romanized: "grennir gunn-más"
+    covert_target: "warrior / king"
+    x_type: [0.0, 0.4, 0.6]
+    x_rationale: "S-dominant (s=0.6): tvíkent (doubly-modified kenning) creates compounding synthesis at two stages: (1) gunn-más = 'war-gull' → raven [S: neither gull nor war, but the bird that attends battles]; (2) grennir gunn-más = 'feeder of battle-ravens' → warrior [S: warrior redefined as 'the one whose violence makes ravens feast' — an emergent concept of warrior-prestige-through-carnage]. E component (e=0.4): deliberate complex construction for elite audiences. No R."
+    y_vector: "Conceptual+Behavioral"
+    y_detail: "Two-stage conceptual+behavioral mapping: (1) gunn-más = 'war-gull' = raven (ravens gather at battles = behavioral fact); (2) grennir gunn-más = 'feeder of the raven' = the warrior who creates corpses for ravens to eat. Both stages use behavioral analogy (raven as seagull of war; warrior as feeder of ravens)."
+    z_register: 3
+    z_rationale: "Attested in Snorri Sturluson's Skáldskaparmál as example of tvíkent structure. Widely cited in kenning scholarship."
+    source: "Snorri Sturluson. Skáldskaparmál. Also: Meissner 1921. Discussed in: Faulkes, Anthony. 'Kennings in Eddic Poetry.' In Edda: A Collection of Essays. Ed. R.J. Glendinning. 1983."
+    notes: "flag: true — the decoding requires knowing that (a) ravens are called 'war-gulls', and (b) warriors 'feed' ravens. Audience required deep mythological literacy. Best example of how kennings create a 'secret language' for culturally initiated listeners."
+    confidence: "high"
+    recode_note: "v2.0 x_type=1.0 (Pure E) → v3.0 [0.0, 0.4, 0.6] (S-dominant). Tvíkent demonstrates two-layer S: each stage of the compound generates an emergent 3rd concept. The warrior-as-raven-feeder concept is only accessible through both layers of synthesis. S三条件確認(tvíkent=二段階S合成): Stage1: (1)戦争(gunn)+カモメ(más)の並置✓ (2)「戦場の鳥=鴉」= 戦争でもカモメでもない3rd概念✓ (3)Norse詩人共同体✓; Stage2: (1)養い手(grennir)+戦場鴉(gunn-más)の並置✓ (2)「鴉を養う者=英雄的殺戮者」= 養い手でも鴉でもない3rd概念✓ (3)Norse詩人共同体(Skáldskaparmál)✓ → 二重S-dominant確定: 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_006"
+    tradition: "Old Norse kenning (skaldic poetry)"
+    language: "Old Norse"
+    host_word: "beinhjálmr / valr used for 'horse'"
+    host_romanized: "valr (falcon) → horse (via mythological confusion)"
+    covert_target: "horse (via mythological name overlap)"
+    x_type: [0.0, 0.6, 0.4]
+    x_rationale: "E-dominant (e=0.6): the poet exploits an existing name-overlap — valr is both 'falcon' (common noun) and a mythological horse's proper name. The poetic use of valr to mean 'horse' is an active exploitation of this homonymy. S component (s=0.4): the overlap between falcon and horse creates an unusual mythological association (swift/soaring creature → powerful steed) that transcends either meaning alone. No R: no taboo avoidance in this case."
+    y_vector: "Phonetic+Conceptual"
+    y_detail: "Old Norse valr means 'falcon', but Old Norse mythology also records a horse named Valr. In poetry, valr sometimes means 'horse' through the conceptual/mythological overlap. Phonetic identity + mythological conceptual transfer."
+    z_register: 2
+    z_rationale: "Specialist knowledge — requires knowing the mythological horse's name. Would be understood in skaldic performance contexts but not everyday speech."
+    source: "Wikipedia. 'Kenning'. https://en.wikipedia.org/wiki/Kenning. Also: The Old Norse World: A. A modern definition of the kenning. Skaldic Project. https://skaldic.abdn.ac.uk/m.php?p=doconw&i=739"
+    notes: "flag: true — this is an edge case. The dual-path arises from mythological naming rather than deliberate compositional strategy. Ambiguous as CPG item: may be a poet's deliberate exploitation of the homonym, or may be genuine semantic drift."
+    confidence: "medium"
+    recode_note: "v2.0 x_type=0.5 (Hybrid, ambiguous) → v3.0 [0.0, 0.6, 0.4] (E-dominant). Revised: the exploitation of the homonym is primarily E (using an existing dual-meaning word). S component: the falcon-horse mythological connection generates a new poetic association. R removed: no taboo avoidance is present — the original 0.5 hybrid conflated 'ambiguity' with R direction incorrectly. S三条件確認(E-dominantだがS成分s=0.4): (1)JUXTAPOSITION: 鷹名(valr)+神話的馬名(Valr)の音名重複による並置✓ (2)NON-COMPOSITIONALITY: 「飛翔する速力」という鷹と馬を架橋する属性概念が微弱に存在✓ (3)CULTURAL CONVENTION: Norse神話共同体での名称重複共有✓ → S成分(s=0.4)確認済み・E-dominant維持: 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_007"
+    tradition: "Anglo-Saxon riddles (Exeter Book)"
+    language: "Old English"
+    host_word: "Exeter Book Riddle 25 — ānpæð + wigan"
+    host_romanized: "Riddle 25 (Old English): 'Ic eom wunderlicu wiht... wifum on hyhte' (I am a wondrous creature... a joy to women)"
+    covert_target: "sexual (phallus) — overt solution: onion (ċiep / lēac)"
+    x_type: [0.9, 0.05, 0.05]
+    x_rationale: "R-dominant (r=0.9): the sexual meaning (penis) retreats into the innocent description of an onion. The taboo/sexual meaning exists first and seeks shelter in the innocent object description. Classic avoidance CPG. Minimal E (e=0.05): slight poetic skill in crafting the dual description. Minimal S (s=0.05): the dual readings co-exist structurally but do not generate a third meaning."
+    y_vector: "Morphological+Structural"
+    y_detail: "Physical shape (long, cylindrical, hung) + structural function (inserted, causes sensation) maps onion→phallus. The riddle text describes the onion in terms that exploit its phallic morphology ('hung by a man's thigh', 'hole in front')."
+    z_register: 3
+    z_rationale: "Written in the Exeter Book (10th century manuscript). Extensively studied in modern scholarship; widely quoted in Old English literature courses."
+    source: "Exeter Book Riddles. University of Chicago. https://penelope.uchicago.edu/encyclopaedia_romana/britannia/anglo-saxon/flowers/enigmata.html. Also: Wikipedia 'Exeter Book Riddle 25'. GradeSaver Exeter Book Study Guide."
+    notes: "The riddle's overt solution is 'onion', but the sexual reading is intentionally invited. Scholars debate whether the sexual or innocent reading is primary. The dual-path is the poem's entire compositional strategy."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.1 (Pure R, scalar) → v3.0 [0.9, 0.05, 0.05]. Conversion: old x_type=0.1 (near-zero = Pure R) maps to r=0.9 in new system. No substantive reclassification."
+
+  - id: "NEU_008"
+    tradition: "Anglo-Saxon riddles (Exeter Book)"
+    language: "Old English"
+    host_word: "Exeter Book Riddle 44 — key/lock riddle"
+    host_romanized: "Riddle 44: 'Wiht is wrætlic... wæpned guma' (A wondrous thing hangs by a man's thigh)"
+    covert_target: "sexual (male genitalia / sexual act) — overt solution: key and lock"
+    x_type: [0.9, 0.05, 0.05]
+    x_rationale: "R-dominant (r=0.9): sexual meaning encoded into an innocent key/lock description. Taboo reference (genitalia) retreats into functional object description. Minimal E and S: the composition skill is minimal (same structural logic as all double-entendre riddles), and the two readings are parallel rather than generative of a third."
+    y_vector: "Structural+Morphological"
+    y_detail: "Functional/structural analogy: key inserts into lock (structural function = sexual penetration). Morphological: key shape → phallic shape. The riddle exploits both the shape and the functional relationship."
+    z_register: 3
+    z_rationale: "Attested in the Exeter Book (10th c.). Widely studied for evidence of Anglo-Saxon attitudes to sexuality."
+    source: "Wikipedia. 'Exeter Book Riddle 44'. https://en.wikipedia.org/wiki/Exeter_Book_Riddle_44. Also: GradeSaver. Exeter Book Study Guide."
+    notes: "Scholars cite this as 'rare evidence for Anglo-Saxon attitudes to sexuality'. The double entendre is intentional and structurally complete — the riddle works as both a key description and a sexual description simultaneously."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.1 → v3.0 [0.9, 0.05, 0.05]. Conversion: Pure R scalar → r-dominant triangular. No substantive reclassification."
+
+  - id: "NEU_009"
+    tradition: "Anglo-Saxon riddles (Exeter Book)"
+    language: "Old English"
+    host_word: "Exeter Book Riddle 45 — dough/bread riddle"
+    host_romanized: "Riddle 45: 'Ic on wincle gefrægn... under hrægle hreran' (I heard of a young man... lifting her dress)"
+    covert_target: "sexual encounter (woman initiated) — overt solution: dough (hlāf-weard / 'bread-warden')"
+    x_type: [0.9, 0.05, 0.05]
+    x_rationale: "R-dominant (r=0.9): the bread-kneading action encodes the sexual act. The sexual meaning retreats into the domestic, innocent description of bread preparation. Minimal E and S."
+    y_vector: "Behavioral+Structural"
+    y_detail: "Kneading action (rhythmic, physical manipulation) maps structurally and behaviorally onto sexual action. The description of 'lifting her dress' and 'a strapping lad coming to where she stood in the corner' encodes sexual initiation by female character."
+    z_register: 3
+    z_rationale: "Attested in Exeter Book. Scholarly significance: cited as evidence for Anglo-Saxon attitudes to female sexual agency/initiative."
+    source: "Wikipedia. 'Exeter Book Riddle 45'. https://en.wikipedia.org/wiki/Exeter_Book_Riddle_45. Also: GradeSaver Exeter Book Study Guide."
+    notes: "Notable for encoding female sexual initiative — scholar note it 'provides rare evidence for women taking the initiative in heterosexual sex' in early medieval England. The CPG encodes a socially sensitive meaning (active female sexuality) through domestic labor metaphor."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.1 → v3.0 [0.9, 0.05, 0.05]. Conversion: Pure R scalar → r-dominant triangular. No substantive reclassification."
+
+  - id: "NEU_010"
+    tradition: "Anglo-Saxon riddles (Exeter Book)"
+    language: "Old English"
+    host_word: "Exeter Book Riddle 37 — bellows riddle"
+    host_romanized: "Riddle 37: 'Ic þa wiht geseah... wræstlice gewundenne' (I saw a creature wondrously wrought)"
+    covert_target: "sexual / phallic (bellows described in sexual terms) — overt solution: bellows (blæst-bealg)"
+    x_type: [0.85, 0.05, 0.1]
+    x_rationale: "R-dominant (r=0.85): sexual meaning retreats into description of bellows. Minimal S (s=0.1): the expanding/contracting dual-action of bellows (inflate/deflate) has a slightly synthetic quality — 'the rhythmic breathing machine' generates a faint third concept beyond both the literal bellows and the sexual act — the concept of life-breath-as-sex-act is marginally present. Minimal E."
+    y_vector: "Morphological+Behavioral"
+    y_detail: "Bellows' morphology (elongated, expandable) and behavior (rhythmic inflation/deflation through repeated manual action) maps to sexual physiology and action."
+    z_register: 3
+    z_rationale: "Attested in the Exeter Book. Listed among riddles with prominent double entendre in scholarly literature."
+    source: "Wikipedia. 'Exeter Book Riddles'. https://en.wikipedia.org/wiki/Exeter_Book_Riddles. Exeter Book Riddles, University of Chicago."
+    notes: "The bellows was a common domestic/smithing tool; the innocent answer would be immediately known to Anglo-Saxon audiences. The double reading was the entertainment value."
+    confidence: "medium"
+    recode_note: "v2.0 x_type=0.1 → v3.0 [0.85, 0.05, 0.1]. Minimal S component added (0.1) for the bellows' breath-rhythm having a faint generative quality. Predominantly R conversion."
+
+  - id: "NEU_011"
+    tradition: "Anglo-Saxon kenning (Beowulf)"
+    language: "Old English"
+    host_word: "bānhūs"
+    host_romanized: "bān-hūs (bone-house)"
+    covert_target: "human body"
+    x_type: [0.0, 0.4, 0.6]
+    x_rationale: "S-dominant (s=0.6): 'bone + house' generates a third concept — 'the body as an architectural dwelling whose structural frame is the skeleton.' Neither 'bone' nor 'house' alone yields this concept of the body as an inhabited structure. E component (e=0.4): deliberately coined as poetic compound; the word-creation is an active invention. No R."
+    y_vector: "Structural"
+    y_detail: "Structural metaphor: the body IS a house for bones (bones are the structure/skeleton within the body-as-dwelling). The functional/architectural property of a house (container, structural frame) maps onto the body."
+    z_register: 3
+    z_rationale: "Attested in Beowulf and other Old English texts. Widely studied in literary education."
+    source: "Beowulf. Trans. Seamus Heaney. London: Faber, 1999. Also: ancient-literature.com. 'Kennings in Beowulf'. https://ancient-literature.com/kennings-in-beowulf/"
+    notes: "This kenning demonstrates that Anglo-Saxon kennings (like Old Norse ones) encode a structural conceptual mapping. 'Body as house' is cross-cultural but the specific compound bānhūs is distinctively Old English."
+    confidence: "high"
+    recode_note: "v2.0 x_type=1.0 (Pure E) → v3.0 [0.0, 0.4, 0.6] (S-dominant). Bone+house generates 'body as architectural bone-dwelling' — a 3rd concept transcending either element. E component retained for the deliberate compound coinage. S三条件確認: (1)JUXTAPOSITION: 骨(bān)+家(hūs)の二語並置✓ (2)NON-COMPOSITIONALITY: 「骨格を構造体とする建築的住居としての身体」= 骨でも家でもない3rd概念✓ (3)CULTURAL CONVENTION: OE詩人共同体(Beowulf他)で広く共有✓ → S-dominant確定: 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_012"
+    tradition: "Anglo-Saxon kenning (Beowulf)"
+    language: "Old English"
+    host_word: "beadu-swāt / gūð-swāt"
+    host_romanized: "beadu-swāt (battle-sweat) / gūð-swāt (war-sweat)"
+    covert_target: "blood"
+    x_type: [0.1, 0.3, 0.6]
+    x_rationale: "S-dominant (s=0.6): 'battle/war + sweat' generates a third concept — 'blood as the exertional output of combat, the body's labor-fluid of violence.' Neither 'battle' nor 'sweat' yields this reframing of blood as labor rather than destruction. E component (e=0.3): active poetic compound. R component (r=0.1): mild avoidance of naming blood directly in elevated poetic register."
+    y_vector: "Conceptual+Structural"
+    y_detail: "Battle makes the body work → sweat is the body's exudate under effort → blood is the body's exudate under violence. Structural parallel: sweat : exertion :: blood : combat. The metaphor re-frames blood as a sign of effort/labour rather than destruction."
+    z_register: 3
+    z_rationale: "Beowulf: 'when the blood gushes o'er it, battle-sweat hot'. Widely attested in Old English scholarship."
+    source: "Beowulf. Ed. C.L. Wrenn. London: Harrap, 1958. Also: David G. Simpson. 'The Use of Kennings in Anglo-Saxon Literature'. http://davidgsimpson.com/ref/kennings.pdf"
+    notes: "Companion to 'slaughter-dew' (wæl-dēaw). Both kennings reframe blood through the lens of bodily secretion (sweat/dew), creating a register elevation that avoids the brutality of direct reference."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.8 (E-dominant) → v3.0 [0.1, 0.3, 0.6] (S-dominant). Battle+sweat generates 'blood as the body's labor-fluid in war' — a 3rd concept reframing blood as exertion rather than destruction. Related to Old Norse blood-kenning cluster (NEU_002, NEU_003). S三条件確認: (1)JUXTAPOSITION: 戦闘(beadu/gūð)+汗(swāt)の二語並置✓ (2)NON-COMPOSITIONALITY: 「暴力の労働流体としての血」= 戦闘でも汗でもない3rd概念(血を労苦の産物として再定義)✓ (3)CULTURAL CONVENTION: OE詩人共同体(Beowulf等)で共有✓ → S-dominant確定: 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_013"
+    tradition: "Finnish arvoitus (folk riddles)"
+    language: "Finnish"
+    host_word: "kaivo-arvoitus (draw-well riddle)"
+    host_romanized: "kaivo-arvoitus"
+    covert_target: "sexual (copulation / male genitalia in oral contact)"
+    x_type: [0.9, 0.05, 0.05]
+    x_rationale: "R-dominant (r=0.9): the sexual meaning retreats into the description of a draw well. Taboo content (sexual act) encoded in innocent domestic-technology description. Minimal E and S."
+    y_vector: "Structural+Behavioral"
+    y_detail: "Structural: draw well has a long rope + bucket (plunging object) + vessel (well-shaft). Behavioral: the action of drawing water (plunging, lifting, the visual arrangement) maps to sexual positions/acts. The specific riddle text ('woman on ground, man in tree, man's balls in woman's mouth') encodes the visual arrangement of well-rope-bucket as sexual configuration."
+    z_register: 3
+    z_rationale: "Collected by Christfrid Ganander in 'Aenigmata Fennica' (1783). Archive of 117,300 Finnish riddles held at the Finnish Literature Society. Widely cited in Finnic riddle scholarship."
+    source: "Ganander, Christfrid. Aenigmata Fennica. 1783. Also: Wikipedia. 'Finnic riddles'. https://en.wikipedia.org/wiki/Finnic_riddles. Kaivola-Bregenhøj, Annikki. Riddles: Perspectives on the Use, Function and Change in a Folklore Genre. Finnish Literature Society, 2001."
+    notes: "The innocent answer (draw well) is so culturally obvious to Finnish audiences that the sexual reading is immediate — the riddle's humour operates through the listener holding both paths simultaneously. Among 'most popular innocent answers' in Finnish folk riddles."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.1 → v3.0 [0.9, 0.05, 0.05]. Conversion: Pure R scalar → r-dominant triangular. No substantive reclassification."
+
+  - id: "NEU_014"
+    tradition: "Finnish arvoitus (folk riddles)"
+    language: "Finnish"
+    host_word: "kirnuamis-arvoitus (churning riddle)"
+    host_romanized: "kirnuamis-arvoitus"
+    covert_target: "sexual act (rhythmic penetration)"
+    x_type: [0.9, 0.05, 0.05]
+    x_rationale: "R-dominant (r=0.9): sexual meaning hidden within description of butter churning. The taboo action (sex) encoded in a domestic female labor activity. Minimal E and S."
+    y_vector: "Behavioral+Structural"
+    y_detail: "Churning butter requires a dasher (long implement) repeatedly plunged into a churn (cylindrical vessel) — this action is structurally and behaviorally isomorphic with coitus. The rhythm, the up-down motion, the implement-in-vessel configuration all enable the mapping."
+    z_register: 2
+    z_rationale: "Folk riddle tradition; performed in social/seasonal contexts (household gatherings, winter evenings). Not formally published until Ganander 1783 (and 39 such riddles were censored from later editions)."
+    source: "Kaivola-Bregenhøj, Annikki. 'Riddles and Humour'. Folklore: Electronic Journal of Folklore vol.69 (2017). http://www.folklore.ee/folklore/vol69/kaivola_bregenhoj.pdf. Also: Finnic riddles — Wikipedia."
+    notes: "The fact that Ganander was forced to censor 39 riddles from the second edition (considered 'improper and banal') demonstrates that this tradition was recognized as containing explicit covert sexual paths. Z=2 because performance was contextual (household/seasonal) rather than fully public."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.1 → v3.0 [0.9, 0.05, 0.05]. Conversion: Pure R scalar → r-dominant triangular. No substantive reclassification."
+
+  - id: "NEU_015"
+    tradition: "Finnish Kalevala-meter poetry"
+    language: "Finnish / Proto-Finnic"
+    host_word: "Sampo"
+    host_romanized: "Sampo"
+    covert_target: "world-axis / cosmic mill / shamanic drum (multiple competing interpretations)"
+    x_type: [0.2, 0.3, 0.5]
+    x_rationale: "S-dominant (s=0.5): 'mill + cosmic/mythological context' synthesizes into 'the force that grinds out sustenance to maintain the universe' — a third concept transcending both mill mechanism and cosmic axis individually. E component (e=0.3): mythological narrative actively constructs the Sampo's meaning. R component (r=0.2): shamanic/esoteric readings retreat behind the accessible mill narrative for uninitiated audiences."
+    y_vector: "Conceptual+Structural"
+    y_detail: "The Sampo 'grinds out flour, salt, and gold' — its structural function (a mill producing sustenance and wealth) maps to the cosmic world-axis that sustains the universe. Alternatively, it maps to the mythological world-tree (structural: central pole) or a shamanic drum (structural: beaten object). Multiple conceptual mappings simultaneously active."
+    z_register: 3
+    z_rationale: "Central to the Kalevala (runes 10, 38-42). Subject of ongoing academic debate; widely referenced in Finnish cultural identity discourse."
+    source: "Wikipedia. 'Kalevala'. https://en.wikipedia.org/wiki/Kalevala. Britannica. 'Kalevala'. https://www.britannica.com/topic/Kalevala. Gough, Andrew. 'Curiosities of the Kalevala: Shamanism, Bees, Resurrection and the Sampo'. https://andrewgough.co.uk/kalevala/"
+    notes: "flag: true — the covert path of 'Sampo' is genuinely contested. The item is included because the scholarly literature agrees that 'Sampo' encodes a hidden cosmological meaning beyond its surface (a magical mill), but the specific covert target is disputed. Confidence medium because covert_target is multiple/unclear."
+    confidence: "medium"
+    recode_note: "v2.0 x_type=0.7 (Hybrid) → v3.0 [0.2, 0.3, 0.5] (S-dominant). Mill+cosmic context generates 'world-sustaining grinding force' as 3rd concept. R component reduced slightly (from implicit ~0.3 to 0.2); S elevated from rough equivalent of 0.35 to 0.5. S三条件確認: (1)JUXTAPOSITION: 臼/粉砕機能(機械的)+宇宙的神話文脈の並置✓ (2)NON-COMPOSITIONALITY: 「宇宙の維持を行う世界中心力」= 臼でも宇宙軸でもない3rd概念✓ (3)CULTURAL CONVENTION: Kalevala圏Finnish共同体で共有(covert_target複数のためconfidence medium維持)✓ → S-dominant確定: 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_016"
+    tradition: "Finnish Kalevala-meter poetry"
+    language: "Finnish"
+    host_word: "tulen synty (birth of fire)"
+    host_romanized: "tulen synty"
+    covert_target: "shamanic initiation / descent into the underworld"
+    x_type: [0.3, 0.2, 0.5]
+    x_rationale: "S-dominant (s=0.5): 'fire journey + cosmic path structure' synthesizes into 'the shamanic initiation as a descent following fire's path' — the fire narrative and the shamanic journey map onto each other, generating a third concept (power-descent-as-fire) not present in either element alone. R component (r=0.3): the initiatory/shamanic reading retreats behind the public cosmological fire-birth narrative. E component (e=0.2): some poetic construction, but less active than Sampo."
+    y_vector: "Conceptual+Structural"
+    y_detail: "Fire's physical journey (heaven → earth surface → underworld Manala) structurally maps to the shamanic trance journey (ordinary world → trance descent → underworld). The path of fire = the shaman's path. Fire (tulen) = shamanic power/inspiration. Manala (underworld) = the shaman's destination."
+    z_register: 2
+    z_rationale: "Ritual/shamanistic context — performed by skilled runo singers in specific ceremonial contexts. The shamanic reading is for initiated listeners; the cosmological fire-origin narrative is accessible to wider audiences."
+    source: "Spirit Boat: The Rise of Kalevala Era Shamanism. https://www.spiritboat.ca/2012/04/the-rise-of-kalevala-era-shamanism.html. Also: University of Texas. Shamans of the Kalevala. https://www.laits.utexas.edu/sami/diehtu/siida/shaman/kalev.htm. Tarkka, Lotte. 'The Field of Song and the Four-Legged Horse'. Classics@ Journal. https://classics-at.chs.harvard.edu/classics14-tarkka/"
+    notes: "flag: true — the shamanic interpretation is scholarly inference, not directly attested in the text. The CPG here is reconstructed from performance context rather than explicit textual evidence. Still valuable as a case of structural dual-path encoding in oral epic."
+    confidence: "medium"
+    recode_note: "v2.0 x_type=0.6 (Hybrid) → v3.0 [0.3, 0.2, 0.5] (S-dominant). Fire-path + cosmic descent = shamanic initiation path (3rd concept). R component increased slightly (from implicit ~0.25 to 0.3) to reflect the initiatory knowledge retreating behind public myth. S三条件確認: (1)JUXTAPOSITION: 火の天地下降路(宇宙的)+シャーマンの旅路の並置✓ (2)NON-COMPOSITIONALITY: 「シャーマンの力下降路としての火の経路」= 火でも宇宙的道でもない3rd概念✓ (3)CULTURAL CONVENTION: Kalevala期シャーマン共同体(runo歌手)で共有(scholarly inferenceのためconfidence medium維持)✓ → S-dominant確定: 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_017"
+    tradition: "Celtic dúnad (Irish ring composition)"
+    language: "Old Irish"
+    host_word: "dúnad / dúnadh"
+    host_romanized: "dúnad (closing)"
+    covert_target: "semantic equivalence between opening and closing subjects / circular time"
+    x_type: [0.1, 0.3, 0.6]
+    x_rationale: "S-dominant (s=0.6): dúnad is the canonical Formal-vector synthesis — the poem's opening phrase + closing return generates a third concept (circular time / semantic equivalence of beginning and end) that neither opening nor closing alone carries. The form itself synthesizes the meaning. E component (e=0.3): formal invention — the bardic school tradition deliberately created and taught this device. R component (r=0.1): minimal; slight avoidance of stating the equivalence explicitly (the form does the work). Following task instruction (暫定: r=0.1, e=0.3, s=0.6)."
+    y_vector: "Formal"
+    y_detail: "★Formal vector (v3.0 addition): the dúnad device uses structural/compositional form as the covert path. The ring-composition (poem ends with opening phrase) IS the covert mechanism — the structure encodes 'circular time / semantic equivalence' without any lexical statement. This is form-level CPG, not content-level CPG. The 'host' is the poem's structure; the 'covert meaning' is the formal claim that end = beginning."
+    z_register: 3
+    z_rationale: "Standard feature of Irish dán díreach (formal verse) from 12th–17th centuries. Taught in bardic schools (the Bardic School system); required knowledge for certification as an ollam (master poet)."
+    source: "Wikipedia. 'Irish syllabic poetry'. https://en.wikipedia.org/wiki/Irish_syllabic_poetry. Wikipedia. 'Dán Díreach'. https://en.wikipedia.org/wiki/D%C3%A1n_D%C3%ADreach. Britannica. 'Celtic literature'. https://www.britannica.com/art/Celtic-literature."
+    notes: "The dúnad is unusual among CPG cases: the covert path is STRUCTURAL rather than lexical. The 'host word' is the poem's form; the covert meaning is semantic equivalence/circularity. This is a rare case of form-level CPG rather than word-level CPG."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.9 (Pure E) → v3.0 [0.1, 0.3, 0.6] (S-dominant). MAJOR CHANGE: y_vector 'Structural' → 'Formal' (v3.0 Formal vector). Dúnad is the founding justification for introducing the Formal vector. X-axis: formal constraint = structural synthesis of beginning+end → circular time concept (3rd concept). Following explicit task instruction for x_coords. S三条件確認(Formal vector): (1)JUXTAPOSITION: 詩の開始句+閉じの回帰句という構造的二要素の並置✓ (2)NON-COMPOSITIONALITY: 「始まりと終わりの等価性/循環する時間」= 開始句でも閉じ句でもない3rd概念✓ (3)CULTURAL CONVENTION: アイルランドBardic School共同体で規定・教授・共有✓ → S-dominant確定(Formal vector定義事例): 裁定[2]"
+    needs_gunshi_review: true
+
+  - id: "NEU_018"
+    tradition: "Celtic dúnad (Irish ring composition — case study)"
+    language: "Old Irish"
+    host_word: "Pangur Bán (9th century Irish poem)"
+    host_romanized: "messe ocus Pangur Bán (I and Pangur Bán)"
+    covert_target: "equivalence of scholar's intellectual pursuit and cat's physical hunting; monastic life = hunter's life"
+    x_type: [0.1, 0.3, 0.6]
+    x_rationale: "S-dominant (s=0.6): the dúnad structure synthesizes scholar and cat: opening 'I and Pangur Bán' + closing return generates a third concept — 'intellectual pursuit = physical pursuit = both are forms of the same hunting drive' — accessible only through the structural return. Neither scholar nor cat alone carries this equivalence-concept. E component (e=0.3): the poem is a deliberate formal construction asserting this equivalence through the dúnad device. R component (r=0.1): the philosophical claim (monk's life = hunter's life) retreats behind the charming surface of a monk-and-cat poem. Following task instruction (暫定: r=0.1, e=0.3, s=0.6)."
+    y_vector: "Formal+Conceptual"
+    y_detail: "★Formal vector (primary, v3.0 addition): ring composition (dúnad) creates formal equivalence between the scholar's mouse-hunting (hunting for knowledge) and the cat's mouse-hunting (literal). The structural return at poem's end makes the conceptual claim: intellectual pursuit = physical pursuit. ★Conceptual vector (secondary): the philosophical concept 'understanding = catching' — an abstract conceptual metaphor — is reinforced by the formal structure and operates as a secondary channel."
+    z_register: 3
+    z_rationale: "Written c. 9th century; preserved in Reichenau Primer manuscript. Widely anthologized in Celtic literature scholarship; Robin Flower translation (1926) widely known."
+    source: "Robin Flower (trans.). Poems and Translations. London: Constable, 1926. Also: Meyer, Kuno. Selections from Ancient Irish Poetry. London: Constable, 1911. Project Gutenberg. https://gutenberg.org/files/32030/32030-h/32030-h.htm"
+    notes: "Classic example of dúnad creating a covert semantic layer. The poem appears to be simple (a monk and his cat), but the structural dúnad encodes the philosophical claim: the scholar's life and the cat's life are fundamentally equivalent activities. A rare case of formal structure as CPG vehicle."
+    confidence: "high"
+    recode_note: "v2.0 x_type=0.9 (Pure E) → v3.0 [0.1, 0.3, 0.6] (S-dominant). MAJOR CHANGE: y_vector 'Structural+Conceptual' → 'Formal+Conceptual' (Formal now primary). The dúnad's ring-structure is form-level CPG; the conceptual monk=cat equivalence is secondary channel. Same x_coords as NEU_017 per task instruction. S三条件確認(Formal+Conceptual): (1)JUXTAPOSITION: 学者の知的探求+猫の物理的狩りという二活動の構造的回帰による並置✓ (2)NON-COMPOSITIONALITY: 「知的探求=物理的狩り=同一の根源的行為」= 学者でも猫でもない3rd概念(等価性命題)✓ (3)CULTURAL CONVENTION: アイルランド修道院共同体(dúnad作法共有)で共有✓ → S-dominant確定(Formal+Conceptual複合事例): 裁定[2]"
+    needs_gunshi_review: true
+
+summary:
+  total_items: 18
+  schema_version: "v3.0"
+  type_distribution:
+    r_dominant: 6   # items with r >= 0.6: NEU_007, NEU_008, NEU_009, NEU_010, NEU_013, NEU_014
+    e_dominant: 1   # items with e >= 0.6: NEU_006
+    s_dominant: 12  # items with s >= 0.4: NEU_001-005, NEU_006, NEU_011-012, NEU_015-018
+    hybrid: 0       # no items with no single dimension >= 0.6 and s < 0.4
+    note: "NEU_006 is counted in both e_dominant (e=0.6) and s_dominant (s=0.4) — categories are not mutually exclusive per SKILL.md schema."
+  vector_distribution:
+    Structural: 11     # NEU_001, NEU_003, NEU_007, NEU_008, NEU_009, NEU_011, NEU_012, NEU_013, NEU_014, NEU_015, NEU_016
+    Conceptual: 9      # NEU_002, NEU_003, NEU_004, NEU_005, NEU_006, NEU_012, NEU_015, NEU_016, NEU_018
+    Behavioral: 6      # NEU_002, NEU_005, NEU_009, NEU_010, NEU_013, NEU_014
+    Morphological: 3   # NEU_007, NEU_008, NEU_010
+    Formal: 2          # NEU_017 (pure Formal), NEU_018 (Formal+Conceptual) — v3.0 new vector
+    Phonetic: 1        # NEU_006
+    compound_notes: "Most items carry compound vectors. Structural remains dominant across all four sub-traditions. Formal vector introduced for dúnad (NEU_017-018): first confirmed Formal-vector items in Northern Europe dataset."
+  register_distribution:
+    low: 0    # z=1: no items
+    mid: 2    # z=2: NEU_014, NEU_016
+    high: 16  # z=3: all others
+  needs_gunshi_review_count: 12
+  needs_gunshi_review_ids:
+    - "NEU_001"  # whale-road: paradigm E→S reclassification
+    - "NEU_002"  # hrafnvín: E→S reclassification
+    - "NEU_003"  # val-bjórr: E→S reclassification
+    - "NEU_004"  # Kvasir mead: E→S reclassification
+    - "NEU_005"  # grennir gunn-más: E→S tvíkent synthesis
+    - "NEU_006"  # valr-horse: R-removed, E/S only
+    - "NEU_011"  # bānhūs: E→S reclassification
+    - "NEU_012"  # beadu-swāt: E→S reclassification
+    - "NEU_015"  # Sampo: contested covert target + S reclassification
+    - "NEU_016"  # tulen synty: S reclassification
+    - "NEU_017"  # dúnad: Formal vector (defining case)
+    - "NEU_018"  # Pangur Bán: Formal+Conceptual (defining case)
+  key_findings: |
+    v3.0 re-coding reveals that Northern Europe is strongly S-dominant in its kenning tradition,
+    reversing the v2.0 characterization of kennings as Pure E. The key insight: kenning compounds
+    (A+B → C) are archetypal synthesis operations — the compound generates a third concept neither
+    element carries alone. All six core kenning items (NEU_001-005, NEU_011-012) have been
+    reclassified as S-dominant with s=0.5-0.6. This aligns with SKILL.md's canonical example
+    (whale-road: s=0.6) which was already signalling this reclassification direction.
+
+    The most significant structural discovery is the Formal vector in the dúnad items (NEU_017-018).
+    These are the first confirmed form-level CPG items in the dataset: the covert path is encoded
+    in the poem's compositional structure (ring composition), not in any lexical content. The
+    dúnad is the founding justification for v3.0's Formal vector addition — a unique mechanism
+    absent from all other Northern European sub-traditions. Gunshi review requested for these items
+    as they define the Formal vector category.
+
+    The R-dominant cluster (6 items, 33%) — all riddle traditions (Anglo-Saxon and Finnish arvoitus)
+    — remains unchanged in direction but is now expressed as triangular coordinates [0.85-0.9, ~0.05,
+    ~0.05-0.1]. These items are unambiguous Pure R cases with no significant reclassification.
+
+    Overall shift in x-distribution: v2.0 characterized Northern Europe as 50% Pure E, 33% Pure R,
+    17% Hybrid. v3.0 reveals: 67% S-dominant (12/18), 33% R-dominant (6/18), 6% E-dominant (1/18).
+    The kenning tradition is not primarily an "enchantment" tradition — it is a synthesis tradition.
+    The binary compound form (A+B→C) is the fundamental synthesis engine.
+  s_three_conditions_verification:
+    status: "完了 — 裁定[2]確認"
+    date: "2026-03-13"
+    task_id: "subtask_005d"
+    kenning_items_verified: 12  # NEU_001-006, NEU_011-012, NEU_015-018
+    result: "全12件にS三条件(JUXTAPOSITION/NON-COMPOSITIONALITY/CULTURAL CONVENTION)注記を付与。
+      全件で三条件を満たすことを確認。NEU_006のみE-dominant(e=0.6)だが、S成分(s=0.4)は三条件を満たす。"
+  remaining_items_s_check:
+    items_checked: [NEU_007, NEU_008, NEU_009, NEU_010, NEU_013, NEU_014]
+    tradition: "Anglo-Saxon riddles (NEU_007-010) + Finnish arvoitus (NEU_013-014)"
+    result: "二語並置型S成分なし — 全6件がR-dominantであることを再確認。
+      これらの項目はすべて単一対象描写の二重読み(R方向)であり、複合語による第三概念生成(S方向)は存在しない。
+      NEU_010のみs=0.1の微小S成分(bellowsの呼吸リズムの生成的性質)を持つが、R-dominantの判定を変えるには至らない。
+      Finnish Kalevala arvoitus(NEU_013-014)にも未コーディングの二語並置型は確認されなかった。"
+    new_s_items_found: 0
+  ambiguous_items:
+    - "NEU_006"   # valr as horse — genuine semantic dual-path or mythological naming accident?
+    - "NEU_015"   # Sampo — covert target genuinely contested among scholars
+    - "NEU_016"   # tulen synty — shamanic reading is scholarly inference, not directly attested

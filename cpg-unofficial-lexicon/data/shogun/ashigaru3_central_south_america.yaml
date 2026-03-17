@@ -1,0 +1,416 @@
+# CPG World Search Results — Ashigaru 3
+# Region: Central/South America
+# Date: 2026-03-13
+# Agent: ashigaru3
+# Version: v3.0 (re-coded 2026-03-13)
+
+metadata:
+  region: "Central/South America"
+  traditions_surveyed:
+    - name: "Nahuatl Difrasismo"
+      language: "Classical Nahuatl"
+      sources_consulted: 6
+    - name: "Quechua Ritual Language"
+      language: "Quechua (Southern / Colonial)"
+      sources_consulted: 5
+    - name: "Maya Rhetorical Couplets (Diphrasis)"
+      language: "Classic Maya / Colonial Yucatec Maya"
+      sources_consulted: 6
+
+items:
+  # ============================================================
+  # NAHUATL DIFRASISMO (8 items)
+  # ============================================================
+
+  - id: "NAH_001"
+    tradition: "Nahuatl Difrasismo"
+    language: "Classical Nahuatl"
+    host_word: "in xochitl, in cuicatl"
+    host_romanized: "in xochitl, in cuicatl"
+    covert_target: "Poetry; the highest form of human truth; the medium through which one can approach divine reality (teotl)"
+    x_type: [0.0, 0.3, 0.7]
+    x_rationale: "S-dominant (0.7): two aesthetic objects (flower, song) are paired in the XiX difrasismo structure to synthesize 'poetry/divine truth' — a third concept neither term alone carries. E-component (0.3): the philosophical/rhetorical invention involved in assigning cosmological significance. Task YAML explicit example: (r=0, e=0.3, s=0.7)."
+    y_vector: "Conceptual+Formal"
+    y_detail: "Abstract analogy between sensory-aesthetic experience (flower, song) and philosophical-theological communication channel. Formal: the XiX difrasismo pairing structure itself generates the synthesis — without the couplet form, neither flower nor song alone yields the covert concept."
+    z_register: 3
+    z_rationale: "Found extensively in Cantares Mexicanos, Romances de los Señores de Nueva España, and Florentine Codex — widely performed and publicly quoted."
+    source: "Leon-Portilla, Miguel. La Filosofia Nahuatl estudiada en sus fuentes. UNAM, 1956 (Engl. Aztec Thought and Culture, U. of Oklahoma Press, 1963); Cantares Mexicanos manuscript (16th c.)"
+    notes: "Classic 'flower and song' is the most cited difrasismo; Leon-Portilla dedicates an entire chapter to it."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.8 → ternary (r=0.0, e=0.3, s=0.7); S-component added per difrasismo synthesis rule; y_vector Conceptual → Conceptual+Formal (XiX pairing form integral to CPG generation)."
+
+  - id: "NAH_002"
+    tradition: "Nahuatl Difrasismo"
+    language: "Classical Nahuatl"
+    host_word: "in cuitlapilli, in ahtlapalli"
+    host_romanized: "in cuitlapilli, in ahtlapalli"
+    covert_target: "The common people; the macehualtin (commoners, subjects)"
+    x_type: [0.0, 0.3, 0.7]
+    x_rationale: "S-dominant (0.7): two peripheral bird-anatomy terms (tail + wing) synthesize the social concept 'commoners' — a third meaning neither term alone encodes. E-component (0.3): rhetorical invention by the ruler class who assigned this elevated pairing to their subjects."
+    y_vector: "Metonymic+Conceptual+Formal"
+    y_detail: "Metonymic framing: peripheral bird-body-parts stand for the social base of the hierarchy. Conceptual mapping overlaid: lowly anatomical position → social subordination. Formal: the XiX difrasismo pairing structure generates the synthesis — 'commoners' emerges only from the paired juxtaposition."
+    z_register: 3
+    z_rationale: "Attested in Florentine Codex Book 8 (Kings and Lords) and Sullivan 1963 — used in court oratory and widely documented."
+    source: "Sullivan, Thelma D. 'Nahuatl Proverbs, Conundrums, and Metaphors, Collected by Sahagun.' Estudios de Cultura Nahuatl 4 (1963): 146-147; Sahagun/Anderson & Dibble, Florentine Codex Book 8 (School of American Research/U. of Utah, 1951)"
+    notes: "Explicit gloss in Sullivan (1963): 'Cuitlapilli, in atlapalli. Quitoznequi: maceoalli' = 'The tail and the wing. This means the common people.'"
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.7 → ternary (r=0.0, e=0.3, s=0.7); S-component added per difrasismo synthesis rule; y_vector added Formal."
+
+  - id: "NAH_003"
+    tradition: "Nahuatl Difrasismo"
+    language: "Classical Nahuatl"
+    host_word: "in teoatl, in tlachinolli"
+    host_romanized: "in teoatl, in tlachinolli"
+    covert_target: "War; armed conflict; totality of military devastation"
+    x_type: [0.3, 0.1, 0.6]
+    x_rationale: "S-dominant (0.6): two forms of elemental catastrophe (divine water + conflagration) synthesize 'war' — neither term alone encodes total military devastation. R-component (0.3): avoidance of direct war-naming in ritual/oratorical context. Minimal E (0.1)."
+    y_vector: "Conceptual+Structural+Formal"
+    y_detail: "Two forms of environmental/elemental destruction (water-catastrophe + fire-catastrophe) structurally map onto war's dual destructive function. Conceptual analogy: total annihilation = war. Formal: the difrasismo pairing form enables synthesis — 'war' emerges from the juxtaposed catastrophe pair."
+    z_register: 2
+    z_rationale: "Found in Primeros Memoriales and Florentine Codex; used in ritual temple-dedication ceremonies and martial contexts — periodic, context-specific."
+    source: "Molina, Alonso de. Vocabulario en lengua castellana y mexicana (1571) — entry glossed as 'batalla o guerra. metaphora'; Sahagun, Primeros Memoriales (16th c.); Online Nahuatl Dictionary (Wired Humanities/U. Oregon)"
+    notes: "flag: true — X-axis S/R balance is debatable. Molina's explicit 'metaphora' gloss confirms it is a recognized indirect expression for war."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.5 (hybrid R/E) → ternary (r=0.3, e=0.1, s=0.6); S-component added for difrasismo synthesis (two catastrophes → war); y_vector added Formal."
+
+  - id: "NAH_004"
+    tradition: "Nahuatl Difrasismo"
+    language: "Classical Nahuatl"
+    host_word: "in tlilli, in tlapalli"
+    host_romanized: "in tlilli, in tlapalli"
+    covert_target: "Books; writing; codices; wisdom; scribal and intellectual authority"
+    x_type: [0.0, 0.3, 0.7]
+    x_rationale: "S-dominant (0.7): two codex pigment colors (black + red) synthesize the concept 'scribal art/books' — neither color alone encodes writing. E-component (0.3): the meaning was actively invented and assigned."
+    y_vector: "Chromatic+Formal"
+    y_detail: "Color association: black and red pigments used in codex painting come to stand for the act of writing itself and by extension for all recorded knowledge. Formal: the difrasismo pairing of two colors generates the synthesis — 'writing' is the third concept created by juxtaposing the paired pigments."
+    z_register: 3
+    z_rationale: "Found in Florentine Codex Book 6 and Codex Chimalpahin; widely used in intellectual and priestly discourse."
+    source: "Sahagun, Florentine Codex Book VI (Huehuetlatolli), Anderson & Dibble eds.; Codex Chimalpahin (early 17th c.); Sullivan (1963); Online Nahuatl Dictionary (Wired Humanities/U. Oregon)"
+    notes: "Codex Chimalpahin contains the explicit statement: 'their black and their red — their books, their writings... will never perish.'"
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.8 → ternary (r=0.0, e=0.3, s=0.7); S-component added for difrasismo synthesis (black+red pigments → writing); y_vector Chromatic → Chromatic+Formal."
+
+  - id: "NAH_005"
+    tradition: "Nahuatl Difrasismo"
+    language: "Classical Nahuatl"
+    host_word: "in ixtli, in yollotl"
+    host_romanized: "in ixtli, in yollotl"
+    covert_target: "The complete human being; personhood; moral character and identity"
+    x_type: [0.0, 0.4, 0.6]
+    x_rationale: "S-dominant (0.6): two body parts (face/eye + heart) synthesize the philosophical concept of complete personhood — a third abstraction neither term alone encodes. E-component (0.4) higher than typical difrasismo: consciously theorized philosophical invention (Leon-Portilla's analysis)."
+    y_vector: "Structural+Formal"
+    y_detail: "Functional-structural properties: ixtli (face/eye) = outward identity and perception; yollotl (heart, from yoli 'to live') = inner vitality and essence. Their joint structural role in constituting a person encodes the full concept. Formal: the difrasismo pairing form generates the synthesis — 'personhood' is the third concept created by juxtaposing the two body-part terms."
+    z_register: 2
+    z_rationale: "Used in huehuetlatolli (elder wisdom speeches) — a specific pedagogical-moral discourse genre, not everyday speech."
+    source: "Sahagun, Florentine Codex Book VI (Huehuetlatolli); Mikulska, Katarzyna. 'Te hago bandera...' in Los codices mesoamericanos (El Colegio Mexiquense, 2016): 85-133; peer-reviewed: 'In ixtli, in yollotl, un difrasismo nahuatl,' Universidad de Management Review (UPGTO/Dialnet, 2024)"
+    notes: "Mikulska explicitly glosses: 'ojo-cara, corazon = un difrasismo que quiere decir ser humano.'"
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.9 → ternary (r=0.0, e=0.4, s=0.6); E-component elevated (0.4) vs. typical difrasismo (0.3) given philosophical invention character; y_vector Structural → Structural+Formal."
+
+  - id: "NAH_006"
+    tradition: "Nahuatl Difrasismo"
+    language: "Classical Nahuatl"
+    host_word: "in atl, in tepetl"
+    host_romanized: "in atl, in tepetl (contracted: altepetl)"
+    covert_target: "City; settlement; political community; sovereign territory; city-state"
+    x_type: [0.0, 0.2, 0.8]
+    x_rationale: "Strong S-dominant (0.8): two natural landscape features (water + mountain) synthesize the political concept 'city-state' — neither alone encodes the political community. Minimal E (0.2): conventional assignment of geographical features to a political concept. Task YAML analogous example: (r=0, e=0.2, s=0.8) for abstract social concepts from body-part pairs."
+    y_vector: "Conceptual+Formal"
+    y_detail: "Two natural features of the Mesoamerican landscape (water source + highland) stand conceptually for a complete political-territorial community. The pair encodes governance, people, and sacred character. Formal: the XiX difrasismo structure generates the synthesis — 'city-state' emerges only from the paired juxtaposition; the contracted form altepetl fully lexicalized from this formal pairing."
+    z_register: 3
+    z_rationale: "Ubiquitous in colonial Nahuatl legal documents, titles, land grants, and historical annals — one of the most widely attested difrasismo in the corpus."
+    source: "Lockhart, James. The Nahuas After the Conquest. Stanford University Press, 1992; Mikulska (2016) — 'un difrasismo, agua-cerro, para decir ciudad'; Online Nahuatl Dictionary; Codex Osuna (colonial, 16th c.)"
+    notes: "The contracted form altepetl became the standard word for city-state in colonial Nahuatl — the difrasismo fully lexicalized."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.7 → ternary (r=0.0, e=0.2, s=0.8); strong S-dominance for landmark difrasismo that fully lexicalized; y_vector Conceptual → Conceptual+Formal. S三条件適用: 裁定[2]"
+    lexicalization_note: "S三条件を歴史的に満たした語彙化事例 — 裁定[2]: (1)水＋山の並置(JUXTAPOSITION)✓ (2)都市国家という第三概念は水・山から計算不能(NON-COMPOSITIONALITY)✓ (3)Nahuatl文化圏全体で共有(CULTURAL CONVENTION)✓。ただし現在は単語altepetlとして固定化・形態統合済み。lexicalized_s事例として通時的注記。"
+
+  - id: "NAH_007"
+    tradition: "Nahuatl Difrasismo"
+    language: "Classical Nahuatl"
+    host_word: "in cuauhtli, in ocelotl"
+    host_romanized: "in cuauhtli, in ocelotl"
+    covert_target: "The warrior class; military valor; martial prowess; the elite military orders"
+    x_type: [0.0, 0.3, 0.7]
+    x_rationale: "S-dominant (0.7): two apex predators (eagle + jaguar) synthesize 'the warrior class' — the combined elite military identity neither term alone encodes. E-component (0.3): heraldic/poetic invention assigning apex animals to the elite warrior orders."
+    y_vector: "Behavioral+Formal"
+    y_detail: "Predatory behavior of apex animals (hunting, killing, dominance) maps onto warrior valor and martial capacity of the military elite. Formal: the difrasismo pairing structure generates the synthesis — 'warrior class as a unified martial category' emerges from the juxtaposition of the two separate military orders."
+    z_register: 2
+    z_rationale: "Found on ceremonial objects, in temple contexts, and warrior poetry — specific martial/ritual settings."
+    source: "Codex Borbonicus (folio 9) — pictorial attestation; Garibay K., Angel Maria (general scholarly tradition); Mexicolore.co.uk 'Diphrases or couplets in Nahuatl' (citing Florentine Codex)"
+    notes: "Both the eagle warriors (cuauhtli) and jaguar warriors (ocelotl) were actual elite military orders — the difrasismo names them together as a single social category."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.8 → ternary (r=0.0, e=0.3, s=0.7); S-component added for difrasismo synthesis (eagle+jaguar → unified warrior class); y_vector Behavioral → Behavioral+Formal."
+
+  - id: "NAH_008"
+    tradition: "Nahuatl Difrasismo"
+    language: "Classical Nahuatl"
+    host_word: "in toptli, in petlacalli"
+    host_romanized: "in toptli, in petlacalli"
+    covert_target: "A secret; concealed matter; something hidden; confidential information"
+    x_type: [0.5, 0.0, 0.5]
+    x_rationale: "Equal R and S (0.5/0.5): R-component — the concept 'secret' retreats inside the image of closed containers (avoidance of direct naming); S-component — neither wooden chest alone nor reed basket alone fully encodes 'secret' in this culturally specific sense; the PAIR synthesizes the abstract concept of concealment. No E-component."
+    y_vector: "Structural+Formal"
+    y_detail: "Functional/structural property: closed containers (wooden chest, reed basket) hold hidden contents — the structural function of concealment maps onto the concept of a secret. Formal: the difrasismo pairing structure generates the synthesis — 'secret' as a culturally formalized concept emerges from the juxtaposition of two container types."
+    z_register: 2
+    z_rationale: "Used in administrative and interpersonal discourse when speaking of matters that must not be disclosed — specific confidential communication contexts."
+    source: "Codex Mendoza (colonial period, ca. 1541) — pictorial and textual attestation; Mexicolore.co.uk 'Diphrases or couplets in Nahuatl'; Online Nahuatl Dictionary (thematic: 'Secrets/Hidden things')"
+    notes: "This is the most directly CPG-relevant example — Nahuatl had a dedicated difrasismo for the concept of concealment itself. The covert path and its container are linguistically fused."
+    confidence: "medium"
+    recode_note: "v3.0: x_type scalar 0.2 (R-dominant) → ternary (r=0.5, e=0.0, s=0.5); S-component co-equal with R — the container pair also synthesizes 'secret' as third concept; y_vector Structural → Structural+Formal."
+
+  # ============================================================
+  # QUECHUA RITUAL LANGUAGE (6 items)
+  # ============================================================
+
+  - id: "QCH_001"
+    tradition: "Quechua Semantic Parallelism"
+    language: "Southern Quechua (colonial)"
+    host_word: "Unuy wiqillam apariwan / Yakuy parallam pusariwan"
+    host_romanized: "unu/yaku (water) + wiqi/para (tears/rain)"
+    covert_target: "Human tears equated with cosmic rain; personal grief situated within the cycle of the natural world"
+    x_type: [0.0, 0.3, 0.7]
+    x_rationale: "S-dominant (0.7): the parallel couplet structure (synonymous water-words in parallel syntactic slots) generates the cosmological equation grief=rain — a third meaning that neither term pair alone encodes outside the couplet context. E-component (0.3): active construction of cosmological equivalence through the parallelism device."
+    y_vector: "Formal+Conceptual"
+    y_detail: "Formal (PRIMARY): the parallel couplet structure is the PRIMARY mechanism — it forces semantic equivalence between unu/yaku (water synonyms) and wiqi/para (tears/rain synonyms), generating the synthesis. Without the parallelism form, there is no covert path. Conceptual (secondary): the cosmological equation maps personal grief onto cosmic rain cycle. NOTE: old y_vector 'Structural' referred to syntactic parallelism, which is re-classified as Formal in v3.0."
+    z_register: 2
+    z_rationale: "Ritual song performed in specific festival/ceremonial contexts; attested in Guaman Poma's chronicle (1615) as performed verbal art."
+    source: "Mannheim, Bruce. 'Time, not the syllables, must be counted: Quechua parallelism, word meaning, and cultural analysis.' ResearchGate (accessible at researchgate.net/publication/283015094); Guaman Poma de Ayala, Felipe. Nueva Crónica y Buen Gobierno (c. 1615)"
+    notes: "Mannheim (The Language of the Inka since the European Invasion, U. of Texas Press, 1991) analyzes this as the core structural principle of ritual Quechua verbal art — invisible to colonial writers for centuries."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.7 → ternary (r=0.0, e=0.3, s=0.7); y_vector Conceptual+Structural → Formal+Conceptual — old 'Structural' (syntactic parallelism) is the Formal vector in v3.0; Formal is the PRIMARY mechanism here. Most significant reclassification in this update."
+
+  - id: "QCH_002"
+    tradition: "Quechua Ritual Vocabulary (colonial semantic layering)"
+    language: "Quechua (colonial period)"
+    host_word: "Supay"
+    host_romanized: "Supay"
+    covert_target: "Original: spirit/shade of the dead (ambivalent, indigenous); imposed overlay: Christian devil (Spanish missionary reuse)"
+    x_type: [0.7, 0.3, 0.0]
+    x_rationale: "R-dominant (0.7): the original indigenous spirit-concept was semantically colonized; the indigenous meaning retreated behind the imposed 'devil' reading. E-component (0.3): Spanish missionaries actively RE-coded the word with a new imposed meaning (colonial recodification as E-direction operation). No S-component: single word, not a binary pairing."
+    y_vector: "Conceptual"
+    y_detail: "Abstract mapping imposed by Spanish missionaries: indigenous spirit-world intermediary → Christian devil. Both meanings coexist in the same word, creating a dual-layer reading accessible to different audiences."
+    z_register: 3
+    z_rationale: "Used in colonial pastoral, public religious discourse, and evangelical instruction — widely disseminated through church sermons and colonial dictionaries."
+    source: "González Holguín, Diego. Vocabulario de la lengua general de todo el Perú. 1608; Anonymous dictionary, 1586; Wikipedia: Supay (citing both sources)"
+    notes: "flag: true — this is a case of imposed semantic layering (colonial contact) rather than indigenous creation. Bartolomé Álvarez objected to this equation. Dual-layer reading is historically documented."
+    confidence: "medium"
+    recode_note: "v3.0: x_type scalar 0.2 → ternary (r=0.7, e=0.3, s=0.0); E-component made explicit (colonial re-coding is an E-direction operation); no S-component (single word). y_vector unchanged."
+
+  - id: "QCH_003"
+    tradition: "Quechua Cosmological Terminology"
+    language: "Quechua (pre-colonial and colonial)"
+    host_word: "Ukhu Pacha / Hanaq Pacha"
+    host_romanized: "ukhu pacha / hanaq pacha"
+    covert_target: "Pre-colonial: death-and-rebirth duality / upper world of life; Colonial overlay: hell / heaven"
+    x_type: [0.5, 0.1, 0.4]
+    x_rationale: "R-dominant (0.5): original cosmological meanings retreated under colonial overlay. S-component (0.4): the paired opposition ukhu/hanaq (below/above) together generates the complete cosmological duality — a worldview neither term alone expresses. Minimal E (0.1)."
+    y_vector: "Conceptual"
+    y_detail: "Spatial metaphor: below/above maps onto cosmological status. Pacha = spacetime simultaneously (not just place). The dual-reading emerges from contact between indigenous cosmology (death-and-rebirth in ukhu pacha) and colonial Christian framework (hell/heaven)."
+    z_register: 3
+    z_rationale: "Used both in ritual language and colonial religious discourse — widely disseminated."
+    source: "Wikipedia: Pacha (Inca mythology); Incamedicineschool.com: 'Exploring Ukhu Pacha'; Allen, Catherine J. The Hold Life Has (Smithsonian Institution Press, 1988)"
+    notes: "flag: true — the dual reading is partly a product of colonial contact. Pacha as 'spacetime' is the key scholarly insight (Manga Qespi; Catherine Allen)."
+    confidence: "medium"
+    recode_note: "v3.0: x_type scalar 0.3 → ternary (r=0.5, e=0.1, s=0.4); S-component added (0.4) for paired cosmological opposition; R elevated as primary. y_vector unchanged."
+
+  - id: "QCH_004"
+    tradition: "Quechua Riddle Tradition (Watuchikuna)"
+    language: "Quechua (Southern, contemporary)"
+    host_word: "Watuchikuna (riddle objects: needle, corn, natural implements)"
+    host_romanized: "watuchikuna / watuchis"
+    covert_target: "Sexual/bodily meaning expressed through innocent natural-object descriptions"
+    x_type: [0.8, 0.0, 0.2]
+    x_rationale: "R-dominant (0.8): sexual meaning retreats behind innocent object descriptions — classic avoidance mechanism. Small S-component (0.2): some riddles pair two objects in synthesis, but the primary mechanism is R. No E-component."
+    y_vector: "Structural+Morphological"
+    y_detail: "Physical and functional properties of objects (shape, action of use, entry into holes) structurally parallel bodily/sexual referents. The game is simultaneously an intellectual contest and a vehicle for covert sexual socialization."
+    z_register: 1
+    z_rationale: "Performed in adolescent courtship and socialization contexts — dyadic/in-group, intimate setting."
+    source: "Isbell, Billie Jean and Roncalla Fernandez, Fredy Amilcar. 'The Ontogenesis of Metaphor: Riddle Games among Quechua Speakers Seen as Cognitive Discovery Procedures.' Journal of Latin American Lore 3:1 (1977): 19-49. Full text: ecommons.cornell.edu"
+    notes: "Isbell & Roncalla (1977) is one of the earliest peer-reviewed treatments of indigenous Andean riddle tradition. Solid ethnographic attestation."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.2 → ternary (r=0.8, e=0.0, s=0.2); small S-component added for riddle-pairing elements; R dominant confirmed. y_vector unchanged."
+
+  - id: "QCH_005"
+    tradition: "Quechua Shamanic Ritual (K'intu)"
+    language: "Quechua (Andean ceremonial)"
+    host_word: "K'intu (kintu, quintu)"
+    host_romanized: "k'intu"
+    covert_target: "Covert prayer/intention addressed to mountain spirits (Apus) and Pachamama; also encodes three-world cosmological structure"
+    x_type: [0.3, 0.6, 0.1]
+    x_rationale: "E-dominant (0.6): the three-leaf arrangement actively encodes the three-world cosmology — a designed covert communication system. R-component (0.3): avoidance of direct spirit address (prayer transmitted via leaves, not spoken directly). Small S-component (0.1): the three leaves together encode more than any individual leaf, but this is not strictly binary synthesis."
+    y_vector: "Structural+Conceptual"
+    y_detail: "Physical arrangement of three coca leaves (smallest on top, stems down) structurally encodes the three-world cosmology (Ukhu/Kay/Hanaq Pacha). The act of pukuy (blowing) transmits intentions not spoken aloud — the leaves become a covert communication channel."
+    z_register: 2
+    z_rationale: "Performed in shamanic/priestly rituals (paqo practice, Pachamama offerings) — periodic ceremonial contexts."
+    source: "Retreatsinperu.com: 'Kintu Ritual: The Three Sacred Coca Leaves of the Incas'; Kurakatravel.com: 'Sacred Kintu: Coca Leaf Offerings in Andean Ceremony'; multiple Andean ethnographic sources"
+    notes: "Sources are ethnographic/practitioner, not peer-reviewed — lower confidence than QCH_001 or QCH_004. The physical-cosmological encoding is well-attested across multiple independent sources."
+    confidence: "medium"
+    recode_note: "v3.0: x_type scalar 0.6 → ternary (r=0.3, e=0.6, s=0.1); E-dominant confirmed; R and minimal S made explicit. y_vector unchanged."
+
+  - id: "QCH_006"
+    tradition: "Southern Quechua Ritual Pragmatics"
+    language: "Southern Quechua"
+    host_word: "Ritual address to landscape entities (mountains, springs, fields)"
+    host_romanized: "(speech act genre)"
+    covert_target: "Dual-audience communication: ostensibly addressed to place/mountain, covertly addressed to spirit world AND functioning as public performance for human witnesses"
+    x_type: [0.4, 0.4, 0.2]
+    x_rationale: "Hybrid R+E (0.4/0.4): R-component — direct spirit address avoided by routing through the landscape entity; E-component — the ritual speaker actively constructs a mediation role through the address form. Small S-component (0.2): mountain address + spirit communication generate dual-audience framework, but not a formal binary pairing."
+    y_vector: "Metonymic"
+    y_detail: "The place-name is contiguous with the spirit residing there. Addressing the mountain is metonymically addressing the Apu (mountain spirit) — the place-name serves as a covert channel for spirit communication."
+    z_register: 2
+    z_rationale: "Performed by ritual specialists (misayuq) in specific ceremonial contexts — not everyday speech."
+    source: "Mannheim, Bruce. 'Places That Talk—and Listen: Southern Quechua.' In Tavárez, David (ed.), The Oxford Handbook of Ritual Language (Oxford University Press, 2025), Part IV. Oxford Academic: academic.oup.com/edited-volume/59477/chapter-abstract/501384245"
+    notes: "Cutting-edge 2025 scholarship. Chapter abstract only available; full text behind paywall. Mannheim is the leading scholar of Quechua verbal art."
+    confidence: "medium"
+    recode_note: "v3.0: x_type scalar 0.5 → ternary (r=0.4, e=0.4, s=0.2); hybrid R+E confirmed; small S added for dual-audience framework. y_vector unchanged."
+
+  # ============================================================
+  # MAYA RHETORICAL COUPLETS / DIPHRASIS (6 items)
+  # ============================================================
+
+  - id: "MAYA_001"
+    tradition: "Classic Maya / Colonial Yucatec Diphrasis"
+    language: "Classic Ch'olti' / Colonial Yucatec Maya"
+    host_word: "ch'ab ak'ab"
+    host_romanized: "ch'ab ak'ab"
+    covert_target: "Royal bloodletting rite; elite rank and political authority; ancestral bond through shared sacrifice"
+    x_type: [0.2, 0.2, 0.6]
+    x_rationale: "S-dominant (0.6): penance (ch'ab) + darkness (ak'ab) synthesize 'royal legitimacy through bloodletting rite' — a third concept neither term alone encodes. R-component (0.2): avoidance of direct claim to political authority. E-component (0.2): rhetorical construction through pairing."
+    y_vector: "Conceptual+Behavioral+Formal"
+    y_detail: "Ritual behavioral action (self-bloodletting penance, ch'ab) combined with temporal context (night/darkness, ak'ab) encodes royal legitimacy. The behavioral act in the nocturnal context signifies elite status. Formal: the Maya diphrasis couplet pairing form generates the synthesis — royal authority emerges only from the juxtaposed pair."
+    z_register: 2
+    z_rationale: "Found in hieroglyphic monuments (Preclassic–Classic), Paris and Dresden Codices (ritual/divinatory context), and Chilam Balam — periodic ritual attestation."
+    source: "Hoppan, Jean-Michel & Jacquemot, Emilie. 'Variabilidad de un difrasismo maya.' Presented at Variantes y variaciones en el mundo maya, Paris, December 2007. HAL-SHS: shs.hal.science/halshs-00679493"
+    notes: "One of the most thoroughly documented difrasismo in the Classic Maya corpus. Attestation spans Preclassic through colonial period across multiple textual genres."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.6 → ternary (r=0.2, e=0.2, s=0.6); S-dominant per Maya diphrasis synthesis rule; y_vector added Formal."
+
+  - id: "MAYA_002"
+    tradition: "Colonial Yucatec Maya Diphrasis (Chilam Balam)"
+    language: "Colonial Yucatec Maya"
+    host_word: "che' tunich"
+    host_romanized: "che' tunich"
+    covert_target: "War; armed conflict; social upheaval; political struggle"
+    x_type: [0.3, 0.1, 0.6]
+    x_rationale: "S-dominant (0.6): two weapon materials (wood + stone) synthesize 'war' as a total concept — neither material alone encodes armed conflict. R-component (0.3): metonymic avoidance of direct war-naming. Minimal E (0.1): inherited rhetorical construction."
+    y_vector: "Metonymic+Formal"
+    y_detail: "The two basic materials of Mesoamerican weaponry (wooden clubs = che', stone blades/projectiles = tunich) are metonymically paired to stand for warfare in its entirety. Part-for-whole: weapon components → the act of war. Formal: the Maya diphrasis couplet form generates the synthesis — 'war' as a total category emerges from the juxtaposed weapon pair."
+    z_register: 2
+    z_rationale: "Found in the Cuceb section of the Books of Chilam Balam — a prophetic/oratorical literary context with periodic recitation."
+    source: "Bíró, Péter. 'The Cuceb of Chilam Balam Books: Difrasismos and Intertextuality.' Estudios de Cultura Maya vol. 61, 2023, pp. 169+. UNAM / SciELO: scielo.org.mx; Academia.edu: academia.edu/100759121"
+    notes: "Bíró (2023) traces this difrasismo's Classic Ch'olan antecedent, demonstrating inheritance across centuries and language variants — rare diachronic attestation."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.5 → ternary (r=0.3, e=0.1, s=0.6); S-dominant for Maya diphrasis synthesis; y_vector Metonymic → Metonymic+Formal."
+
+  - id: "MAYA_003"
+    tradition: "Colonial Yucatec Maya Diphrasis (Chilam Balam)"
+    language: "Colonial Yucatec Maya"
+    host_word: "ch'en actun (actunchhen)"
+    host_romanized: "ch'en / actun"
+    covert_target: "Sacred portal to the underworld (Xibalba); liminal cosmological threshold"
+    x_type: [0.0, 0.3, 0.7]
+    x_rationale: "S-dominant (0.7): two types of underground water/earth opening (artificial well + natural cave) synthesize the sacred cosmological concept 'Xibalba portal' — neither alone encodes the sacred liminal threshold. E-component (0.3): active construction of sacred cosmological meaning through pairing."
+    y_vector: "Conceptual+Structural+Formal"
+    y_detail: "Two types of underground water/earth opening (artificial well + natural cave) combine structurally to signify the class of sacred underground access points to Xibalba. The functional property (earth-water-darkness threshold) carries the cosmological meaning. Formal: the Maya diphrasis couplet form generates the synthesis — 'sacred portal' as a cosmological concept emerges from the well+cave pairing."
+    z_register: 2
+    z_rationale: "Colonial Yucatec ritual and prophetic literature — specific sacred text context."
+    source: "Bíró, Péter. 'The Cuceb of Chilam Balam Books: Difrasismos and Intertextuality.' Estudios de Cultura Maya vol. 61, 2023. SciELO: scielo.org.mx/scielo.php?pid=S0185-25742023000100169"
+    notes: "Bíró analyzes the possessed difrasismo structure (ergative preceding both roots) as a distinctive grammatical marker of the device in Yucatec."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.7 → ternary (r=0.0, e=0.3, s=0.7); y_vector added Formal (Maya couplet form generates synthesis of well+cave → Xibalba portal)."
+
+  - id: "MAYA_004"
+    tradition: "Yucatec Maya Ritual Speech (Zuyua T'an)"
+    language: "Colonial Yucatec Maya"
+    host_word: "Suyua T'an riddle: 'Bring me the sun in my plate... a green jaguar seated on top, bleeding'"
+    host_romanized: "Suyua T'an / Zuyua T'an (twisted/deceptive speech)"
+    covert_target: "A fried egg with a green chili pepper on top (mundane food item)"
+    x_type: [0.9, 0.0, 0.1]
+    x_rationale: "Near-pure R (0.9): mundane culinary meaning retreats entirely behind an impossible cosmic command — only initiated lords can decode it. Minimal S (0.1): the cosmic image + impossible command together generate a reading challenge, but this is primarily extreme R-direction concealment."
+    y_vector: "Conceptual+Metonymic+Formal"
+    y_detail: "Cosmic-to-mundane mapping: sun → egg yolk (round, yellow, radiant); 'green jaguar bleeding' → green chili with red interior exposed. Multiple simultaneous channels create the covert path. Formal: the Zuyua T'an ritual Q&A form (impossible cosmic command → mundane correct answer) IS the mechanism — the form of the question genre itself creates and sustains the covert path."
+    z_register: 1
+    z_rationale: "Used exclusively in private elite legitimation rites — only the head chief and the lords being tested knew the code. Strictly dyadic/in-group."
+    source: "Roys, Ralph L. (trans.). The Book of Chilam Balam of Chumayel. Carnegie Institution of Washington, 1933. Sacred Texts Archive: sacred-texts.com/nam/maya/cbc/cbc21.htm; Multepal (U. Virginia): multepal.spanitalport.virginia.edu/node/751"
+    notes: "The Zuyua T'an system is a documented pre-Columbian linguistic security protocol — surface impossibility encodes a mundane correct answer, used to test elite legitimacy. Exceptional CPG value."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.1 → ternary (r=0.9, e=0.0, s=0.1); near-pure R confirmed; y_vector added Formal — Zuyua T'an ritual Q&A form (impossible cosmic demand → mundane answer) is itself the CPG-generating mechanism, per task YAML candidate list."
+
+  - id: "MAYA_005"
+    tradition: "Postclassic Maya Visual Diphrasis (Tulum murals)"
+    language: "Postclassic Maya iconographic tradition"
+    host_word: "Paired day-motif + night-motif (floral/solar + celestial-band/nocturnal)"
+    host_romanized: "(visual diphrasis — no spoken form)"
+    covert_target: "Totality of cosmic time; divine authority over temporal cycles; legitimacy of political power"
+    x_type: [0.0, 0.3, 0.7]
+    x_rationale: "S-dominant (0.7): two contrasting visual elements (day + night) synthesize 'cosmic totality = sovereign authority' — neither day alone nor night alone encodes temporal sovereignty. E-component (0.3): active rhetorical-political construction assembling the paired opposites."
+    y_vector: "Conceptual+Structural+Formal"
+    y_detail: "Two contrasting visual elements (day/night) that, when juxtaposed, signify a third concept (cosmic totality = sovereignty) not expressed by either alone. The structural opposition drives the conceptual synthesis. Formal: the visual diphrasis pairing form generates the synthesis — the couplet operates identically to its linguistic counterpart (per Davis 2022)."
+    z_register: 3
+    z_rationale: "Monumental art on public temple walls — widely visible, functions as public performance and permanent statement."
+    source: "Davis, Caitlin R. 'Monumentalizing Metaphors: Diphrasis in the Murals of Tulum.' Manuscript and Text Cultures (MTC) Journal, 2022. MTC: mtc-journal.org/index.php/mtc/article/view/3; Academia.edu: academia.edu/78237555"
+    notes: "Rare peer-reviewed study of visual diphrasis in Maya art. Davis demonstrates the rhetorical device operates identically in visual and linguistic modes."
+    confidence: "high"
+    recode_note: "v3.0: x_type scalar 0.8 → ternary (r=0.0, e=0.3, s=0.7); y_vector added Formal (visual diphrasis pairing form generates synthesis of day+night → cosmic sovereignty)."
+
+  - id: "MAYA_006"
+    tradition: "Classic Maya Hieroglyphic Poetic Substitution"
+    language: "Classic Maya (hieroglyphic)"
+    host_word: "pan kab / tal kab"
+    host_romanized: "pan kab / tal kab"
+    covert_target: "Birth of a royal person; the moment of entering the world (poetic substitute for standard birth verb siy-)"
+    x_type: [0.5, 0.3, 0.2]
+    x_rationale: "Hybrid R+E: R-component (0.5) — euphemistic avoidance of direct birth-naming in monumental high-register context; E-component (0.3) — elevated rhetorical construction substituting the poetic first-action phrase for the standard birth verb. Small S-component (0.2): pan kab and tal kab are parallel variant forms of the same expression rather than a proper binary pairing generating synthesis."
+    y_vector: "Metonymic"
+    y_detail: "The first physical action performed at birth (a newborn touching/knocking the earth) is metonymically substituted for the birth event itself. Part-for-whole: first bodily action → the totality of birth."
+    z_register: 2
+    z_rationale: "Found in Classic period hieroglyphic monuments — used for royal birth records, a specific high-ritual recording context."
+    source: "Boot, Erik. 'The Human Hand in Classic Maya Hieroglyphic Writing.' Mesoweb, 2009. PDF: mesoweb.com/features/boot/Human_Hand.pdf; originally proposed by Floyd Lounsbury; FAMSI Maya Hieroglyphic Writing resources: famsi.org"
+    notes: "The substitution of a poetic collocation for the standard birth verb siy- reflects the Classic Maya scribal preference for elevated, layered expression in monumental texts."
+    confidence: "medium"
+    recode_note: "v3.0: x_type scalar 0.5 → ternary (r=0.5, e=0.3, s=0.2); pan kab/tal kab are parallel variant expressions rather than a proper binary difrasismo pairing — S-component minimal; R+E hybrid confirmed. y_vector unchanged (Metonymic; no Formal since not a couplet structure)."
+
+summary:
+  total_items: 20
+  schema_version: "v3.0"
+  type_distribution:
+    r_dominant: 3   # r >= 0.6: QCH_002 (0.7), QCH_004 (0.8), MAYA_004 (0.9)
+    e_dominant: 1   # e >= 0.6: QCH_005 (0.6)
+    s_dominant: 14  # s >= 0.4: NAH_001-007 (0.7/0.7/0.6/0.7/0.6/0.8/0.7), NAH_008 (0.5), QCH_001 (0.7), QCH_003 (0.4), MAYA_001 (0.6), MAYA_002 (0.6), MAYA_003 (0.7), MAYA_005 (0.7)
+    hybrid: 2       # no single dimension >= 0.6 and s < 0.4: QCH_006 (0.4/0.4/0.2), MAYA_006 (0.5/0.3/0.2)
+  formal_vector_added: 14  # NAH_001-008, QCH_001, MAYA_001-005
+  vector_distribution:
+    Conceptual: 8
+    Metonymic: 5
+    Structural: 5
+    Behavioral: 2
+    Chromatic: 1
+    Formal: 14      # NEW in v3.0 — added to all difrasismo/diphrasis items and QCH_001
+    # Note: many items have compound vectors; Formal count reflects items receiving Formal addition
+  register_distribution:
+    low: 2    # Z=1: QCH_004, MAYA_004
+    mid: 11   # Z=2: NAH_003, NAH_005, NAH_007, NAH_008, QCH_001, QCH_005, QCH_006, MAYA_001, MAYA_002, MAYA_003, MAYA_006
+    high: 7   # Z=3: NAH_001, NAH_002, NAH_004, NAH_006, QCH_002, QCH_003, MAYA_005
+  key_findings: |
+    Central/South America is exceptionally rich in CPG traditions. Three distinct structural patterns emerged:
+
+    1. **Difrasismo as the dominant mechanism**: All three culture regions share the difrasismo/diphrasis device — two concrete terms paired to generate a third, covert meaning inaccessible without insider knowledge. This device is architecturally identical to CPG: a surface channel carrying a covert payload unlockable only by those with the cultural key. The Nahuatl corpus (Florentine Codex, Online Nahuatl Dictionary) is the most rigorously documented, with explicit scholarly glosses confirming covert meanings.
+
+    2. **Register-gating and legitimacy screening (unique to this region)**: The Zuyua T'an (MAYA_004) is the most directly CPG-relevant finding in this survey — a documented pre-Columbian linguistic security protocol using surface-impossible commands to encode mundane correct answers, used to screen elite legitimacy. No equivalent explicit security-screening function was found in other regions' traditions.
+
+    3. **Colonial semantic layering adds a second covert-path dimension**: In Quechua (QCH_002, QCH_003), colonial contact created dual-layer readings where indigenous and imposed meanings coexist. This is a historically documented form of meaning-concealment under political surveillance — the original meaning persists as a hidden layer below the imposed surface.
+
+    The Nahuatl difrasismo NAH_008 (in toptli, in petlacalli = "secret") is particularly notable: the Nahua had a dedicated covert-path construction for encoding the concept of concealment itself, suggesting meta-awareness of the CPG mechanism within the tradition.
+
+    **v3.0 Re-coding Findings (2026-03-13)**:
+    - **S-dominance confirmed**: 14 of 20 items are S-dominant (s >= 0.4), reflecting the difrasismo/diphrasis mechanism as the primary CPG pathway in this region. This distinguishes Central/South America from traditions relying primarily on R (taboo avoidance) or E (single-word poetic invention).
+    - **Formal vector: 14 items**: All difrasismo (NAH_001–NAH_008), all Maya diphrasis couplets (MAYA_001–005), and the Quechua semantic parallelism (QCH_001) received the Formal y-vector. The couplet/pairing FORM itself is integral to CPG generation — without the XiX or parallel structure, the synthesis cannot occur.
+    - **QCH_001 reclassification**: The old y_vector "Structural" (syntactic parallelism) is now correctly classified as "Formal" — the most significant single reclassification in this v3.0 update.
+    - **Key insight on S-component**: The difrasismo is the purest natural-language instantiation of the S-dimension: two terms juxtaposed, generating a third meaning that neither alone carries. All difrasismo items in this corpus have s >= 0.5.
+  ambiguous_items:
+    - "NAH_003"  # S/R balance debatable: war avoidance (R) vs. catastrophe-pair synthesis (S)
+    - "NAH_008"  # Equal R and S (0.5/0.5): concealment retreats into containers (R) but pair also synthesizes 'secret' (S) — unique co-equal case
+    - "QCH_002"  # Colonial overlay complicates original-vs-imposed layer analysis
+    - "QCH_003"  # Same issue; S-component for cosmological opposition is borderline (exactly 0.4)
+    - "QCH_005"  # Ritual evidence partially from non-peer-reviewed ethnographic sources

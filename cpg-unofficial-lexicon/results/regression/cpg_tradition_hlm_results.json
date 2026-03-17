@@ -1,0 +1,11 @@
+{
+  "n": 163,
+  "n_traditions": 53,
+  "ols_R2": 0.0885,
+  "icc_tradition": 0.4346,
+  "icc_region_old": 0.2095,
+  "heaviside_R2": 0.1405,
+  "tradition_heaviside_R2": 0.63,
+  "K_crit": 0.3168,
+  "alpha": 0.4117
+}

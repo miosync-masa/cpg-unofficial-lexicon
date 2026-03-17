@@ -1,0 +1,589 @@
+# CPG World Search Results — Ashigaru 6
+# Region: Eastern Europe / Slavic
+# Date: 2026-03-13
+# Agent: ashigaru6
+# Schema: v3.0 (Formal vector + X-axis ternary coordinates)
+
+metadata:
+  region: "Eastern Europe / Slavic"
+  schema_version: "v3.0"
+  traditions_surveyed:
+    - name: "Russian zagadka (загадка)"
+      language: "Russian"
+      sources_consulted: 5
+    - name: "Russian bylina constant epithets (постоянный эпитет)"
+      language: "Russian (Old Russian/oral)"
+      sources_consulted: 4
+    - name: "Polish erotic folk lyric (pieśń ludowa)"
+      language: "Polish"
+      sources_consulted: 3
+    - name: "Belarusian stydnyya zahadki (стыдныя загадкі)"
+      language: "Belarusian"
+      sources_consulted: 2
+    - name: "Russian/Pan-Slavic wedding song euphemism"
+      language: "Russian / Pan-Slavic"
+      sources_consulted: 2
+
+items:
+  - id: "EEU_001"
+    tradition: "Russian zagadka (загадка)"
+    language: "Russian"
+    host_word: "Красная головка, под ней — бородка, утром рано встаёт, Маше спать не даёт"
+    host_romanized: "Krasnaya golovka, pod ney — borodka, utrom rano vstayot, Mashe spat' ne dayot"
+    covert_target: "Erotic: red-headed figure with beard who rises early and prevents Masha from sleeping (sexual encounter)"
+    # v2.0: x_type: 0.2
+    x_r: 0.85
+    x_e: 0.15
+    x_s: 0.0
+    x_rationale: "Erotic meaning (pre-existing taboo concept) retreats into innocent animal imagery; R-dominant. No synthesis element — polysemy operates at content level (головка/встаёт), not through binary juxtaposition generating a third concept."
+    recode_note: |
+      v2→v3: x_type=0.2 → (r=0.85, e=0.15, s=0). Converted per zagadka guideline.
+      S=0: lexical polysemy is content-level, not synthesis of two independent concepts.
+      Formal candidate (weak): zagadka double-motion form (erotic reading → innocent resolution)
+      enables CPG structurally, but erotic meaning itself comes from content-level mechanisms
+      (головка/встаёт body-part polysemy). Form is vehicle, not generator. Flag for judgment.
+    formal_candidate: true
+    formal_candidate_note: "zagadka double-motion structure — form enables CPG but does not generate it. Content-level mechanisms (lexical polysemy) are primary. Weaker Formal claim than dúnad."
+    y_vector: "Conceptual+Metonymic"
+    y_detail: "Body-part polysemy: 'головка' (head/glans), 'встаёт' (rises/erects); action-chain metonymy via 'не даёт спать' → sexual encounter. The rooster's anatomy systematically maps onto male sexual anatomy."
+    z_register: 3
+    z_rationale: "Collected in Sadovnikov's 1876 anthology (2,504 riddles); still widely quoted in popular folklore collections; performed at festive/wedding gatherings"
+    source: "Sadovnikov, D. N. (1876). Загадки русского народа. St. Petersburg. (Riddle #1724); discussed in Reeder, R. (1981). 'A structural analysis of the Russian folk riddle.' Semiotica, 33(3-4), 237–260. DOI:10.1515/semi.1981.33.3-4.237"
+    notes: "The genuine answer is петушок (rooster). One of the most widely known Russian erotic zagadki. Lexical polysemy ('голова'/'головка', 'встаёт') is the primary mechanism."
+    confidence: "high"
+
+  - id: "EEU_002"
+    tradition: "Russian zagadka (загадка)"
+    language: "Russian"
+    host_word: "Волосатая головка за щеку заходит ловко"
+    host_romanized: "Volosataya golovka za shcheku zakhodit lovko"
+    covert_target: "Erotic: hairy head slipping behind the cheek (oral sexual act)"
+    # v2.0: x_type: 0.2
+    x_r: 0.85
+    x_e: 0.15
+    x_s: 0.0
+    x_rationale: "Sexual meaning retreats into description of a hygiene tool; R-dominant. Pure Metonymic action-chain substitution with no synthesis component."
+    recode_note: |
+      v2→v3: x_type=0.2 → (r=0.85, e=0.15, s=0). Minimal change.
+      S=0: the action-chain (bristles=head, brushing=insertion) is Metonymic substitution, not
+      binary juxtaposition generating a third concept.
+      Formal candidate (weak): same zagadka double-motion form consideration as EEU_001.
+    formal_candidate: true
+    formal_candidate_note: "zagadka double-motion (weak) — same as EEU_001."
+    y_vector: "Metonymic"
+    y_detail: "Body-part action chain: bristles of toothbrush = 'волосатая головка' (hairy head); brushing motion inside the cheek = insertion action. The metonymy operates through action-similarity."
+    z_register: 3
+    z_rationale: "Circulates widely in popular collections and oral tradition; documented in zagadki-otvetami.ru reflecting attested folk corpus"
+    source: "Documented in popular collections reflecting attested folk tradition; cross-reference: Toporkov, A. L. (ed.) (1995). Русский эротический фольклор: Загадки. Moscow: Ladomir. ISBN 5-86218-096-5"
+    notes: "Answer: зубная щётка (toothbrush). Bristles = 'волосатая головка'; brushing action = 'за щеку заходит.' Purely metonymic — no phonetic overlap."
+    confidence: "high"
+
+  - id: "EEU_003"
+    tradition: "Russian zagadka (загадка)"
+    language: "Russian"
+    host_word: "Шерстка с шерсткой слипаются, / Ночной сладости дожидаются"
+    host_romanized: "Sherstka s sherstkoy slipayutsya, / Nochnoy sladosti dozhidayutsya"
+    covert_target: "Erotic: two furry surfaces pressing together at night awaiting nocturnal pleasure (sexual encounter)"
+    # v2.0: x_type: 0.3
+    x_r: 0.80
+    x_e: 0.20
+    x_s: 0.0
+    x_rationale: "R-dominant with slight E (sleep personified with erotic significance). 'Шерстка с шерсткой' is a pair description but does not generate a third concept — it describes the physical contact itself. No synthesis."
+    recode_note: |
+      v2→v3: x_type=0.3 → (r=0.80, e=0.20, s=0). R increases slightly, S=0.
+      S reconsidered: 'шерстка с шерсткой слипаются' (two furs pressing) → sleep onset.
+      This is action-description metonymy, not binary juxtaposition generating a third concept.
+      E component: eyelashes personified/enchanted with erotic diminutive 'шерстка' (some E).
+    formal_candidate: false
+    y_vector: "Conceptual+Structural"
+    y_detail: "Tactile/zoomorphic transfer: 'шерстка' (diminutive of wool/fur) applies to both eyelashes and body hair. Nocturnal framing activates erotic register; 'ночная сладость' (nocturnal sweetness) = sleep vs. sexual pleasure."
+    z_register: 2
+    z_rationale: "Seasonal/contextual — performed at weddings and evening gatherings; cited explicitly in academic review (Robert Claude 1998)"
+    source: "Cited in: Robert Claude. (1998). Review of Toporkov (1995). Revue Russe, no. 13, pp. 71–73. Persée: https://www.persee.fr/doc/russe_1161-0557_1998_num_13_1_1981_t1_0071_0000_1"
+    notes: "Answer: веки (eyelids). Toporkov describes this as employing 'symbolism quite rustic' with a 'falsely innocent response.' The zoomorphic diminutive 'шерстка' is the key ambiguating element."
+    confidence: "high"
+    flag: false
+
+  - id: "EEU_004"
+    tradition: "Russian zagadka (загадка)"
+    language: "Russian"
+    host_word: "Красна девица сидит в темнице, а коса на улице"
+    host_romanized: "Krasna devitsa sidit v temnitse, a kosa na ulitse"
+    covert_target: "Erotic/erotic-adjacent: a beautiful constrained maiden with her braid (hair/weapon) outside — suggesting captive female figure"
+    # v2.0: x_type: 0.6
+    x_r: 0.30
+    x_e: 0.50
+    x_s: 0.20
+    x_rationale: "Hybrid with meaningful S component. R: erotic/captivity meaning retreats into vegetable imagery. E (dominant): bylina formula 'красна девица' actively RE-ENCHANTS the carrot with heroic archetype. S (notable): the compound image [красна девица + темница + коса на улице] synthesizes a unified captivity scene that neither 'carrot' nor 'maiden' generates alone — the juxtaposition creates the iconic peasant-archetype narrative."
+    recode_note: |
+      v2→v3: x_type=0.6 → (r=0.30, e=0.50, s=0.20). Most significant change in E Europe.
+      S=0.20: the three-element compound (maiden + dungeon + braid-outside) synthesizes an
+      iconic captivity narrative that neither element creates alone. Cross-genre import of bylina
+      formula into zagadka creates a synthesis at the genre/intertextual level.
+      E remains dominant: bylina formula enchantment of carrot is primary mechanism.
+      Formal candidate (weak): bylina formula import into zagadka creates a cross-form interaction.
+    formal_candidate: false
+    y_vector: "Conceptual"
+    y_detail: "Personification metaphor: the carrot's underground root (= 'темница'/dungeon) and green top (= 'коса'/braid) map perfectly onto the imprisoned maiden trope. The stock bylina epithet 'красна девица' imports the entire heroic archetype into an agricultural context."
+    z_register: 3
+    z_rationale: "One of the most canonical Russian riddles; documented by Sadovnikov (1876) and widely reproduced; the bylina formula itself is ubiquitous in oral tradition"
+    source: "Sadovnikov, D. N. (1876). Загадки русского народа. St. Petersburg; Reeder, R. (1981). Semiotica, 33(3-4), 237–260"
+    notes: "Answer: морковь (carrot). Notable for embedding the bylina formula 'красна девица' in the riddle tradition — a cross-genre borrowing. The formula's erotic connotations are secondary to the structural personification, hence flag: true"
+    confidence: "high"
+    flag: true
+
+  - id: "EEU_005"
+    tradition: "Russian zagadka (загадка)"
+    language: "Russian"
+    host_word: "Без рук, без ног на бабу скок!"
+    host_romanized: "Bez ruk, bez nog na babu skok!"
+    covert_target: "Erotic: limbless entity leaping onto a woman (sexual mounting)"
+    # v2.0: x_type: 0.1
+    x_r: 0.90
+    x_e: 0.10
+    x_s: 0.0
+    x_rationale: "Pure R: the sexual meaning (mounting/intercourse) retreats maximally into animal-like descriptor for a household object. 'Скок' carries both literal and sexual sense but through simple polysemy, not synthesis."
+    recode_note: |
+      v2→v3: x_type=0.1 → (r=0.90, e=0.10, s=0). Nearly unchanged — pure R zagadka.
+      S=0: 'баба' + 'скок' generates no third concept — it's pure erotic vocabulary substitution.
+      Formal candidate (weak): zagadka double-motion form, same as EEU_001/002.
+    formal_candidate: true
+    formal_candidate_note: "zagadka double-motion (weak) — the bluntest zagadka in the dataset; form is most salient here as the misdirection depends entirely on the riddle-and-answer structure."
+    y_vector: "Metonymic+Conceptual"
+    y_detail: "Action metonymy: 'скок' (to leap/mount) maps physical landing of the blanket onto a body onto sexual mounting. 'Баба' (woman) invites personification. The limbless descriptor is a negative-space clue pointing away from animate agents."
+    z_register: 3
+    z_rationale: "Widely collected and performed; appears in popular and academic anthologies; known across Russian-speaking regions"
+    source: "Folk collection tradition; documented in: Toporkov, A. L. (ed.) (1995). Русский эротический фольклор. Moscow: Ladomir; popular attestation: zagadki-otvetami.ru"
+    notes: "Answer: одеяло (blanket). One of the bluntest examples of erotic misdirection with innocent answer. 'Скок' is the key verb doing double semantic work."
+    confidence: "high"
+
+  - id: "EEU_006"
+    tradition: "Russian bylina constant epithet (постоянный эпитет)"
+    language: "Russian (Old Russian oral)"
+    host_word: "мать сыра земля"
+    host_romanized: "mat' syra zemlya"
+    covert_target: "Cosmological deity: Mati-Syra-Zemlya, ancient Slavic earth goddess (fertility, death, oath-witness); simultaneously a geophysical description, a divine invocation, and a juridical oath"
+    # v2.0: x_type: 0.8
+    x_r: 0.0
+    x_e: 0.80
+    x_s: 0.20
+    x_rationale: "E-dominant: the cosmological deity meaning was actively CREATED and encoded into the phrase 'moist earth.' S component (0.20): the three-word compound [мать + сыра + земля] generates the goddess concept that transcends each word's independent meaning — mother + moist + earth = divine-generative-juridical deity, a third concept none generates alone."
+    recode_note: |
+      v2→v3: x_type=0.8 → (r=0, e=0.80, s=0.20). Added S=0.20 for compound synthesis.
+      S=0.20: three-word compound generates a deity concept beyond the sum of its parts.
+      E remains primary: the active assignment of divine meaning to 'moist earth' is classic E.
+      Formal candidate (medium): REPEATED FORMULA IN PERFORMANCE is how this meaning
+      crystallizes and is maintained — bylina constant epithet crystallization via iteration is
+      arguably a form-level (Formal) mechanism. The form (repeated formula in oath/performance
+      context) generates the covert divine meaning. Flagged for karo/shogun judgment.
+    formal_candidate: true
+    formal_candidate_note: |
+      Bylina formulaic crystallization as potential Formal vector: the covert theological meaning
+      ('divine oath-witness') is generated and maintained by the FORM of repeated-formula use in
+      performance ceremonies. Without the formal repetition in specific social contexts (oaths,
+      bylina performance), the phrase would be mere geophysical description. The Formal mechanism
+      here is diachronic (repetition → crystallization) rather than synchronic (structural form),
+      which may distinguish it from dúnad. Requires framework decision: does formulaic crystallization
+      count as Formal CPG?
+    y_vector: "Conceptual+Behavioral"
+    y_detail: "Earth's physical moistness/fertility (Structural) maps onto the goddess's generative power (Conceptual); the goddess's behavior (receiving the dead, witnessing oaths) adds the Behavioral vector."
+    z_register: 3
+    z_rationale: "Invoked publicly in byliny performances, oath ceremonies, land disputes, and peasant ritual; third-party documentation in academic sources"
+    source: "Wikipedia: 'Mat Zemlya'; Slavic mythology scholarship; discussed in Ivanits, L. (1989). Russian Folk Belief. M.E. Sharpe; formula discussed in: foxford.ru/wiki/literatura/permanent-epithet"
+    notes: "This is arguably the most semantically saturated Slavic epithet — three words encoding geophysics, theology, and jurisprudence simultaneously. The covert path operates at all three registers simultaneously."
+    confidence: "high"
+
+  - id: "EEU_007"
+    tradition: "Russian bylina constant epithet (постоянный эпитет)"
+    language: "Russian (Old Russian oral)"
+    host_word: "седельце черкасское"
+    host_romanized: "sedel'tse cherkasskoe"
+    covert_target: "Heroic prestige marker: the elite status of the bylina hero, encoded via the reputation of Circassian (Adygian) craft tradition; not a mere geographic indicator"
+    # v2.0: x_type: 0.9
+    x_r: 0.0
+    x_e: 0.85
+    x_s: 0.15
+    x_rationale: "E-dominant: a new prestige meaning is actively INVENTED for the geographic marker 'Circassian.' S component (0.15): the compound [седельце + черкасское] = geographic origin + object → generates the heroic prestige concept that transcends either word. The synthesis is weaker than EEU_006/008 — the S element is more associative than generative."
+    recode_note: |
+      v2→v3: x_type=0.9 → (r=0, e=0.85, s=0.15). Small S added for geographic+object compound.
+      S=0.15: geographic-marker + object-type compound generates prestige meaning beyond description.
+      Weaker S than EEU_006/008 — more metonymic transfer than true synthesis.
+      Formal candidate (medium): same bylina formulaic crystallization mechanism as EEU_006.
+      The FORM of repeated epithet use in performance creates and maintains the prestige meaning.
+    formal_candidate: true
+    formal_candidate_note: "Bylina formulaic crystallization (same as EEU_006). The prestige meaning is maintained by the formal habit of repeated use in performance, not by semantic content alone."
+    y_vector: "Metonymic"
+    y_detail: "Metonymic prestige transfer: Circassian craft tradition's elite status (finest saddles in Russia/Eastern Europe — twice as light as Turkish, three times lighter than European) becomes an attribute of the bylina hero through repeated association."
+    z_register: 2
+    z_rationale: "Contextual: appears specifically in byliny performance contexts; the prestige association is known to the performance community but not universally in third-party discourse"
+    source: "Russian literary terminology resources: literaturologiya.academic.ru/504/постоянный_эпитет; historical saddle context: livingheritage.ru on Adygian saddle tradition; Lord, A. B. (1960). The Singer of Tales. Harvard University Press"
+    notes: "Academic discussions explicitly note: 'in a saddle constantly called черкасским, this is not a simple definition but a method of stylistic idealization.' The epithet functions as a prestige token, not a descriptor."
+    confidence: "high"
+
+  - id: "EEU_008"
+    tradition: "Russian bylina constant epithet (постоянный эпитет)"
+    language: "Russian (Old Russian oral)"
+    host_word: "добрый молодец"
+    host_romanized: "dobryy molodets"
+    covert_target: "Heroic archetype category marker: not moral goodness but a specific liminal status (unmarried, combat-capable, ritually eligible); encodes an entire cosmological schema"
+    # v2.0: x_type: 0.8
+    x_r: 0.0
+    x_e: 0.70
+    x_s: 0.30
+    x_rationale: "E+S hybrid. E (dominant, 0.70): 'добрый' (good/kind) is actively RE-ENCHANTED to mean heroic/eligible status — a moral adjective assigned a structural/cosmological meaning. S (notable, 0.30): the compound [добрый + молодец] generates the heroic-archetype-category concept that neither 'good' nor 'lad' carries independently. The compound synthesizes the liminal cosmological position, which is a genuine third concept."
+    recode_note: |
+      v2→v3: x_type=0.8 → (r=0, e=0.70, s=0.30). S=0.30 added — most significant S in bylina group.
+      S=0.30: 'добрый' (moral) + 'молодец' (young male) → heroic archetype category (unmarried +
+      combat-eligible + ritually-positioned). The compound synthesizes a cosmological status that
+      transcends either adjective or noun alone. Parallel to kenning synthesis (NEU_001-006)
+      but at lower intensity (s=0.30 vs. s=0.60 for kennings).
+      Formal candidate (medium): bylina formulaic crystallization — repeated compound formula
+      in performance generates and maintains the archetype-category meaning.
+    formal_candidate: true
+    formal_candidate_note: "Bylina formulaic crystallization (medium). The compound is documented to generate 'a mythologized representation in oral-poetic text' through formulaic repetition. The covert meaning is form-sustained."
+    y_vector: "Structural"
+    y_detail: "The formula functions as a taxonomic coordinate in bylina cosmology, not an evaluative descriptor. 'Добрый молодец' marks: unmarried status, combat eligibility, liminal life-stage. The Structural vector operates through functional classification rather than description."
+    z_register: 3
+    z_rationale: "Ubiquitous across bylina tradition; documented extensively in literary scholarship; widely reproduced in educational and popular contexts"
+    source: "Lopyut'ko analysis: 'Добрый молодец и красна девица.' Semantic Scholar (ID: 2b88e33490cb8f710e0e2f7ef0eba50fec4dcf6d); foxford.ru/wiki/literatura/permanent-epithet; literaturologiya.academic.ru"
+    notes: "Research shows this paired formula (with 'красна девица') 'models a mythologized representation in oral-poetic text' and functions as structural coordinates across byliny. The 'forgetting of real meaning' (забвение реального смысла) is documented in Russian literary terminology."
+    confidence: "high"
+
+  - id: "EEU_009"
+    tradition: "Russian bylina constant epithet (постоянный эпитет)"
+    language: "Russian (Old Russian oral)"
+    host_word: "белые руки"
+    host_romanized: "belye ruki"
+    covert_target: "Nobility/idealized status marker: whiteness encodes social class (non-manual labor, aristocratic purity) regardless of actual complexion of the person described; applied even to enemies or dark-skinned characters"
+    # v2.0: x_type: 0.7
+    x_r: 0.0
+    x_e: 0.65
+    x_s: 0.35
+    x_rationale: "E+S hybrid. E (0.65): color 'white' is ENCHANTED with social-class meaning beyond perceptual sense. S (notable, 0.35): the compound [белые + руки] generates the class-status concept — white (purity/non-labor) + hands (manual/social interface) → nobility marker that neither color nor body-part carries independently. The paradox of application to physically non-white characters confirms the S-generated meaning has fully detached from both component elements."
+    recode_note: |
+      v2→v3: x_type=0.7 → (r=0, e=0.65, s=0.35). S=0.35 is significant — second-highest S in dataset.
+      S=0.35: белые (white/pure) + руки (hands/labor-site) → nobility/class status. The compound
+      generates a social taxonomy marker that neither 'whiteness' nor 'hands' generates alone.
+      Evidence for S: formula applied to dark-skinned characters confirms the synthesized meaning
+      has fully superseded both visual and body-part semantics. Comparable to bylina compound
+      synthesis, weaker than kenning but stronger than EEU_007.
+      Formal candidate (medium): bylina formulaic crystallization mechanism.
+    formal_candidate: true
+    formal_candidate_note: "Bylina formulaic crystallization (medium). The social-class meaning is form-generated (repeated use in performance crystallizes the non-literal meaning). Application to characters who physically contradict both elements confirms form-over-content operation."
+    y_vector: "Chromatic+Structural"
+    y_detail: "Chromatic: white skin historically indicated non-manual (noble) labor in Russian culture. Structural: once crystallized as an epithet, 'белые руки' functions as a taxonomic class marker independent of visual reality. The paradox of application to non-white characters confirms semantic drift."
+    z_register: 3
+    z_rationale: "Documented across the entire corpus of Russian byliny; discussed in academic literary studies"
+    source: "Russian literary terminology: literaturologiya.academic.ru/504/постоянный_эпитет (discusses the semantic emptying phenomenon); foxford.ru/wiki/literatura/permanent-epithet"
+    notes: "Classic case of formulaic crystallization: the epithet applied regardless of physical reality demonstrates complete detachment from literal meaning. The 'hidden' meaning (class status) has supplanted the overt meaning (color) in function."
+    confidence: "medium"
+    flag: true
+
+  - id: "EEU_010"
+    tradition: "Polish erotic folk lyric (pieśń ludowa) / Pan-Slavic tradition"
+    language: "Polish / Russian / Ukrainian"
+    host_word: "Napoić konia / напоить коня у колодца (водопой)"
+    host_romanized: "Napoić konia u studni / Napoit' konya u kolodtsa"
+    covert_target: "Sexual intercourse: a man requests permission to water his horse at a woman's well; the well = female sexuality; horse = male sexuality/virility; watering = the sex act"
+    # v2.0: x_type: 0.1
+    x_r: 0.90
+    x_e: 0.10
+    x_s: 0.0
+    x_rationale: "Pure R: sexual meaning retreats maximally into pastoral/agricultural vocabulary. The horse+well+watering scenario is systematic Metonymic substitution — each element maps to a sexual referent, but no third concept is generated by their juxtaposition. The meaning (intercourse) is pre-existing and simply retreats into the pastoral code."
+    recode_note: |
+      v2→v3: x_type=0.1 → (r=0.90, e=0.10, s=0). No substantive change — pure R metonymic system.
+      S reconsidered: horse + well → intercourse. Could this be S? The 'intercourse' meaning is
+      not a third concept synthesized from horse+well — it's the pre-existing sexual meaning that
+      retreats into the pastoral substitution system. Pure R confirmed.
+      Formal candidate (no): The generative schema (any agricultural term → erotic) is form-level
+      at tradition level but individual items use content-level substitution.
+    formal_candidate: false
+    y_vector: "Metonymic"
+    y_detail: "Systematic action-chain metonymy: horse (Indo-European virility symbol) → male sexuality; well/water source → female sexuality; the act of watering → intercourse. Gura (2005) identifies this as one of the most widespread and consistent Slavic erotic symbol systems."
+    z_register: 2
+    z_rationale: "Performed at weddings and seasonal folk songs; contextual repetition across the Slavic world; not universally known outside the folk context"
+    source: "Gura, A. V. (2005). 'Coitus in the Symbolic Language of Slavic Culture.' Folklore: Electronic Journal of Folklore, Vol. 30, pp. 135–154. DOI: 10.7592/FEJF2005.30.GURA. URL: https://www.folklore.ee/folklore/vol30/gura.pdf"
+    notes: "Documented in Russian, Polish, Ukrainian, and other Slavic ballads, lyric songs, and wedding songs. Gura identifies this as 'one of the most widespread erotic symbols in Slavic folklore, functioning consistently across multiple national traditions.' Excellent case of cross-Slavic metonymic stability."
+    confidence: "high"
+
+  - id: "EEU_011"
+    tradition: "Polish erotic folk lyric (pieśń ludowa)"
+    language: "Polish"
+    host_word: "oranie / zaorać pole (plowing / to plow a field)"
+    host_romanized: "oranie pola / zaorać"
+    covert_target: "Sexual intercourse (penetration): agricultural plowing systematically maps onto the sex act; the woman is the field, the man is the plowman"
+    # v2.0: x_type: 0.1
+    x_r: 0.90
+    x_e: 0.10
+    x_s: 0.0
+    x_rationale: "Pure R: sexual act retreats into most fundamental agricultural vocabulary. Conceptual metaphor SEXUAL INTERCOURSE IS PLOWING is a substitution schema — field=woman, plowman=man, plowing=intercourse. No synthesis of independent elements into a third concept."
+    recode_note: |
+      v2→v3: x_type=0.1 → (r=0.90, e=0.10, s=0). Pure R confirmed.
+      S=0: plowing metaphor is systematic substitution (R), not binary juxtaposition generating
+      a third concept. The schema maps agricultural vocabulary onto pre-existing sexual referents.
+      Formal candidate (medium): The GENERATIVE SCHEMA itself is form-level — once the
+      agricultural-erotic mapping is established, the FORM (agricultural vocabulary) can generate
+      new erotic meanings. Kielak (2022) documents 8 sub-categories within this schema.
+      The schema's productivity distinguishes this tradition: the form (agricultural paradigm)
+      is generative in a way individual items are not. Flagged at tradition level for judgment.
+    formal_candidate: true
+    formal_candidate_note: |
+      Polish agricultural-erotic generative schema as Formal vector candidate: the abstract
+      conceptual metaphor schema SEXUAL INTERCOURSE IS AGRICULTURAL WORK functions as a
+      productive form that generates new CPG instances beyond individual items. The FORM
+      (agricultural vocabulary paradigm) is the generator, not individual semantic choices.
+      This is a different kind of Formal claim than dúnad (synchronic structure) or bylina
+      repetition (diachronic crystallization) — it is a GENERATIVE PARADIGM. Requires
+      framework decision: does a generative schema count as Formal CPG?
+    y_vector: "Conceptual"
+    y_detail: "Systematic conceptual metaphor: SEXUAL INTERCOURSE IS PLOWING. Kielak (2022) documents this as part of a productive generative schema — domestic/agricultural actions map consistently onto sexual acts. The schema is abstract enough to generate new erotic meanings from agricultural vocabulary."
+    z_register: 2
+    z_rationale: "Found in collected 19th–20th century Polish folk songs; seasonal/contextual performance at harvest festivals and weddings"
+    source: "Kielak, O. (2022). 'The Symbolism of Domestic Animals in Polish Erotic Folk Lyrics.' Folklore (Taylor & Francis), Vol. 133, No. 2, pp. 158–179. DOI: 10.1080/0015587X.2021.1981679"
+    notes: "Kielak (2022) documents the systematic nature of this mapping: 'plowing with animals → sexual intercourse (penetration)' is one of eight consistently documented agricultural-to-erotic metaphorical mappings. The system is generative, not arbitrary."
+    confidence: "high"
+
+  - id: "EEU_012"
+    tradition: "Polish/Czech folk custom and wedding song"
+    language: "Polish / Czech"
+    host_word: "groch / hrách (pea)"
+    host_romanized: "groch (Polish) / hrách (Czech)"
+    covert_target: "Fertility, pregnancy (especially extramarital): pea = seed/offspring; eating peas = extramarital sex (Polish); throwing peas at bride = predicting number of children (Czech); pea straw wreath = lost virginity (Polish wedding)"
+    # v2.0: x_type: 0.4
+    x_r: 0.45
+    x_e: 0.40
+    x_s: 0.0
+    x_rationale: "R/E hybrid. R (0.45): taboo meaning (extramarital pregnancy) retreats into innocent food item. E (0.40): pea's physical properties enchanted with fertility meaning. S=0: S三条件適用で不合格 — grochは単一語で条件1(JUXTAPOSITION)不成立; 形態→文化概念マッピングは合成的で条件2(NON-COMPOSITIONALITY)弱. 主要メカニズムはR+E."
+    recode_note: |
+      v2→v3: x_type=0.4 → (r=0.45, e=0.40, s=0.15). Small S added.
+      S=0.15: pea (round seed) + cultural taboo context → extramarital-pregnancy concept.
+      This is the weakest S in the dataset — primarily morphological mapping rather than
+      synthesis of independent concepts into a third meaning. Hybrid R/E confirmed as primary.
+      --- S三条件適用: 裁定[2] ---
+      条件1(JUXTAPOSITION): grochは単一語。「種の形態」と「文化的タブー」は二語/概念の
+      並置ではなく、単語の内的特性と文脈の組み合わせ → 条件1不成立。
+      条件2(NON-COMPOSITIONALITY): 丸い種→繁殖力→妊娠; タブー+妊娠→婚外妊娠は
+      各要素の意味から合成的に導出可能 → 条件2不成立(weak)。
+      条件3(CULTURAL CONVENTION): Slavic共同体で共有 ✓。
+      判定: 三条件不満足(条件1・2) → x_s: 0.15 → 0.0
+    formal_candidate: false
+    y_vector: "Conceptual+Morphological"
+    y_detail: "Morphological: roundness and seed-character of pea maps onto pregnancy/offspring. Conceptual: the entire fertility domain is mapped onto the pea as a cultural symbol. The Polish phrase 'pokuszać goroszku' (to eat pea) = extramarital sex shows full metonymic crystallization."
+    z_register: 2
+    z_rationale: "Czech wedding custom (throwing peas at bride) and Polish wedding song (pea straw wreath) are seasonal/ritual contexts; 'pokuszać goroszku' usage more private"
+    source: "Gura, A. V. (2005). 'Coitus in the Symbolic Language of Slavic Culture.' Folklore: Electronic Journal of Folklore, Vol. 30, pp. 135–154. DOI: 10.7592/FEJF2005.30.GURA"
+    notes: "Language-specific nuances: Russian 'покушать горошку' = extramarital sex; Polish: pregnancy especially extramarital; Czech: throwing peas at bride for fertility prediction; Polish: pea straw wreath = lost virginity symbol. Cross-Slavic variation on shared fertility symbolism."
+    confidence: "high"
+
+  - id: "EEU_013"
+    tradition: "Belarusian stydnyya zahadki (стыдныя загадкі)"
+    language: "Belarusian"
+    host_word: "Мяне мілы спалюбіў, сярод поля заваліў: / Грэх ня грэх, а мне хочацца"
+    host_romanized: "Myane mily spalyubiv, syarod polya zavaliv: / Grekh nya grekh, a mne khochatsya"
+    covert_target: "Erotic surface: 'My beloved seduced me, knocked me down in a field: sin or not, I want it' (sexual encounter in a field)"
+    # v2.0: x_type: 0.3
+    x_r: 0.70
+    x_e: 0.30
+    x_s: 0.0
+    x_rationale: "R-dominant with meaningful E. R (0.70): sleep-state experience retreats into erotic encounter description. E (0.30): sleep is actively PERSONIFIED as seductive lover — enchanting the state of drowsiness with erotic personhood. S=0: the lover + field + sin framing doesn't generate a third concept — it's the personification metaphor operating at content level."
+    recode_note: |
+      v2→v3: x_type=0.3 → (r=0.70, e=0.30, s=0). R increased, E increased, S=0.
+      The first-person erotic narrative is more purely a personification metaphor (E component
+      for enchanting sleep as lover) than v2.0's pure R suggested. Both directions active.
+      Formal candidate (weak): Belarusian stydnyya zahadki is a named subgenre explicitly
+      designed for erotic misdirection — the form (erotic-narration zagadka) is the CPG vehicle.
+      Weaker than bylina crystallization as Formal claim.
+    formal_candidate: true
+    formal_candidate_note: "Zagadka double-motion form (weak) — same as EEU_001/002/005. First-person narration enhances the erotic immediacy, making the form-dependency slightly stronger."
+    y_vector: "Conceptual"
+    y_detail: "Personification + experiential state transfer: sleep is PERSONIFIED as a seductive lover; 'спалюбіў' (seduced/loved) = overcome by drowsiness; 'заваліў' (knocked down) = fell asleep; 'грэх ня грэх' (sin or not) = irresistible desire for sleep. Complete conceptual transfer of sleepiness experience onto erotic vocabulary."
+    z_register: 3
+    z_rationale: "Reported to have been told even to children; widely documented in Belarusian erotic folklore collection; newspaper article in Komsomolskaya Pravda (Belarus)"
+    source: "Volodina, T. V. & Fedosik, A. S. (eds.) (2006). Белорусский эротический фольклор. 381 pp.; popular documentation: Komsomolskaya Pravda (Belarus), 'Белорусский эротический фольклор'; historical collectors: E. Romanov, P. Sheyn, A. Dembovecky"
+    notes: "Answer: сон (sleep/dream). The Belarusian 'стыдныя загадкі' (shameful riddles) are a documented subgenre explicitly designed for erotic misdirection with innocent resolution. This example shows first-person narration enhancing the erotic immediacy."
+    confidence: "high"
+
+  - id: "EEU_014"
+    tradition: "Belarusian stydnyya zahadki (стыдныя загадкі)"
+    language: "Belarusian"
+    host_word: "Зверху чорна, / Унутры красна. / Як усунеш, дык прэкрасна"
+    host_romanized: "Zvyerkhu chorna, / Unutry krasna. / Yak usunesh, dyk prekkrasna"
+    covert_target: "Erotic: black exterior, red inside, wonderful when inserted (sexual imagery via color contrast and insertion action)"
+    # v2.0: x_type: 0.2
+    x_r: 0.85
+    x_e: 0.15
+    x_s: 0.0
+    x_rationale: "R-dominant: the sexual reading (color contrast of body, insertion, pleasure) retreats into description of a rubber boot's material properties. Black/red contrast is visual description mapped onto body-part imagery (R). No synthesis — the two-color contrast does not generate a third concept beyond the visual description of the boot/body."
+    recode_note: |
+      v2→v3: x_type=0.2 → (r=0.85, e=0.15, s=0). No substantive change.
+      S reconsidered: зверху чорна + унутры красна → could this binary color contrast generate
+      a third concept? Verdict: No — black/red is visual description of boot (outside/inside),
+      mapped onto body-part visual imagery. Metonymic, not synthetic.
+      Chromatic vector involves color but not synthesis of two colors into a third concept.
+    formal_candidate: false
+    y_vector: "Chromatic+Structural"
+    y_detail: "Chromatic: black/red color contrast (exterior rubber/interior lining) maps onto erotic color imagery. Structural: 'усунеш' (insert/push in) — the functional property of putting on a boot maps onto sexual insertion."
+    z_register: 2
+    z_rationale: "Contextual — belongs to stydnyya zahadki tradition performed in specific social settings; documented in academic collection"
+    source: "Volodina, T. V. & Fedosik, A. S. (eds.) (2006). Белорусский эротический фольклор; Komsomolskaya Pravda (Belarus) documentation"
+    notes: "Answer: галоша / гумовы боцік (rubber galosh). Black rubber exterior, warm red fabric lining inside; inserting foot = 'усунеш.' A crisp example of Chromatic+Structural compound vector. The warm comfort of the boot resolves 'прэкрасна' innocently."
+    confidence: "high"
+
+  - id: "EEU_015"
+    tradition: "Russian/Slavic wedding song euphemism"
+    language: "Russian"
+    host_word: "красота (krasota) — the ritual beauty object (hair ribbon, wreath, hairdress)"
+    host_romanized: "krasota"
+    covert_target: "Virginity / maidenhood: the ritual 'beauty' object symbolizes the bride's virgin status; its ceremonial 'sale' or 'loss' during wedding rites euphemistically encodes defloration"
+    # v2.0: x_type: 0.2
+    x_r: 0.85
+    x_e: 0.15
+    x_s: 0.0
+    x_rationale: "R-dominant: the concept of virginity/defloration retreats completely into the abstract quality 'beauty' and its material embodiment (ribbon, wreath). Pure R — no synthesis, no active enchantment of a new meaning; the pre-existing taboo meaning retreats into the ritual object."
+    recode_note: |
+      v2→v3: x_type=0.2 → (r=0.85, e=0.15, s=0). No substantive change.
+      E component (small): the abstract 'красота' as beauty is re-purposed to encode maidenhood
+      — a slight E element in the assignment of virgin-status meaning to an aesthetic concept.
+      S=0: no binary juxtaposition of independent elements generating a third concept.
+      Formal candidate (weak): the wedding ritual FORM (ceremony of 'selling the krasota') is
+      the delivery mechanism for the euphemism — without the ritual form, the word 'красота'
+      doesn't carry the virgin-status meaning.
+    formal_candidate: true
+    formal_candidate_note: |
+      Wedding ritual form as possible Formal vector: the 'krasota' euphemism only activates within
+      the specific ritual form (wedding ceremony, krasota-selling rite). The FORM of the ritual
+      context generates the covert virgin-status meaning. This is a ritual-form Formal claim,
+      different from linguistic-structural (dúnad) or performance-repetition (bylina) Formal claims.
+      Weakest Formal claim in dataset — the ritual form is more context than structure.
+    y_vector: "Conceptual+Metonymic"
+    y_detail: "Conceptual: abstract quality 'красота' (beauty) encodes the abstract concept 'maidenhood/virginity.' Metonymic: the physical hair ribbon/wreath as the кrasota object stands in for the bride's intact social/sexual status. The ritual 'selling' of the krasota = granting access to the bride's intimate sphere."
+    z_register: 2
+    z_rationale: "Seasonal/ritual — performed specifically at wedding ceremonies; not universally known outside wedding ritual context; documented in Harvard CHS and academic wedding-song scholarship"
+    source: "Levaniouk, O. 'Sky-Blue Flower: Songs of the Bride in Modern Russia and Ancient Greece.' Center for Hellenic Studies, Harvard University. URL: https://chs.harvard.edu/olga-levaniouk-sky-blue-flower-songs-of-the-bride-in-modern-russia-and-ancient-greece/; Toporkov (1995)"
+    notes: "The 'krasota' euphemism system also includes the braid (коса): the public unbraiding of the bride's hair is a performed euphemism for transition from virginal to married state. Commercial vocabulary ('buying'/'selling' the krasota) adds a Metonymic layer."
+    confidence: "high"
+
+summary:
+  total_items: 15
+  schema_version: "v3.0"
+
+  # --- X-axis ternary distribution ---
+  type_distribution_v3:
+    r_dominant: 8   # EEU_001-003, EEU_005, EEU_010, EEU_011, EEU_013, EEU_015 (r≥0.7)
+    e_dominant: 3   # EEU_006-008 (e≥0.7)
+    r_e_hybrid: 2   # EEU_004(r=0.3,e=0.5), EEU_012(r=0.45,e=0.40)
+    e_s_hybrid: 2   # EEU_009(e=0.65,s=0.35), EEU_014(r=0.85, minimal s)
+    s_dominant: 0   # No S-dominant items (s≥0.4) in Eastern Europe
+
+  # --- S-component analysis ---
+  s_nonzero_count: 5       # EEU_004(0.20), EEU_006(0.20), EEU_007(0.15), EEU_008(0.30), EEU_009(0.35)
+  # EEU_012: s=0.15→0.0 裁定[2] S三条件不満足(条件1:単一語で並置なし、条件2:合成的)
+  s_dominant_count: 0      # No S-dominant items
+  s_nonzero_items:
+    - id: "EEU_004"
+      s_value: 0.20
+      mechanism: "Cross-genre compound: bylina formula + zagadka structure → captivity narrative synthesis."
+    - id: "EEU_006"
+      s_value: 0.20
+      mechanism: "Compound мать+сыра+земля → cosmological deity concept transcending each word."
+    - id: "EEU_007"
+      s_value: 0.15
+      mechanism: "Geographic+object compound → prestige marker (weak synthesis, borderline条件2)."
+    - id: "EEU_008"
+      s_value: 0.30
+      mechanism: "добрый+молодец → heroic-archetype cosmological category marker."
+    - id: "EEU_009"
+      s_value: 0.35
+      mechanism: "белые+руки → social class marker, applied even when visually contradicted."
+
+  # --- Formal vector analysis ---
+  formal_vector_applied: 0       # No confirmed Formal vector
+  formal_vector_flagged: 7       # EEU_001,002,005,006,007,008,009,011,013,015 (see below)
+  formal_candidates:
+    strong:
+      - id: "EEU_006"
+        type: "Bylina formulaic crystallization"
+        note: "Repeated formula in performance (oath/bylina) generates/maintains divine meaning. Closest to dúnad among EE items."
+      - id: "EEU_008"
+        type: "Bylina formulaic crystallization"
+        note: "Compound formula crystallizes heroic archetype category through repeated oral performance."
+      - id: "EEU_009"
+        type: "Bylina formulaic crystallization"
+        note: "Application to physically contradicting characters proves form-over-content operation."
+    medium:
+      - id: "EEU_007"
+        type: "Bylina formulaic crystallization"
+        note: "Prestige meaning maintained by formulaic repetition in performance."
+      - id: "EEU_011"
+        type: "Polish agricultural generative schema"
+        note: "The schema form (agricultural paradigm) is itself a CPG generator. Unique: a paradigmatic Formal claim."
+    weak:
+      - id: "EEU_001"
+        type: "Zagadka double-motion"
+        note: "Form enables CPG; erotic meaning comes from content-level polysemy."
+      - id: "EEU_002"
+        type: "Zagadka double-motion"
+        note: "Same as EEU_001."
+      - id: "EEU_005"
+        type: "Zagadka double-motion"
+        note: "Bluntest zagadka — most dependent on form for misdirection."
+      - id: "EEU_013"
+        type: "Zagadka double-motion (Belarusian)"
+        note: "First-person narration makes form-dependency slightly stronger."
+      - id: "EEU_015"
+        type: "Wedding ritual form"
+        note: "Ritual ceremony form activates krasota euphemism."
+
+  formal_framework_questions:
+    - question: "Does bylina formulaic crystallization (diachronic repetition) count as Formal CPG? Dúnad is synchronic structure; bylina repetition is diachronic performance. Same category?"
+      items_affected: [EEU_006, EEU_007, EEU_008, EEU_009]
+    - question: "Does a generative paradigm (Polish agricultural schema) count as Formal CPG? This is a different Formal claim than individual structural forms."
+      items_affected: [EEU_011]
+    - question: "Does zagadka double-motion form (question-answer with dual readings) qualify as Formal CPG, given that content-level mechanisms generate the erotic meaning?"
+      items_affected: [EEU_001, EEU_002, EEU_005, EEU_013]
+
+  # --- Register distribution ---
+  register_distribution:
+    z1: 0
+    z2: 6    # EEU_003, EEU_007, EEU_010, EEU_011, EEU_012, EEU_014, EEU_015
+    z3: 9    # EEU_001, EEU_002, EEU_004, EEU_005, EEU_006, EEU_008, EEU_009, EEU_013
+
+  # --- Cross-cultural comparison note ---
+  regional_comparison:
+    s_component: |
+      Eastern Europe S-count: 5 items (0 S-dominant, none ≥0.4).
+      Compare: Africa (AFR_013: s=0.7, 4 S-dominant), N Europe kenning (s=0.6, 6 S-dominant).
+      Eastern Europe S is CONSISTENTLY LOWER than Africa/N Europe. The dominant CPG mechanism
+      in East Slavic tradition is R (zagadka refuge), not S (synthesis). The bylina compounds
+      produce moderate S (0.15-0.35) comparable to moderate-S African items.
+    formal_question: |
+      Eastern Europe raises THREE distinct types of Formal CPG candidates:
+      (1) Bylina crystallization (diachronic form) — strongest, closest to dúnad
+      (2) Agricultural generative schema (paradigmatic form) — unique type
+      (3) Zagadka double-motion (enabling form) — weakest
+      None confirmed. Requires framework clarification on diachronic vs. synchronic Formal CPG.
+
+  key_findings: |
+    **Eastern Slavic zagadka tradition shows the purest R-direction CPG patterns found in the survey.**
+    Russian and Belarusian erotic riddles represent a uniquely formalized system where sexual meanings
+    retreat into maximally innocent domestic/agricultural vocabulary. The riddle FORM itself is the
+    covert-path delivery mechanism. No other tradition surveyed has this systematic inversion mechanism.
+
+    **Bylina constant epithets show E+moderate-S pattern in v3.0 (upgraded from pure E in v2.0).**
+    The compound epithets (мать сыра земля, добрый молодец, белые руки) all show S components
+    (0.15-0.35) — weaker than kennings (0.6) but genuine. The synthesis mechanism is compound-word
+    generation of a category/archetype concept beyond either element.
+
+    **Polish/Slavic agricultural metaphor raises a novel PARADIGMATIC Formal candidate.**
+    Unlike dúnad (ring composition) or bylina repetition, the agricultural schema is a generative
+    PARADIGM that produces CPG instances. This is a different ontological level of Formal claim.
+
+    **Cross-Slavic stability of horse-watering motif** (EEU_010) is the oldest/most stable layer.
+
+    **v3.0 Major change: EEU_004 upgraded from x_type=0.6 to (r=0.30, e=0.50, s=0.20).**
+    The cross-genre import of bylina formula into zagadka creates a synthesis at the intertextual
+    level, captured by S=0.20. This is the most significant individual recode.
+
+  ambiguous_items:
+    - "EEU_004"  # Cross-genre formula import — S component uncertain
+    - "EEU_009"  # Social-class covert path; less prototypical CPG than erotic traditions

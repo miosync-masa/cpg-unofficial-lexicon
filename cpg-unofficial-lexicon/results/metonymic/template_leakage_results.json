@@ -1,0 +1,150 @@
+{
+  "sensitivity_analysis": {
+    "experiment": "sensitivity_analysis",
+    "candidate_mean": 0.1049472264744157,
+    "control_mean": 0.040959698494296815,
+    "difference": 0.06398752798011889,
+    "mann_whitney_U": 31.0,
+    "p_value": 0.06371406371406371,
+    "hedges_g": 1.010897133722001,
+    "significant": false,
+    "n_candidates": 8,
+    "n_controls": 5,
+    "removed_controls": [
+      "come up for air (metonymic: sexual breathlessness)",
+      "sleep soundly (host-word contamination from 'sleep together')",
+      "Netflix and popcorn (template contamination from 'Netflix and chill')"
+    ]
+  },
+  "template_leakage_netflix": {
+    "experiment": "template_leakage_netflix",
+    "source_phrase": "Netflix and chill",
+    "source_pull": 0.13517893789758656,
+    "head_word_pull": -0.034579059467156975,
+    "template_mean": -0.014858826764366399,
+    "baseline_mean": -0.03483705099670638,
+    "mean_template_leakage": 0.019720232702790576,
+    "mann_whitney_U": 64.0,
+    "p_value": 0.15374472830934066,
+    "hedges_g": 0.5530013886691032,
+    "significant": false,
+    "template_items": [
+      {
+        "phrase": "Netflix and homework",
+        "pull": -0.04220019842304859,
+        "leakage": -0.007621138955891615
+      },
+      {
+        "phrase": "Netflix and laundry",
+        "pull": -0.03349903629699255,
+        "leakage": 0.0010800231701644236
+      },
+      {
+        "phrase": "Netflix and yoga",
+        "pull": 0.05915946300863176,
+        "leakage": 0.09373852247578873
+      },
+      {
+        "phrase": "Netflix and taxes",
+        "pull": -0.05704355237598609,
+        "leakage": -0.022464492908829112
+      },
+      {
+        "phrase": "Netflix and gardening",
+        "pull": -0.04966149486266422,
+        "leakage": -0.015082435395507243
+      },
+      {
+        "phrase": "Netflix and cooking",
+        "pull": 0.003089772123360479,
+        "leakage": 0.037668831590517454
+      },
+      {
+        "phrase": "Netflix and cleaning",
+        "pull": -0.02218066438374164,
+        "leakage": 0.012398395083415337
+      },
+      {
+        "phrase": "Netflix and studying",
+        "pull": -0.0383540593842244,
+        "leakage": -0.003774999917067423
+      },
+      {
+        "phrase": "Netflix and knitting",
+        "pull": 0.013798353898677063,
+        "leakage": 0.04837741336583404
+      },
+      {
+        "phrase": "Netflix and ironing",
+        "pull": 0.01830314905232419,
+        "leakage": 0.052882208519481166
+      }
+    ],
+    "baseline_items": [
+      {
+        "phrase": "bread and butter",
+        "pull": -0.0497049427598818
+      },
+      {
+        "phrase": "salt and pepper",
+        "pull": 0.02211448473554009
+      },
+      {
+        "phrase": "pen and paper",
+        "pull": -0.051736789959175966
+      },
+      {
+        "phrase": "lock and key",
+        "pull": -0.038155358013750806
+      },
+      {
+        "phrase": "needle and thread",
+        "pull": -0.009201428798204708
+      },
+      {
+        "phrase": "soap and water",
+        "pull": -0.011363879143271222
+      },
+      {
+        "phrase": "hammer and nail",
+        "pull": -0.041991285572695436
+      },
+      {
+        "phrase": "cup and saucer",
+        "pull": -0.018362967959173943
+      },
+      {
+        "phrase": "broom and dustpan",
+        "pull": -0.09260062266484909
+      },
+      {
+        "phrase": "fork and knife",
+        "pull": -0.05736771983160094
+      }
+    ]
+  },
+  "host_word_leakage": {
+    "sleep": {
+      "source_phrase": "sleep together",
+      "source_pull": 0.19788278884099875,
+      "host_pull": 0.020328924838456386,
+      "template_mean": 0.07004949114755576,
+      "baseline_mean": 0.024160083595661925,
+      "difference": 0.04588940755189384,
+      "mann_whitney_p": 0.00364227850473983,
+      "hedges_g": 1.4777258674135463,
+      "significant": true
+    },
+    "come up for": {
+      "source_phrase": "come up for coffee",
+      "source_pull": 0.03288996027387145,
+      "host_pull": 0.04651456984573796,
+      "template_mean": 0.024070932351170464,
+      "baseline_mean": 0.007367325456859758,
+      "difference": 0.016703606894310705,
+      "mann_whitney_p": 0.26026144163788634,
+      "hedges_g": 0.44294209948549057,
+      "significant": false
+    }
+  }
+}

@@ -1,0 +1,414 @@
+# CPG World Search Results — Ashigaru 2
+# Region: Southeast Asia
+# Date: 2026-03-13
+# Agent: ashigaru2
+# Version: v3.0 (recoded 2026-03-13 — Formal vector + X-axis triangular coordinates)
+
+metadata:
+  region: "Southeast Asia"
+  traditions_surveyed:
+    - name: "Malay pantun"
+      language: "Malay (Jawi: جاوي / Rumi romanization)"
+      sources_consulted: 6
+    - name: "Vietnamese Nôm poetry (Ho Xuan Huong)"
+      language: "Vietnamese (Nôm script / chữ Quốc ngữ)"
+      sources_consulted: 4
+      notes: "Literary tradition closely related to ca dao; 18th-19th century; thanh/tuc dual-register system"
+    - name: "Vietnamese ca dao (folk song)"
+      language: "Vietnamese (chữ Quốc ngữ)"
+      sources_consulted: 3
+    - name: "Javanese tembang macapat"
+      language: "Javanese (Hanacaraka: ꦲꦤꦕꦫꦏ)"
+      sources_consulted: 4
+    - name: "Thai luk thung (country music)"
+      language: "Thai (อักษรไทย)"
+      sources_consulted: 3
+    - name: "Thai phleng choi (folk song)"
+      language: "Thai (อักษรไทย)"
+      sources_consulted: 2
+
+items:
+  - id: "SEA_001"
+    tradition: "Malay pantun"
+    language: "Malay"
+    host_word: "selasih (سلاسيه — sweet basil plant)"
+    host_romanized: "selasih"
+    covert_target: "kekasih (beloved/sweetheart)"
+    x_type: 0.4  # legacy v2.0
+    x_r: 0.45
+    x_e: 0.25
+    x_s: 0.30
+    x_rationale: "R-direction dominant: the poet's unexpressed feeling retreats into the plant name via phonetic rhyme, avoiding direct emotional declaration (Malay cakap beralas). S-component (0.30): pantun's pembayang/isi two-couplet juxtaposition generates a third meaning — the sound overlap selasih/kekasih exists as a synthesized resonance between the two structural layers. Small E (0.25): deliberate choice of this plant among alternatives."
+    y_vector: "Phonetic+Formal"
+    y_detail: "'Selasih' (sweet basil) is placed in the pembayang (imagery couplet) because it rhymes with 'kekasih' (beloved) in the isi (message couplet). Classic pantun example: 'Tanam selasih di tengah padang / sudah bertangkai diurung semut / Kita kasih orang tak sayang / Halai-balai tempurung hanyut' — I loved but am not loved. The sound overlap selasih/kekasih activates the hidden emotional content. FORMAL: The pantun's fixed 2+2 line structure (pembayang = hint, isi = message) is the architectural carrier of the covert path — without the formal separation, the phonetic link cannot operate."
+    z_register: 3
+    z_rationale: "Standard pantun symbol, widely known by Malay speakers; cited in multiple scholarly sources on pantun structure"
+    source: "Wikipedia: Pantun (en.wikipedia.org/wiki/Pantun); Malay Heritage Foundation (mhf.org.sg/poetry/); Bartosh (2023) 'Malay folk genre pantun: traditions and modernity', RUDN Journal"
+    notes: "Paradigmatic example of pantun's phonological covert path. The selasih/kekasih rhyme is foundational to understanding how pembayang functions as a hint (pembayang = 'hint') to the isi's emotional message."
+    confidence: "high"
+    recode_note: "v3.0: Added Formal vector — pantun 2+2 structure is architectural carrier. X converted: 0.4→(r=0.45,e=0.25,s=0.30); S assigned for pembayang/isi juxtaposition creating phonetic synthesis."
+
+  - id: "SEA_002"
+    tradition: "Malay pantun"
+    language: "Malay"
+    host_word: "bunga dan kumbang (بوڠا دان کومباڠ — flower and bee)"
+    host_romanized: "bunga dan kumbang"
+    covert_target: "maiden and her suitor; courtship relationship"
+    x_type: 0.7  # legacy v2.0
+    x_r: 0.10
+    x_e: 0.55
+    x_s: 0.35
+    x_rationale: "E-direction dominant: Malay poets actively chose the bee-and-flower image to construct and transmit the courtship meaning (rhetorical invention). S-component (0.35): pantun's pembayang/isi juxtaposition creates a third meaning — 'courtship IS pollination dance' emerges only when the bee-flower pembayang and the human isi are placed in structural opposition. R-minor (0.10): some avoidance of direct courtship declaration."
+    y_vector: "Conceptual+Behavioral+Formal"
+    y_detail: "The bee's active, purposeful behavior toward flowers (attraction, approach, pollination) is mapped conceptually onto male courtship. The flower's passive, beautiful, stationary nature maps onto the female object of courtship. The bee visits multiple flowers (potential infidelity). Multiple actions in the bee-flower relationship encode stages of courtship. FORMAL: The pantun 2+2 structure places the bee-flower world in pembayang and reveals the human courtship in isi — the formal separation between these two couplets is essential to the covert path; the 'third meaning' (courtship = pollination) emerges from their juxtaposition."
+    z_register: 3
+    z_rationale: "One of the most widely attested symbolic pairs in pantun tradition; documented in multiple scholarly sources as standard pantun symbol; widely understood by Malay speakers"
+    source: "Wikipedia: Pantun — 'the flower and the bee meaning the girl and her lover'; Malay Heritage Foundation; Muhammad Haji Salleh (2018) 'Pantun: The poetry of passion', University of Malaya Press"
+    notes: "Analogous to bee/flower courtship symbolism in Persian ghazal and Arabic poetry, suggesting a possible shared literary influence or cross-cultural convergence. One of the most frequent natural symbols in pantun."
+    confidence: "high"
+    recode_note: "v3.0: Added Formal vector — pantun structural separation enables covert path. X converted: 0.7→(r=0.10,e=0.55,s=0.35); S assigned for pembayang/isi synthesis generating 'courtship IS pollination' third meaning."
+
+  - id: "SEA_003"
+    tradition: "Malay pantun"
+    language: "Malay"
+    host_word: "tupai (توڤاي — squirrel)"
+    host_romanized: "tupai"
+    covert_target: "seducer; unfaithful/fickle person"
+    x_type: 0.8  # legacy v2.0
+    x_r: 0.00
+    x_e: 0.70
+    x_s: 0.30
+    x_rationale: "E-direction: the squirrel's behavioral characteristics are actively mapped onto human behavior to construct the social type of the seducer (rhetorical invention, not taboo-avoidance). S-component (0.30): pantun's pembayang/isi two-layer juxtaposition creates a third meaning — 'the seducer is a pest like the squirrel' emerges from the formal structural synthesis. No R-component: no taboo-avoidance driving the choice."
+    y_vector: "Behavioral+Formal"
+    y_detail: "The squirrel is known for darting quickly between trees, nibbling at fruit before moving on without committing. These behavioral traits (agility, opportunism, multiple targets, never settling) are mapped onto the human seducer who approaches multiple romantic targets without sincere commitment. FORMAL: The pantun structure places the squirrel image in pembayang and the social judgment in isi — the formal two-couplet architecture is the mechanism by which the covert meaning of 'seducer-as-pest' is transmitted without direct accusation."
+    z_register: 3
+    z_rationale: "Documented in multiple pantun scholarship sources as a standard symbol; widely recognized in Malay literary culture"
+    source: "Wikipedia: Pantun — 'the squirrel (tupai) meaning a seducer'; Bartosh (2023) 'Malay folk genre pantun: traditions and modernity', RUDN Journal"
+    notes: "The tupai metaphor encodes a moral judgment (the seducer as a pest) within an apparently neutral nature image. Contrasts with the bunga/kumbang pair: the kumbang (bee) represents the sincere suitor, while the tupai represents the dangerous seducer."
+    confidence: "high"
+    recode_note: "v3.0: Added Formal vector — pantun architectural structure carries moral covert path. X converted per task example: 0.8→(r=0.00,e=0.70,s=0.30); S assigned for pembayang/isi synthesis."
+
+  - id: "SEA_004"
+    tradition: "Malay pantun"
+    language: "Malay"
+    host_word: "bunga kiambang (بوڠا كيمبڠ — water hyacinth)"
+    host_romanized: "bunga kiambang"
+    covert_target: "love that will not take root; fleeting/unstable love"
+    x_type: 0.75  # legacy v2.0
+    x_r: 0.05
+    x_e: 0.60
+    x_s: 0.35
+    x_rationale: "E-direction: the plant's physical/structural property is actively chosen to construct the meaning of unstable love (deliberate rhetorical invention). S-component (0.35): pantun's pembayang/isi juxtaposition creates a third meaning — 'love IS a rootless floating thing' emerges from placing the botanical image in pembayang against the emotional revelation in isi. Trace R (0.05): minor avoidance of declaring love's instability directly."
+    y_vector: "Structural+Formal"
+    y_detail: "The water hyacinth floats on the water's surface without anchoring in soil. This structural property — floating, rootless, carried by currents — is mapped onto a love relationship that cannot establish itself or take root in a person's heart. The image encodes both the beauty of the love (it is still a flower) and its fragility. FORMAL: The pantun 2+2 structure places the botanical image in pembayang (hint) and the romantic meaning in isi (message) — the formal architectural division IS the mechanism by which the structural metaphor is transmitted. Arguably the clearest example of Structural+Formal co-occurrence in this dataset."
+    z_register: 3
+    z_rationale: "Cited in multiple scholarly sources as a traditional pantun symbol; widely understood by Malay speakers familiar with pantun tradition"
+    source: "Wikipedia: Pantun — 'the water hyacinth (bunga kiambang) meaning love that will not take root'; Malay Heritage Foundation"
+    notes: "Structurally precise CPG example — the physical property of the host object directly generates the covert meaning without relying on phonetic similarity or cultural convention. The Structural vector operates with particular clarity here."
+    confidence: "high"
+    recode_note: "v3.0: Added Formal vector — pantun structure is essential carrier of structural property metaphor. X converted: 0.75→(r=0.05,e=0.60,s=0.35); S assigned for pembayang/isi synthesis creating 'love=floating plant' third meaning."
+
+  - id: "SEA_005"
+    tradition: "Malay pantun"
+    language: "Malay"
+    host_word: "kain (كاين — cloth / blanket)"
+    host_romanized: "kain"
+    covert_target: "sexual/emotional longing for a partner; intimate physical need"
+    x_type: 0.2  # legacy v2.0
+    x_r: 0.70
+    x_e: 0.10
+    x_s: 0.20
+    x_rationale: "R-direction dominant: strong taboo pressure (Malay cultural norms prohibiting direct expression of sexual emotion) causes the feeling to retreat into a mundane domestic object — the missing blanket. S-component (0.20): pantun's pembayang/isi two-layer structure creates a synthesis — the image of the missing blanket (pembayang) juxtaposed with the emotional void (isi) generates the third meaning of sexual absence as felt, physical deprivation. Small E (0.10): some intentional choice of this particular domestic object."
+    y_vector: "Metonymic+Formal"
+    y_detail: "The blanket/cloth that covers and warms the body functions metonymically for intimacy and the physical presence of a partner. The complaint 'my blanket is missing' = the absent lover who would provide bodily warmth and intimacy. The action-chain of covering/warming metonymically leads to sexual intimacy. FORMAL: The pantun 2+2 structure places the domestic complaint image in pembayang and reveals the emotional/sexual longing in isi — the formal architectural separation allows the taboo content to remain deniably housed in the mundane image."
+    z_register: 1
+    z_rationale: "Used in private/intimate pantun exchanges between lovers; not a publicly standardized symbol in the same way as bunga/kumbang — dyadic and personal"
+    source: "Pantun: an elegant way to communicate (digital.whatsup.sg/2021/05); Ruminations: A Conversation on the Malay Pantun (fazu.typepad.com)"
+    notes: "Source directly states: 'the complaint about the missing blanket can be an expression of emotional desperation and sexual anguish, and in a society in which strong emotions and sexual issues are rarely spoken of directly and openly, the pantun works as an efficient vehicle to express oneself.' Specific pantun text not directly quoted in sources consulted."
+    flag: true
+    confidence: "medium"
+    recode_note: "v3.0: Added Formal vector — pantun structure enables taboo retreat into domestic imagery. X converted: 0.2→(r=0.70,e=0.10,s=0.20); S moderate (pantun structural juxtaposition) but lower than other pantun items due to strong R-dominance."
+
+  - id: "SEA_006"
+    tradition: "Vietnamese Nôm poetry (Ho Xuan Huong)"
+    language: "Vietnamese"
+    host_word: "quả mít trên cành (jackfruit on the branch)"
+    host_romanized: "quả mít trên cành"
+    covert_target: "female body; sexual invitation"
+    x_type: 0.15  # legacy v2.0
+    x_r: 0.85
+    x_e: 0.15
+    x_s: 0.00
+    x_rationale: "R-direction (strong): Under Confucian social norms, direct expression of female sexuality was completely forbidden; the entire poem operates as an innocent surface that conceals an unmistakable sexual meaning — maximum taboo-avoidance pressure. No S-component: this is a Nôm poem (not pantun); the covert path operates through morphological-conceptual mapping rather than structural juxtaposition of two formal elements that synthesize a third meaning."
+    y_vector: "Conceptual+Morphological"
+    y_detail: "The jackfruit's physical properties are mapped onto the female body: coarse outer skin = woman's rough outer appearance; thick inner flesh = bodily substance; sticky milky sap = bodily secretion. The act of impaling the fruit on a stick to ripen it = sexual penetration. The 'ripening' process = sexual response. All mappings operate through physical/morphological resemblance plus extended conceptual analogy."
+    z_register: 3
+    z_rationale: "One of Ho Xuan Huong's most famous poems; widely anthologized; discussed in academic scholarship on Vietnamese literature; taught in Vietnamese schools"
+    source: "Poetry Foundation: 'Translator's Note: Jackfruit by Ho Xuan Huong' (poetryfoundation.org/poetrymagazine/articles/145681); Balaban, J. (2000) 'Spring Essence: The Poetry of Ho Xuan Huong', Copper Canyon Press"
+    notes: "Represents the 'thanh/tuc' (pure/obscene) dual-register system unique to Ho Xuan Huong's oeuvre. The surface reading (fruit cultivation) is entirely plausible and innocent. Vietnamese scholars note that 'it is impossible to read this poem without seeing the clear reference to the sexual act.' The covert path has zero ambiguity for Vietnamese speakers — maximum leakage despite formal innocence of surface text."
+    confidence: "high"
+    recode_note: "v3.0: No Formal vector — Nôm poem operates via morphological/conceptual mapping, not structural form. No S-component — covert path is pure R retreat, no two-element synthesis generating third meaning. X converted: 0.15→(r=0.85,e=0.15,s=0.00)."
+
+  - id: "SEA_007"
+    tradition: "Vietnamese Nôm poetry (Ho Xuan Huong)"
+    language: "Vietnamese"
+    host_word: "đèo (mountain pass/cliff) — Đèo Ba Dội (Three Mountain Pass)"
+    host_romanized: "Đèo Ba Dội"
+    covert_target: "female genitalia; erotic landscape"
+    x_type: 0.15  # legacy v2.0
+    x_r: 0.75
+    x_e: 0.10
+    x_s: 0.15
+    x_rationale: "R-direction dominant: erotic bodily meaning retreats entirely into the geographic landscape under Confucian censorship. S-component (0.15): Vietnamese tonal homophony creates a synthesis — the same written syllable 'đèo' exists at the intersection of two semantic frames (geographic / anatomical); the tonal compound pair generates a third 'hovering' meaning that is neither purely the mountain pass nor purely the anatomy but both simultaneously. Small E (0.10): deliberate deployment of this technique."
+    y_vector: "Phonetic+Conceptual"
+    y_detail: "The word 'đèo' with falling tone (dipping contour) = mountain pass, but Vietnamese tonal phonology allows a near-homophone in a different register that activates a crude anatomical term. The 'three peaks/mountains' adds a numerical/visual conceptual layer. The journey through the pass is conceptually mapped to sexual access. Vietnamese tonal homophony (6 tones per syllable) enables this dual reading without changing the written form."
+    z_register: 3
+    z_rationale: "Famous poem widely discussed in scholarship on Ho Xuan Huong; the tonal pun is explicitly noted by multiple translators and scholars"
+    source: "CATranslation.org essay 'Dressing Up in Her Poems' (catranslation.org); Humanities Moments 'Three Mountain Pass' (humanitiesmoments.org); Chao Hanoi blog (chaohanoi.com)"
+    notes: "Demonstrates a uniquely Vietnamese CPG mechanism: tonal homophony enables dual reading of the same written syllable depending on which tone the reader mentally applies. The poem is 'much naughtier; much more acid in its reference to gentlemen (quan tu)' — the lordly travelers through the pass become unwitting participants in the erotic landscape. Medium confidence due to complexity of tonal analysis in translation."
+    confidence: "medium"
+    recode_note: "v3.0: No Formal vector — mechanism is tonal phonology, not formal poem structure. S-component (0.15) added: tonal compound pair creates synthesized dual-semantic reading (geographic + anatomical meanings hover simultaneously — a third hovering state). X converted: 0.15→(r=0.75,e=0.10,s=0.15). Vietnamese tonal compound pairs identified as S候補 in task spec."
+
+  - id: "SEA_008"
+    tradition: "Vietnamese ca dao / folk culture"
+    language: "Vietnamese"
+    host_word: "miếng trầu / trầu cau (betel leaf + areca nut combination)"
+    host_romanized: "miếng trầu; trầu cau"
+    covert_target: "conjugal love; marriage proposal; romantic/sexual union"
+    x_type: 0.6  # legacy v2.0
+    x_r: 0.20
+    x_e: 0.45
+    x_s: 0.35
+    x_rationale: "Hybrid: E dominant (myth of origin actively assigns the meaning), R secondary (avoidance of direct romantic declaration in Vietnamese cultural norms). S-component (0.35): the three-element compound (betel leaf + areca nut + limestone) synthesizes a third meaning — the reunion of three separated people (wife + husband + brother transformed into the three elements) creates 'conjugal love' as a synthesized emergent meaning from the material combination. This is distinctly S-type: no single element carries the meaning; the combination does."
+    y_vector: "Conceptual"
+    y_detail: "Derives from the legend 'Sự tích trầu cau' (Legend of Betel and Areca) where a wife, her husband, and his brother are transformed into the betel plant, areca palm, and limestone respectively. The combination of all three elements in the chewed quid = reunion of separated lovers = conjugal love. The proverb 'miếng trầu là đầu câu chuyện' (betel is the beginning of every conversation) encodes the idea that offering betel = initiating a romantic/social connection."
+    z_register: 3
+    z_rationale: "Proverbial transmission; essential element of Vietnamese marriage ceremonies (lễ ăn hỏi engagement ceremony); taught in school; widely quoted in ca dao collections"
+    source: "Vietnamese Language Centre Singapore (vietnameselanguage.wordpress.com); Vietnam Tour (vietnam-tour.biz/vietnamese-custom-betel-chewing/); Balaban, J. 'Ca Dao Viet Nam' (Copper Canyon Press / Internet Archive)"
+    notes: "The phrase 'chuyện trầu cau' (betel-and-areca matters) = a widely recognized code for courtship/romantic affairs in Vietnamese culture. The betel quid operates as a material covert message: offering betel to someone = implicit romantic/social proposal. Z=3 because this code is openly transmitted across generations through ceremony and proverb."
+    confidence: "high"
+    recode_note: "v3.0: No Formal vector — ca dao does not use pantun-equivalent structural form. S-component (0.35) added: three-element material compound (betel+areca+lime) generates third meaning 'conjugal union' through synthesis of components — each element alone is insufficient. This is a material S (物質的合成) rather than structural S. X converted: 0.6→(r=0.20,e=0.45,s=0.35)."
+
+  - id: "SEA_009"
+    tradition: "Javanese tembang macapat"
+    language: "Javanese"
+    host_word: "sasmitaning tembang (ꦱꦱ꧀ꦩꦶꦠꦤꦶꦁ ꦠꦼꦩ꧀ꦧꦁ — indicator/signal word embedded in verse)"
+    host_romanized: "sasmita / sasmitaning tembang"
+    covert_target: "identity of the next melody/meter the performer must switch to"
+    x_type: 0.9  # legacy v2.0
+    x_r: 0.00
+    x_e: 0.70
+    x_s: 0.30
+    x_rationale: "E-direction (strong): the sasmita indicator meaning is actively constructed by the poet and assigned to an existing word — new covert function invented and embedded. S-component (0.30): the sasmita operates as a synthesis between the word's ordinary semantic meaning and its phonetic echo of the meter name; these two elements are juxtaposed within the same word to generate the third meaning (navigational signal). No R: no taboo-avoidance; the purpose is navigational-creative."
+    y_vector: "Structural+Phonetic+Formal"
+    y_detail: "The sasmita word is chosen because its syllables echo the name of the next tembang meter (e.g., a word containing 'kambang' signals the transition to Maskumambang meter). The covert path operates phonetically (sound similarity to meter name) and structurally (placement in the final gatra/line of a canto signals transition). The concept of 'tanggap sasmita' (the skill of catching the hidden signal) is itself a Javanese cultural value. FORMAL: The sasmita system IS Formal vector by definition — the embedded signal targets the next poetic form, and the sasmita word's position within the formal structure (final gatra) is what activates its navigational function. The form of the poem carries information about another form."
+    z_register: 2
+    z_rationale: "Known to macapat performers, literary specialists, and those trained in Javanese classical arts; not decoded by general uninitiated audiences; transmitted in specific educational/ceremonial contexts"
+    source: "Suwanto & Winarni, 'Sasmita Tembang Macapat (Suatu Kajian Pragmatik)' (Semantic Scholar, semanticscholar.org); dwijagumilar.blogspot.com/2020 'Sasmitaning Tembang Macapat'; gladijawa.blogspot.com 'Sasmitane Tembang'"
+    notes: "Unique CPG subtype: the covert path functions as a structural/navigational code within a performance tradition rather than as a social/emotional euphemism. Performers who cannot 'catch the sasmita' are considered insufficiently skilled. The system creates a layered text visible to the initiated but invisible to casual listeners — strong in-group/out-group register distinction."
+    confidence: "high"
+    recode_note: "v3.0: Added Formal vector — sasmita embeds the next poetic form (meter identity) within the current form; the poem's formal structure transmits information about another form. S-component (0.30): word meaning + phonetic meter echo synthesize the navigational signal as third meaning. X converted: 0.9→(r=0.00,e=0.70,s=0.30). Formal vector is definitionally correct here — identified as 'Formal候補' in task spec."
+
+  - id: "SEA_010"
+    tradition: "Javanese tembang macapat"
+    language: "Javanese"
+    host_word: "Maskumambang (ꦩꦱ꧀ꦏꦸꦩꦩ꧀ꦧꦁ — meter/song name: mas=gold + kumambang=floating)"
+    host_romanized: "Maskumambang"
+    covert_target: "human fetus floating in amniotic fluid; the beginning of human life"
+    x_type: 0.85  # legacy v2.0
+    x_r: 0.00
+    x_e: 0.65
+    x_s: 0.35
+    x_rationale: "E-direction (strong): the meter name was constructed by Javanese literary culture to encode the fetal stage of human existence — purposeful semantic invention. S-component (0.35): the compound word 'mas' (gold/precious) + 'kumambang' (floating) synthesizes a third meaning — neither word alone creates the fetal image; the juxtaposition of 'precious' and 'floating-in-liquid' yields 'fetus' as emergent synthesis. Additionally, the macapat meter system collectively encodes 11 life stages — the FORM of each meter IS the covert carrier."
+    y_vector: "Conceptual+Morphological+Formal"
+    y_detail: "'Mas' (gold) = precious, invaluable — the unborn child as the most precious thing; 'kumambang' = floating, drifting in liquid. The compound constructs the image of a precious being suspended in fluid = fetus in amniotic sac. The macapat cycle encodes the entire human life journey: Maskumambang (fetus) → Mijil (birth) → Sinom (youth) → Asmarandana (romance) → Kinanthi (companionship) → ... → Megatruh (death) → Pucung (burial). FORMAL: The macapat METER SYSTEM as a whole constitutes a Formal vector — the 11 musical forms encode 11 life stages; knowing which meter is being performed = knowing which life stage is being addressed. The musical form itself transmits the life-stage meaning. This is the most architecturally complete Formal vector system found in Southeast Asian poetry."
+    z_register: 2
+    z_rationale: "Transmitted in traditional Javanese ceremonial and educational contexts; requires specific knowledge of the macapat system to decode; not everyday public knowledge"
+    source: "Conscientia (jurnal-stbalia-yk.ac.id) 'Kinds and Meaning of Tembang Macapat for Javanese People'; Atlantis Press (atlantis-press.com/proceedings/icomsi-24) 'Tembang Macapat Maskumambang Cultural Heritage'"
+    notes: "The macapat life-cycle symbolism represents the most architecturally comprehensive CPG system found in Southeast Asian poetry — 11 meters encode 11 life stages in a complete ontological map. Each meter name is a covert label for a life phase, activated only when the full system is known. Arguably unique in world poetry for its systematic scope."
+    confidence: "high"
+    recode_note: "v3.0: Added Formal vector — macapat meter system encodes life stages through musical form; the form IS the covert carrier. S-component (0.35): compound word 'mas+kumambang' synthesizes 'precious-floating' → fetal image as emergent third meaning. X converted: 0.85→(r=0.00,e=0.65,s=0.35). Task spec identified macapat as 'Formal+Structural?' — resolved as Formal+Conceptual+Morphological given name-compound synthesis."
+
+  - id: "SEA_011"
+    tradition: "Thai luk thung (country music / เพลงลูกทุ่ง)"
+    language: "Thai"
+    host_word: "หูคัน (khan hu — 'itchy ear')"
+    host_romanized: "khan hu (หูคัน)"
+    covert_target: "sexual desire/craving"
+    x_type: 0.2  # legacy v2.0
+    x_r: 0.75
+    x_e: 0.10
+    x_s: 0.15
+    x_rationale: "R-direction dominant: in Thai society, direct verbal expression of sexual desire violates social norms; the feeling retreats into the innocent idiom of a body part itching. S-component (0.15): 'khan' (คัน) carries both 'itch' and 'desire' as co-present semantic fields — the word exists at an intersection where two meaning-systems are synthesized; the dual semantic field collision creates a hovering third state (the utterance is simultaneously innocent and erotic). Small E (0.10): deliberate deployment of this lexical overlap."
+    y_vector: "Metonymic+Phonetic"
+    y_detail: "Dual mechanism: (1) 'Khan' (คัน) = 'to itch' and also 'to crave/desire' — same word, same tone, same spelling; the sexual meaning is the same lexical item used in a different semantic frame. (2) Metonymic displacement: sexual desire is relocated from the body's erogenous zones to the ear — an innocent, non-sexual body part that makes the expression deniable. The combination creates maximum plausible deniability."
+    z_register: 3
+    z_rationale: "Viral pop song in 2011; generated national media debate; academic study published; discussed on Thai television — strong public transmission and 'burn-in' of the covert meaning"
+    source: "Sudcharoen, M. (Academia.edu): 'Don't tell anyone your ears itch: the Khan Hu phenomenon and ideological reproduction in Thai society' (academia.edu/24857434); Saiyasombut (2011) Asian Correspondent (asiancorrespondent.com)"
+    notes: "The song's viral spread and the ensuing moral panic on Thai television (the host 'acting as a typical Thai upperclass figure proclaiming himself to be the defender of Thai morality') empirically confirms Z=3 leakage intensity. The academic study by Sudcharoen provides the most thorough analysis of how this covert path functions as ideological reproduction."
+    confidence: "high"
+    recode_note: "v3.0: No Formal vector — luk thung operates via lexical dual-meaning, not formal poem structure. S-component (0.15): 'khan' occupies two semantic fields simultaneously, creating hovering dual-state (itch AND desire). X converted: 0.2→(r=0.75,e=0.10,s=0.15)."
+
+  - id: "SEA_012"
+    tradition: "Thai luk thung (country music / เพลงลูกทุ่ง)"
+    language: "Thai"
+    host_word: "[technique: single vowel/consonant substitution creating near-homophone of sexual word]"
+    host_romanized: "[technique-level item — specific word examples require Thai-language access]"
+    covert_target: "sexual body parts or sexual acts"
+    x_type: 0.2  # legacy v2.0
+    x_r: 0.65
+    x_e: 0.10
+    x_s: 0.25
+    x_rationale: "R-direction: sexual referents hide behind minimal-deviation near-homophones; taboo pressure causes the speaker to use a phonetically adjacent but socially acceptable word. S-component (0.25): the vowel/consonant substitution creates a synthesis — the innocent word and its sexual near-homophone are held in tension; the listener's mind simultaneously processes both phonetic forms, and the third meaning (the erotic content carried in the gap between them) emerges from this two-word juxtaposition. Small E (0.10): deliberate craft in choosing the substitution."
+    y_vector: "Phonetic"
+    y_detail: "Thai luk thung artists use a technique (documented as Type 3 in academic taxonomy) where a single vowel or consonant is changed, creating an innocent-sounding word that performers and audiences mentally 'correct' to its sexual near-homophone. The minimal phonetic deviation ensures the covert meaning is immediately accessible while maintaining technical deniability. Example pattern: a word that 'sounds like' an obscene term when sung at speed."
+    z_register: 3
+    z_rationale: "Used in public broadcast performances; audiences actively participate in decoding; widely documented as a characteristic feature of luk thung"
+    source: "Journal of Communication Arts, Vol. 37 No. 1, 2019: 'Language artistry of double meaning of erotic word in Thai country song's Lyrics' (so02.tci-thaijo.org/jcomm/article/view/175349)"
+    notes: "The 2019 academic study identifies 8 types of double meaning erotic words in luk thung: (1) symbol, (2) spoonerism, (3) vowel/consonant substitution, (4) homophone, (5) sex blanking, (6) blanking for sexual word, (7) narration, (8) onomatopoeia. This item covers Type 3. Full article access required for specific attested word examples."
+    flag: true
+    confidence: "medium"
+    recode_note: "v3.0: No Formal vector — technique is phonetic substitution within song, not formal structure carrying covert path. S-component (0.25): innocent word + sexual near-homophone co-exist in listener's mind, creating third-meaning synthesis in the phonetic gap between them. X converted: 0.2→(r=0.65,e=0.10,s=0.25)."
+
+  - id: "SEA_013"
+    tradition: "Malay pantun / folk song"
+    language: "Malay"
+    host_word: "anak kambing (أنق كمبيڠ — baby goat)"
+    host_romanized: "anak kambing"
+    covert_target: "frisky, playful, mischievous beloved"
+    x_type: 0.7  # legacy v2.0
+    x_r: 0.10
+    x_e: 0.55
+    x_s: 0.35
+    x_rationale: "E-direction: the baby goat's behavioral characteristics are actively mapped by the poet onto the beloved's personality (rhetorical construction). S-component (0.35): pantun's pembayang/isi juxtaposition creates a third meaning — 'the beloved IS a playful goat' emerges from placing the animal image in pembayang against the affectionate description in isi; the synthesis creates a tone of warm playfulness that neither the goat alone nor the beloved alone conveys. Small R (0.10): mild avoidance of direct affectionate declaration."
+    y_vector: "Behavioral+Formal"
+    y_detail: "The baby goat (anak kambing) is known for its energetic, frisky, unpredictable movements and mischievous behavior. These behavioral traits are mapped onto the beloved in the isi (message) couplet of the pantun. In 'Chan Mali Chan': the pembayang establishes the image of a frisky goat, and the isi reveals this is a coded description of the beloved's playful nature. FORMAL: Chan Mali Chan transmits this symbolic meaning through the pantun folk song tradition, where the 2+2 line structure (pembayang hints at isi) is the architectural vehicle for the covert affectionate meaning."
+    z_register: 3
+    z_rationale: "Chan Mali Chan is one of the most widely performed folk songs in Malaysia and Singapore; the pantun structure and its symbolic meaning are well-documented; taught in schools"
+    source: "Wikipedia: Chan Mali Chan (en.wikipedia.org/wiki/Chan_Mali_Chan); TSO Teacher Resource Booklet (tso.com.au); Singapore Wiki: Chan Mali Chan (singapore.fandom.com/wiki/Chan_Mali_Chan)"
+    notes: "Chan Mali Chan demonstrates pantun symbolism transmitted through the folk song tradition. The goat-beloved mapping is one of the more playful/affectionate pantun symbols, contrasting with the more melancholy water hyacinth or the morally coded squirrel."
+    confidence: "high"
+    recode_note: "v3.0: Added Formal vector — Chan Mali Chan transmits covert meaning through pantun folk song 2+2 structural form. S-component (0.35): goat pembayang + beloved isi creates warm playful third meaning neither element alone generates. X converted: 0.7→(r=0.10,e=0.55,s=0.35)."
+
+  - id: "SEA_014"
+    tradition: "Vietnamese ca dao (folk poetry)"
+    language: "Vietnamese"
+    host_word: "con cò (crane/egret — 鶴)"
+    host_romanized: "con cò"
+    covert_target: "poor farmer/working woman; social critique of exploitation and hardship"
+    x_type: 0.75  # legacy v2.0
+    x_r: 0.10
+    x_e: 0.75
+    x_s: 0.15
+    x_rationale: "E-direction dominant: the crane's behavioral characteristics were actively chosen and culturally ratified to encode the social condition of the peasant farmer — purposeful rhetorical construction. S-component (0.15): ca dao verses use parallel couplet structure — 'crane goes to feed at night / alights on soft branch and falls into pond' juxtaposes the bird's action and consequence, and the synthesis creates the peasant's experience of sudden disaster (third meaning). Small R (0.10): mild avoidance of direct social criticism under feudal censorship."
+    y_vector: "Behavioral+Conceptual"
+    y_detail: "The crane/egret (cò) wades through rice paddies all day searching for food, standing in water, occasionally prodded by farmers. This behavioral pattern directly maps onto the Vietnamese peasant who stands in flooded rice fields working all day. Famous ca dao: 'Con cò mà đi ăn đêm / Đậu phải cành mềm lộn cổ xuống ao' (The crane goes to feed at night / alights on a soft branch and tumbles into the pond) — encodes the hardship of night labor and sudden disaster. Conceptual mapping: crane's solitary, tireless foraging = peasant's isolated, relentless labor."
+    z_register: 3
+    z_rationale: "One of the most thoroughly documented symbols in Vietnamese ca dao; widely sung in folk tradition; appears in multiple ca dao collections; taught in Vietnamese schools; VinWonders and Viet Cultures both independently confirm the crane=farmer mapping"
+    source: "Viet Cultures blog (viet-cultures.blogspot.com/2009/07) — 'the crane representing poor farmers who must work very hard'; VinWonders (vinwonders.com) Vietnamese folk songs article; Balaban, J. 'Ca Dao Viet Nam' (Copper Canyon Press)"
+    notes: "The cò symbol functions as social critique — describing the crane's treatment by humans encodes commentary on how landlords and officials exploit peasants. The innocuous nature image gives the song plausible deniability as social critique, especially under feudal censorship."
+    confidence: "high"
+    recode_note: "v3.0: No Formal vector — ca dao does not use pantun-equivalent structural form as covert carrier; the covert path operates through behavioral-conceptual mapping, not formal structure. S-component (0.15): mild — ca dao couplet parallel structure (bird action / human plight) generates some synthesis but E-direction mapping is primary. X converted: 0.75→(r=0.10,e=0.75,s=0.15)."
+
+  - id: "SEA_015"
+    tradition: "Thai phleng choi (folk song / เพลงฉ่อย)"
+    language: "Thai"
+    host_word: "phleng choi performance frame (เพลงฉ่อย — improvised call-and-response song)"
+    host_romanized: "phleng choi"
+    covert_target: "sexual desire; courtship invitation; erotic escalation"
+    x_type: 0.2  # legacy v2.0
+    x_r: 0.55
+    x_e: 0.10
+    x_s: 0.35
+    x_rationale: "R-direction: sexual content retreats into the licensed witty banter frame; direct sexual solicitation is socially forbidden outside the festival context. S-component (0.35): the call-and-response performance structure IS the synthesis — the male and female performers' verbal sparring (surface level) is juxtaposed with the erotic negotiation (covert level) and the third meaning emerges: the performance itself IS the courtship dance. This is a particularly strong S case because the synthesis is structural and dynamic. Small E (0.10): performers deliberately escalate the erotic content through craft."
+    y_vector: "Metonymic+Formal"
+    y_detail: "The call-and-response performance frame creates a licensed 'play' context (festival time, night gathering) where sexual meanings can be transmitted metonymically through the escalating chain of witty exchanges. The performers' direct verbal battle (combative surface) functions as a substitute/metonym for courtship and erotic negotiation. The performance context itself is the covert path carrier. FORMAL: The phleng choi call-and-response form IS the Formal vector — the performance structure (alternating male/female improvisation, escalating wordplay, harvest festival context) creates the architectural conditions for erotic content to be transmitted. Without the formal performance context, the same content would be prohibited. The FORM licenses and carries the covert meaning."
+    z_register: 2
+    z_rationale: "Performed seasonally at harvest festivals and village celebrations; not everyday interaction; the covert sexual content is contextually activated (requires the festival context)"
+    source: "Hark Publications: 'The Gospel in Phleng Choi' (harkpublications.com); Thailand Foundation (thailandfoundation.or.th/thai-traditional-music/)"
+    notes: "Phleng choi is explicitly described as allowing performers to 'say what they think outright in a way that would be considered over-the-top for the polite conventions of a normal Thai conversation.' The performance frame itself functions as the covert path — the festival license enables sexual content that would be forbidden in other registers. Specific double-meaning lyrics were not identified in English-language sources."
+    flag: true
+    confidence: "medium"
+    recode_note: "v3.0: Added Formal vector — phleng choi's call-and-response performance form IS the covert carrier; the formal performance context licenses and transmits the sexual content. S-component (0.35): verbal sparring (surface) + erotic negotiation (covert) synthesize into 'performance IS courtship' as third emergent meaning. X converted: 0.2→(r=0.55,e=0.10,s=0.35)."
+
+summary:
+  total_items: 15
+  schema_version: "v3.0"
+  recode_date: "2026-03-13"
+  recode_agent: "ashigaru2"
+  type_distribution:
+    pure_r: 2  # SEA_006 (r=0.85), SEA_007 (r=0.75) — Ho Xuan Huong Nôm poetry: maximum taboo-avoidance
+    hybrid: 11  # SEA_001, SEA_002, SEA_003, SEA_004, SEA_005, SEA_008, SEA_011, SEA_012, SEA_013, SEA_014, SEA_015
+    pure_e: 2  # SEA_009 (e=0.70), SEA_010 (e=0.65) — Javanese macapat constructive symbolism
+  x_triangle_summary:
+    s_zero: 1   # SEA_006 only — pure R Nôm poem with no structural synthesis
+    s_low:  5   # s <= 0.20 — SEA_005, SEA_007, SEA_011, SEA_014, + lean-R items
+    s_mid:  6   # s = 0.25-0.30 — SEA_001, SEA_003, SEA_009, SEA_012, SEA_013 (approx)
+    s_high: 3   # s >= 0.35 — SEA_002, SEA_004, SEA_008, SEA_010, SEA_015 (overlap)
+  vector_distribution:
+    Phonetic: 5  # SEA_001, SEA_007, SEA_009, SEA_011, SEA_012
+    Conceptual: 7  # SEA_002, SEA_006, SEA_007, SEA_008, SEA_010, SEA_014 (compound vectors counted)
+    Behavioral: 4  # SEA_002, SEA_003, SEA_013, SEA_014
+    Structural: 2  # SEA_004, SEA_009
+    Metonymic: 3  # SEA_005, SEA_011, SEA_015
+    Morphological: 2  # SEA_006, SEA_010
+    Formal: 9   # NEW in v3.0 — SEA_001,002,003,004,005,009,010,013,015 (pantun×6 + macapat×2 + phleng choi×1)
+  register_distribution:
+    low: 1   # Z=1: SEA_005 (private pantun between lovers)
+    mid: 3   # Z=2: SEA_009, SEA_010 (specialist macapat performers), SEA_015 (seasonal phleng choi)
+    high: 11  # Z=3: all others (widely transmitted)
+  v3_recode_changes:
+    formal_vector_added: 9  # pantun items (SEA_001,002,003,004,005,013) + macapat (SEA_009,010) + phleng choi (SEA_015)
+    s_component_added: 14  # all items except SEA_006
+    y_vector_updated: 9   # items that gained Formal vector
+    all_items_recoded: true
+  key_findings: |
+    Southeast Asia presents exceptional diversity in CPG mechanisms, with several distinctive patterns
+    not prominently observed in other world regions:
+
+    1. TONAL PHONOLOGY AS CPG ENGINE (Vietnamese): Ho Xuan Huong's Nôm poetry exploits Vietnamese
+    tonal phonology — 6 tones per syllable — to create dual readings from a single written text.
+    The same grapheme activates different semantic frames depending on which tone the reader mentally
+    applies. This is a phonetic CPG mechanism unique to tonal languages and represents an unusually
+    precise instrument for covert path construction. The "thanh/tuc" (pure/obscene) dual-register
+    system institutionalizes this technique at the literary level.
+
+    2. STRUCTURAL PROPERTY MAPPING (Malay pantun, Javanese macapat): Southeast Asian traditions
+    make heavy use of Structural vector CPG — mapping the physical structure or property of an
+    object (a floating plant, a macapat meter name) onto abstract concepts (rootless love, a life
+    stage). This is particularly elegant in pantun, where the pembayang (hint couplet) is
+    architecturally designed to carry the structural metaphor. The Javanese sasmita system
+    (SEA_009) represents a unique case where the covert path serves a NAVIGATIONAL function
+    within a performance tradition — the hidden meaning is a cue for performers, not a social
+    communication.
+
+    3. HIGH Z-REGISTER DOMINANCE: 11 of 15 items scored Z=3 (public/third-party transmission).
+    Southeast Asian CPG traditions are predominantly public — transmitted through widely performed
+    folk songs, school curricula, ceremonies, and viral pop music rather than private in-group use.
+    This contrasts with what might be expected from the high degree of cultural indirectness (Malay
+    cakap beralas, Vietnamese politeness norms). The covert meanings are "open secrets" widely
+    understood by cultural insiders even when the surface text is deniable.
+
+    4. MACAPAT LIFE-CYCLE SYSTEM (Javanese): The macapat meter sequence (Maskumambang through
+    Pucung) represents the most architecturally complete CPG system found in Southeast Asia — 11
+    meters encoding 11 life stages in a systematic ontological map. This is a collectively
+    maintained covert code where the surface form (musical meter names) systematically indexes
+    an entire philosophy of human existence. No parallel system of this scope was found in other
+    regional traditions during this survey.
+
+    5. FORMAL VECTOR PREVALENCE (v3.0 finding): 9 of 15 SE Asian items exhibit the Formal vector —
+    the highest proportion expected among world regions. Southeast Asian poetic traditions are
+    uniquely characterized by architecturally fixed forms (pantun 2+2 structure, macapat meter
+    cycle, phleng choi call-and-response) that are themselves the covert path carriers. The form
+    is not a neutral container for the covert content — the form IS the mechanism.
+
+    6. S-COMPONENT (SYNTHESIS) DISTRIBUTION (v3.0 finding): 14 of 15 items exhibit non-zero S
+    component. Southeast Asian CPG is strongly synthesis-oriented: two-element juxtaposition
+    (pantun pembayang/isi, Vietnamese tonal compound pairs, macapat compound meter names,
+    phleng choi call-and-response dynamics) frequently generates emergent "third meanings" that
+    neither element alone could produce. Only SEA_006 (Ho Xuan Huong jackfruit poem) shows
+    pure R with zero S — the strongest taboo-avoidance case in the dataset.
+  ambiguous_items:
+    - SEA_005  # kain/blanket pantun — no specific attested text found; mechanism plausible but unverified example
+    - SEA_012  # Thai luk thung vowel substitution — technique well-documented but specific word examples not accessible
+    - SEA_015  # phleng choi — covert sexual content attested but specific examples not found in English-language sources

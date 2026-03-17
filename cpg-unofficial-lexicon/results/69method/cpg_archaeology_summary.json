@@ -1,0 +1,15 @@
+{
+  "date": "2026-03-14T12:57:48.328001",
+  "model": "text-embedding-3-large",
+  "dimensions": 3072,
+  "n_items": 213,
+  "n_traditions": 22,
+  "n_controls_per_item": 10,
+  "overall_pull_mean": 0.0565,
+  "pct_positive_pull": 74.6,
+  "sign_test_p": 0.0,
+  "one_sample_t": 8.055,
+  "one_sample_p": 0.0,
+  "n_traditions_significant": 10,
+  "pseudo_icc_tradition": 0.27
+}

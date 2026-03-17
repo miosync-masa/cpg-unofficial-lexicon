@@ -1,0 +1,34 @@
+{
+  "models": {
+    "A_OLS": {
+      "R2": 0.0494,
+      "AIC": -155.5
+    },
+    "B_HLM_RI": {
+      "AIC": NaN,
+      "ICC": 0.2062
+    },
+    "C_HLM_Z_L2": {
+      "AIC": NaN
+    },
+    "D_HLM_Full": {
+      "AIC": NaN
+    },
+    "S_HLM_S": {
+      "AIC": NaN
+    }
+  },
+  "ICC": 0.2062,
+  "region_effects": {
+    "AFR": -0.0541,
+    "EEU": 0.0038,
+    "MAYA": -0.0473,
+    "MET": 0.0323,
+    "NAH": -0.0095,
+    "NET": 0.0904,
+    "NEU": 0.0283,
+    "OCE": -0.0248,
+    "QCH": 0.0319,
+    "SEA": -0.0509
+  }
+}

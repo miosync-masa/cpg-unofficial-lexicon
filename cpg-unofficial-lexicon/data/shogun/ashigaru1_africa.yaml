@@ -1,0 +1,442 @@
+# CPG World Search Results — Ashigaru 1
+# Region: Africa
+# Date: 2026-03-13
+# Agent: ashigaru1
+# Version: v3.1 (recoded 2026-03-13 — Formal vector + X-axis ternary coordinates; S三条件再検査 2026-03-13)
+
+metadata:
+  region: "Africa"
+  traditions_surveyed:
+    - name: "Qene (ቅኔ) — Wax and Gold poetry"
+      language: "Ge'ez / Amharic"
+      sources_consulted: 6
+    - name: "Oríkì — Yoruba praise poetry"
+      language: "Yoruba"
+      sources_consulted: 7
+    - name: "Izibongo — Zulu/Xhosa Bantu praise poetry"
+      language: "isiZulu / isiXhosa"
+      sources_consulted: 6
+    - name: "Ɛbɛ (ebe) — Akan proverbs"
+      language: "Twi (Akan)"
+      sources_consulted: 5
+
+items:
+  - id: "AFR_001"
+    tradition: "Qene (Sem-ena-Werq)"
+    language: "Amharic / Ge'ez"
+    host_word: "መስቀል"
+    host_romanized: "Meskel"
+    covert_target: "to hang with a rope (execution / political killing)"
+    # x_type: 0.1  # v2.0 original
+    x_r: 0.9
+    x_e: 0.1
+    x_s: 0.0
+    x_rationale: "Pure R-direction: the dangerous political meaning (execution) retreats into the sacred, innocuous word for the priestly cross. Safety through sacred homonymy. No binary juxtaposition; S=0."
+    recode_note: "x_type=0.1 → (r=0.9, e=0.1, s=0.0). Phonetic homonymy is a single-word mechanism with no synthesis component."
+    y_vector: "Phonetic"
+    y_detail: "Same phoneme string 'Meskel' carries two denotations (cross ↔ hanging) without any stress shift — the ambiguity is entirely phonological/lexical. The polysemy is exploited to layer a covert political reading onto a surface religious image."
+    z_register: 3
+    z_rationale: "Public political performance poetry, widely reported and cited in multiple academic analyses. The Ian Smith poem became a widely known example of qene as political critique."
+    source: "Wikipedia, 'Qene'; GE Gorfu, 'Introduction to Qene', meskot.com; Britannica, 'Ethiopian literature'"
+    notes: "Documented specific poem: an Ethiopian cleric composed this qene about Ian Smith — surface reading praises the blessing cross priests carry; gold reading reveals 'his cross/his hanging' for Black people. Canonical example of qene's political protective function."
+    confidence: "high"
+
+  - id: "AFR_002"
+    tradition: "Qene (Sem-ena-Werq)"
+    language: "Amharic"
+    host_word: "ሆዳም"
+    host_romanized: "Hodam (glutton / fat stomach)"
+    covert_target: "corrupt ruling elites enriching themselves while the population starves"
+    # x_type: 0.15  # v2.0 original
+    x_r: 0.85
+    x_e: 0.15
+    x_s: 0.0
+    x_rationale: "Pure R-direction: the political critique of kleptocratic leadership retreats into the physical description of bodily greed. The covert meaning hides behind an insult to a body part. Single-word metonymy with no binary juxtaposition; S=0."
+    recode_note: "x_type=0.15 → (r=0.85, e=0.15, s=0.0). Single-word metonymic chain; no synthesis element present."
+    y_vector: "Metonymic"
+    y_detail: "Action-chain metonymy: eating/accumulating food → hoarding wealth → political corruption. The belly/stomach is contiguous in a chain of greedy action that terminates in political exploitation."
+    z_register: 3
+    z_rationale: "Documented as a continuing practice in modern Ethiopian political poetry — 'a silly stomach being a dig at ruling cliques getting fat while ordinary people struggle to survive' (LanguageHat citing Gorfu)."
+    source: "LanguageHat.com, 'QENE' (2009); GE Gorfu, meskot.com/qene.htm"
+    notes: "Representative of the recurring qene strategy where bodily criticism conceals political critique. The pattern is documented as alive in contemporary Ethiopian poetry."
+    confidence: "high"
+
+  - id: "AFR_003"
+    tradition: "Qene (Sem-ena-Werq)"
+    language: "Amharic"
+    host_word: "ፍቅር (fikir — love expression / poem)"
+    host_romanized: "fikir"
+    covert_target: "deep insult or contempt for the recipient"
+    # x_type: 0.15  # v2.0 original
+    x_r: 0.85
+    x_e: 0.15
+    x_s: 0.0
+    x_rationale: "R-direction: the hostile/contemptuous meaning retreats fully into the frame of romantic or friendly declaration. The speaker is protected by the praise form. Conceptual inversion of a single domain; no binary juxtaposition generating third meaning; S=0."
+    recode_note: "x_type=0.15 → (r=0.85, e=0.15, s=0.0). Love-as-insult is a unidirectional conceptual inversion, not a synthesis from two elements."
+    y_vector: "Conceptual"
+    y_detail: "Abstract inversion: the conceptual domain of love (positive valence) is used as a vehicle for its opposite (contempt). Unlike Western irony, the Ge'ez/qene tradition treats this as a structural poetic category rather than a casual trope."
+    z_register: 2
+    z_rationale: "Typically performed in intimate or semi-public contexts (court/church schools) where the target is present but uninitiated listeners are not — or where plausible deniability is maintained."
+    source: "Wikipedia, 'Qene'; Gorfu, meskot.com; LanguageHat.com 'QENE'"
+    notes: "Documented as a named function of qene: 'expressing one's love to another while insulting them.' The genre category 'wax and gold' explicitly covers love-as-insult. Flag: no specific verse recovered — coding based on reported tradition."
+    confidence: "medium"
+    flag: true
+
+  - id: "AFR_004"
+    tradition: "Oríkì — birth-circumstance names (àmútọ̀runwá)"
+    language: "Yoruba"
+    host_word: "Òjó"
+    host_romanized: "Ojo"
+    covert_target: "birth with umbilical cord wrapped around the neck — a dangerous, potentially fatal event"
+    # x_type: 0.1  # v2.0 original
+    x_r: 0.9
+    x_e: 0.1
+    x_s: 0.0
+    x_rationale: "Pure R: the dangerous birth circumstance is almost completely concealed. The associated oríkì praises the child as irresistible to women, energetic, and divinely connected — all positive codings that mask the original peril. Single event encoding; S=0."
+    recode_note: "x_type=0.1 → (r=0.9, e=0.1, s=0.0). Single birth-event concealment; no binary juxtaposition."
+    y_vector: "Conceptual"
+    y_detail: "Abstract remapping: the near-fatal cord event is reconceptualized as a sign of destiny and spiritual connectivity ('brought from heaven'). The danger is transformed into a positive metaphysical marker."
+    z_register: 2
+    z_rationale: "Invoked at naming ceremony (contextual/ritual) and again when the person's oríkì is chanted in later life. Periodic repetition in ceremonial contexts."
+    source: "YorubaLibrary.com, 'Oriki Ojo — Oriki Amuntorunwa'; YorubaName.com entry 'Òjó'; Yoruba Lessons (2022)"
+    notes: "The oríkì for Ojo says nothing explicit about the cord — it focuses on the child's supposed attractiveness and restlessness. Only a cultural insider decodes the oríkì's relation to the birth event. Strong example of covert biographical encoding in praise."
+    confidence: "high"
+
+  - id: "AFR_005"
+    tradition: "Oríkì — tonal homophone (Yoruba tonal language)"
+    language: "Yoruba"
+    host_word: "AJE (àjẹ̀ / àjé)"
+    host_romanized: "Aje"
+    covert_target: "àjẹ̀ (àh-JEH, falling tone): witch / dangerous female spiritual power (Iyami)"
+    # x_type: 0.35  # v2.0 original
+    x_r: 0.3
+    x_e: 0.5
+    x_s: 0.2
+    x_rationale: "Hybrid with S-component: wealth-goddess invocation (E direction) while activating fear-charge of witch-cognate (R direction). The simultaneous double-activation synthesizes a third state — 'fearsome wealth / wealth that commands dread' — that neither reading alone generates. S=0.2 reflects this small but real synthesis."
+    recode_note: "x_type=0.35 → (r=0.3, e=0.5, s=0.2). S-component added: tonal double-activation creates fear-respect-for-wealth not present in either reading alone."
+    y_vector: "Phonetic"
+    y_detail: "Tonal homophone in Yoruba: same orthographic string 'AJE' resolves to two distinct words with opposite valences depending on tonal realization. In oriki performance, the ambiguity is deliberately cultivated — invoking wealth while activating the fear-charge of the witch-cognate."
+    z_register: 3
+    z_rationale: "Publicly performed in market rituals, praise-singing, and religious ceremony. The tonal ambiguity is explicitly discussed in written sources and is widely known among Yoruba speakers."
+    source: "Segilola Salami, 'Oriki Aje: Praise Poetry for the Goddess of Wealth' (segilolasalami.co.uk); YorubaLibrary.com, 'Orisha Aje'"
+    notes: "Quote from source: 'When a Yoruba person sees the letters A J E, the first thing that comes to mind is Ah-Jeh, meaning witch. However, A J E can also be pronounced as Ah-Jay.' The oriki exploits this ambiguity — praising wealth while evoking fear-respect via witch-cognate activation."
+    confidence: "high"
+
+  - id: "AFR_006"
+    tradition: "Oríkì — orisha praise poetry"
+    language: "Yoruba"
+    host_word: "Ina ninu ẹnu (fire in his mouth)"
+    host_romanized: "Ina ninu enu"
+    covert_target: "Sango's divine anger; the danger of speaking his true name; the power to destroy with words"
+    # x_type: 0.65  # v2.0 original
+    x_r: 0.2
+    x_e: 0.7
+    x_s: 0.1
+    x_rationale: "E-leaning hybrid: the meaning of divine wrath/destructive power is actively constructed on the fire image (Enchant direction). Some R-component deflects from stating 'Sango is dangerously wrathful' directly. S=0.1 minimal: the fire-mouth image is a single compound phrase but not a full binary juxtaposition in the CPG-synthesis sense."
+    recode_note: "x_type=0.65 → (r=0.2, e=0.7, s=0.1). Minimal S: 'fire' + 'mouth' is a compound image but the synthesis is weak compared to pure binary CPG cases."
+    y_vector: "Conceptual+Behavioral"
+    y_detail: "Conceptual: fire → uncontrolled destructive energy → divine anger. Behavioral: the god was said to literally breathe fire/smoke from his nostrils, so the behavior grounds the metaphor. Compound vector where physical behavior and abstract analogy reinforce each other."
+    z_register: 3
+    z_rationale: "Public ritual performance. Oriki for Sango are performed at lightning festivals, in Candomblé/Santería diaspora contexts, and widely documented in academic literature."
+    source: "YorubaLibrary.com, 'Orisha Sango'; Segilola Salami, 'Oriki Sango' (segilolasalami.co.uk); Britannica, 'Shango'"
+    notes: "The fire-mouth image simultaneously praises the god's power and encodes a warning about dangerous speech near his presence. Source quotes: 'when he spoke, fire came out of his mouth.' The itufu (oil-soaked fiber torch) is explicitly named in the oriki as the ignition device."
+    confidence: "high"
+
+  - id: "AFR_007"
+    tradition: "Oríkì — divine object symbolism"
+    language: "Yoruba"
+    host_word: "Oṣé Ṣàngó (double-headed battle axe)"
+    host_romanized: "Ose Sango"
+    covert_target: "dual divine nature: justice on one side, punishment/destruction on the other; also the god's capacity for both male and female force"
+    # x_type: 0.75  # v2.0 original
+    x_r: 0.1
+    x_e: 0.4
+    x_s: 0.5
+    x_rationale: "S-dominant: the double axe head IS a binary physical form (head-A + head-B) and it is this binary morphological structure that generates the third theological concept (divine duality: justice ↔ punishment, creation ↔ destruction). Neither head alone carries the dual-nature meaning. This is a morphological synthesis case. E-component: the theological meaning is actively assigned to the physical form."
+    recode_note: "x_type=0.75 → (r=0.1, e=0.4, s=0.5). S-component elevated to 0.5: the double-headed binary structure is a morphological synthesis — classic binary juxtaposition generating third concept."
+    y_vector: "Morphological+Conceptual"
+    y_detail: "Morphological: the two heads of the axe physically instantiate duality. Conceptual: the duality is then mapped to abstract theological concepts (justice ↔ punishment, creation ↔ destruction). The shape serves as the vehicle for the abstract dual reading."
+    z_register: 3
+    z_rationale: "Widely displayed, widely discussed, reproduced in shrines and orisha iconography across the African diaspora (Candomblé, Santería, Vodou). The dual-headed symbolism is publicly known and academically documented."
+    source: "Wikipedia, 'Shango'; Britannica, 'Shango'; BotanicaOnline.net 'Shango: God of Thunder'"
+    notes: "The oṣé is Sango's most recognizable symbol. Its duality encodes the god's nature — often described in oriki as both the bringer of lightning (destruction) and the defender of justice. The morphological vehicle is unusually explicit and public."
+    confidence: "high"
+
+  - id: "AFR_008"
+    tradition: "Oríkì — royal/political praise poetry"
+    language: "Yoruba"
+    host_word: "Royal oríkì (oriki ìdílé / lineage praise)"
+    host_romanized: "oriki idale"
+    covert_target: "implicit threat: the actions and failures being enumerated in the praise can shame the king into withdrawal, submission, or historically reported death"
+    # x_type: 0.1  # v2.0 original
+    x_r: 0.85
+    x_e: 0.1
+    x_s: 0.05
+    x_rationale: "Pure R dominant: the threatening/coercive content retreats entirely into the praise format. The words are structurally eulogy but functionally the same mechanism as blackmail through public enumeration of actions. S=0.05 minimal: the juxtaposition of praise-form with critique-content generates minimal synthesis."
+    recode_note: "x_type=0.1 → (r=0.85, e=0.1, s=0.05). Formal? flag added: the FORM of imbongi/oríkì performance (enumerate → reveal → shame) may qualify as Formal vector — the genre structure itself carries the threat mechanism."
+    y_vector: "Metonymic"
+    y_vector_v3: "Formal?"
+    y_detail: "Action-chain metonymy: praise enumeration of the king's deeds → public acknowledgment of his obligations → shame for failures → historically, self-destructive behavior ('drive kings to suicide'). The chain connects speech act to social consequence. Formal? dimension: the praise-genre structure itself (approach → catalog → enumerate obligations → reveal failures) may be the vehicle, not any specific lexical choice."
+    z_register: 2
+    z_rationale: "Performed in court/ceremonial contexts (semi-public). The specific threatening function depends on the presence of the target — not purely private but not mass-broadcast either."
+    source: "Waterman (cited in Wikipedia 'Oríkì'): 'the words that placate gods and drive kings to suicide [are] made more potent by the patterning of timbre, texture, pitch, and rhythm'; Barber, Karin (1991) 'I Could Speak Until Tomorrow' Edinburgh UP"
+    notes: "Barber's landmark study documents this mechanism in detail. The 'driving to suicide' quote is well-attested but refers to a structural capacity rather than one specific documented incident. Flag: no single verse recovered for this item. Formal? added for v3.0: the praise-form's structural sequence may qualify as Formal vector (genre-form carrying covert threat)."
+    confidence: "medium"
+    flag: true
+
+  - id: "AFR_009"
+    tradition: "Izibongo — Zulu praise poetry (royal)"
+    language: "isiZulu"
+    host_word: "Inkunzi (bull)"
+    host_romanized: "inkunzi"
+    covert_target: "the king / great warrior: virility, territorial conquest, reproductive/military dominance"
+    # x_type: 0.7  # v2.0 original
+    x_r: 0.1
+    x_e: 0.9
+    x_s: 0.0
+    x_rationale: "E-dominant: the royal-power meaning is actively constructed onto the bull image through sustained conventional use. The animal is not merely compared to the king — it becomes a standard designation within izibongo. Single animal epithet; S=0.0 under strict S三条件 — 条件1 (JUXTAPOSITION) not met. A single epithet has no binary two-element structure; contrast with AFR_010 (compound 'bull without horns') which IS a binary juxtaposition."
+    recode_note: "x_type=0.7 → (r=0.1, e=0.8, s=0.1). Single animal epithet — minimal S. Distinguished from AFR_010 (compound 'bull without horns') which has real S component. S三条件適用: 裁定[2] — s=0.1→0.0, e=0.8→0.9: 条件1(JUXTAPOSITION)不成立。単一上皮号には二語並置構造なし。"
+    y_vector: "Behavioral+Conceptual"
+    y_detail: "Behavioral: the bull's charging/competing behavior directly maps to military aggression and conquest. Conceptual: virility/dominance is abstracted from the animal into royal authority. Both vectors reinforce each other."
+    z_register: 3
+    z_rationale: "Public performance of izibongo at royal gatherings, battles, and ceremonies. Shaka's praises are publicly documented in Stuart/Cope (1968) and widely performed."
+    source: "Stuart, J. / Cope, T. (ed.) (1968) 'Izibongo: Zulu Praise-Poems', Oxford: Clarendon Press; umabhengwane.com 'izibongo zikaShaka lines 1-43'"
+    notes: "Shaka's izibongo contain sustained bull metaphors alongside lion, elephant, and viper imagery. The bull specifically carries the reproductive-territorial coding. Academic source: OpenBook Publishers 'ch5' analysis of Shaka izibongo."
+    confidence: "high"
+
+  - id: "AFR_010"
+    tradition: "Izibongo — Zulu praise poetry (royal)"
+    language: "isiZulu"
+    host_word: "Inkunzi engenazimpondo (bull without horns / hornless ox)"
+    host_romanized: "inkunzi engenazimpondo"
+    covert_target: "defeated enemies: militarily castrated, sexually humiliated, stripped of power"
+    # x_type: 0.2  # v2.0 original
+    x_r: 0.45
+    x_e: 0.1
+    x_s: 0.45
+    x_rationale: "S-significant hybrid: this is a compound epithet — 'bull' (A) + 'hornless/without horns' (B) — and the combination generates a THIRD meaning (castrated/defeated/sexually humiliated enemy) that neither element alone carries. 'Bull' alone is the king; 'hornless' alone is just absence; the compound generates the specific contemptuous meaning. R-component: the humiliation retreats into animal metaphor."
+    recode_note: "x_type=0.2 → (r=0.45, e=0.1, s=0.45). Major recode: elevated S to 0.45 — izibongo compound epithet is a binary juxtaposition case generating third meaning. Distinguished from AFR_009 (single bull epithet)."
+    y_vector: "Morphological+Behavioral"
+    y_detail: "Morphological: the absence of horns (a physical attribute) encodes the absence of fighting capacity. Behavioral: a hornless bull cannot compete for dominance — the behavioral incapacity maps to military/sexual defeat."
+    z_register: 3
+    z_rationale: "Public performance — enemies are humiliated before audiences at royal gatherings and during battle preparations."
+    source: "OpenBook Publishers, 'ch5', analysis of Shaka izibongo; Stuart/Cope (1968) 'Izibongo: Zulu Praise-Poems'"
+    notes: "Source quotes: 'compared, for instance, to a small and despicable ox, or to a bull without horns fighting against a conquering and triumphant bull.' The contrast bull (king) vs. hornless ox (enemy) encodes the victory narrative with layered sexual/military meaning. Key v3.0 note: compound epithet structure is S-dominant mechanism."
+    confidence: "high"
+
+  - id: "AFR_011"
+    tradition: "Izibongo — Zulu/Nguni royal praise poetry"
+    language: "isiZulu"
+    host_word: "Ndlovu (elephant)"
+    host_romanized: "Ndlovu"
+    covert_target: "the king / paramount chief; hidden royal presence; overwhelming power not yet revealed"
+    # x_type: 0.8  # v2.0 original
+    x_r: 0.05
+    x_e: 0.75
+    x_s: 0.2
+    x_rationale: "E-dominant hybrid with moderate S: the king-meaning is actively and systematically assigned to the elephant image (E). The phrase 'elephant hidden by leaves of trees' introduces a binary compound (elephant + concealment) that generates the third idea of latent overwhelming presence. S=0.2 for this compound image."
+    recode_note: "x_type=0.8 → (r=0.05, e=0.75, s=0.2). S-component added: 'elephant + hidden by leaves' compound generates 'latent overwhelming power' — a third concept not present in either element alone."
+    y_vector: "Behavioral+Conceptual"
+    y_detail: "Behavioral: elephant's size, memory, and unstoppability map directly to royal dominance. Conceptual: 'elephant hidden by leaves of trees' — the hidden-presence motif assigns a covert dimension (the king's force is present even when unseen). Shaka's izibongo uses this specific image."
+    z_register: 3
+    z_rationale: "Used as a royal title (uMgungundlovu = 'place of the elephant' = Dingane's royal kraal). The title became a placename, showing the deepest level of lexical burn-in."
+    source: "UCT Archive and Public Culture Initiative, 'Elephants and leadership, family and nation' (2020); umabhengwane.com; Stuart/Cope (1968)"
+    notes: "The specific izibongo line: 'his force is indicated by comparing it to a giant elephant hidden by the leaves of the trees.' The hidden-in-leaves phrase is a rare example of the covert dimension being explicitly named within the poem itself."
+    confidence: "high"
+
+  - id: "AFR_012"
+    tradition: "Izibongo — Xhosa praise poetry (imbongi tradition)"
+    language: "isiXhosa"
+    host_word: "Izibongo zenkosi (royal praise poem for the Prince of Wales)"
+    host_romanized: "Izibongo zenkosi"
+    covert_target: "vitriolic critique of British colonial rule and the ongoing oppression of Black South Africans"
+    # x_type: 0.1  # v2.0 original
+    x_r: 0.85
+    x_e: 0.1
+    x_s: 0.05
+    x_rationale: "Pure R dominant: the colonial critique is entirely concealed within the praise form. The surface is elaborate royal honor; the gold is political condemnation. S=0.05 minimal. Formal? flag added: the imbongi's genre-structure (approach → catalog → enumerate colonial obligations → reveal failures) IS the CPG vehicle."
+    recode_note: "x_type=0.1 → (r=0.85, e=0.1, s=0.05). Formal? flag added for v3.0: the imbongi performance structure itself may qualify as Formal vector."
+    y_vector: "Metonymic"
+    y_vector_v3: "Formal?"
+    y_detail: "The action-chain of traditional imbongi performance (approach the chief → catalog his greatness → enumerate his obligations → reveal his failures) is deployed to enumerate colonial obligations/failures while appearing to honor. The praise format is contiguous with the critique via the imbongi's social role. Formal?: the entire praise-genre structure (not any specific word) may be the CPG mechanism."
+    z_register: 3
+    z_rationale: "Performed publicly at the Prince of Wales' 1925 South Africa visit. S.E.K. Mqhayi's poem was performed before a large audience and is now a landmark text in South African literary history."
+    source: "Poetry International, 'S.E.K. Mqhayi — South Africa'; Opland, J. 'Xhosa Poets and Poetry' (Google Books); FWLS.org, 'Traditions and Structure of Xhosa Praise Poetry'"
+    notes: "Source quote: 'the prince of Wales is praised in the subtlest fashion, but in true imbongi style the poet levels a vitriolic attack on colonial Great Britain.' Academically verified covert-path example. S.E.K. Mqhayi (1875-1945) is considered the father of modern Xhosa literature. v3.0 note: both AFR_008 and AFR_012 flag Formal? — praise-genre structure as CPG vehicle. Karo/Shogun review recommended."
+    confidence: "high"
+    flag: true
+
+  - id: "AFR_013"
+    tradition: "Ɛbɛ — Akan proverb (Twi/Asante)"
+    language: "Twi (Akan)"
+    host_word: "Sɛ wo werɛ fi na wosankofa a, yenkyi"
+    host_romanized: "Se wo were fi na wosankofa a, yenkyi"
+    covert_target: "(1) philosophical mandate to retrieve ancestral knowledge; (2) coded permission to reclaim pre-colonial traditions after colonial disruption; (3) critique of 'forgetting' (assimilation)"
+    # x_type: 0.85  # v2.0 original
+    x_r: 0.0
+    x_e: 0.3
+    x_s: 0.7
+    x_rationale: "S-dominant: the proverb is a binary juxtaposition — 'returning' (A) + 'forgotten/lost thing' (B) — that synthesizes a third concept (cultural recovery mandate / program of historical restoration) that neither element alone carries. Pure S mechanism; E=0.3 for the active construction of philosophical meaning. R=0 (no taboo avoidance)."
+    recode_note: "x_type=0.85 → (r=0.0, e=0.3, s=0.7). Major recode: x_type=0.85 was E-dominant but Sankofa is actually S-dominant (binary juxtaposition generating cultural recovery mandate). Comparable to difrasismo structure (SKILL.md example: s=0.7)."
+    y_vector: "Metonymic+Conceptual"
+    y_detail: "Metonymic: the physical action (returning for a forgotten item) is contiguous with the cultural action (returning for forgotten heritage). Conceptual: the abstract principle of historical recovery is mapped onto the concrete domestic event."
+    z_register: 3
+    z_rationale: "Among the most widely cited Akan proverbs globally. Appears on university seals, diaspora consciousness materials, Pan-African publications. The Sankofa bird symbol (looking backward) is internationally recognized."
+    source: "Adinkra Symbols & Meanings, 'Sankofa Symbol'; Stockton University 'About Sankofa'; MasterClass 'Sankofa Meaning Explained' (2026)"
+    notes: "The proverb generates a named concept (Sankofa) and a visual symbol (bird looking backward while moving forward — itself a synthesis: backward-looking + forward-moving = learn from past while progressing). This level of lexical and iconographic elaboration indicates exceptionally high burn-in. v3.0 note: Sankofa is the strongest S-dominant case in this dataset; the binary structure (returning + forgotten) is the mechanism, not single-word metaphor."
+    confidence: "high"
+
+  - id: "AFR_014"
+    tradition: "Ɛbɛ — Akan proverb"
+    language: "Twi (Akan)"
+    host_word: "Owuo atwedɛɛ, baako foɔ mforo"
+    host_romanized: "Owuo atwedee baako foo mforo"
+    covert_target: "social leveling critique: even kings and the powerful cannot escape death; implicit challenge to hierarchical authority"
+    # x_type: 0.5  # v2.0 original
+    x_r: 0.3
+    x_e: 0.2
+    x_s: 0.5
+    x_rationale: "S-dominant hybrid: 'Death's ladder' (A) + 'nobody climbs it alone' (B: social leveling claim) generates the third concept (universal mortality as social equalizer / political critique) that neither element alone carries. R-component: the social critique retreats into mortality universalism. E-component minimal — the meaning emerges from structure rather than active invention."
+    recode_note: "x_type=0.5 → (r=0.3, e=0.2, s=0.5). S elevated to 0.5: 'ladder' + 'alone' binary generates social leveling thesis not present in either element. The Structural+Conceptual y_vector supports this S interpretation."
+    y_vector: "Structural+Conceptual"
+    y_detail: "Structural: the ladder's rungs represent sequential steps toward an inevitable end — the structure encodes graduated approach to death. Conceptual: the social hierarchy is mapped onto the ladder by implication; the proverb says the ladder is climbed alone, implying no class can exempt itself."
+    z_register: 3
+    z_rationale: "Widely recited at funerals and in general discourse. One of the most frequently cited Akan proverbs in academic literature. Owuo (Death) is personified, intensifying the proverb's mythic register."
+    source: "Adinkra Symbols & Meanings, 'Owuo Atwedee'; Charles Owiredu, 'Metaphors and Euphemisms of Death in Akan and Hebrew' (SCIRP, 2020)"
+    notes: "The adinkra symbol for this proverb (Owuo Atwedee — the ladder of death) is carved on funeral objects and communal furniture, giving the proverb an unusual material instantiation. The covert social-critique reading is contextually activated — in ordinary contexts only the universal mortality reading is active."
+    confidence: "high"
+
+  - id: "AFR_015"
+    tradition: "Akan death euphemisms (Twi indirect speech)"
+    language: "Twi (Akan)"
+    host_word: "Wɔkɔɔ fie / Wɔsan kɔɔ n'asase so"
+    host_romanized: "Wokoo fie (He/she went home) / Wosan koo n'asase so (returned to the earth)"
+    covert_target: "death — the taboo event of dying"
+    # x_type: 0.1  # v2.0 original
+    x_r: 0.9
+    x_e: 0.1
+    x_s: 0.0
+    x_rationale: "Pure R: the dangerous/taboo event (death) retreats entirely into journey language. There is no avoidance of the referent — death is the only actual meaning in context — but the linguistic form refuses to name it directly. Single-phrase euphemism; S=0 (no binary juxtaposition generating third meaning beyond the euphemistic substitution itself)."
+    recode_note: "x_type=0.1 → (r=0.9, e=0.1, s=0.0). Single euphemistic phrase; no synthesis component."
+    y_vector: "Metonymic"
+    y_detail: "Action-chain metonymy: journey home → arrival at origin point → cessation of outward journey → death. The 'home' and 'earth/ground' are both conceptual destinations that metaphorically map to death's finality while framing it as return rather than ending."
+    z_register: 2
+    z_rationale: "Used in funeral/bereavement contexts — contextually specific but not merely dyadic. Extended family and community members all use these formulae when a death occurs."
+    source: "Charles Owiredu, 'Metaphors and Euphemisms of Death in Akan and Hebrew' (SCIRP, 2020 / ResearchGate); Adinkra Symbols & Meanings 'Kasakoa: Akan Idioms & Euphemisms'"
+    notes: "Owiredu's academic study specifically documents that Akan culture employs 'metaphors and euphemisms to conceal taboo aspects of death' with 'great reluctance to being direct.' Multiple euphemistic frames are used, of which 'went home' and 'returned to earth' are the most structurally consistent CPG examples. This item represents a tradition rather than a single phrase."
+    confidence: "high"
+
+summary:
+  total_items: 15
+  schema_version: "v3.1"
+  recode_date: "2026-03-13"
+  s_sanity_check_date: "2026-03-13"
+
+  type_distribution:
+    r_dominant: 7   # r >= 0.6: AFR_001, AFR_002, AFR_003, AFR_004, AFR_008, AFR_012, AFR_015
+    e_dominant: 3   # e >= 0.6: AFR_006, AFR_009, AFR_011
+    s_dominant: 4   # s >= 0.4: AFR_007, AFR_010, AFR_013, AFR_014
+    hybrid: 1       # no single dim >= 0.6 and s < 0.4: AFR_005
+
+  s_component_summary:
+    s_nonzero_count: 9     # AFR_005, AFR_006, AFR_007, AFR_008, AFR_010, AFR_011, AFR_012, AFR_013, AFR_014 (AFR_009 corrected to s=0.0 by S三条件裁定[2])
+    s_dominant_count: 4    # AFR_007 (0.5), AFR_010 (0.45), AFR_013 (0.7), AFR_014 (0.5)
+    s_dominant_items:
+      - id: "AFR_007"
+        s_value: 0.5
+        mechanism: "Double-headed axe binary morphological structure → divine duality (third concept)"
+      - id: "AFR_010"
+        s_value: 0.45
+        mechanism: "Compound epithet 'bull + hornless' → castrated/defeated enemy (third concept)"
+      - id: "AFR_013"
+        s_value: 0.7
+        mechanism: "Sankofa binary: returning + forgotten → cultural recovery mandate (third concept)"
+      - id: "AFR_014"
+        s_value: 0.5
+        mechanism: "Death ladder + alone → social leveling thesis (third concept)"
+
+  formal_vector_candidates:
+    count: 2
+    items:
+      - id: "AFR_008"
+        note: "Oríkì praise-genre structure (enumerate obligations → reveal failures → shame) may be Formal vector. Flagged for review."
+      - id: "AFR_012"
+        note: "Imbongi performance structure (approach → catalog → enumerate → reveal) carries colonial critique through genre-form. Flagged for review."
+    confirmed: 0
+    assessment: "Both flagged as Formal? (uncertain). Neither is pure Celtic-dúnad-style ring composition; both use social genre structure as vehicle. Recommend Karo/Shogun review to determine if praise-genre form qualifies as Formal vector."
+
+  flag_summary:
+    total_flagged: 4  # AFR_003 (no verse), AFR_008 (no verse + Formal?), AFR_010 (recode note), AFR_012 (Formal?)
+    flag_items: [AFR_003, AFR_008, AFR_012]
+    notes: "AFR_003 and AFR_008 flagged from v2.0 (no specific verse recovered). AFR_012 newly flagged in v3.0 for Formal? review."
+
+  vector_distribution:
+    Phonetic: 2                  # AFR_001, AFR_005
+    Conceptual: 3                # AFR_003, AFR_004 (+ partial on others)
+    Behavioral: 0                # (always compound with Conceptual in this dataset)
+    Morphological: 0             # (always compound)
+    Metonymic: 4                 # AFR_002, AFR_008, AFR_012, AFR_015
+    Structural: 1                # AFR_014 (partial)
+    Conceptual+Behavioral: 3    # AFR_006, AFR_009, AFR_011
+    Morphological+Conceptual: 1  # AFR_007
+    Morphological+Behavioral: 1  # AFR_010
+    Metonymic+Conceptual: 1      # AFR_013
+    Structural+Conceptual: 1     # AFR_014
+
+  register_distribution:
+    low: 0    # z=1: none
+    mid: 4    # z=2: AFR_003, AFR_004, AFR_008, AFR_015
+    high: 11  # z=3: AFR_001, AFR_002, AFR_005, AFR_006, AFR_007, AFR_009, AFR_010, AFR_011, AFR_012, AFR_013, AFR_014
+
+  key_findings: |
+    1. S-DOMINANT SUBSET (v3.0 NEW FINDING): The ternary coordinate conversion reveals a previously hidden
+    S-dominant subset in African CPG data. Four items emerge as S-dominant (s >= 0.4): the double-headed
+    Sango axe (binary morphological synthesis), the izibongo compound epithet 'bull without horns' (A+B →
+    third concept of defeat), the Sankofa proverb (returning + forgotten → cultural recovery mandate), and
+    the Owuo Atwedee proverb (ladder + alone → social leveling). These items were previously miscoded as
+    R-leaning or E-leaning because the binary juxtaposition mechanism was not separately tracked. The Sankofa
+    proverb (s=0.7) is the strongest S-case in this dataset — structurally comparable to Nahuatl difrasismo
+    or Old Norse kenning compounding.
+
+    2. FORMAL VECTOR OPEN QUESTION (v3.0): Two items (AFR_008, AFR_012) may qualify for Formal vector
+    designation — not because of ring composition (Celtic dúnad-style) but because the praise-genre
+    PERFORMANCE STRUCTURE itself carries the covert threat/critique mechanism. The imbongi's formal duty
+    to enumerate royal obligations creates the threat; the praise-genre's sequential structure (approach →
+    catalog → reveal failures) is the vehicle. Whether this constitutes Formal vector (compositional form
+    as CPG carrier) or remains Metonymic (action-chain: praise → shame → consequence) is a judgment call
+    requiring CPG framework review. Flagged for Karo/Shogun decision.
+
+    3. STRONG R-BIAS IN PROTECTIVE FUNCTIONS (v2.0 finding confirmed): African CPG traditions show a
+    pronounced R-direction (meaning→word) when the covert path serves a protective function — political
+    critique hidden under religious language (qene), insults hidden under praise (izibongo), and taboo
+    events hidden under euphemism (Akan death language). This suggests that the "refuge" mechanism is
+    culturally institutionalized rather than ad-hoc: Ethiopia has a named genre (sem-ena-werq) explicitly
+    designed for political protection through ambiguity. 7 of 15 items are R-dominant (r >= 0.6).
+
+    4. METONYMIC + BEHAVIORAL VECTORS DOMINATE: Unlike East Asian CPG traditions (which heavily favor
+    Phonetic and Morphological vectors — puns, homophony, visual resemblance), African traditions
+    surveyed here predominantly use Metonymic (action-chain) and Behavioral (organism behavior) vectors.
+    The praise-poetry traditions (oríkì, izibongo) activate covert paths through the behavior of animals
+    (bull charging, elephant moving) and through action chains embedded in social performance. This may
+    reflect an oral performance culture where temporal unfolding (behavior, action) rather than spatial
+    form or sound serves as the primary CPG vehicle.
+
+    5a. S三条件再検査結果 (裁定[2] — subtask_005a): 全15件を三条件(JUXTAPOSITION/NON-COMPOSITIONALITY/
+    CULTURAL CONVENTION)で再検査。新規S未コーディング項目: 0件。訂正: AFR_009 (inkunzi/bull単一上皮号)
+    のs=0.1を0.0に修正 — 条件1(JUXTAPOSITION)不成立。単一上皮号には二語並置構造がない。AFR_010との
+    対比が明確化: AFR_009(inkunzi単独→王)はE方向のみ; AFR_010(inkunzi+engenazimpondo→敗北)は
+    S方向あり。確認: AFR_013(Sankofa)は三条件を完全に満たす最強S事例(s=0.7)。
+    AFR_010(izibongo複合上皮号)も三条件完全充足(s=0.45)。s_nonzero_count: 10→9に更新。
+
+    5. REGISTER BURN-IN IS EXCEPTIONALLY HIGH: 11 of 15 items are Z=3 (third-party report / public
+    performance). African praise poetry traditions are designed for public performance before large
+    audiences — the imbongi, the oríkì-chanter — which produces extremely high Z values. This is
+    unusual compared to more private CPG traditions and suggests rapid lexical burn-in: the covert
+    paths in izibongo and oríkì have been repeated in public so many times that the 'ndlovu = king'
+    association has become sedimented into a placename (uMgungundlovu). This is perhaps the strongest
+    evidence of CPG achieving full lexical leakage in this dataset.
+
+  ambiguous_items:
+    - AFR_003  # No specific verse recovered; tradition documented but example is structural/generic
+    - AFR_008  # 'Drives kings to suicide' documented but no specific oriki verse; Formal? flag
+    - AFR_012  # Formal? flag: imbongi genre-structure as CPG vehicle — requires framework decision
