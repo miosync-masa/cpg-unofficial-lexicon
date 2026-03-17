@@ -2,7 +2,7 @@
 """
 Metonymic CPG Path Tracing Experiment
 ======================================
-Detection method: Kurisu's Method 3 (Phrasal Differential)
+Detection method: Phrasal Differential
 
 Theory:
   Metonymic covert paths are hosted at PHRASE level, not WORD level.
@@ -20,10 +20,6 @@ Design:
   - Test: Mann-Whitney U, candidate differentials > control differentials
 
 Based on HHP Eq.3 (leakage analysis) extended to phrase-level hosts.
-
-Authors: Masamichi Iizumi (theory), Torami (implementation), Kurisu (method design)
-Date: 2026-03-13
-Status: Pilot experiment — Miosync internal
 """
 
 import os
