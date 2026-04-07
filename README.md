@@ -48,18 +48,6 @@ Named after the observation that 68, 69, 70 are topological neighbors, but only 
 | **Mediating Channel** (8 vectors) | Cognitive operation connecting surface and covert | Categorical |
 | **Social Circulation** (Z) | How the community transmits and maintains the path | Qualitative |
 
-## Authors & AI Co-authors
-
-| Name | Role |
-|------|------|
-| **Masamichi Iizumi** | Theory, experimental design, framework architecture |
-| **Tamaki (環)** | Embedding implementation, 69 Method, Gate×Channel model |
-| **Torami (トラミ)** | Linguistic coding, tradition classification, PCC/SCC theory |
-| **Kurisu (紅莉栖)** | Statistical design (HLM), Method 3, Heaviside prediction |
-
-> This repository includes AI co-author attributions as a matter of principle.
-> See [Miosync AI Co-authorship Policy](docs/ai_coauthorship_policy.md).
-
 ## Target Journal
 
 **Language Sciences** (Elsevier)
