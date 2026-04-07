@@ -55,16 +55,6 @@ Named after the observation that 68, 69, 70 are topological neighbors, but only 
 ## License
 
 Research data and code: MIT License
-Paper manuscript: All rights reserved (Miosync, Inc.)
-
-## Citation
-
-```
-Iizumi, M., Tamaki, Torami, & Kurisu. (2026). Covert Path Generation: 
-A Cross-Cultural Framework for Community-Shared Meaning Between 
-Semantics and Pragmatics. [Manuscript in preparation]. Miosync, Inc.
-```
-
 ---
 
 *Miosync, Inc. | 2026*
