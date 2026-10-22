@@ -2,8 +2,7 @@ Data and coding results: Creative Commons Attribution 4.0 International (CC BY 4
 
 This licence applies to the data and results in this repository: the files under data/, coding/codebooks/,
 coding/results/, embeddings/controls/, embeddings/results/, results/, dictionary_check/ (except the scripts)
-and docs/, together with the embedding vectors distributed as release assets. The code (all *.py and *.sh files)
-is under the MIT License in LICENSE.
+and docs/. The code (all *.py and *.sh files) is under the MIT License in LICENSE.
 
 You are free to share and adapt this material for any purpose, including commercially, provided you give
 appropriate credit (see CITATION.cff), provide a link to the licence, and indicate if changes were made.

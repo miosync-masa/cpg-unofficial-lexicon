@@ -40,7 +40,7 @@ were fixed are described in `docs/CHANGES_FROM_V1.md`.
 ├── embeddings/                NNPM
 │   ├── scripts/               nnpm_replicate.py, analyze_replication.py, check_hosts.py, build_clean.py
 │   ├── controls/              clean_hosts.csv, controls_clean.csv, controls_summary.csv
-│   └── results/               pulls for conditions B and C (3 models), JSONL logs, vectors
+│   └── results/               pulls for conditions B and C (3 models), JSONL logs, vectors (*.npz)
 ├── analysis/                  reproduce_stats.py, analyze_t1.py, analyze_recording.py, analyze_final.py, …
 ├── results/                   the source of every number in the paper
 │   ├── verified_numbers.md
@@ -70,13 +70,6 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 - `results/verified_numbers.md` §12–13.
 
 It copies `results/` to `backups/` before overwriting it. Two consecutive runs give byte-identical output.
-
-The Gemini vectors (`embeddings/results/nnpm_C_gemini_embedding_001_vectors.npz`) are larger than 50 MB. They
-are a release asset rather than a file in git. Download them first:
-
-```bash
-gh release download data-2026-10-22 -p nnpm_C_gemini_embedding_001_vectors.npz -D embeddings/results
-```
 
 ### Steps that call an API
 

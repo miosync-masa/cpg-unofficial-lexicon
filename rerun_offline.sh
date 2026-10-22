@@ -4,11 +4,6 @@
 set -e
 cd "$(dirname "$0")"
 P=${PYTHON:-python3}
-G=embeddings/results/nnpm_C_gemini_embedding_001_vectors.npz
-if [ ! -f "$G" ]; then
-  echo "missing $G (larger than 50 MB, kept out of git): download it from the GitHub release, see README" >&2
-  exit 1
-fi
 # keep the current outputs before anything is overwritten
 B=backups/results_$(date +%Y-%m-%d_%H%M%S)
 mkdir -p backups && cp -R results "$B" && echo "backed up results/ to $B"
