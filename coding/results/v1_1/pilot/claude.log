@@ -1,0 +1,4 @@
+  batch NET_006.. attempt 1 failed: RuntimeError: no text: stop_reason=refusal, blocks=['thinking']
+10 items to code with anthropic:claude-opus-5-5
+  coded 10/10
+done: results/pilot_v1_1/v1_1_claude.csv

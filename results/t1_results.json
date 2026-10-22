@@ -1,0 +1,1322 @@
+{
+ "models": {
+  "text_embedding_3_large": "OpenAI text-embedding-3-large",
+  "BAAI_bge_m3": "BAAI/bge-m3",
+  "gemini_embedding_001": "gemini-embedding-001"
+ },
+ "hypotheses": {
+  "H-C1": {
+   "per_model": {
+    "text_embedding_3_large": {
+     "n": 94,
+     "n_traditions": 49,
+     "intercept": 0.0662,
+     "se": 0.0123,
+     "z": 5.3901,
+     "p_one_sided": 0.0,
+     "p_holm": 0.0
+    },
+    "BAAI_bge_m3": {
+     "n": 94,
+     "n_traditions": 49,
+     "intercept": 0.025,
+     "se": 0.0112,
+     "z": 2.2285,
+     "p_one_sided": 0.0129,
+     "p_holm": 0.0129
+    },
+    "gemini_embedding_001": {
+     "n": 94,
+     "n_traditions": 49,
+     "intercept": 0.023,
+     "se": 0.0045,
+     "z": 5.1288,
+     "p_one_sided": 0.0,
+     "p_holm": 0.0
+    }
+   },
+   "n_models_holm_p05": 3,
+   "verdict": "supported"
+  },
+  "H-C2": {
+   "per_model": {
+    "text_embedding_3_large": {
+     "n": 63,
+     "n_traditions": 38,
+     "intercept": 0.059,
+     "se": 0.0139,
+     "z": 4.2347,
+     "p_one_sided": 0.0,
+     "p_holm": 0.0
+    },
+    "BAAI_bge_m3": {
+     "n": 63,
+     "n_traditions": 38,
+     "intercept": 0.03,
+     "se": 0.013,
+     "z": 2.306,
+     "p_one_sided": 0.0106,
+     "p_holm": 0.0106
+    },
+    "gemini_embedding_001": {
+     "n": 63,
+     "n_traditions": 38,
+     "intercept": 0.0177,
+     "se": 0.0044,
+     "z": 4.0527,
+     "p_one_sided": 0.0,
+     "p_holm": 0.0001
+    }
+   },
+   "n_models_holm_p05": 3,
+   "verdict": "supported"
+  }
+ },
+ "counts": {
+  "blind_items": 217,
+  "items_with_controls": 213,
+  "no_controls_stored": 4,
+  "excluded_T3": 4,
+  "after_T3": 209,
+  "low_control_after_T3": 24,
+  "after_low_control": 185,
+  "n_kept_distribution_after_T3": {
+   "0": 9,
+   "1": 4,
+   "2": 6,
+   "3": 3,
+   "4": 2,
+   "5": 3,
+   "6": 4,
+   "7": 9,
+   "8": 19,
+   "9": 56,
+   "10": 94
+  },
+  "eligible_by_k_after_low_control": {
+   "k3": 185,
+   "k5": 185,
+   "k10": 94
+  },
+  "analysed_by_model": {
+   "text_embedding_3_large": {
+    "pull_C_k3": 185,
+    "pull_C_k5": 185,
+    "pull_C_k10": 94,
+    "pull_C_kall": 185,
+    "missing_because_embedding_failed": 0
+   },
+   "BAAI_bge_m3": {
+    "pull_C_k3": 185,
+    "pull_C_k5": 185,
+    "pull_C_k10": 94,
+    "pull_C_kall": 185,
+    "missing_because_embedding_failed": 0
+   },
+   "gemini_embedding_001": {
+    "pull_C_k3": 185,
+    "pull_C_k5": 185,
+    "pull_C_k10": 94,
+    "pull_C_kall": 185,
+    "missing_because_embedding_failed": 0
+   }
+  },
+  "control_cleaning": {
+   "all_items_with_controls": {
+    "items": 213,
+    "controls": 2125,
+    "kept": 1759,
+    "R1": 67,
+    "R2": 268,
+    "R3": 30,
+    "R4": 1
+   },
+   "after_T3": {
+    "items": 209,
+    "controls": 2085,
+    "kept": 1731,
+    "R1": 66,
+    "R2": 267,
+    "R3": 20,
+    "R4": 1
+   }
+  }
+ },
+ "analyses": {
+  "text_embedding_3_large": {
+   "B_vs_C": {
+    "B_k10_all_after_T3": {
+     "n": 209,
+     "mean": 0.0761,
+     "sd": 0.0854,
+     "pct_positive": 84.2,
+     "t": 12.8784,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 209,
+      "n_traditions": 70,
+      "intercept": 0.0885,
+      "se": 0.0091,
+      "z": 9.7157,
+      "p_one_sided": 0.0
+     }
+    },
+    "C_k10_main": {
+     "n": 94,
+     "mean": 0.0733,
+     "sd": 0.0965,
+     "pct_positive": 80.9,
+     "t": 7.3697,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 94,
+      "n_traditions": 49,
+      "intercept": 0.0662,
+      "se": 0.0123,
+      "z": 5.3901,
+      "p_one_sided": 0.0
+     }
+    },
+    "same_items": {
+     "n": 94,
+     "B_k10": {
+      "n": 94,
+      "mean": 0.1018,
+      "sd": 0.097,
+      "pct_positive": 89.4,
+      "t": 10.1735,
+      "p_t_one_sided": 0.0,
+      "mixed": {
+       "n": 94,
+       "n_traditions": 49,
+       "intercept": 0.1051,
+       "se": 0.0119,
+       "z": 8.8037,
+       "p_one_sided": 0.0
+      }
+     },
+     "C_k10": {
+      "n": 94,
+      "mean": 0.0733,
+      "sd": 0.0965,
+      "pct_positive": 80.9,
+      "t": 7.3697,
+      "p_t_one_sided": 0.0,
+      "mixed": {
+       "n": 94,
+       "n_traditions": 49,
+       "intercept": 0.0662,
+       "se": 0.0123,
+       "z": 5.3901,
+       "p_one_sided": 0.0
+      }
+     },
+     "paired_t_C_minus_B": -4.2803,
+     "paired_p_two_sided": 0.0
+    }
+   },
+   "by_recording_status": {
+    "UNRESOLVED": {
+     "n": 0,
+     "mean": null,
+     "sd": null,
+     "pct_positive": null
+    },
+    "cultural_reference": {
+     "n": 60,
+     "mean": 0.0623,
+     "sd": 0.0939,
+     "pct_positive": 78.3,
+     "t": 5.1425,
+     "p_t_one_sided": 0.0
+    },
+    "general_dictionary": {
+     "n": 34,
+     "mean": 0.0928,
+     "sd": 0.0993,
+     "pct_positive": 85.3,
+     "t": 5.4458,
+     "p_t_one_sided": 0.0
+    },
+    "unrecorded": {
+     "n": 0,
+     "mean": null,
+     "sd": null,
+     "pct_positive": null
+    }
+   },
+   "by_direction": {
+    "E": {
+     "n": 21,
+     "mean": 0.0559,
+     "sd": 0.0582,
+     "pct_positive": 90.5,
+     "t": 4.3993,
+     "p_t_one_sided": 0.0001
+    },
+    "R": {
+     "n": 44,
+     "mean": 0.1056,
+     "sd": 0.1179,
+     "pct_positive": 79.5,
+     "t": 5.9414,
+     "p_t_one_sided": 0.0
+    },
+    "S": {
+     "n": 29,
+     "mean": 0.037,
+     "sd": 0.0627,
+     "pct_positive": 75.9,
+     "t": 3.1814,
+     "p_t_one_sided": 0.0018
+    },
+    "UNRESOLVED": {
+     "n": 0,
+     "mean": null,
+     "sd": null,
+     "pct_positive": null
+    }
+   },
+   "by_primary_channel": {
+    "Behavioural": {
+     "n": 2,
+     "mean": 0.036,
+     "sd": 0.0767,
+     "pct_positive": 50.0
+    },
+    "Chromatic": {
+     "n": 2,
+     "mean": 0.0825,
+     "sd": 0.1091,
+     "pct_positive": 100.0
+    },
+    "Conceptual": {
+     "n": 36,
+     "mean": 0.0605,
+     "sd": 0.0904,
+     "pct_positive": 77.8,
+     "t": 4.0121,
+     "p_t_one_sided": 0.0002
+    },
+    "Formal": {
+     "n": 3,
+     "mean": 0.0431,
+     "sd": 0.0438,
+     "pct_positive": 100.0,
+     "t": 1.702,
+     "p_t_one_sided": 0.1154
+    },
+    "Metonymic": {
+     "n": 24,
+     "mean": 0.0598,
+     "sd": 0.0915,
+     "pct_positive": 79.2,
+     "t": 3.2019,
+     "p_t_one_sided": 0.002
+    },
+    "Morphological": {
+     "n": 7,
+     "mean": 0.1908,
+     "sd": 0.0879,
+     "pct_positive": 100.0,
+     "t": 5.7417,
+     "p_t_one_sided": 0.0006
+    },
+    "Phonetic": {
+     "n": 9,
+     "mean": 0.0979,
+     "sd": 0.1015,
+     "pct_positive": 88.9,
+     "t": 2.8929,
+     "p_t_one_sided": 0.0101
+    },
+    "Structural": {
+     "n": 4,
+     "mean": 0.0289,
+     "sd": 0.0715,
+     "pct_positive": 75.0,
+     "t": 0.8069,
+     "p_t_one_sided": 0.2394
+    },
+    "UNRESOLVED": {
+     "n": 7,
+     "mean": 0.0834,
+     "sd": 0.1255,
+     "pct_positive": 71.4,
+     "t": 1.7583,
+     "p_t_one_sided": 0.0646
+    }
+   },
+   "by_tradition_n3": {
+    "tested": 11,
+    "p05": 6,
+    "bh_q05": 3,
+    "rows": [
+     {
+      "tradition": "Anglo-Saxon riddles (Exeter Book)",
+      "n": 4,
+      "mean": 0.2734,
+      "p_one_sided": 0.0053,
+      "q_bh": 0.0491
+     },
+     {
+      "tradition": "Nahuatl Difrasismo",
+      "n": 4,
+      "mean": 0.0115,
+      "p_one_sided": 0.311,
+      "q_bh": 0.3801
+     },
+     {
+      "tradition": "Old Norse kenning (skaldic poetry)",
+      "n": 3,
+      "mean": -0.0087,
+      "p_one_sided": 0.721,
+      "q_bh": 0.721
+     },
+     {
+      "tradition": "Russian zagadka (загадка)",
+      "n": 4,
+      "mean": 0.1596,
+      "p_one_sided": 0.0284,
+      "q_bh": 0.0715
+     },
+     {
+      "tradition": "adianoeta",
+      "n": 5,
+      "mean": 0.1736,
+      "p_one_sided": 0.0125,
+      "q_bh": 0.0491
+     },
+     {
+      "tradition": "iham",
+      "n": 5,
+      "mean": 0.0473,
+      "p_one_sided": 0.0134,
+      "q_bh": 0.0491
+     },
+     {
+      "tradition": "metonymic_drink_en",
+      "n": 5,
+      "mean": 0.1328,
+      "p_one_sided": 0.0408,
+      "q_bh": 0.0748
+     },
+     {
+      "tradition": "metonymic_ritual",
+      "n": 4,
+      "mean": 0.0614,
+      "p_one_sided": 0.1208,
+      "q_bh": 0.1661
+     },
+     {
+      "tradition": "metonymic_sex_en",
+      "n": 7,
+      "mean": 0.0429,
+      "p_one_sided": 0.0325,
+      "q_bh": 0.0715
+     },
+     {
+      "tradition": "slesa",
+      "n": 5,
+      "mean": -0.0019,
+      "p_one_sided": 0.5751,
+      "q_bh": 0.6326
+     },
+     {
+      "tradition": "tevriye",
+      "n": 3,
+      "mean": 0.1264,
+      "p_one_sided": 0.0558,
+      "q_bh": 0.0877
+     }
+    ]
+   },
+   "sensitivity": {
+    "k3_main": {
+     "n": 185,
+     "mean": 0.0516,
+     "sd": 0.0864,
+     "pct_positive": 77.3,
+     "t": 8.1307,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 185,
+      "n_traditions": 63,
+      "intercept": 0.0478,
+      "se": 0.0093,
+      "z": 5.1228,
+      "p_one_sided": 0.0
+     }
+    },
+    "k5_main": {
+     "n": 185,
+     "mean": 0.0567,
+     "sd": 0.0868,
+     "pct_positive": 78.9,
+     "t": 8.8913,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 185,
+      "n_traditions": 63,
+      "intercept": 0.0511,
+      "se": 0.0097,
+      "z": 5.2571,
+      "p_one_sided": 0.0
+     }
+    },
+    "k3_with_low_control": {
+     "n": 190,
+     "mean": 0.0504,
+     "sd": 0.0878,
+     "pct_positive": 76.8,
+     "t": 7.9187,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 190,
+      "n_traditions": 64,
+      "intercept": 0.0454,
+      "se": 0.0096,
+      "z": 4.7351,
+      "p_one_sided": 0.0
+     }
+    },
+    "k10_with_low_control": {
+     "n": 94,
+     "mean": 0.0733,
+     "sd": 0.0965,
+     "pct_positive": 80.9,
+     "t": 7.3697,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 94,
+      "n_traditions": 49,
+      "intercept": 0.0662,
+      "se": 0.0123,
+      "z": 5.3901,
+      "p_one_sided": 0.0
+     }
+    },
+    "kall_main": {
+     "n": 185,
+     "mean": 0.0597,
+     "sd": 0.0864,
+     "pct_positive": 78.4,
+     "t": 9.3956,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 185,
+      "n_traditions": 63,
+      "intercept": 0.0541,
+      "se": 0.0095,
+      "z": 5.6955,
+      "p_one_sided": 0.0
+     }
+    },
+    "kall_with_low_control": {
+     "n": 200,
+     "mean": 0.056,
+     "sd": 0.0872,
+     "pct_positive": 77.0,
+     "t": 9.0863,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 200,
+      "n_traditions": 66,
+      "intercept": 0.05,
+      "se": 0.0095,
+      "z": 5.2752,
+      "p_one_sided": 0.0
+     }
+    }
+   }
+  },
+  "BAAI_bge_m3": {
+   "B_vs_C": {
+    "B_k10_all_after_T3": {
+     "n": 209,
+     "mean": 0.0371,
+     "sd": 0.0787,
+     "pct_positive": 70.3,
+     "t": 6.81,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 209,
+      "n_traditions": 70,
+      "intercept": 0.054,
+      "se": 0.0086,
+      "z": 6.2999,
+      "p_one_sided": 0.0
+     }
+    },
+    "C_k10_main": {
+     "n": 94,
+     "mean": 0.0276,
+     "sd": 0.0863,
+     "pct_positive": 59.6,
+     "t": 3.0959,
+     "p_t_one_sided": 0.0013,
+     "mixed": {
+      "n": 94,
+      "n_traditions": 49,
+      "intercept": 0.025,
+      "se": 0.0112,
+      "z": 2.2285,
+      "p_one_sided": 0.0129
+     }
+    },
+    "same_items": {
+     "n": 94,
+     "B_k10": {
+      "n": 94,
+      "mean": 0.0527,
+      "sd": 0.0896,
+      "pct_positive": 72.3,
+      "t": 5.711,
+      "p_t_one_sided": 0.0,
+      "mixed": {
+       "n": 94,
+       "n_traditions": 49,
+       "intercept": 0.0586,
+       "se": 0.0113,
+       "z": 5.1935,
+       "p_one_sided": 0.0
+      }
+     },
+     "C_k10": {
+      "n": 94,
+      "mean": 0.0276,
+      "sd": 0.0863,
+      "pct_positive": 59.6,
+      "t": 3.0959,
+      "p_t_one_sided": 0.0013,
+      "mixed": {
+       "n": 94,
+       "n_traditions": 49,
+       "intercept": 0.025,
+       "se": 0.0112,
+       "z": 2.2285,
+       "p_one_sided": 0.0129
+      }
+     },
+     "paired_t_C_minus_B": -3.9866,
+     "paired_p_two_sided": 0.0001
+    }
+   },
+   "by_recording_status": {
+    "UNRESOLVED": {
+     "n": 0,
+     "mean": null,
+     "sd": null,
+     "pct_positive": null
+    },
+    "cultural_reference": {
+     "n": 60,
+     "mean": 0.0318,
+     "sd": 0.0936,
+     "pct_positive": 61.7,
+     "t": 2.6279,
+     "p_t_one_sided": 0.0055
+    },
+    "general_dictionary": {
+     "n": 34,
+     "mean": 0.0202,
+     "sd": 0.0724,
+     "pct_positive": 55.9,
+     "t": 1.6236,
+     "p_t_one_sided": 0.057
+    },
+    "unrecorded": {
+     "n": 0,
+     "mean": null,
+     "sd": null,
+     "pct_positive": null
+    }
+   },
+   "by_direction": {
+    "E": {
+     "n": 21,
+     "mean": 0.0057,
+     "sd": 0.0648,
+     "pct_positive": 52.4,
+     "t": 0.4012,
+     "p_t_one_sided": 0.3462
+    },
+    "R": {
+     "n": 44,
+     "mean": 0.0499,
+     "sd": 0.1056,
+     "pct_positive": 61.4,
+     "t": 3.1335,
+     "p_t_one_sided": 0.0016
+    },
+    "S": {
+     "n": 29,
+     "mean": 0.0096,
+     "sd": 0.0563,
+     "pct_positive": 62.1,
+     "t": 0.9173,
+     "p_t_one_sided": 0.1834
+    },
+    "UNRESOLVED": {
+     "n": 0,
+     "mean": null,
+     "sd": null,
+     "pct_positive": null
+    }
+   },
+   "by_primary_channel": {
+    "Behavioural": {
+     "n": 2,
+     "mean": -0.0086,
+     "sd": 0.0229,
+     "pct_positive": 50.0
+    },
+    "Chromatic": {
+     "n": 2,
+     "mean": 0.0662,
+     "sd": 0.0361,
+     "pct_positive": 100.0
+    },
+    "Conceptual": {
+     "n": 36,
+     "mean": 0.0097,
+     "sd": 0.0895,
+     "pct_positive": 52.8,
+     "t": 0.652,
+     "p_t_one_sided": 0.2593
+    },
+    "Formal": {
+     "n": 3,
+     "mean": 0.0225,
+     "sd": 0.0786,
+     "pct_positive": 33.3,
+     "t": 0.4955,
+     "p_t_one_sided": 0.3347
+    },
+    "Metonymic": {
+     "n": 24,
+     "mean": 0.0213,
+     "sd": 0.0494,
+     "pct_positive": 66.7,
+     "t": 2.1105,
+     "p_t_one_sided": 0.0229
+    },
+    "Morphological": {
+     "n": 7,
+     "mean": 0.1198,
+     "sd": 0.0928,
+     "pct_positive": 85.7,
+     "t": 3.4144,
+     "p_t_one_sided": 0.0071
+    },
+    "Phonetic": {
+     "n": 9,
+     "mean": 0.0626,
+     "sd": 0.1097,
+     "pct_positive": 66.7,
+     "t": 1.7118,
+     "p_t_one_sided": 0.0627
+    },
+    "Structural": {
+     "n": 4,
+     "mean": 0.0001,
+     "sd": 0.0792,
+     "pct_positive": 25.0,
+     "t": 0.0037,
+     "p_t_one_sided": 0.4987
+    },
+    "UNRESOLVED": {
+     "n": 7,
+     "mean": 0.0207,
+     "sd": 0.1179,
+     "pct_positive": 57.1,
+     "t": 0.4652,
+     "p_t_one_sided": 0.3291
+    }
+   },
+   "by_tradition_n3": {
+    "tested": 11,
+    "p05": 2,
+    "bh_q05": 0,
+    "rows": [
+     {
+      "tradition": "Anglo-Saxon riddles (Exeter Book)",
+      "n": 4,
+      "mean": 0.1687,
+      "p_one_sided": 0.0128,
+      "q_bh": 0.1067
+     },
+     {
+      "tradition": "Nahuatl Difrasismo",
+      "n": 4,
+      "mean": -0.0015,
+      "p_one_sided": 0.6316,
+      "q_bh": 0.8442
+     },
+     {
+      "tradition": "Old Norse kenning (skaldic poetry)",
+      "n": 3,
+      "mean": -0.0717,
+      "p_one_sided": 0.9178,
+      "q_bh": 0.9178
+     },
+     {
+      "tradition": "Russian zagadka (загадка)",
+      "n": 4,
+      "mean": 0.1413,
+      "p_one_sided": 0.0194,
+      "q_bh": 0.1067
+     },
+     {
+      "tradition": "adianoeta",
+      "n": 5,
+      "mean": 0.0199,
+      "p_one_sided": 0.3176,
+      "q_bh": 0.5
+     },
+     {
+      "tradition": "iham",
+      "n": 5,
+      "mean": -0.0195,
+      "p_one_sided": 0.6907,
+      "q_bh": 0.8442
+     },
+     {
+      "tradition": "metonymic_drink_en",
+      "n": 5,
+      "mean": 0.0267,
+      "p_one_sided": 0.1608,
+      "q_bh": 0.3538
+     },
+     {
+      "tradition": "metonymic_ritual",
+      "n": 4,
+      "mean": 0.01,
+      "p_one_sided": 0.3182,
+      "q_bh": 0.5
+     },
+     {
+      "tradition": "metonymic_sex_en",
+      "n": 7,
+      "mean": 0.0288,
+      "p_one_sided": 0.0776,
+      "q_bh": 0.2845
+     },
+     {
+      "tradition": "slesa",
+      "n": 5,
+      "mean": -0.0259,
+      "p_one_sided": 0.8039,
+      "q_bh": 0.8843
+     },
+     {
+      "tradition": "tevriye",
+      "n": 3,
+      "mean": 0.0666,
+      "p_one_sided": 0.1192,
+      "q_bh": 0.3278
+     }
+    ]
+   },
+   "sensitivity": {
+    "k3_main": {
+     "n": 185,
+     "mean": 0.0139,
+     "sd": 0.0774,
+     "pct_positive": 55.7,
+     "t": 2.4415,
+     "p_t_one_sided": 0.0078,
+     "mixed": {
+      "n": 185,
+      "n_traditions": 63,
+      "intercept": 0.0166,
+      "se": 0.0084,
+      "z": 1.9773,
+      "p_one_sided": 0.024
+     }
+    },
+    "k5_main": {
+     "n": 185,
+     "mean": 0.0156,
+     "sd": 0.0763,
+     "pct_positive": 56.8,
+     "t": 2.7876,
+     "p_t_one_sided": 0.0029,
+     "mixed": {
+      "n": 185,
+      "n_traditions": 63,
+      "intercept": 0.0164,
+      "se": 0.0084,
+      "z": 1.9468,
+      "p_one_sided": 0.0258
+     }
+    },
+    "k3_with_low_control": {
+     "n": 190,
+     "mean": 0.014,
+     "sd": 0.0771,
+     "pct_positive": 55.3,
+     "t": 2.5059,
+     "p_t_one_sided": 0.0065,
+     "mixed": {
+      "n": 190,
+      "n_traditions": 64,
+      "intercept": 0.0163,
+      "se": 0.0082,
+      "z": 1.9788,
+      "p_one_sided": 0.0239
+     }
+    },
+    "k10_with_low_control": {
+     "n": 94,
+     "mean": 0.0276,
+     "sd": 0.0863,
+     "pct_positive": 59.6,
+     "t": 3.0959,
+     "p_t_one_sided": 0.0013,
+     "mixed": {
+      "n": 94,
+      "n_traditions": 49,
+      "intercept": 0.025,
+      "se": 0.0112,
+      "z": 2.2285,
+      "p_one_sided": 0.0129
+     }
+    },
+    "kall_main": {
+     "n": 185,
+     "mean": 0.0161,
+     "sd": 0.0753,
+     "pct_positive": 57.8,
+     "t": 2.902,
+     "p_t_one_sided": 0.0021,
+     "mixed": {
+      "n": 185,
+      "n_traditions": 63,
+      "intercept": 0.0167,
+      "se": 0.0082,
+      "z": 2.0331,
+      "p_one_sided": 0.021
+     }
+    },
+    "kall_with_low_control": {
+     "n": 200,
+     "mean": 0.0164,
+     "sd": 0.0736,
+     "pct_positive": 57.5,
+     "t": 3.1482,
+     "p_t_one_sided": 0.0009,
+     "mixed": {
+      "n": 200,
+      "n_traditions": 66,
+      "intercept": 0.0166,
+      "se": 0.0077,
+      "z": 2.1559,
+      "p_one_sided": 0.0155
+     }
+    }
+   }
+  },
+  "gemini_embedding_001": {
+   "B_vs_C": {
+    "B_k10_all_after_T3": {
+     "n": 209,
+     "mean": 0.0225,
+     "sd": 0.0272,
+     "pct_positive": 85.6,
+     "t": 11.9691,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 209,
+      "n_traditions": 70,
+      "intercept": 0.0227,
+      "se": 0.0029,
+      "z": 7.9239,
+      "p_one_sided": 0.0
+     }
+    },
+    "C_k10_main": {
+     "n": 94,
+     "mean": 0.0259,
+     "sd": 0.0346,
+     "pct_positive": 83.0,
+     "t": 7.2693,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 94,
+      "n_traditions": 49,
+      "intercept": 0.023,
+      "se": 0.0045,
+      "z": 5.1288,
+      "p_one_sided": 0.0
+     }
+    },
+    "same_items": {
+     "n": 94,
+     "B_k10": {
+      "n": 94,
+      "mean": 0.0287,
+      "sd": 0.0335,
+      "pct_positive": 85.1,
+      "t": 8.2915,
+      "p_t_one_sided": 0.0,
+      "mixed": {
+       "n": 94,
+       "n_traditions": 49,
+       "intercept": 0.0269,
+       "se": 0.0043,
+       "z": 6.3239,
+       "p_one_sided": 0.0
+      }
+     },
+     "C_k10": {
+      "n": 94,
+      "mean": 0.0259,
+      "sd": 0.0346,
+      "pct_positive": 83.0,
+      "t": 7.2693,
+      "p_t_one_sided": 0.0,
+      "mixed": {
+       "n": 94,
+       "n_traditions": 49,
+       "intercept": 0.023,
+       "se": 0.0045,
+       "z": 5.1288,
+       "p_one_sided": 0.0
+      }
+     },
+     "paired_t_C_minus_B": -1.9038,
+     "paired_p_two_sided": 0.06
+    }
+   },
+   "by_recording_status": {
+    "UNRESOLVED": {
+     "n": 0,
+     "mean": null,
+     "sd": null,
+     "pct_positive": null
+    },
+    "cultural_reference": {
+     "n": 60,
+     "mean": 0.0192,
+     "sd": 0.0338,
+     "pct_positive": 75.0,
+     "t": 4.4102,
+     "p_t_one_sided": 0.0
+    },
+    "general_dictionary": {
+     "n": 34,
+     "mean": 0.0377,
+     "sd": 0.0332,
+     "pct_positive": 97.1,
+     "t": 6.6211,
+     "p_t_one_sided": 0.0
+    },
+    "unrecorded": {
+     "n": 0,
+     "mean": null,
+     "sd": null,
+     "pct_positive": null
+    }
+   },
+   "by_direction": {
+    "E": {
+     "n": 21,
+     "mean": 0.0207,
+     "sd": 0.0106,
+     "pct_positive": 95.2,
+     "t": 8.9449,
+     "p_t_one_sided": 0.0
+    },
+    "R": {
+     "n": 44,
+     "mean": 0.0366,
+     "sd": 0.0409,
+     "pct_positive": 86.4,
+     "t": 5.9411,
+     "p_t_one_sided": 0.0
+    },
+    "S": {
+     "n": 29,
+     "mean": 0.0135,
+     "sd": 0.031,
+     "pct_positive": 69.0,
+     "t": 2.3375,
+     "p_t_one_sided": 0.0134
+    },
+    "UNRESOLVED": {
+     "n": 0,
+     "mean": null,
+     "sd": null,
+     "pct_positive": null
+    }
+   },
+   "by_primary_channel": {
+    "Behavioural": {
+     "n": 2,
+     "mean": 0.0102,
+     "sd": 0.018,
+     "pct_positive": 50.0
+    },
+    "Chromatic": {
+     "n": 2,
+     "mean": 0.0167,
+     "sd": 0.0104,
+     "pct_positive": 100.0
+    },
+    "Conceptual": {
+     "n": 36,
+     "mean": 0.0238,
+     "sd": 0.0385,
+     "pct_positive": 80.6,
+     "t": 3.7121,
+     "p_t_one_sided": 0.0004
+    },
+    "Formal": {
+     "n": 3,
+     "mean": 0.0063,
+     "sd": 0.0144,
+     "pct_positive": 66.7,
+     "t": 0.761,
+     "p_t_one_sided": 0.2631
+    },
+    "Metonymic": {
+     "n": 24,
+     "mean": 0.0243,
+     "sd": 0.0338,
+     "pct_positive": 83.3,
+     "t": 3.5301,
+     "p_t_one_sided": 0.0009
+    },
+    "Morphological": {
+     "n": 7,
+     "mean": 0.0576,
+     "sd": 0.0331,
+     "pct_positive": 100.0,
+     "t": 4.6119,
+     "p_t_one_sided": 0.0018
+    },
+    "Phonetic": {
+     "n": 9,
+     "mean": 0.0296,
+     "sd": 0.0214,
+     "pct_positive": 88.9,
+     "t": 4.1476,
+     "p_t_one_sided": 0.0016
+    },
+    "Structural": {
+     "n": 4,
+     "mean": 0.0295,
+     "sd": 0.0341,
+     "pct_positive": 100.0,
+     "t": 1.7298,
+     "p_t_one_sided": 0.0911
+    },
+    "UNRESOLVED": {
+     "n": 7,
+     "mean": 0.0192,
+     "sd": 0.0386,
+     "pct_positive": 71.4,
+     "t": 1.318,
+     "p_t_one_sided": 0.1178
+    }
+   },
+   "by_tradition_n3": {
+    "tested": 11,
+    "p05": 8,
+    "bh_q05": 8,
+    "rows": [
+     {
+      "tradition": "Anglo-Saxon riddles (Exeter Book)",
+      "n": 4,
+      "mean": 0.0589,
+      "p_one_sided": 0.0249,
+      "q_bh": 0.0456
+     },
+     {
+      "tradition": "Nahuatl Difrasismo",
+      "n": 4,
+      "mean": 0.0026,
+      "p_one_sided": 0.2475,
+      "q_bh": 0.2722
+     },
+     {
+      "tradition": "Old Norse kenning (skaldic poetry)",
+      "n": 3,
+      "mean": -0.0057,
+      "p_one_sided": 0.6322,
+      "q_bh": 0.6322
+     },
+     {
+      "tradition": "Russian zagadka (загадка)",
+      "n": 4,
+      "mean": 0.0632,
+      "p_one_sided": 0.0196,
+      "q_bh": 0.0456
+     },
+     {
+      "tradition": "adianoeta",
+      "n": 5,
+      "mean": 0.0424,
+      "p_one_sided": 0.0332,
+      "q_bh": 0.0456
+     },
+     {
+      "tradition": "iham",
+      "n": 5,
+      "mean": 0.0267,
+      "p_one_sided": 0.0004,
+      "q_bh": 0.0044
+     },
+     {
+      "tradition": "metonymic_drink_en",
+      "n": 5,
+      "mean": 0.0423,
+      "p_one_sided": 0.0203,
+      "q_bh": 0.0456
+     },
+     {
+      "tradition": "metonymic_ritual",
+      "n": 4,
+      "mean": 0.0166,
+      "p_one_sided": 0.0056,
+      "q_bh": 0.0308
+     },
+     {
+      "tradition": "metonymic_sex_en",
+      "n": 7,
+      "mean": 0.0205,
+      "p_one_sided": 0.0281,
+      "q_bh": 0.0456
+     },
+     {
+      "tradition": "slesa",
+      "n": 5,
+      "mean": 0.0491,
+      "p_one_sided": 0.0327,
+      "q_bh": 0.0456
+     },
+     {
+      "tradition": "tevriye",
+      "n": 3,
+      "mean": 0.0343,
+      "p_one_sided": 0.0733,
+      "q_bh": 0.0896
+     }
+    ]
+   },
+   "sensitivity": {
+    "k3_main": {
+     "n": 185,
+     "mean": 0.0199,
+     "sd": 0.03,
+     "pct_positive": 82.2,
+     "t": 9.0187,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 185,
+      "n_traditions": 63,
+      "intercept": 0.0177,
+      "se": 0.0031,
+      "z": 5.6862,
+      "p_one_sided": 0.0
+     }
+    },
+    "k5_main": {
+     "n": 185,
+     "mean": 0.0209,
+     "sd": 0.0293,
+     "pct_positive": 79.5,
+     "t": 9.7018,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 185,
+      "n_traditions": 63,
+      "intercept": 0.0181,
+      "se": 0.0032,
+      "z": 5.6918,
+      "p_one_sided": 0.0
+     }
+    },
+    "k3_with_low_control": {
+     "n": 190,
+     "mean": 0.0195,
+     "sd": 0.0299,
+     "pct_positive": 82.1,
+     "t": 8.9858,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 190,
+      "n_traditions": 64,
+      "intercept": 0.0171,
+      "se": 0.0031,
+      "z": 5.48,
+      "p_one_sided": 0.0
+     }
+    },
+    "k10_with_low_control": {
+     "n": 94,
+     "mean": 0.0259,
+     "sd": 0.0346,
+     "pct_positive": 83.0,
+     "t": 7.2693,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 94,
+      "n_traditions": 49,
+      "intercept": 0.023,
+      "se": 0.0045,
+      "z": 5.1288,
+      "p_one_sided": 0.0
+     }
+    },
+    "kall_main": {
+     "n": 185,
+     "mean": 0.0217,
+     "sd": 0.0288,
+     "pct_positive": 83.2,
+     "t": 10.2823,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 185,
+      "n_traditions": 63,
+      "intercept": 0.0191,
+      "se": 0.0032,
+      "z": 6.062,
+      "p_one_sided": 0.0
+     }
+    },
+    "kall_with_low_control": {
+     "n": 200,
+     "mean": 0.0204,
+     "sd": 0.0284,
+     "pct_positive": 82.0,
+     "t": 10.1468,
+     "p_t_one_sided": 0.0,
+     "mixed": {
+      "n": 200,
+      "n_traditions": 66,
+      "intercept": 0.0178,
+      "se": 0.0031,
+      "z": 5.8308,
+      "p_one_sided": 0.0
+     }
+    }
+   }
+  }
+ },
+ "spearman_between_models_C_k10": {
+  "text_embedding_3_large ~ BAAI_bge_m3": {
+   "n": 94,
+   "rho": 0.5104
+  },
+  "text_embedding_3_large ~ gemini_embedding_001": {
+   "n": 94,
+   "rho": 0.6392
+  },
+  "BAAI_bge_m3 ~ gemini_embedding_001": {
+   "n": 94,
+   "rho": 0.393
+  }
+ }
+}

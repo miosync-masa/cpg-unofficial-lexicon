@@ -1,0 +1,218 @@
+item_id,form_status,recording_status,recording_evidence,recording_confidence,status,model
+NET_006,existing_form,cultural_reference,internet-culture encyclopedia and established online slang guides,3,ok,gpt-5.6-sol
+T_052,existing_form,cultural_reference,Chinese symbolism and customary-gift guides,3,ok,gpt-5.6-sol
+T_023,existing_form,general_dictionary,general Sanskrit dictionary sense,3,ok,gpt-5.6-sol
+NEU_004,existing_form,cultural_reference,scholarly edition and commentary on Skáldskaparmál,3,ok,gpt-5.6-sol
+AFR_013,existing_form,cultural_reference,Adinkra symbolism guides and cultural-history references,2,ok,gpt-5.6-sol
+T_088,existing_form,general_dictionary,general dictionary idiom sense,3,ok,gpt-5.6-sol
+NEU_011,novel_form,general_dictionary,general historical Old English dictionary sense,3,ok,gpt-5.6-sol
+T_005,existing_form,general_dictionary,general and classical Japanese dictionary sense for a lovers' meeting or sexual union,3,ok,gpt-5.6-sol
+MET_012,existing_form,cultural_reference,literary-biographical reference and Ottoman rhetoric commentary,3,ok,gpt-5.6-sol
+T_098,existing_form,general_dictionary,general dictionary idiom sense,3,ok,gpt-5.6-sol
+T_082,existing_form,unrecorded,online and contextual usage only,2,ok,gpt-5.6-sol
+MET_013,existing_form,cultural_reference,rhetoric reference and encyclopaedic article on tevriye,3,ok,gpt-5.6-sol
+T_022,existing_form,general_dictionary,general dictionary sense,3,ok,gpt-5.6-sol
+QCH_001,existing_form,cultural_reference,scholarly linguistic analysis and scholarly edition of a colonial text,3,ok,gpt-5.6-sol
+OCE_007,existing_form,cultural_reference,established proverb and cultural-resource guides,2,ok,gpt-5.6-sol
+AFR_011,existing_form,cultural_reference,scholarly edition of praise poetry and cultural-history archive,3,ok,gpt-5.6-sol
+T_046,existing_form,cultural_reference,Chinese symbolism and auspicious-motif references,3,ok,gpt-5.6-sol
+SEA_003,existing_form,cultural_reference,scholarly study and encyclopaedic account of pantun symbolism,3,ok,gpt-5.6-sol
+T_007,existing_form,cultural_reference,poetic-diction references and scholarly waka commentary,3,ok,gpt-5.6-sol
+MAYA_005,existing_form,cultural_reference,scholarly iconographic analysis,3,ok,gpt-5.6-sol
+T_055,existing_form,cultural_reference,established guides to Japanese New Year food customs and osechi symbolism,3,ok,gpt-5.6-sol
+SEA_005,existing_form,cultural_reference,pantun commentary and cultural discussion,2,ok,gpt-5.6-sol
+AFR_001,existing_form,cultural_reference,scholarly introductions and encyclopedic discussions of Qene wordplay,2,ok,gpt-5.6-sol
+T_003,existing_form,general_dictionary,general dictionary sense marking 桜 as a colloquial name for horsemeat,3,ok,gpt-5.6-sol
+T_074,existing_form,general_dictionary,general dictionary slang sense referring to casual sexual activity,3,ok,gpt-5.6-sol
+SEA_008,existing_form,cultural_reference,folklore scholarship and established guides to Vietnamese betel-chewing and marriage customs,3,ok,gpt-5.6-sol
+T_028,existing_form,cultural_reference,Persian poetic-diction and Sufi-symbolism references,3,ok,gpt-5.6-sol
+T_006,existing_form,cultural_reference,scholarly waka commentary and references on classical poetic wordplay,2,ok,gpt-5.6-sol
+NAH_001,existing_form,cultural_reference,scholarly studies and editions of Classical Nahuatl poetry and difrasismo,3,ok,gpt-5.6-sol
+NET_002,existing_form,cultural_reference,scholarly studies of emoji semiotics and established emoji-usage references,3,ok,gpt-5.6-sol
+T_081,existing_form,general_dictionary,general dictionary entry marking the phrase as a euphemism for a sexual relationship,2,ok,gpt-5.6-sol
+T_030,existing_form,general_dictionary,general Persian dictionary figurative sense referring to a beautiful or beloved person,3,ok,gpt-5.6-sol
+NEU_007,existing_form,cultural_reference,scholarly editions and literary commentary on the Exeter Book riddles,3,ok,gpt-5.6-sol
+T_092,existing_form,unrecorded,conversational and online usage; the drinking invitation is context-dependent,2,ok,gpt-5.6-sol
+T_024,existing_form,general_dictionary,general Sanskrit and Hindi dictionary sense,3,ok,gpt-5.6-sol
+MET_008,existing_form,general_dictionary,general Arabic lexicon sense recording the figurative expression for hospitality or generosity,3,ok,gpt-5.6-sol
+T_085,existing_form,general_dictionary,"general English dictionary usage of hit meaning to visit or go to a venue, especially bars",2,ok,gpt-5.6-sol
+EEU_001,existing_form,cultural_reference,nineteenth-century folklore collection and scholarly analysis of Russian folk riddles,2,ok,gpt-5.6-sol
+NAH_008,existing_form,cultural_reference,colonial textual attestation and scholarly references on Nahuatl difrasismo,3,ok,gpt-5.6-sol
+EEU_013,existing_form,cultural_reference,scholarly anthology of Belarusian erotic folklore,3,ok,gpt-5.6-sol
+T_050,existing_form,cultural_reference,guides to Chinese auspicious customs and homophonic symbolism,3,ok,gpt-5.6-sol
+SEA_011,existing_form,cultural_reference,scholarly cultural analysis and established media commentary on the song phenomenon,2,ok,gpt-5.6-sol
+SEA_010,existing_form,cultural_reference,scholarly studies of Javanese macapat symbolism,3,ok,gpt-5.6-sol
+NET_007,existing_form,general_dictionary,general dictionary slang and euphemism entry,3,ok,gpt-5.6-sol
+NEU_018,existing_form,cultural_reference,scholarly editions and literary commentary on the poem,3,ok,gpt-5.6-sol
+T_072,existing_form,cultural_reference,specialist euphemism and idiom dictionaries,2,ok,gpt-5.6-sol
+NAH_002,existing_form,cultural_reference,scholarly commentary and editions of Classical Nahuatl difrasismos,3,ok,gpt-5.6-sol
+NEU_010,existing_form,cultural_reference,scholarly editions and literary commentary on the Exeter Book riddles,2,ok,gpt-5.6-sol
+T_027,existing_form,cultural_reference,Persian poetic-diction references and scholarly Sufi commentary,3,ok,gpt-5.6-sol
+AFR_005,existing_form,general_dictionary,general Yoruba dictionary lexical sense for the tone-marked word meaning witch,3,ok,gpt-5.6-sol
+T_008,existing_form,general_dictionary,general dictionary sense marked as sexual usage,3,ok,gpt-5.6-sol
+OCE_006,existing_form,cultural_reference,historical song commentary and cultural guide to Hawaiian mele kaona,2,ok,gpt-5.6-sol
+AFR_004,existing_form,cultural_reference,specialist Yoruba name reference and guide to birth-circumstance names,3,ok,gpt-5.6-sol
+T_038,existing_form,general_dictionary,general dictionary sense for literary or biblical sexual knowledge,3,ok,gpt-5.6-sol
+T_021,existing_form,general_dictionary,general Sanskrit dictionary sense including amorous or erotic sport,3,ok,gpt-5.6-sol
+MAYA_003,existing_form,cultural_reference,scholarly analysis of diphrasis and cosmological language in the Chilam Balam books,3,ok,gpt-5.6-sol
+AFR_014,existing_form,cultural_reference,Akan proverb and symbol guides and scholarly discussion of death metaphors,2,ok,gpt-5.6-sol
+T_099,existing_form,general_dictionary,"general dictionary idiom sense denoting greeting, respect, or courteous acknowledgment",3,ok,gpt-5.6-sol
+T_034,existing_form,cultural_reference,Persian poetic-diction commentary documenting the morning breeze as a lover's messenger,3,ok,gpt-5.6-sol
+T_039,existing_form,general_dictionary,"general dictionary sense, especially in the construction coucher avec quelqu'un",3,ok,gpt-5.6-sol
+T_102,existing_form,cultural_reference,established guides to religious gestures and ritual customs,3,ok,gpt-5.6-sol
+T_017,existing_form,general_dictionary,"general Sanskrit dictionary senses for love, passion, intoxication, and the god of love",3,ok,gpt-5.6-sol
+MET_003,existing_form,cultural_reference,scholarly study of Arabic tawriya,3,ok,gpt-5.6-sol
+T_084,existing_form,general_dictionary,general dictionary sense of drink as an occasion or session involving alcoholic beverages,2,ok,gpt-5.6-sol
+NET_004,novel_form,cultural_reference,scholarly studies and encyclopaedic accounts of Chinese internet culture and censorship resistance,3,ok,gpt-5.6-sol
+OCE_005,existing_form,general_dictionary,"general Hawaiian dictionary senses including child, offspring, and descendant",3,ok,gpt-5.6-sol
+MET_002,existing_form,general_dictionary,general Arabic dictionary senses of jafn including eyelid and sword sheath or scabbard,3,ok,gpt-5.6-sol
+T_094,existing_form,unrecorded,ordinary conversational and drinking-culture usage,2,ok,gpt-5.6-sol
+NAH_004,existing_form,cultural_reference,scholarly editions of Classical Nahuatl texts and specialist studies of difrasismo,3,ok,gpt-5.6-sol
+MET_004,existing_form,cultural_reference,classical rhetoric treatises and scholarly reference works on Arabic tawriya,3,ok,gpt-5.6-sol
+T_064,existing_form,cultural_reference,established guide to Japanese New Year food customs,3,ok,gpt-5.6-sol
+T_065,existing_form,cultural_reference,established guide to Japanese New Year food customs,3,ok,gpt-5.6-sol
+EEU_012,existing_form,cultural_reference,scholarly folklore article on Slavic symbolic language,3,ok,gpt-5.6-sol
+OCE_008,existing_form,cultural_reference,Māori proverb collections and established cultural guides,2,ok,gpt-5.6-sol
+T_015,existing_form,general_dictionary,general Sanskrit dictionary sense,3,ok,gpt-5.6-sol
+SEA_013,existing_form,cultural_reference,folk-song commentary and educational cultural guide,2,ok,gpt-5.6-sol
+T_095,existing_form,unrecorded,ordinary pragmatic usage rather than a documented covert lexical sense,2,ok,gpt-5.6-sol
+SEA_009,existing_form,cultural_reference,scholarly study and specialist guides to Javanese macapat performance,3,ok,gpt-5.6-sol
+T_089,existing_form,general_dictionary,general English dictionary sense,3,ok,gpt-5.6-sol
+NET_005,existing_form,cultural_reference,encyclopaedic and established journalistic accounts of Chinese internet censorship euphemisms,3,ok,gpt-5.6-sol
+T_078,existing_form,general_dictionary,general dictionary sense,3,ok,gpt-5.6-sol
+T_079,existing_form,general_dictionary,general dictionary usage,2,ok,gpt-5.6-sol
+T_049,existing_form,cultural_reference,Chinese symbolism and customary-language reference,3,ok,gpt-5.6-sol
+NEU_015,existing_form,cultural_reference,scholarly mythology commentary and cultural encyclopedia,3,ok,gpt-5.6-sol
+NEU_017,existing_form,cultural_reference,specialist poetics and ring-composition scholarship,2,ok,gpt-5.6-sol
+MET_015,existing_form,cultural_reference,rhetoric and poetics reference,2,ok,gpt-5.6-sol
+T_051,existing_form,cultural_reference,folklore and customs guide,3,ok,gpt-5.6-sol
+T_002,existing_form,general_dictionary,general dictionary sense,3,ok,gpt-5.6-sol
+NEU_016,existing_form,cultural_reference,scholarly folklore and shamanism commentary,2,ok,gpt-5.6-sol
+EEU_010,existing_form,cultural_reference,scholarly folklore article on Slavic sexual symbolism,3,ok,gpt-5.6-sol
+T_090,existing_form,general_dictionary,Japanese general-dictionary sense and usage,3,ok,gpt-5.6-sol
+T_042,existing_form,general_dictionary,French general-dictionary sense,3,ok,gpt-5.6-sol
+MAYA_001,existing_form,cultural_reference,scholarly study of Maya diphrasis and epigraphic usage,3,ok,gpt-5.6-sol
+NEU_014,existing_form,cultural_reference,folklore scholarship on Finnish riddles,3,ok,gpt-5.6-sol
+T_091,existing_form,general_dictionary,Japanese general-dictionary sense and usage,3,ok,gpt-5.6-sol
+T_016,existing_form,general_dictionary,Sanskrit and Hindi general-dictionary sense,3,ok,gpt-5.6-sol
+T_070,existing_form,general_dictionary,English general-dictionary euphemistic usage,2,ok,gpt-5.6-sol
+T_080,existing_form,general_dictionary,Japanese general-dictionary sense of intimate or sexual relations,2,ok,gpt-5.6-sol
+EEU_015,existing_form,cultural_reference,scholarly commentary on Russian wedding songs and ritual symbolism,3,ok,gpt-5.6-sol
+T_020,existing_form,general_dictionary,"Sanskrit and Hindi general-dictionary sense, including the erotic aesthetic sentiment",3,ok,gpt-5.6-sol
+NET_001,existing_form,cultural_reference,cultural journalism and established guides to Korean popular culture,3,ok,gpt-5.6-sol
+EEU_002,existing_form,cultural_reference,scholarly collection of Russian erotic folklore and riddles,3,ok,gpt-5.6-sol
+T_009,existing_form,general_dictionary,general dictionary sense marking sexual relations,3,ok,gpt-5.6-sol
+T_011,existing_form,general_dictionary,general dictionary senses for 振る meaning romantic rejection and the homophone 降る meaning precipitation,3,ok,gpt-5.6-sol
+SEA_007,existing_form,cultural_reference,literary criticism and scholarly commentary on Vietnamese Nôm poetry,3,ok,gpt-5.6-sol
+T_103,existing_form,general_dictionary,"general dictionary sense describing a salute as an expression of allegiance, respect, or loyalty",3,ok,gpt-5.6-sol
+AFR_009,existing_form,cultural_reference,scholarly edition and commentary on Zulu royal praise poetry,3,ok,gpt-5.6-sol
+OCE_002,existing_form,cultural_reference,ethnographic and Indigenous cultural documentation of songlines and Tjukurpa,3,ok,gpt-5.6-sol
+T_073,existing_form,general_dictionary,general dictionary sense marked as a euphemism for sexual intercourse,3,ok,gpt-5.6-sol
+T_026,existing_form,cultural_reference,Persian poetic-diction references and scholarly commentary on Sufi poetry,3,ok,gpt-5.6-sol
+NEU_003,novel_form,cultural_reference,specialist kenning lexicon and scholarly reference on skaldic poetic diction,3,ok,gpt-5.6-sol
+T_044,existing_form,general_dictionary,general dictionary sense marked literary or archaic for sexual relations,3,ok,gpt-5.6-sol
+T_059,existing_form,cultural_reference,established guides to Japanese New Year food customs and osechi symbolism,3,ok,gpt-5.6-sol
+AFR_008,existing_form,cultural_reference,scholarly ethnography and studies of Yoruba praise poetry and political performance,3,ok,gpt-5.6-sol
+OCE_001,existing_form,cultural_reference,"ethnographic and scholarly references on Western Desert song traditions, landscape knowledge, and Tjukurpa",2,ok,gpt-5.6-sol
+MET_014,existing_form,cultural_reference,rhetoric and Ottoman literary-studies references discussing tevriye and historical poetic polysemy,2,ok,gpt-5.6-sol
+NAH_003,existing_form,general_dictionary,historical general bilingual dictionary entry explicitly glossing the expression metaphorically as battle or war,3,ok,gpt-5.6-sol
+OCE_003,existing_form,general_dictionary,"general Hawaiian dictionary figurative and poetic senses for a beloved person, sweetheart, or warrior",3,ok,gpt-5.6-sol
+QCH_005,existing_form,cultural_reference,ethnographic and established cultural descriptions of Andean coca-leaf offerings and ceremonial cosmology,2,ok,gpt-5.6-sol
+QCH_003,existing_form,cultural_reference,"scholarly Andean ethnography, historical commentary, and encyclopedic references on Inca cosmology and colonial reinterpretation",2,ok,gpt-5.6-sol
+T_045,existing_form,cultural_reference,Chinese symbol and folklore dictionaries,3,ok,gpt-5.6-sol
+AFR_003,existing_form,cultural_reference,specialist discussions of Qene double meaning,2,ok,gpt-5.6-sol
+T_040,existing_form,general_dictionary,general dictionary sense,3,ok,gpt-5.6-sol
+AFR_006,existing_form,cultural_reference,orisha praise-poetry commentary and religious encyclopaedia,2,ok,gpt-5.6-sol
+MET_007,existing_form,general_dictionary,general dictionary sense in Arabic lexicography,3,ok,gpt-5.6-sol
+EEU_007,existing_form,cultural_reference,specialist folklore and epic-poetry commentary,1,ok,gpt-5.6-sol
+EEU_005,existing_form,cultural_reference,scholarly collection of Russian erotic folklore,3,ok,gpt-5.6-sol
+OCE_004,existing_form,cultural_reference,scholarly cultural interpretation of the song's political reception,2,ok,gpt-5.6-sol
+MET_005,existing_form,cultural_reference,scholarly literary analysis of tawriya in the Maqamat,2,ok,gpt-5.6-sol
+T_083,existing_form,unrecorded,online usage and informal euphemism guides,2,ok,gpt-5.6-sol
+T_075,existing_form,general_dictionary,general dictionary sense marked informal,3,ok,gpt-5.6-sol
+NEU_012,novel_form,general_dictionary,historical Old English dictionary entries and scholarly editions,3,ok,gpt-5.6-sol
+T_037,existing_form,general_dictionary,general dictionary sense marked vulgar,3,ok,gpt-5.6-sol
+T_053,existing_form,cultural_reference,Chinese custom and auspicious-symbolism guides,3,ok,gpt-5.6-sol
+T_096,existing_form,general_dictionary,general dictionary definition of the gesture as expressing respect,3,ok,gpt-5.6-sol
+EEU_008,existing_form,cultural_reference,folklore scholarship and studies of bylina formulaic epithets,2,ok,gpt-5.6-sol
+T_036,existing_form,cultural_reference,literary and rhetorical commentary on erotic death metaphors,2,ok,gpt-5.6-sol
+QCH_002,existing_form,general_dictionary,colonial Quechua dictionary entries documenting indigenous and Christianized senses,3,ok,gpt-5.6-sol
+T_093,existing_form,unrecorded,colloquial and online usage only,2,ok,gpt-5.6-sol
+T_067,existing_form,cultural_reference,established guides to osechi customs and food symbolism,3,ok,gpt-5.6-sol
+MAYA_002,existing_form,cultural_reference,scholarly study of Chilam Balam diphrasis,3,ok,gpt-5.6-sol
+T_012,existing_form,cultural_reference,waka commentary and poetic-diction reference,3,ok,gpt-5.6-sol
+T_063,existing_form,cultural_reference,established guide to Japanese New Year food symbolism,3,ok,gpt-5.6-sol
+NAH_007,existing_form,cultural_reference,codex commentary and scholarly studies of Nahuatl diphrasis,3,ok,gpt-5.6-sol
+T_101,existing_form,cultural_reference,guides to mourning and commemorative customs,2,ok,gpt-5.6-sol
+NEU_008,existing_form,cultural_reference,scholarly editions and literary commentary on the Exeter Book riddles,3,ok,gpt-5.6-sol
+NAH_005,existing_form,cultural_reference,Florentine Codex commentary and scholarly studies of Nahuatl diphrasis,3,ok,gpt-5.6-sol
+MAYA_006,existing_form,cultural_reference,specialist epigraphic study of Classic Maya writing,3,ok,gpt-5.6-sol
+T_047,existing_form,cultural_reference,guides to Chinese homophonic and festive symbolism,3,ok,gpt-5.6-sol
+AFR_002,existing_form,cultural_reference,online specialist guide to Amharic qene rhetoric,2,ok,gpt-5.6-sol
+EEU_006,existing_form,cultural_reference,Slavic mythology scholarship and folklore studies,3,ok,gpt-5.6-sol
+T_066,existing_form,cultural_reference,established guides to osechi customs and food symbolism,3,ok,gpt-5.6-sol
+T_054,existing_form,cultural_reference,Chinese auspicious-symbol and visual-motif guides,2,ok,gpt-5.6-sol
+T_086,existing_form,general_dictionary,"general dictionary informal sense of ""cold one"" as a beer or alcoholic drink",2,ok,gpt-5.6-sol
+T_019,existing_form,general_dictionary,general Sanskrit dictionary sense including amorous sport or dalliance,3,ok,gpt-5.6-sol
+EEU_014,novel_form,cultural_reference,specialist collection of Belarusian erotic folklore,3,ok,gpt-5.6-sol
+SEA_004,existing_form,cultural_reference,pantun symbolism guides and cultural-heritage references,2,ok,gpt-5.6-sol
+MET_010,existing_form,general_dictionary,"general Arabic dictionary figurative senses of ""hand"" as power, agency, or beneficence",3,ok,gpt-5.6-sol
+SEA_014,existing_form,cultural_reference,scholarly editions and literary commentary on Vietnamese ca dao,2,ok,gpt-5.6-sol
+T_032,existing_form,cultural_reference,Sufi poetic glossaries and scholarly commentary on Persian mystical poetry,3,ok,gpt-5.6-sol
+MET_009,existing_form,cultural_reference,medieval rhetoric treatise and scholarly reference on kināya,3,ok,gpt-5.6-sol
+T_025,existing_form,cultural_reference,Sufi poetic-symbolism lexicons and scholarly commentaries,3,ok,gpt-5.6-sol
+T_001,existing_form,general_dictionary,general dictionary sense for botan as boar meat,3,ok,gpt-5.6-sol
+QCH_004,existing_form,cultural_reference,scholarly ethnographic study of Quechua riddle traditions,3,ok,gpt-5.6-sol
+SEA_012,novel_form,cultural_reference,scholarly study of erotic double meaning in Thai country-song lyrics,2,ok,gpt-5.6-sol
+NEU_006,existing_form,cultural_reference,specialist guide to Old Norse kennings and mythological poetic diction,2,ok,gpt-5.6-sol
+SEA_002,existing_form,cultural_reference,scholarly guide to Malay pantun symbolism and poetic convention,3,ok,gpt-5.6-sol
+AFR_015,existing_form,cultural_reference,scholarly study and cultural guide to Akan death euphemisms,3,ok,gpt-5.6-sol
+T_041,existing_form,general_dictionary,general dictionary sense for affaire as an extramarital or sexual relationship,3,ok,gpt-5.6-sol
+T_058,existing_form,cultural_reference,established guides to Japanese New Year food symbolism and customs,3,ok,gpt-5.6-sol
+NEU_002,novel_form,cultural_reference,specialist skaldic kenning lexicon and scholarly work on Old Norse poetics,3,ok,gpt-5.6-sol
+AFR_010,existing_form,cultural_reference,scholarly edition and literary analysis of Zulu royal praise poetry,3,ok,gpt-5.6-sol
+NEU_001,novel_form,cultural_reference,scholarly edition and specialist reference on Germanic poetic kennings,3,ok,gpt-5.6-sol
+T_048,existing_form,cultural_reference,Chinese symbolism and auspicious-custom guides documenting the phonetic association,2,ok,gpt-5.6-sol
+NAH_006,existing_form,general_dictionary,"Classical Nahuatl dictionary entry for the contracted lexical form, supplemented by scholarly analysis of the difrasismo",3,ok,gpt-5.6-sol
+T_033,existing_form,general_dictionary,general Persian dictionary sense marked for literary or Sufi usage,2,ok,gpt-5.6-sol
+EEU_009,existing_form,cultural_reference,folklore and literary-terminology references on permanent epithets in Russian oral epic,2,ok,gpt-5.6-sol
+T_035,existing_form,general_dictionary,general French dictionary sexual sense,3,ok,gpt-5.6-sol
+NET_003,novel_form,cultural_reference,scholarly social-media research and established journalistic guides to algospeak,3,ok,gpt-5.6-sol
+T_013,existing_form,cultural_reference,poetic-diction commentary on waka imagery and associations,2,ok,gpt-5.6-sol
+T_014,existing_form,unrecorded,no known general-dictionary sense or established waka reference for the specific meaning 'embrace',2,ok,gpt-5.6-sol
+T_077,existing_form,general_dictionary,general dictionary sense for making sexual advances or entering into a sexual relationship,3,ok,gpt-5.6-sol
+EEU_004,existing_form,cultural_reference,folklore collection and scholarly semiotic analysis of traditional riddles,2,ok,gpt-5.6-sol
+T_010,existing_form,cultural_reference,"waka commentary and poetic-diction scholarship on disorder, emotional agitation, and erotic implication",2,ok,gpt-5.6-sol
+T_018,existing_form,cultural_reference,Sanskrit poetics and aesthetics references treating erotic sentiment as a rasa,3,ok,gpt-5.6-sol
+EEU_003,novel_form,cultural_reference,specialist scholarship on Russian erotic riddles,2,ok,gpt-5.6-sol
+T_068,existing_form,general_dictionary,general dictionary slang or euphemism sense,3,ok,gpt-5.6-sol
+AFR_007,existing_form,cultural_reference,religious encyclopaedia and established cultural guides to Ṣàngó symbolism,2,ok,gpt-5.6-sol
+T_004,existing_form,general_dictionary,general dictionary sense listing kashiwa as chicken or chicken meat,3,ok,gpt-5.6-sol
+T_062,existing_form,cultural_reference,established guides to osechi customs and New Year food symbolism,3,ok,gpt-5.6-sol
+NEU_009,existing_form,cultural_reference,scholarly editions and literary commentary on the Exeter Book riddles,3,ok,gpt-5.6-sol
+T_060,existing_form,cultural_reference,established guides to Japanese New Year food customs and osechi symbolism,3,ok,gpt-5.6-sol
+T_071,existing_form,unrecorded,informal and online usage only,2,ok,gpt-5.6-sol
+MET_016,existing_form,general_dictionary,general dictionary senses for the polysemous Ottoman/Persian-derived word,2,ok,gpt-5.6-sol
+T_100,existing_form,general_dictionary,general dictionary sense and figurative usage,3,ok,gpt-5.6-sol
+EEU_011,existing_form,cultural_reference,folklore scholarship on Polish erotic folk lyrics,3,ok,gpt-5.6-sol
+SEA_006,existing_form,cultural_reference,scholarly translation and literary commentary on Hồ Xuân Hương's poetry,3,ok,gpt-5.6-sol
+MET_001,existing_form,general_dictionary,general Arabic dictionary sense of عَيْن as a spring or fountain,3,ok,gpt-5.6-sol
+MAYA_004,existing_form,cultural_reference,scholarly edition and commentary on the Book of Chilam Balam and Zuyua ritual riddles,3,ok,gpt-5.6-sol
+AFR_012,existing_form,cultural_reference,scholarly literary criticism and studies of Xhosa praise poetry,3,ok,gpt-5.6-sol
+T_069,existing_form,cultural_reference,euphemism and cultural-usage guides,2,ok,gpt-5.6-sol
+T_057,existing_form,cultural_reference,established guides to osechi customs and food symbolism,3,ok,gpt-5.6-sol
+T_087,existing_form,general_dictionary,general dictionary sense,3,ok,gpt-5.6-sol
+SEA_015,existing_form,cultural_reference,specialist cultural descriptions of folk-song performance and courtship,2,ok,gpt-5.6-sol
+NEU_005,novel_form,cultural_reference,scholarly edition and specialist kenning reference,3,ok,gpt-5.6-sol
+T_031,existing_form,cultural_reference,Persian poetic-diction and literary-symbolism references,3,ok,gpt-5.6-sol
+T_043,existing_form,general_dictionary,general dictionary sense relating to an amorous pursuer or lover,3,ok,gpt-5.6-sol
+QCH_006,existing_form,cultural_reference,scholarly ethnographic analysis of ritual language,3,ok,gpt-5.6-sol
+MET_006,existing_form,general_dictionary,general Arabic lexicon entry for the conventional phrase,2,ok,gpt-5.6-sol
+T_097,existing_form,general_dictionary,general dictionary usage indicating agreement,3,ok,gpt-5.6-sol
+T_056,existing_form,cultural_reference,established guide to Japanese New Year customs and osechi symbolism,3,ok,gpt-5.6-sol
+NEU_013,existing_form,cultural_reference,folklore collection and scholarly study of Finnish riddles,3,ok,gpt-5.6-sol
+T_029,existing_form,cultural_reference,Sufi poetic-symbolism reference and scholarly commentary on Persian poetry,2,ok,gpt-5.6-sol
+SEA_001,existing_form,cultural_reference,scholarly study and cultural guide to Malay pantun wordplay,3,ok,gpt-5.6-sol
+T_076,existing_form,general_dictionary,general dictionary usage for sharing a bed or sleeping together as a sexual euphemism,2,ok,gpt-5.6-sol
+MET_011,existing_form,cultural_reference,Quranic exegesis and scholarly commentary on Quran 2:115,3,ok,gpt-5.6-sol
+T_061,existing_form,cultural_reference,established guide to Japanese New Year customs and osechi symbolism,3,ok,gpt-5.6-sol

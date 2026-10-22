@@ -1,0 +1,16 @@
+# secrets and local environment
+.env
+.env.*
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/
+backups/
+# copyrighted dictionary text and the worksheet (see dictionary_check/README.md)
+dictionary_check/private/
+# > 50 MB: distributed as a GitHub release asset (see README)
+embeddings/results/nnpm_C_gemini_embedding_001_vectors.npz
+# review material and submission planning stay local
+REVIEW_RESPONSE_CHECKLIST.md
+BLUEPRINT_CPG_v2.md

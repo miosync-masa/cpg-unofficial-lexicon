@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "CPG: Covert Path Generation — data, LLM coding and embedding analyses (revision 2026-10)"
+version: "2.0.0"
+date-released: "2026-10-22"
+authors:
+  - family-names: "Iizumi"
+    given-names: "Masamichi"
+    affiliation: "Miosync, Inc."
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/miosync-masa/cpg-unofficial-lexicon"
+keywords:
+  - covert meaning
+  - euphemism
+  - lexicography
+  - text embeddings
+  - cross-cultural pragmatics

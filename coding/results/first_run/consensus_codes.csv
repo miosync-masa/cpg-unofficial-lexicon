@@ -1,0 +1,218 @@
+item_id,cpg_valid,direction,primary_channel,activation,familiarity,s_juxtaposition,s_noncompositional,s_conventional,has_Phonetic,has_Morphological,has_Chromatic,has_Conceptual,has_Structural,has_Behavioural,has_Metonymic,has_Formal,mean_confidence,clean_host_votes,original_direction,original_primary_channel
+AFR_001,yes,R,Phonetic,register_gated,tradition_only,no,no,yes,1,0,0,0,0,0,0,0,2.3333333333333335,"[""መስቀል"", ""መስቀል"", ""መስቀል""]",R,Phonetic
+AFR_002,yes,R,Conceptual,context_gated,tradition_only,no,no,yes,0,0,0,1,0,0,0,0,2.3333333333333335,"[""ሆዳም"", ""ሆዳም"", ""ሆዳም""]",R,Metonymic
+AFR_003,no,R,Conceptual,context_gated,tradition_only,no,no,no,0,0,0,1,0,0,0,0,1.3333333333333333,"[""ፍቅር"", ""ፍቅር"", ""ፍቅር""]",R,Conceptual
+AFR_004,no,E,Metonymic,always_on,known,no,no,no,0,0,0,0,0,0,1,0,2.0,"[""Òjó"", ""Òjó"", ""Òjó""]",R,Conceptual
+AFR_005,yes,R,Phonetic,UNRESOLVED,tradition_only,no,no,no,1,0,0,0,0,0,0,0,1.6666666666666667,"[""Àjé"", ""AJE"", ""Ajé""]",E,Phonetic
+AFR_006,yes,E,Conceptual,UNRESOLVED,tradition_only,yes,no,yes,0,0,0,1,0,0,0,0,1.6666666666666667,"[""Ina ninu ẹnu"", ""Ina ninu ẹnu"", ""Ina ninu ẹnu""]",E,Conceptual
+AFR_007,yes,E,Morphological,ritual_exclusive,tradition_only,yes,no,yes,0,1,0,1,0,0,0,0,1.6666666666666667,"[""Oṣé Ṣàngó"", ""Oṣé Ṣàngó"", ""Oṣé Ṣàngó""]",S,Morphological
+AFR_008,no,R,UNRESOLVED,context_gated,tradition_only,no,no,no,0,0,0,1,0,0,0,0,1.6666666666666667,"[""oríkì ìdílé"", ""oriki ìdílé"", ""oríkì ìdílé""]",R,Metonymic
+AFR_009,yes,E,Behavioural,register_gated,known,no,no,yes,0,0,0,1,0,1,0,0,2.6666666666666665,"[""Inkunzi"", ""Inkunzi"", ""inkunzi""]",E,Behavioural
+AFR_010,yes,UNRESOLVED,Conceptual,register_gated,tradition_only,yes,yes,no,0,0,0,1,1,0,0,0,1.6666666666666667,"[""Inkunzi engenazimpondo"", ""Inkunzi engenazimpondo"", ""Inkunzi engenazimpondo""]",R,Morphological
+AFR_011,yes,E,Conceptual,register_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""Ndlovu"", ""Ndlovu"", ""Ndlovu""]",E,Behavioural
+AFR_012,no,R,Formal,context_gated,tradition_only,no,no,no,0,0,0,1,0,0,0,1,2.0,"[""Izibongo zenkosi"", ""Izibongo zenkosi"", ""Izibongo zenkosi""]",R,Metonymic
+AFR_013,yes,S,Conceptual,context_gated,known,yes,yes,yes,0,0,0,1,0,0,0,0,2.3333333333333335,"[""Sɛ wo werɛ fi na wosankofa a, yenkyi"", ""Sɛ wo werɛ fi na wosankofa a, yenkyi"", ""Sɛ wo werɛ fi na wosankofa a, yenkyi""]",S,Metonymic
+AFR_014,yes,R,Conceptual,context_gated,known,no,no,yes,0,0,0,1,0,0,0,0,2.3333333333333335,"[""Owuo atwedɛɛ, baako foɔ mforo"", ""Owuo atwedɛɛ, baako foɔ mforo"", ""Owuo atwedeɛ, baako foɔ mforo""]",S,Structural
+AFR_015,yes,S,Conceptual,context_gated,tradition_only,yes,yes,yes,0,0,0,1,0,0,0,0,2.3333333333333335,"[""Wɔkɔɔ fie"", ""Wɔkɔɔ fie"", ""Wɔkɔɔ fie""]",R,Metonymic
+EEU_001,yes,R,Morphological,context_gated,tradition_only,no,no,yes,0,1,0,0,0,1,0,0,2.3333333333333335,"[""Красная головка, под ней — бородка, утром рано встаёт, Маше спать не даёт"", ""Красная головка, под ней — бородка, утром рано встаёт, Маше спать не даёт"", ""Красная головка, под ней — бородка, утром рано встаёт, Маше спать не даёт""]",R,Conceptual
+EEU_002,yes,R,Morphological,context_gated,tradition_only,no,no,yes,0,1,0,1,0,1,0,0,2.3333333333333335,"[""Волосатая головка за щеку заходит ловко"", ""Волосатая головка за щеку заходит ловко"", ""Волосатая головка за щеку заходит ловко""]",R,Metonymic
+EEU_003,yes,S,Morphological,context_gated,UNRESOLVED,yes,yes,yes,0,1,0,0,0,0,1,0,2.3333333333333335,"[""Шерстка с шерсткой слипаются, / Ночной сладости дожидаются"", ""Шерстка с шерсткой слипаются, ночной сладости дожидаются"", ""Шерстка с шерсткой слипаются, Ночной сладости дожидаются""]",R,Conceptual
+EEU_004,no,UNRESOLVED,Morphological,context_gated,known,yes,yes,no,0,1,0,1,0,0,0,0,2.3333333333333335,"[""Красна девица сидит в темнице, а коса на улице"", ""Красна девица сидит в темнице, а коса на улице"", ""Красна девица сидит в темнице, а коса на улице""]",E,Conceptual
+EEU_005,yes,S,UNRESOLVED,context_gated,tradition_only,yes,yes,yes,0,0,0,1,0,0,0,1,2.3333333333333335,"[""Без рук, без ног на бабу скок!"", ""Без рук, без ног на бабу скок!"", ""Без рук, без ног на бабу скок!""]",R,Metonymic
+EEU_006,yes,S,Conceptual,context_gated,known,yes,yes,yes,0,0,0,1,0,0,0,0,2.6666666666666665,"[""мать сыра земля"", ""мать сыра земля"", ""мать сыра земля""]",E,Conceptual
+EEU_007,yes,E,Metonymic,context_gated,tradition_only,yes,no,yes,0,0,0,1,0,0,1,0,2.0,"[""седельце черкасское"", ""седельце черкасское"", ""седельце черкасское""]",E,Metonymic
+EEU_008,yes,S,Formal,register_gated,tradition_only,yes,yes,yes,0,0,0,1,0,0,0,1,2.0,"[""добрый молодец"", ""добрый молодец"", ""добрый молодец""]",E,Structural
+EEU_009,yes,E,Chromatic,register_gated,known,yes,no,yes,0,0,1,0,0,0,1,0,2.3333333333333335,"[""белые руки"", ""белые руки"", ""белые руки""]",E,Chromatic
+EEU_010,yes,S,Conceptual,context_gated,known,yes,yes,yes,0,0,0,1,1,0,0,0,2.6666666666666665,"[""Napoić konia"", ""Napoić konia u studni"", ""napoić konia u studni""]",R,Metonymic
+EEU_011,yes,R,Conceptual,context_gated,tradition_only,no,no,yes,0,0,0,1,1,0,0,0,2.6666666666666665,"[""zaorać pole"", ""oranie pola"", ""oranie""]",R,Conceptual
+EEU_012,yes,E,Conceptual,context_gated,tradition_only,no,no,no,0,0,0,1,0,0,0,0,1.6666666666666667,"[""groch"", ""groch"", ""groch""]",R,Conceptual
+EEU_013,no,R,Conceptual,context_gated,tradition_only,no,no,no,0,0,0,1,0,0,0,0,1.6666666666666667,"[""Мяне мілы спалюбіў, сярод поля заваліў: Грэх ня грэх, а мне хочацца"", ""Мяне мілы спалюбіў, сярод поля заваліў: / Грэх ня грэх, а мне хочацца"", ""Мяне мілы спалюбіў, сярод поля заваліў: Грэх ня грэх, а мне хочацца""]",R,Conceptual
+EEU_014,yes,S,Structural,context_gated,tradition_only,yes,yes,yes,0,1,1,0,1,0,0,0,2.0,"[""Зверху чорна,\nУнутры красна.\nЯк усунеш, дык прэкрасна"", ""Зверху чорна, / Унутры красна. / Як усунеш, дык прэкрасна"", ""Зверху чорна, Унутры красна. Як усунеш, дык прэкрасна""]",R,Chromatic
+EEU_015,yes,E,Metonymic,ritual_exclusive,tradition_only,no,no,yes,0,0,0,1,0,0,1,0,2.0,"[""красота"", ""красота"", ""красота""]",R,Conceptual
+MAYA_001,yes,S,Metonymic,ritual_exclusive,known,yes,yes,yes,0,0,0,1,0,0,1,1,2.0,"[""ch'ab ak'ab"", ""ch'ab ak'ab"", ""ch'ab ak'ab""]",S,Conceptual
+MAYA_002,yes,S,Metonymic,register_gated,tradition_only,yes,yes,yes,0,0,0,1,0,0,1,0,2.3333333333333335,"[""che' tunich"", ""che' tunich"", ""che' tunich""]",S,Metonymic
+MAYA_003,yes,E,Structural,register_gated,tradition_only,yes,no,yes,0,0,0,1,1,0,0,0,2.0,"[""ch'en actun"", ""ch'en actun"", ""ch'en actun""]",S,Conceptual
+MAYA_004,yes,R,Morphological,ritual_exclusive,tradition_only,no,no,yes,0,1,1,0,0,0,0,0,2.0,"[""Bring me the sun in my plate … a green jaguar seated on top, bleeding"", ""Bring me the sun in my plate... a green jaguar seated on top, bleeding"", ""Suyua t'an""]",R,Conceptual
+MAYA_005,yes,S,Formal,context_gated,tradition_only,yes,yes,yes,0,0,0,1,0,0,0,1,2.0,"[""Paired day-motif + night-motif"", ""Paired day-motif + night-motif"", ""day-motif + night-motif""]",S,Conceptual
+MAYA_006,yes,S,Metonymic,register_gated,tradition_only,yes,yes,yes,0,0,0,1,0,0,1,0,1.6666666666666667,"[""pan kab"", ""pan kab / tal kab"", ""pan kab""]",R,Metonymic
+MET_001,no,R,Phonetic,context_gated,known,no,no,no,1,0,0,0,0,0,0,0,3.0,"[""عَيْن"", ""عَيْن"", ""عَيْن""]",E,Phonetic
+MET_002,no,R,Phonetic,context_gated,tradition_only,no,no,no,1,0,0,0,0,0,0,0,2.3333333333333335,"[""الجُفُون"", ""الجُفُون"", ""الجفون""]",E,Structural
+MET_003,yes,R,Phonetic,context_gated,tradition_only,no,no,no,1,0,0,0,0,0,0,0,2.0,"[""كَرَاكِي"", ""كَرَاكِي"", ""كراكي""]",E,Phonetic
+MET_004,yes,R,Phonetic,context_gated,tradition_only,no,no,no,1,0,0,0,0,0,0,0,2.6666666666666665,"[""بَدْر"", ""بَدْر"", ""بدر""]",E,Phonetic
+MET_005,no,R,UNRESOLVED,context_gated,tradition_only,no,no,no,0,0,0,1,0,0,0,0,1.3333333333333333,"[""أبو زيد السروجي"", ""Abū Zayd al-Sarūjī"", ""أبو زيد السروجي""]",E,Conceptual
+MET_006,yes,R,Metonymic,register_gated,known,yes,no,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""طَوِيلُ النِّجَاد"", ""طَوِيلُ النِّجَاد"", ""طَوِيلُ النِّجَاد""]",R,Structural
+MET_007,no,S,Metonymic,UNRESOLVED,known,yes,yes,yes,0,0,1,0,0,0,1,0,2.6666666666666665,"[""يَدٌ بَيْضَاء"", ""يَدٌ بَيْضَاء"", ""يَدٌ بَيْضَاء""]",R,Conceptual
+MET_008,yes,S,Metonymic,register_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,3.0,"[""كَثِيرُ الرَّمَاد"", ""كَثِيرُ الرَّمَاد"", ""كثير الرماد""]",R,Metonymic
+MET_009,yes,S,Metonymic,register_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""نَؤُومُ الضُّحَى"", ""نَؤُومُ الضُّحَى"", ""نؤوم الضحى""]",R,Behavioural
+MET_010,yes,R,UNRESOLVED,register_gated,known,yes,no,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""يَدُ اللَّه"", ""يَدُ اللَّه"", ""يد الله""]",R,Conceptual
+MET_011,yes,R,Metonymic,context_gated,known,yes,no,yes,0,0,0,1,0,0,1,0,2.0,"[""وَجْهُ اللَّه"", ""وَجْهُ اللَّه"", ""وجه الله""]",R,Conceptual
+MET_012,yes,R,Phonetic,register_gated,known,no,no,no,1,1,0,0,0,0,0,0,2.3333333333333335,"[""فُضُولِي"", ""فُضُولِي"", ""فضولي""]",E,Phonetic
+MET_013,yes,R,Phonetic,context_gated,known,no,no,no,1,0,0,0,0,0,0,0,2.6666666666666665,"[""gülüverdi"", ""gülüverdi"", ""gülüverdi""]",E,Phonetic
+MET_014,no,R,Phonetic,context_gated,known,no,no,no,1,0,0,1,0,0,0,0,2.0,"[""rüzgâr"", ""rüzgâr"", ""rüzgâr""]",E,Conceptual
+MET_015,yes,R,Phonetic,context_gated,tradition_only,no,no,no,1,0,0,0,0,0,0,0,2.3333333333333335,"[""kande"", ""kande"", ""kande""]",E,Phonetic
+MET_016,no,R,Phonetic,context_gated,tradition_only,no,no,no,1,0,0,0,0,0,1,0,2.0,"[""bahâr"", ""bahâr"", ""bahâr""]",E,Conceptual
+NAH_001,yes,S,Conceptual,register_gated,known,yes,yes,yes,0,0,0,1,0,0,0,1,2.6666666666666665,"[""in xochitl, in cuicatl"", ""in xochitl, in cuicatl"", ""in xochitl, in cuicatl""]",S,Conceptual
+NAH_002,yes,S,Conceptual,register_gated,known,yes,yes,yes,0,0,0,1,0,0,0,0,3.0,"[""in cuitlapilli, in ahtlapalli"", ""in cuitlapilli, in ahtlapalli"", ""in cuitlapilli, in ahtlapalli""]",S,Metonymic
+NAH_003,yes,S,Metonymic,register_gated,known,yes,yes,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""in teoatl, in tlachinolli"", ""in teoatl, in tlachinolli"", ""in teoatl, in tlachinolli""]",S,Conceptual
+NAH_004,yes,S,Metonymic,register_gated,known,yes,yes,yes,0,0,1,0,0,0,1,1,3.0,"[""in tlilli, in tlapalli"", ""in tlilli, in tlapalli"", ""in tlilli, in tlapalli""]",S,Chromatic
+NAH_005,yes,S,Metonymic,register_gated,known,yes,yes,yes,0,0,0,1,0,0,1,0,3.0,"[""in ixtli, in yollotl"", ""in ixtli, in yollotl"", ""in ixtli, in yollotl""]",S,Structural
+NAH_006,yes,S,Metonymic,register_gated,known,yes,yes,yes,0,0,0,1,0,0,1,0,3.0,"[""in atl, in tepetl"", ""in atl, in tepetl"", ""in atl, in tepetl""]",S,Conceptual
+NAH_007,yes,S,Metonymic,register_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""in cuauhtli, in ocelotl"", ""in cuauhtli, in ocelotl"", ""in cuauhtli, in ocelotl""]",S,Behavioural
+NAH_008,yes,S,Structural,register_gated,known,yes,yes,yes,0,0,0,0,1,0,0,0,3.0,"[""in toptli, in petlacalli"", ""in toptli, in petlacalli"", ""in toptli, in petlacalli""]",R,Structural
+NET_001,yes,R,Metonymic,context_gated,known,no,yes,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""라면 먹고 갈래?"", ""라면 먹고 갈래?"", ""라면 먹고 갈래?""]",R,Metonymic
+NET_002,yes,R,Morphological,context_gated,known,yes,no,yes,0,1,0,0,0,0,0,0,3.0,"[""🍆 🍑"", ""🍆 🍑"", ""🍆""]",R,Morphological
+NET_003,no,R,Phonetic,register_gated,known,no,no,yes,1,0,0,1,0,0,0,0,2.6666666666666665,"[""unalive"", ""unalive / corn / le dollar bean / seggs / grape"", ""unalive""]",R,Metonymic
+NET_004,yes,R,Phonetic,register_gated,known,no,yes,yes,1,0,0,1,0,0,0,0,2.6666666666666665,"[""草泥马"", ""草泥马"", ""草泥马""]",E,Phonetic
+NET_005,yes,S,Conceptual,register_gated,known,yes,yes,yes,0,0,0,1,0,0,0,0,3.0,"[""五月三十五日"", ""五月三十五日"", ""五月三十五日""]",R,Structural
+NET_006,yes,R,Morphological,register_gated,known,no,no,yes,0,1,0,0,0,0,0,0,3.0,"[""304"", ""304"", ""304""]",R,Morphological
+NET_007,yes,S,Metonymic,context_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""Netflix and chill"", ""Netflix and chill"", ""Netflix and chill""]",R,Metonymic
+NEU_001,yes,S,UNRESOLVED,register_gated,known,yes,yes,yes,0,0,0,1,0,0,0,0,2.6666666666666665,"[""hronrád"", ""hronrád / hwælweg"", ""hronrād""]",S,Structural
+NEU_002,yes,S,Metonymic,register_gated,known,yes,yes,yes,0,0,0,1,0,1,1,0,3.0,"[""hrafnvín"", ""hrafnvín"", ""hrafnvín""]",S,Behavioural
+NEU_003,yes,S,Conceptual,register_gated,known,yes,yes,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""valbjórr"", ""valbjórr / hrælœkr"", ""valbjórr""]",S,Conceptual
+NEU_004,yes,S,Metonymic,register_gated,known,yes,yes,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""Kvasirs blóð"", ""Kvasirs blóð"", ""Kvasirs blóð""]",S,Conceptual
+NEU_005,yes,S,Metonymic,register_gated,known,yes,yes,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""grennir gunn-más"", ""grennir gunn-más"", ""grennir gunnmás""]",S,Conceptual
+NEU_006,no,E,Phonetic,register_gated,tradition_only,no,no,no,1,0,0,0,0,0,0,0,1.3333333333333333,"[""valr"", ""valr"", ""valr""]",E,Phonetic
+NEU_007,yes,R,Morphological,context_gated,known,no,no,no,0,1,0,0,0,1,0,0,2.6666666666666665,"[""ānpæð wigan"", ""Ic eom wunderlicu wiht... wifum on hyhte"", ""Ic eom wunderlicu wiht, wifum on hyhte""]",R,Morphological
+NEU_008,yes,R,UNRESOLVED,context_gated,known,no,no,no,0,1,0,0,1,0,0,0,2.3333333333333335,"[""Wiht is wrætlic"", ""Wiht is wrætlic... wæpned guma"", ""Wrætlic hongað bi weres þeo""]",R,Structural
+NEU_009,yes,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,1,0,0,3.0,"[""Ic on wincle gefrægn … under hrægle hreran"", ""Ic on wincle gefrægn... under hrægle hreran"", ""Ic on wincle gefrægn weaxan nathwæt""]",R,Behavioural
+NEU_010,yes,R,Morphological,context_gated,known,no,no,no,0,1,0,1,0,1,0,0,2.0,"[""Ic þa wiht geseah … wræstlice gewundenne"", ""Ic þa wiht geseah... wræstlice gewundenne"", ""Ic þa wihte geseah""]",R,Morphological
+NEU_011,yes,S,Conceptual,register_gated,known,yes,yes,yes,0,0,0,1,1,0,0,0,2.6666666666666665,"[""bānhūs"", ""bānhūs"", ""bānhūs""]",S,Structural
+NEU_012,yes,S,Conceptual,register_gated,known,yes,yes,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""beadu-swāt"", ""beadu-swāt"", ""beadu-swāt""]",S,Conceptual
+NEU_013,yes,R,Structural,context_gated,tradition_only,no,no,no,0,0,0,0,1,1,0,0,1.3333333333333333,"[""kaivo-arvoitus"", ""kaivo-arvoitus"", ""kaivo-arvoitus""]",R,Structural
+NEU_014,yes,R,UNRESOLVED,context_gated,tradition_only,no,no,yes,0,1,0,1,0,0,0,0,2.0,"[""kirnuamis-arvoitus"", ""kirnuamis-arvoitus"", ""kirnuamis-arvoitus""]",R,Behavioural
+NEU_015,no,E,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,0,0,1.6666666666666667,"[""Sampo"", ""Sampo"", ""Sampo""]",S,Conceptual
+NEU_016,no,E,Conceptual,ritual_exclusive,tradition_only,yes,no,no,0,0,0,1,0,0,0,0,1.6666666666666667,"[""tulen synty"", ""tulen synty"", ""tulen synty""]",S,Conceptual
+NEU_017,no,E,Formal,context_gated,tradition_only,no,no,yes,0,0,0,0,0,0,0,1,1.6666666666666667,"[""dúnad"", ""dúnad"", ""dúnad""]",S,Formal
+NEU_018,no,E,Formal,context_gated,known,yes,yes,no,0,0,0,1,0,0,0,1,2.6666666666666665,"[""Pangur Bán"", ""messe ocus Pangur Bán"", ""Messe ocus Pangur Bán""]",S,Formal
+OCE_001,no,R,UNRESOLVED,ritual_exclusive,tradition_only,no,no,no,0,0,0,0,1,0,1,0,1.6666666666666667,"[""inma"", ""inma"", ""inma""]",E,Formal
+OCE_002,no,E,UNRESOLVED,ritual_exclusive,known,no,no,yes,0,0,0,1,0,0,1,0,1.6666666666666667,"[""Kungkarangkalpa"", ""Kungkarangkalpa"", ""Kungkarangkalpa""]",E,Formal
+OCE_003,yes,R,Conceptual,context_gated,known,no,no,no,0,0,1,1,0,0,0,0,2.3333333333333335,"[""lehua"", ""lehua"", ""lehua""]",E,Conceptual
+OCE_004,yes,UNRESOLVED,Metonymic,context_gated,known,no,no,yes,0,0,0,1,0,0,1,0,2.0,"[""Aloha ʻOe"", ""Aloha ʻOe"", ""Aloha ʻOe""]",R,Conceptual
+OCE_005,yes,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.0,"[""pua"", ""pua"", ""pua""]",E,Conceptual
+OCE_006,yes,R,Behavioural,context_gated,tradition_only,no,no,no,0,0,0,1,0,1,0,0,2.0,"[""Sanoe"", ""Sanoe"", ""Sanoe""]",R,Behavioural
+OCE_007,yes,S,Conceptual,context_gated,known,yes,yes,yes,0,0,0,1,0,0,0,1,2.3333333333333335,"[""Toitū te whenua, whatungarongaro te tangata"", ""Toitū te whenua, whatungarongaro te tangata"", ""Toitū te whenua, whatungarongaro te tangata""]",E,Conceptual
+OCE_008,yes,S,Conceptual,context_gated,tradition_only,yes,yes,yes,0,0,0,1,0,1,0,0,2.0,"[""Kua kaheko te tuna i roto i aku ringa"", ""Kua kaheko te tuna i roto i aku ringa"", ""Kua kaheko te tuna i roto i aku ringa""]",E,Behavioural
+QCH_001,yes,S,Formal,context_gated,tradition_only,yes,yes,yes,0,0,0,1,0,0,0,1,2.0,"[""Unuy wiqillam apariwan / Yakuy parallam pusariwan"", ""Unuy wiqillam apariwan / Yakuy parallam pusariwan"", ""Unuy wiqillam apariwan / Yakuy parallam pusariwan""]",S,Formal
+QCH_002,no,R,Conceptual,register_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.0,"[""Supay"", ""Supay"", ""Supay""]",R,Conceptual
+QCH_003,no,E,Conceptual,register_gated,known,yes,no,yes,0,0,0,1,0,0,0,0,2.3333333333333335,"[""Ukhu Pacha"", ""Ukhu Pacha / Hanaq Pacha"", ""ukhu pacha""]",R,Conceptual
+QCH_004,no,R,Conceptual,context_gated,tradition_only,no,no,no,0,0,0,1,0,0,0,0,1.6666666666666667,"[""Watuchikuna"", ""Watuchikuna"", ""watuchikuna""]",R,Structural
+QCH_005,no,E,UNRESOLVED,ritual_exclusive,tradition_only,no,no,no,0,1,0,1,0,0,0,0,1.6666666666666667,"[""K'intu"", ""k'intu"", ""k'intu""]",E,Structural
+QCH_006,no,R,Structural,ritual_exclusive,tradition_only,no,no,no,0,0,0,0,1,0,0,0,1.6666666666666667,"[""Ritual address to landscape entities"", ""Ritual address to landscape entities"", ""ritual address to landscape entities""]",R,Metonymic
+SEA_001,yes,R,Phonetic,context_gated,known,no,no,no,1,0,0,0,0,0,0,1,2.6666666666666665,"[""selasih"", ""selasih"", ""selasih""]",R,Phonetic
+SEA_002,yes,UNRESOLVED,Behavioural,context_gated,known,yes,no,yes,0,0,0,1,0,1,0,0,2.6666666666666665,"[""bunga dan kumbang"", ""بوڠا دان کومباڠ"", ""bunga dan kumbang""]",E,Conceptual
+SEA_003,yes,E,Behavioural,register_gated,tradition_only,no,no,no,0,0,0,0,0,1,0,0,2.3333333333333335,"[""tupai"", ""tupai"", ""tupai""]",E,Behavioural
+SEA_004,yes,E,Structural,context_gated,tradition_only,yes,no,yes,0,0,0,1,1,0,0,0,2.3333333333333335,"[""bunga kiambang"", ""bunga kiambang"", ""bunga kiambang""]",E,Structural
+SEA_005,yes,R,Structural,context_gated,tradition_only,no,no,no,0,0,0,0,1,0,1,0,1.6666666666666667,"[""kain"", ""كاين"", ""kain""]",R,Metonymic
+SEA_006,yes,R,Morphological,context_gated,known,no,no,no,0,1,0,1,0,0,0,0,2.6666666666666665,"[""quả mít trên cành"", ""quả mít trên cành"", ""quả mít trên cành""]",R,Conceptual
+SEA_007,yes,R,Morphological,context_gated,known,no,no,yes,0,1,0,1,0,0,0,0,2.3333333333333335,"[""Đèo Ba Dội"", ""Đèo Ba Dội"", ""Đèo Ba Dội""]",R,Phonetic
+SEA_008,yes,S,Metonymic,context_gated,known,yes,yes,yes,0,0,1,1,0,0,1,0,2.3333333333333335,"[""trầu cau"", ""trầu cau"", ""trầu cau""]",E,Conceptual
+SEA_009,no,R,UNRESOLVED,register_gated,tradition_only,no,no,no,0,0,0,1,0,0,0,1,1.6666666666666667,"[""ꦱꦱ꧀ꦩꦶꦠꦤꦶꦁ ꦠꦼꦩ꧀ꦧꦁ"", ""sasmitaning tembang"", ""ꦱꦱ꧀ꦩꦶꦠꦤꦶꦁ ꦠꦼꦩ꧀ꦧꦁ""]",E,Structural
+SEA_010,yes,S,Conceptual,context_gated,known,yes,yes,yes,0,0,0,1,0,0,0,0,2.0,"[""ꦩꦱ꧀ꦏꦸꦩꦩ꧀ꦧꦁ"", ""ꦩꦱ꧀ꦏꦸꦩꦩ꧀ꦧꦁ"", ""ꦩꦱ꧀ꦏꦸꦩꦩ꧀ꦧꦁ""]",E,Conceptual
+SEA_011,yes,R,Conceptual,register_gated,known,yes,no,no,0,0,0,1,0,0,1,0,2.3333333333333335,"[""หูคัน"", ""หูคัน"", ""คันหู""]",R,Metonymic
+SEA_012,no,R,Phonetic,context_gated,tradition_only,no,no,no,1,0,0,0,0,0,0,0,2.3333333333333335,"[NaN, ""technique"", NaN]",R,Phonetic
+SEA_013,no,R,Behavioural,context_gated,tradition_only,yes,no,no,0,0,0,0,0,1,0,0,1.6666666666666667,"[""anak kambing"", ""anak kambing"", ""anak kambing""]",E,Behavioural
+SEA_014,yes,E,Behavioural,context_gated,known,yes,no,yes,0,0,0,1,0,1,0,0,2.3333333333333335,"[""con cò"", ""con cò"", ""con cò""]",E,Behavioural
+SEA_015,no,E,Formal,context_gated,tradition_only,no,no,no,0,0,0,0,0,0,1,1,1.6666666666666667,"[""เพลงฉ่อย"", ""เพลงฉ่อย"", ""เพลงฉ่อย""]",R,Metonymic
+T_001,yes,R,Morphological,context_gated,known,no,no,no,0,1,1,0,0,0,0,0,2.6666666666666665,"[""牡丹"", ""牡丹"", ""牡丹""]",R,Chromatic
+T_002,yes,R,Metonymic,context_gated,known,no,no,yes,0,0,0,0,0,0,1,0,3.0,"[""紅葉"", ""紅葉"", ""紅葉""]",R,Chromatic
+T_003,no,R,Chromatic,context_gated,known,no,no,yes,0,0,1,0,0,0,0,0,3.0,"[""桜"", ""桜"", ""桜""]",R,Chromatic
+T_004,yes,R,Chromatic,register_gated,known,no,no,no,0,0,1,0,0,0,0,0,2.6666666666666665,"[""柏"", ""柏"", ""柏""]",R,Conceptual
+T_005,yes,R,Metonymic,register_gated,known,no,no,no,0,0,0,0,0,0,1,0,2.6666666666666665,"[""逢う"", ""逢う"", ""逢う""]",R,Phonetic
+T_006,yes,R,Metonymic,context_gated,tradition_only,no,no,yes,1,0,0,0,0,0,1,0,2.0,"[""夜"", ""夜"", ""夜""]",R,Metonymic
+T_007,yes,E,Conceptual,register_gated,known,no,no,no,0,0,0,1,0,1,0,0,2.6666666666666665,"[""露"", ""露"", ""露""]",R,Morphological
+T_008,yes,R,Metonymic,context_gated,known,no,no,no,0,0,0,0,0,0,1,0,2.6666666666666665,"[""濡れる"", ""濡れる"", ""濡れる""]",R,Phonetic
+T_009,no,R,Metonymic,context_gated,known,no,no,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""寝る"", ""寝る"", ""寝る""]",R,Metonymic
+T_010,yes,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""乱れる"", ""乱れる"", ""乱れる""]",R,Conceptual
+T_011,yes,R,Phonetic,context_gated,known,no,no,yes,1,0,0,0,0,0,0,0,2.3333333333333335,"[""振る"", ""振る"", ""振る""]",R,Phonetic
+T_012,yes,R,Phonetic,context_gated,known,no,no,yes,1,0,0,0,0,0,0,0,2.6666666666666665,"[""眺め"", ""眺め"", ""眺め""]",E,Phonetic
+T_013,yes,E,Conceptual,context_gated,known,no,no,yes,0,0,0,1,0,1,0,0,1.6666666666666667,"[""散る"", ""散る"", ""散る""]",R,Conceptual
+T_014,no,R,Conceptual,context_gated,tradition_only,no,no,no,0,0,0,1,0,0,0,0,2.0,"[""包む"", ""包む"", ""包む""]",E,Morphological
+T_015,no,R,Conceptual,always_on,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""रति"", ""रति"", ""रति""]",R,Conceptual
+T_016,no,R,Conceptual,UNRESOLVED,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""काम"", ""काम"", ""काम""]",R,Conceptual
+T_017,no,R,Phonetic,context_gated,known,no,no,no,1,0,0,1,0,0,0,0,2.0,"[""मदन"", ""मदन"", ""मदन""]",R,Conceptual
+T_018,no,R,Conceptual,register_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""रस"", ""रस"", ""रस""]",E,Conceptual
+T_019,no,R,Conceptual,context_gated,tradition_only,no,no,no,0,0,0,1,0,0,0,0,1.6666666666666667,"[""विलास"", ""विलास"", ""विलास""]",E,Behavioural
+T_020,no,R,Conceptual,register_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""श्रृंगार"", ""श्रृंगार"", ""श्रृंगार""]",E,Conceptual
+T_021,no,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.6666666666666665,"[""केलि"", ""केलि"", ""केलि""]",R,Behavioural
+T_022,yes,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,1,0,2.6666666666666665,"[""मिलन"", ""मिलन"", ""मिलन""]",R,Metonymic
+T_023,no,E,Conceptual,always_on,known,no,no,no,0,0,0,1,0,0,0,0,1.6666666666666667,"[""संगम"", ""संगम"", ""संगम""]",R,Conceptual
+T_024,no,R,Conceptual,always_on,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""आलिंगन"", ""आलिंगन"", ""आलिंगन""]",R,Behavioural
+T_025,yes,R,Conceptual,register_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.6666666666666665,"[""شراب"", ""شراب"", ""شراب""]",R,Conceptual
+T_026,yes,E,Conceptual,register_gated,known,no,no,yes,0,0,0,1,0,0,0,0,2.0,"[""ساقی"", ""ساقی"", ""ساقی""]",E,Metonymic
+T_027,yes,E,Conceptual,register_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.6666666666666665,"[""مست"", ""مست"", ""مست""]",R,Conceptual
+T_028,yes,R,Conceptual,register_gated,known,no,no,yes,0,0,0,1,0,0,0,0,2.3333333333333335,"[""زلف"", ""زلف"", ""زلف""]",E,Morphological
+T_029,yes,E,Conceptual,register_gated,known,no,no,no,0,1,0,1,0,0,0,0,2.0,"[""خال"", ""خال"", ""خال""]",E,Morphological
+T_030,yes,E,Conceptual,register_gated,known,no,no,no,0,1,0,1,0,0,0,0,2.6666666666666665,"[""گل"", ""گل"", ""گل""]",E,Conceptual
+T_031,yes,E,Behavioural,register_gated,known,no,no,no,0,0,0,1,0,1,0,0,2.6666666666666665,"[""بلبل"", ""بلبل"", ""بلبل""]",E,Behavioural
+T_032,yes,R,Conceptual,register_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.6666666666666665,"[""خرابات"", ""خرابات"", ""خرابات""]",R,Metonymic
+T_033,yes,E,Conceptual,register_gated,known,no,no,yes,0,0,0,1,0,0,0,0,2.0,"[""رند"", ""رند"", ""رند""]",E,Conceptual
+T_034,yes,E,UNRESOLVED,register_gated,known,no,no,no,0,0,0,0,0,1,0,0,2.6666666666666665,"[""صبا"", ""صبا"", ""صبا""]",E,Behavioural
+T_035,no,R,Conceptual,context_gated,known,no,no,yes,0,0,0,1,0,0,0,0,3.0,"[""jouir"", ""jouir"", ""jouir""]",R,Conceptual
+T_036,yes,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""mourir"", ""mourir"", ""mourir""]",R,Conceptual
+T_037,no,R,Metonymic,always_on,known,no,no,no,0,0,0,0,0,0,1,0,2.6666666666666665,"[""baiser"", ""baiser"", ""baiser""]",R,Metonymic
+T_038,no,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.6666666666666665,"[""connaître"", ""connaître"", ""connaître""]",R,Conceptual
+T_039,no,R,Metonymic,context_gated,known,no,no,no,0,0,0,0,0,0,1,0,2.6666666666666665,"[""coucher"", ""coucher"", ""coucher""]",R,Metonymic
+T_040,no,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.6666666666666665,"[""liaison"", ""liaison"", ""liaison""]",R,Conceptual
+T_041,no,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""affaire"", ""affaire"", ""affaire""]",R,Conceptual
+T_042,no,R,Conceptual,always_on,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""amant"", ""amant"", ""amant""]",R,Conceptual
+T_043,no,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""galant"", ""galant"", ""galant""]",R,Behavioural
+T_044,no,R,Conceptual,context_gated,known,no,no,no,0,0,0,1,0,0,0,0,2.3333333333333335,"[""commerce"", ""commerce"", ""commerce""]",R,Conceptual
+T_045,yes,E,Phonetic,context_gated,known,no,no,no,1,0,0,0,0,0,0,0,3.0,"[""蝠"", ""蝠"", ""蝠""]",E,Phonetic
+T_046,yes,E,Phonetic,context_gated,known,no,no,no,1,0,0,0,0,0,0,0,3.0,"[""鹿"", ""鹿"", ""鹿""]",E,Phonetic
+T_047,yes,E,Phonetic,context_gated,known,no,no,yes,1,0,0,0,0,0,0,0,3.0,"[""鱼"", ""鱼"", ""鱼""]",E,Phonetic
+T_048,yes,E,Phonetic,context_gated,known,no,no,yes,1,0,0,0,0,0,0,0,2.6666666666666665,"[""桔"", ""桔"", ""桔""]",E,Phonetic
+T_049,yes,E,Phonetic,context_gated,known,no,no,yes,1,0,0,0,0,0,0,0,2.0,"[""莲"", ""莲"", ""莲""]",E,Phonetic
+T_050,yes,E,Phonetic,context_gated,known,no,no,no,1,0,0,0,0,0,0,0,3.0,"[""枣"", ""枣"", ""枣""]",E,Phonetic
+T_051,yes,E,Phonetic,context_gated,known,no,no,yes,1,0,0,0,0,0,0,0,2.6666666666666665,"[""梨"", ""梨"", ""梨""]",E,Phonetic
+T_052,yes,E,Phonetic,context_gated,known,no,no,yes,1,0,0,0,0,0,0,0,3.0,"[""苹果"", ""苹果"", ""苹果""]",E,Phonetic
+T_053,yes,E,Phonetic,context_gated,known,yes,no,yes,1,0,0,0,0,0,0,0,2.6666666666666665,"[""花生"", ""花生"", ""花生""]",E,Phonetic
+T_054,yes,E,Phonetic,context_gated,known,no,no,no,1,0,0,0,0,0,0,0,2.3333333333333335,"[""扇"", ""扇"", ""扇""]",E,Phonetic
+T_055,yes,E,Phonetic,context_gated,known,no,no,yes,1,0,0,0,0,0,0,0,3.0,"[""黒豆"", ""黒豆"", ""黒豆""]",E,Phonetic
+T_056,yes,E,UNRESOLVED,context_gated,known,no,no,yes,0,1,0,0,0,0,0,0,3.0,"[""数の子"", ""数の子"", ""数の子""]",E,Morphological
+T_057,yes,E,Morphological,context_gated,known,no,no,no,0,1,0,0,0,0,0,0,3.0,"[""海老"", ""海老"", ""海老""]",E,Morphological
+T_058,yes,E,Phonetic,context_gated,known,no,no,no,1,0,0,0,0,0,0,0,3.0,"[""昆布"", ""昆布"", ""昆布""]",E,Phonetic
+T_059,yes,E,Phonetic,context_gated,known,no,no,no,1,0,0,0,0,0,0,0,3.0,"[""鯛"", ""鯛"", ""鯛""]",E,Phonetic
+T_060,yes,E,Structural,context_gated,known,no,no,yes,0,0,0,0,1,0,0,0,2.6666666666666665,"[""蓮根"", ""蓮根"", ""蓮根""]",E,Structural
+T_061,yes,E,Chromatic,context_gated,known,no,no,yes,0,1,1,0,0,0,0,0,3.0,"[""栗きんとん"", ""栗きんとん"", ""栗きんとん""]",E,Chromatic
+T_062,yes,E,Morphological,context_gated,known,yes,no,yes,0,1,0,0,0,0,0,0,3.0,"[""伊達巻"", ""伊達巻"", ""伊達巻""]",E,Morphological
+T_063,yes,E,Chromatic,context_gated,known,yes,no,yes,0,0,1,0,0,0,0,0,3.0,"[""紅白かまぼこ"", ""紅白かまぼこ"", ""紅白かまぼこ""]",E,Chromatic
+T_064,yes,E,Metonymic,context_gated,known,no,no,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""田作り"", ""田作り"", ""田作り""]",E,Conceptual
+T_065,yes,E,UNRESOLVED,context_gated,known,no,no,yes,0,1,0,0,1,0,0,0,2.6666666666666665,"[""里芋"", ""里芋"", ""里芋""]",E,Morphological
+T_066,yes,E,Structural,context_gated,known,no,no,no,0,0,0,0,1,0,0,0,3.0,"[""ごぼう"", ""ごぼう"", ""ごぼう""]",E,Structural
+T_067,yes,E,Conceptual,context_gated,known,no,no,no,0,0,0,1,1,0,0,0,2.6666666666666665,"[""煮しめ"", ""煮しめ"", ""煮しめ""]",E,Metonymic
+T_068,yes,S,Metonymic,always_on,known,yes,yes,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""Netflix and chill"", ""Netflix and chill"", ""Netflix and chill""]",R,Metonymic
+T_069,yes,S,Metonymic,context_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,3.0,"[""come up for coffee"", ""come up for coffee"", ""come up for coffee""]",R,Metonymic
+T_070,yes,R,Metonymic,context_gated,known,yes,no,yes,0,0,0,0,0,0,1,0,3.0,"[""spend the night"", ""spend the night"", ""spend the night""]",R,Metonymic
+T_071,yes,R,Metonymic,context_gated,known,yes,yes,no,0,0,0,0,0,0,1,0,2.6666666666666665,"[""go back to my place"", ""go back to my place"", ""go back to my place""]",R,Metonymic
+T_072,yes,S,Metonymic,context_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""see my etchings"", ""see my etchings"", ""see my etchings""]",R,Metonymic
+T_073,no,R,Metonymic,always_on,known,yes,no,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""sleep together"", ""sleep together"", ""sleep together""]",R,Metonymic
+T_074,no,R,Conceptual,UNRESOLVED,known,no,no,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""hook up"", ""hook up"", ""hook up""]",R,Metonymic
+T_075,yes,S,Conceptual,context_gated,known,yes,yes,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""get lucky"", ""get lucky"", ""get lucky""]",R,Conceptual
+T_076,yes,R,Metonymic,always_on,known,no,no,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""床を共にする"", ""床を共にする"", ""床を共にする""]",R,Metonymic
+T_077,yes,S,Metonymic,context_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""手を出す"", ""手を出す"", ""手を出す""]",R,Metonymic
+T_078,yes,R,Conceptual,context_gated,known,yes,no,yes,0,0,0,1,0,0,0,0,2.6666666666666665,"[""一線を越える"", ""一線を越える"", ""一線を越える""]",R,Conceptual
+T_079,no,R,Metonymic,always_on,known,yes,no,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""体の関係"", ""体の関係"", ""体の関係""]",R,Metonymic
+T_080,yes,R,Conceptual,context_gated,known,yes,no,yes,0,0,0,1,0,0,0,0,3.0,"[""深い関係"", ""深い関係"", ""深い関係""]",R,Conceptual
+T_081,yes,R,Conceptual,context_gated,known,yes,no,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""大人の関係"", ""大人の関係"", ""大人の関係""]",R,Conceptual
+T_082,yes,R,Metonymic,context_gated,known,no,no,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""最後まで"", ""最後まで"", ""最後まで""]",R,Metonymic
+T_083,yes,R,Metonymic,context_gated,known,no,no,no,0,0,0,0,0,0,1,0,3.0,"[""お泊まり"", ""お泊まり"", ""お泊まり""]",R,Metonymic
+T_084,no,R,Metonymic,context_gated,known,yes,no,yes,0,0,0,0,0,0,1,0,2.3333333333333335,"[""grab a drink"", ""grab a drink"", ""grab a drink""]",R,Metonymic
+T_085,no,R,Metonymic,context_gated,known,yes,no,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""hit the bar"", ""hit the bar"", ""hit the bar""]",R,Metonymic
+T_086,yes,R,Metonymic,register_gated,known,yes,no,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""crack open a cold one"", ""crack open a cold one"", ""crack open a cold one""]",R,Metonymic
+T_087,no,S,Metonymic,context_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,2.3333333333333335,"[""happy hour"", ""happy hour"", ""happy hour""]",R,Metonymic
+T_088,no,S,Metonymic,always_on,known,yes,yes,yes,0,0,0,1,0,0,1,0,2.6666666666666665,"[""liquid lunch"", ""liquid lunch"", ""liquid lunch""]",R,Conceptual
+T_089,no,R,Metonymic,always_on,known,no,no,yes,0,0,0,1,0,0,1,0,2.3333333333333335,"[""nightcap"", ""nightcap"", ""nightcap""]",R,Metonymic
+T_090,no,R,Metonymic,UNRESOLVED,known,yes,no,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""一杯やる"", ""一杯やる"", ""一杯やる""]",R,Metonymic
+T_091,no,R,Metonymic,always_on,known,yes,no,no,0,0,0,0,0,0,1,0,2.6666666666666665,"[""飲みに行く"", ""飲みに行く"", ""飲みに行く""]",R,Metonymic
+T_092,yes,R,Metonymic,context_gated,known,yes,no,no,0,0,0,0,0,0,1,0,2.3333333333333335,"[""ちょっと付き合って"", ""ちょっと付き合って"", ""ちょっと付き合って""]",R,Metonymic
+T_093,yes,R,Metonymic,context_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,1.6666666666666667,"[""二軒目行こう"", ""二軒目行こう"", ""二軒目行こう""]",R,Metonymic
+T_094,no,R,Metonymic,context_gated,known,yes,no,yes,0,0,0,0,0,0,1,0,2.3333333333333335,"[""もう一杯だけ"", ""もう一杯だけ"", ""もう一杯だけ""]",R,Metonymic
+T_095,no,R,Metonymic,context_gated,known,no,no,yes,0,0,0,0,0,0,1,0,2.3333333333333335,"[""乾杯しよう"", ""乾杯しよう"", ""乾杯しよう""]",R,Metonymic
+T_096,no,E,Conceptual,context_gated,known,yes,no,yes,0,0,0,1,0,0,0,0,2.6666666666666665,"[""bow deeply"", ""bow deeply"", ""bow deeply""]",E,Behavioural
+T_097,no,S,Metonymic,context_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""shake hands"", ""shake hands"", ""shake hands""]",E,Behavioural
+T_098,yes,S,Metonymic,context_gated,known,yes,yes,yes,0,0,0,0,0,0,1,0,2.3333333333333335,"[""raise a glass"", ""raise a glass"", ""raise a glass""]",E,Behavioural
+T_099,no,E,Metonymic,always_on,known,yes,no,yes,0,0,0,0,0,0,1,0,2.6666666666666665,"[""tip your hat"", ""tip your hat"", ""tip your hat""]",E,Behavioural
+T_100,no,E,UNRESOLVED,always_on,known,no,no,yes,0,0,0,0,0,0,1,0,2.3333333333333335,"[""kneel before"", ""kneel before"", ""kneel before""]",E,Behavioural
+T_101,yes,E,Metonymic,context_gated,known,yes,no,yes,0,0,0,0,0,0,1,0,1.6666666666666667,"[""stand in silence"", ""stand in silence"", ""stand in silence""]",E,Behavioural
+T_102,no,E,Metonymic,context_gated,known,yes,no,yes,0,0,0,0,0,0,1,0,2.3333333333333335,"[""clasp hands in prayer"", ""clasp hands in prayer"", ""clasp hands in prayer""]",E,Behavioural
+T_103,no,E,UNRESOLVED,context_gated,known,no,no,yes,0,0,0,0,0,0,0,0,2.3333333333333335,"[""salute"", ""salute"", ""salute""]",E,Behavioural

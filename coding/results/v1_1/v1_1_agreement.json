@@ -1,0 +1,320 @@
+{
+ "coders": [
+  "gpt-5.6-sol",
+  "gemini-3.1-pro-preview",
+  "claude-opus-5-5"
+ ],
+ "n_items": 217,
+ "fleiss_kappa": {
+  "form_type": 0.722,
+  "two_storey": 0.269,
+  "content_or_attitude": 0.587,
+  "outsider_inference": 0.444,
+  "host_unit": 0.939
+ },
+ "pct_unanimous": {
+  "form_type": 84.8,
+  "two_storey": 82.5,
+  "content_or_attitude": 91.7,
+  "outsider_inference": 53.0,
+  "host_unit": 94.5
+ },
+ "consensus_distribution": {
+  "form_type": {
+   "existing_form": 167,
+   "transparent_combination": 49,
+   "respelling": 1
+  },
+  "two_storey": {
+   "yes": 204,
+   "no": 13
+  },
+  "content_or_attitude": {
+   "content": 203,
+   "both": 7,
+   "attitude": 7
+  },
+  "outsider_inference": {
+   "not_inferable": 113,
+   "inferable_with_effort": 58,
+   "inferable": 31,
+   "UNRESOLVED": 15
+  },
+  "host_unit": {
+   "word": 111,
+   "phrase": 74,
+   "utterance": 32
+  },
+  "cpg_scope": {
+   "yes": 216,
+   "no": 1
+  },
+  "cpg_scope_two_storey": {
+   "yes": 110,
+   "no": 92,
+   "UNRESOLVED": 15
+  }
+ },
+ "per_coder_distribution": {
+  "form_type": {
+   "gpt": {
+    "existing_form": 167,
+    "transparent_combination": 49,
+    "opaque_coinage": 1
+   },
+   "gemini": {
+    "existing_form": 151,
+    "transparent_combination": 65,
+    "respelling": 1
+   },
+   "claude": {
+    "existing_form": 178,
+    "transparent_combination": 38,
+    "respelling": 1
+   }
+  },
+  "two_storey": {
+   "gpt": {
+    "yes": 204,
+    "no": 13
+   },
+   "gemini": {
+    "yes": 211,
+    "no": 6
+   },
+   "claude": {
+    "yes": 179,
+    "no": 38
+   }
+  },
+  "content_or_attitude": {
+   "gpt": {
+    "content": 199,
+    "both": 12,
+    "attitude": 6
+   },
+   "gemini": {
+    "content": 205,
+    "both": 7,
+    "attitude": 5
+   },
+   "claude": {
+    "content": 201,
+    "attitude": 12,
+    "both": 4
+   }
+  },
+  "outsider_inference": {
+   "gpt": {
+    "not_inferable": 116,
+    "inferable_with_effort": 65,
+    "inferable": 35,
+    "not_motivated": 1
+   },
+   "gemini": {
+    "not_inferable": 139,
+    "inferable_with_effort": 46,
+    "inferable": 32
+   },
+   "claude": {
+    "not_inferable": 90,
+    "inferable_with_effort": 72,
+    "inferable": 55
+   }
+  },
+  "host_unit": {
+   "gpt": {
+    "word": 111,
+    "phrase": 78,
+    "utterance": 28
+   },
+   "gemini": {
+    "word": 110,
+    "phrase": 75,
+    "utterance": 32
+   },
+   "claude": {
+    "word": 112,
+    "phrase": 70,
+    "utterance": 35
+   }
+  }
+ },
+ "form_type_unresolved_items": [],
+ "crosstab_old_form_status_x_form_type": {
+  "existing_form": {
+   "existing_form": 166,
+   "respelling": 0,
+   "transparent_combination": 41
+  },
+  "novel_form": {
+   "existing_form": 1,
+   "respelling": 1,
+   "transparent_combination": 8
+  }
+ },
+ "crosstab_two_storey_x_first_cpg_valid": {
+  "no": {
+   "no": 13,
+   "yes": 0
+  },
+  "yes": {
+   "no": 55,
+   "yes": 149
+  }
+ },
+ "crosstab_cpg_scope_x_first_cpg_valid": {
+  "no": {
+   "no": 1,
+   "yes": 0
+  },
+  "yes": {
+   "no": 67,
+   "yes": 149
+  }
+ },
+ "crosstab_cpg_scope_two_storey_x_first_cpg_valid": {
+  "UNRESOLVED": {
+   "no": 7,
+   "yes": 8
+  },
+  "no": {
+   "no": 38,
+   "yes": 54
+  },
+  "yes": {
+   "no": 23,
+   "yes": 87
+  }
+ },
+ "focus_items": {
+  "NEU_001": {
+   "label": "kenning",
+   "old_form_status": "novel_form",
+   "form_type": "transparent_combination",
+   "two_storey": "yes",
+   "content_or_attitude": "content",
+   "outsider_inference": "UNRESOLVED",
+   "host_unit": "word",
+   "cpg_scope": "yes",
+   "cpg_scope_two_storey": "UNRESOLVED",
+   "form_type_votes": [
+    "transparent_combination",
+    "transparent_combination",
+    "transparent_combination"
+   ]
+  },
+  "NEU_002": {
+   "label": "kenning",
+   "old_form_status": "novel_form",
+   "form_type": "transparent_combination",
+   "two_storey": "yes",
+   "content_or_attitude": "content",
+   "outsider_inference": "not_inferable",
+   "host_unit": "word",
+   "cpg_scope": "yes",
+   "cpg_scope_two_storey": "yes",
+   "form_type_votes": [
+    "transparent_combination",
+    "transparent_combination",
+    "transparent_combination"
+   ]
+  },
+  "NEU_003": {
+   "label": "kenning",
+   "old_form_status": "novel_form",
+   "form_type": "transparent_combination",
+   "two_storey": "yes",
+   "content_or_attitude": "content",
+   "outsider_inference": "inferable_with_effort",
+   "host_unit": "word",
+   "cpg_scope": "yes",
+   "cpg_scope_two_storey": "no",
+   "form_type_votes": [
+    "transparent_combination",
+    "transparent_combination",
+    "transparent_combination"
+   ]
+  },
+  "NEU_005": {
+   "label": "kenning",
+   "old_form_status": "novel_form",
+   "form_type": "transparent_combination",
+   "two_storey": "yes",
+   "content_or_attitude": "content",
+   "outsider_inference": "not_inferable",
+   "host_unit": "phrase",
+   "cpg_scope": "yes",
+   "cpg_scope_two_storey": "yes",
+   "form_type_votes": [
+    "transparent_combination",
+    "transparent_combination",
+    "transparent_combination"
+   ]
+  },
+  "NEU_011": {
+   "label": "kenning",
+   "old_form_status": "novel_form",
+   "form_type": "transparent_combination",
+   "two_storey": "yes",
+   "content_or_attitude": "content",
+   "outsider_inference": "inferable_with_effort",
+   "host_unit": "word",
+   "cpg_scope": "yes",
+   "cpg_scope_two_storey": "no",
+   "form_type_votes": [
+    "transparent_combination",
+    "transparent_combination",
+    "transparent_combination"
+   ]
+  },
+  "NEU_012": {
+   "label": "kenning",
+   "old_form_status": "novel_form",
+   "form_type": "transparent_combination",
+   "two_storey": "yes",
+   "content_or_attitude": "content",
+   "outsider_inference": "inferable_with_effort",
+   "host_unit": "word",
+   "cpg_scope": "yes",
+   "cpg_scope_two_storey": "no",
+   "form_type_votes": [
+    "transparent_combination",
+    "transparent_combination",
+    "transparent_combination"
+   ]
+  },
+  "NET_004": {
+   "label": "草泥马",
+   "old_form_status": "novel_form",
+   "form_type": "transparent_combination",
+   "two_storey": "yes",
+   "content_or_attitude": "both",
+   "outsider_inference": "not_inferable",
+   "host_unit": "word",
+   "cpg_scope": "yes",
+   "cpg_scope_two_storey": "yes",
+   "form_type_votes": [
+    "transparent_combination",
+    "transparent_combination",
+    "transparent_combination"
+   ]
+  },
+  "NET_005": {
+   "label": "五月三十五日",
+   "old_form_status": "novel_form",
+   "form_type": "transparent_combination",
+   "two_storey": "yes",
+   "content_or_attitude": "content",
+   "outsider_inference": "not_inferable",
+   "host_unit": "phrase",
+   "cpg_scope": "yes",
+   "cpg_scope_two_storey": "yes",
+   "form_type_votes": [
+    "transparent_combination",
+    "transparent_combination",
+    "transparent_combination"
+   ]
+  }
+ }
+}

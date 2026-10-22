@@ -1,0 +1,218 @@
+item_id,form_status,recording_status,recording_evidence,recording_confidence,status,model
+NET_006,existing_form,unrecorded,"online usage only (slang explainer sites, meme wiki)",2,ok,claude-opus-5-5
+T_052,existing_form,cultural_reference,symbol and folklore dictionaries; guides to customs (homophonic auspicious symbolism),3,ok,claude-opus-5-5
+T_023,existing_form,general_dictionary,"general dictionary sense (Monier-Williams Sanskrit-English Dictionary, saṃgama 'confluence')",3,ok,claude-opus-5-5
+NEU_004,existing_form,cultural_reference,"scholarly edition (Snorri Sturluson, Skáldskaparmál, trans. Faulkes); poetic-diction dictionary",3,ok,claude-opus-5-5
+AFR_013,existing_form,cultural_reference,scholarly commentaries and ethnographies on Akan proverbs and Adinkra symbolism; cultural guides,2,ok,claude-opus-5-5
+T_088,existing_form,general_dictionary,general dictionary sense (marked humorous/informal),3,ok,claude-opus-5-5
+NEU_011,novel_form,general_dictionary,"general dictionary sense (Bosworth-Toller Anglo-Saxon Dictionary, bān-hūs 'the body')",3,ok,claude-opus-5-5
+T_005,existing_form,general_dictionary,general dictionary sense (classical-language dictionaries list 'to have relations/marry' for 逢ふ),2,ok,claude-opus-5-5
+MET_012,existing_form,cultural_reference,scholarly commentaries and encyclopaedias on Fuzûlî's pen name,3,ok,claude-opus-5-5
+T_098,existing_form,general_dictionary,general dictionary idiom entry ('drink a toast'),2,ok,claude-opus-5-5
+T_082,existing_form,unrecorded,online usage only,1,ok,claude-opus-5-5
+MET_013,existing_form,cultural_reference,encyclopaedia entry / rhetoric handbook example,2,ok,claude-opus-5-5
+T_022,existing_form,general_dictionary,general dictionary sense,1,ok,claude-opus-5-5
+QCH_001,existing_form,cultural_reference,scholarly article on Quechua semantic parallelism,2,ok,claude-opus-5-5
+OCE_007,existing_form,cultural_reference,proverb collection / scholarly commentary,2,ok,claude-opus-5-5
+AFR_011,existing_form,general_dictionary,general dictionary sense,2,ok,claude-opus-5-5
+T_046,existing_form,cultural_reference,symbol and folklore dictionary,3,ok,claude-opus-5-5
+SEA_003,existing_form,cultural_reference,scholarly article on pantun / encyclopaedia,2,ok,claude-opus-5-5
+T_007,existing_form,general_dictionary,general dictionary sense,2,ok,claude-opus-5-5
+MAYA_005,existing_form,cultural_reference,scholarly article on Maya iconography,2,ok,claude-opus-5-5
+T_055,existing_form,cultural_reference,guides to New Year customs and osechi food symbolism (the まめに働く pun),3,ok,claude-opus-5-5
+SEA_005,existing_form,unrecorded,online usage only (blog discussions of pantun); no specialist reference known for this specific symbol,1,ok,claude-opus-5-5
+AFR_001,existing_form,cultural_reference,encyclopaedia and scholarly treatments of qene (sem-ena-werq) and its wordplay on the root s-q-l 'to hang',1,ok,claude-opus-5-5
+T_003,existing_form,general_dictionary,general dictionary sense (馬肉の異称),3,ok,claude-opus-5-5
+T_074,existing_form,general_dictionary,"general dictionary sense, marked informal/slang",3,ok,claude-opus-5-5
+SEA_008,existing_form,cultural_reference,"folklore (the Trầu Cau legend), guides to wedding customs, and ca dao anthologies",2,ok,claude-opus-5-5
+T_028,existing_form,cultural_reference,Sufi terminology dictionaries and scholarly commentaries on Persian mystical poetry,2,ok,claude-opus-5-5
+T_006,existing_form,cultural_reference,poetic-diction dictionaries and commentaries on waka love poetry,1,ok,claude-opus-5-5
+NAH_001,existing_form,cultural_reference,"scholarly study: León-Portilla, La filosofía náhuatl estudiada en sus fuentes",3,ok,claude-opus-5-5
+NET_002,existing_form,cultural_reference,scholarly papers on emoji semiotics and emoji reference guides,2,ok,claude-opus-5-5
+T_081,existing_form,cultural_reference,specialist euphemism/slang dictionary,1,ok,claude-opus-5-5
+T_030,existing_form,cultural_reference,poetic-diction / symbol dictionary of Persian poetry,2,ok,claude-opus-5-5
+NEU_007,existing_form,cultural_reference,scholarly editions and commentaries on the Exeter Book riddles,3,ok,claude-opus-5-5
+T_092,existing_form,unrecorded,everyday usage only; general dictionary gives only 'keep company',1,ok,claude-opus-5-5
+T_024,existing_form,general_dictionary,general dictionary sense (the claimed covert meaning 'embrace' is the ordinary listed sense),2,ok,claude-opus-5-5
+MET_008,existing_form,cultural_reference,classical rhetoric (balāgha) handbooks and kināya treatises,2,ok,claude-opus-5-5
+T_085,existing_form,general_dictionary,"general dictionary sense ('hit' = go to a place, e.g. bars)",2,ok,claude-opus-5-5
+EEU_001,existing_form,cultural_reference,folklore riddle collection and scholarly analysis,2,ok,claude-opus-5-5
+NAH_008,existing_form,cultural_reference,scholarly studies of Nahuatl difrasismos and colonial sources,2,ok,claude-opus-5-5
+EEU_013,existing_form,cultural_reference,folklore anthology of erotic folk texts,2,ok,claude-opus-5-5
+T_050,existing_form,cultural_reference,"folklore / auspicious-symbol guides (wedding customs, e.g. 早生贵子 symbolism)",3,ok,claude-opus-5-5
+SEA_011,existing_form,cultural_reference,scholarly article and journalistic commentary on luk thung lyrics,2,ok,claude-opus-5-5
+SEA_010,existing_form,cultural_reference,scholarly / cultural studies of tembang macapat symbolism,2,ok,claude-opus-5-5
+NET_007,existing_form,cultural_reference,encyclopaedia and meme-documentation sites; general-dictionary listing uncertain,1,ok,claude-opus-5-5
+NEU_018,existing_form,cultural_reference,"scholarly editions, translations and literary commentary",3,ok,claude-opus-5-5
+T_072,existing_form,cultural_reference,slang / euphemism dictionaries; possible historical-dictionary citation uncertain,1,ok,claude-opus-5-5
+NAH_002,existing_form,cultural_reference,scholarly edition of Sahagún's Florentine Codex and philological commentary on difrasismos,2,ok,claude-opus-5-5
+NEU_010,existing_form,cultural_reference,scholarly editions and commentaries on the Exeter Book riddles,3,ok,claude-opus-5-5
+T_027,existing_form,cultural_reference,Sufi terminology dictionaries and scholarly commentary on Persian mystical poetry,2,ok,claude-opus-5-5
+AFR_005,existing_form,general_dictionary,general Yoruba dictionary entry for àjẹ́ 'witch' as a homophone; the oríkì pun itself is documented only online,1,ok,claude-opus-5-5
+T_008,existing_form,general_dictionary,general dictionary sense (erotic/love-affair sense of 濡れる; the specific 'arousal' sense is less certain),1,ok,claude-opus-5-5
+OCE_006,existing_form,cultural_reference,song commentary / cultural guides to mele kaona,2,ok,claude-opus-5-5
+AFR_004,novel_form,cultural_reference,name dictionaries and ethnographic guides to Yoruba names,2,ok,claude-opus-5-5
+T_038,existing_form,general_dictionary,general dictionary sense (biblical/literary 'have sexual relations with'),3,ok,claude-opus-5-5
+T_021,existing_form,general_dictionary,general dictionary sense ('amorous play/sport'),2,ok,claude-opus-5-5
+MAYA_003,existing_form,cultural_reference,scholarly article / commentary on colonial Maya diphrasis,2,ok,claude-opus-5-5
+AFR_014,existing_form,cultural_reference,Adinkra symbol guide and scholarly article on Akan death metaphors,2,ok,claude-opus-5-5
+T_099,existing_form,general_dictionary,general dictionary idiom entry (show respect/acknowledge),2,ok,claude-opus-5-5
+T_034,existing_form,cultural_reference,Persian poetic-diction references / scholarly commentaries on classical ghazal,2,ok,claude-opus-5-5
+T_039,existing_form,general_dictionary,general dictionary sense ('coucher avec': have sexual relations),3,ok,claude-opus-5-5
+T_102,existing_form,cultural_reference,symbol and gesture dictionaries; encyclopaedic treatment of religious gestures,2,ok,claude-opus-5-5
+T_017,existing_form,general_dictionary,"general dictionary sense (Monier-Williams, Sanskrit-English Dictionary: madana 'passion, love, god of love'; 'intoxicating')",3,ok,claude-opus-5-5
+MET_003,existing_form,cultural_reference,"rhetoric (balāgha) treatises and scholarly studies citing it as a tawriya example; far meaning arises from segmentation, not a lexical sense",2,ok,claude-opus-5-5
+T_084,existing_form,general_dictionary,"general dictionary sense ('grab' = have or get quickly, informal; 'drink' = alcoholic drink)",2,ok,claude-opus-5-5
+NET_004,novel_form,cultural_reference,encyclopaedia entry and scholarly articles on Chinese internet censorship,3,ok,claude-opus-5-5
+OCE_005,existing_form,general_dictionary,"general dictionary sense (Pukui & Elbert, Hawaiian Dictionary: pua 'child, descendant, offspring')",2,ok,claude-opus-5-5
+MET_002,existing_form,general_dictionary,general dictionary sense in classical Arabic lexica (jafn = eyelid; also sword sheath),3,ok,claude-opus-5-5
+T_094,existing_form,unrecorded,everyday usage only; not a dictionary-listed fixed expression,2,ok,claude-opus-5-5
+NAH_004,existing_form,cultural_reference,scholarly editions of Nahuatl texts and specialist studies of difrasismos; online scholarly Nahuatl dictionary,2,ok,claude-opus-5-5
+MET_004,existing_form,cultural_reference,rhetoric treatises and reference encyclopaedia entries on tawriya; personal-name reading is not a dictionary sense,2,ok,claude-opus-5-5
+T_064,existing_form,cultural_reference,guide to New Year customs (osechi symbolism),2,ok,claude-opus-5-5
+T_065,existing_form,cultural_reference,guide to New Year customs (osechi symbolism),3,ok,claude-opus-5-5
+EEU_012,existing_form,cultural_reference,scholarly folklore article (Slavic ethnolinguistic symbolism),2,ok,claude-opus-5-5
+OCE_008,existing_form,cultural_reference,proverb (whakataukī) collection,2,ok,claude-opus-5-5
+T_015,existing_form,general_dictionary,general dictionary sense,3,ok,claude-opus-5-5
+SEA_013,existing_form,cultural_reference,encyclopaedia and educational resource on folk song,1,ok,claude-opus-5-5
+T_095,existing_form,cultural_reference,etiquette/customs guide,1,ok,claude-opus-5-5
+SEA_009,existing_form,cultural_reference,scholarly study of Javanese prosody (macapat),2,ok,claude-opus-5-5
+T_089,existing_form,general_dictionary,general dictionary sense,3,ok,claude-opus-5-5
+NET_005,novel_form,cultural_reference,encyclopaedia and journalism,3,ok,claude-opus-5-5
+T_078,existing_form,general_dictionary,"general dictionary sense (idiom entry: overstepping a boundary, especially a man and woman entering a sexual relationship)",2,ok,claude-opus-5-5
+T_079,existing_form,general_dictionary,general dictionary usage under 体 (physical/sexual relations); not certain it is listed as a headword,1,ok,claude-opus-5-5
+T_049,existing_form,cultural_reference,"Chinese symbol dictionaries and scholarly commentary on yuefu folk-song puns (莲/怜, 恋)",3,ok,claude-opus-5-5
+NEU_015,existing_form,cultural_reference,scholarly commentaries and encyclopaedias surveying competing Sampo interpretations,3,ok,claude-opus-5-5
+NEU_017,existing_form,cultural_reference,scholarly studies of Irish metrics and ring composition; encyclopaedia entries,2,ok,claude-opus-5-5
+MET_015,existing_form,cultural_reference,Ottoman rhetoric (belâgat) handbooks citing tevriye examples; encyclopaedia entry,2,ok,claude-opus-5-5
+T_051,existing_form,cultural_reference,folklore and customs guides (taboo on sharing pears: 分梨 = 分离),3,ok,claude-opus-5-5
+T_002,existing_form,general_dictionary,"general dictionary sense (もみじ: venison, deer meat)",3,ok,claude-opus-5-5
+NEU_016,existing_form,cultural_reference,scholarly folklore studies of Kalevala-meter incantations and shamanism,2,ok,claude-opus-5-5
+EEU_010,existing_form,cultural_reference,scholarly folklore article on Slavic sexual symbolism (horse/well imagery in folk lyric),2,ok,claude-opus-5-5
+T_090,existing_form,general_dictionary,"general dictionary sense (一杯 glossed as drinking a little alcohol, with 一杯やる as a usage example)",3,ok,claude-opus-5-5
+T_042,existing_form,general_dictionary,general dictionary sense (Le Robert: person in a sexual relationship outside marriage),3,ok,claude-opus-5-5
+MAYA_001,existing_form,cultural_reference,scholarly epigraphic/linguistic studies of Maya diphrasis,2,ok,claude-opus-5-5
+NEU_014,existing_form,cultural_reference,folklore scholarship on Finnic riddles (journal article),2,ok,claude-opus-5-5
+T_091,existing_form,general_dictionary,"general dictionary sense (飲み glossed as drinking alcohol, e.g. 飲みに行く)",2,ok,claude-opus-5-5
+T_016,existing_form,general_dictionary,"general dictionary sense (Monier-Williams: love, sexual desire)",3,ok,claude-opus-5-5
+T_070,existing_form,general_dictionary,"general dictionary phrase sense (spend the night with: have sex with, marked informal/euphemistic)",2,ok,claude-opus-5-5
+T_080,existing_form,general_dictionary,"general dictionary sense under 深い (close relationship, especially between a man and a woman; e.g. 深い仲)",1,ok,claude-opus-5-5
+EEU_015,existing_form,cultural_reference,ethnographic and folklore scholarship on Russian wedding ritual,2,ok,claude-opus-5-5
+T_020,existing_form,general_dictionary,"general dictionary sense (Monier-Williams: the erotic sentiment, one of the rasas)",3,ok,claude-opus-5-5
+NET_001,existing_form,cultural_reference,news features and cultural guide articles; online encyclopedia entries,2,ok,claude-opus-5-5
+EEU_002,existing_form,cultural_reference,scholarly folklore collection of erotic riddles,2,ok,claude-opus-5-5
+T_009,existing_form,general_dictionary,general dictionary sense,3,ok,claude-opus-5-5
+T_011,existing_form,general_dictionary,general dictionary sense (rejection sense of 振る; rain as homophone 降る); pivot pairing also in poetic-diction dictionaries,2,ok,claude-opus-5-5
+SEA_007,existing_form,cultural_reference,scholarly translations and literary commentaries,3,ok,claude-opus-5-5
+T_103,existing_form,cultural_reference,symbol dictionaries / military customs guides,1,ok,claude-opus-5-5
+AFR_009,existing_form,cultural_reference,scholarly edition and commentary of praise poetry,2,ok,claude-opus-5-5
+OCE_002,existing_form,cultural_reference,ethnographies and museum exhibition documentation,2,ok,claude-opus-5-5
+T_073,existing_form,general_dictionary,general dictionary sense (euphemism),3,ok,claude-opus-5-5
+T_026,existing_form,cultural_reference,Sufi terminology dictionary; scholarly commentaries on Persian poetry,2,ok,claude-opus-5-5
+NEU_003,novel_form,cultural_reference,poetic-diction dictionary / kenning lexicon (skaldic scholarship),2,ok,claude-opus-5-5
+T_044,existing_form,general_dictionary,general dictionary sense (marked literary/dated: sexual relations),3,ok,claude-opus-5-5
+T_059,existing_form,cultural_reference,folklore guide / guide to New Year customs,2,ok,claude-opus-5-5
+AFR_008,existing_form,cultural_reference,scholarly ethnography of oríkì,2,ok,claude-opus-5-5
+OCE_001,existing_form,cultural_reference,ethnographies and encyclopaedias,2,ok,claude-opus-5-5
+MET_014,existing_form,general_dictionary,"general dictionary sense (archaic/literary: time, fortune)",2,ok,claude-opus-5-5
+NAH_003,existing_form,general_dictionary,"general dictionary sense (colonial vocabulary, marked as metaphor)",2,ok,claude-opus-5-5
+OCE_003,existing_form,general_dictionary,general dictionary sense (marked figurative),2,ok,claude-opus-5-5
+QCH_005,existing_form,cultural_reference,Andean ethnographies,2,ok,claude-opus-5-5
+QCH_003,existing_form,cultural_reference,ethnographies and encyclopaedias,2,ok,claude-opus-5-5
+T_045,existing_form,cultural_reference,symbol/folklore dictionary of Chinese iconography; art-historical references on auspicious motifs,3,ok,claude-opus-5-5
+AFR_003,existing_form,cultural_reference,ethnographic and scholarly literature on qene (wax-and-gold); encyclopaedia entry,2,ok,claude-opus-5-5
+T_040,existing_form,general_dictionary,general dictionary sense (French general dictionaries list 'liaison' as a love affair or amorous relationship),3,ok,claude-opus-5-5
+AFR_006,existing_form,cultural_reference,ethnographic collections and commentaries on Ṣàngó oríkì; encyclopaedia entry on Shango,2,ok,claude-opus-5-5
+MET_007,existing_form,general_dictionary,general dictionary sense (bilingual and classical Arabic lexicons gloss 'yad bayḍāʾ' as a favour or benefaction),2,ok,claude-opus-5-5
+EEU_007,existing_form,cultural_reference,folkloristic scholarship on bylina constant epithets; literary-terminology reference,1,ok,claude-opus-5-5
+EEU_005,existing_form,cultural_reference,folklore collection of Russian erotic riddles (scholarly edition),2,ok,claude-opus-5-5
+OCE_004,existing_form,cultural_reference,scholarly commentary on mele kaona and the song's political reading; encyclopaedia entry,2,ok,claude-opus-5-5
+MET_005,existing_form,cultural_reference,scholarly studies of tawriya in al-Ḥarīrī's Maqāmāt,3,ok,claude-opus-5-5
+T_083,existing_form,unrecorded,online usage only; contextual implicature in colloquial speech,2,ok,claude-opus-5-5
+T_075,existing_form,general_dictionary,general dictionary sense (informal usage),2,ok,claude-opus-5-5
+NEU_012,novel_form,general_dictionary,historical general dictionary of Old English sense; glossary of a scholarly edition,2,ok,claude-opus-5-5
+T_037,existing_form,general_dictionary,general dictionary sense (marked vulgar/familiar),3,ok,claude-opus-5-5
+T_053,existing_form,cultural_reference,folklore guide / guide to wedding customs and homophonic symbolism,2,ok,claude-opus-5-5
+T_096,existing_form,general_dictionary,general dictionary sense (bow as gesture of reverence/respect),2,ok,claude-opus-5-5
+EEU_008,existing_form,cultural_reference,scholarly commentary on folk epic epithets; literary-studies encyclopaedia,2,ok,claude-opus-5-5
+T_036,existing_form,cultural_reference,erotic-language dictionary / literary scholarship on double entendre,2,ok,claude-opus-5-5
+QCH_002,existing_form,general_dictionary,"general dictionary sense (colonial bilingual dictionary: González Holguín, Vocabulario de la lengua general de todo el Perú, 1608)",2,ok,claude-opus-5-5
+T_093,existing_form,unrecorded,everyday in-group usage only,2,ok,claude-opus-5-5
+T_067,existing_form,cultural_reference,guide to customs (osechi food symbolism),3,ok,claude-opus-5-5
+MAYA_002,existing_form,cultural_reference,scholarly commentary on Chilam Balam difrasismos (peer-reviewed article),2,ok,claude-opus-5-5
+T_012,existing_form,general_dictionary,general/classical-language dictionary usage note (眺め often pivoted with 長雨 in waka); also poetic-diction dictionaries,2,ok,claude-opus-5-5
+T_063,existing_form,cultural_reference,guides to New Year customs and osechi food symbolism,3,ok,claude-opus-5-5
+NAH_007,existing_form,cultural_reference,scholarly editions and commentaries on Nahuatl difrasismos (Florentine Codex studies),3,ok,claude-opus-5-5
+T_101,existing_form,cultural_reference,guides to customs and commemoration practices,2,ok,claude-opus-5-5
+NEU_008,existing_form,cultural_reference,scholarly editions and commentaries on the Exeter Book riddles,3,ok,claude-opus-5-5
+NAH_005,existing_form,cultural_reference,scholarly editions and studies of Nahuatl difrasismos (huehuetlatolli commentary),3,ok,claude-opus-5-5
+MAYA_006,existing_form,cultural_reference,epigraphic scholarship on Classic Maya hieroglyphic texts,2,ok,claude-opus-5-5
+T_047,existing_form,cultural_reference,dictionary of Chinese symbols / folklore guide,3,ok,claude-opus-5-5
+AFR_002,existing_form,unrecorded,online usage and informal commentary only,1,ok,claude-opus-5-5
+EEU_006,existing_form,cultural_reference,Slavic mythology scholarship and folk-belief studies; mythology encyclopaedias,2,ok,claude-opus-5-5
+T_066,existing_form,cultural_reference,guide to New Year customs (osechi food symbolism),2,ok,claude-opus-5-5
+T_054,existing_form,cultural_reference,dictionary of Chinese symbols / homophonic auspicious-symbolism references,2,ok,claude-opus-5-5
+T_086,existing_form,unrecorded,"online usage only (slang crowd-sourced sites, memes)",1,ok,claude-opus-5-5
+T_019,existing_form,general_dictionary,"general dictionary sense (Monier-Williams: sport, play, dalliance, coquetry)",3,ok,claude-opus-5-5
+EEU_014,existing_form,cultural_reference,folklore collection (anthology of erotic riddles/folklore),2,ok,claude-opus-5-5
+SEA_004,existing_form,cultural_reference,scholarly commentary on pantun imagery; encyclopaedia,2,ok,claude-opus-5-5
+MET_010,existing_form,general_dictionary,"general dictionary sense (yad = power, favour, beneficence); also tafsir and kinaya scholarship",2,ok,claude-opus-5-5
+SEA_014,existing_form,cultural_reference,scholarly commentary and anthologies of ca dao,2,ok,claude-opus-5-5
+T_032,existing_form,general_dictionary,general dictionary sense (Persian dictionaries list the Sufi/mystical sense),2,ok,claude-opus-5-5
+MET_009,existing_form,cultural_reference,classical Arabic rhetoric manuals and kināya treatises; scholarly encyclopaedia entry,2,ok,claude-opus-5-5
+T_025,existing_form,cultural_reference,Sufi technical-terminology dictionary; scholarly commentaries on Persian mystical poetry,3,ok,claude-opus-5-5
+T_001,existing_form,general_dictionary,"general dictionary sense (Japanese monolingual dictionary, e.g. Kōjien-type entry for 牡丹 as boar meat)",3,ok,claude-opus-5-5
+QCH_004,existing_form,cultural_reference,ethnographic / folklore journal article on Quechua riddling,2,ok,claude-opus-5-5
+SEA_012,novel_form,cultural_reference,scholarly journal article on erotic double meaning in luk thung lyrics,2,ok,claude-opus-5-5
+NEU_006,existing_form,cultural_reference,skaldic scholarship and scholarly editions of skaldic poetry,1,ok,claude-opus-5-5
+SEA_002,existing_form,cultural_reference,scholarly studies of pantun; encyclopaedia entry,1,ok,claude-opus-5-5
+AFR_015,existing_form,cultural_reference,scholarly article on Akan death euphemisms; cultural guide to Akan idioms,2,ok,claude-opus-5-5
+T_041,existing_form,general_dictionary,general dictionary sense (French dictionaries list amorous or sexual uses of affaire),2,ok,claude-opus-5-5
+T_058,existing_form,cultural_reference,guides to New Year customs and osechi food symbolism,3,ok,claude-opus-5-5
+NEU_009,existing_form,cultural_reference,scholarly editions and commentaries on the Exeter Book riddles,3,ok,claude-opus-5-5
+T_060,existing_form,cultural_reference,guides to New Year customs and osechi food symbolism,3,ok,claude-opus-5-5
+T_071,existing_form,unrecorded,usage only (in-group / colloquial speech),1,ok,claude-opus-5-5
+MET_016,existing_form,general_dictionary,general dictionary sense ('tree blossom' listed alongside 'spring'),2,ok,claude-opus-5-5
+T_100,existing_form,cultural_reference,symbol and gesture dictionaries,2,ok,claude-opus-5-5
+EEU_011,existing_form,cultural_reference,folklore scholarship on Polish erotic folk song,3,ok,claude-opus-5-5
+SEA_006,existing_form,cultural_reference,scholarly translation and commentary on Hồ Xuân Hương's poetry,3,ok,claude-opus-5-5
+MET_001,existing_form,general_dictionary,"general dictionary sense ('spring, source of water')",3,ok,claude-opus-5-5
+MAYA_004,existing_form,cultural_reference,scholarly edition and translation of a colonial Maya text,3,ok,claude-opus-5-5
+AFR_012,existing_form,cultural_reference,scholarly studies of Xhosa oral and praise poetry,3,ok,claude-opus-5-5
+T_069,existing_form,cultural_reference,euphemism/slang dictionary,1,ok,claude-opus-5-5
+T_057,existing_form,cultural_reference,guide to New Year customs (osechi food symbolism),2,ok,claude-opus-5-5
+T_087,existing_form,general_dictionary,general dictionary sense,3,ok,claude-opus-5-5
+SEA_015,existing_form,cultural_reference,ethnomusicological/ethnographic studies of Thai folk song repartee,2,ok,claude-opus-5-5
+NEU_005,novel_form,cultural_reference,kenning handbook / skaldic poetic lexicon,3,ok,claude-opus-5-5
+T_031,existing_form,cultural_reference,dictionary of Sufi/mystical poetic terminology,2,ok,claude-opus-5-5
+T_043,existing_form,general_dictionary,general dictionary sense,2,ok,claude-opus-5-5
+QCH_006,existing_form,cultural_reference,ethnography / scholarly handbook chapter,2,ok,claude-opus-5-5
+MET_006,existing_form,general_dictionary,general dictionary sense (classical Arabic lexicon); also rhetoric manuals,2,ok,claude-opus-5-5
+T_097,existing_form,general_dictionary,general dictionary sense,3,ok,claude-opus-5-5
+T_056,existing_form,general_dictionary,general dictionary sense (usage note on New Year/celebratory use for descendants' prosperity),2,ok,claude-opus-5-5
+NEU_013,existing_form,cultural_reference,folklore scholarship on Finnish riddles,2,ok,claude-opus-5-5
+T_029,existing_form,cultural_reference,Sufi terminology / poetic-symbol dictionary,2,ok,claude-opus-5-5
+SEA_001,existing_form,cultural_reference,scholarly studies of pantun sound-echo between pembayang and maksud,1,ok,claude-opus-5-5
+T_076,existing_form,general_dictionary,general dictionary idiom entry,2,ok,claude-opus-5-5
+MET_011,existing_form,cultural_reference,Qur'anic exegesis (tafsir) and scholarly studies of kinaya,2,ok,claude-opus-5-5
+T_061,existing_form,cultural_reference,guide to customs (osechi food symbolism),2,ok,claude-opus-5-5
+NEU_002,novel_form,cultural_reference,poetic-diction dictionary / scholarly kenning lexicon and editions of skaldic poetry,2,ok,claude-opus-5-5
+AFR_010,existing_form,cultural_reference,scholarly edition and literary commentary on Zulu royal izibongo,2,ok,claude-opus-5-5
+NEU_001,novel_form,general_dictionary,"general dictionary sense (standard Old English dictionary glossing the compound as 'sea'); also scholarly editions of Beowulf. Note: hronrād / hwælweg are Old English, not Old Norse; the language field appears mislabeled, so coded as Old English",2,ok,claude-opus-5-5
+T_048,existing_form,cultural_reference,"Chinese symbol/folklore dictionaries and guides to New Year customs (the homophony is exact in Cantonese, where both are gat1, and only approximate in Mandarin jú/jí); not listed as a sense in general dictionaries",3,ok,claude-opus-5-5
+NAH_006,existing_form,general_dictionary,general dictionary sense (the contracted form altepetl is glossed 'town/city-state' in standard colonial and modern Nahuatl–Spanish dictionaries); the difrasismo is also documented in scholarly commentaries,2,ok,claude-opus-5-5
+T_033,existing_form,general_dictionary,general dictionary sense (Sufi-terminology usage marked in standard Persian dictionaries); also specialist Sufi-terminology dictionaries,2,ok,claude-opus-5-5
+EEU_009,existing_form,cultural_reference,literary-terminology dictionary entry on the constant epithet; folklore scholarship on bylina diction,2,ok,claude-opus-5-5
+T_035,existing_form,general_dictionary,general dictionary sense (Le Robert lists the absolute use 'éprouver l'orgasme'),3,ok,claude-opus-5-5
+NET_003,novel_form,cultural_reference,"Scholarly journal article on algospeak, encyclopaedia entry and journalistic coverage. The covert senses are not reliably established as senses in standard general dictionaries. Bundled item: form_status follows the majority (unalive, seggs and le dollar bean are coinages or respellings), while corn and grape are existing forms.",2,ok,claude-opus-5-5
+T_013,existing_form,general_dictionary,general dictionary sense (figurative sense 'to die / perish like falling blossoms'); waka usage also covered in poetic-diction dictionaries and scholarly editions,2,ok,claude-opus-5-5
+T_014,existing_form,unrecorded,"no documentation known: classical-language dictionary senses of tsutsumu are 'wrap/envelop', 'surround', 'conceal/keep secret'; documented waka pivots are 包む/慎む and 包む/堤, not 'embrace'",1,ok,claude-opus-5-5
+T_077,existing_form,general_dictionary,"general dictionary sense (idiom entry under 手, sense of entering into a sexual relationship with a woman, e.g. 女に手を出す)",2,ok,claude-opus-5-5
+EEU_004,existing_form,cultural_reference,"scholarly folklore collection/commentary on riddles (the riddle and its conventional answer, carrot, are documented in riddle collections; the claimed erotic/captive-maiden reading is not clearly attested for this item and may only reflect general scholarship on riddle imagery)",1,ok,claude-opus-5-5
+T_010,existing_form,cultural_reference,"scholarly waka commentaries and annotated editions; poetic-diction (utakotoba) dictionary. These record midare as love-turmoil and erotic disarray (tangled hair, disordered heart); general dictionaries give only disorder or moral laxity.",2,ok,claude-opus-5-5
+T_018,existing_form,general_dictionary,general dictionary sense (Sanskrit/Hindi lexica list rasa in the rhetorical sense of sentiment and in the sense of love/desire),2,ok,claude-opus-5-5
+EEU_003,existing_form,cultural_reference,"scholarly folklore anthology of Russian erotic riddles (Toporkov 1995, as cited in a scholarly review in Revue Russe)",2,ok,claude-opus-5-5
+T_068,existing_form,cultural_reference,encyclopaedia entries and dictionary-publisher editorial notes on emerging slang; not confirmed as a sense in a standard general dictionary's main entries,2,ok,claude-opus-5-5
+AFR_007,existing_form,cultural_reference,encyclopaedia entries and art-historical/ethnographic scholarship on Yoruba religious objects; the 'male and female force' reading is less firmly attested than the justice/destruction duality,2,ok,claude-opus-5-5
+T_004,existing_form,general_dictionary,"general dictionary sense (かしわ, chicken meat, typically headed under the spelling 黄鶏)",3,ok,claude-opus-5-5
+T_062,existing_form,cultural_reference,osechi/New Year customs guides and food-culture references (scroll-shape symbolism); general dictionaries define the dish only,2,ok,claude-opus-5-5
