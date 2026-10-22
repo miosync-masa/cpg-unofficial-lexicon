@@ -1,0 +1,39 @@
+W1022 11:59:40.251000 5553 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+213 items with controls
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 33496.86it/s]
+  embedded 64/2117  (5s)
+  embedded 128/2117  (7s)
+  embedded 192/2117  (8s)
+  embedded 256/2117  (8s)
+  embedded 320/2117  (9s)
+  embedded 384/2117  (10s)
+  embedded 448/2117  (11s)
+  embedded 512/2117  (11s)
+  embedded 576/2117  (12s)
+  embedded 640/2117  (13s)
+  embedded 704/2117  (14s)
+  embedded 768/2117  (15s)
+  embedded 832/2117  (15s)
+  embedded 896/2117  (16s)
+  embedded 960/2117  (17s)
+  embedded 1024/2117  (18s)
+  embedded 1088/2117  (19s)
+  embedded 1152/2117  (20s)
+  embedded 1216/2117  (20s)
+  embedded 1280/2117  (21s)
+  embedded 1344/2117  (22s)
+  embedded 1408/2117  (22s)
+  embedded 1472/2117  (23s)
+  embedded 1536/2117  (23s)
+  embedded 1600/2117  (24s)
+  embedded 1664/2117  (24s)
+  embedded 1728/2117  (25s)
+  embedded 1792/2117  (26s)
+  embedded 1856/2117  (26s)
+  embedded 1920/2117  (27s)
+  embedded 1984/2117  (27s)
+  embedded 2048/2117  (28s)
+  embedded 2112/2117  (29s)
+  embedded 2117/2117  (29s)
+saved out/nnpm_C_BAAI_bge_m3.csv | failed strings: 0

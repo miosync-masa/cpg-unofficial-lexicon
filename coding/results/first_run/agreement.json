@@ -1,0 +1,149 @@
+{
+ "coders": [
+  "gpt-5.6-sol",
+  "gemini-3.1-pro-preview",
+  "claude-opus-5-5"
+ ],
+ "n_items": 217,
+ "fleiss_kappa": {
+  "cpg_valid": 0.518,
+  "direction": 0.601,
+  "primary_channel": 0.664,
+  "activation": 0.517,
+  "familiarity": 0.605,
+  "s_juxtaposition": 0.56,
+  "s_noncompositional": 0.568,
+  "s_conventional": 0.204
+ },
+ "pct_unanimous": {
+  "cpg_valid": 70.0,
+  "direction": 62.7,
+  "primary_channel": 65.0,
+  "activation": 60.4,
+  "familiarity": 77.4,
+  "s_juxtaposition": 68.2,
+  "s_noncompositional": 75.1,
+  "s_conventional": 41.9
+ },
+ "fleiss_kappa_per_channel": {
+  "Phonetic": 0.868,
+  "Morphological": 0.672,
+  "Chromatic": 0.789,
+  "Conceptual": 0.605,
+  "Structural": 0.41,
+  "Behavioural": 0.473,
+  "Metonymic": 0.694,
+  "Formal": 0.61
+ },
+ "consensus_vs_original_cohen_kappa": {
+  "direction": {
+   "kappa": 0.495,
+   "n": 213,
+   "pct_agree": 69.0,
+   "confusion": {
+    "E": {
+     "E": 46,
+     "R": 9,
+     "S": 6
+    },
+    "R": {
+     "E": 23,
+     "R": 82,
+     "S": 1
+    },
+    "S": {
+     "E": 8,
+     "R": 19,
+     "S": 19
+    }
+   }
+  },
+  "primary_channel": {
+   "kappa": 0.506,
+   "n": 201,
+   "pct_agree": 61.2,
+   "confusion": {
+    "Behavioural": {
+     "Behavioural": 6,
+     "Chromatic": 0,
+     "Conceptual": 1,
+     "Formal": 0,
+     "Metonymic": 0,
+     "Morphological": 0,
+     "Phonetic": 0,
+     "Structural": 0
+    },
+    "Chromatic": {
+     "Behavioural": 0,
+     "Chromatic": 4,
+     "Conceptual": 1,
+     "Formal": 0,
+     "Metonymic": 0,
+     "Morphological": 0,
+     "Phonetic": 0,
+     "Structural": 0
+    },
+    "Conceptual": {
+     "Behavioural": 8,
+     "Chromatic": 0,
+     "Conceptual": 39,
+     "Formal": 0,
+     "Metonymic": 11,
+     "Morphological": 5,
+     "Phonetic": 0,
+     "Structural": 4
+    },
+    "Formal": {
+     "Behavioural": 0,
+     "Chromatic": 0,
+     "Conceptual": 1,
+     "Formal": 3,
+     "Metonymic": 2,
+     "Morphological": 0,
+     "Phonetic": 0,
+     "Structural": 1
+    },
+    "Metonymic": {
+     "Behavioural": 8,
+     "Chromatic": 2,
+     "Conceptual": 13,
+     "Formal": 0,
+     "Metonymic": 32,
+     "Morphological": 0,
+     "Phonetic": 2,
+     "Structural": 2
+    },
+    "Morphological": {
+     "Behavioural": 0,
+     "Chromatic": 1,
+     "Conceptual": 5,
+     "Formal": 0,
+     "Metonymic": 1,
+     "Morphological": 7,
+     "Phonetic": 1,
+     "Structural": 0
+    },
+    "Phonetic": {
+     "Behavioural": 0,
+     "Chromatic": 0,
+     "Conceptual": 3,
+     "Formal": 0,
+     "Metonymic": 1,
+     "Morphological": 0,
+     "Phonetic": 27,
+     "Structural": 1
+    },
+    "Structural": {
+     "Behavioural": 0,
+     "Chromatic": 1,
+     "Conceptual": 1,
+     "Formal": 0,
+     "Metonymic": 2,
+     "Morphological": 0,
+     "Phonetic": 0,
+     "Structural": 5
+    }
+   }
+  }
+ }
+}

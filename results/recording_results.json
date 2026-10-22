@@ -1,0 +1,947 @@
+{
+ "spec": "Recording-status coding and analysis v1.0 (2026-10-21)",
+ "pull_columns": {
+  "pull_index": "OpenAI text-embedding-3-large (original)",
+  "pull_bge_B": "BAAI/bge-m3 (original script, k=10)",
+  "pull_gem_B": "gemini-embedding-001 (original script, k=10)"
+ },
+ "agreement": {
+  "coders": [
+   "gpt-5.6-sol",
+   "gemini-3.1-pro-preview",
+   "claude-opus-5-5"
+  ],
+  "n_items": 217,
+  "fleiss_kappa": {
+   "form_status": 0.869,
+   "recording_status": 0.773
+  },
+  "pct_unanimous": {
+   "form_status": 98.2,
+   "recording_status": 83.4
+  },
+  "consensus_distribution": {
+   "form_status": {
+    "existing_form": 207,
+    "novel_form": 10
+   },
+   "recording_status": {
+    "cultural_reference": 136,
+    "general_dictionary": 70,
+    "unrecorded": 10,
+    "UNRESOLVED": 1
+   }
+  },
+  "per_coder_distribution": {
+   "form_status": {
+    "gpt": {
+     "existing_form": 206,
+     "novel_form": 11
+    },
+    "gemini": {
+     "existing_form": 207,
+     "novel_form": 10
+    },
+    "claude": {
+     "existing_form": 206,
+     "novel_form": 11
+    }
+   },
+   "recording_status": {
+    "gpt": {
+     "cultural_reference": 140,
+     "general_dictionary": 69,
+     "unrecorded": 8
+    },
+    "gemini": {
+     "cultural_reference": 137,
+     "general_dictionary": 67,
+     "unrecorded": 13
+    },
+    "claude": {
+     "cultural_reference": 136,
+     "general_dictionary": 70,
+     "unrecorded": 11
+    }
+   }
+  },
+  "crosstab_recording_vs_first_cpg_valid": {
+   "UNRESOLVED": {
+    "no": 0,
+    "yes": 1
+   },
+   "cultural_reference": {
+    "no": 24,
+    "yes": 112
+   },
+   "general_dictionary": {
+    "no": 41,
+    "yes": 29
+   },
+   "unrecorded": {
+    "no": 3,
+    "yes": 7
+   }
+  }
+ },
+ "counts": {
+  "items_with_pulls": 213,
+  "form_status": {
+   "existing_form": 204,
+   "novel_form": 9
+  },
+  "existing_form_by_recording_status": {
+   "cultural_reference": 126,
+   "general_dictionary": 67,
+   "unrecorded": 10,
+   "UNRESOLVED": 1
+  },
+  "analysed_existing_resolved": 203,
+  "excluded_form_unresolved": 0,
+  "excluded_recording_unresolved_in_existing": 1,
+  "novel_form": 9,
+  "sensitivity_unanimous_recording": 179,
+  "sensitivity_analysed_existing_resolved": 173
+ },
+ "main": {
+  "pull_index": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 204,
+     "mean": 0.0549,
+     "sd": 0.1023,
+     "pct_positive": 74.5,
+     "t": 7.6565,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "novel_form": {
+     "n": 9,
+     "mean": 0.0927,
+     "sd": 0.0999,
+     "pct_positive": 77.8,
+     "t": 2.7847,
+     "p_t_one_sided": 0.0119,
+     "p_wilcoxon_one_sided": 0.0195
+    }
+   },
+   "existing_by_recording_status": {
+    "UNRESOLVED": {
+     "n": 1,
+     "mean": -0.2121,
+     "sd": null,
+     "pct_positive": 0.0,
+     "t": null,
+     "p_t_one_sided": null,
+     "p_wilcoxon_one_sided": null
+    },
+    "cultural_reference": {
+     "n": 126,
+     "mean": 0.0636,
+     "sd": 0.0889,
+     "pct_positive": 80.2,
+     "t": 8.026,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "general_dictionary": {
+     "n": 67,
+     "mean": 0.0557,
+     "sd": 0.118,
+     "pct_positive": 70.1,
+     "t": 3.86,
+     "p_t_one_sided": 0.0001,
+     "p_wilcoxon_one_sided": 0.0001
+    },
+    "unrecorded": {
+     "n": 10,
+     "mean": -0.0334,
+     "sd": 0.0817,
+     "pct_positive": 40.0,
+     "t": -1.2933,
+     "p_t_one_sided": 0.8859,
+     "p_wilcoxon_one_sided": 0.9033
+    }
+   },
+   "n_existing_resolved": 203,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.0231,
+     "se": 0.0341,
+     "p_two_sided": 0.4988
+    },
+    "general_dictionary": {
+     "b": 0.0102,
+     "se": 0.0332,
+     "p_two_sided": 0.7587
+    },
+    "intercept_unrecorded": {
+     "b": 0.0429,
+     "se": 0.0334
+    }
+   },
+   "trend": {
+    "slope": -0.0033,
+    "se": 0.0131,
+    "z": -0.25,
+    "p_one_sided": 0.5987
+   },
+   "h2_unrecorded_existing": {
+    "n": 10,
+    "mean": -0.0334,
+    "sd": 0.0817,
+    "pct_positive": 40.0,
+    "t": -1.2933,
+    "p_t_one_sided": 0.8859,
+    "p_wilcoxon_one_sided": 0.9033,
+    "mixed_intercept": -0.0116,
+    "mixed_se": 0.0339,
+    "mixed_z": -0.3431,
+    "p_mixed_one_sided": 0.6342,
+    "n_traditions": 6
+   }
+  },
+  "pull_bge_B": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 204,
+     "mean": 0.0408,
+     "sd": 0.0814,
+     "pct_positive": 71.1,
+     "t": 7.1594,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "novel_form": {
+     "n": 9,
+     "mean": 0.0176,
+     "sd": 0.0665,
+     "pct_positive": 66.7,
+     "t": 0.7958,
+     "p_t_one_sided": 0.2246,
+     "p_wilcoxon_one_sided": 0.1797
+    }
+   },
+   "existing_by_recording_status": {
+    "UNRESOLVED": {
+     "n": 1,
+     "mean": 0.0725,
+     "sd": null,
+     "pct_positive": 100.0,
+     "t": null,
+     "p_t_one_sided": null,
+     "p_wilcoxon_one_sided": null
+    },
+    "cultural_reference": {
+     "n": 126,
+     "mean": 0.0564,
+     "sd": 0.0866,
+     "pct_positive": 76.2,
+     "t": 7.3186,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "general_dictionary": {
+     "n": 67,
+     "mean": 0.0152,
+     "sd": 0.0684,
+     "pct_positive": 59.7,
+     "t": 1.8193,
+     "p_t_one_sided": 0.0367,
+     "p_wilcoxon_one_sided": 0.0322
+    },
+    "unrecorded": {
+     "n": 10,
+     "mean": 0.0118,
+     "sd": 0.0398,
+     "pct_positive": 80.0,
+     "t": 0.935,
+     "p_t_one_sided": 0.1871,
+     "p_wilcoxon_one_sided": 0.0654
+    }
+   },
+   "n_existing_resolved": 203,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.0609,
+     "se": 0.0252,
+     "p_two_sided": 0.0155
+    },
+    "general_dictionary": {
+     "b": 0.0309,
+     "se": 0.0241,
+     "p_two_sided": 0.2004
+    },
+    "intercept_unrecorded": {
+     "b": 0.012,
+     "se": 0.0251
+    }
+   },
+   "trend": {
+    "slope": -0.0033,
+    "se": 0.0102,
+    "z": -0.3281,
+    "p_one_sided": 0.6286
+   },
+   "h2_unrecorded_existing": {
+    "n": 10,
+    "mean": 0.0118,
+    "sd": 0.0398,
+    "pct_positive": 80.0,
+    "t": 0.935,
+    "p_t_one_sided": 0.1871,
+    "p_wilcoxon_one_sided": 0.0654,
+    "mixed_intercept": 0.0017,
+    "mixed_se": 0.0166,
+    "mixed_z": 0.1019,
+    "p_mixed_one_sided": 0.4594,
+    "n_traditions": 6
+   }
+  },
+  "pull_gem_B": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 204,
+     "mean": 0.0238,
+     "sd": 0.028,
+     "pct_positive": 87.3,
+     "t": 12.1261,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "novel_form": {
+     "n": 9,
+     "mean": 0.0187,
+     "sd": 0.0409,
+     "pct_positive": 55.6,
+     "t": 1.3669,
+     "p_t_one_sided": 0.1044,
+     "p_wilcoxon_one_sided": 0.1797
+    }
+   },
+   "existing_by_recording_status": {
+    "UNRESOLVED": {
+     "n": 1,
+     "mean": 0.0227,
+     "sd": null,
+     "pct_positive": 100.0,
+     "t": null,
+     "p_t_one_sided": null,
+     "p_wilcoxon_one_sided": null
+    },
+    "cultural_reference": {
+     "n": 126,
+     "mean": 0.0221,
+     "sd": 0.0283,
+     "pct_positive": 82.5,
+     "t": 8.7617,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "general_dictionary": {
+     "n": 67,
+     "mean": 0.0285,
+     "sd": 0.0286,
+     "pct_positive": 95.5,
+     "t": 8.1581,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "unrecorded": {
+     "n": 10,
+     "mean": 0.0132,
+     "sd": 0.0149,
+     "pct_positive": 90.0,
+     "t": 2.8131,
+     "p_t_one_sided": 0.0101,
+     "p_wilcoxon_one_sided": 0.0137
+    }
+   },
+   "n_existing_resolved": 203,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.0108,
+     "se": 0.0094,
+     "p_two_sided": 0.2508
+    },
+    "general_dictionary": {
+     "b": 0.0167,
+     "se": 0.0091,
+     "p_two_sided": 0.0685
+    },
+    "intercept_unrecorded": {
+     "b": 0.0128,
+     "se": 0.0092
+    }
+   },
+   "trend": {
+    "slope": 0.0072,
+    "se": 0.0037,
+    "z": 1.9411,
+    "p_one_sided": 0.0261
+   },
+   "h2_unrecorded_existing": {
+    "n": 10,
+    "mean": 0.0132,
+    "sd": 0.0149,
+    "pct_positive": 90.0,
+    "t": 2.8131,
+    "p_t_one_sided": 0.0101,
+    "p_wilcoxon_one_sided": 0.0137,
+    "mixed_intercept": 0.0125,
+    "mixed_se": 0.0062,
+    "mixed_z": 1.9949,
+    "p_mixed_one_sided": 0.023,
+    "n_traditions": 6
+   }
+  }
+ },
+ "sensitivity_unanimous": {
+  "pull_index": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 173,
+     "mean": 0.059,
+     "sd": 0.1035,
+     "pct_positive": 75.7,
+     "t": 7.502,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "novel_form": {
+     "n": 6,
+     "mean": 0.0604,
+     "sd": 0.103,
+     "pct_positive": 66.7,
+     "t": 1.4363,
+     "p_t_one_sided": 0.1052,
+     "p_wilcoxon_one_sided": 0.1562
+    }
+   },
+   "existing_by_recording_status": {
+    "cultural_reference": {
+     "n": 113,
+     "mean": 0.0663,
+     "sd": 0.0907,
+     "pct_positive": 81.4,
+     "t": 7.7744,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "general_dictionary": {
+     "n": 54,
+     "mean": 0.0563,
+     "sd": 0.125,
+     "pct_positive": 70.4,
+     "t": 3.3088,
+     "p_t_one_sided": 0.0008,
+     "p_wilcoxon_one_sided": 0.0007
+    },
+    "unrecorded": {
+     "n": 6,
+     "mean": -0.054,
+     "sd": 0.043,
+     "pct_positive": 16.7,
+     "t": -3.0747,
+     "p_t_one_sided": 0.9862,
+     "p_wilcoxon_one_sided": 0.9844
+    }
+   },
+   "n_existing_resolved": 173,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.0389,
+     "se": 0.0453,
+     "p_two_sided": 0.3911
+    },
+    "general_dictionary": {
+     "b": 0.0134,
+     "se": 0.0433,
+     "p_two_sided": 0.7559
+    },
+    "intercept_unrecorded": {
+     "b": 0.028,
+     "se": 0.0442
+    }
+   },
+   "trend": {
+    "slope": -0.0103,
+    "se": 0.0155,
+    "z": -0.6673,
+    "p_one_sided": 0.7477
+   },
+   "h2_unrecorded_existing": {
+    "n": 6,
+    "mean": -0.054,
+    "sd": 0.043,
+    "pct_positive": 16.7,
+    "t": -3.0747,
+    "p_t_one_sided": 0.9862,
+    "p_wilcoxon_one_sided": 0.9844,
+    "mixed_intercept": -0.0488,
+    "mixed_se": 0.0264,
+    "mixed_z": -1.8517,
+    "p_mixed_one_sided": 0.968,
+    "n_traditions": 3
+   }
+  },
+  "pull_bge_B": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 173,
+     "mean": 0.0453,
+     "sd": 0.081,
+     "pct_positive": 72.3,
+     "t": 7.3532,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "novel_form": {
+     "n": 6,
+     "mean": 0.0036,
+     "sd": 0.0737,
+     "pct_positive": 50.0,
+     "t": 0.1206,
+     "p_t_one_sided": 0.4543,
+     "p_wilcoxon_one_sided": 0.5
+    }
+   },
+   "existing_by_recording_status": {
+    "cultural_reference": {
+     "n": 113,
+     "mean": 0.0607,
+     "sd": 0.0867,
+     "pct_positive": 77.0,
+     "t": 7.4476,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "general_dictionary": {
+     "n": 54,
+     "mean": 0.0157,
+     "sd": 0.0624,
+     "pct_positive": 61.1,
+     "t": 1.8427,
+     "p_t_one_sided": 0.0355,
+     "p_wilcoxon_one_sided": 0.0251
+    },
+    "unrecorded": {
+     "n": 6,
+     "mean": 0.0207,
+     "sd": 0.0192,
+     "pct_positive": 83.3,
+     "t": 2.6371,
+     "p_t_one_sided": 0.0231,
+     "p_wilcoxon_one_sided": 0.0312
+    }
+   },
+   "n_existing_resolved": 173,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.0904,
+     "se": 0.0322,
+     "p_two_sided": 0.005
+    },
+    "general_dictionary": {
+     "b": 0.0421,
+     "se": 0.0296,
+     "p_two_sided": 0.1553
+    },
+    "intercept_unrecorded": {
+     "b": -0.0133,
+     "se": 0.0316
+    }
+   },
+   "trend": {
+    "slope": -0.0119,
+    "se": 0.0118,
+    "z": -1.0084,
+    "p_one_sided": 0.8434
+   },
+   "h2_unrecorded_existing": {
+    "n": 6,
+    "mean": 0.0207,
+    "sd": 0.0192,
+    "pct_positive": 83.3,
+    "t": 2.6371,
+    "p_t_one_sided": 0.0231,
+    "p_wilcoxon_one_sided": 0.0312,
+    "mixed_intercept": 0.0207,
+    "mixed_se": 0.0069,
+    "mixed_z": 3.0055,
+    "p_mixed_one_sided": 0.0013,
+    "n_traditions": 3
+   }
+  },
+  "pull_gem_B": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 173,
+     "mean": 0.0241,
+     "sd": 0.0289,
+     "pct_positive": 86.1,
+     "t": 10.9472,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "novel_form": {
+     "n": 6,
+     "mean": 0.018,
+     "sd": 0.05,
+     "pct_positive": 33.3,
+     "t": 0.8834,
+     "p_t_one_sided": 0.2087,
+     "p_wilcoxon_one_sided": 0.5
+    }
+   },
+   "existing_by_recording_status": {
+    "cultural_reference": {
+     "n": 113,
+     "mean": 0.0219,
+     "sd": 0.0291,
+     "pct_positive": 80.5,
+     "t": 8.0015,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "general_dictionary": {
+     "n": 54,
+     "mean": 0.0296,
+     "sd": 0.0296,
+     "pct_positive": 96.3,
+     "t": 7.3561,
+     "p_t_one_sided": 0.0,
+     "p_wilcoxon_one_sided": 0.0
+    },
+    "unrecorded": {
+     "n": 6,
+     "mean": 0.0159,
+     "sd": 0.0094,
+     "pct_positive": 100.0,
+     "t": 4.1623,
+     "p_t_one_sided": 0.0044,
+     "p_wilcoxon_one_sided": 0.0156
+    }
+   },
+   "n_existing_resolved": 173,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.0148,
+     "se": 0.0126,
+     "p_two_sided": 0.2381
+    },
+    "general_dictionary": {
+     "b": 0.019,
+     "se": 0.0117,
+     "p_two_sided": 0.1054
+    },
+    "intercept_unrecorded": {
+     "b": 0.008,
+     "se": 0.0123
+    }
+   },
+   "trend": {
+    "slope": 0.0069,
+    "se": 0.0044,
+    "z": 1.5619,
+    "p_one_sided": 0.0592
+   },
+   "h2_unrecorded_existing": {
+    "n": 6,
+    "mean": 0.0159,
+    "sd": 0.0094,
+    "pct_positive": 100.0,
+    "t": 4.1623,
+    "p_t_one_sided": 0.0044,
+    "p_wilcoxon_one_sided": 0.0156,
+    "mixed_intercept": 0.0159,
+    "mixed_se": null,
+    "mixed_z": null,
+    "p_mixed_one_sided": null,
+    "n_traditions": 3
+   }
+  }
+ },
+ "verdicts_main": {
+  "H1": {
+   "verdict": "not supported",
+   "models_passing": 0,
+   "per_model": {
+    "pull_index": {
+     "trend_p_holm": 1.0,
+     "trend_ok": false,
+     "order_ok": false,
+     "all_groups_positive": false,
+     "means": {
+      "unrecorded": -0.0334,
+      "cultural_reference": 0.0636,
+      "general_dictionary": 0.0557
+     },
+     "passes": false
+    },
+    "pull_bge_B": {
+     "trend_p_holm": 1.0,
+     "trend_ok": false,
+     "order_ok": false,
+     "all_groups_positive": false,
+     "means": {
+      "unrecorded": 0.0118,
+      "cultural_reference": 0.0564,
+      "general_dictionary": 0.0152
+     },
+     "passes": false
+    },
+    "pull_gem_B": {
+     "trend_p_holm": 0.0783,
+     "trend_ok": false,
+     "order_ok": true,
+     "all_groups_positive": false,
+     "means": {
+      "unrecorded": 0.0132,
+      "cultural_reference": 0.0221,
+      "general_dictionary": 0.0285
+     },
+     "passes": false
+    }
+   }
+  },
+  "H2": {
+   "verdict": "not supported",
+   "models_sig_holm": 0,
+   "models_sig_raw": 1,
+   "per_model": {
+    "pull_index": {
+     "p_mixed_one_sided": 0.6342,
+     "p_holm": 0.9188
+    },
+    "pull_bge_B": {
+     "p_mixed_one_sided": 0.4594,
+     "p_holm": 0.9188
+    },
+    "pull_gem_B": {
+     "p_mixed_one_sided": 0.023,
+     "p_holm": 0.069
+    }
+   }
+  },
+  "H3": {
+   "verdict": "procedural rule applied (no inferential test, per spec)",
+   "novel_form_descriptives": {
+    "pull_index": {
+     "n": 9,
+     "mean": 0.0927,
+     "sd": 0.0999,
+     "pct_positive": 77.8,
+     "t": 2.7847,
+     "p_t_one_sided": 0.0119,
+     "p_wilcoxon_one_sided": 0.0195
+    },
+    "pull_bge_B": {
+     "n": 9,
+     "mean": 0.0176,
+     "sd": 0.0665,
+     "pct_positive": 66.7,
+     "t": 0.7958,
+     "p_t_one_sided": 0.2246,
+     "p_wilcoxon_one_sided": 0.1797
+    },
+    "pull_gem_B": {
+     "n": 9,
+     "mean": 0.0187,
+     "sd": 0.0409,
+     "pct_positive": 55.6,
+     "t": 1.3669,
+     "p_t_one_sided": 0.1044,
+     "p_wilcoxon_one_sided": 0.1797
+    }
+   }
+  }
+ },
+ "verdicts_sensitivity": {
+  "H1": {
+   "verdict": "not supported",
+   "models_passing": 0,
+   "per_model": {
+    "pull_index": {
+     "trend_p_holm": 1.0,
+     "trend_ok": false,
+     "order_ok": false,
+     "all_groups_positive": false,
+     "means": {
+      "unrecorded": -0.054,
+      "cultural_reference": 0.0663,
+      "general_dictionary": 0.0563
+     },
+     "passes": false
+    },
+    "pull_bge_B": {
+     "trend_p_holm": 1.0,
+     "trend_ok": false,
+     "order_ok": false,
+     "all_groups_positive": false,
+     "means": {
+      "unrecorded": 0.0207,
+      "cultural_reference": 0.0607,
+      "general_dictionary": 0.0157
+     },
+     "passes": false
+    },
+    "pull_gem_B": {
+     "trend_p_holm": 0.1776,
+     "trend_ok": false,
+     "order_ok": true,
+     "all_groups_positive": false,
+     "means": {
+      "unrecorded": 0.0159,
+      "cultural_reference": 0.0219,
+      "general_dictionary": 0.0296
+     },
+     "passes": false
+    }
+   }
+  },
+  "H2": {
+   "verdict": "mixed",
+   "models_sig_holm": 1,
+   "models_sig_raw": 1,
+   "per_model": {
+    "pull_index": {
+     "p_mixed_one_sided": 0.968,
+     "p_holm": 0.968
+    },
+    "pull_bge_B": {
+     "p_mixed_one_sided": 0.0013,
+     "p_holm": 0.0026
+    },
+    "pull_gem_B": {
+     "p_mixed_one_sided": null,
+     "p_holm": null
+    }
+   }
+  },
+  "H3": {
+   "verdict": "procedural rule applied (no inferential test, per spec)",
+   "novel_form_descriptives": {
+    "pull_index": {
+     "n": 6,
+     "mean": 0.0604,
+     "sd": 0.103,
+     "pct_positive": 66.7,
+     "t": 1.4363,
+     "p_t_one_sided": 0.1052,
+     "p_wilcoxon_one_sided": 0.1562
+    },
+    "pull_bge_B": {
+     "n": 6,
+     "mean": 0.0036,
+     "sd": 0.0737,
+     "pct_positive": 50.0,
+     "t": 0.1206,
+     "p_t_one_sided": 0.4543,
+     "p_wilcoxon_one_sided": 0.5
+    },
+    "pull_gem_B": {
+     "n": 6,
+     "mean": 0.018,
+     "sd": 0.05,
+     "pct_positive": 33.3,
+     "t": 0.8834,
+     "p_t_one_sided": 0.2087,
+     "p_wilcoxon_one_sided": 0.5
+    }
+   }
+  }
+ },
+ "novel_form_items": [
+  {
+   "item_id": "SEA_012",
+   "host": "[technique-level item — specific word examples require Thai-language access]",
+   "target": "sexual body parts or sexual acts",
+   "tradition": "Thai luk thung (country music / เพลงลูกทุ่ง)",
+   "recording_status": "cultural_reference",
+   "pull_index": 0.1916,
+   "pull_bge_B": 0.105,
+   "pull_gem_B": 0.1109
+  },
+  {
+   "item_id": "NEU_001",
+   "host": "hron-rád / hwæl-weg",
+   "target": "the sea / ocean",
+   "tradition": "Old Norse kenning (skaldic poetry)",
+   "recording_status": "cultural_reference",
+   "pull_index": 0.2094,
+   "pull_bge_B": 0.1014,
+   "pull_gem_B": 0.0042
+  },
+  {
+   "item_id": "NEU_002",
+   "host": "hrafn-vín",
+   "target": "blood",
+   "tradition": "Old Norse kenning (skaldic poetry)",
+   "recording_status": "cultural_reference",
+   "pull_index": 0.0091,
+   "pull_bge_B": -0.0027,
+   "pull_gem_B": -0.0055
+  },
+  {
+   "item_id": "NEU_003",
+   "host": "val-bjórr / hræ-lœkr",
+   "target": "blood",
+   "tradition": "Old Norse kenning (skaldic poetry)",
+   "recording_status": "cultural_reference",
+   "pull_index": 0.0485,
+   "pull_bge_B": -0.0703,
+   "pull_gem_B": -0.0042
+  },
+  {
+   "item_id": "NEU_005",
+   "host": "grennir gunn-más",
+   "target": "warrior / king",
+   "tradition": "Old Norse kenning (skaldic poetry)",
+   "recording_status": "cultural_reference",
+   "pull_index": -0.0416,
+   "pull_bge_B": -0.0817,
+   "pull_gem_B": -0.0244
+  },
+  {
+   "item_id": "NEU_011",
+   "host": "bān-hūs (bone-house)",
+   "target": "human body",
+   "tradition": "Anglo-Saxon kenning (Beowulf)",
+   "recording_status": "general_dictionary",
+   "pull_index": 0.1753,
+   "pull_bge_B": 0.0214,
+   "pull_gem_B": 0.0116
+  },
+  {
+   "item_id": "NEU_012",
+   "host": "beadu-swāt (battle-sweat) / gūð-swāt (war-sweat)",
+   "target": "blood",
+   "tradition": "Anglo-Saxon kenning (Beowulf)",
+   "recording_status": "general_dictionary",
+   "pull_index": 0.0872,
+   "pull_bge_B": 0.0142,
+   "pull_gem_B": 0.0438
+  },
+  {
+   "item_id": "NET_004",
+   "host": "Cǎonímǎ",
+   "target": "肏你妈 (Cào nǐ mā) — Mandarin obscenity 'fuck your mother'; broader meaning: symbolic resistance against Chinese internet censorship",
+   "tradition": "Chinese internet resistance language",
+   "recording_status": "cultural_reference",
+   "pull_index": 0.1826,
+   "pull_bge_B": 0.0678,
+   "pull_gem_B": 0.0383
+  },
+  {
+   "item_id": "NET_005",
+   "host": "Wǔyuè sānshíwǔrì",
+   "target": "June 4th (六四, Liùsì) — the date of the 1989 Tiananmen Square massacre; a heavily censored topic in China",
+   "tradition": "Chinese internet censorship evasion",
+   "recording_status": "cultural_reference",
+   "pull_index": -0.0276,
+   "pull_bge_B": 0.0037,
+   "pull_gem_B": -0.0068
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "model": "BAAI/bge-m3",
+ "n_items": 213,
+ "n_texts": 2128,
+ "n_failed": 0,
+ "seconds": 31
+}

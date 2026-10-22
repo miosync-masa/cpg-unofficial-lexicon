@@ -1,0 +1,220 @@
+item_id,clean_host,clean_host_source,script
+NET_006,304,majority,Other
+T_052,苹果,majority,CJK
+T_023,संगम,majority,Devanagari
+NEU_004,Kvasirs blóð,majority,Latin
+AFR_013,"Sɛ wo werɛ fi na wosankofa a, yenkyi",majority,Latin
+T_088,liquid lunch,majority,Latin
+NEU_011,bānhūs,majority,Latin
+T_005,逢う,majority,CJK
+MET_012,فُضُولِي,majority,Arabic
+T_098,raise a glass,majority,Latin
+T_082,最後まで,majority,CJK
+MET_013,gülüverdi,majority,Latin
+T_022,मिलन,majority,Devanagari
+QCH_001,Unuy wiqillam apariwan / Yakuy parallam pusariwan,majority,Latin
+OCE_007,"Toitū te whenua, whatungarongaro te tangata",majority,Latin
+AFR_011,Ndlovu,majority,Latin
+T_046,鹿,majority,CJK
+SEA_003,tupai,majority,Latin
+T_007,露,majority,CJK
+MAYA_005,Paired day-motif + night-motif,majority,Latin
+T_055,黒豆,majority,CJK
+SEA_005,kain,majority,Latin
+AFR_001,መስቀል,majority,Ethiopic
+T_003,桜,majority,CJK
+T_074,hook up,majority,Latin
+SEA_008,trầu cau,majority,Latin
+T_028,زلف,majority,Arabic
+T_006,夜,majority,CJK
+NAH_001,"in xochitl, in cuicatl",majority,Latin
+NET_002,🍆 🍑,majority,Other
+T_081,大人の関係,majority,CJK
+T_030,گل,majority,Arabic
+NEU_007,Exeter Book Riddle 25 — ānpæð + wigan,fallback_original,Latin
+T_092,ちょっと付き合って,majority,CJK
+T_024,आलिंगन,majority,Devanagari
+MET_008,كَثِيرُ الرَّمَاد,majority,Arabic
+T_085,hit the bar,majority,Latin
+EEU_001,"Красная головка, под ней — бородка, утром рано встаёт, Маше спать не даёт",majority,Cyrillic
+NAH_008,"in toptli, in petlacalli",majority,Latin
+EEU_013,"Мяне мілы спалюбіў, сярод поля заваліў: Грэх ня грэх, а мне хочацца",majority,Cyrillic
+T_050,枣,majority,CJK
+SEA_011,หูคัน,majority,Other
+SEA_010,ꦩꦱ꧀ꦏꦸꦩꦩ꧀ꦧꦁ,majority,Javanese
+NET_007,Netflix and chill,majority,Latin
+NEU_018,messe ocus Pangur Bán,majority,Latin
+T_072,see my etchings,majority,Latin
+NAH_002,"in cuitlapilli, in ahtlapalli",majority,Latin
+NEU_010,Exeter Book Riddle 37 — bellows riddle,fallback_original,Latin
+T_027,مست,majority,Arabic
+AFR_005,AJE (àjẹ̀ / àjé),fallback_original,Latin
+T_008,濡れる,majority,CJK
+OCE_006,Sanoe,majority,Latin
+AFR_004,Òjó,majority,Latin
+T_038,connaître,majority,Latin
+T_021,केलि,majority,Devanagari
+MAYA_003,ch'en actun,majority,Latin
+AFR_014,"Owuo atwedɛɛ, baako foɔ mforo",majority,Latin
+T_099,tip your hat,majority,Latin
+T_034,صبا,majority,Arabic
+T_039,coucher,majority,Latin
+T_102,clasp hands in prayer,majority,Latin
+T_017,मदन,majority,Devanagari
+MET_003,كَرَاكِي,majority,Arabic
+T_084,grab a drink,majority,Latin
+NET_004,草泥马,majority,CJK
+OCE_005,pua,majority,Latin
+MET_002,الجُفُون,majority,Arabic
+T_094,もう一杯だけ,majority,CJK
+NAH_004,"in tlilli, in tlapalli",majority,Latin
+MET_004,بَدْر,majority,Arabic
+T_064,田作り,majority,CJK
+T_065,里芋,majority,CJK
+EEU_012,groch,majority,Latin
+OCE_008,Kua kaheko te tuna i roto i aku ringa,majority,Latin
+T_015,रति,majority,Devanagari
+SEA_013,anak kambing,majority,Latin
+T_095,乾杯しよう,majority,CJK
+SEA_009,sasmitaning tembang,first_form_T3,Latin
+T_089,nightcap,majority,Latin
+NET_005,五月三十五日,majority,CJK
+T_078,一線を越える,majority,CJK
+T_079,体の関係,majority,CJK
+T_049,莲,majority,CJK
+NEU_015,Sampo,majority,Latin
+NEU_017,dúnad,majority,Latin
+MET_015,kande,majority,Latin
+T_051,梨,majority,CJK
+T_002,紅葉,majority,CJK
+NEU_016,tulen synty,majority,Latin
+EEU_010,Napoić konia u studni,majority,Latin
+T_090,一杯やる,majority,CJK
+T_042,amant,majority,Latin
+MAYA_001,ch'ab ak'ab,majority,Latin
+NEU_014,kirnuamis-arvoitus,majority,Latin
+T_091,飲みに行く,majority,CJK
+T_016,काम,majority,Devanagari
+T_070,spend the night,majority,Latin
+T_080,深い関係,majority,CJK
+EEU_015,красота,majority,Cyrillic
+T_020,श्रृंगार,majority,Devanagari
+NET_001,라면 먹고 갈래?,majority,Other
+EEU_002,Волосатая головка за щеку заходит ловко,majority,Cyrillic
+T_009,寝る,majority,CJK
+T_011,振る,majority,CJK
+SEA_007,Đèo Ba Dội,majority,Latin
+T_103,salute,majority,Latin
+AFR_009,Inkunzi,majority,Latin
+OCE_002,Kungkarangkalpa,majority,Latin
+T_073,sleep together,majority,Latin
+T_026,ساقی,majority,Arabic
+NEU_003,valbjórr,majority,Latin
+T_044,commerce,majority,Latin
+T_059,鯛,majority,CJK
+AFR_008,oríkì ìdílé,majority,Latin
+OCE_001,inma,majority,Latin
+MET_014,rüzgâr,majority,Latin
+NAH_003,"in teoatl, in tlachinolli",majority,Latin
+OCE_003,lehua,majority,Latin
+QCH_005,K'intu,majority,Latin
+QCH_003,Ukhu Pacha,majority,Latin
+T_045,蝠,majority,CJK
+AFR_003,ፍቅር,majority,Ethiopic
+T_040,liaison,majority,Latin
+AFR_006,Ina ninu ẹnu,majority,Latin
+MET_007,يَدٌ بَيْضَاء,majority,Arabic
+EEU_007,седельце черкасское,majority,Cyrillic
+EEU_005,"Без рук, без ног на бабу скок!",majority,Cyrillic
+OCE_004,Aloha ʻOe,majority,Latin
+MET_005,أبو زيد السروجي,majority,Arabic
+T_083,お泊まり,majority,CJK
+T_075,get lucky,majority,Latin
+NEU_012,beadu-swāt,majority,Latin
+T_037,baiser,majority,Latin
+T_053,花生,majority,CJK
+T_096,bow deeply,majority,Latin
+EEU_008,добрый молодец,majority,Cyrillic
+T_036,mourir,majority,Latin
+QCH_002,Supay,majority,Latin
+T_093,二軒目行こう,majority,CJK
+T_067,煮しめ,majority,CJK
+MAYA_002,che' tunich,majority,Latin
+T_012,眺め,majority,CJK
+T_063,紅白かまぼこ,majority,CJK
+NAH_007,"in cuauhtli, in ocelotl",majority,Latin
+T_101,stand in silence,majority,Latin
+NEU_008,Exeter Book Riddle 44 — key/lock riddle,fallback_original,Latin
+NAH_005,"in ixtli, in yollotl",majority,Latin
+MAYA_006,pan kab,majority,Latin
+T_047,鱼,majority,CJK
+AFR_002,ሆዳም,majority,Ethiopic
+EEU_006,мать сыра земля,majority,Cyrillic
+T_066,ごぼう,majority,CJK
+T_054,扇,majority,CJK
+T_086,crack open a cold one,majority,Latin
+T_019,विलास,majority,Devanagari
+EEU_014,"Зверху чорна,
+Унутры красна.
+Як усунеш, дык прэкрасна",majority,Cyrillic
+SEA_004,bunga kiambang,majority,Latin
+MET_010,يَدُ اللَّه,majority,Arabic
+SEA_014,con cò,majority,Latin
+T_032,خرابات,majority,Arabic
+MET_009,نَؤُومُ الضُّحَى,majority,Arabic
+T_025,شراب,majority,Arabic
+T_001,牡丹,majority,CJK
+QCH_004,Watuchikuna,majority,Latin
+SEA_012,[technique: single vowel/consonant substitution creating near-homophone of sexual word],fallback_original,Latin
+NEU_006,valr,majority,Latin
+SEA_002,bunga dan kumbang,majority,Latin
+AFR_015,Wɔkɔɔ fie,majority,Latin
+T_041,affaire,majority,Latin
+T_058,昆布,majority,CJK
+NEU_002,hrafnvín,majority,Latin
+AFR_010,Inkunzi engenazimpondo,majority,Latin
+NEU_001,hronrád,first_form_T3,Latin
+T_048,桔,majority,CJK
+NAH_006,"in atl, in tepetl",majority,Latin
+T_033,رند,majority,Arabic
+EEU_009,белые руки,majority,Cyrillic
+T_035,jouir,majority,Latin
+NET_003,unalive,majority,Latin
+T_013,散る,majority,CJK
+T_014,包む,majority,CJK
+T_077,手を出す,majority,CJK
+EEU_004,"Красна девица сидит в темнице, а коса на улице",majority,Cyrillic
+T_010,乱れる,majority,CJK
+T_018,रस,majority,Devanagari
+EEU_003,"Шерстка с шерсткой слипаются, ночной сладости дожидаются",majority,Cyrillic
+T_068,Netflix and chill,majority,Latin
+AFR_007,Oṣé Ṣàngó,majority,Latin
+T_004,柏,majority,CJK
+T_062,伊達巻,majority,CJK
+NEU_009,Exeter Book Riddle 45 — dough/bread riddle,fallback_original,Latin
+T_060,蓮根,majority,CJK
+T_071,go back to my place,majority,Latin
+MET_016,bahâr,majority,Latin
+T_100,kneel before,majority,Latin
+EEU_011,oranie,first_form_T3,Latin
+SEA_006,quả mít trên cành,majority,Latin
+MET_001,عَيْن,majority,Arabic
+MAYA_004,"Suyua T'an riddle: 'Bring me the sun in my plate... a green jaguar seated on top, bleeding'",fallback_original,Latin
+AFR_012,Izibongo zenkosi,majority,Latin
+T_069,come up for coffee,majority,Latin
+T_057,海老,majority,CJK
+T_087,happy hour,majority,Latin
+SEA_015,เพลงฉ่อย,majority,Other
+NEU_005,grennir gunn-más,majority,Latin
+T_031,بلبل,majority,Arabic
+T_043,galant,majority,Latin
+QCH_006,Ritual address to landscape entities,majority,Latin
+MET_006,طَوِيلُ النِّجَاد,majority,Arabic
+T_097,shake hands,majority,Latin
+T_056,数の子,majority,CJK
+NEU_013,kaivo-arvoitus,majority,Latin
+T_029,خال,majority,Arabic
+SEA_001,selasih,majority,Latin
+T_076,床を共にする,majority,CJK
+MET_011,وَجْهُ اللَّه,majority,Arabic
+T_061,栗きんとん,majority,CJK

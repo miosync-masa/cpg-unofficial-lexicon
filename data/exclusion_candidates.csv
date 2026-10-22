@@ -1,0 +1,92 @@
+item_id,host_original,host_romanized,problem_type,proposed_action
+AFR_002,ሆዳም,Hodam (glutton / fat stomach),parenthetical_gloss,keep
+AFR_003,ፍቅር (fikir — love expression / poem),fikir,parenthetical_gloss,keep
+AFR_005,AJE (àjẹ̀ / àjé),Aje,parenthetical_gloss,keep
+AFR_006,Ina ninu ẹnu (fire in his mouth),Ina ninu enu,parenthetical_gloss,keep
+AFR_007,Oṣé Ṣàngó (double-headed battle axe),Ose Sango,parenthetical_gloss,keep
+AFR_008,Royal oríkì (oriki ìdílé / lineage praise),oriki idale,parenthetical_gloss,keep
+AFR_009,Inkunzi (bull),inkunzi,parenthetical_gloss,keep
+AFR_010,Inkunzi engenazimpondo (bull without horns / hornless ox),inkunzi engenazimpondo,long_text;parenthetical_gloss,keep
+AFR_011,Ndlovu (elephant),Ndlovu,parenthetical_gloss,keep
+AFR_012,Izibongo zenkosi (royal praise poem for the Prince of Wales),Izibongo zenkosi,parenthetical_gloss,keep
+AFR_013,"Sɛ wo werɛ fi na wosankofa a, yenkyi","Se wo were fi na wosankofa a, yenkyi",long_text,keep
+AFR_014,"Owuo atwedɛɛ, baako foɔ mforo",Owuo atwedee baako foo mforo,long_text,keep
+AFR_015,Wɔkɔɔ fie / Wɔsan kɔɔ n'asase so,Wokoo fie (He/she went home) / Wosan koo n'asase so (returned to the earth),multiple_forms;parenthetical_gloss,use_first_form
+EEU_001,"Красная головка, под ней — бородка, утром рано встаёт, Маше спать не даёт","Krasnaya golovka, pod ney — borodka, utrom rano vstayot, Mashe spat' ne dayot",long_text,keep
+EEU_002,Волосатая головка за щеку заходит ловко,Volosataya golovka za shcheku zakhodit lovko,long_text,keep
+EEU_003,"Шерстка с шерсткой слипаются, / Ночной сладости дожидаются","Sherstka s sherstkoy slipayutsya, / Nochnoy sladosti dozhidayutsya",long_text_lines,ask_author
+EEU_004,"Красна девица сидит в темнице, а коса на улице","Krasna devitsa sidit v temnitse, a kosa na ulitse",long_text,keep
+EEU_005,"Без рук, без ног на бабу скок!","Bez ruk, bez nog na babu skok!",long_text,keep
+EEU_007,седельце черкасское,sedel'tse cherkasskoe,long_text,keep
+EEU_010,Napoić konia / напоить коня у колодца (водопой),Napoić konia u studni / Napoit' konya u kolodtsa,long_text_lines;parenthetical_gloss,ask_author
+EEU_011,oranie / zaorać pole (plowing / to plow a field),oranie pola / zaorać,multiple_forms;parenthetical_gloss,use_first_form
+EEU_012,groch / hrách (pea),groch (Polish) / hrách (Czech),multiple_forms;parenthetical_gloss,use_first_form
+EEU_013,"Мяне мілы спалюбіў, сярод поля заваліў: / Грэх ня грэх, а мне хочацца","Myane mily spalyubiv, syarod polya zavaliv: / Grekh nya grekh, a mne khochatsya",long_text_lines,ask_author
+EEU_014,"Зверху чорна, / Унутры красна. / Як усунеш, дык прэкрасна","Zvyerkhu chorna, / Unutry krasna. / Yak usunesh, dyk prekkrasna",long_text_lines,ask_author
+EEU_015,"красота (krasota) — the ritual beauty object (hair ribbon, wreath, hairdress)",krasota,english_description;dash_appendix;long_text;parenthetical_gloss,ask_author
+MAYA_003,ch'en actun (actunchhen),ch'en / actun,parenthetical_gloss;multiple_forms,use_first_form
+MAYA_004,"Suyua T'an riddle: 'Bring me the sun in my plate... a green jaguar seated on top, bleeding'",Suyua T'an / Zuyua T'an (twisted/deceptive speech),english_description;long_text;multiple_forms;parenthetical_gloss,ask_author
+MAYA_005,Paired day-motif + night-motif (floral/solar + celestial-band/nocturnal),(visual diphrasis — no spoken form),english_description;combined_forms;long_text;parenthetical_gloss;no_form,ask_author
+MAYA_006,pan kab / tal kab,pan kab / tal kab,multiple_forms,use_first_form
+MET_005,Maqāmāt narrative tawriya — Abū Zayd al-Sarūjī,Abū Zayd's rhetorical persona in al-Ḥarīrī's Maqāmāt (12th c.),dash_appendix;long_text;parenthetical_gloss,ask_author
+MET_012,فُضُولِي / Fuzûlî,Fuzūlī,multiple_forms,use_first_form
+NAH_001,"in xochitl, in cuicatl","in xochitl, in cuicatl",long_text,keep
+NAH_002,"in cuitlapilli, in ahtlapalli","in cuitlapilli, in ahtlapalli",long_text,keep
+NAH_003,"in teoatl, in tlachinolli","in teoatl, in tlachinolli",long_text,keep
+NAH_004,"in tlilli, in tlapalli","in tlilli, in tlapalli",long_text,keep
+NAH_006,"in atl, in tepetl","in atl, in tepetl (contracted: altepetl)",parenthetical_gloss,keep
+NAH_007,"in cuauhtli, in ocelotl","in cuauhtli, in ocelotl",long_text,keep
+NAH_008,"in toptli, in petlacalli","in toptli, in petlacalli",long_text,keep
+NET_001,라면 먹고 갈래?,Ramyeon meokgo gallae?,long_text,keep
+NET_002,🍆 (eggplant emoji) and 🍑 (peach emoji),eggplant emoji; peach emoji,combined_forms;parenthetical_gloss;multiple_forms,ask_author
+NET_003,unalive / corn / le dollar bean / seggs / grape,unalive (death/suicide); corn (pornography); le dollar bean (lesbian); seggs (sex); grape (rape),multiple_forms;parenthetical_gloss,ask_author
+NET_004,草泥马 (Grass Mud Horse — a fictitious alpaca-like creature),Cǎonímǎ,parenthetical_gloss,keep
+NET_005,五月三十五日 (May 35th),Wǔyuè sānshíwǔrì,parenthetical_gloss,keep
+NET_006,304 (three-digit number),three-oh-four,parenthetical_gloss,keep
+NET_007,Netflix and chill,Netflix and chill,combined_forms,ask_author
+NEU_001,hronrád / hwælweg,hron-rád / hwæl-weg,multiple_forms,use_first_form
+NEU_003,valbjórr / hrælœkr,val-bjórr / hræ-lœkr,multiple_forms,use_first_form
+NEU_004,Kvasirs blóð / skáldskapar mjǫðr,Kvasirs blóð / skáldskap-ar mjǫðr,multiple_forms,use_first_form
+NEU_006,beinhjálmr / valr used for 'horse',valr (falcon) → horse (via mythological confusion),english_description;long_text_lines;parenthetical_gloss,ask_author
+NEU_007,Exeter Book Riddle 25 — ānpæð + wigan,Riddle 25 (Old English): 'Ic eom wunderlicu wiht... wifum on hyhte' (I am a wondrous creature... a joy to women),dash_appendix;combined_forms;long_text;parenthetical_gloss,ask_author
+NEU_008,Exeter Book Riddle 44 — key/lock riddle,Riddle 44: 'Wiht is wrætlic... wæpned guma' (A wondrous thing hangs by a man's thigh),dash_appendix;long_text_lines;long_text;parenthetical_gloss,ask_author
+NEU_009,Exeter Book Riddle 45 — dough/bread riddle,Riddle 45: 'Ic on wincle gefrægn... under hrægle hreran' (I heard of a young man... lifting her dress),dash_appendix;long_text_lines;long_text;parenthetical_gloss,ask_author
+NEU_010,Exeter Book Riddle 37 — bellows riddle,Riddle 37: 'Ic þa wiht geseah... wræstlice gewundenne' (I saw a creature wondrously wrought),dash_appendix;long_text;parenthetical_gloss,ask_author
+NEU_011,bānhūs,bān-hūs (bone-house),parenthetical_gloss,keep
+NEU_012,beadu-swāt / gūð-swāt,beadu-swāt (battle-sweat) / gūð-swāt (war-sweat),multiple_forms;parenthetical_gloss,use_first_form
+NEU_013,kaivo-arvoitus (draw-well riddle),kaivo-arvoitus,parenthetical_gloss,keep
+NEU_014,kirnuamis-arvoitus (churning riddle),kirnuamis-arvoitus,parenthetical_gloss,keep
+NEU_016,tulen synty (birth of fire),tulen synty,parenthetical_gloss,keep
+NEU_017,dúnad / dúnadh,dúnad (closing),multiple_forms;parenthetical_gloss,use_first_form
+NEU_018,Pangur Bán (9th century Irish poem),messe ocus Pangur Bán (I and Pangur Bán),parenthetical_gloss;long_text,keep
+OCE_001,inma (ceremony/song sequence encoding ancestor journey),inma,parenthetical_gloss,keep
+OCE_002,Kungkarangkalpa (Seven Sisters / Pleiades star cluster),Kungkarangkalpa,parenthetical_gloss,keep
+OCE_003,"lehua (ʻōhiʻa lehua blossom, Metrosideros polymorpha)",lehua,parenthetical_gloss,keep
+OCE_004,Aloha ʻOe (Farewell to Thee) — song composed c. 1878 by Princess Liliʻuokalani,Aloha ʻOe,english_description;dash_appendix;long_text;parenthetical_gloss,ask_author
+OCE_005,pua (blossom/flower),pua,parenthetical_gloss,keep
+OCE_006,Sanoe (sanoe = drifting mountain mist),sanoe,parenthetical_gloss,keep
+OCE_007,"Toitū te whenua, whatungarongaro te tangata","Toitū te whenua, whatungarongaro te tangata",long_text,keep
+OCE_008,Kua kaheko te tuna i roto i aku ringa,Kua kaheko te tuna i roto i aku ringa,long_text,keep
+QCH_001,Unuy wiqillam apariwan / Yakuy parallam pusariwan,unu/yaku (water) + wiqi/para (tears/rain),long_text_lines;combined_forms;multiple_forms;parenthetical_gloss,ask_author
+QCH_003,Ukhu Pacha / Hanaq Pacha,ukhu pacha / hanaq pacha,multiple_forms,use_first_form
+QCH_004,"Watuchikuna (riddle objects: needle, corn, natural implements)",watuchikuna / watuchis,parenthetical_gloss;multiple_forms,use_first_form
+QCH_005,"K'intu (kintu, quintu)",k'intu,parenthetical_gloss,keep
+QCH_006,"Ritual address to landscape entities (mountains, springs, fields)",(speech act genre),english_description;long_text;parenthetical_gloss;no_form,ask_author
+SEA_001,selasih (سلاسيه — sweet basil plant),selasih,parenthetical_gloss,keep
+SEA_002,bunga dan kumbang (بوڠا دان کومباڠ — flower and bee),bunga dan kumbang,parenthetical_gloss,keep
+SEA_003,tupai (توڤاي — squirrel),tupai,parenthetical_gloss,keep
+SEA_004,bunga kiambang (بوڠا كيمبڠ — water hyacinth),bunga kiambang,parenthetical_gloss,keep
+SEA_005,kain (كاين — cloth / blanket),kain,parenthetical_gloss,keep
+SEA_006,quả mít trên cành (jackfruit on the branch),quả mít trên cành,parenthetical_gloss,keep
+SEA_007,đèo (mountain pass/cliff) — Đèo Ba Dội (Three Mountain Pass),Đèo Ba Dội,dash_appendix;parenthetical_gloss,ask_author
+SEA_008,miếng trầu / trầu cau (betel leaf + areca nut combination),miếng trầu; trầu cau,multiple_forms;parenthetical_gloss,use_first_form
+SEA_009,sasmitaning tembang (ꦱꦱ꧀ꦩꦶꦠꦤꦶꦁ ꦠꦼꦩ꧀ꦧꦁ — indicator/signal word embedded in verse),sasmita / sasmitaning tembang,parenthetical_gloss;multiple_forms,use_first_form
+SEA_010,Maskumambang (ꦩꦱ꧀ꦏꦸꦩꦩ꧀ꦧꦁ — meter/song name: mas=gold + kumambang=floating),Maskumambang,parenthetical_gloss,keep
+SEA_011,หูคัน (khan hu — 'itchy ear'),khan hu (หูคัน),parenthetical_gloss,keep
+SEA_012,[technique: single vowel/consonant substitution creating near-homophone of sexual word],[technique-level item — specific word examples require Thai-language access],placeholder_brackets;no_form,exclude
+SEA_013,anak kambing (أنق كمبيڠ — baby goat),anak kambing,parenthetical_gloss,keep
+SEA_014,con cò (crane/egret — 鶴),con cò,parenthetical_gloss,keep
+SEA_015,phleng choi performance frame (เพลงฉ่อย — improvised call-and-response song),phleng choi,english_description;long_text;parenthetical_gloss,ask_author
+T_068,Netflix and chill,netflix_and_chill,combined_forms,ask_author
+T_086,crack open a cold one,crack_open_cold_one,long_text,keep
+T_102,clasp hands in prayer,clasp_hands_prayer,long_text,keep

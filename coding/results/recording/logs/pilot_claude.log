@@ -1,0 +1,6 @@
+  batch NET_006.. attempt 1 failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+  batch NET_006.. attempt 2 failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+  batch NET_006.. attempt 3 failed: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+10 items to code with anthropic:claude-opus-5-5
+  coded 10/10
+done: results/recording_claude.csv

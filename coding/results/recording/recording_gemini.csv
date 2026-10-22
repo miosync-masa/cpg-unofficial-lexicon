@@ -1,0 +1,218 @@
+item_id,form_status,recording_status,recording_evidence,recording_confidence,status,model
+NET_006,existing_form,unrecorded,online usage only,3,ok,gemini-3.1-pro-preview
+T_052,existing_form,cultural_reference,folklore guide,3,ok,gemini-3.1-pro-preview
+T_023,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+NEU_004,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+AFR_013,existing_form,cultural_reference,ethnography,3,ok,gemini-3.1-pro-preview
+T_088,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+NEU_011,novel_form,cultural_reference,poetic-diction dictionary,3,ok,gemini-3.1-pro-preview
+T_005,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+MET_012,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_098,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_082,existing_form,unrecorded,oral tradition and in-group speech,2,ok,gemini-3.1-pro-preview
+MET_013,existing_form,cultural_reference,rhetoric dictionary or scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_022,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+QCH_001,existing_form,cultural_reference,scholarly commentary and ethnography,3,ok,gemini-3.1-pro-preview
+OCE_007,existing_form,cultural_reference,folklore guide and proverb collection,3,ok,gemini-3.1-pro-preview
+AFR_011,existing_form,cultural_reference,scholarly edition and ethnography,3,ok,gemini-3.1-pro-preview
+T_046,existing_form,cultural_reference,symbol and folklore dictionary,3,ok,gemini-3.1-pro-preview
+SEA_003,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_007,existing_form,cultural_reference,poetic-diction dictionary,3,ok,gemini-3.1-pro-preview
+MAYA_005,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_055,existing_form,cultural_reference,"encyclopaedias, established guides to customs",3,ok,gemini-3.1-pro-preview
+SEA_005,existing_form,cultural_reference,"scholarly commentaries, poetic-diction dictionaries",3,ok,gemini-3.1-pro-preview
+AFR_001,existing_form,cultural_reference,scholarly commentaries and editions,3,ok,gemini-3.1-pro-preview
+T_003,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_074,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+SEA_008,existing_form,cultural_reference,"ethnographies, folklore guides, scholarly editions",3,ok,gemini-3.1-pro-preview
+T_028,existing_form,cultural_reference,"poetic-diction dictionaries, symbol dictionaries, scholarly commentaries",3,ok,gemini-3.1-pro-preview
+T_006,existing_form,cultural_reference,"poetic-diction dictionaries, scholarly commentaries",3,ok,gemini-3.1-pro-preview
+NAH_001,existing_form,cultural_reference,"scholarly commentaries, ethnographies",3,ok,gemini-3.1-pro-preview
+NET_002,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_081,existing_form,unrecorded,online usage only / oral tradition,2,ok,gemini-3.1-pro-preview
+T_030,existing_form,cultural_reference,poetic-diction dictionary,3,ok,gemini-3.1-pro-preview
+NEU_007,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+T_092,existing_form,unrecorded,oral tradition,2,ok,gemini-3.1-pro-preview
+T_024,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+MET_008,existing_form,cultural_reference,rhetoric dictionary,3,ok,gemini-3.1-pro-preview
+T_085,existing_form,general_dictionary,general dictionary sense,2,ok,gemini-3.1-pro-preview
+EEU_001,existing_form,cultural_reference,folklore guide,3,ok,gemini-3.1-pro-preview
+NAH_008,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+EEU_013,existing_form,cultural_reference,folklore guide,3,ok,gemini-3.1-pro-preview
+T_050,existing_form,cultural_reference,folklore and symbol dictionaries,3,ok,gemini-3.1-pro-preview
+SEA_011,existing_form,cultural_reference,scholarly commentary and cultural analysis,3,ok,gemini-3.1-pro-preview
+SEA_010,existing_form,cultural_reference,scholarly articles and cultural heritage documentation,3,ok,gemini-3.1-pro-preview
+NET_007,existing_form,general_dictionary,general dictionary slang sense,3,ok,gemini-3.1-pro-preview
+NEU_018,existing_form,cultural_reference,scholarly editions and literary commentary,3,ok,gemini-3.1-pro-preview
+T_072,existing_form,general_dictionary,general dictionary idiom/euphemism sense,3,ok,gemini-3.1-pro-preview
+NAH_002,existing_form,cultural_reference,scholarly editions and dictionaries of poetic diction/metaphor,3,ok,gemini-3.1-pro-preview
+NEU_010,existing_form,cultural_reference,scholarly commentary and literary editions,3,ok,gemini-3.1-pro-preview
+T_027,existing_form,cultural_reference,poetic-diction dictionaries and scholarly commentaries,3,ok,gemini-3.1-pro-preview
+AFR_005,existing_form,cultural_reference,scholarly commentary on oral traditions,2,ok,gemini-3.1-pro-preview
+T_008,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+OCE_006,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+AFR_004,existing_form,cultural_reference,ethnography,3,ok,gemini-3.1-pro-preview
+T_038,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_021,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+MAYA_003,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+AFR_014,existing_form,cultural_reference,folklore guide,3,ok,gemini-3.1-pro-preview
+T_099,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_034,existing_form,cultural_reference,poetic-diction dictionary,3,ok,gemini-3.1-pro-preview
+T_039,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_102,existing_form,cultural_reference,symbol dictionary,2,ok,gemini-3.1-pro-preview
+T_017,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+MET_003,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_084,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+NET_004,novel_form,cultural_reference,encyclopaedia,3,ok,gemini-3.1-pro-preview
+OCE_005,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+MET_002,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_094,existing_form,unrecorded,oral tradition,2,ok,gemini-3.1-pro-preview
+NAH_004,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+MET_004,existing_form,cultural_reference,rhetoric dictionary,3,ok,gemini-3.1-pro-preview
+T_064,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_065,existing_form,cultural_reference,folklore guide,3,ok,gemini-3.1-pro-preview
+EEU_012,existing_form,cultural_reference,ethnography,3,ok,gemini-3.1-pro-preview
+OCE_008,existing_form,cultural_reference,proverb collection,3,ok,gemini-3.1-pro-preview
+T_015,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+SEA_013,existing_form,cultural_reference,folk song commentary,3,ok,gemini-3.1-pro-preview
+T_095,existing_form,unrecorded,in-group speech,2,ok,gemini-3.1-pro-preview
+SEA_009,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_089,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+NET_005,novel_form,cultural_reference,encyclopaedia,3,ok,gemini-3.1-pro-preview
+T_078,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_079,existing_form,general_dictionary,general dictionary sense,2,ok,gemini-3.1-pro-preview
+T_049,existing_form,cultural_reference,poetic-diction dictionary,3,ok,gemini-3.1-pro-preview
+NEU_015,existing_form,cultural_reference,encyclopaedia,3,ok,gemini-3.1-pro-preview
+NEU_017,existing_form,cultural_reference,encyclopaedia,3,ok,gemini-3.1-pro-preview
+MET_015,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_051,existing_form,cultural_reference,folklore guide,3,ok,gemini-3.1-pro-preview
+T_002,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+NEU_016,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+EEU_010,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_090,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_042,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+MAYA_001,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+NEU_014,existing_form,cultural_reference,scholarly article,3,ok,gemini-3.1-pro-preview
+T_091,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_016,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_070,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_080,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+EEU_015,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+T_020,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+NET_001,existing_form,unrecorded,online usage only,3,ok,gemini-3.1-pro-preview
+EEU_002,existing_form,cultural_reference,folklore guide,3,ok,gemini-3.1-pro-preview
+T_009,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_011,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+SEA_007,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+T_103,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+AFR_009,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+OCE_002,existing_form,cultural_reference,ethnography,3,ok,gemini-3.1-pro-preview
+T_073,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_026,existing_form,general_dictionary,general dictionary sense,2,ok,gemini-3.1-pro-preview
+NEU_003,novel_form,cultural_reference,poetic-diction dictionary,3,ok,gemini-3.1-pro-preview
+T_044,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_059,existing_form,cultural_reference,folklore guide,3,ok,gemini-3.1-pro-preview
+AFR_008,existing_form,cultural_reference,ethnography and scholarly commentary,3,ok,gemini-3.1-pro-preview
+OCE_001,existing_form,cultural_reference,ethnography,3,ok,gemini-3.1-pro-preview
+MET_014,existing_form,general_dictionary,general dictionary sense,2,ok,gemini-3.1-pro-preview
+NAH_003,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+OCE_003,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+QCH_005,existing_form,cultural_reference,ethnography,3,ok,gemini-3.1-pro-preview
+QCH_003,existing_form,cultural_reference,ethnography and scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_045,existing_form,cultural_reference,symbol dictionary,3,ok,gemini-3.1-pro-preview
+AFR_003,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_040,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+AFR_006,existing_form,cultural_reference,ethnography,3,ok,gemini-3.1-pro-preview
+MET_007,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+EEU_007,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+EEU_005,existing_form,cultural_reference,folklore collection,3,ok,gemini-3.1-pro-preview
+OCE_004,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+MET_005,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_083,existing_form,unrecorded,in-group speech,2,ok,gemini-3.1-pro-preview
+T_075,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+NEU_012,novel_form,cultural_reference,scholarly edition and poetic-diction dictionary,3,ok,gemini-3.1-pro-preview
+T_037,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_053,existing_form,cultural_reference,symbol and folklore dictionary,3,ok,gemini-3.1-pro-preview
+T_096,existing_form,cultural_reference,guide to customs,3,ok,gemini-3.1-pro-preview
+EEU_008,existing_form,cultural_reference,scholarly commentary and folklore guide,3,ok,gemini-3.1-pro-preview
+T_036,existing_form,cultural_reference,scholarly commentary and historical dictionary,3,ok,gemini-3.1-pro-preview
+QCH_002,existing_form,general_dictionary,historical general dictionary,3,ok,gemini-3.1-pro-preview
+T_093,existing_form,unrecorded,oral tradition and in-group speech,2,ok,gemini-3.1-pro-preview
+T_067,existing_form,cultural_reference,guide to customs and cultural reference,3,ok,gemini-3.1-pro-preview
+MAYA_002,existing_form,cultural_reference,scholarly article,3,ok,gemini-3.1-pro-preview
+T_012,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_063,existing_form,cultural_reference,folklore guide,3,ok,gemini-3.1-pro-preview
+NAH_007,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+T_101,existing_form,cultural_reference,guide to customs,3,ok,gemini-3.1-pro-preview
+NEU_008,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+NAH_005,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+MAYA_006,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_047,existing_form,cultural_reference,symbol dictionary,3,ok,gemini-3.1-pro-preview
+AFR_002,existing_form,unrecorded,online communities and oral tradition,2,ok,gemini-3.1-pro-preview
+EEU_006,existing_form,cultural_reference,folklore scholarship and encyclopedias,3,ok,gemini-3.1-pro-preview
+T_066,existing_form,cultural_reference,cultural guides to customs,3,ok,gemini-3.1-pro-preview
+T_054,existing_form,cultural_reference,dictionaries of symbols and motifs,3,ok,gemini-3.1-pro-preview
+T_086,existing_form,general_dictionary,general dictionary idiom entry,3,ok,gemini-3.1-pro-preview
+T_019,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+EEU_014,existing_form,cultural_reference,folklore collections,3,ok,gemini-3.1-pro-preview
+SEA_004,existing_form,cultural_reference,literary and folklore guides,3,ok,gemini-3.1-pro-preview
+MET_010,existing_form,cultural_reference,scholarly commentaries and rhetoric dictionaries,3,ok,gemini-3.1-pro-preview
+SEA_014,existing_form,cultural_reference,scholarly editions of folk poetry,3,ok,gemini-3.1-pro-preview
+T_032,existing_form,cultural_reference,dictionaries of poetic diction and scholarly commentaries,3,ok,gemini-3.1-pro-preview
+MET_009,existing_form,cultural_reference,rhetoric dictionary,3,ok,gemini-3.1-pro-preview
+T_025,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_001,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+QCH_004,existing_form,cultural_reference,ethnography,3,ok,gemini-3.1-pro-preview
+SEA_012,novel_form,cultural_reference,scholarly article,2,ok,gemini-3.1-pro-preview
+NEU_006,existing_form,cultural_reference,poetic-diction dictionary,3,ok,gemini-3.1-pro-preview
+SEA_002,existing_form,cultural_reference,folklore guide,3,ok,gemini-3.1-pro-preview
+AFR_015,existing_form,cultural_reference,scholarly article,3,ok,gemini-3.1-pro-preview
+T_041,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_058,existing_form,cultural_reference,guide to customs,3,ok,gemini-3.1-pro-preview
+NEU_002,novel_form,cultural_reference,poetic-diction dictionary / scholarly edition,3,ok,gemini-3.1-pro-preview
+AFR_010,existing_form,cultural_reference,scholarly edition / ethnography,3,ok,gemini-3.1-pro-preview
+NEU_001,novel_form,cultural_reference,poetic-diction dictionary / scholarly edition,3,ok,gemini-3.1-pro-preview
+T_048,existing_form,cultural_reference,symbol dictionary / folklore guide,3,ok,gemini-3.1-pro-preview
+NAH_006,existing_form,cultural_reference,scholarly commentary / specialized dictionary,3,ok,gemini-3.1-pro-preview
+T_033,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+EEU_009,existing_form,cultural_reference,folklore guide / literary terminology dictionary,3,ok,gemini-3.1-pro-preview
+T_035,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+NET_003,novel_form,unrecorded,online usage only,3,ok,gemini-3.1-pro-preview
+T_013,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_014,existing_form,cultural_reference,poetic-diction dictionary,2,ok,gemini-3.1-pro-preview
+T_077,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+EEU_004,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+T_010,existing_form,cultural_reference,poetic-diction dictionary,3,ok,gemini-3.1-pro-preview
+T_018,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+EEU_003,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+T_068,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+AFR_007,existing_form,cultural_reference,encyclopaedia,3,ok,gemini-3.1-pro-preview
+T_004,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_062,existing_form,cultural_reference,guide to customs,3,ok,gemini-3.1-pro-preview
+NEU_009,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+T_060,existing_form,cultural_reference,encyclopedia of customs,3,ok,gemini-3.1-pro-preview
+T_071,existing_form,unrecorded,oral tradition,2,ok,gemini-3.1-pro-preview
+MET_016,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_100,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+EEU_011,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+SEA_006,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+MET_001,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+MAYA_004,existing_form,cultural_reference,scholarly edition,3,ok,gemini-3.1-pro-preview
+AFR_012,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_069,existing_form,unrecorded,oral tradition / media trope,2,ok,gemini-3.1-pro-preview
+T_057,existing_form,cultural_reference,folklore guide / cultural encyclopedia,3,ok,gemini-3.1-pro-preview
+T_087,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+SEA_015,existing_form,cultural_reference,ethnography / scholarly commentary,3,ok,gemini-3.1-pro-preview
+NEU_005,novel_form,cultural_reference,poetic-diction dictionary / scholarly edition,3,ok,gemini-3.1-pro-preview
+T_031,existing_form,cultural_reference,poetic-diction dictionary / scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_043,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+QCH_006,existing_form,cultural_reference,ethnography / scholarly commentary,3,ok,gemini-3.1-pro-preview
+MET_006,existing_form,cultural_reference,rhetoric dictionary / scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_097,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+T_056,existing_form,cultural_reference,guide to customs,3,ok,gemini-3.1-pro-preview
+NEU_013,existing_form,cultural_reference,scholarly edition and folklore guide,3,ok,gemini-3.1-pro-preview
+T_029,existing_form,cultural_reference,poetic-diction dictionary and scholarly commentary,3,ok,gemini-3.1-pro-preview
+SEA_001,existing_form,cultural_reference,scholarly commentary and guide to poetry,3,ok,gemini-3.1-pro-preview
+T_076,existing_form,general_dictionary,general dictionary sense,3,ok,gemini-3.1-pro-preview
+MET_011,existing_form,cultural_reference,scholarly commentary,3,ok,gemini-3.1-pro-preview
+T_061,existing_form,cultural_reference,guide to customs,3,ok,gemini-3.1-pro-preview

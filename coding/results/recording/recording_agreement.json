@@ -1,0 +1,79 @@
+{
+ "coders": [
+  "gpt-5.6-sol",
+  "gemini-3.1-pro-preview",
+  "claude-opus-5-5"
+ ],
+ "n_items": 217,
+ "fleiss_kappa": {
+  "form_status": 0.869,
+  "recording_status": 0.773
+ },
+ "pct_unanimous": {
+  "form_status": 98.2,
+  "recording_status": 83.4
+ },
+ "consensus_distribution": {
+  "form_status": {
+   "existing_form": 207,
+   "novel_form": 10
+  },
+  "recording_status": {
+   "cultural_reference": 136,
+   "general_dictionary": 70,
+   "unrecorded": 10,
+   "UNRESOLVED": 1
+  }
+ },
+ "per_coder_distribution": {
+  "form_status": {
+   "gpt": {
+    "existing_form": 206,
+    "novel_form": 11
+   },
+   "gemini": {
+    "existing_form": 207,
+    "novel_form": 10
+   },
+   "claude": {
+    "existing_form": 206,
+    "novel_form": 11
+   }
+  },
+  "recording_status": {
+   "gpt": {
+    "cultural_reference": 140,
+    "general_dictionary": 69,
+    "unrecorded": 8
+   },
+   "gemini": {
+    "cultural_reference": 137,
+    "general_dictionary": 67,
+    "unrecorded": 13
+   },
+   "claude": {
+    "cultural_reference": 136,
+    "general_dictionary": 70,
+    "unrecorded": 11
+   }
+  }
+ },
+ "crosstab_recording_vs_first_cpg_valid": {
+  "UNRESOLVED": {
+   "no": 0,
+   "yes": 1
+  },
+  "cultural_reference": {
+   "no": 24,
+   "yes": 112
+  },
+  "general_dictionary": {
+   "no": 41,
+   "yes": 29
+  },
+  "unrecorded": {
+   "no": 3,
+   "yes": 7
+  }
+ }
+}

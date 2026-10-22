@@ -1,0 +1,26 @@
+  batch T_045.. attempt 1 failed: T_045: bad confidence
+  batch T_045.. attempt 2 failed: T_045: bad confidence
+217 items to code with google:gemini-3.1-pro-preview
+  coded 10/217
+  coded 20/217
+  coded 30/217
+  coded 40/217
+  coded 50/217
+  coded 60/217
+  coded 70/217
+  coded 80/217
+  coded 90/217
+  coded 100/217
+  coded 110/217
+  coded 120/217
+  coded 130/217
+  coded 140/217
+  coded 150/217
+  coded 160/217
+  coded 170/217
+  coded 180/217
+  coded 190/217
+  coded 200/217
+  coded 210/217
+  coded 217/217
+done: results/v1_1_gemini.csv

@@ -1,0 +1,7 @@
+{
+ "model": "gemini-embedding-001",
+ "n_items": 213,
+ "n_texts": 2128,
+ "n_failed": 0,
+ "seconds": 43
+}

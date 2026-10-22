@@ -1,0 +1,38 @@
+item_id,proposed_action,decision,first_form,reason
+MAYA_005,ask_author,exclude,,decision 1: no host form (visual diphrasis; host_romanized says no spoken form)
+QCH_006,ask_author,exclude,,decision 1: no host form (speech-act genre description)
+NET_003,ask_author,exclude,,decision 1: several different words listed (unalive / corn / le dollar bean / seggs / grape)
+NEU_006,ask_author,exclude,,decision 1: two different words listed (beinhjálmr / valr)
+NEU_007,ask_author,keep_utterance,,decision 1: Exeter Book riddle; host_unit = utterance
+NEU_008,ask_author,keep_utterance,,decision 1: Exeter Book riddle; host_unit = utterance
+NEU_009,ask_author,keep_utterance,,decision 1: Exeter Book riddle; host_unit = utterance
+NEU_010,ask_author,keep_utterance,,decision 1: Exeter Book riddle; host_unit = utterance
+EEU_003,ask_author,keep_utterance,,decision 1: whole verse lines; host_unit = utterance
+EEU_013,ask_author,keep_utterance,,decision 1: whole verse lines; host_unit = utterance
+EEU_014,ask_author,keep_utterance,,decision 1: whole verse lines; host_unit = utterance
+QCH_001,ask_author,keep_utterance,,decision 1: whole verse lines (couplet); host_unit = utterance
+EEU_010,ask_author,keep_no_rule_matched,,one expression given in Polish and Russian; none of the decision-1 cases
+EEU_015,ask_author,keep_no_rule_matched,,one form (красота) plus an English description; none of the decision-1 cases
+MAYA_004,ask_author,keep_no_rule_matched,,riddle quoted in English translation (not the original verse); none of the decision-1 cases
+MET_005,ask_author,keep_no_rule_matched,,literary device and persona named in a description; close to no host form but not named in decision 1
+NET_002,ask_author,keep_no_rule_matched,,two emoji used as one pair; not clearly several different words
+NET_007,ask_author,keep_no_rule_matched,,one fixed phrase (flagged only for ' and '); none of the decision-1 cases
+T_068,ask_author,keep_no_rule_matched,,one fixed phrase (flagged only for ' and '); none of the decision-1 cases
+OCE_004,ask_author,keep_no_rule_matched,,song title plus an English description; none of the decision-1 cases
+SEA_007,ask_author,keep_no_rule_matched,,place name plus an English description; none of the decision-1 cases
+SEA_015,ask_author,keep_no_rule_matched,,genre name plus an English description; none of the decision-1 cases
+EEU_011,use_first_form,adopt_first_form,oranie,decision 2: forms of one word (oranie / zaorać pole)
+EEU_012,use_first_form,adopt_first_form,groch,decision 2: one word in two spellings (Polish groch / Czech hrách)
+MET_012,use_first_form,adopt_first_form,فُضُولِي,decision 2: one name in two scripts (Arabic / Latin)
+NEU_001,use_first_form,adopt_first_form,hronrád,decision 2: the example named in the decision (hron-rád / hwæl-weg)
+NEU_012,use_first_form,adopt_first_form,beadu-swāt,decision 2: variants with the same meaning (battle-sweat / war-sweat)
+NEU_017,use_first_form,adopt_first_form,dúnad,decision 2: spelling variants (dúnad / dúnadh)
+QCH_004,use_first_form,adopt_first_form,Watuchikuna,decision 2: forms of one word (watuchikuna / watuchis)
+SEA_009,use_first_form,adopt_first_form,sasmitaning tembang,decision 2: one term (sasmita / sasmitaning tembang); first form of host_original
+QCH_003,use_first_form,exclude,,decision 2: different words with different meanings (lower world / upper world)
+AFR_015,use_first_form,not_adopted_unclear,,two different phrases for the same target (went home / returned to the earth): variant or different words is unclear
+NEU_003,use_first_form,not_adopted_unclear,,two different kennings for blood (slaughter-beer / corpse-stream): variant or different words is unclear
+NEU_004,use_first_form,not_adopted_unclear,,two different kennings for poetry (Kvasir's blood / mead of poetry): variant or different words is unclear
+SEA_008,use_first_form,not_adopted_unclear,,two related expressions (miếng trầu / trầu cau): variant or different words is unclear
+MAYA_003,use_first_form,not_adopted_unclear,,ch'en and actun are two words for cave/well: variant or different words is unclear
+MAYA_006,use_first_form,not_adopted_unclear,,pan kab / tal kab: meanings of the two forms not stated in the data
