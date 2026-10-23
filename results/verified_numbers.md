@@ -178,7 +178,7 @@ Full tables: `results/recording_results.md`.
 
 ## 13. T1–T4: clean hosts, condition C, codebook v1.1 (run 2026-10-22, `analysis/analyze_t1.py`, `coding/scripts/aggregate_v1_1.py`, `analysis/analyze_final.py`)
 
-Author decisions of 2026-10-22 applied here (full text: `docs/DECISIONS_2026-10-22.md`):
+Author decisions of 2026-10-22 applied here:
 1. ask_author items: no host form (MAYA_005, QCH_006) and several different words listed (NET_003; also NEU_006) are excluded; Exeter Book riddles and whole verse lines are kept with host_unit = utterance; items matching none of these are kept and listed (`docs/T3_exclusions.md`).
 2. use_first_form: variants of one item → first form becomes clean_host (embeddings recomputed with the three models); different words with different meanings → excluded; unclear → not adopted, listed.
 3. k = 10 (n fixed in advance) stays the primary analysis; k = 3, k = 5 and kall are sensitivity analyses.

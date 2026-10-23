@@ -7,7 +7,7 @@ Outputs:
     v1_1_consensus.csv   majority label per field (UNRESOLVED when no label has >= 2 of 3 votes), per-coder votes,
                          unanimity flags, mean confidence, the three rationales, cpg_scope (decision 5 of 2026-10-22:
                          yes iff form_type is existing_form or transparent_combination; UNRESOLVED if form_type is),
-                         cpg_scope_two_storey (the sheet's first definition, two_storey = yes and outsider_inference =
+                         cpg_scope_two_storey (the first definition, two_storey = yes and outsider_inference =
                          not_inferable; descriptive only),
                          old form_status (recording run) and first-run cpg_valid
     v1_1_agreement.json  Fleiss' kappa and % unanimous per field, label distributions, cross-tables
@@ -72,7 +72,7 @@ for t, c in zip(TAGS, coders):
 
 
 def scope_two_storey(r):
-    """First definition (instruction sheet); kept for description only since the decision of 2026-10-22."""
+    """First definition; kept for description only since the decision of 2026-10-22."""
     if "UNRESOLVED" in (r.two_storey, r.outsider_inference):
         return "UNRESOLVED"
     return "yes" if r.two_storey == "yes" and r.outsider_inference == "not_inferable" else "no"

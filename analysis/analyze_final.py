@@ -1,4 +1,4 @@
-"""T4 (instruction sheet v1.0, 2026-10-22): integrated table and analysis after T1, T2 and T3.
+"""T4 (analysis plan, 2026-10-22): integrated table and analysis after T1, T2 and T3.
 
 Usage: python3 analysis/analyze_final.py      (after embeddings/scripts/check_hosts.py, embeddings/scripts/build_clean.py, the condition-C embeddings,
                                       analysis/analyze_t1.py and coding/scripts/aggregate_v1_1.py)
@@ -43,7 +43,7 @@ T2F = ["form_type", "two_storey", "content_or_attitude", "outsider_inference", "
        "cpg_scope_two_storey"]
 KS = ["k10", "k3", "k5", "kall"]
 DECISIONS = [
-    "Author decisions of 2026-10-22 applied here (full text: `docs/DECISIONS_2026-10-22.md`):",
+    "Author decisions of 2026-10-22 applied here:",
     "1. ask_author items: no host form (MAYA_005, QCH_006) and several different words listed (NET_003; also NEU_006) "
     "are excluded; Exeter Book riddles and whole verse lines are kept with host_unit = utterance; items matching "
     "none of these are kept and listed (`docs/T3_exclusions.md`).",

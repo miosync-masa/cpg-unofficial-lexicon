@@ -7,7 +7,7 @@ Inputs : embeddings/results/nnpm_C_<model>.csv (condition C), embeddings/results
          coding/results/recording/recording_consensus.csv
 Outputs: results/t1_results.json, results/t1_results.md. No random numbers are used (seed fixed anyway).
 
-Hypotheses, fixed by the instruction sheet (v1.0, 2026-10-22) before condition C was computed:
+Hypotheses, fixed in the analysis plan (2026-10-22) before condition C was computed:
   H-C1  T3 exclusions applied, low_control items removed: mean pull_C_k10 > 0. Per model, mixed model
         pull ~ 1 + (1 | tradition), one-sided test of the intercept (z, normal sf); Holm across the 3 models.
         3 models with Holm p < .05 -> supported, 1-2 -> partly supported, 0 -> not supported.

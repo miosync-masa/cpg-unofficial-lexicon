@@ -22,7 +22,7 @@ Controls, applied in order, first rule that fires is recorded:
                   (key = norm() plus combining marks, i.e. tone and other diacritics, removed, and spaces removed)
   R2 substring    key(control) contains key(clean_host) or vice versa, both keys >= 2 characters
   R3 script       script(control) != script(clean_host); not applied when clean_host has no letters at all
-                  (digits or emoji, e.g. 304, 🍆 🍑), since such a host has no script to match (DEVIATIONS_T1_T3.md)
+                  (digits or emoji, e.g. 304, 🍆 🍑), since such a host has no script to match
   R4 duplicate    key(control) already kept for this item
 low_control = fewer than 5 kept. Controls are never regenerated.
 """

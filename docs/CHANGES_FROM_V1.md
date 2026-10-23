@@ -38,7 +38,7 @@ target (§9, "Gloss confound").
 **Fix.** Each item gets a clean host, the bare form, taken from the majority of the three LLM coders
 (`embeddings/controls/clean_hosts.csv`, built by `embeddings/scripts/build_clean.py`). Hosts with a problem a
 rule cannot settle were checked separately (T3, `docs/T3_exclusions.md`) and decided by the author
-(`docs/DECISIONS_2026-10-22.md`).
+(`data/author_decisions.csv`).
 
 **Effect.** Condition C uses the clean host (§13).
 

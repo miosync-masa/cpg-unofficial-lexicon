@@ -47,7 +47,7 @@ were fixed are described in `docs/CHANGES_FROM_V1.md`.
 │   ├── final_results.{md,json}, t1_results.{md,json}, recording_results.{md,json}, tables
 │   └── before_decisions_2026-10-22/   outputs before the author's decisions (SI comparison table)
 ├── dictionary_check/          judgements against デジタル大辞泉 (dictionary text not included)
-├── docs/                      specs, decisions, deviations, CHANGES_FROM_V1.md
+├── docs/                      CHANGES_FROM_V1.md, T3_exclusions.md
 └── legacy/v1_submission/      the submitted version (superseded)
 ```
 
@@ -127,7 +127,8 @@ are in:
 - `results/final_results.md` (integrated analysis, exploratory). Its before/after table of H-C1 and H-C2 is
   part of the supplementary material.
 
-How each analytic choice was made is recorded in `docs/DECISIONS_2026-10-22.md` and `docs/DEVIATIONS_T1_T3.md`.
+The author's decisions on the T3 items are summarised at the top of `results/final_results.md` and listed per
+item in `data/author_decisions.csv`; the host check is described in `docs/T3_exclusions.md`.
 
 ## Licence and citation
 
