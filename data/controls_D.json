@@ -1,0 +1,6559 @@
+{
+ "AFR_003": {
+  "host_v1": "fikir",
+  "clean_host": "ፍቅር",
+  "language": "Amharic",
+  "generated": [
+   "ሐሳብ",
+   "አስተሳሰብ",
+   "አስተያየት",
+   "ሀሳቦች",
+   "ምክር",
+   "ግምት",
+   "እሳቤ",
+   "እይታ",
+   "አስተውሎ",
+   "አስተዋል"
+  ],
+  "controls": [
+   [
+    "ሐሳብ",
+    ""
+   ],
+   [
+    "አስተሳሰብ",
+    ""
+   ],
+   [
+    "አስተያየት",
+    ""
+   ],
+   [
+    "ሀሳቦች",
+    ""
+   ],
+   [
+    "ምክር",
+    ""
+   ],
+   [
+    "ግምት",
+    ""
+   ],
+   [
+    "እሳቤ",
+    ""
+   ],
+   [
+    "እይታ",
+    ""
+   ],
+   [
+    "አስተውሎ",
+    ""
+   ],
+   [
+    "አስተዋል",
+    ""
+   ]
+  ],
+  "kept": [
+   "ሐሳብ",
+   "አስተሳሰብ",
+   "አስተያየት",
+   "ሀሳቦች",
+   "ምክር",
+   "ግምት",
+   "እሳቤ",
+   "እይታ",
+   "አስተውሎ",
+   "አስተዋል"
+  ]
+ },
+ "AFR_005": {
+  "host_v1": "Aje",
+  "clean_host": "AJE (àjẹ̀ / àjé)",
+  "language": "Yoruba",
+  "generated": [
+   "Owó",
+   "Ìṣúná",
+   "Ọlà",
+   "Ìbùkún",
+   "Ọ̀rò",
+   "Ìrè",
+   "Ìní",
+   "Ọ̀rọ̀ ajé",
+   "Ọlówó",
+   "Ọlọ́rọ̀"
+  ],
+  "controls": [
+   [
+    "Owó",
+    ""
+   ],
+   [
+    "Ìṣúná",
+    ""
+   ],
+   [
+    "Ọlà",
+    ""
+   ],
+   [
+    "Ìbùkún",
+    ""
+   ],
+   [
+    "Ọ̀rò",
+    ""
+   ],
+   [
+    "Ìrè",
+    ""
+   ],
+   [
+    "Ìní",
+    ""
+   ],
+   [
+    "Ọ̀rọ̀ ajé",
+    ""
+   ],
+   [
+    "Ọlówó",
+    ""
+   ],
+   [
+    "Ọlọ́rọ̀",
+    ""
+   ]
+  ],
+  "kept": [
+   "Owó",
+   "Ìṣúná",
+   "Ọlà",
+   "Ìbùkún",
+   "Ọ̀rò",
+   "Ìrè",
+   "Ìní",
+   "Ọ̀rọ̀ ajé",
+   "Ọlówó",
+   "Ọlọ́rọ̀"
+  ]
+ },
+ "AFR_006": {
+  "host_v1": "Ina ninu enu",
+  "clean_host": "Ina ninu ẹnu",
+  "language": "Yoruba",
+  "generated": [
+   "Ẹnu ń jó",
+   "Ẹnu gbígbóná",
+   "Ẹnu ń sun",
+   "Ẹnu ń run",
+   "Ẹnu ń ta",
+   "Ìgbóná nínú ẹnu",
+   "Ìná ẹnu",
+   "Ẹnu gbóná",
+   "Ẹnu ń gbóná",
+   "Ẹnu ń gbígbóná"
+  ],
+  "controls": [
+   [
+    "Ẹnu ń jó",
+    ""
+   ],
+   [
+    "Ẹnu gbígbóná",
+    ""
+   ],
+   [
+    "Ẹnu ń sun",
+    ""
+   ],
+   [
+    "Ẹnu ń run",
+    ""
+   ],
+   [
+    "Ẹnu ń ta",
+    ""
+   ],
+   [
+    "Ìgbóná nínú ẹnu",
+    ""
+   ],
+   [
+    "Ìná ẹnu",
+    ""
+   ],
+   [
+    "Ẹnu gbóná",
+    ""
+   ],
+   [
+    "Ẹnu ń gbóná",
+    ""
+   ],
+   [
+    "Ẹnu ń gbígbóná",
+    ""
+   ]
+  ],
+  "kept": [
+   "Ẹnu ń jó",
+   "Ẹnu gbígbóná",
+   "Ẹnu ń sun",
+   "Ẹnu ń run",
+   "Ẹnu ń ta",
+   "Ìgbóná nínú ẹnu",
+   "Ìná ẹnu",
+   "Ẹnu gbóná",
+   "Ẹnu ń gbóná",
+   "Ẹnu ń gbígbóná"
+  ]
+ },
+ "AFR_009": {
+  "host_v1": "inkunzi",
+  "clean_host": "Inkunzi",
+  "language": "isiZulu",
+  "generated": [
+   "inkabi",
+   "inkomo",
+   "inkabi yesilisa",
+   "inkomo yesilisa",
+   "isithole senkunzi",
+   "inkunzi yenkomo",
+   "inkunzi yeduna",
+   "inkunzi enkulu",
+   "inkunzi esencane",
+   "inkunzi yasemadlelweni"
+  ],
+  "controls": [
+   [
+    "inkabi",
+    ""
+   ],
+   [
+    "inkomo",
+    ""
+   ],
+   [
+    "inkabi yesilisa",
+    ""
+   ],
+   [
+    "inkomo yesilisa",
+    ""
+   ],
+   [
+    "isithole senkunzi",
+    ""
+   ],
+   [
+    "inkunzi yenkomo",
+    "R2"
+   ],
+   [
+    "inkunzi yeduna",
+    "R2"
+   ],
+   [
+    "inkunzi enkulu",
+    "R2"
+   ],
+   [
+    "inkunzi esencane",
+    "R2"
+   ],
+   [
+    "inkunzi yasemadlelweni",
+    "R2"
+   ]
+  ],
+  "kept": [
+   "inkabi",
+   "inkomo",
+   "inkabi yesilisa",
+   "inkomo yesilisa",
+   "isithole senkunzi"
+  ]
+ },
+ "AFR_013": {
+  "host_v1": "Se wo were fi na wosankofa a, yenkyi",
+  "clean_host": "Sɛ wo werɛ fi na wosankofa a, yenkyi",
+  "language": "Twi (Akan)",
+  "generated": [
+   "Sɛ wo werɛ fi na wokɔfa bio a, ɛnyɛ bɔne",
+   "Sɛ wo werɛ fi a, san kɔfa",
+   "Sankɔfa",
+   "Sɛ wo werɛ fi a, ɛnyɛ bɔne sɛ wobɛsan akɔfa",
+   "Sɛ wo werɛ fi a, san kɔfa na bra",
+   "Sɛ wo werɛ fi a, wubetumi asan akɔfa",
+   "Sɛ wo werɛ fi a, san kɔfa na ɛnyɛ bɔne",
+   "Sɛ wo werɛ fi a, ɛnyɛ fɛ sɛ wogyina so",
+   "Sɛ wo werɛ fi a, san kɔfa ansa na wotwa so",
+   "Sɛ wo werɛ fi a, san kɔfa na kɔ so"
+  ],
+  "controls": [
+   [
+    "Sɛ wo werɛ fi na wokɔfa bio a, ɛnyɛ bɔne",
+    ""
+   ],
+   [
+    "Sɛ wo werɛ fi a, san kɔfa",
+    ""
+   ],
+   [
+    "Sankɔfa",
+    ""
+   ],
+   [
+    "Sɛ wo werɛ fi a, ɛnyɛ bɔne sɛ wobɛsan akɔfa",
+    ""
+   ],
+   [
+    "Sɛ wo werɛ fi a, san kɔfa na bra",
+    ""
+   ],
+   [
+    "Sɛ wo werɛ fi a, wubetumi asan akɔfa",
+    ""
+   ],
+   [
+    "Sɛ wo werɛ fi a, san kɔfa na ɛnyɛ bɔne",
+    ""
+   ],
+   [
+    "Sɛ wo werɛ fi a, ɛnyɛ fɛ sɛ wogyina so",
+    ""
+   ],
+   [
+    "Sɛ wo werɛ fi a, san kɔfa ansa na wotwa so",
+    ""
+   ],
+   [
+    "Sɛ wo werɛ fi a, san kɔfa na kɔ so",
+    ""
+   ]
+  ],
+  "kept": [
+   "Sɛ wo werɛ fi na wokɔfa bio a, ɛnyɛ bɔne",
+   "Sɛ wo werɛ fi a, san kɔfa",
+   "Sankɔfa",
+   "Sɛ wo werɛ fi a, ɛnyɛ bɔne sɛ wobɛsan akɔfa",
+   "Sɛ wo werɛ fi a, san kɔfa na bra",
+   "Sɛ wo werɛ fi a, wubetumi asan akɔfa",
+   "Sɛ wo werɛ fi a, san kɔfa na ɛnyɛ bɔne",
+   "Sɛ wo werɛ fi a, ɛnyɛ fɛ sɛ wogyina so",
+   "Sɛ wo werɛ fi a, san kɔfa ansa na wotwa so",
+   "Sɛ wo werɛ fi a, san kɔfa na kɔ so"
+  ]
+ },
+ "AFR_014": {
+  "host_v1": "Owuo atwedee baako foo mforo",
+  "clean_host": "Owuo atwedɛɛ, baako foɔ mforo",
+  "language": "Twi (Akan)",
+  "generated": [
+   "Owuo atwedee baako na ɛwɔ mforo",
+   "Owuo atwedee baako na ɛwɔ akwan",
+   "Owuo atwedee baako na ɛwɔ kwan",
+   "Owuo atwedee baako na ɛwɔ ɔkwan",
+   "Owuo atwedee baako na ɛwɔ mmerɛ",
+   "Owuo atwedee baako na ɛwɔ bere",
+   "Owuo atwedee baako na ɛwɔ akwan pii",
+   "Owuo atwedee baako na ɛwɔ mforo pii",
+   "Owuo atwedee baako na ɛwɔ kwan biako",
+   "Owuo atwedee baako na ɛwɔ ɔkwan biako"
+  ],
+  "controls": [
+   [
+    "Owuo atwedee baako na ɛwɔ mforo",
+    ""
+   ],
+   [
+    "Owuo atwedee baako na ɛwɔ akwan",
+    ""
+   ],
+   [
+    "Owuo atwedee baako na ɛwɔ kwan",
+    ""
+   ],
+   [
+    "Owuo atwedee baako na ɛwɔ ɔkwan",
+    ""
+   ],
+   [
+    "Owuo atwedee baako na ɛwɔ mmerɛ",
+    ""
+   ],
+   [
+    "Owuo atwedee baako na ɛwɔ bere",
+    ""
+   ],
+   [
+    "Owuo atwedee baako na ɛwɔ akwan pii",
+    ""
+   ],
+   [
+    "Owuo atwedee baako na ɛwɔ mforo pii",
+    ""
+   ],
+   [
+    "Owuo atwedee baako na ɛwɔ kwan biako",
+    ""
+   ],
+   [
+    "Owuo atwedee baako na ɛwɔ ɔkwan biako",
+    ""
+   ]
+  ],
+  "kept": [
+   "Owuo atwedee baako na ɛwɔ mforo",
+   "Owuo atwedee baako na ɛwɔ akwan",
+   "Owuo atwedee baako na ɛwɔ kwan",
+   "Owuo atwedee baako na ɛwɔ ɔkwan",
+   "Owuo atwedee baako na ɛwɔ mmerɛ",
+   "Owuo atwedee baako na ɛwɔ bere",
+   "Owuo atwedee baako na ɛwɔ akwan pii",
+   "Owuo atwedee baako na ɛwɔ mforo pii",
+   "Owuo atwedee baako na ɛwɔ kwan biako",
+   "Owuo atwedee baako na ɛwɔ ɔkwan biako"
+  ]
+ },
+ "SEA_008": {
+  "host_v1": "miếng trầu; trầu cau",
+  "clean_host": "trầu cau",
+  "language": "Vietnamese",
+  "generated": [
+   "miếng trầu têm",
+   "trầu têm cánh phượng",
+   "trầu têm",
+   "lá trầu",
+   "quả cau",
+   "trầu không",
+   "cau tươi",
+   "trầu cau cưới hỏi",
+   "mâm trầu cau",
+   "ăn trầu"
+  ],
+  "controls": [
+   [
+    "miếng trầu têm",
+    ""
+   ],
+   [
+    "trầu têm cánh phượng",
+    ""
+   ],
+   [
+    "trầu têm",
+    ""
+   ],
+   [
+    "lá trầu",
+    ""
+   ],
+   [
+    "quả cau",
+    ""
+   ],
+   [
+    "trầu không",
+    ""
+   ],
+   [
+    "cau tươi",
+    ""
+   ],
+   [
+    "trầu cau cưới hỏi",
+    "R2"
+   ],
+   [
+    "mâm trầu cau",
+    "R2"
+   ],
+   [
+    "ăn trầu",
+    ""
+   ]
+  ],
+  "kept": [
+   "miếng trầu têm",
+   "trầu têm cánh phượng",
+   "trầu têm",
+   "lá trầu",
+   "quả cau",
+   "trầu không",
+   "cau tươi",
+   "ăn trầu"
+  ]
+ },
+ "SEA_009": {
+  "host_v1": "sasmita / sasmitaning tembang",
+  "clean_host": "sasmitaning tembang",
+  "language": "Javanese",
+  "generated": [
+   "tandha",
+   "pratandha",
+   "isyarat",
+   "sinyal",
+   "ciri",
+   "pituduh",
+   "teges sinamun",
+   "teges kinandhut",
+   "teges kang kasamud",
+   "wewaler tembang"
+  ],
+  "controls": [
+   [
+    "tandha",
+    ""
+   ],
+   [
+    "pratandha",
+    ""
+   ],
+   [
+    "isyarat",
+    ""
+   ],
+   [
+    "sinyal",
+    ""
+   ],
+   [
+    "ciri",
+    ""
+   ],
+   [
+    "pituduh",
+    ""
+   ],
+   [
+    "teges sinamun",
+    ""
+   ],
+   [
+    "teges kinandhut",
+    ""
+   ],
+   [
+    "teges kang kasamud",
+    ""
+   ],
+   [
+    "wewaler tembang",
+    ""
+   ]
+  ],
+  "kept": [
+   "tandha",
+   "pratandha",
+   "isyarat",
+   "sinyal",
+   "ciri",
+   "pituduh",
+   "teges sinamun",
+   "teges kinandhut",
+   "teges kang kasamud",
+   "wewaler tembang"
+  ]
+ },
+ "SEA_011": {
+  "host_v1": "khan hu (หูคัน)",
+  "clean_host": "หูคัน",
+  "language": "Thai",
+  "generated": [
+   "คันหู",
+   "คันในหู",
+   "คันช่องหู",
+   "คันรูหู",
+   "คันหูข้างใน",
+   "หูคันยุบยิบ",
+   "หูคันยิกๆ",
+   "หูคันระคาย",
+   "คันหูมาก",
+   "คันหูไม่หยุด"
+  ],
+  "controls": [
+   [
+    "คันหู",
+    ""
+   ],
+   [
+    "คันในหู",
+    ""
+   ],
+   [
+    "คันช่องหู",
+    ""
+   ],
+   [
+    "คันรูหู",
+    ""
+   ],
+   [
+    "คันหูข้างใน",
+    ""
+   ],
+   [
+    "หูคันยุบยิบ",
+    "R2"
+   ],
+   [
+    "หูคันยิกๆ",
+    "R2"
+   ],
+   [
+    "หูคันระคาย",
+    "R2"
+   ],
+   [
+    "คันหูมาก",
+    ""
+   ],
+   [
+    "คันหูไม่หยุด",
+    ""
+   ]
+  ],
+  "kept": [
+   "คันหู",
+   "คันในหู",
+   "คันช่องหู",
+   "คันรูหู",
+   "คันหูข้างใน",
+   "คันหูมาก",
+   "คันหูไม่หยุด"
+  ]
+ },
+ "SEA_014": {
+  "host_v1": "con cò",
+  "clean_host": "con cò",
+  "language": "Vietnamese",
+  "generated": [
+   "cò",
+   "chim cò",
+   "cò trắng",
+   "cò hương",
+   "cò lửa",
+   "cò ruộng",
+   "cò ma",
+   "cò bợ",
+   "cò ngàng",
+   "cò quăm"
+  ],
+  "controls": [
+   [
+    "cò",
+    "R2"
+   ],
+   [
+    "chim cò",
+    ""
+   ],
+   [
+    "cò trắng",
+    ""
+   ],
+   [
+    "cò hương",
+    ""
+   ],
+   [
+    "cò lửa",
+    ""
+   ],
+   [
+    "cò ruộng",
+    ""
+   ],
+   [
+    "cò ma",
+    ""
+   ],
+   [
+    "cò bợ",
+    ""
+   ],
+   [
+    "cò ngàng",
+    ""
+   ],
+   [
+    "cò quăm",
+    ""
+   ]
+  ],
+  "kept": [
+   "chim cò",
+   "cò trắng",
+   "cò hương",
+   "cò lửa",
+   "cò ruộng",
+   "cò ma",
+   "cò bợ",
+   "cò ngàng",
+   "cò quăm"
+  ]
+ },
+ "SEA_015": {
+  "host_v1": "phleng choi",
+  "clean_host": "เพลงฉ่อย",
+  "language": "Thai",
+  "generated": [
+   "เพลงช้า",
+   "เพลงช้าๆ",
+   "เพลงช้าๆหน่อย",
+   "เพลงช้าๆหน่อยได้ไหม",
+   "เพลงช้าๆหน่อยครับ",
+   "เพลงช้าๆหน่อยค่ะ",
+   "เปิดเพลงช้าๆ",
+   "ขอเพลงช้าๆ",
+   "เพลงช้าๆหน่อยนะ",
+   "เพลงช้าๆหน่อยได้มั้ย"
+  ],
+  "controls": [
+   [
+    "เพลงช้า",
+    ""
+   ],
+   [
+    "เพลงช้าๆ",
+    ""
+   ],
+   [
+    "เพลงช้าๆหน่อย",
+    ""
+   ],
+   [
+    "เพลงช้าๆหน่อยได้ไหม",
+    ""
+   ],
+   [
+    "เพลงช้าๆหน่อยครับ",
+    ""
+   ],
+   [
+    "เพลงช้าๆหน่อยค่ะ",
+    ""
+   ],
+   [
+    "เปิดเพลงช้าๆ",
+    ""
+   ],
+   [
+    "ขอเพลงช้าๆ",
+    ""
+   ],
+   [
+    "เพลงช้าๆหน่อยนะ",
+    ""
+   ],
+   [
+    "เพลงช้าๆหน่อยได้มั้ย",
+    ""
+   ]
+  ],
+  "kept": [
+   "เพลงช้า",
+   "เพลงช้าๆ",
+   "เพลงช้าๆหน่อย",
+   "เพลงช้าๆหน่อยได้ไหม",
+   "เพลงช้าๆหน่อยครับ",
+   "เพลงช้าๆหน่อยค่ะ",
+   "เปิดเพลงช้าๆ",
+   "ขอเพลงช้าๆ",
+   "เพลงช้าๆหน่อยนะ",
+   "เพลงช้าๆหน่อยได้มั้ย"
+  ]
+ },
+ "NAH_001": {
+  "host_v1": "in xochitl, in cuicatl",
+  "clean_host": "in xochitl, in cuicatl",
+  "language": "Classical Nahuatl",
+  "generated": [
+   "in xōchitl in cuīcatl",
+   "xōchicuīcatl",
+   "cuīcatl",
+   "xōchitl",
+   "in cuīcatl",
+   "in xōchitl",
+   "in cuīcatl in xōchitl",
+   "tlahtōlli",
+   "tōnalli cuīcatl",
+   "teōcuīcatl"
+  ],
+  "controls": [
+   [
+    "in xōchitl in cuīcatl",
+    ""
+   ],
+   [
+    "xōchicuīcatl",
+    ""
+   ],
+   [
+    "cuīcatl",
+    "R2"
+   ],
+   [
+    "xōchitl",
+    "R2"
+   ],
+   [
+    "in cuīcatl",
+    "R2"
+   ],
+   [
+    "in xōchitl",
+    "R2"
+   ],
+   [
+    "in cuīcatl in xōchitl",
+    ""
+   ],
+   [
+    "tlahtōlli",
+    ""
+   ],
+   [
+    "tōnalli cuīcatl",
+    ""
+   ],
+   [
+    "teōcuīcatl",
+    ""
+   ]
+  ],
+  "kept": [
+   "in xōchitl in cuīcatl",
+   "xōchicuīcatl",
+   "in cuīcatl in xōchitl",
+   "tlahtōlli",
+   "tōnalli cuīcatl",
+   "teōcuīcatl"
+  ]
+ },
+ "NAH_003": {
+  "host_v1": "in teoatl, in tlachinolli",
+  "clean_host": "in teoatl, in tlachinolli",
+  "language": "Classical Nahuatl",
+  "generated": [
+   "yaoyotl",
+   "yaotl",
+   "yaoyotica",
+   "yaoyotiliztli",
+   "yaoyotl tlachinolli",
+   "teoatl tlachinolli",
+   "in yaoyotl, in tlachinolli",
+   "in teoatl, in yaoyotl",
+   "yaoyotl in teoatl",
+   "yaoyotl in tlachinolli"
+  ],
+  "controls": [
+   [
+    "yaoyotl",
+    ""
+   ],
+   [
+    "yaotl",
+    ""
+   ],
+   [
+    "yaoyotica",
+    ""
+   ],
+   [
+    "yaoyotiliztli",
+    ""
+   ],
+   [
+    "yaoyotl tlachinolli",
+    ""
+   ],
+   [
+    "teoatl tlachinolli",
+    ""
+   ],
+   [
+    "in yaoyotl, in tlachinolli",
+    ""
+   ],
+   [
+    "in teoatl, in yaoyotl",
+    ""
+   ],
+   [
+    "yaoyotl in teoatl",
+    ""
+   ],
+   [
+    "yaoyotl in tlachinolli",
+    ""
+   ]
+  ],
+  "kept": [
+   "yaoyotl",
+   "yaotl",
+   "yaoyotica",
+   "yaoyotiliztli",
+   "yaoyotl tlachinolli",
+   "teoatl tlachinolli",
+   "in yaoyotl, in tlachinolli",
+   "in teoatl, in yaoyotl",
+   "yaoyotl in teoatl",
+   "yaoyotl in tlachinolli"
+  ]
+ },
+ "NAH_004": {
+  "host_v1": "in tlilli, in tlapalli",
+  "clean_host": "in tlilli, in tlapalli",
+  "language": "Classical Nahuatl",
+  "generated": [
+   "in tlilli in tlapalli",
+   "tlilli tlapalli",
+   "in tlapalli in tlilli",
+   "in tlilli in tlapalli in amatl",
+   "in tlilli in tlapalli in amoxtli",
+   "in amoxtli",
+   "in amatl",
+   "in tlahtōlli",
+   "in tlamachtiliztli",
+   "in tlamatiliztli"
+  ],
+  "controls": [
+   [
+    "in tlilli in tlapalli",
+    ""
+   ],
+   [
+    "tlilli tlapalli",
+    ""
+   ],
+   [
+    "in tlapalli in tlilli",
+    ""
+   ],
+   [
+    "in tlilli in tlapalli in amatl",
+    ""
+   ],
+   [
+    "in tlilli in tlapalli in amoxtli",
+    ""
+   ],
+   [
+    "in amoxtli",
+    ""
+   ],
+   [
+    "in amatl",
+    ""
+   ],
+   [
+    "in tlahtōlli",
+    ""
+   ],
+   [
+    "in tlamachtiliztli",
+    ""
+   ],
+   [
+    "in tlamatiliztli",
+    ""
+   ]
+  ],
+  "kept": [
+   "in tlilli in tlapalli",
+   "tlilli tlapalli",
+   "in tlapalli in tlilli",
+   "in tlilli in tlapalli in amatl",
+   "in tlilli in tlapalli in amoxtli",
+   "in amoxtli",
+   "in amatl",
+   "in tlahtōlli",
+   "in tlamachtiliztli",
+   "in tlamatiliztli"
+  ]
+ },
+ "NAH_008": {
+  "host_v1": "in toptli, in petlacalli",
+  "clean_host": "in toptli, in petlacalli",
+  "language": "Classical Nahuatl",
+  "generated": [
+   "in petlacalli, in toptli",
+   "in toptli īhuān in petlacalli",
+   "in petlacalco",
+   "in toptlān",
+   "in petlatl",
+   "in petlacalpan",
+   "in petlatl īhuān in toptli",
+   "in petlacalli īhuān in petlatl",
+   "in toptli īhuān in petlatl",
+   "in petlacalli īhuān in toptli"
+  ],
+  "controls": [
+   [
+    "in petlacalli, in toptli",
+    ""
+   ],
+   [
+    "in toptli īhuān in petlacalli",
+    ""
+   ],
+   [
+    "in petlacalco",
+    ""
+   ],
+   [
+    "in toptlān",
+    ""
+   ],
+   [
+    "in petlatl",
+    ""
+   ],
+   [
+    "in petlacalpan",
+    ""
+   ],
+   [
+    "in petlatl īhuān in toptli",
+    ""
+   ],
+   [
+    "in petlacalli īhuān in petlatl",
+    ""
+   ],
+   [
+    "in toptli īhuān in petlatl",
+    ""
+   ],
+   [
+    "in petlacalli īhuān in toptli",
+    ""
+   ]
+  ],
+  "kept": [
+   "in petlacalli, in toptli",
+   "in toptli īhuān in petlacalli",
+   "in petlacalco",
+   "in toptlān",
+   "in petlatl",
+   "in petlacalpan",
+   "in petlatl īhuān in toptli",
+   "in petlacalli īhuān in petlatl",
+   "in toptli īhuān in petlatl",
+   "in petlacalli īhuān in toptli"
+  ]
+ },
+ "QCH_001": {
+  "host_v1": "unu/yaku (water) + wiqi/para (tears/rain)",
+  "clean_host": "Unuy wiqillam apariwan / Yakuy parallam pusariwan",
+  "language": "Southern Quechua (colonial)",
+  "generated": [
+   "yaku",
+   "unu",
+   "para",
+   "wiqi",
+   "yakupara",
+   "paray",
+   "wiqiy",
+   "yaku wiqi",
+   "unu para",
+   "para unu"
+  ],
+  "controls": [
+   [
+    "yaku",
+    "R2"
+   ],
+   [
+    "unu",
+    "R2"
+   ],
+   [
+    "para",
+    "R2"
+   ],
+   [
+    "wiqi",
+    "R2"
+   ],
+   [
+    "yakupara",
+    ""
+   ],
+   [
+    "paray",
+    ""
+   ],
+   [
+    "wiqiy",
+    ""
+   ],
+   [
+    "yaku wiqi",
+    ""
+   ],
+   [
+    "unu para",
+    ""
+   ],
+   [
+    "para unu",
+    ""
+   ]
+  ],
+  "kept": [
+   "yakupara",
+   "paray",
+   "wiqiy",
+   "yaku wiqi",
+   "unu para",
+   "para unu"
+  ]
+ },
+ "QCH_002": {
+  "host_v1": "Supay",
+  "clean_host": "Supay",
+  "language": "Quechua (colonial period)",
+  "generated": [
+   "saqra",
+   "supa",
+   "supa-y",
+   "supa runa",
+   "supa apu",
+   "ukhu pacha",
+   "uku pacha",
+   "mana allin wiraqucha",
+   "millay",
+   "layqa"
+  ],
+  "controls": [
+   [
+    "saqra",
+    ""
+   ],
+   [
+    "supa",
+    "R2"
+   ],
+   [
+    "supa-y",
+    ""
+   ],
+   [
+    "supa runa",
+    ""
+   ],
+   [
+    "supa apu",
+    ""
+   ],
+   [
+    "ukhu pacha",
+    ""
+   ],
+   [
+    "uku pacha",
+    ""
+   ],
+   [
+    "mana allin wiraqucha",
+    ""
+   ],
+   [
+    "millay",
+    ""
+   ],
+   [
+    "layqa",
+    ""
+   ]
+  ],
+  "kept": [
+   "saqra",
+   "supa-y",
+   "supa runa",
+   "supa apu",
+   "ukhu pacha",
+   "uku pacha",
+   "mana allin wiraqucha",
+   "millay",
+   "layqa"
+  ]
+ },
+ "QCH_004": {
+  "host_v1": "watuchikuna / watuchis",
+  "clean_host": "Watuchikuna",
+  "language": "Quechua (Southern, contemporary)",
+  "generated": [
+   "watuchiy",
+   "watuchina",
+   "watuchiq",
+   "watuchiqkuna",
+   "watuchisqa",
+   "watuchiykuna",
+   "watuchikuy",
+   "watuchikuna",
+   "watuchisniyuq",
+   "watuchisniyuqkuna"
+  ],
+  "controls": [
+   [
+    "watuchiy",
+    ""
+   ],
+   [
+    "watuchina",
+    ""
+   ],
+   [
+    "watuchiq",
+    ""
+   ],
+   [
+    "watuchiqkuna",
+    ""
+   ],
+   [
+    "watuchisqa",
+    ""
+   ],
+   [
+    "watuchiykuna",
+    ""
+   ],
+   [
+    "watuchikuy",
+    ""
+   ],
+   [
+    "watuchikuna",
+    "R1"
+   ],
+   [
+    "watuchisniyuq",
+    ""
+   ],
+   [
+    "watuchisniyuqkuna",
+    ""
+   ]
+  ],
+  "kept": [
+   "watuchiy",
+   "watuchina",
+   "watuchiq",
+   "watuchiqkuna",
+   "watuchisqa",
+   "watuchiykuna",
+   "watuchikuy",
+   "watuchisniyuq",
+   "watuchisniyuqkuna"
+  ]
+ },
+ "MAYA_003": {
+  "host_v1": "ch'en / actun",
+  "clean_host": "ch'en actun",
+  "language": "Colonial Yucatec Maya",
+  "generated": [
+   "chʼeʼen",
+   "actunil",
+   "actunob",
+   "hol chʼeʼen",
+   "u hol chʼeʼen",
+   "chʼeʼenil",
+   "chʼeʼenob",
+   "chʼeʼen tunich",
+   "chʼeʼenil tunich",
+   "chʼeʼen uinic"
+  ],
+  "controls": [
+   [
+    "chʼeʼen",
+    ""
+   ],
+   [
+    "actunil",
+    ""
+   ],
+   [
+    "actunob",
+    ""
+   ],
+   [
+    "hol chʼeʼen",
+    ""
+   ],
+   [
+    "u hol chʼeʼen",
+    ""
+   ],
+   [
+    "chʼeʼenil",
+    ""
+   ],
+   [
+    "chʼeʼenob",
+    ""
+   ],
+   [
+    "chʼeʼen tunich",
+    ""
+   ],
+   [
+    "chʼeʼenil tunich",
+    ""
+   ],
+   [
+    "chʼeʼen uinic",
+    ""
+   ]
+  ],
+  "kept": [
+   "chʼeʼen",
+   "actunil",
+   "actunob",
+   "hol chʼeʼen",
+   "u hol chʼeʼen",
+   "chʼeʼenil",
+   "chʼeʼenob",
+   "chʼeʼen tunich",
+   "chʼeʼenil tunich",
+   "chʼeʼen uinic"
+  ]
+ },
+ "MAYA_004": {
+  "host_v1": "Suyua T'an / Zuyua T'an (twisted/deceptive speech)",
+  "clean_host": "Suyua T'an riddle: 'Bring me the sun in my plate... a green jaguar seated on top, bleeding'",
+  "language": "Colonial Yucatec Maya",
+  "generated": [
+   "Tus tʼan",
+   "Kʼeban tʼan",
+   "Kʼas tʼan",
+   "Bey tʼan",
+   "Xulub tʼan",
+   "Xux tʼan",
+   "Xakʼ tʼan",
+   "Xul tʼan",
+   "Xotʼ tʼan",
+   "Baxal tʼan"
+  ],
+  "controls": [
+   [
+    "Tus tʼan",
+    ""
+   ],
+   [
+    "Kʼeban tʼan",
+    ""
+   ],
+   [
+    "Kʼas tʼan",
+    ""
+   ],
+   [
+    "Bey tʼan",
+    ""
+   ],
+   [
+    "Xulub tʼan",
+    ""
+   ],
+   [
+    "Xux tʼan",
+    ""
+   ],
+   [
+    "Xakʼ tʼan",
+    ""
+   ],
+   [
+    "Xul tʼan",
+    ""
+   ],
+   [
+    "Xotʼ tʼan",
+    ""
+   ],
+   [
+    "Baxal tʼan",
+    ""
+   ]
+  ],
+  "kept": [
+   "Tus tʼan",
+   "Kʼeban tʼan",
+   "Kʼas tʼan",
+   "Bey tʼan",
+   "Xulub tʼan",
+   "Xux tʼan",
+   "Xakʼ tʼan",
+   "Xul tʼan",
+   "Xotʼ tʼan",
+   "Baxal tʼan"
+  ]
+ },
+ "MAYA_006": {
+  "host_v1": "pan kab / tal kab",
+  "clean_host": "pan kab",
+  "language": "Classic Maya (hieroglyphic)",
+  "generated": [
+   "u-kab",
+   "kab",
+   "kabʼ",
+   "kabʼal",
+   "kabʼil",
+   "kabʼaʼ",
+   "kabʼaʼl",
+   "kabʼaʼil",
+   "kabʼaʼal",
+   "kabʼaʼilal"
+  ],
+  "controls": [
+   [
+    "u-kab",
+    ""
+   ],
+   [
+    "kab",
+    "R2"
+   ],
+   [
+    "kabʼ",
+    ""
+   ],
+   [
+    "kabʼal",
+    ""
+   ],
+   [
+    "kabʼil",
+    ""
+   ],
+   [
+    "kabʼaʼ",
+    ""
+   ],
+   [
+    "kabʼaʼl",
+    ""
+   ],
+   [
+    "kabʼaʼil",
+    ""
+   ],
+   [
+    "kabʼaʼal",
+    ""
+   ],
+   [
+    "kabʼaʼilal",
+    ""
+   ]
+  ],
+  "kept": [
+   "u-kab",
+   "kabʼ",
+   "kabʼal",
+   "kabʼil",
+   "kabʼaʼ",
+   "kabʼaʼl",
+   "kabʼaʼil",
+   "kabʼaʼal",
+   "kabʼaʼilal"
+  ]
+ },
+ "NEU_001": {
+  "host_v1": "hron-rád / hwæl-weg",
+  "clean_host": "hronrád",
+  "language": "Old Norse",
+  "generated": [
+   "hvalrǫð",
+   "hvalvegr",
+   "hvalráð",
+   "hvalslóð",
+   "hvalleið",
+   "hvalbraut",
+   "hvalgata",
+   "hvalröst",
+   "sævegr",
+   "hafvegr"
+  ],
+  "controls": [
+   [
+    "hvalrǫð",
+    ""
+   ],
+   [
+    "hvalvegr",
+    ""
+   ],
+   [
+    "hvalráð",
+    ""
+   ],
+   [
+    "hvalslóð",
+    ""
+   ],
+   [
+    "hvalleið",
+    ""
+   ],
+   [
+    "hvalbraut",
+    ""
+   ],
+   [
+    "hvalgata",
+    ""
+   ],
+   [
+    "hvalröst",
+    ""
+   ],
+   [
+    "sævegr",
+    ""
+   ],
+   [
+    "hafvegr",
+    ""
+   ]
+  ],
+  "kept": [
+   "hvalrǫð",
+   "hvalvegr",
+   "hvalráð",
+   "hvalslóð",
+   "hvalleið",
+   "hvalbraut",
+   "hvalgata",
+   "hvalröst",
+   "sævegr",
+   "hafvegr"
+  ]
+ },
+ "NEU_003": {
+  "host_v1": "val-bjórr / hræ-lœkr",
+  "clean_host": "valbjórr",
+  "language": "Old Norse",
+  "generated": [
+   "valr",
+   "hræ",
+   "dauðr",
+   "dauðamaðr",
+   "dauðingi",
+   "valrún",
+   "valkyrja",
+   "valkostr",
+   "valblóð",
+   "hræfugl"
+  ],
+  "controls": [
+   [
+    "valr",
+    ""
+   ],
+   [
+    "hræ",
+    ""
+   ],
+   [
+    "dauðr",
+    ""
+   ],
+   [
+    "dauðamaðr",
+    ""
+   ],
+   [
+    "dauðingi",
+    ""
+   ],
+   [
+    "valrún",
+    ""
+   ],
+   [
+    "valkyrja",
+    ""
+   ],
+   [
+    "valkostr",
+    ""
+   ],
+   [
+    "valblóð",
+    ""
+   ],
+   [
+    "hræfugl",
+    ""
+   ]
+  ],
+  "kept": [
+   "valr",
+   "hræ",
+   "dauðr",
+   "dauðamaðr",
+   "dauðingi",
+   "valrún",
+   "valkyrja",
+   "valkostr",
+   "valblóð",
+   "hræfugl"
+  ]
+ },
+ "NEU_004": {
+  "host_v1": "Kvasirs blóð / skáldskap-ar mjǫðr",
+  "clean_host": "Kvasirs blóð",
+  "language": "Old Norse",
+  "generated": [
+   "skáldskapr",
+   "skáldskaparmjöðr",
+   "skáldskapardrykkja",
+   "skáldadrykkja",
+   "skáldamiðr",
+   "skáldadrykk",
+   "Kvasis blóð",
+   "Kvasis mjöðr",
+   "Óðrerir",
+   "Suttungamjöðr"
+  ],
+  "controls": [
+   [
+    "skáldskapr",
+    ""
+   ],
+   [
+    "skáldskaparmjöðr",
+    ""
+   ],
+   [
+    "skáldskapardrykkja",
+    ""
+   ],
+   [
+    "skáldadrykkja",
+    ""
+   ],
+   [
+    "skáldamiðr",
+    ""
+   ],
+   [
+    "skáldadrykk",
+    ""
+   ],
+   [
+    "Kvasis blóð",
+    ""
+   ],
+   [
+    "Kvasis mjöðr",
+    ""
+   ],
+   [
+    "Óðrerir",
+    ""
+   ],
+   [
+    "Suttungamjöðr",
+    ""
+   ]
+  ],
+  "kept": [
+   "skáldskapr",
+   "skáldskaparmjöðr",
+   "skáldskapardrykkja",
+   "skáldadrykkja",
+   "skáldamiðr",
+   "skáldadrykk",
+   "Kvasis blóð",
+   "Kvasis mjöðr",
+   "Óðrerir",
+   "Suttungamjöðr"
+  ]
+ },
+ "NEU_007": {
+  "host_v1": "Riddle 25 (Old English): 'Ic eom wunderlicu wiht... wifum on hyhte' (I am a wondrous creature... a joy to women)",
+  "clean_host": "Exeter Book Riddle 25 — ānpæð + wigan",
+  "language": "Old English",
+  "generated": [
+   "wunderlicu wiht",
+   "sellicu wiht",
+   "mære wiht",
+   "wrætlicu wiht",
+   "wundor",
+   "wundorlic",
+   "hyht",
+   "wyn",
+   "bliss",
+   "dream"
+  ],
+  "controls": [
+   [
+    "wunderlicu wiht",
+    ""
+   ],
+   [
+    "sellicu wiht",
+    ""
+   ],
+   [
+    "mære wiht",
+    ""
+   ],
+   [
+    "wrætlicu wiht",
+    ""
+   ],
+   [
+    "wundor",
+    ""
+   ],
+   [
+    "wundorlic",
+    ""
+   ],
+   [
+    "hyht",
+    ""
+   ],
+   [
+    "wyn",
+    ""
+   ],
+   [
+    "bliss",
+    ""
+   ],
+   [
+    "dream",
+    ""
+   ]
+  ],
+  "kept": [
+   "wunderlicu wiht",
+   "sellicu wiht",
+   "mære wiht",
+   "wrætlicu wiht",
+   "wundor",
+   "wundorlic",
+   "hyht",
+   "wyn",
+   "bliss",
+   "dream"
+  ]
+ },
+ "NEU_008": {
+  "host_v1": "Riddle 44: 'Wiht is wrætlic... wæpned guma' (A wondrous thing hangs by a man's thigh)",
+  "clean_host": "Exeter Book Riddle 44 — key/lock riddle",
+  "language": "Old English",
+  "generated": [
+   "wiht wrætlic",
+   "wundor",
+   "wrætlic þing",
+   "galdor",
+   "rædels",
+   "giedd",
+   "beag",
+   "hring",
+   "seolfor",
+   "frætwe"
+  ],
+  "controls": [
+   [
+    "wiht wrætlic",
+    ""
+   ],
+   [
+    "wundor",
+    ""
+   ],
+   [
+    "wrætlic þing",
+    ""
+   ],
+   [
+    "galdor",
+    ""
+   ],
+   [
+    "rædels",
+    ""
+   ],
+   [
+    "giedd",
+    ""
+   ],
+   [
+    "beag",
+    ""
+   ],
+   [
+    "hring",
+    ""
+   ],
+   [
+    "seolfor",
+    ""
+   ],
+   [
+    "frætwe",
+    ""
+   ]
+  ],
+  "kept": [
+   "wiht wrætlic",
+   "wundor",
+   "wrætlic þing",
+   "galdor",
+   "rædels",
+   "giedd",
+   "beag",
+   "hring",
+   "seolfor",
+   "frætwe"
+  ]
+ },
+ "NEU_009": {
+  "host_v1": "Riddle 45: 'Ic on wincle gefrægn... under hrægle hreran' (I heard of a young man... lifting her dress)",
+  "clean_host": "Exeter Book Riddle 45 — dough/bread riddle",
+  "language": "Old English",
+  "generated": [
+   "rædels",
+   "giedd",
+   "leoð",
+   "sundorspell",
+   "wrænnes",
+   "hordgæst",
+   "hleoþor",
+   "wordgiedd",
+   "fricg",
+   "cwidas"
+  ],
+  "controls": [
+   [
+    "rædels",
+    ""
+   ],
+   [
+    "giedd",
+    ""
+   ],
+   [
+    "leoð",
+    ""
+   ],
+   [
+    "sundorspell",
+    ""
+   ],
+   [
+    "wrænnes",
+    ""
+   ],
+   [
+    "hordgæst",
+    ""
+   ],
+   [
+    "hleoþor",
+    ""
+   ],
+   [
+    "wordgiedd",
+    ""
+   ],
+   [
+    "fricg",
+    ""
+   ],
+   [
+    "cwidas",
+    ""
+   ]
+  ],
+  "kept": [
+   "rædels",
+   "giedd",
+   "leoð",
+   "sundorspell",
+   "wrænnes",
+   "hordgæst",
+   "hleoþor",
+   "wordgiedd",
+   "fricg",
+   "cwidas"
+  ]
+ },
+ "NEU_010": {
+  "host_v1": "Riddle 37: 'Ic þa wiht geseah... wræstlice gewundenne' (I saw a creature wondrously wrought)",
+  "clean_host": "Exeter Book Riddle 37 — bellows riddle",
+  "language": "Old English",
+  "generated": [
+   "Ic þa wiht geseah",
+   "Ic gesawe wiht",
+   "Ic geseah wundor",
+   "Ic geseah sellic wiht",
+   "Ic geseah ænig þing",
+   "Ic geseah wundorlicne gesceaft",
+   "wræstlice geworhtne",
+   "wræstlice gewundenne",
+   "wundorlice geworhtne",
+   "sellice gesmiðodne"
+  ],
+  "controls": [
+   [
+    "Ic þa wiht geseah",
+    ""
+   ],
+   [
+    "Ic gesawe wiht",
+    ""
+   ],
+   [
+    "Ic geseah wundor",
+    ""
+   ],
+   [
+    "Ic geseah sellic wiht",
+    ""
+   ],
+   [
+    "Ic geseah ænig þing",
+    ""
+   ],
+   [
+    "Ic geseah wundorlicne gesceaft",
+    ""
+   ],
+   [
+    "wræstlice geworhtne",
+    ""
+   ],
+   [
+    "wræstlice gewundenne",
+    ""
+   ],
+   [
+    "wundorlice geworhtne",
+    ""
+   ],
+   [
+    "sellice gesmiðodne",
+    ""
+   ]
+  ],
+  "kept": [
+   "Ic þa wiht geseah",
+   "Ic gesawe wiht",
+   "Ic geseah wundor",
+   "Ic geseah sellic wiht",
+   "Ic geseah ænig þing",
+   "Ic geseah wundorlicne gesceaft",
+   "wræstlice geworhtne",
+   "wræstlice gewundenne",
+   "wundorlice geworhtne",
+   "sellice gesmiðodne"
+  ]
+ },
+ "NEU_011": {
+  "host_v1": "bān-hūs (bone-house)",
+  "clean_host": "bānhūs",
+  "language": "Old English",
+  "generated": [
+   "līchama",
+   "līc",
+   "līchām",
+   "bodig",
+   "hræw",
+   "līchāmlic",
+   "bāncofa",
+   "bānhord",
+   "bānloca",
+   "bānærn"
+  ],
+  "controls": [
+   [
+    "līchama",
+    ""
+   ],
+   [
+    "līc",
+    ""
+   ],
+   [
+    "līchām",
+    ""
+   ],
+   [
+    "bodig",
+    ""
+   ],
+   [
+    "hræw",
+    ""
+   ],
+   [
+    "līchāmlic",
+    ""
+   ],
+   [
+    "bāncofa",
+    ""
+   ],
+   [
+    "bānhord",
+    ""
+   ],
+   [
+    "bānloca",
+    ""
+   ],
+   [
+    "bānærn",
+    ""
+   ]
+  ],
+  "kept": [
+   "līchama",
+   "līc",
+   "līchām",
+   "bodig",
+   "hræw",
+   "līchāmlic",
+   "bāncofa",
+   "bānhord",
+   "bānloca",
+   "bānærn"
+  ]
+ },
+ "NEU_012": {
+  "host_v1": "beadu-swāt (battle-sweat) / gūð-swāt (war-sweat)",
+  "clean_host": "beadu-swāt",
+  "language": "Old English",
+  "generated": [
+   "gūðblōd",
+   "beadublōd",
+   "wælblōd",
+   "heorudrēor",
+   "gūðdrēor",
+   "beadudrēor",
+   "wældrēor",
+   "wælhrēow",
+   "wælwōh",
+   "wælwulm"
+  ],
+  "controls": [
+   [
+    "gūðblōd",
+    ""
+   ],
+   [
+    "beadublōd",
+    ""
+   ],
+   [
+    "wælblōd",
+    ""
+   ],
+   [
+    "heorudrēor",
+    ""
+   ],
+   [
+    "gūðdrēor",
+    ""
+   ],
+   [
+    "beadudrēor",
+    ""
+   ],
+   [
+    "wældrēor",
+    ""
+   ],
+   [
+    "wælhrēow",
+    ""
+   ],
+   [
+    "wælwōh",
+    ""
+   ],
+   [
+    "wælwulm",
+    ""
+   ]
+  ],
+  "kept": [
+   "gūðblōd",
+   "beadublōd",
+   "wælblōd",
+   "heorudrēor",
+   "gūðdrēor",
+   "beadudrēor",
+   "wældrēor",
+   "wælhrēow",
+   "wælwōh",
+   "wælwulm"
+  ]
+ },
+ "NEU_013": {
+  "host_v1": "kaivo-arvoitus",
+  "clean_host": "kaivo-arvoitus",
+  "language": "Finnish",
+  "generated": [
+   "arvoitus",
+   "pulma",
+   "ongelma",
+   "mysteeri",
+   "pähkinä",
+   "aivopähkinä",
+   "arvoitustehtävä",
+   "sanatehtävä",
+   "logiikkatehtävä",
+   "mysteeritehtävä"
+  ],
+  "controls": [
+   [
+    "arvoitus",
+    "R2"
+   ],
+   [
+    "pulma",
+    ""
+   ],
+   [
+    "ongelma",
+    ""
+   ],
+   [
+    "mysteeri",
+    ""
+   ],
+   [
+    "pähkinä",
+    ""
+   ],
+   [
+    "aivopähkinä",
+    ""
+   ],
+   [
+    "arvoitustehtävä",
+    ""
+   ],
+   [
+    "sanatehtävä",
+    ""
+   ],
+   [
+    "logiikkatehtävä",
+    ""
+   ],
+   [
+    "mysteeritehtävä",
+    ""
+   ]
+  ],
+  "kept": [
+   "pulma",
+   "ongelma",
+   "mysteeri",
+   "pähkinä",
+   "aivopähkinä",
+   "arvoitustehtävä",
+   "sanatehtävä",
+   "logiikkatehtävä",
+   "mysteeritehtävä"
+  ]
+ },
+ "NEU_015": {
+  "host_v1": "Sampo",
+  "clean_host": "Sampo",
+  "language": "Finnish / Proto-Finnic",
+  "generated": [
+   "Taikalaite",
+   "Ihme-esine",
+   "Onnenkalu",
+   "Aarre",
+   "Rikkaus",
+   "Vauraus",
+   "Hyvinvointi",
+   "Rahantekokone",
+   "Myyttinen esine",
+   "Kalevalan Sampo"
+  ],
+  "controls": [
+   [
+    "Taikalaite",
+    ""
+   ],
+   [
+    "Ihme-esine",
+    ""
+   ],
+   [
+    "Onnenkalu",
+    ""
+   ],
+   [
+    "Aarre",
+    ""
+   ],
+   [
+    "Rikkaus",
+    ""
+   ],
+   [
+    "Vauraus",
+    ""
+   ],
+   [
+    "Hyvinvointi",
+    ""
+   ],
+   [
+    "Rahantekokone",
+    ""
+   ],
+   [
+    "Myyttinen esine",
+    ""
+   ],
+   [
+    "Kalevalan Sampo",
+    "R2"
+   ]
+  ],
+  "kept": [
+   "Taikalaite",
+   "Ihme-esine",
+   "Onnenkalu",
+   "Aarre",
+   "Rikkaus",
+   "Vauraus",
+   "Hyvinvointi",
+   "Rahantekokone",
+   "Myyttinen esine"
+  ]
+ },
+ "NEU_018": {
+  "host_v1": "messe ocus Pangur Bán (I and Pangur Bán)",
+  "clean_host": "messe ocus Pangur Bán",
+  "language": "Old Irish",
+  "generated": [
+   "mé ocus Pangur Bán",
+   "misi ocus Pangur Bán",
+   "mé féin ocus Pangur Bán",
+   "misi féin ocus Pangur Bán",
+   "mé ocus in Pangur Bán",
+   "misi ocus in Pangur Bán",
+   "mé ocus Pangur Bán mo chat",
+   "misi ocus Pangur Bán mo chat",
+   "mé ocus Pangur Bán in cat",
+   "misi ocus Pangur Bán in cat"
+  ],
+  "controls": [
+   [
+    "mé ocus Pangur Bán",
+    ""
+   ],
+   [
+    "misi ocus Pangur Bán",
+    ""
+   ],
+   [
+    "mé féin ocus Pangur Bán",
+    ""
+   ],
+   [
+    "misi féin ocus Pangur Bán",
+    ""
+   ],
+   [
+    "mé ocus in Pangur Bán",
+    ""
+   ],
+   [
+    "misi ocus in Pangur Bán",
+    ""
+   ],
+   [
+    "mé ocus Pangur Bán mo chat",
+    ""
+   ],
+   [
+    "misi ocus Pangur Bán mo chat",
+    ""
+   ],
+   [
+    "mé ocus Pangur Bán in cat",
+    ""
+   ],
+   [
+    "misi ocus Pangur Bán in cat",
+    ""
+   ]
+  ],
+  "kept": [
+   "mé ocus Pangur Bán",
+   "misi ocus Pangur Bán",
+   "mé féin ocus Pangur Bán",
+   "misi féin ocus Pangur Bán",
+   "mé ocus in Pangur Bán",
+   "misi ocus in Pangur Bán",
+   "mé ocus Pangur Bán mo chat",
+   "misi ocus Pangur Bán mo chat",
+   "mé ocus Pangur Bán in cat",
+   "misi ocus Pangur Bán in cat"
+  ]
+ },
+ "MET_003": {
+  "host_v1": "karākī",
+  "clean_host": "كَرَاكِي",
+  "language": "Arabic",
+  "generated": [
+   "كراكي",
+   "كركي",
+   "كركيات",
+   "الكركي",
+   "الكراكي",
+   "طائر الكركي",
+   "الرافعة",
+   "الرافعات",
+   "الونش",
+   "الأوناش"
+  ],
+  "controls": [
+   [
+    "كراكي",
+    "R1"
+   ],
+   [
+    "كركي",
+    ""
+   ],
+   [
+    "كركيات",
+    ""
+   ],
+   [
+    "الكركي",
+    ""
+   ],
+   [
+    "الكراكي",
+    "R2"
+   ],
+   [
+    "طائر الكركي",
+    ""
+   ],
+   [
+    "الرافعة",
+    ""
+   ],
+   [
+    "الرافعات",
+    ""
+   ],
+   [
+    "الونش",
+    ""
+   ],
+   [
+    "الأوناش",
+    ""
+   ]
+  ],
+  "kept": [
+   "كركي",
+   "كركيات",
+   "الكركي",
+   "طائر الكركي",
+   "الرافعة",
+   "الرافعات",
+   "الونش",
+   "الأوناش"
+  ]
+ },
+ "MET_005": {
+  "host_v1": "Abū Zayd's rhetorical persona in al-Ḥarīrī's Maqāmāt (12th c.)",
+  "clean_host": "أبو زيد السروجي",
+  "language": "Arabic",
+  "generated": [
+   "شخصية أبي زيد السروجي البلاغية",
+   "قناع أبي زيد الخطابي",
+   "صوت أبي زيد السردي",
+   "الأنا البلاغية لأبي زيد",
+   "الذات الخطابية لأبي زيد",
+   "الهيئة البيانية لأبي زيد",
+   "الطابع الإنشائي لأبي زيد",
+   "الأسلوب المقامي لأبي زيد",
+   "شخصية المحتال الفصيح",
+   "نموذج الخطيب البليغ في المقامات"
+  ],
+  "controls": [
+   [
+    "شخصية أبي زيد السروجي البلاغية",
+    ""
+   ],
+   [
+    "قناع أبي زيد الخطابي",
+    ""
+   ],
+   [
+    "صوت أبي زيد السردي",
+    ""
+   ],
+   [
+    "الأنا البلاغية لأبي زيد",
+    ""
+   ],
+   [
+    "الذات الخطابية لأبي زيد",
+    ""
+   ],
+   [
+    "الهيئة البيانية لأبي زيد",
+    ""
+   ],
+   [
+    "الطابع الإنشائي لأبي زيد",
+    ""
+   ],
+   [
+    "الأسلوب المقامي لأبي زيد",
+    ""
+   ],
+   [
+    "شخصية المحتال الفصيح",
+    ""
+   ],
+   [
+    "نموذج الخطيب البليغ في المقامات",
+    ""
+   ]
+  ],
+  "kept": [
+   "شخصية أبي زيد السروجي البلاغية",
+   "قناع أبي زيد الخطابي",
+   "صوت أبي زيد السردي",
+   "الأنا البلاغية لأبي زيد",
+   "الذات الخطابية لأبي زيد",
+   "الهيئة البيانية لأبي زيد",
+   "الطابع الإنشائي لأبي زيد",
+   "الأسلوب المقامي لأبي زيد",
+   "شخصية المحتال الفصيح",
+   "نموذج الخطيب البليغ في المقامات"
+  ]
+ },
+ "MET_009": {
+  "host_v1": "naʾūm al-ḍuḥā",
+  "clean_host": "نَؤُومُ الضُّحَى",
+  "language": "Arabic",
+  "generated": [
+   "نوم الضحى",
+   "نومة الضحى",
+   "قيلولة",
+   "نومة القيلولة",
+   "نوم القيلولة",
+   "نوم النهار",
+   "نومة النهار",
+   "نوم الظهيرة",
+   "نومة الظهيرة",
+   "نوم بعد الشروق"
+  ],
+  "controls": [
+   [
+    "نوم الضحى",
+    ""
+   ],
+   [
+    "نومة الضحى",
+    ""
+   ],
+   [
+    "قيلولة",
+    ""
+   ],
+   [
+    "نومة القيلولة",
+    ""
+   ],
+   [
+    "نوم القيلولة",
+    ""
+   ],
+   [
+    "نوم النهار",
+    ""
+   ],
+   [
+    "نومة النهار",
+    ""
+   ],
+   [
+    "نوم الظهيرة",
+    ""
+   ],
+   [
+    "نومة الظهيرة",
+    ""
+   ],
+   [
+    "نوم بعد الشروق",
+    ""
+   ]
+  ],
+  "kept": [
+   "نوم الضحى",
+   "نومة الضحى",
+   "قيلولة",
+   "نومة القيلولة",
+   "نوم القيلولة",
+   "نوم النهار",
+   "نومة النهار",
+   "نوم الظهيرة",
+   "نومة الظهيرة",
+   "نوم بعد الشروق"
+  ]
+ },
+ "MET_011": {
+  "host_v1": "wajh Allāh",
+  "clean_host": "وَجْهُ اللَّه",
+  "language": "Arabic",
+  "generated": [
+   "وجه الله تعالى",
+   "وجه الرحمن",
+   "وجه الرب",
+   "وجه الإله",
+   "ذات الله",
+   "حضرة الله",
+   "جناب الله",
+   "وجهه الكريم",
+   "وجهه سبحانه",
+   "وجهه جل جلاله"
+  ],
+  "controls": [
+   [
+    "وجه الله تعالى",
+    "R2"
+   ],
+   [
+    "وجه الرحمن",
+    ""
+   ],
+   [
+    "وجه الرب",
+    ""
+   ],
+   [
+    "وجه الإله",
+    ""
+   ],
+   [
+    "ذات الله",
+    ""
+   ],
+   [
+    "حضرة الله",
+    ""
+   ],
+   [
+    "جناب الله",
+    ""
+   ],
+   [
+    "وجهه الكريم",
+    ""
+   ],
+   [
+    "وجهه سبحانه",
+    ""
+   ],
+   [
+    "وجهه جل جلاله",
+    ""
+   ]
+  ],
+  "kept": [
+   "وجه الرحمن",
+   "وجه الرب",
+   "وجه الإله",
+   "ذات الله",
+   "حضرة الله",
+   "جناب الله",
+   "وجهه الكريم",
+   "وجهه سبحانه",
+   "وجهه جل جلاله"
+  ]
+ },
+ "MET_013": {
+  "host_v1": "gülüverdi",
+  "clean_host": "gülüverdi",
+  "language": "Ottoman Turkish",
+  "generated": [
+   "gülümsedi",
+   "güldü",
+   "kahkaha attı",
+   "kıkırdadı",
+   "sırıttı",
+   "tebessüm etti",
+   "şakıyıp güldü",
+   "gülüp geçti",
+   "gülüşüverdi",
+   "güliverdi"
+  ],
+  "controls": [
+   [
+    "gülümsedi",
+    ""
+   ],
+   [
+    "güldü",
+    ""
+   ],
+   [
+    "kahkaha attı",
+    ""
+   ],
+   [
+    "kıkırdadı",
+    ""
+   ],
+   [
+    "sırıttı",
+    ""
+   ],
+   [
+    "tebessüm etti",
+    ""
+   ],
+   [
+    "şakıyıp güldü",
+    ""
+   ],
+   [
+    "gülüp geçti",
+    ""
+   ],
+   [
+    "gülüşüverdi",
+    ""
+   ],
+   [
+    "güliverdi",
+    ""
+   ]
+  ],
+  "kept": [
+   "gülümsedi",
+   "güldü",
+   "kahkaha attı",
+   "kıkırdadı",
+   "sırıttı",
+   "tebessüm etti",
+   "şakıyıp güldü",
+   "gülüp geçti",
+   "gülüşüverdi",
+   "güliverdi"
+  ]
+ },
+ "MET_015": {
+  "host_v1": "kande",
+  "clean_host": "kande",
+  "language": "Ottoman Turkish",
+  "generated": [
+   "nerede",
+   "kanda",
+   "hangi yerde",
+   "hangi mahalde",
+   "hangi cihette",
+   "hangi tarafta",
+   "hangi mekânda",
+   "hangi mevzide",
+   "hangi noktada",
+   "hangi mahalde ki"
+  ],
+  "controls": [
+   [
+    "nerede",
+    ""
+   ],
+   [
+    "kanda",
+    ""
+   ],
+   [
+    "hangi yerde",
+    ""
+   ],
+   [
+    "hangi mahalde",
+    ""
+   ],
+   [
+    "hangi cihette",
+    ""
+   ],
+   [
+    "hangi tarafta",
+    ""
+   ],
+   [
+    "hangi mekânda",
+    ""
+   ],
+   [
+    "hangi mevzide",
+    ""
+   ],
+   [
+    "hangi noktada",
+    ""
+   ],
+   [
+    "hangi mahalde ki",
+    ""
+   ]
+  ],
+  "kept": [
+   "nerede",
+   "kanda",
+   "hangi yerde",
+   "hangi mahalde",
+   "hangi cihette",
+   "hangi tarafta",
+   "hangi mekânda",
+   "hangi mevzide",
+   "hangi noktada",
+   "hangi mahalde ki"
+  ]
+ },
+ "MET_016": {
+  "host_v1": "bahâr",
+  "clean_host": "bahâr",
+  "language": "Ottoman Turkish",
+  "generated": [
+   "rebîʿ",
+   "rebîʿü’l-evvel",
+   "rebîʿü’l-âhir",
+   "ilkbahâr",
+   "nevbahâr",
+   "bahâristân",
+   "bahâr-ı şebâb",
+   "fasl-ı bahâr",
+   "mevsim-i bahâr",
+   "bahâr mevsimi"
+  ],
+  "controls": [
+   [
+    "rebîʿ",
+    ""
+   ],
+   [
+    "rebîʿü’l-evvel",
+    ""
+   ],
+   [
+    "rebîʿü’l-âhir",
+    ""
+   ],
+   [
+    "ilkbahâr",
+    "R2"
+   ],
+   [
+    "nevbahâr",
+    "R2"
+   ],
+   [
+    "bahâristân",
+    "R2"
+   ],
+   [
+    "bahâr-ı şebâb",
+    "R2"
+   ],
+   [
+    "fasl-ı bahâr",
+    "R2"
+   ],
+   [
+    "mevsim-i bahâr",
+    "R2"
+   ],
+   [
+    "bahâr mevsimi",
+    "R2"
+   ]
+  ],
+  "kept": [
+   "rebîʿ",
+   "rebîʿü’l-evvel",
+   "rebîʿü’l-âhir"
+  ]
+ },
+ "EEU_001": {
+  "host_v1": "Krasnaya golovka, pod ney — borodka, utrom rano vstayot, Mashe spat' ne dayot",
+  "clean_host": "Красная головка, под ней — бородка, утром рано встаёт, Маше спать не даёт",
+  "language": "Russian",
+  "generated": [
+   "Петушок",
+   "Петух",
+   "Петушиный крик",
+   "Кукареканье",
+   "Будильник",
+   "Ранний подъём",
+   "Пробуждение",
+   "Не даёт спать",
+   "Красный гребешок",
+   "Бородка петуха"
+  ],
+  "controls": [
+   [
+    "Петушок",
+    ""
+   ],
+   [
+    "Петух",
+    ""
+   ],
+   [
+    "Петушиный крик",
+    ""
+   ],
+   [
+    "Кукареканье",
+    ""
+   ],
+   [
+    "Будильник",
+    ""
+   ],
+   [
+    "Ранний подъём",
+    ""
+   ],
+   [
+    "Пробуждение",
+    ""
+   ],
+   [
+    "Не даёт спать",
+    ""
+   ],
+   [
+    "Красный гребешок",
+    ""
+   ],
+   [
+    "Бородка петуха",
+    ""
+   ]
+  ],
+  "kept": [
+   "Петушок",
+   "Петух",
+   "Петушиный крик",
+   "Кукареканье",
+   "Будильник",
+   "Ранний подъём",
+   "Пробуждение",
+   "Не даёт спать",
+   "Красный гребешок",
+   "Бородка петуха"
+  ]
+ },
+ "EEU_002": {
+  "host_v1": "Volosataya golovka za shcheku zakhodit lovko",
+  "clean_host": "Волосатая головка за щеку заходит ловко",
+  "language": "Russian",
+  "generated": [],
+  "controls": [],
+  "kept": []
+ },
+ "EEU_003": {
+  "host_v1": "Sherstka s sherstkoy slipayutsya, / Nochnoy sladosti dozhidayutsya",
+  "clean_host": "Шерстка с шерсткой слипаются, ночной сладости дожидаются",
+  "language": "Russian",
+  "generated": [
+   "Шерсть к шерсти слипается",
+   "Ворс к ворсу липнет",
+   "Шерстинки сцепляются",
+   "Волокна сплетаются",
+   "Пушинки слеживаются",
+   "Ночь приносит сладость",
+   "Ждут ночной неги",
+   "Дожидаются ночной ласки",
+   "Ожидают ночного наслаждения",
+   "Томятся в ожидании ночной сладости"
+  ],
+  "controls": [
+   [
+    "Шерсть к шерсти слипается",
+    ""
+   ],
+   [
+    "Ворс к ворсу липнет",
+    ""
+   ],
+   [
+    "Шерстинки сцепляются",
+    ""
+   ],
+   [
+    "Волокна сплетаются",
+    ""
+   ],
+   [
+    "Пушинки слеживаются",
+    ""
+   ],
+   [
+    "Ночь приносит сладость",
+    ""
+   ],
+   [
+    "Ждут ночной неги",
+    ""
+   ],
+   [
+    "Дожидаются ночной ласки",
+    ""
+   ],
+   [
+    "Ожидают ночного наслаждения",
+    ""
+   ],
+   [
+    "Томятся в ожидании ночной сладости",
+    ""
+   ]
+  ],
+  "kept": [
+   "Шерсть к шерсти слипается",
+   "Ворс к ворсу липнет",
+   "Шерстинки сцепляются",
+   "Волокна сплетаются",
+   "Пушинки слеживаются",
+   "Ночь приносит сладость",
+   "Ждут ночной неги",
+   "Дожидаются ночной ласки",
+   "Ожидают ночного наслаждения",
+   "Томятся в ожидании ночной сладости"
+  ]
+ },
+ "EEU_005": {
+  "host_v1": "Bez ruk, bez nog na babu skok!",
+  "clean_host": "Без рук, без ног на бабу скок!",
+  "language": "Russian",
+  "generated": [
+   "Без рук, без ног — на печку скок!",
+   "Без рук, без ног — в избу скок!",
+   "Без рук, без ног — на лавку скок!",
+   "Без рук, без ног — на полати скок!",
+   "Без рук, без ног — на порог скок!",
+   "Без рук, без ног — на кровать скок!",
+   "Без рук, без ног — на сундук скок!",
+   "Без рук, без ног — на скамью скок!",
+   "Без рук, без ног — на стол скок!",
+   "Без рук, без ног — на завалинку скок!"
+  ],
+  "controls": [
+   [
+    "Без рук, без ног — на печку скок!",
+    ""
+   ],
+   [
+    "Без рук, без ног — в избу скок!",
+    ""
+   ],
+   [
+    "Без рук, без ног — на лавку скок!",
+    ""
+   ],
+   [
+    "Без рук, без ног — на полати скок!",
+    ""
+   ],
+   [
+    "Без рук, без ног — на порог скок!",
+    ""
+   ],
+   [
+    "Без рук, без ног — на кровать скок!",
+    ""
+   ],
+   [
+    "Без рук, без ног — на сундук скок!",
+    ""
+   ],
+   [
+    "Без рук, без ног — на скамью скок!",
+    ""
+   ],
+   [
+    "Без рук, без ног — на стол скок!",
+    ""
+   ],
+   [
+    "Без рук, без ног — на завалинку скок!",
+    ""
+   ]
+  ],
+  "kept": [
+   "Без рук, без ног — на печку скок!",
+   "Без рук, без ног — в избу скок!",
+   "Без рук, без ног — на лавку скок!",
+   "Без рук, без ног — на полати скок!",
+   "Без рук, без ног — на порог скок!",
+   "Без рук, без ног — на кровать скок!",
+   "Без рук, без ног — на сундук скок!",
+   "Без рук, без ног — на скамью скок!",
+   "Без рук, без ног — на стол скок!",
+   "Без рук, без ног — на завалинку скок!"
+  ]
+ },
+ "EEU_007": {
+  "host_v1": "sedel'tse cherkasskoe",
+  "clean_host": "седельце черкасское",
+  "language": "Russian (Old Russian oral)",
+  "generated": [
+   "седельце черкасское",
+   "седло черкасское",
+   "седельце черкасское казачье",
+   "седло черкасское казачье",
+   "седельце казачье",
+   "седло казачье",
+   "седельце донское",
+   "седло донское",
+   "седельце степное",
+   "седло степное"
+  ],
+  "controls": [
+   [
+    "седельце черкасское",
+    "R1"
+   ],
+   [
+    "седло черкасское",
+    ""
+   ],
+   [
+    "седельце черкасское казачье",
+    "R2"
+   ],
+   [
+    "седло черкасское казачье",
+    ""
+   ],
+   [
+    "седельце казачье",
+    ""
+   ],
+   [
+    "седло казачье",
+    ""
+   ],
+   [
+    "седельце донское",
+    ""
+   ],
+   [
+    "седло донское",
+    ""
+   ],
+   [
+    "седельце степное",
+    ""
+   ],
+   [
+    "седло степное",
+    ""
+   ]
+  ],
+  "kept": [
+   "седло черкасское",
+   "седло черкасское казачье",
+   "седельце казачье",
+   "седло казачье",
+   "седельце донское",
+   "седло донское",
+   "седельце степное",
+   "седло степное"
+  ]
+ },
+ "EEU_009": {
+  "host_v1": "belye ruki",
+  "clean_host": "белые руки",
+  "language": "Russian (Old Russian oral)",
+  "generated": [
+   "светлыя рукы",
+   "чистыя рукы",
+   "белыя длани",
+   "светлыя длани",
+   "чистыя длани",
+   "белыя персты",
+   "светлыя персты",
+   "чистыя персты",
+   "белыя рученьки",
+   "чистыя рученьки"
+  ],
+  "controls": [
+   [
+    "светлыя рукы",
+    ""
+   ],
+   [
+    "чистыя рукы",
+    ""
+   ],
+   [
+    "белыя длани",
+    ""
+   ],
+   [
+    "светлыя длани",
+    ""
+   ],
+   [
+    "чистыя длани",
+    ""
+   ],
+   [
+    "белыя персты",
+    ""
+   ],
+   [
+    "светлыя персты",
+    ""
+   ],
+   [
+    "чистыя персты",
+    ""
+   ],
+   [
+    "белыя рученьки",
+    ""
+   ],
+   [
+    "чистыя рученьки",
+    ""
+   ]
+  ],
+  "kept": [
+   "светлыя рукы",
+   "чистыя рукы",
+   "белыя длани",
+   "светлыя длани",
+   "чистыя длани",
+   "белыя персты",
+   "светлыя персты",
+   "чистыя персты",
+   "белыя рученьки",
+   "чистыя рученьки"
+  ]
+ },
+ "EEU_010": {
+  "host_v1": "Napoić konia u studni / Napoit' konya u kolodtsa",
+  "clean_host": "Napoić konia u studni",
+  "language": "Polish / Russian / Ukrainian",
+  "generated": [
+   "Napoić konia przy studni",
+   "Napoić konia ze studni",
+   "Dać koniowi pić przy studni",
+   "Poidło dla konia przy studni",
+   "Zaczerpnąć wody ze studni dla konia",
+   "Zawadzić konia do studni",
+   "Zaprowadzić konia do studni",
+   "Napoić rumaka przy studni",
+   "Napoić wierzchowca przy studni",
+   "Poidło konia przy studni"
+  ],
+  "controls": [
+   [
+    "Napoić konia przy studni",
+    ""
+   ],
+   [
+    "Napoić konia ze studni",
+    ""
+   ],
+   [
+    "Dać koniowi pić przy studni",
+    ""
+   ],
+   [
+    "Poidło dla konia przy studni",
+    ""
+   ],
+   [
+    "Zaczerpnąć wody ze studni dla konia",
+    ""
+   ],
+   [
+    "Zawadzić konia do studni",
+    ""
+   ],
+   [
+    "Zaprowadzić konia do studni",
+    ""
+   ],
+   [
+    "Napoić rumaka przy studni",
+    ""
+   ],
+   [
+    "Napoić wierzchowca przy studni",
+    ""
+   ],
+   [
+    "Poidło konia przy studni",
+    ""
+   ]
+  ],
+  "kept": [
+   "Napoić konia przy studni",
+   "Napoić konia ze studni",
+   "Dać koniowi pić przy studni",
+   "Poidło dla konia przy studni",
+   "Zaczerpnąć wody ze studni dla konia",
+   "Zawadzić konia do studni",
+   "Zaprowadzić konia do studni",
+   "Napoić rumaka przy studni",
+   "Napoić wierzchowca przy studni",
+   "Poidło konia przy studni"
+  ]
+ },
+ "EEU_011": {
+  "host_v1": "oranie pola / zaorać",
+  "clean_host": "oranie",
+  "language": "Polish",
+  "generated": [
+   "orać",
+   "zaorywać",
+   "przeorać",
+   "zorować",
+   "uprawiać pole",
+   "przyorać",
+   "podorać",
+   "odorać",
+   "wzruszyć ziemię",
+   "przekopać ziemię"
+  ],
+  "controls": [
+   [
+    "orać",
+    ""
+   ],
+   [
+    "zaorywać",
+    ""
+   ],
+   [
+    "przeorać",
+    ""
+   ],
+   [
+    "zorować",
+    ""
+   ],
+   [
+    "uprawiać pole",
+    ""
+   ],
+   [
+    "przyorać",
+    ""
+   ],
+   [
+    "podorać",
+    ""
+   ],
+   [
+    "odorać",
+    ""
+   ],
+   [
+    "wzruszyć ziemię",
+    ""
+   ],
+   [
+    "przekopać ziemię",
+    ""
+   ]
+  ],
+  "kept": [
+   "orać",
+   "zaorywać",
+   "przeorać",
+   "zorować",
+   "uprawiać pole",
+   "przyorać",
+   "podorać",
+   "odorać",
+   "wzruszyć ziemię",
+   "przekopać ziemię"
+  ]
+ },
+ "EEU_013": {
+  "host_v1": "Myane mily spalyubiv, syarod polya zavaliv: / Grekh nya grekh, a mne khochatsya",
+  "clean_host": "Мяне мілы спалюбіў, сярод поля заваліў: Грэх ня грэх, а мне хочацца",
+  "language": "Belarusian",
+  "generated": [
+   "Ён мяне кахае, хоць і грэх, але хочацца",
+   "Мілы мяне спакусіў, у полі паваліў: грэх не грэх, а хочацца",
+   "Палюбоўнік мяне звабіў: грэх не грэх, а душа просіць",
+   "Ён мяне звалак у полі: грэх не грэх, а сэрца хоча",
+   "Мяне мілы абняў і паваліў: грэх не грэх, а хочацца",
+   "Каханы мяне спакусіў: грэх не грэх, а цягне",
+   "Ён мяне звабіў у полі: грэх не грэх, а хочацца",
+   "Мілы мяне паваліў у жыце: грэх не грэх, а хочацца",
+   "Палюбоўнік мяне ў полі ўзяў: грэх не грэх, а хочацца",
+   "Каханы мяне звабіў: грэх не грэх, а мне хочацца"
+  ],
+  "controls": [
+   [
+    "Ён мяне кахае, хоць і грэх, але хочацца",
+    ""
+   ],
+   [
+    "Мілы мяне спакусіў, у полі паваліў: грэх не грэх, а хочацца",
+    ""
+   ],
+   [
+    "Палюбоўнік мяне звабіў: грэх не грэх, а душа просіць",
+    ""
+   ],
+   [
+    "Ён мяне звалак у полі: грэх не грэх, а сэрца хоча",
+    ""
+   ],
+   [
+    "Мяне мілы абняў і паваліў: грэх не грэх, а хочацца",
+    ""
+   ],
+   [
+    "Каханы мяне спакусіў: грэх не грэх, а цягне",
+    ""
+   ],
+   [
+    "Ён мяне звабіў у полі: грэх не грэх, а хочацца",
+    ""
+   ],
+   [
+    "Мілы мяне паваліў у жыце: грэх не грэх, а хочацца",
+    ""
+   ],
+   [
+    "Палюбоўнік мяне ў полі ўзяў: грэх не грэх, а хочацца",
+    ""
+   ],
+   [
+    "Каханы мяне звабіў: грэх не грэх, а мне хочацца",
+    ""
+   ]
+  ],
+  "kept": [
+   "Ён мяне кахае, хоць і грэх, але хочацца",
+   "Мілы мяне спакусіў, у полі паваліў: грэх не грэх, а хочацца",
+   "Палюбоўнік мяне звабіў: грэх не грэх, а душа просіць",
+   "Ён мяне звалак у полі: грэх не грэх, а сэрца хоча",
+   "Мяне мілы абняў і паваліў: грэх не грэх, а хочацца",
+   "Каханы мяне спакусіў: грэх не грэх, а цягне",
+   "Ён мяне звабіў у полі: грэх не грэх, а хочацца",
+   "Мілы мяне паваліў у жыце: грэх не грэх, а хочацца",
+   "Палюбоўнік мяне ў полі ўзяў: грэх не грэх, а хочацца",
+   "Каханы мяне звабіў: грэх не грэх, а мне хочацца"
+  ]
+ },
+ "EEU_014": {
+  "host_v1": "Zvyerkhu chorna, / Unutry krasna. / Yak usunesh, dyk prekkrasna",
+  "clean_host": "Зверху чорна,\nУнутры красна.\nЯк усунеш, дык прэкрасна",
+  "language": "Belarusian",
+  "generated": [
+   "Зверху чорная, унутры прыгожая, як ачысціш — дык цудоўная",
+   "Звонку чорная, усярэдзіне красная, ачысціш — стане найпрыгажэйшая",
+   "Зверху цёмная, унутры светлая, як здымеш — дык харашая",
+   "Звонку брудная, унутры чыстая, як абчысціш — дык прыгожая",
+   "Зверху непрыглядная, унутры красуня, ачысціш — дык цуд",
+   "Звонку чорная, унутры салодкая, ачысціш — дык смачная",
+   "Зверху шурпатая, унутры мяккая, як ачысціш — дык лепшая",
+   "Звонку цёмная, унутры белая, як здымеш скурку — дык прыгожая",
+   "Зверху чорная, унутры добрая, ачысціш — дык найлепшая",
+   "Звонку непрыгожая, унутры красная, як абдзерэш — дык цудоўная"
+  ],
+  "controls": [
+   [
+    "Зверху чорная, унутры прыгожая, як ачысціш — дык цудоўная",
+    ""
+   ],
+   [
+    "Звонку чорная, усярэдзіне красная, ачысціш — стане найпрыгажэйшая",
+    ""
+   ],
+   [
+    "Зверху цёмная, унутры светлая, як здымеш — дык харашая",
+    ""
+   ],
+   [
+    "Звонку брудная, унутры чыстая, як абчысціш — дык прыгожая",
+    ""
+   ],
+   [
+    "Зверху непрыглядная, унутры красуня, ачысціш — дык цуд",
+    ""
+   ],
+   [
+    "Звонку чорная, унутры салодкая, ачысціш — дык смачная",
+    ""
+   ],
+   [
+    "Зверху шурпатая, унутры мяккая, як ачысціш — дык лепшая",
+    ""
+   ],
+   [
+    "Звонку цёмная, унутры белая, як здымеш скурку — дык прыгожая",
+    ""
+   ],
+   [
+    "Зверху чорная, унутры добрая, ачысціш — дык найлепшая",
+    ""
+   ],
+   [
+    "Звонку непрыгожая, унутры красная, як абдзерэш — дык цудоўная",
+    ""
+   ]
+  ],
+  "kept": [
+   "Зверху чорная, унутры прыгожая, як ачысціш — дык цудоўная",
+   "Звонку чорная, усярэдзіне красная, ачысціш — стане найпрыгажэйшая",
+   "Зверху цёмная, унутры светлая, як здымеш — дык харашая",
+   "Звонку брудная, унутры чыстая, як абчысціш — дык прыгожая",
+   "Зверху непрыглядная, унутры красуня, ачысціш — дык цуд",
+   "Звонку чорная, унутры салодкая, ачысціш — дык смачная",
+   "Зверху шурпатая, унутры мяккая, як ачысціш — дык лепшая",
+   "Звонку цёмная, унутры белая, як здымеш скурку — дык прыгожая",
+   "Зверху чорная, унутры добрая, ачысціш — дык найлепшая",
+   "Звонку непрыгожая, унутры красная, як абдзерэш — дык цудоўная"
+  ]
+ },
+ "EEU_015": {
+  "host_v1": "krasota",
+  "clean_host": "красота",
+  "language": "Russian",
+  "generated": [
+   "красивость",
+   "прекрасность",
+   "прелесть",
+   "очарование",
+   "великолепие",
+   "изящество",
+   "грация",
+   "эстетика",
+   "привлекательность",
+   "шик"
+  ],
+  "controls": [
+   [
+    "красивость",
+    ""
+   ],
+   [
+    "прекрасность",
+    ""
+   ],
+   [
+    "прелесть",
+    ""
+   ],
+   [
+    "очарование",
+    ""
+   ],
+   [
+    "великолепие",
+    ""
+   ],
+   [
+    "изящество",
+    ""
+   ],
+   [
+    "грация",
+    ""
+   ],
+   [
+    "эстетика",
+    ""
+   ],
+   [
+    "привлекательность",
+    ""
+   ],
+   [
+    "шик",
+    ""
+   ]
+  ],
+  "kept": [
+   "красивость",
+   "прекрасность",
+   "прелесть",
+   "очарование",
+   "великолепие",
+   "изящество",
+   "грация",
+   "эстетика",
+   "привлекательность",
+   "шик"
+  ]
+ },
+ "OCE_007": {
+  "host_v1": "Toitū te whenua, whatungarongaro te tangata",
+  "clean_host": "Toitū te whenua, whatungarongaro te tangata",
+  "language": "Te Reo Māori",
+  "generated": [
+   "Toitū te whenua, ngaro noa te tangata",
+   "Toitū te whenua, mate noa te tangata",
+   "Toitū te whenua, he tangata haere",
+   "He tangata mate, he whenua ora",
+   "Ka ngaro te tangata, ka mau tonu te whenua",
+   "He tangata ka ngaro, he whenua ka toitū",
+   "He tangata hemo, he whenua mau tonu",
+   "He tangata he puehu, he whenua e tū nei",
+   "He tangata he manuhiri, he whenua he kāinga",
+   "He tangata he tauhou, he whenua he tūrangawaewae"
+  ],
+  "controls": [
+   [
+    "Toitū te whenua, ngaro noa te tangata",
+    ""
+   ],
+   [
+    "Toitū te whenua, mate noa te tangata",
+    ""
+   ],
+   [
+    "Toitū te whenua, he tangata haere",
+    ""
+   ],
+   [
+    "He tangata mate, he whenua ora",
+    ""
+   ],
+   [
+    "Ka ngaro te tangata, ka mau tonu te whenua",
+    ""
+   ],
+   [
+    "He tangata ka ngaro, he whenua ka toitū",
+    ""
+   ],
+   [
+    "He tangata hemo, he whenua mau tonu",
+    ""
+   ],
+   [
+    "He tangata he puehu, he whenua e tū nei",
+    ""
+   ],
+   [
+    "He tangata he manuhiri, he whenua he kāinga",
+    ""
+   ],
+   [
+    "He tangata he tauhou, he whenua he tūrangawaewae",
+    ""
+   ]
+  ],
+  "kept": [
+   "Toitū te whenua, ngaro noa te tangata",
+   "Toitū te whenua, mate noa te tangata",
+   "Toitū te whenua, he tangata haere",
+   "He tangata mate, he whenua ora",
+   "Ka ngaro te tangata, ka mau tonu te whenua",
+   "He tangata ka ngaro, he whenua ka toitū",
+   "He tangata hemo, he whenua mau tonu",
+   "He tangata he puehu, he whenua e tū nei",
+   "He tangata he manuhiri, he whenua he kāinga",
+   "He tangata he tauhou, he whenua he tūrangawaewae"
+  ]
+ },
+ "OCE_008": {
+  "host_v1": "Kua kaheko te tuna i roto i aku ringa",
+  "clean_host": "Kua kaheko te tuna i roto i aku ringa",
+  "language": "Te Reo Māori",
+  "generated": [
+   "Kua paheke te tuna i roto i aku ringa",
+   "Kua rere te tuna i roto i aku ringa",
+   "Kua mawhiti te tuna i roto i aku ringa",
+   "Kua puta te tuna i roto i aku ringa",
+   "Kua kōtiti te tuna i roto i aku ringa",
+   "Kua heke te tuna i roto i aku ringa",
+   "Kua ngaro te tuna i roto i aku ringa",
+   "Kua maunu te tuna i roto i aku ringa",
+   "Kua puta atu te tuna i aku ringa",
+   "Kua paheke te tuna i aku ringa"
+  ],
+  "controls": [
+   [
+    "Kua paheke te tuna i roto i aku ringa",
+    ""
+   ],
+   [
+    "Kua rere te tuna i roto i aku ringa",
+    ""
+   ],
+   [
+    "Kua mawhiti te tuna i roto i aku ringa",
+    ""
+   ],
+   [
+    "Kua puta te tuna i roto i aku ringa",
+    ""
+   ],
+   [
+    "Kua kōtiti te tuna i roto i aku ringa",
+    ""
+   ],
+   [
+    "Kua heke te tuna i roto i aku ringa",
+    ""
+   ],
+   [
+    "Kua ngaro te tuna i roto i aku ringa",
+    ""
+   ],
+   [
+    "Kua maunu te tuna i roto i aku ringa",
+    ""
+   ],
+   [
+    "Kua puta atu te tuna i aku ringa",
+    ""
+   ],
+   [
+    "Kua paheke te tuna i aku ringa",
+    ""
+   ]
+  ],
+  "kept": [
+   "Kua paheke te tuna i roto i aku ringa",
+   "Kua rere te tuna i roto i aku ringa",
+   "Kua mawhiti te tuna i roto i aku ringa",
+   "Kua puta te tuna i roto i aku ringa",
+   "Kua kōtiti te tuna i roto i aku ringa",
+   "Kua heke te tuna i roto i aku ringa",
+   "Kua ngaro te tuna i roto i aku ringa",
+   "Kua maunu te tuna i roto i aku ringa",
+   "Kua puta atu te tuna i aku ringa",
+   "Kua paheke te tuna i aku ringa"
+  ]
+ },
+ "NET_002": {
+  "host_v1": "eggplant emoji; peach emoji",
+  "clean_host": "🍆 🍑",
+  "language": "Cross-linguistic (universal emoji script)",
+  "generated": [
+   "🍆",
+   "🍑",
+   "🍆🍑",
+   "🍑🍆",
+   "🍆💦",
+   "🍑💦",
+   "🍆👉🍑",
+   "🍆🍑💦",
+   "🍆😏",
+   "🍑😏"
+  ],
+  "controls": [
+   [
+    "🍆",
+    ""
+   ],
+   [
+    "🍑",
+    ""
+   ],
+   [
+    "🍆🍑",
+    "R1"
+   ],
+   [
+    "🍑🍆",
+    ""
+   ],
+   [
+    "🍆💦",
+    ""
+   ],
+   [
+    "🍑💦",
+    ""
+   ],
+   [
+    "🍆👉🍑",
+    ""
+   ],
+   [
+    "🍆🍑💦",
+    "R2"
+   ],
+   [
+    "🍆😏",
+    ""
+   ],
+   [
+    "🍑😏",
+    ""
+   ]
+  ],
+  "kept": [
+   "🍆",
+   "🍑",
+   "🍑🍆",
+   "🍆💦",
+   "🍑💦",
+   "🍆👉🍑",
+   "🍆😏",
+   "🍑😏"
+  ]
+ },
+ "NET_005": {
+  "host_v1": "Wǔyuè sānshíwǔrì",
+  "clean_host": "五月三十五日",
+  "language": "Mandarin Chinese (普通话)",
+  "generated": [
+   "五月三十四日",
+   "五月三十六日",
+   "五月三十三日",
+   "五月三十七日",
+   "五月三十二日",
+   "五月三十八日",
+   "五月三十一日",
+   "五月三十九日",
+   "五月三十日",
+   "六月四日"
+  ],
+  "controls": [
+   [
+    "五月三十四日",
+    ""
+   ],
+   [
+    "五月三十六日",
+    ""
+   ],
+   [
+    "五月三十三日",
+    ""
+   ],
+   [
+    "五月三十七日",
+    ""
+   ],
+   [
+    "五月三十二日",
+    ""
+   ],
+   [
+    "五月三十八日",
+    ""
+   ],
+   [
+    "五月三十一日",
+    ""
+   ],
+   [
+    "五月三十九日",
+    ""
+   ],
+   [
+    "五月三十日",
+    ""
+   ],
+   [
+    "六月四日",
+    ""
+   ]
+  ],
+  "kept": [
+   "五月三十四日",
+   "五月三十六日",
+   "五月三十三日",
+   "五月三十七日",
+   "五月三十二日",
+   "五月三十八日",
+   "五月三十一日",
+   "五月三十九日",
+   "五月三十日",
+   "六月四日"
+  ]
+ },
+ "NET_007": {
+  "host_v1": "Netflix and chill",
+  "clean_host": "Netflix and chill",
+  "language": "English (primarily American English; global adoption)",
+  "generated": [
+   "hook up",
+   "make out",
+   "have sex",
+   "sleep together",
+   "get it on",
+   "fool around",
+   "get busy",
+   "smash",
+   "bang",
+   "come over and chill"
+  ],
+  "controls": [
+   [
+    "hook up",
+    ""
+   ],
+   [
+    "make out",
+    ""
+   ],
+   [
+    "have sex",
+    ""
+   ],
+   [
+    "sleep together",
+    ""
+   ],
+   [
+    "get it on",
+    ""
+   ],
+   [
+    "fool around",
+    ""
+   ],
+   [
+    "get busy",
+    ""
+   ],
+   [
+    "smash",
+    ""
+   ],
+   [
+    "bang",
+    ""
+   ],
+   [
+    "come over and chill",
+    ""
+   ]
+  ],
+  "kept": [
+   "hook up",
+   "make out",
+   "have sex",
+   "sleep together",
+   "get it on",
+   "fool around",
+   "get busy",
+   "smash",
+   "bang",
+   "come over and chill"
+  ]
+ },
+ "T_003": {
+  "host_v1": "sakura",
+  "clean_host": "桜",
+  "language": "ja",
+  "generated": [
+   "桜の花",
+   "桜花",
+   "ソメイヨシノ",
+   "ヤマザクラ",
+   "シダレザクラ",
+   "八重桜",
+   "花見",
+   "桜並木",
+   "桜色",
+   "桜前線"
+  ],
+  "controls": [
+   [
+    "桜の花",
+    ""
+   ],
+   [
+    "桜花",
+    ""
+   ],
+   [
+    "ソメイヨシノ",
+    ""
+   ],
+   [
+    "ヤマザクラ",
+    ""
+   ],
+   [
+    "シダレザクラ",
+    ""
+   ],
+   [
+    "八重桜",
+    ""
+   ],
+   [
+    "花見",
+    ""
+   ],
+   [
+    "桜並木",
+    ""
+   ],
+   [
+    "桜色",
+    ""
+   ],
+   [
+    "桜前線",
+    ""
+   ]
+  ],
+  "kept": [
+   "桜の花",
+   "桜花",
+   "ソメイヨシノ",
+   "ヤマザクラ",
+   "シダレザクラ",
+   "八重桜",
+   "花見",
+   "桜並木",
+   "桜色",
+   "桜前線"
+  ]
+ },
+ "T_007": {
+  "host_v1": "tsuyu",
+  "clean_host": "露",
+  "language": "ja",
+  "generated": [
+   "梅雨",
+   "梅雨時",
+   "梅雨期",
+   "梅雨入り",
+   "梅雨明け",
+   "梅雨前線",
+   "長雨",
+   "雨季",
+   "五月雨",
+   "雨期"
+  ],
+  "controls": [
+   [
+    "梅雨",
+    ""
+   ],
+   [
+    "梅雨時",
+    ""
+   ],
+   [
+    "梅雨期",
+    ""
+   ],
+   [
+    "梅雨入り",
+    ""
+   ],
+   [
+    "梅雨明け",
+    ""
+   ],
+   [
+    "梅雨前線",
+    ""
+   ],
+   [
+    "長雨",
+    ""
+   ],
+   [
+    "雨季",
+    ""
+   ],
+   [
+    "五月雨",
+    ""
+   ],
+   [
+    "雨期",
+    ""
+   ]
+  ],
+  "kept": [
+   "梅雨",
+   "梅雨時",
+   "梅雨期",
+   "梅雨入り",
+   "梅雨明け",
+   "梅雨前線",
+   "長雨",
+   "雨季",
+   "五月雨",
+   "雨期"
+  ]
+ },
+ "T_015": {
+  "host_v1": "rati",
+  "clean_host": "रति",
+  "language": "hi",
+  "generated": [
+   "रात्रि",
+   "रात",
+   "निशा",
+   "रजनी",
+   "यामिनी",
+   "निशि",
+   "निशीथ",
+   "अर्धरात्रि",
+   "रात्री",
+   "रात्र"
+  ],
+  "controls": [
+   [
+    "रात्रि",
+    ""
+   ],
+   [
+    "रात",
+    ""
+   ],
+   [
+    "निशा",
+    ""
+   ],
+   [
+    "रजनी",
+    ""
+   ],
+   [
+    "यामिनी",
+    ""
+   ],
+   [
+    "निशि",
+    ""
+   ],
+   [
+    "निशीथ",
+    ""
+   ],
+   [
+    "अर्धरात्रि",
+    ""
+   ],
+   [
+    "रात्री",
+    ""
+   ],
+   [
+    "रात्र",
+    ""
+   ]
+  ],
+  "kept": [
+   "रात्रि",
+   "रात",
+   "निशा",
+   "रजनी",
+   "यामिनी",
+   "निशि",
+   "निशीथ",
+   "अर्धरात्रि",
+   "रात्री",
+   "रात्र"
+  ]
+ },
+ "T_016": {
+  "host_v1": "kama",
+  "clean_host": "काम",
+  "language": "hi",
+  "generated": [
+   "इच्छा",
+   "कामना",
+   "वासना",
+   "काम",
+   "लालसा",
+   "अभिलाषा",
+   "आकांक्षा",
+   "रति",
+   "प्रेम",
+   "भोग"
+  ],
+  "controls": [
+   [
+    "इच्छा",
+    ""
+   ],
+   [
+    "कामना",
+    "R2"
+   ],
+   [
+    "वासना",
+    ""
+   ],
+   [
+    "काम",
+    "R1"
+   ],
+   [
+    "लालसा",
+    ""
+   ],
+   [
+    "अभिलाषा",
+    ""
+   ],
+   [
+    "आकांक्षा",
+    ""
+   ],
+   [
+    "रति",
+    ""
+   ],
+   [
+    "प्रेम",
+    ""
+   ],
+   [
+    "भोग",
+    ""
+   ]
+  ],
+  "kept": [
+   "इच्छा",
+   "वासना",
+   "लालसा",
+   "अभिलाषा",
+   "आकांक्षा",
+   "रति",
+   "प्रेम",
+   "भोग"
+  ]
+ },
+ "T_017": {
+  "host_v1": "madana",
+  "clean_host": "मदन",
+  "language": "hi",
+  "generated": [
+   "कामदेव",
+   "मनमथ",
+   "मदन",
+   "अनंग",
+   "कंदर्प",
+   "मार",
+   "रतिकांत",
+   "पुष्पबाण",
+   "प्रद्युम्न",
+   "रति-पति"
+  ],
+  "controls": [
+   [
+    "कामदेव",
+    ""
+   ],
+   [
+    "मनमथ",
+    ""
+   ],
+   [
+    "मदन",
+    "R1"
+   ],
+   [
+    "अनंग",
+    ""
+   ],
+   [
+    "कंदर्प",
+    ""
+   ],
+   [
+    "मार",
+    ""
+   ],
+   [
+    "रतिकांत",
+    ""
+   ],
+   [
+    "पुष्पबाण",
+    ""
+   ],
+   [
+    "प्रद्युम्न",
+    ""
+   ],
+   [
+    "रति-पति",
+    ""
+   ]
+  ],
+  "kept": [
+   "कामदेव",
+   "मनमथ",
+   "अनंग",
+   "कंदर्प",
+   "मार",
+   "रतिकांत",
+   "पुष्पबाण",
+   "प्रद्युम्न",
+   "रति-पति"
+  ]
+ },
+ "T_021": {
+  "host_v1": "keli",
+  "clean_host": "केलि",
+  "language": "hi",
+  "generated": [
+   "केली",
+   "कली",
+   "कलि",
+   "केला",
+   "केलीदार",
+   "केल",
+   "केलिन",
+   "केलिया",
+   "केलियों",
+   "केलियाँ"
+  ],
+  "controls": [
+   [
+    "केली",
+    ""
+   ],
+   [
+    "कली",
+    ""
+   ],
+   [
+    "कलि",
+    ""
+   ],
+   [
+    "केला",
+    ""
+   ],
+   [
+    "केलीदार",
+    ""
+   ],
+   [
+    "केल",
+    "R2"
+   ],
+   [
+    "केलिन",
+    "R2"
+   ],
+   [
+    "केलिया",
+    "R2"
+   ],
+   [
+    "केलियों",
+    "R2"
+   ],
+   [
+    "केलियाँ",
+    "R2"
+   ]
+  ],
+  "kept": [
+   "केली",
+   "कली",
+   "कलि",
+   "केला",
+   "केलीदार"
+  ]
+ },
+ "T_024": {
+  "host_v1": "alingana",
+  "clean_host": "आलिंगन",
+  "language": "hi",
+  "generated": [
+   "समानता",
+   "मिलान",
+   "तुलना",
+   "अनुरूपता",
+   "सादृश्य",
+   "एकरूपता",
+   "समरूपता",
+   "बराबरी",
+   "संगति",
+   "सामंजस्य"
+  ],
+  "controls": [
+   [
+    "समानता",
+    ""
+   ],
+   [
+    "मिलान",
+    ""
+   ],
+   [
+    "तुलना",
+    ""
+   ],
+   [
+    "अनुरूपता",
+    ""
+   ],
+   [
+    "सादृश्य",
+    ""
+   ],
+   [
+    "एकरूपता",
+    ""
+   ],
+   [
+    "समरूपता",
+    ""
+   ],
+   [
+    "बराबरी",
+    ""
+   ],
+   [
+    "संगति",
+    ""
+   ],
+   [
+    "सामंजस्य",
+    ""
+   ]
+  ],
+  "kept": [
+   "समानता",
+   "मिलान",
+   "तुलना",
+   "अनुरूपता",
+   "सादृश्य",
+   "एकरूपता",
+   "समरूपता",
+   "बराबरी",
+   "संगति",
+   "सामंजस्य"
+  ]
+ },
+ "T_027": {
+  "host_v1": "mast",
+  "clean_host": "مست",
+  "language": "fa",
+  "generated": [
+   "دکل",
+   "تیرک",
+   "میله",
+   "ستون",
+   "پایه",
+   "چوب‌دکل",
+   "دکل‌پرچم",
+   "دکل‌کشتی",
+   "دکل‌برق",
+   "دکل‌مخابراتی"
+  ],
+  "controls": [
+   [
+    "دکل",
+    ""
+   ],
+   [
+    "تیرک",
+    ""
+   ],
+   [
+    "میله",
+    ""
+   ],
+   [
+    "ستون",
+    ""
+   ],
+   [
+    "پایه",
+    ""
+   ],
+   [
+    "چوب‌دکل",
+    ""
+   ],
+   [
+    "دکل‌پرچم",
+    ""
+   ],
+   [
+    "دکل‌کشتی",
+    ""
+   ],
+   [
+    "دکل‌برق",
+    ""
+   ],
+   [
+    "دکل‌مخابراتی",
+    ""
+   ]
+  ],
+  "kept": [
+   "دکل",
+   "تیرک",
+   "میله",
+   "ستون",
+   "پایه",
+   "چوب‌دکل",
+   "دکل‌پرچم",
+   "دکل‌کشتی",
+   "دکل‌برق",
+   "دکل‌مخابراتی"
+  ]
+ },
+ "T_029": {
+  "host_v1": "khal",
+  "clean_host": "خال",
+  "language": "fa",
+  "generated": [
+   "دایی",
+   "دایی‌جان",
+   "دایی‌جون",
+   "دایی‌ام",
+   "دایی‌ات",
+   "دایی‌ش",
+   "دایی‌مون",
+   "دایی‌تون",
+   "دایی‌ها",
+   "دایی‌زاده"
+  ],
+  "controls": [
+   [
+    "دایی",
+    ""
+   ],
+   [
+    "دایی‌جان",
+    ""
+   ],
+   [
+    "دایی‌جون",
+    ""
+   ],
+   [
+    "دایی‌ام",
+    ""
+   ],
+   [
+    "دایی‌ات",
+    ""
+   ],
+   [
+    "دایی‌ش",
+    ""
+   ],
+   [
+    "دایی‌مون",
+    ""
+   ],
+   [
+    "دایی‌تون",
+    ""
+   ],
+   [
+    "دایی‌ها",
+    ""
+   ],
+   [
+    "دایی‌زاده",
+    ""
+   ]
+  ],
+  "kept": [
+   "دایی",
+   "دایی‌جان",
+   "دایی‌جون",
+   "دایی‌ام",
+   "دایی‌ات",
+   "دایی‌ش",
+   "دایی‌مون",
+   "دایی‌تون",
+   "دایی‌ها",
+   "دایی‌زاده"
+  ]
+ },
+ "T_032": {
+  "host_v1": "kharabat",
+  "clean_host": "خرابات",
+  "language": "fa",
+  "generated": [
+   "میخانه",
+   "خرابات",
+   "می‌فروشی",
+   "می‌کده",
+   "شرابخانه",
+   "باده‌خانه",
+   "ساقی‌خانه",
+   "میخانه‌داری",
+   "می‌پرستی",
+   "میگساری"
+  ],
+  "controls": [
+   [
+    "میخانه",
+    ""
+   ],
+   [
+    "خرابات",
+    "R1"
+   ],
+   [
+    "می‌فروشی",
+    ""
+   ],
+   [
+    "می‌کده",
+    ""
+   ],
+   [
+    "شرابخانه",
+    ""
+   ],
+   [
+    "باده‌خانه",
+    ""
+   ],
+   [
+    "ساقی‌خانه",
+    ""
+   ],
+   [
+    "میخانه‌داری",
+    ""
+   ],
+   [
+    "می‌پرستی",
+    ""
+   ],
+   [
+    "میگساری",
+    ""
+   ]
+  ],
+  "kept": [
+   "میخانه",
+   "می‌فروشی",
+   "می‌کده",
+   "شرابخانه",
+   "باده‌خانه",
+   "ساقی‌خانه",
+   "میخانه‌داری",
+   "می‌پرستی",
+   "میگساری"
+  ]
+ },
+ "T_033": {
+  "host_v1": "rend",
+  "clean_host": "رند",
+  "language": "fa",
+  "generated": [
+   "پاره کردن",
+   "دریدن",
+   "شکافتن",
+   "چاک دادن",
+   "از هم دریدن",
+   "تکه‌تکه کردن",
+   "جر دادن",
+   "گسیختن",
+   "دریده کردن",
+   "پاره‌پاره کردن"
+  ],
+  "controls": [
+   [
+    "پاره کردن",
+    ""
+   ],
+   [
+    "دریدن",
+    ""
+   ],
+   [
+    "شکافتن",
+    ""
+   ],
+   [
+    "چاک دادن",
+    ""
+   ],
+   [
+    "از هم دریدن",
+    ""
+   ],
+   [
+    "تکه‌تکه کردن",
+    ""
+   ],
+   [
+    "جر دادن",
+    ""
+   ],
+   [
+    "گسیختن",
+    ""
+   ],
+   [
+    "دریده کردن",
+    ""
+   ],
+   [
+    "پاره‌پاره کردن",
+    ""
+   ]
+  ],
+  "kept": [
+   "پاره کردن",
+   "دریدن",
+   "شکافتن",
+   "چاک دادن",
+   "از هم دریدن",
+   "تکه‌تکه کردن",
+   "جر دادن",
+   "گسیختن",
+   "دریده کردن",
+   "پاره‌پاره کردن"
+  ]
+ },
+ "T_034": {
+  "host_v1": "saba",
+  "clean_host": "صبا",
+  "language": "fa",
+  "generated": [
+   "فردا",
+   "روز بعد",
+   "روز آینده",
+   "پس‌فردا",
+   "صبح",
+   "بامداد",
+   "سپیده‌دم",
+   "سحر",
+   "صبحگاه",
+   "صبح زود"
+  ],
+  "controls": [
+   [
+    "فردا",
+    ""
+   ],
+   [
+    "روز بعد",
+    ""
+   ],
+   [
+    "روز آینده",
+    ""
+   ],
+   [
+    "پس‌فردا",
+    ""
+   ],
+   [
+    "صبح",
+    ""
+   ],
+   [
+    "بامداد",
+    ""
+   ],
+   [
+    "سپیده‌دم",
+    ""
+   ],
+   [
+    "سحر",
+    ""
+   ],
+   [
+    "صبحگاه",
+    ""
+   ],
+   [
+    "صبح زود",
+    ""
+   ]
+  ],
+  "kept": [
+   "فردا",
+   "روز بعد",
+   "روز آینده",
+   "پس‌فردا",
+   "صبح",
+   "بامداد",
+   "سپیده‌دم",
+   "سحر",
+   "صبحگاه",
+   "صبح زود"
+  ]
+ },
+ "T_036": {
+  "host_v1": "mourir",
+  "clean_host": "mourir",
+  "language": "fr",
+  "generated": [
+   "décéder",
+   "s’éteindre",
+   "périr",
+   "trépasser",
+   "expirer",
+   "passer l’arme à gauche",
+   "rendre l’âme",
+   "succomber",
+   "disparaître",
+   "y passer"
+  ],
+  "controls": [
+   [
+    "décéder",
+    ""
+   ],
+   [
+    "s’éteindre",
+    ""
+   ],
+   [
+    "périr",
+    ""
+   ],
+   [
+    "trépasser",
+    ""
+   ],
+   [
+    "expirer",
+    ""
+   ],
+   [
+    "passer l’arme à gauche",
+    ""
+   ],
+   [
+    "rendre l’âme",
+    ""
+   ],
+   [
+    "succomber",
+    ""
+   ],
+   [
+    "disparaître",
+    ""
+   ],
+   [
+    "y passer",
+    ""
+   ]
+  ],
+  "kept": [
+   "décéder",
+   "s’éteindre",
+   "périr",
+   "trépasser",
+   "expirer",
+   "passer l’arme à gauche",
+   "rendre l’âme",
+   "succomber",
+   "disparaître",
+   "y passer"
+  ]
+ },
+ "T_040": {
+  "host_v1": "liaison",
+  "clean_host": "liaison",
+  "language": "fr",
+  "generated": [
+   "relation",
+   "rapport",
+   "connexion",
+   "contact",
+   "lien",
+   "attache",
+   "union",
+   "association",
+   "coordination",
+   "intermédiaire"
+  ],
+  "controls": [
+   [
+    "relation",
+    ""
+   ],
+   [
+    "rapport",
+    ""
+   ],
+   [
+    "connexion",
+    ""
+   ],
+   [
+    "contact",
+    ""
+   ],
+   [
+    "lien",
+    ""
+   ],
+   [
+    "attache",
+    ""
+   ],
+   [
+    "union",
+    ""
+   ],
+   [
+    "association",
+    ""
+   ],
+   [
+    "coordination",
+    ""
+   ],
+   [
+    "intermédiaire",
+    ""
+   ]
+  ],
+  "kept": [
+   "relation",
+   "rapport",
+   "connexion",
+   "contact",
+   "lien",
+   "attache",
+   "union",
+   "association",
+   "coordination",
+   "intermédiaire"
+  ]
+ },
+ "T_041": {
+  "host_v1": "affaire",
+  "clean_host": "affaire",
+  "language": "fr",
+  "generated": [
+   "cas",
+   "dossier",
+   "histoire",
+   "incident",
+   "problème",
+   "question",
+   "sujet",
+   "scandale",
+   "liaison",
+   "aventure"
+  ],
+  "controls": [
+   [
+    "cas",
+    ""
+   ],
+   [
+    "dossier",
+    ""
+   ],
+   [
+    "histoire",
+    ""
+   ],
+   [
+    "incident",
+    ""
+   ],
+   [
+    "problème",
+    ""
+   ],
+   [
+    "question",
+    ""
+   ],
+   [
+    "sujet",
+    ""
+   ],
+   [
+    "scandale",
+    ""
+   ],
+   [
+    "liaison",
+    ""
+   ],
+   [
+    "aventure",
+    ""
+   ]
+  ],
+  "kept": [
+   "cas",
+   "dossier",
+   "histoire",
+   "incident",
+   "problème",
+   "question",
+   "sujet",
+   "scandale",
+   "liaison",
+   "aventure"
+  ]
+ },
+ "T_042": {
+  "host_v1": "amant",
+  "clean_host": "amant",
+  "language": "fr",
+  "generated": [
+   "amoureux",
+   "bien-aimé",
+   "chéri",
+   "galant",
+   "conjoint",
+   "compagnon",
+   "partenaire",
+   "petit ami",
+   "concubin",
+   "maîtresse"
+  ],
+  "controls": [
+   [
+    "amoureux",
+    ""
+   ],
+   [
+    "bien-aimé",
+    ""
+   ],
+   [
+    "chéri",
+    ""
+   ],
+   [
+    "galant",
+    ""
+   ],
+   [
+    "conjoint",
+    ""
+   ],
+   [
+    "compagnon",
+    ""
+   ],
+   [
+    "partenaire",
+    ""
+   ],
+   [
+    "petit ami",
+    ""
+   ],
+   [
+    "concubin",
+    ""
+   ],
+   [
+    "maîtresse",
+    ""
+   ]
+  ],
+  "kept": [
+   "amoureux",
+   "bien-aimé",
+   "chéri",
+   "galant",
+   "conjoint",
+   "compagnon",
+   "partenaire",
+   "petit ami",
+   "concubin",
+   "maîtresse"
+  ]
+ },
+ "T_043": {
+  "host_v1": "galant",
+  "clean_host": "galant",
+  "language": "fr",
+  "generated": [
+   "courtois",
+   "chevaleresque",
+   "prévenant",
+   "attentionné",
+   "poli",
+   "élégant",
+   "raffiné",
+   "distingué",
+   "séduisant",
+   "empressé"
+  ],
+  "controls": [
+   [
+    "courtois",
+    ""
+   ],
+   [
+    "chevaleresque",
+    ""
+   ],
+   [
+    "prévenant",
+    ""
+   ],
+   [
+    "attentionné",
+    ""
+   ],
+   [
+    "poli",
+    ""
+   ],
+   [
+    "élégant",
+    ""
+   ],
+   [
+    "raffiné",
+    ""
+   ],
+   [
+    "distingué",
+    ""
+   ],
+   [
+    "séduisant",
+    ""
+   ],
+   [
+    "empressé",
+    ""
+   ]
+  ],
+  "kept": [
+   "courtois",
+   "chevaleresque",
+   "prévenant",
+   "attentionné",
+   "poli",
+   "élégant",
+   "raffiné",
+   "distingué",
+   "séduisant",
+   "empressé"
+  ]
+ },
+ "T_048": {
+  "host_v1": "ju_mandarin",
+  "clean_host": "桔",
+  "language": "zh",
+  "generated": [
+   "橘子",
+   "橘",
+   "柑橘",
+   "蜜橘",
+   "砂糖橘",
+   "橘柑",
+   "橘类",
+   "柑",
+   "柑子",
+   "橘柚"
+  ],
+  "controls": [
+   [
+    "橘子",
+    ""
+   ],
+   [
+    "橘",
+    ""
+   ],
+   [
+    "柑橘",
+    ""
+   ],
+   [
+    "蜜橘",
+    ""
+   ],
+   [
+    "砂糖橘",
+    ""
+   ],
+   [
+    "橘柑",
+    ""
+   ],
+   [
+    "橘类",
+    ""
+   ],
+   [
+    "柑",
+    ""
+   ],
+   [
+    "柑子",
+    ""
+   ],
+   [
+    "橘柚",
+    ""
+   ]
+  ],
+  "kept": [
+   "橘子",
+   "橘",
+   "柑橘",
+   "蜜橘",
+   "砂糖橘",
+   "橘柑",
+   "橘类",
+   "柑",
+   "柑子",
+   "橘柚"
+  ]
+ },
+ "T_054": {
+  "host_v1": "shan_fan",
+  "clean_host": "扇",
+  "language": "zh",
+  "generated": [
+   "山饭",
+   "山间饭",
+   "山里饭",
+   "山野饭",
+   "山村饭",
+   "山地饭",
+   "山林饭",
+   "山上饭",
+   "山中饭",
+   "山寨饭"
+  ],
+  "controls": [
+   [
+    "山饭",
+    ""
+   ],
+   [
+    "山间饭",
+    ""
+   ],
+   [
+    "山里饭",
+    ""
+   ],
+   [
+    "山野饭",
+    ""
+   ],
+   [
+    "山村饭",
+    ""
+   ],
+   [
+    "山地饭",
+    ""
+   ],
+   [
+    "山林饭",
+    ""
+   ],
+   [
+    "山上饭",
+    ""
+   ],
+   [
+    "山中饭",
+    ""
+   ],
+   [
+    "山寨饭",
+    ""
+   ]
+  ],
+  "kept": [
+   "山饭",
+   "山间饭",
+   "山里饭",
+   "山野饭",
+   "山村饭",
+   "山地饭",
+   "山林饭",
+   "山上饭",
+   "山中饭",
+   "山寨饭"
+  ]
+ },
+ "T_059": {
+  "host_v1": "tai",
+  "clean_host": "鯛",
+  "language": "ja",
+  "generated": [
+   "タイ",
+   "鯛",
+   "タイ王国",
+   "タイランド",
+   "タイ語",
+   "タイ人",
+   "タイ料理",
+   "タイの",
+   "タイ国",
+   "タイ文化"
+  ],
+  "controls": [
+   [
+    "タイ",
+    ""
+   ],
+   [
+    "鯛",
+    "R1"
+   ],
+   [
+    "タイ王国",
+    ""
+   ],
+   [
+    "タイランド",
+    ""
+   ],
+   [
+    "タイ語",
+    ""
+   ],
+   [
+    "タイ人",
+    ""
+   ],
+   [
+    "タイ料理",
+    ""
+   ],
+   [
+    "タイの",
+    ""
+   ],
+   [
+    "タイ国",
+    ""
+   ],
+   [
+    "タイ文化",
+    ""
+   ]
+  ],
+  "kept": [
+   "タイ",
+   "タイ王国",
+   "タイランド",
+   "タイ語",
+   "タイ人",
+   "タイ料理",
+   "タイの",
+   "タイ国",
+   "タイ文化"
+  ]
+ },
+ "T_068": {
+  "host_v1": "netflix_and_chill",
+  "clean_host": "Netflix and chill",
+  "language": "en",
+  "generated": [
+   "hook up",
+   "make out",
+   "have sex",
+   "casual sex",
+   "booty call",
+   "friends with benefits",
+   "one-night stand",
+   "come over",
+   "hang out and hook up",
+   "watch a movie and cuddle"
+  ],
+  "controls": [
+   [
+    "hook up",
+    ""
+   ],
+   [
+    "make out",
+    ""
+   ],
+   [
+    "have sex",
+    ""
+   ],
+   [
+    "casual sex",
+    ""
+   ],
+   [
+    "booty call",
+    ""
+   ],
+   [
+    "friends with benefits",
+    ""
+   ],
+   [
+    "one-night stand",
+    ""
+   ],
+   [
+    "come over",
+    ""
+   ],
+   [
+    "hang out and hook up",
+    ""
+   ],
+   [
+    "watch a movie and cuddle",
+    ""
+   ]
+  ],
+  "kept": [
+   "hook up",
+   "make out",
+   "have sex",
+   "casual sex",
+   "booty call",
+   "friends with benefits",
+   "one-night stand",
+   "come over",
+   "hang out and hook up",
+   "watch a movie and cuddle"
+  ]
+ },
+ "T_069": {
+  "host_v1": "come_up_for_coffee",
+  "clean_host": "come up for coffee",
+  "language": "en",
+  "generated": [
+   "come in for coffee",
+   "come over for coffee",
+   "come by for coffee",
+   "drop by for coffee",
+   "stop by for coffee",
+   "join me for coffee",
+   "come up for a cup of coffee",
+   "come inside for coffee",
+   "come round for coffee",
+   "come over for a cup of coffee"
+  ],
+  "controls": [
+   [
+    "come in for coffee",
+    ""
+   ],
+   [
+    "come over for coffee",
+    ""
+   ],
+   [
+    "come by for coffee",
+    ""
+   ],
+   [
+    "drop by for coffee",
+    ""
+   ],
+   [
+    "stop by for coffee",
+    ""
+   ],
+   [
+    "join me for coffee",
+    ""
+   ],
+   [
+    "come up for a cup of coffee",
+    ""
+   ],
+   [
+    "come inside for coffee",
+    ""
+   ],
+   [
+    "come round for coffee",
+    ""
+   ],
+   [
+    "come over for a cup of coffee",
+    ""
+   ]
+  ],
+  "kept": [
+   "come in for coffee",
+   "come over for coffee",
+   "come by for coffee",
+   "drop by for coffee",
+   "stop by for coffee",
+   "join me for coffee",
+   "come up for a cup of coffee",
+   "come inside for coffee",
+   "come round for coffee",
+   "come over for a cup of coffee"
+  ]
+ },
+ "T_070": {
+  "host_v1": "spend_the_night",
+  "clean_host": "spend the night",
+  "language": "en",
+  "generated": [
+   "stay overnight",
+   "sleep over",
+   "stay the night",
+   "overnight stay",
+   "remain overnight",
+   "pass the night",
+   "stay up all night",
+   "lodge overnight",
+   "bed down for the night",
+   "crash for the night"
+  ],
+  "controls": [
+   [
+    "stay overnight",
+    ""
+   ],
+   [
+    "sleep over",
+    ""
+   ],
+   [
+    "stay the night",
+    ""
+   ],
+   [
+    "overnight stay",
+    ""
+   ],
+   [
+    "remain overnight",
+    ""
+   ],
+   [
+    "pass the night",
+    ""
+   ],
+   [
+    "stay up all night",
+    ""
+   ],
+   [
+    "lodge overnight",
+    ""
+   ],
+   [
+    "bed down for the night",
+    ""
+   ],
+   [
+    "crash for the night",
+    ""
+   ]
+  ],
+  "kept": [
+   "stay overnight",
+   "sleep over",
+   "stay the night",
+   "overnight stay",
+   "remain overnight",
+   "pass the night",
+   "stay up all night",
+   "lodge overnight",
+   "bed down for the night",
+   "crash for the night"
+  ]
+ },
+ "T_072": {
+  "host_v1": "see_my_etchings",
+  "clean_host": "see my etchings",
+  "language": "en",
+  "generated": [
+   "view my etchings",
+   "look at my etchings",
+   "see my engravings",
+   "view my engravings",
+   "look at my engravings",
+   "check out my etchings",
+   "browse my etchings",
+   "see my prints",
+   "view my prints",
+   "look at my prints"
+  ],
+  "controls": [
+   [
+    "view my etchings",
+    ""
+   ],
+   [
+    "look at my etchings",
+    ""
+   ],
+   [
+    "see my engravings",
+    ""
+   ],
+   [
+    "view my engravings",
+    ""
+   ],
+   [
+    "look at my engravings",
+    ""
+   ],
+   [
+    "check out my etchings",
+    ""
+   ],
+   [
+    "browse my etchings",
+    ""
+   ],
+   [
+    "see my prints",
+    ""
+   ],
+   [
+    "view my prints",
+    ""
+   ],
+   [
+    "look at my prints",
+    ""
+   ]
+  ],
+  "kept": [
+   "view my etchings",
+   "look at my etchings",
+   "see my engravings",
+   "view my engravings",
+   "look at my engravings",
+   "check out my etchings",
+   "browse my etchings",
+   "see my prints",
+   "view my prints",
+   "look at my prints"
+  ]
+ },
+ "T_073": {
+  "host_v1": "sleep_together",
+  "clean_host": "sleep together",
+  "language": "en",
+  "generated": [
+   "have sex",
+   "have intercourse",
+   "make love",
+   "sleep with",
+   "hook up",
+   "have relations",
+   "have intimate relations",
+   "have sexual relations",
+   "have a one-night stand",
+   "have an affair"
+  ],
+  "controls": [
+   [
+    "have sex",
+    ""
+   ],
+   [
+    "have intercourse",
+    ""
+   ],
+   [
+    "make love",
+    ""
+   ],
+   [
+    "sleep with",
+    ""
+   ],
+   [
+    "hook up",
+    ""
+   ],
+   [
+    "have relations",
+    ""
+   ],
+   [
+    "have intimate relations",
+    ""
+   ],
+   [
+    "have sexual relations",
+    ""
+   ],
+   [
+    "have a one-night stand",
+    ""
+   ],
+   [
+    "have an affair",
+    ""
+   ]
+  ],
+  "kept": [
+   "have sex",
+   "have intercourse",
+   "make love",
+   "sleep with",
+   "hook up",
+   "have relations",
+   "have intimate relations",
+   "have sexual relations",
+   "have a one-night stand",
+   "have an affair"
+  ]
+ },
+ "T_074": {
+  "host_v1": "hook_up",
+  "clean_host": "hook up",
+  "language": "en",
+  "generated": [
+   "meet up",
+   "get together",
+   "connect",
+   "link up",
+   "pair up",
+   "join up",
+   "set up",
+   "arrange",
+   "rendezvous",
+   "have a fling"
+  ],
+  "controls": [
+   [
+    "meet up",
+    ""
+   ],
+   [
+    "get together",
+    ""
+   ],
+   [
+    "connect",
+    ""
+   ],
+   [
+    "link up",
+    ""
+   ],
+   [
+    "pair up",
+    ""
+   ],
+   [
+    "join up",
+    ""
+   ],
+   [
+    "set up",
+    ""
+   ],
+   [
+    "arrange",
+    ""
+   ],
+   [
+    "rendezvous",
+    ""
+   ],
+   [
+    "have a fling",
+    ""
+   ]
+  ],
+  "kept": [
+   "meet up",
+   "get together",
+   "connect",
+   "link up",
+   "pair up",
+   "join up",
+   "set up",
+   "arrange",
+   "rendezvous",
+   "have a fling"
+  ]
+ },
+ "T_075": {
+  "host_v1": "get_lucky",
+  "clean_host": "get lucky",
+  "language": "en",
+  "generated": [
+   "have sex",
+   "get laid",
+   "hook up",
+   "score",
+   "sleep with someone",
+   "get some",
+   "have a one-night stand",
+   "get it on",
+   "make out",
+   "have a fling"
+  ],
+  "controls": [
+   [
+    "have sex",
+    ""
+   ],
+   [
+    "get laid",
+    ""
+   ],
+   [
+    "hook up",
+    ""
+   ],
+   [
+    "score",
+    ""
+   ],
+   [
+    "sleep with someone",
+    ""
+   ],
+   [
+    "get some",
+    ""
+   ],
+   [
+    "have a one-night stand",
+    ""
+   ],
+   [
+    "get it on",
+    ""
+   ],
+   [
+    "make out",
+    ""
+   ],
+   [
+    "have a fling",
+    ""
+   ]
+  ],
+  "kept": [
+   "have sex",
+   "get laid",
+   "hook up",
+   "score",
+   "sleep with someone",
+   "get some",
+   "have a one-night stand",
+   "get it on",
+   "make out",
+   "have a fling"
+  ]
+ },
+ "T_076": {
+  "host_v1": "toko_wo_tomo_ni_suru",
+  "clean_host": "床を共にする",
+  "language": "ja",
+  "generated": [
+   "床を共にする",
+   "同衾する",
+   "共寝する",
+   "一夜を共にする",
+   "寝床を共にする",
+   "同じ床に就く",
+   "同じ布団で寝る",
+   "一緒に寝る",
+   "添い寝する",
+   "交わる"
+  ],
+  "controls": [
+   [
+    "床を共にする",
+    "R1"
+   ],
+   [
+    "同衾する",
+    ""
+   ],
+   [
+    "共寝する",
+    ""
+   ],
+   [
+    "一夜を共にする",
+    ""
+   ],
+   [
+    "寝床を共にする",
+    "R2"
+   ],
+   [
+    "同じ床に就く",
+    ""
+   ],
+   [
+    "同じ布団で寝る",
+    ""
+   ],
+   [
+    "一緒に寝る",
+    ""
+   ],
+   [
+    "添い寝する",
+    ""
+   ],
+   [
+    "交わる",
+    ""
+   ]
+  ],
+  "kept": [
+   "同衾する",
+   "共寝する",
+   "一夜を共にする",
+   "同じ床に就く",
+   "同じ布団で寝る",
+   "一緒に寝る",
+   "添い寝する",
+   "交わる"
+  ]
+ },
+ "T_084": {
+  "host_v1": "grab_a_drink",
+  "clean_host": "grab a drink",
+  "language": "en",
+  "generated": [
+   "get a drink",
+   "have a drink",
+   "go for a drink",
+   "go grab a drink",
+   "pick up a drink",
+   "get something to drink",
+   "stop for a drink",
+   "meet for a drink",
+   "go out for a drink",
+   "go get a drink"
+  ],
+  "controls": [
+   [
+    "get a drink",
+    ""
+   ],
+   [
+    "have a drink",
+    ""
+   ],
+   [
+    "go for a drink",
+    ""
+   ],
+   [
+    "go grab a drink",
+    "R2"
+   ],
+   [
+    "pick up a drink",
+    ""
+   ],
+   [
+    "get something to drink",
+    ""
+   ],
+   [
+    "stop for a drink",
+    ""
+   ],
+   [
+    "meet for a drink",
+    ""
+   ],
+   [
+    "go out for a drink",
+    ""
+   ],
+   [
+    "go get a drink",
+    ""
+   ]
+  ],
+  "kept": [
+   "get a drink",
+   "have a drink",
+   "go for a drink",
+   "pick up a drink",
+   "get something to drink",
+   "stop for a drink",
+   "meet for a drink",
+   "go out for a drink",
+   "go get a drink"
+  ]
+ },
+ "T_085": {
+  "host_v1": "hit_the_bar",
+  "clean_host": "hit the bar",
+  "language": "en",
+  "generated": [
+   "go to the bar",
+   "head to the bar",
+   "stop by the bar",
+   "visit the bar",
+   "drop by the bar",
+   "go out for drinks",
+   "grab a drink",
+   "go drinking",
+   "bar-hop",
+   "hit the pub"
+  ],
+  "controls": [
+   [
+    "go to the bar",
+    ""
+   ],
+   [
+    "head to the bar",
+    ""
+   ],
+   [
+    "stop by the bar",
+    ""
+   ],
+   [
+    "visit the bar",
+    ""
+   ],
+   [
+    "drop by the bar",
+    ""
+   ],
+   [
+    "go out for drinks",
+    ""
+   ],
+   [
+    "grab a drink",
+    ""
+   ],
+   [
+    "go drinking",
+    ""
+   ],
+   [
+    "bar-hop",
+    ""
+   ],
+   [
+    "hit the pub",
+    ""
+   ]
+  ],
+  "kept": [
+   "go to the bar",
+   "head to the bar",
+   "stop by the bar",
+   "visit the bar",
+   "drop by the bar",
+   "go out for drinks",
+   "grab a drink",
+   "go drinking",
+   "bar-hop",
+   "hit the pub"
+  ]
+ },
+ "T_087": {
+  "host_v1": "happy_hour",
+  "clean_host": "happy hour",
+  "language": "en",
+  "generated": [
+   "cocktail hour",
+   "drink specials",
+   "after-work drinks",
+   "early bird specials",
+   "bar specials",
+   "discounted drinks",
+   "two-for-one drinks",
+   "half-price drinks",
+   "beer and wine specials",
+   "happy hour specials"
+  ],
+  "controls": [
+   [
+    "cocktail hour",
+    ""
+   ],
+   [
+    "drink specials",
+    ""
+   ],
+   [
+    "after-work drinks",
+    ""
+   ],
+   [
+    "early bird specials",
+    ""
+   ],
+   [
+    "bar specials",
+    ""
+   ],
+   [
+    "discounted drinks",
+    ""
+   ],
+   [
+    "two-for-one drinks",
+    ""
+   ],
+   [
+    "half-price drinks",
+    ""
+   ],
+   [
+    "beer and wine specials",
+    ""
+   ],
+   [
+    "happy hour specials",
+    "R2"
+   ]
+  ],
+  "kept": [
+   "cocktail hour",
+   "drink specials",
+   "after-work drinks",
+   "early bird specials",
+   "bar specials",
+   "discounted drinks",
+   "two-for-one drinks",
+   "half-price drinks",
+   "beer and wine specials"
+  ]
+ },
+ "T_088": {
+  "host_v1": "liquid_lunch",
+  "clean_host": "liquid lunch",
+  "language": "en",
+  "generated": [
+   "boozy lunch",
+   "drinks-only lunch",
+   "long lunch",
+   "business lunch with drinks",
+   "pub lunch",
+   "three-martini lunch",
+   "drinking lunch",
+   "lunch meeting over drinks",
+   "liquid diet lunch",
+   "alcohol-fueled lunch"
+  ],
+  "controls": [
+   [
+    "boozy lunch",
+    ""
+   ],
+   [
+    "drinks-only lunch",
+    ""
+   ],
+   [
+    "long lunch",
+    ""
+   ],
+   [
+    "business lunch with drinks",
+    ""
+   ],
+   [
+    "pub lunch",
+    ""
+   ],
+   [
+    "three-martini lunch",
+    ""
+   ],
+   [
+    "drinking lunch",
+    ""
+   ],
+   [
+    "lunch meeting over drinks",
+    ""
+   ],
+   [
+    "liquid diet lunch",
+    ""
+   ],
+   [
+    "alcohol-fueled lunch",
+    ""
+   ]
+  ],
+  "kept": [
+   "boozy lunch",
+   "drinks-only lunch",
+   "long lunch",
+   "business lunch with drinks",
+   "pub lunch",
+   "three-martini lunch",
+   "drinking lunch",
+   "lunch meeting over drinks",
+   "liquid diet lunch",
+   "alcohol-fueled lunch"
+  ]
+ },
+ "T_089": {
+  "host_v1": "nightcap",
+  "clean_host": "nightcap",
+  "language": "en",
+  "generated": [
+   "bedtime drink",
+   "last drink",
+   "sleeping cap",
+   "nightcap drink",
+   "after-dinner drink",
+   "pre-bed drink",
+   "late-night drink",
+   "final drink",
+   "warm milk",
+   "hot toddy"
+  ],
+  "controls": [
+   [
+    "bedtime drink",
+    ""
+   ],
+   [
+    "last drink",
+    ""
+   ],
+   [
+    "sleeping cap",
+    ""
+   ],
+   [
+    "nightcap drink",
+    "R2"
+   ],
+   [
+    "after-dinner drink",
+    ""
+   ],
+   [
+    "pre-bed drink",
+    ""
+   ],
+   [
+    "late-night drink",
+    ""
+   ],
+   [
+    "final drink",
+    ""
+   ],
+   [
+    "warm milk",
+    ""
+   ],
+   [
+    "hot toddy",
+    ""
+   ]
+  ],
+  "kept": [
+   "bedtime drink",
+   "last drink",
+   "sleeping cap",
+   "after-dinner drink",
+   "pre-bed drink",
+   "late-night drink",
+   "final drink",
+   "warm milk",
+   "hot toddy"
+  ]
+ },
+ "T_090": {
+  "host_v1": "ippai_yaru",
+  "clean_host": "一杯やる",
+  "language": "ja",
+  "generated": [
+   "たくさんやる",
+   "いっぱいする",
+   "多めにやる",
+   "多くやる",
+   "山ほどやる",
+   "思い切りやる",
+   "存分にやる",
+   "がっつりやる",
+   "めいっぱいやる",
+   "たっぷりやる"
+  ],
+  "controls": [
+   [
+    "たくさんやる",
+    ""
+   ],
+   [
+    "いっぱいする",
+    ""
+   ],
+   [
+    "多めにやる",
+    ""
+   ],
+   [
+    "多くやる",
+    ""
+   ],
+   [
+    "山ほどやる",
+    ""
+   ],
+   [
+    "思い切りやる",
+    ""
+   ],
+   [
+    "存分にやる",
+    ""
+   ],
+   [
+    "がっつりやる",
+    ""
+   ],
+   [
+    "めいっぱいやる",
+    ""
+   ],
+   [
+    "たっぷりやる",
+    ""
+   ]
+  ],
+  "kept": [
+   "たくさんやる",
+   "いっぱいする",
+   "多めにやる",
+   "多くやる",
+   "山ほどやる",
+   "思い切りやる",
+   "存分にやる",
+   "がっつりやる",
+   "めいっぱいやる",
+   "たっぷりやる"
+  ]
+ },
+ "T_096": {
+  "host_v1": "bow_deeply",
+  "clean_host": "bow deeply",
+  "language": "en",
+  "generated": [
+   "bow low",
+   "bow deeply",
+   "make a deep bow",
+   "bend low",
+   "bend at the waist",
+   "stoop low",
+   "incline deeply",
+   "give a deep bow",
+   "prostrate oneself",
+   "kowtow"
+  ],
+  "controls": [
+   [
+    "bow low",
+    ""
+   ],
+   [
+    "bow deeply",
+    "R1"
+   ],
+   [
+    "make a deep bow",
+    ""
+   ],
+   [
+    "bend low",
+    ""
+   ],
+   [
+    "bend at the waist",
+    ""
+   ],
+   [
+    "stoop low",
+    ""
+   ],
+   [
+    "incline deeply",
+    ""
+   ],
+   [
+    "give a deep bow",
+    ""
+   ],
+   [
+    "prostrate oneself",
+    ""
+   ],
+   [
+    "kowtow",
+    ""
+   ]
+  ],
+  "kept": [
+   "bow low",
+   "make a deep bow",
+   "bend low",
+   "bend at the waist",
+   "stoop low",
+   "incline deeply",
+   "give a deep bow",
+   "prostrate oneself",
+   "kowtow"
+  ]
+ },
+ "T_098": {
+  "host_v1": "raise_a_glass",
+  "clean_host": "raise a glass",
+  "language": "en",
+  "generated": [
+   "toast",
+   "make a toast",
+   "propose a toast",
+   "drink a toast",
+   "raise a toast",
+   "lift a glass",
+   "clink glasses",
+   "cheers",
+   "salute",
+   "drink to"
+  ],
+  "controls": [
+   [
+    "toast",
+    ""
+   ],
+   [
+    "make a toast",
+    ""
+   ],
+   [
+    "propose a toast",
+    ""
+   ],
+   [
+    "drink a toast",
+    ""
+   ],
+   [
+    "raise a toast",
+    ""
+   ],
+   [
+    "lift a glass",
+    ""
+   ],
+   [
+    "clink glasses",
+    ""
+   ],
+   [
+    "cheers",
+    ""
+   ],
+   [
+    "salute",
+    ""
+   ],
+   [
+    "drink to",
+    ""
+   ]
+  ],
+  "kept": [
+   "toast",
+   "make a toast",
+   "propose a toast",
+   "drink a toast",
+   "raise a toast",
+   "lift a glass",
+   "clink glasses",
+   "cheers",
+   "salute",
+   "drink to"
+  ]
+ },
+ "T_099": {
+  "host_v1": "tip_your_hat",
+  "clean_host": "tip your hat",
+  "language": "en",
+  "generated": [
+   "doff your hat",
+   "touch your hat",
+   "raise your hat",
+   "lift your hat",
+   "tip your cap",
+   "doff your cap",
+   "give a hat tip",
+   "salute",
+   "nod",
+   "pay your respects"
+  ],
+  "controls": [
+   [
+    "doff your hat",
+    ""
+   ],
+   [
+    "touch your hat",
+    ""
+   ],
+   [
+    "raise your hat",
+    ""
+   ],
+   [
+    "lift your hat",
+    ""
+   ],
+   [
+    "tip your cap",
+    ""
+   ],
+   [
+    "doff your cap",
+    ""
+   ],
+   [
+    "give a hat tip",
+    ""
+   ],
+   [
+    "salute",
+    ""
+   ],
+   [
+    "nod",
+    ""
+   ],
+   [
+    "pay your respects",
+    ""
+   ]
+  ],
+  "kept": [
+   "doff your hat",
+   "touch your hat",
+   "raise your hat",
+   "lift your hat",
+   "tip your cap",
+   "doff your cap",
+   "give a hat tip",
+   "salute",
+   "nod",
+   "pay your respects"
+  ]
+ },
+ "T_103": {
+  "host_v1": "salute",
+  "clean_host": "salute",
+  "language": "en",
+  "generated": [
+   "greet",
+   "hail",
+   "acknowledge",
+   "pay tribute",
+   "honor",
+   "commend",
+   "praise",
+   "show respect",
+   "raise a toast",
+   "salutation"
+  ],
+  "controls": [
+   [
+    "greet",
+    ""
+   ],
+   [
+    "hail",
+    ""
+   ],
+   [
+    "acknowledge",
+    ""
+   ],
+   [
+    "pay tribute",
+    ""
+   ],
+   [
+    "honor",
+    ""
+   ],
+   [
+    "commend",
+    ""
+   ],
+   [
+    "praise",
+    ""
+   ],
+   [
+    "show respect",
+    ""
+   ],
+   [
+    "raise a toast",
+    ""
+   ],
+   [
+    "salutation",
+    ""
+   ]
+  ],
+  "kept": [
+   "greet",
+   "hail",
+   "acknowledge",
+   "pay tribute",
+   "honor",
+   "commend",
+   "praise",
+   "show respect",
+   "raise a toast",
+   "salutation"
+  ]
+ }
+}

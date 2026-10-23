@@ -13,6 +13,7 @@ python-dotenv==1.2.4
 # API steps: LLM coding and embeddings (not needed for rerun_offline.sh)
 openai==3.35.1
 google-genai==2.32.0
+wordfreq==3.1.1                 # condition E vocabulary
 anthropic==1.17.0
 
 # BAAI/bge-m3, run locally (not needed for rerun_offline.sh)

@@ -25,3 +25,4 @@ paper/*
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+embeddings/vocab_cache/

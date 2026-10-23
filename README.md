@@ -34,12 +34,14 @@ were fixed are described in `docs/CHANGES_FROM_V1.md`.
 │   ├── cpg_archaeology_results.csv   v1 pipeline item list, tradition labels and pull
 │   ├── exclusions.csv         T3 exclusions with reasons; exclusion_candidates.csv, author_decisions.csv
 │   ├── tradition_harmonisation.csv   tradition and language labels merged where the names are the same
+│   ├── controls_D.json, controls_E_<model>.json   controls generated without the covert target (conditions D, E)
 ├── coding/                    blind coding by three LLMs
 │   ├── codebooks/             codebook.md, codebook_recording.md, codebook_v1_1.md
 │   ├── scripts/               run_*.py, aggregate_*.py, build_blind_table.py, build_expert_sheets.py
 │   └── results/               first_run/, recording/, v1_1/ (per-model CSV, consensus, agreement, JSONL logs)
 ├── embeddings/                NNPM
-│   ├── scripts/               nnpm_replicate.py, analyze_replication.py, check_hosts.py, build_clean.py
+│   ├── scripts/               nnpm_replicate.py, analyze_replication.py, check_hosts.py, build_clean.py,
+│   │                          generate_controls_D.py, controls_E.py, nnpm_target_blind.py
 │   ├── controls/              clean_hosts.csv, controls_clean.csv, controls_summary.csv
 │   └── results/               pulls for conditions B and C (3 models), JSONL logs, vectors (*.npz)
 ├── analysis/                  reproduce_stats.py, analyze_t1.py, analyze_recording.py, analyze_final.py, make_numbers.py, …
@@ -49,7 +51,7 @@ were fixed are described in `docs/CHANGES_FROM_V1.md`.
 │   ├── final_results.{md,json}, t1_results.{md,json}, recording_results.{md,json}, tables
 │   └── before_decisions_2026-10-22/   outputs before the author's decisions (SI comparison table)
 ├── dictionary_check/          judgements against デジタル大辞泉 (dictionary text not included)
-├── docs/                      CHANGES_FROM_V1.md, T3_exclusions.md
+├── docs/                      CHANGES_FROM_V1.md, T3_exclusions.md, analysis_plan_target_blind_controls.md
 └── legacy/v1_submission/      the submitted version (superseded)
 ```
 
@@ -68,6 +70,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 - the T3 exclusions;
 - the clean hosts and cleaned controls;
 - condition C, from the saved vectors;
+- conditions D and E, from the logged responses and saved vectors;
 - the T1 and T4 analyses;
 - `results/verified_numbers.md` §12–13.
 
@@ -118,6 +121,25 @@ done
 
 Every embedding call is logged to `embeddings/results/nnpm_C_<model>.jsonl`. Strings that could not be embedded
 are listed in `nnpm_C_<model>_failed.csv`; there were none.
+
+**Controls without the covert target (conditions D and E).** The stored controls were generated with a prompt
+that told the model to exclude words associated with the covert target. Conditions D and E build controls without
+the target; the plan was committed before they were computed (`docs/analysis_plan_target_blind_controls.md`).
+- D: the v1 prompt without the exclusion lines, `gpt-5.2` (temperature 0.3), run on 2026-10-23; every request and
+  response is in `embeddings/results/logs/controls_D.jsonl`.
+- E (exploratory): the words nearest to the clean host among the top 50,000 `wordfreq` 3.1.1 words of the item's
+  language, in each embedding space; items in languages wordfreq does not cover are left out.
+
+```bash
+python3 embeddings/scripts/generate_controls_D.py
+for b in openai gemini bge-m3; do
+  python3 embeddings/scripts/controls_E.py --backend $b
+  python3 embeddings/scripts/nnpm_target_blind.py --backend $b
+done
+python3 analysis/analyze_target_blind.py
+```
+
+The results are in `results/target_blind_controls.md`.
 
 **Dictionary check.** See `dictionary_check/README.md`.
 

@@ -29,6 +29,13 @@ for b in openai gemini bge-m3; do
   $P -I embeddings/scripts/nnpm_replicate.py data $E --backend $b --condition-c embeddings/controls --from-vectors > /dev/null
 done
 $P analysis/analyze_t1.py > /dev/null
+# conditions D and E (controls without the covert target): D cleaned again from the logged responses, pulls from the
+# saved vectors (the E control lists in data/controls_E_*.json need the embedding API to regenerate)
+$P embeddings/scripts/generate_controls_D.py --offline > /dev/null
+for b in openai gemini bge-m3; do
+  $P embeddings/scripts/nnpm_target_blind.py --backend $b --from-vectors > /dev/null
+done
+$P analysis/analyze_target_blind.py > /dev/null
 # T2 codebook v1.1 aggregation, T4 integrated analysis
 V=coding/results/v1_1
 $P coding/scripts/aggregate_v1_1.py $V/v1_1_gpt.csv $V/v1_1_gemini.csv $V/v1_1_claude.csv --out $V > /dev/null

@@ -836,6 +836,53 @@ for m in MODELS:
         missing(name, "stored value is half-way at 2 decimals", F_T1PRE, f"hypotheses.H-C1.per_model.{MODELS[m]}.z",
                 RULE["z2"])
 
+# ------------------------------------------------------------------ 10. controls without the covert target (D, E)
+# plan: docs/analysis_plan_target_blind_controls.md; pulls from embeddings/scripts/nnpm_target_blind.py
+F_TB = ROOT / "results/target_blind_controls.json"
+tb = json.load(open(F_TB))
+F_DE = [ROOT / f"embeddings/results/nnpm_DE_{t}.csv" for t in MODELS.values()]
+F_CD = ROOT / "data/controls_D.json"
+F_CE = [ROOT / f"data/controls_E_{t}.json" for t in MODELS.values()]
+DE = {m: read_csv(f"embeddings/results/nnpm_DE_{t}.csv").merge(first[["item_id", "cpg_valid"]], on="item_id",
+                                                                    how="left") for m, t in MODELS.items()}
+check("conditions D/E: the 94 items are the main set of condition C",
+      all(sorted(DE[m].item_id) == sorted(D[m].item_id) for m in MODELS))
+for X, srcs in [("D", F_DE + [F_CD, F_CONS1]), ("E", F_DE + F_CE + [F_CONS1])]:
+    for hyp, pre, sel in [(f"H-{X}1", f"H{X}one", lambda d: d), (f"H-{X}2", f"H{X}two", lambda d: d[d.cpg_valid == "yes"])]:
+        res = {m: mixed(sel(DE[m]).dropna(subset=[f"pull_{X}_k10"]), f"pull_{X}_k10") for m in MODELS}
+        adj = multipletests([stats.norm.sf(res[m]["z"]) for m in MODELS], method="holm")[1]
+        for m, a in zip(MODELS, adj):
+            st = next(r for r in tb["rows"] if r["hypothesis"] == hyp and r["model"] == MODELS[m])
+            check(f"{hyp} {m}: recomputed z {res[m]['z']:.4f}, Holm p {a:.4f} match target_blind_controls.json",
+                  round(res[m]["z"], 4) == st["z"] and round(a, 4) == st["p_holm"]
+                  and round(res[m]["b"], 4) == st["intercept"])
+            q = (f"mixedlm pull_{X}_k10 ~ 1 + (1|tradition), REML; main set items with 10 kept condition {X} controls"
+                 + ("" if hyp.endswith("1") else ", first-run consensus cpg_valid == yes")
+                 + f" (= target_blind_controls.json rows {hyp} {MODELS[m]})")
+            put(f"{pre}Z{m}", f_dec(res[m]["z"], 2), srcs, q + "; z", RULE["z2"])
+            put(f"{pre}P{m}", f_p(a), srcs, q + "; one-sided p, Holm across the 3 models", RULE["p"])
+            if hyp.endswith("1"):
+                put(f"{pre}B{m}", f_dec(res[m]["b"], 3), srcs, q + "; intercept", RULE["m3"])
+nD = {int(DE[m].pull_D_k10.notna().sum()) for m in MODELS}
+check("condition D: the same items have a k = 10 pull in the three models", len(nD) == 1)
+put("NkTenD", f_int(nD.pop()), F_DE + [F_CD], "count(pull_D_k10 present) among the 94 main-set items", RULE["int"])
+for m, t in MODELS.items():
+    put(f"NkTenE{m}", f_int(DE[m].pull_E_k10.notna().sum()), F_DE + F_CE,
+        f"count(pull_E_k10 present) among the 94 main-set items, {t}", RULE["int"])
+ce0 = json.load(open(F_CE[0], encoding="utf-8"))
+put("NexclLangE", f_int(sum(ce0["_excluded"].values())), F_CE[0],
+    "sum of _excluded in controls_E (items whose language is not mapped to wordfreq)", RULE["int"])
+for m in MODELS:
+    for lab, conds, pairs in [("C_D", "CD", [("C", "SimCtrlTargetC"), ("D", "SimCtrlTargetD")]),
+                              ("C_E", "CE", [("C", "SimCtrlTargetCE"), ("E", "SimCtrlTargetE")])]:
+        x = DE[m].dropna(subset=[f"pull_{X}_k10" for X in conds])
+        st = next(r for r in tb["diagnostic"] if r["model"] == MODELS[m] and r["items"] == lab)
+        for X, name in pairs:
+            v = x[f"simctrl_{X}"].mean()
+            check(f"diagnostic {lab} {m} simctrl_{X} {v:.4f} = target_blind_controls.json", round(v, 4) == st[f"simctrl_{X}"])
+            put(f"{name}{m}", f_dec(v, 3), F_DE, f"mean simctrl_{X} (mean sim of the 10 controls to the target) over "
+                f"items with pull in conditions {', '.join(conds)} (n = {len(x)})", RULE["m3"])
+
 # ------------------------------------------------------------------ count chain
 chain = [("blind items", c["blind_items"]), ("with controls", c["items_with_controls"]),
          ("after T3", c["after_T3"]), ("not low_control", c["after_low_control"]), ("k = 10", len(D["oai"]))]
