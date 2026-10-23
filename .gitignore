@@ -26,3 +26,4 @@ paper/*
 *.fdb_latexmk
 *.synctex.gz
 embeddings/vocab_cache/
+private/
