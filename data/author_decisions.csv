@@ -2,7 +2,7 @@ item_id,proposed_action,decision,first_form,reason
 MAYA_005,ask_author,exclude,,decision 1: no host form (visual diphrasis; host_romanized says no spoken form)
 QCH_006,ask_author,exclude,,decision 1: no host form (speech-act genre description)
 NET_003,ask_author,exclude,,decision 1: several different words listed (unalive / corn / le dollar bean / seggs / grape)
-NEU_006,ask_author,exclude,,decision 1: two different words listed (beinhjálmr / valr)
+NEU_006,ask_author,exclude,,decision 1: several different words listed (beinhjálmr / valr)
 NEU_007,ask_author,keep_utterance,,decision 1: Exeter Book riddle; host_unit = utterance
 NEU_008,ask_author,keep_utterance,,decision 1: Exeter Book riddle; host_unit = utterance
 NEU_009,ask_author,keep_utterance,,decision 1: Exeter Book riddle; host_unit = utterance
@@ -29,7 +29,7 @@ NEU_012,use_first_form,adopt_first_form,beadu-swāt,decision 2: variants with th
 NEU_017,use_first_form,adopt_first_form,dúnad,decision 2: spelling variants (dúnad / dúnadh)
 QCH_004,use_first_form,adopt_first_form,Watuchikuna,decision 2: forms of one word (watuchikuna / watuchis)
 SEA_009,use_first_form,adopt_first_form,sasmitaning tembang,decision 2: one term (sasmita / sasmitaning tembang); first form of host_original
-QCH_003,use_first_form,exclude,,decision 2: different words with different meanings (lower world / upper world)
+QCH_003,use_first_form,exclude,,decision 2: several different words listed with different meanings (lower world / upper world)
 AFR_015,use_first_form,not_adopted_unclear,,two different phrases for the same target (went home / returned to the earth): variant or different words is unclear
 NEU_003,use_first_form,not_adopted_unclear,,two different kennings for blood (slaughter-beer / corpse-stream): variant or different words is unclear
 NEU_004,use_first_form,not_adopted_unclear,,two different kennings for poetry (Kvasir's blood / mead of poetry): variant or different words is unclear

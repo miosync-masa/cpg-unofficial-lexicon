@@ -1,0 +1,126 @@
+kind,original_label,strong_label,all_weak_label
+language,Amharic,Amharic,Amharic
+language,Amharic / Ge'ez,Amharic / Ge'ez,Amharic
+language,Arabic,Arabic,Arabic
+language,Ottoman Turkish,Ottoman Turkish,Arabic
+language,Ottoman Turkish / Arabic origin,Ottoman Turkish / Arabic origin,Arabic
+language,Belarusian,Belarusian,Belarusian
+language,Classic Maya (hieroglyphic),Classic Maya (hieroglyphic),Classic Maya (hieroglyphic)
+language,Classical Nahuatl,Classical Nahuatl,Classical Nahuatl
+language,Classic Ch'olti' / Colonial Yucatec Maya,Classic Ch'olti' / Colonial Yucatec Maya,Colonial Yucatec Maya
+language,Colonial Yucatec Maya,Colonial Yucatec Maya,Colonial Yucatec Maya
+language,Cross-linguistic (universal emoji script),Cross-linguistic (universal emoji script),Cross-linguistic (universal emoji script)
+language,Finnish,Finnish,Finnish
+language,Finnish / Proto-Finnic,Finnish / Proto-Finnic,Finnish
+language,Javanese,Javanese,Javanese
+language,Korean (한국어),Korean (한국어),Korean (한국어)
+language,Malay,Malay,Malay
+language,Old English,Old English,Old English
+language,Old Irish,Old Irish,Old Irish
+language,Old Norse,Old Norse,Old Norse
+language,Pitjantjatjara,Pitjantjatjara,Pitjantjatjara
+language,Pitjantjatjara / multiple Western Desert languages,Pitjantjatjara / multiple Western Desert languages,Pitjantjatjara
+language,Postclassic Maya iconographic tradition,Postclassic Maya iconographic tradition,Postclassic Maya iconographic tradition
+language,Quechua (Andean ceremonial),Quechua (colonial period),Quechua (colonial period)
+language,"Quechua (Southern, contemporary)",Quechua (colonial period),Quechua (colonial period)
+language,Quechua (colonial period),Quechua (colonial period),Quechua (colonial period)
+language,Quechua (pre-colonial and colonial),Quechua (colonial period),Quechua (colonial period)
+language,Southern Quechua,Southern Quechua,Quechua (colonial period)
+language,Southern Quechua (colonial),Southern Quechua,Quechua (colonial period)
+language,Polish,Polish,Russian
+language,Polish / Czech,Polish / Czech,Russian
+language,Polish / Russian / Ukrainian,Polish / Russian / Ukrainian,Russian
+language,Russian,Russian,Russian
+language,Russian (Old Russian oral),Russian,Russian
+language,Te Reo Māori,Te Reo Māori,Te Reo Māori
+language,Thai,Thai,Thai
+language,Twi (Akan),Twi (Akan),Twi (Akan)
+language,Vietnamese,Vietnamese,Vietnamese
+language,Yoruba,Yoruba,Yoruba
+language,English (cross-platform),en,en
+language,English (primarily American English; global adoption),en,en
+language,en,en,en
+language,fa,fa,fa
+language,fr,fr,fr
+language,hi,hi,hi
+language,isiXhosa,isiXhosa,isiXhosa
+language,isiZulu,isiZulu,isiZulu
+language,ja,ja,ja
+language,Mandarin Chinese (普通话),Mandarin Chinese (普通话),zh
+language,zh,zh,zh
+language,ʻŌlelo Hawaiʻi (Hawaiian),ʻŌlelo Hawaiʻi (Hawaiian),ʻŌlelo Hawaiʻi (Hawaiian)
+tradition,Adianoeta / double entendre (European),Adianoeta / double entendre (European),Adianoeta / double entendre (European)
+tradition,Akan death euphemisms (Twi indirect speech),Akan death euphemisms (Twi indirect speech),Akan death euphemisms (Twi indirect speech)
+tradition,Anglo-Saxon kenning (Beowulf),Anglo-Saxon kenning (Beowulf),Anglo-Saxon kenning (Beowulf)
+tradition,Anglo-Saxon riddles (Exeter Book),Anglo-Saxon riddles (Exeter Book),Anglo-Saxon riddles (Exeter Book)
+tradition,Arabic/Persian īhām,Arabic/Persian īhām,Arabic/Persian īhām
+tradition,Belarusian stydnyya zahadki (стыдныя загадкі),Belarusian stydnyya zahadki (стыдныя загадкі),Belarusian stydnyya zahadki (стыдныя загадкі)
+tradition,Calculator spelling / TikTok number slang,Calculator spelling / TikTok number slang,Calculator spelling / TikTok number slang
+tradition,Celtic dúnad (Irish ring composition — case study),Celtic dúnad (Irish ring composition),Celtic dúnad (Irish ring composition)
+tradition,Celtic dúnad (Irish ring composition),Celtic dúnad (Irish ring composition),Celtic dúnad (Irish ring composition)
+tradition,Chinese internet censorship evasion,Chinese internet censorship evasion,Chinese internet censorship evasion
+tradition,Chinese internet resistance language,Chinese internet resistance language,Chinese internet resistance language
+tradition,Chinese xiéyīn (homophonic symbolism),Chinese xiéyīn (homophonic symbolism),Chinese xiéyīn (homophonic symbolism)
+tradition,Classic Maya / Colonial Yucatec Diphrasis,Classic Maya / Colonial Yucatec Diphrasis,Colonial Yucatec Maya Diphrasis (Chilam Balam)
+tradition,Classic Maya Hieroglyphic Poetic Substitution,Classic Maya Hieroglyphic Poetic Substitution,Colonial Yucatec Maya Diphrasis (Chilam Balam)
+tradition,Colonial Yucatec Maya Diphrasis (Chilam Balam),Colonial Yucatec Maya Diphrasis (Chilam Balam),Colonial Yucatec Maya Diphrasis (Chilam Balam)
+tradition,Cross-cultural ritual gesture/phrase,Cross-cultural ritual gesture/phrase,Cross-cultural ritual gesture/phrase
+tradition,Emoji semiotics / digital communication,Emoji semiotics / digital communication,Emoji semiotics / digital communication
+tradition,English drinking euphemism,English drinking euphemism,English drinking euphemism
+tradition,English sexual euphemism,English sexual euphemism,English sexual euphemism
+tradition,Finnish Kalevala-meter poetry,Finnish Kalevala-meter poetry,Finnish Kalevala-meter poetry
+tradition,Finnish arvoitus (folk riddles),Finnish arvoitus (folk riddles),Finnish arvoitus (folk riddles)
+tradition,Hawaiian Mele Kaona,Hawaiian Mele Kaona,Hawaiian Mele Kaona
+tradition,Hawaiian Mele Kaona (hidden meaning in chant),Hawaiian Mele Kaona,Hawaiian Mele Kaona
+tradition,Hawaiian Mele Kaona — 'Sanoe',Hawaiian Mele Kaona,Hawaiian Mele Kaona
+tradition,Hawaiian Mele Kaona — political resistance,Hawaiian Mele Kaona,Hawaiian Mele Kaona
+tradition,Internet meme / AAVE-origin euphemism,Internet meme / AAVE-origin euphemism,Internet meme / AAVE-origin euphemism
+tradition,Izibongo — Xhosa praise poetry (imbongi tradition),Izibongo — Zulu praise poetry (royal),Izibongo — Zulu praise poetry (royal)
+tradition,Izibongo — Zulu praise poetry (royal),Izibongo — Zulu praise poetry (royal),Izibongo — Zulu praise poetry (royal)
+tradition,Izibongo — Zulu/Nguni royal praise poetry,Izibongo — Zulu praise poetry (royal),Izibongo — Zulu praise poetry (royal)
+tradition,Japanese drinking euphemism,Japanese drinking euphemism,Japanese drinking euphemism
+tradition,Japanese game-meat food euphemisms,Japanese game-meat food euphemisms,Japanese game-meat food euphemisms
+tradition,Japanese kakekotoba (waka pivot words),Japanese kakekotoba (waka pivot words),Japanese kakekotoba (waka pivot words)
+tradition,Japanese osechi New Year food symbolism,Japanese osechi New Year food symbolism,Japanese osechi New Year food symbolism
+tradition,Japanese sexual euphemism,Japanese sexual euphemism,Japanese sexual euphemism
+tradition,Javanese tembang macapat,Javanese tembang macapat,Javanese tembang macapat
+tradition,Korean internet culture / K-drama meme,Korean internet culture / K-drama meme,Korean internet culture / K-drama meme
+tradition,Malay pantun,Malay pantun,Malay pantun
+tradition,Malay pantun / folk song,Malay pantun / folk song,Malay pantun
+tradition,Māori Whakataukī (proverb),Māori Whakataukī (proverb),Māori Whakataukī (proverb)
+tradition,Nahuatl Difrasismo,Nahuatl Difrasismo,Nahuatl Difrasismo
+tradition,Old Norse kenning (skaldic poetry),Old Norse kenning (skaldic poetry),Old Norse kenning (skaldic poetry)
+tradition,Oríkì — birth-circumstance names (àmútọ̀runwá),Oríkì — tonal homophone (Yoruba tonal language),Oríkì — tonal homophone (Yoruba tonal language)
+tradition,Oríkì — divine object symbolism,Oríkì — tonal homophone (Yoruba tonal language),Oríkì — tonal homophone (Yoruba tonal language)
+tradition,Oríkì — orisha praise poetry,Oríkì — tonal homophone (Yoruba tonal language),Oríkì — tonal homophone (Yoruba tonal language)
+tradition,Oríkì — royal/political praise poetry,Oríkì — tonal homophone (Yoruba tonal language),Oríkì — tonal homophone (Yoruba tonal language)
+tradition,Oríkì — tonal homophone (Yoruba tonal language),Oríkì — tonal homophone (Yoruba tonal language),Oríkì — tonal homophone (Yoruba tonal language)
+tradition,Polish erotic folk lyric (pieśń ludowa),Polish erotic folk lyric (pieśń ludowa),Polish erotic folk lyric (pieśń ludowa)
+tradition,Polish erotic folk lyric (pieśń ludowa) / Pan-Slavic tradition,Polish erotic folk lyric (pieśń ludowa) / Pan-Slavic tradition,Polish erotic folk lyric (pieśń ludowa)
+tradition,Polish/Czech folk custom and wedding song,Polish/Czech folk custom and wedding song,Polish erotic folk lyric (pieśń ludowa)
+tradition,Postclassic Maya Visual Diphrasis (Tulum murals),Postclassic Maya Visual Diphrasis (Tulum murals),Postclassic Maya Visual Diphrasis (Tulum murals)
+tradition,Qene (Sem-ena-Werq),Qene (Sem-ena-Werq),Qene (Sem-ena-Werq)
+tradition,Quechua Cosmological Terminology,Quechua Cosmological Terminology,Quechua Cosmological Terminology
+tradition,Quechua Riddle Tradition (Watuchikuna),Quechua Riddle Tradition (Watuchikuna),Quechua Riddle Tradition (Watuchikuna)
+tradition,Quechua Ritual Vocabulary (colonial semantic layering),Quechua Ritual Vocabulary (colonial semantic layering),Quechua Ritual Vocabulary (colonial semantic layering)
+tradition,Quechua Semantic Parallelism,Quechua Semantic Parallelism,Quechua Semantic Parallelism
+tradition,Quechua Shamanic Ritual (K'intu),Quechua Shamanic Ritual (K'intu),Quechua Shamanic Ritual (K'intu)
+tradition,Russian bylina constant epithet (постоянный эпитет),Russian bylina constant epithet (постоянный эпитет),Russian zagadka (загадка)
+tradition,Russian zagadka (загадка),Russian zagadka (загадка),Russian zagadka (загадка)
+tradition,Russian/Slavic wedding song euphemism,Russian/Slavic wedding song euphemism,Russian zagadka (загадка)
+tradition,Sanskrit śleṣa,Sanskrit śleṣa,Sanskrit śleṣa
+tradition,Songlines / Tjukurpa (Aboriginal Australian),Songlines / Tjukurpa (Aboriginal Australian),Songlines / Tjukurpa (Aboriginal Australian)
+tradition,Songlines / Tjukurpa — Kungkarangkalpa (Seven Sisters),Songlines / Tjukurpa (Aboriginal Australian),Songlines / Tjukurpa (Aboriginal Australian)
+tradition,Southern Quechua Ritual Pragmatics,Southern Quechua Ritual Pragmatics,Southern Quechua Ritual Pragmatics
+tradition,Thai luk thung (country music / เพลงลูกทุ่ง),Thai luk thung (country music / เพลงลูกทุ่ง),Thai luk thung (country music / เพลงลูกทุ่ง)
+tradition,Thai phleng choi (folk song / เพลงฉ่อย),Thai phleng choi (folk song / เพลงฉ่อย),Thai phleng choi (folk song / เพลงฉ่อย)
+tradition,TikTok Algospeak,TikTok Algospeak,TikTok Algospeak
+tradition,Vietnamese Nôm poetry (Ho Xuan Huong),Vietnamese Nôm poetry (Ho Xuan Huong),Vietnamese Nôm poetry (Ho Xuan Huong)
+tradition,Vietnamese ca dao (folk poetry),Vietnamese ca dao (folk poetry),Vietnamese ca dao (folk poetry)
+tradition,Vietnamese ca dao / folk culture,Vietnamese ca dao / folk culture,Vietnamese ca dao (folk poetry)
+tradition,Yucatec Maya Ritual Speech (Zuyua T'an),Yucatec Maya Ritual Speech (Zuyua T'an),Yucatec Maya Ritual Speech (Zuyua T'an)
+tradition,kinaya,kinaya,kinaya
+tradition,tawriya,tawriya,tawriya
+tradition,tevriye,tevriye,tevriye
+tradition,Ɛbɛ — Akan proverb,Ɛbɛ — Akan proverb,Ɛbɛ — Akan proverb
+tradition,Ɛbɛ — Akan proverb (Twi/Asante),Ɛbɛ — Akan proverb,Ɛbɛ — Akan proverb

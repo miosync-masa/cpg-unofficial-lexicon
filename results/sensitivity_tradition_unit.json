@@ -1,0 +1,204 @@
+{
+ "description": "H-C1 and H-C2 on the main set (condition C, k = 10, T3 and low_control removed), random intercept for tradition under three groupings; Holm across the 3 models within each grouping and hypothesis; verdict = supported if p_holm < .05. The main analysis (t1_results.json) groups by the raw labels.",
+ "rows": [
+  {
+   "grouping": "raw labels",
+   "hypothesis": "H-C1",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 94,
+   "n_groups": 49,
+   "intercept": 0.0662,
+   "z": 5.3901,
+   "p_holm": 1.0562827382866401e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "raw labels",
+   "hypothesis": "H-C1",
+   "model": "BAAI/bge-m3",
+   "n": 94,
+   "n_groups": 49,
+   "intercept": 0.025,
+   "z": 2.2285,
+   "p_holm": 0.012923592091139453,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "raw labels",
+   "hypothesis": "H-C1",
+   "model": "gemini-embedding-001",
+   "n": 94,
+   "n_groups": 49,
+   "intercept": 0.023,
+   "z": 5.1288,
+   "p_holm": 2.915302600460908e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "raw labels",
+   "hypothesis": "H-C2",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 63,
+   "n_groups": 38,
+   "intercept": 0.059,
+   "z": 4.2347,
+   "p_holm": 3.433003629771511e-05,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "raw labels",
+   "hypothesis": "H-C2",
+   "model": "BAAI/bge-m3",
+   "n": 63,
+   "n_groups": 38,
+   "intercept": 0.03,
+   "z": 2.306,
+   "p_holm": 0.010555780085865671,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "raw labels",
+   "hypothesis": "H-C2",
+   "model": "gemini-embedding-001",
+   "n": 63,
+   "n_groups": 38,
+   "intercept": 0.0177,
+   "z": 4.0527,
+   "p_holm": 5.063311588011458e-05,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "strong candidates merged",
+   "hypothesis": "H-C1",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 94,
+   "n_groups": 47,
+   "intercept": 0.0662,
+   "z": 5.4364,
+   "p_holm": 8.155381739399104e-08,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "strong candidates merged",
+   "hypothesis": "H-C1",
+   "model": "BAAI/bge-m3",
+   "n": 94,
+   "n_groups": 47,
+   "intercept": 0.0242,
+   "z": 2.1729,
+   "p_holm": 0.014893391149526036,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "strong candidates merged",
+   "hypothesis": "H-C1",
+   "model": "gemini-embedding-001",
+   "n": 94,
+   "n_groups": 47,
+   "intercept": 0.0232,
+   "z": 5.1501,
+   "p_holm": 2.602792059970998e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "strong candidates merged",
+   "hypothesis": "H-C2",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 63,
+   "n_groups": 36,
+   "intercept": 0.0586,
+   "z": 4.2523,
+   "p_holm": 3.174034986150326e-05,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "strong candidates merged",
+   "hypothesis": "H-C2",
+   "model": "BAAI/bge-m3",
+   "n": 63,
+   "n_groups": 36,
+   "intercept": 0.029,
+   "z": 2.2479,
+   "p_holm": 0.012292555530049798,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "strong candidates merged",
+   "hypothesis": "H-C2",
+   "model": "gemini-embedding-001",
+   "n": 63,
+   "n_groups": 36,
+   "intercept": 0.0178,
+   "z": 4.0738,
+   "p_holm": 4.6256831517759466e-05,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "all weak merged",
+   "hypothesis": "H-C1",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 94,
+   "n_groups": 42,
+   "intercept": 0.067,
+   "z": 5.3485,
+   "p_holm": 1.3302916304241653e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "all weak merged",
+   "hypothesis": "H-C1",
+   "model": "BAAI/bge-m3",
+   "n": 94,
+   "n_groups": 42,
+   "intercept": 0.0239,
+   "z": 2.0768,
+   "p_holm": 0.018910030663941764,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "all weak merged",
+   "hypothesis": "H-C1",
+   "model": "gemini-embedding-001",
+   "n": 94,
+   "n_groups": 42,
+   "intercept": 0.0238,
+   "z": 5.1872,
+   "p_holm": 2.1346123811770206e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "all weak merged",
+   "hypothesis": "H-C2",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 63,
+   "n_groups": 31,
+   "intercept": 0.0599,
+   "z": 4.1652,
+   "p_holm": 4.666269854317161e-05,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "all weak merged",
+   "hypothesis": "H-C2",
+   "model": "BAAI/bge-m3",
+   "n": 63,
+   "n_groups": 31,
+   "intercept": 0.0293,
+   "z": 2.1594,
+   "p_holm": 0.015410459837925583,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "all weak merged",
+   "hypothesis": "H-C2",
+   "model": "gemini-embedding-001",
+   "n": 63,
+   "n_groups": 31,
+   "intercept": 0.0181,
+   "z": 4.0967,
+   "p_holm": 4.666269854317161e-05,
+   "verdict": "supported"
+  }
+ ],
+ "verdict_changes": []
+}
