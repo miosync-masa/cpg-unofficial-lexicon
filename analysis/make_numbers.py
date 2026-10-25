@@ -1125,8 +1125,17 @@ for X, suf in [("D", ""), ("C", "C")]:
             f"mean(pull_{X}_k10) / SD(pull_{X}_k10), ddof 1", RULE["d2"])
         stack.append(e.assign(log10_params=np.log10(e5meta["models"][sz]["params"]),
                               pull_std=y / y.std(ddof=1))[["item_id", "tradition", "log10_params", "pull_std"]])
+    for (m, tag), mac in zip(MODELS.items(), ["Oai", "Bge", "Gem"]):  # reference: the three earlier models (no test)
+        y = DE[m][f"pull_{X}_k10"].dropna()
+        dd = float(y.mean() / y.std(ddof=1))
+        st = next(r for r in ms["conditions"][X]["reference_earlier_models"] if r["model"] == MODEL_NAMES[m])
+        check(f"reference d {X} {m}: n {len(y)}, d {dd:.4f} = model_size_e5.json", len(y) == st["n"]
+              and round(dd, 4) == st["d"])
+        put(f"De{mac}{X}", f_dec(dd, 2), ROOT / f"embeddings/results/nnpm_DE_{tag}.csv",
+            f"{MODEL_NAMES[m]}, condition {X} main set (n = {len(y)}): mean(pull_{X}_k10) / SD(pull_{X}_k10), ddof 1 "
+            "(= model_size_e5.json reference_earlier_models; reference, no test)", RULE["d2"])
     S = pd.concat(stack, ignore_index=True)
-    S["hard"] = S.item_id.map(oi_e5).map({"inferable": 0, "inferable_with_effort": 1, "not_inferable": 1})
+    S["hard"] =S.item_id.map(oi_e5).map({"inferable": 0, "inferable_with_effort": 1, "not_inferable": 1})
     for h, pre, formula, term, data in [
             ("H-S1", "HSone", "pull_std ~ log10_params", "log10_params", S),
             ("H-S2", "HStwo", "pull_std ~ log10_params * hard", "log10_params:hard", S.dropna(subset=["hard"]))]:
