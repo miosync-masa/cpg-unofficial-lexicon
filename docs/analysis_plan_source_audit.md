@@ -75,3 +75,43 @@ meaning.
 - Macros through `analysis/make_numbers.py`: `NauditSupported`, `NauditPartly`, `NauditContradicted`,
   `NauditNoEvidence`, `NauditUnresolved`, `Kaudit`, `PauditAuthorAgree`, and the sensitivity z and p
   (`HConeZsup*`, `HConePsup*`, `HConeZsupPart*`, ..., with the model suffix).
+
+## Amendments
+
+### Decisions made during stage A (2026-10-24, before stage B)
+
+- A page that shows only an abstract is `retrieved = abstract`; earlier rows were corrected. A library catalogue
+  record (e.g. Open Library) is `record_only`.
+- A document marked as AI-generated is kept in the record with `ai_generated = yes` and is not sent to stage B; a
+  different document is looked for. A page that mixes source text with AI-generated paraphrases is treated the same
+  way (T_029, document 1); the source text is retrieved again from another edition.
+- When the only quotes are at the level of the tradition or technique, one search on host + covert meaning is
+  required before collection stops.
+- **Host criterion**: a quote counts as mentioning the host when it names the host itself or refers to what the host
+  denotes in translation (e.g. "the mole on the cheek" for an item whose host is the word for mole).
+- Columns added to `results/source_audit_evidence.csv`: `quote_2` (a second quote from the same document),
+  `agent_source` (for sources recorded by the agents: `exists`, `inaccessible`, `not_found`) and `ai_generated`.
+
+### Decisions made after stage B (2026-10-25)
+
+- **Retrieval date.** All documents were retrieved on 2026-10-24, three days after the disclosure of two critical
+  PHP vulnerabilities (CVE-2026-109618, CVE-2026-109619) on 2026-10-21, which led many sites (universities,
+  governments, journal platforms running OJS) to go offline or restrict access. Some `failed` documents may
+  therefore reflect a temporary outage.
+- **Retrieval again.** Around 2026-11-01, every document that failed with a server error (HTTP 5xx) or a connection
+  error (timeout, SSL, connection reset) is retrieved again from the same URL. New quotes are added, and the items
+  whose quotes change are judged again in stage B by the three coders (same prompt and procedure; both the old and
+  the new labels are reported).
+- **Web archives.** Rule 4 is relaxed for documents that could not be retrieved because of a server outage or a
+  dead link (HTTP 5xx, connection errors, HTTP 404). It is not relaxed for a site that refused access (HTTP 401,
+  403, 429, bot challenges). For these documents the Wayback Machine is used, taking the capture closest to
+  2026-03-13; such rows have `retrieved = archive`. The archived text may be quoted and used in stage B.
+- **Types of `not_found`** (new column `not_found_type`, only for agent sources with `agent_source = not_found`):
+  - (a) `unspecific`: the source does not name a specific document (e.g. "Slavic mythology scholarship");
+  - (b) `specific_not_found`: a specific document (author/title or a specific page) that a search did not find;
+  - (c) `url_unretrievable`: a URL was given but could not be retrieved, and no other copy was found.
+  Only (b) is treated in the paper as a source whose existence is doubtful. Macros: `NnotFoundUnspecific`,
+  `NnotFoundSpecific`, `NnotFoundURL`.
+- **Sensitivity in condition D.** The two restrictions are applied also to condition D: H-D1 and H-D2 recomputed
+  as in `analysis/analyze_target_blind.py` on the main-set items with a k = 10 condition D pull. Macros
+  `HDoneZsup*`, `HDonePsup*`, `HDtwoZsupPart*`, ..., with the model suffix.

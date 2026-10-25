@@ -883,6 +883,57 @@ for m in MODELS:
             put(f"{name}{m}", f_dec(v, 3), F_DE, f"mean simctrl_{X} (mean sim of the 10 controls to the target) over "
                 f"items with pull in conditions {', '.join(conds)} (n = {len(x)})", RULE["m3"])
 
+# ------------------------------------------------------------------ 11. source audit
+# plan: docs/analysis_plan_source_audit.md; judgements from audit/scripts/judge_evidence.py, summary from
+# analysis/analyze_source_audit.py
+F_AJ = ROOT / "results/source_audit_judgements.csv"
+F_AS = ROOT / "results/source_audit_summary.json"
+F_AE = ROOT / "results/source_audit_evidence.csv"
+aud = json.load(open(F_AS))
+aj = read_csv("results/source_audit_judgements.csv", dtype=str, keep_default_na=False)
+check("source audit: 217 items in the judgements", len(aj) == 217 and set(aj.item_id) == set(blind.item_id))
+ATAGS = ["gpt", "claude", "gemini"]
+sent = aj[aj.sent == "True"]
+for macro, lab in [("NauditSupported", "supported"), ("NauditPartly", "partly"), ("NauditContradicted", "contradicted"),
+                   ("NauditNoEvidence", "no_evidence"), ("NauditUnresolved", "UNRESOLVED")]:
+    v = int((aj.majority == lab).sum())
+    check(f"{macro} {v} = source_audit_summary.json majority.{lab}", v == aud["majority"][lab])
+    put(macro, f_int(v), [F_AJ, F_AE], f"count(majority == '{lab}') over the 217 items (items without a quote are "
+        "no_evidence by rule)", RULE["int"])
+ka = fleiss_unrounded([sent[f"label_{t}"].values for t in ATAGS])
+check(f"Kaudit: recomputed kappa {ka:.4f} rounds to stored {aud['fleiss_kappa']}", round(ka, 4) == aud["fleiss_kappa"])
+put("Kaudit", f_dec(ka, 2), F_AJ, "Fleiss kappa of the stage B label, 3 coders, items sent "
+    "(stored: source_audit_summary.json fleiss_kappa, 4 decimals)", RULE["k2"])
+missing("PauditAuthorAgree", "author spot check not done yet", F_AS, "spot_check_items", RULE["int"])
+aev = read_csv("results/source_audit_evidence.csv", dtype=str, keep_default_na=False)
+anf = aev[(aev.listed_by_agent == "yes") & (aev.agent_source == "not_found")]
+check(f"source audit: every not_found agent source has a not_found_type ({len(anf)} sources)",
+      set(anf.not_found_type) <= {"unspecific", "specific_not_found", "url_unretrievable"})
+for macro, v in [("NnotFoundUnspecific", "unspecific"), ("NnotFoundSpecific", "specific_not_found"),
+                 ("NnotFoundURL", "url_unretrievable")]:
+    put(macro, f_int((anf.not_found_type == v).sum()), F_AE, "count(listed_by_agent == yes, agent_source == "
+        f"not_found, not_found_type == {v}) in source_audit_evidence.csv (types: docs/analysis_plan_source_audit.md, "
+        "Amendments)", RULE["int"])
+amaj = aj.set_index("item_id").majority
+for sname, suf, keep in [("supported", "sup", {"supported"}), ("supported_or_partly", "supPart", {"supported", "partly"})]:
+    for hyp, pre, y, base, sel in [("H-C1", "HCone", "pull_C_k10", D, lambda d: d),
+                                   ("H-C2", "HCtwo", "pull_C_k10", D, lambda d: d[d.cpg_valid == "yes"]),
+                                   ("H-D1", "HDone", "pull_D_k10", DE, lambda d: d),
+                                   ("H-D2", "HDtwo", "pull_D_k10", DE, lambda d: d[d.cpg_valid == "yes"])]:
+        res = {m: mixed(sel(base[m][base[m].item_id.map(amaj).isin(keep)]).dropna(subset=[y]), y) for m in MODELS}
+        adj = multipletests([stats.norm.sf(res[m]["z"]) for m in MODELS], method="holm")[1]
+        for m, a in zip(MODELS, adj):
+            st = next(r for r in aud["sensitivity"]["rows"]
+                      if r["set"] == sname and r["hypothesis"] == hyp and r["model"] == MODEL_NAMES[m])
+            check(f"audit sensitivity {sname} {hyp} {m}: z {res[m]['z']:.4f}, Holm p {a:.4f} match "
+                  "source_audit_summary.json", round(res[m]["z"], 4) == st["z"] and round(a, 4) == st["p_holm"])
+            q = (f"{MAIN_Q}" + ("" if y == "pull_C_k10" else ", with 10 kept condition D controls")
+                 + f", audit majority in {sorted(keep)}" + ("" if hyp.endswith("1") else
+                 ", first-run consensus cpg_valid == yes") + f"; mixedlm {y} ~ 1 + (1|tradition), REML")
+            srcs = (F_MAIN if y == "pull_C_k10" else F_DE + [F_CD]) + [F_CONS1, F_AJ]
+            put(f"{pre}Z{suf}{m}", f_dec(res[m]["z"], 2), srcs, q + "; z", RULE["z2"])
+            put(f"{pre}P{suf}{m}", f_p(a), srcs, q + "; one-sided p, Holm across the 3 models", RULE["p"])
+
 # ------------------------------------------------------------------ count chain
 chain = [("blind items", c["blind_items"]), ("with controls", c["items_with_controls"]),
          ("after T3", c["after_T3"]), ("not low_control", c["after_low_control"]), ("k = 10", len(D["oai"]))]

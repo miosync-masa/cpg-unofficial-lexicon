@@ -1,0 +1,435 @@
+{
+ "n_items": 217,
+ "n_sent": 214,
+ "n_rule_based_no_evidence": 3,
+ "coders": [
+  "gpt-5.6-sol",
+  "claude-opus-5-5",
+  "gemini-3.1-pro-preview"
+ ],
+ "fleiss_kappa": 0.6047,
+ "pct_unanimous": 70.1,
+ "majority": {
+  "supported": 134,
+  "partly": 73,
+  "contradicted": 4,
+  "no_evidence": 6,
+  "UNRESOLVED": 0
+ },
+ "majority_by_phase": {
+  "1": {
+   "supported": 78,
+   "partly": 22,
+   "contradicted": 1,
+   "no_evidence": 2,
+   "UNRESOLVED": 0
+  },
+  "2": {
+   "supported": 56,
+   "partly": 51,
+   "contradicted": 3,
+   "no_evidence": 4,
+   "UNRESOLVED": 0
+  }
+ },
+ "majority_by_best_source_type": {
+  "none": {
+   "supported": 0,
+   "partly": 0,
+   "contradicted": 0,
+   "no_evidence": 3,
+   "UNRESOLVED": 0
+  },
+  "reference": {
+   "supported": 55,
+   "partly": 16,
+   "contradicted": 1,
+   "no_evidence": 0,
+   "UNRESOLVED": 0
+  },
+  "scholarly": {
+   "supported": 28,
+   "partly": 35,
+   "contradicted": 3,
+   "no_evidence": 1,
+   "UNRESOLVED": 0
+  },
+  "web": {
+   "supported": 16,
+   "partly": 10,
+   "contradicted": 0,
+   "no_evidence": 1,
+   "UNRESOLVED": 0
+  },
+  "wikipedia": {
+   "supported": 35,
+   "partly": 12,
+   "contradicted": 0,
+   "no_evidence": 1,
+   "UNRESOLVED": 0
+  }
+ },
+ "per_coder": {
+  "gpt-5.6-sol": {
+   "supported": 124,
+   "partly": 83,
+   "contradicted": 4,
+   "no_evidence": 3
+  },
+  "claude-opus-5-5": {
+   "supported": 140,
+   "partly": 72,
+   "contradicted": 2,
+   "no_evidence": 0
+  },
+  "gemini-3.1-pro-preview": {
+   "supported": 115,
+   "partly": 91,
+   "contradicted": 3,
+   "no_evidence": 5
+  }
+ },
+ "refusals": {
+  "gpt-5.6-sol": {
+   "requests": 22,
+   "refused_requests": 0,
+   "items_in_refused_requests": [],
+   "single_item_requests": 0
+  },
+  "claude-opus-5-5": {
+   "requests": 22,
+   "refused_requests": 0,
+   "items_in_refused_requests": [],
+   "single_item_requests": 0
+  },
+  "gemini-3.1-pro-preview": {
+   "requests": 22,
+   "refused_requests": 0,
+   "items_in_refused_requests": [],
+   "single_item_requests": 0
+  }
+ },
+ "contradicted_items": [
+  "NEU_001",
+  "EEU_008",
+  "T_041",
+  "MAYA_003"
+ ],
+ "unresolved_items": [],
+ "spot_check_items": [
+  "EEU_012",
+  "EEU_013",
+  "NET_004",
+  "NEU_010",
+  "NEU_013",
+  "OCE_001",
+  "SEA_003",
+  "SEA_012",
+  "T_004",
+  "T_005",
+  "T_020",
+  "T_023",
+  "T_029",
+  "T_034",
+  "T_036",
+  "T_057",
+  "T_064",
+  "T_067",
+  "T_078",
+  "T_086"
+ ],
+ "sensitivity": {
+  "main_set_n": 94,
+  "main_set_majority": {
+   "supported": 53,
+   "partly": 35,
+   "contradicted": 3,
+   "no_evidence": 3,
+   "UNRESOLVED": 0
+  },
+  "condition_D_n": 67,
+  "condition_D_majority": {
+   "supported": 38,
+   "partly": 23,
+   "contradicted": 3,
+   "no_evidence": 3,
+   "UNRESOLVED": 0
+  },
+  "rows": [
+   {
+    "set": "supported",
+    "hypothesis": "H-C1",
+    "model": "OpenAI text-embedding-3-large",
+    "n": 53,
+    "n_traditions": 28,
+    "intercept": 0.0773,
+    "se": 0.0154,
+    "z": 5.0211,
+    "p_holm": 0.0
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-C1",
+    "model": "BAAI/bge-m3",
+    "n": 53,
+    "n_traditions": 28,
+    "intercept": 0.0202,
+    "se": 0.0114,
+    "z": 1.7686,
+    "p_holm": 0.0385
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-C1",
+    "model": "gemini-embedding-001",
+    "n": 53,
+    "n_traditions": 28,
+    "intercept": 0.0283,
+    "se": 0.0051,
+    "z": 5.5047,
+    "p_holm": 0.0
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-C2",
+    "model": "OpenAI text-embedding-3-large",
+    "n": 33,
+    "n_traditions": 21,
+    "intercept": 0.0556,
+    "se": 0.0171,
+    "z": 3.2528,
+    "p_holm": 0.0011
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-C2",
+    "model": "BAAI/bge-m3",
+    "n": 33,
+    "n_traditions": 21,
+    "intercept": 0.0223,
+    "se": 0.0149,
+    "z": 1.4949,
+    "p_holm": 0.0675
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-C2",
+    "model": "gemini-embedding-001",
+    "n": 33,
+    "n_traditions": 21,
+    "intercept": 0.0186,
+    "se": 0.0049,
+    "z": 3.8017,
+    "p_holm": 0.0002
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-D1",
+    "model": "OpenAI text-embedding-3-large",
+    "n": 38,
+    "n_traditions": 21,
+    "intercept": 0.0528,
+    "se": 0.0219,
+    "z": 2.4146,
+    "p_holm": 0.0236
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-D1",
+    "model": "BAAI/bge-m3",
+    "n": 38,
+    "n_traditions": 21,
+    "intercept": 0.0147,
+    "se": 0.0164,
+    "z": 0.8969,
+    "p_holm": 0.1849
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-D1",
+    "model": "gemini-embedding-001",
+    "n": 38,
+    "n_traditions": 21,
+    "intercept": 0.0202,
+    "se": 0.0089,
+    "z": 2.2831,
+    "p_holm": 0.0236
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-D2",
+    "model": "OpenAI text-embedding-3-large",
+    "n": 26,
+    "n_traditions": 16,
+    "intercept": 0.0423,
+    "se": 0.0267,
+    "z": 1.583,
+    "p_holm": 0.1701
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-D2",
+    "model": "BAAI/bge-m3",
+    "n": 26,
+    "n_traditions": 16,
+    "intercept": 0.0195,
+    "se": 0.0205,
+    "z": 0.9495,
+    "p_holm": 0.3424
+   },
+   {
+    "set": "supported",
+    "hypothesis": "H-D2",
+    "model": "gemini-embedding-001",
+    "n": 26,
+    "n_traditions": 16,
+    "intercept": 0.0079,
+    "se": 0.0084,
+    "z": 0.935,
+    "p_holm": 0.3424
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-C1",
+    "model": "OpenAI text-embedding-3-large",
+    "n": 88,
+    "n_traditions": 48,
+    "intercept": 0.0646,
+    "se": 0.012,
+    "z": 5.3746,
+    "p_holm": 0.0
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-C1",
+    "model": "BAAI/bge-m3",
+    "n": 88,
+    "n_traditions": 48,
+    "intercept": 0.023,
+    "se": 0.0101,
+    "z": 2.2696,
+    "p_holm": 0.0116
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-C1",
+    "model": "gemini-embedding-001",
+    "n": 88,
+    "n_traditions": 48,
+    "intercept": 0.0218,
+    "se": 0.0041,
+    "z": 5.2635,
+    "p_holm": 0.0
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-C2",
+    "model": "OpenAI text-embedding-3-large",
+    "n": 59,
+    "n_traditions": 37,
+    "intercept": 0.0594,
+    "se": 0.014,
+    "z": 4.2491,
+    "p_holm": 0.0
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-C2",
+    "model": "BAAI/bge-m3",
+    "n": 59,
+    "n_traditions": 37,
+    "intercept": 0.0326,
+    "se": 0.0127,
+    "z": 2.5641,
+    "p_holm": 0.0052
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-C2",
+    "model": "gemini-embedding-001",
+    "n": 59,
+    "n_traditions": 37,
+    "intercept": 0.018,
+    "se": 0.0045,
+    "z": 4.0162,
+    "p_holm": 0.0001
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-D1",
+    "model": "OpenAI text-embedding-3-large",
+    "n": 61,
+    "n_traditions": 35,
+    "intercept": 0.0478,
+    "se": 0.0164,
+    "z": 2.911,
+    "p_holm": 0.0054
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-D1",
+    "model": "BAAI/bge-m3",
+    "n": 61,
+    "n_traditions": 35,
+    "intercept": 0.0149,
+    "se": 0.0138,
+    "z": 1.0802,
+    "p_holm": 0.14
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-D1",
+    "model": "gemini-embedding-001",
+    "n": 61,
+    "n_traditions": 35,
+    "intercept": 0.0174,
+    "se": 0.0062,
+    "z": 2.7829,
+    "p_holm": 0.0054
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-D2",
+    "model": "OpenAI text-embedding-3-large",
+    "n": 43,
+    "n_traditions": 26,
+    "intercept": 0.0544,
+    "se": 0.0201,
+    "z": 2.7004,
+    "p_holm": 0.0104
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-D2",
+    "model": "BAAI/bge-m3",
+    "n": 43,
+    "n_traditions": 26,
+    "intercept": 0.0302,
+    "se": 0.0172,
+    "z": 1.7596,
+    "p_holm": 0.0504
+   },
+   {
+    "set": "supported_or_partly",
+    "hypothesis": "H-D2",
+    "model": "gemini-embedding-001",
+    "n": 43,
+    "n_traditions": 26,
+    "intercept": 0.013,
+    "se": 0.0067,
+    "z": 1.9569,
+    "p_holm": 0.0504
+   }
+  ],
+  "verdicts": {
+   "supported H-C1": "supported",
+   "supported H-C2": "partly supported",
+   "supported H-D1": "partly supported",
+   "supported H-D2": "not supported",
+   "supported_or_partly H-C1": "supported",
+   "supported_or_partly H-C2": "supported",
+   "supported_or_partly H-D1": "partly supported",
+   "supported_or_partly H-D2": "partly supported"
+  }
+ }
+}

@@ -40,4 +40,6 @@ $P analysis/analyze_target_blind.py > /dev/null
 V=coding/results/v1_1
 $P coding/scripts/aggregate_v1_1.py $V/v1_1_gpt.csv $V/v1_1_gemini.csv $V/v1_1_claude.csv --out $V > /dev/null
 $P analysis/analyze_final.py > /dev/null
+# source audit: majority labels, kappa, spot-check list and sensitivity from the stored coder outputs
+$P analysis/analyze_source_audit.py > /dev/null
 echo "offline rerun done"
