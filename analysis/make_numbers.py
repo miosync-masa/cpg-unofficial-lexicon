@@ -976,7 +976,7 @@ check(f"Kaudit: recomputed kappa {ka:.4f} rounds to stored {aud['fleiss_kappa']}
 put("Kaudit", f_dec(ka, 2), F_AJ, "Fleiss kappa of the stage B label, 3 coders, items sent "
     "(stored: source_audit_summary.json fleiss_kappa, 4 decimals)", RULE["k2"])
 # author's spot check: the 20 items drawn by analyze_source_audit.py (summary spot_check_items), four labels, against
-# the LLM majority. data/audit_spot_check_author.csv also holds items judged outside the sample (reference only).
+# the LLM majority. Items judged outside the drawn 20 would be marked in_sample = no (reference only).
 F_ASPOT = ROOT / "data/audit_spot_check_author.csv"
 aspot = read_csv("data/audit_spot_check_author.csv", dtype=str, keep_default_na=False).set_index("item_id")
 spot = aud["spot_check_items"]
@@ -1008,8 +1008,8 @@ EXTRA.append(("Source audit: author's spot check", [
     f"{len(sr)}" + (f", Cohen's kappa {cohen([r['author'] for r in sr], [r['majority'] for r in sr]):.4f}" if sr
                     else "") + (" (interim: the macros stay \\missing until every drawn item is judged)."
                                 if pending else "."),
-    "Items judged outside the sample (the Japanese sheet listed them instead of drawn items) are shown for "
-    "reference and are not counted.", "",
+    *(["Items judged outside the drawn 20 are shown for reference and are not counted."]
+      if any(r["in_sample"] == "no" for r in spot_rows) else []), "",
     "| item | in sample | author | LLM majority | " + " | ".join(ATAGS) + " | same |",
     "|---|---|---|---|" + "---|" * len(ATAGS) + "---|"] + [
     f"| {r['item_id']} | {r['in_sample']} | {r['author']} | {r['majority']} | "

@@ -4,8 +4,7 @@ Macros: 313 (manifest rows: 313). Interim values compared: `data/numbers_interim
 
 ## (a) Macros left as \missing
 
-- `\PauditAuthorAgree`: author's label pending for 5 of the 20 drawn items: AFR\_007, EEU\_007, T\_016, T\_042, T\_047
-- `\KauditAuthor`: author's label pending for 5 of the 20 drawn items: AFR\_007, EEU\_007, T\_016, T\_042, T\_047
+none
 
 ## (b) Generated value differs from the interim value
 
@@ -141,24 +140,23 @@ Adopted because it is the reading of the sentence in section 6.2: the host was r
 
 ### Source audit: author's spot check
 
-Drawn items: 20; judged by the author: 15; pending: AFR_007, EEU_007, T_016, T_042, T_047.
-Agreement with the LLM majority on the judged drawn items: 11 of 15, Cohen's kappa 0.5200 (interim: the macros stay \missing until every drawn item is judged).
-Items judged outside the sample (the Japanese sheet listed them instead of drawn items) are shown for reference and are not counted.
+Drawn items: 20; judged by the author: 20.
+Agreement with the LLM majority on the judged drawn items: 15 of 20, Cohen's kappa 0.5327.
 
 | item | in sample | author | LLM majority | gpt | claude | gemini | same |
 |---|---|---|---|---|---|---|---|
-| EEU_012 | no | partly | supported | supported | supported | supported | **no** |
+| EEU_012 | yes | partly | supported | supported | supported | supported | **no** |
 | EEU_013 | yes | partly | no_evidence | no_evidence | partly | no_evidence | **no** |
 | NET_004 | yes | supported | supported | supported | supported | supported | yes |
-| NEU_010 | no | partly | partly | partly | supported | partly | yes |
+| NEU_010 | yes | partly | partly | partly | supported | partly | yes |
 | NEU_013 | yes | partly | partly | partly | partly | partly | yes |
 | OCE_001 | yes | partly | partly | partly | partly | partly | yes |
 | SEA_003 | yes | partly | supported | supported | supported | supported | **no** |
-| SEA_012 | no | partly | partly | partly | partly | partly | yes |
-| T_004 | no | supported | supported | supported | supported | supported | yes |
+| SEA_012 | yes | partly | partly | partly | partly | partly | yes |
+| T_004 | yes | supported | supported | supported | supported | supported | yes |
 | T_005 | yes | partly | partly | partly | partly | partly | yes |
 | T_020 | yes | partly | partly | partly | supported | partly | yes |
-| T_023 | no | partly | partly | partly | partly | partly | yes |
+| T_023 | yes | partly | partly | partly | partly | partly | yes |
 | T_029 | yes | partly | partly | partly | partly | partly | yes |
 | T_034 | yes | partly | supported | supported | supported | supported | **no** |
 | T_036 | yes | partly | partly | partly | partly | partly | yes |

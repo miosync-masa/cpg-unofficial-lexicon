@@ -123,8 +123,11 @@ summary = {
 assert sum(summary["majority"].values()) == 217
 
 # ------------------------------------------------------------ spot check (20 items)
+# The strata use the stage B majority before any judging again (majority_first), so that the draw is the one made
+# right after stage B (commit 7d31fce), the sheet the author judged. A later judging again (NEU_001, 2026-10-25) moved
+# one item between the strata and, when the strata used the current majority, silently changed the draw.
 rng = np.random.default_rng(20261024)
-sup = [i for i in ids if J.set_index("item_id").at[i, "majority"] == "supported"]
+sup = [i for i in ids if J.set_index("item_id").at[i, "majority_first"] == "supported"]
 oth = [i for i in ids if i not in set(sup)]
 draw = lambda pool: [pool[k] for k in rng.choice(len(pool), size=min(10, len(pool)), replace=False)]
 spot_sup, spot_oth = draw(sup), draw(oth)

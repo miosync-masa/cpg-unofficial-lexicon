@@ -82,8 +82,9 @@ Judge each item ONLY on the quoted text. Do not use any other knowledge, includi
 expression, the tradition or the documents. If the quotes do not say it, it is not there.
 
 Answer four questions per item, each with yes, partial or no:
-- H (host): does a quote name this host expression? yes = this expression (spelling, script or translation may
-  differ); partial = a longer, shorter or otherwise different form of it; no = not named.
+- H (host): does a quote name this host expression? yes = this expression, including a different spelling or
+  script, and including a translation that names what the host refers to; partial = ONLY when the host appears
+  solely as part of a longer, different expression; no = not named.
 - M (meaning): does a quote state this covert meaning for the host? yes = the whole meaning; partial = only part of
   it, or a related but weaker or different meaning; no = not stated.
 - C_community: does a quote place the expression or its meaning in this community or tradition? yes / partial
