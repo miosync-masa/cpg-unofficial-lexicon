@@ -171,8 +171,12 @@ def coders(path_fmt, require_ok):
 def mixed(d, col, group="tradition"):
     m = smf.mixedlm(f"{col} ~ 1", d, groups=d[group]).fit(reml=True)
     var_u, var_e = float(m.cov_re.iloc[0, 0]), float(m.scale)
-    return {"b": float(m.params["Intercept"]), "z": float(m.params["Intercept"] / m.bse["Intercept"]),
-            "icc": var_u / (var_u + var_e)}
+    return {"b": float(m.params["Intercept"]), "se": float(m.bse["Intercept"]),
+            "z": float(m.params["Intercept"] / m.bse["Intercept"]), "icc": var_u / (var_u + var_e)}
+
+
+def f_ci(r):
+    return f"[{f_dec(r['b'] - 1.96 * r['se'], 3)}, {f_dec(r['b'] + 1.96 * r['se'], 3)}]"
 
 
 # ------------------------------------------------------------------ 1. data
@@ -530,7 +534,7 @@ for hyp, sel in [("H-C1", lambda d: d), ("H-C2", lambda d: d[d.cpg_valid == "yes
         st = t1["hypotheses"][hyp]["per_model"][MODELS[m]]
         check(f"{hyp} {m}: recomputed z {res[m]['z']:.4f}, intercept {res[m]['b']:.4f}, Holm p {a:.4f} match "
               f"t1_results.json", round(res[m]["z"], 4) == st["z"] and round(res[m]["b"], 4) == st["intercept"]
-              and round(a, 4) == st["p_holm"] and len(sel(D[m])) == st["n"])
+              and round(a, 4) == st["p_holm"] and len(sel(D[m])) == st["n"] and round(res[m]["se"], 4) == st["se"])
     fit[hyp] = res
 for hyp, pre in [("H-C1", "HCone"), ("H-C2", "HCtwo")]:
     sub = MAIN_Q + ("" if hyp == "H-C1" else ", first-run consensus cpg_valid == yes")
@@ -542,6 +546,10 @@ for hyp, pre in [("H-C1", "HCone"), ("H-C2", "HCtwo")]:
         put(f"{pre}P{m}", f_p(r["p_holm"]), F_MAIN + [F_CONS1],
             f"one-sided normal p of that z, Holm across the 3 models (= hypotheses.{hyp}.per_model.{MODELS[m]}.p_holm)",
             RULE["p"])
+    for m in MODELS:
+        put(f"{pre}CI{m}", f_ci(fit[hyp][m]), F_MAIN + [F_CONS1],
+            f"95% CI of the intercept, b +- 1.96 SE (Wald, two-sided), of the {hyp} mixed model; {sub} "
+            f"(= hypotheses.{hyp}.per_model.{MODELS[m]}.intercept, se)", RULE["ci3"])
     if hyp == "H-C1":
         for m in MODELS:
             put(f"HConeB{m}", f_dec(fit[hyp][m]["b"], 3), F_MAIN,
@@ -721,6 +729,33 @@ for lab, short in [("unrecorded", "Unrec"), ("cultural_reference", "Cultural"), 
             f"OpenAI pull) (= recording_results.json main.{col}.existing_by_recording_status.{lab}.pct_positive)",
             RULE["pct1"])
 
+# Claude's refusals in the recording coding: requests that ended with stop_reason = refusal (no text). A batch whose
+# 3 attempts all failed was resent item by item (run_recording_coding.py with --batch 1; logs/retry_claude.log).
+F_RLOG = ROOT / "coding/results/recording/recording_claude.csv.jsonl"
+rlog = [json.loads(l) for l in open(F_RLOG, encoding="utf-8")]
+is_ref = lambda r: "stop_reason=refusal" in (r["error"] or "")
+batches = {}
+for r in rlog:
+    if len(r["item_ids"]) > 1:
+        batches.setdefault(tuple(r["item_ids"]), []).append(r)
+ref_b = [b for b, rs in batches.items() if any(map(is_ref, rs))]
+fail_b = [b for b, rs in batches.items() if all(x["error"] for x in rs[-3:]) and len(rs) >= 3 and is_ref(rs[-1])
+          and not any(x["error"] is None for x in rs)]
+singles = [r for r in rlog if len(r["item_ids"]) == 1]
+check(f"recording coding, Claude: the items of the {len(fail_b)} batches that failed 3 times are the "
+      f"{len(singles)} items resent one by one, none refused again",
+      sorted(i for b in fail_b for i in b) == sorted(r["item_ids"][0] for r in singles)
+      and not any(r["error"] for r in singles))
+q = "coding/results/recording/recording_claude.csv.jsonl (recording coding, claude-opus-5-5)"
+put("NrefReqRec", f_int(sum(map(is_ref, rlog))), F_RLOG, q + ": requests with error 'stop_reason=refusal'",
+    RULE["int"])
+put("NrefBatchRec", f_int(len(ref_b)), F_RLOG, q + ": batches (requests with more than one item, identified by "
+    "their item list) with at least one refused request", RULE["int"])
+put("NrefBatchSingleRec", f_int(len(fail_b)), F_RLOG, q + ": batches whose 3 attempts were all refused, resent item "
+    "by item", RULE["int"])
+put("NrefItemsSingleRec", f_int(len(singles)), F_RLOG, q + ": items resent one by one (requests with one item; "
+    "= the items of NrefBatchSingleRec batches; none refused)", RULE["int"])
+
 # ------------------------------------------------------------------ 7. positive control (first-run cpg_valid)
 vc = iwc.cpg_valid.value_counts()
 put("NvalidConsensus", f_int(vc.get("yes", 0)), F_IWC, "count(cpg_valid == 'yes'), 213 items with pulls "
@@ -858,12 +893,13 @@ for X, srcs in [("D", F_DE + [F_CD, F_CONS1]), ("E", F_DE + F_CE + [F_CONS1])]:
             st = next(r for r in tb["rows"] if r["hypothesis"] == hyp and r["model"] == MODELS[m])
             check(f"{hyp} {m}: recomputed z {res[m]['z']:.4f}, Holm p {a:.4f} match target_blind_controls.json",
                   round(res[m]["z"], 4) == st["z"] and round(a, 4) == st["p_holm"]
-                  and round(res[m]["b"], 4) == st["intercept"])
+                  and round(res[m]["b"], 4) == st["intercept"] and round(res[m]["se"], 4) == st["se"])
             q = (f"mixedlm pull_{X}_k10 ~ 1 + (1|tradition), REML; main set items with 10 kept condition {X} controls"
                  + ("" if hyp.endswith("1") else ", first-run consensus cpg_valid == yes")
                  + f" (= target_blind_controls.json rows {hyp} {MODELS[m]})")
             put(f"{pre}Z{m}", f_dec(res[m]["z"], 2), srcs, q + "; z", RULE["z2"])
             put(f"{pre}P{m}", f_p(a), srcs, q + "; one-sided p, Holm across the 3 models", RULE["p"])
+            put(f"{pre}CI{m}", f_ci(res[m]), srcs, q + "; 95% CI of the intercept, b +- 1.96 SE", RULE["ci3"])
             if hyp.endswith("1"):
                 put(f"{pre}B{m}", f_dec(res[m]["b"], 3), srcs, q + "; intercept", RULE["m3"])
 nD = {int(DE[m].pull_D_k10.notna().sum()) for m in MODELS}
@@ -872,6 +908,38 @@ put("NkTenD", f_int(nD.pop()), F_DE + [F_CD], "count(pull_D_k10 present) among t
 for m, t in MODELS.items():
     put(f"NkTenE{m}", f_int(DE[m].pull_E_k10.notna().sum()), F_DE + F_CE,
         f"count(pull_E_k10 present) among the 94 main-set items, {t}", RULE["int"])
+put("NkTenDValid", f_int(DE["oai"].dropna(subset=["pull_D_k10"]).cpg_valid.eq("yes").sum()), F_DE + [F_CD, F_CONS1],
+    "count(pull_D_k10 present and first-run consensus cpg_valid == yes) among the 94 main-set items (the H-D2 set)",
+    RULE["int"])
+nEv = {m: int(DE[m].dropna(subset=["pull_E_k10"]).cpg_valid.eq("yes").sum()) for m in MODELS}
+if check(f"condition E: the H-E2 set has the same size in the three models ({nEv})", len(set(nEv.values())) == 1):
+    put("NkTenEValid", f_int(nEv["oai"]), F_DE + F_CE + [F_CONS1], "count(pull_E_k10 present and first-run "
+        "consensus cpg_valid == yes) among the 94 main-set items (the H-E2 set; the same in the three models)",
+        RULE["int"])
+else:
+    for m in MODELS:
+        put(f"NkTenEValid{m}", f_int(nEv[m]), F_DE + F_CE + [F_CONS1], "count(pull_E_k10 present and first-run "
+            f"consensus cpg_valid == yes) among the 94 main-set items, {MODELS[m]} (the H-E2 set)", RULE["int"])
+# the D set: the main-set items with 10 kept condition D controls; condition C and condition D pulls on it
+dset = set(DE["oai"].dropna(subset=["pull_D_k10"]).item_id)
+check("D set: the same items in the three models", all(set(DE[m].dropna(subset=["pull_D_k10"]).item_id) == dset
+                                                        for m in MODELS))
+resC = {m: mixed(D[m][D[m].item_id.isin(dset)], "pull_C_k10") for m in MODELS}
+resD = {m: mixed(DE[m][DE[m].item_id.isin(dset)], "pull_D_k10") for m in MODELS}
+adjC = multipletests([stats.norm.sf(resC[m]["z"]) for m in MODELS], method="holm")[1]
+qd = (f"D set: the {len(dset)} main-set items with 10 kept condition D controls; mixedlm pull_C_k10 ~ 1 + "
+      "(1|tradition), REML (condition C pulls, embeddings/results/nnpm_C_*.csv)")
+for (m, a), mac in zip(zip(MODELS, adjC), ["Oai", "Bge", "Gem"]):
+    check(f"D set {m}: condition D intercept {resD[m]['b']:.4f} gives HDoneB (H-D1)",
+          f_dec(resD[m]["b"], 3) == M[f"HDoneB{m}"]["value"])
+    put(f"HConeZ{m}Dset", f_dec(resC[m]["z"], 2), F_MAIN + F_DE + [F_CD], qd + "; z (H-C1 on the D set)", RULE["z2"])
+    put(f"HConeP{m}Dset", f_p(a), F_MAIN + F_DE + [F_CD], qd + "; one-sided p, Holm across the 3 models", RULE["p"])
+    put(f"HConeCI{m}Dset", f_ci(resC[m]), F_MAIN + F_DE + [F_CD], qd + "; 95% CI of the intercept, b +- 1.96 SE",
+        RULE["ci3"])
+    put(f"PullCDset{mac}", f_dec(resC[m]["b"], 3), F_MAIN + F_DE + [F_CD], qd + "; intercept", RULE["m3"])
+    put(f"PullDDset{mac}", f_dec(resD[m]["b"], 3), F_DE + [F_CD],
+        f"D set (n = {len(dset)}); mixedlm pull_D_k10 ~ 1 + (1|tradition), REML; intercept (the same value as HDoneB)",
+        RULE["m3"])
 ce0 = json.load(open(F_CE[0], encoding="utf-8"))
 put("NexclLangE", f_int(sum(ce0["_excluded"].values())), F_CE[0],
     "sum of _excluded in controls_E (items whose language is not mapped to wordfreq)", RULE["int"])
@@ -929,13 +997,15 @@ for sname, suf, keep in [("supported", "sup", {"supported"}), ("supported_or_par
             st = next(r for r in aud["sensitivity"]["rows"]
                       if r["set"] == sname and r["hypothesis"] == hyp and r["model"] == MODEL_NAMES[m])
             check(f"audit sensitivity {sname} {hyp} {m}: z {res[m]['z']:.4f}, Holm p {a:.4f} match "
-                  "source_audit_summary.json", round(res[m]["z"], 4) == st["z"] and round(a, 4) == st["p_holm"])
+                  "source_audit_summary.json", round(res[m]["z"], 4) == st["z"] and round(a, 4) == st["p_holm"]
+                  and round(res[m]["se"], 4) == st["se"])
             q = (f"{MAIN_Q}" + ("" if y == "pull_C_k10" else ", with 10 kept condition D controls")
                  + f", audit majority in {sorted(keep)}" + ("" if hyp.endswith("1") else
                  ", first-run consensus cpg_valid == yes") + f"; mixedlm {y} ~ 1 + (1|tradition), REML")
             srcs = (F_MAIN if y == "pull_C_k10" else F_DE + [F_CD]) + [F_CONS1, F_AJ]
             put(f"{pre}Z{suf}{m}", f_dec(res[m]["z"], 2), srcs, q + "; z", RULE["z2"])
             put(f"{pre}P{suf}{m}", f_p(a), srcs, q + "; one-sided p, Holm across the 3 models", RULE["p"])
+            put(f"{pre}CI{suf}{m}", f_ci(res[m]), srcs, q + "; 95% CI of the intercept, b +- 1.96 SE", RULE["ci3"])
 
 # ------------------------------------------------------------------ 12. model size (multilingual-e5)
 # plan: docs/analysis_plan_model_size.md; pulls from embeddings/scripts/nnpm_e5.py, results from
@@ -950,6 +1020,34 @@ for mac, sz in SZ.items():
     put(f"Pe{mac}", f_int(hu(e5meta["models"][sz]["params"] / 1e6, 0)), F_E5META,
         f"models.{sz}.params (counted on the loaded model) / 10^6", RULE["mio"])
 oi_e5 = read_csv("results/items_final.csv").set_index("item_id").outsider_inference
+# bge-m3 for comparison (embeddings/scripts/bge_m3_meta.py): base model from the model card, counted parameters
+F_BGEMETA = ROOT / "embeddings/results/bge_m3_meta.json"
+bmeta = json.load(open(F_BGEMETA))
+lcfg = bmeta["e5_large_config"]
+pos_diff = (bmeta["config"]["max_position_embeddings"] - lcfg["max_position_embeddings"]) * bmeta["config"]["hidden_size"]
+check(f"bge-m3: XLMRobertaModel like e5-large with the same layers and widths; its parameters ({bmeta['params']:,}) "
+      f"exceed e5-large ({e5meta['models']['large']['params']:,}) exactly by the longer position embeddings "
+      f"({pos_diff:,})", bmeta["config"]["architectures"] == lcfg["architectures"] == ["XLMRobertaModel"]
+      and all(bmeta["config"][k] == lcfg[k] for k in ("hidden_size", "num_hidden_layers", "intermediate_size",
+                                                      "vocab_size"))
+      and bmeta["params"] - e5meta["models"]["large"]["params"] == pos_diff)
+put("PeBge", f_int(hu(bmeta["params"] / 1e6, 0)), F_BGEMETA, "params (counted on the loaded model) / 10^6",
+    RULE["mio"])
+EXTRA.append(("bge-m3: base model and size (model card)", [
+    f"- Hugging Face `{bmeta['name']}`, revision `{bmeta['revision']}` (the snapshot in the local cache, refs/main; "
+    "the earlier runs did not record a revision).",
+    "- Model card, Specs table: " + "; ".join(f"`{k}`: {v}" for k, v in bmeta["model_card_specs"].items()) + ".",
+    "- So bge-m3 is built on XLM-RoBERTa-large (position embeddings extended to 8192, then RetroMAE pre-training, "
+    "contrastive learning and unified fine-tuning). The model card of multilingual-e5-large names the same "
+    "initialisation (xlm-roberta-large).",
+    f"- config.json: {bmeta['config']['architectures'][0]}, {bmeta['config']['num_hidden_layers']} layers, hidden "
+    f"size {bmeta['config']['hidden_size']}, vocabulary {bmeta['config']['vocab_size']:,}, max_position_embeddings "
+    f"{bmeta['config']['max_position_embeddings']} (e5-large: {lcfg['max_position_embeddings']}).",
+    f"- Parameters counted on the loaded model: {bmeta['params']:,} (e5-large: "
+    f"{e5meta['models']['large']['params']:,}); the difference, {bmeta['params'] - e5meta['models']['large']['params']:,}"
+    f", is exactly the extra position embeddings ({bmeta['config']['max_position_embeddings']} - "
+    f"{lcfg['max_position_embeddings']}) x {bmeta['config']['hidden_size']}. The model card itself gives no "
+    "parameter count."]))
 
 
 def e5_fit(formula, d, term):

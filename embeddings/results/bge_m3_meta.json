@@ -1,0 +1,35 @@
+{
+ "name": "BAAI/bge-m3",
+ "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+ "config": {
+  "architectures": [
+   "XLMRobertaModel"
+  ],
+  "model_type": "xlm-roberta",
+  "hidden_size": 1024,
+  "num_hidden_layers": 24,
+  "num_attention_heads": 16,
+  "intermediate_size": 4096,
+  "max_position_embeddings": 8194,
+  "vocab_size": 250002
+ },
+ "model_card_specs": {
+  "BAAI/bge-m3": "multilingual; unified fine-tuning (dense, sparse, and colbert) from bge-m3-unsupervised",
+  "BAAI/bge-m3-unsupervised": "multilingual; contrastive learning from bge-m3-retromae",
+  "BAAI/bge-m3-retromae": "multilingual; extend the max_length of [xlm-roberta](https://huggingface.co/FacebookAI/xlm-roberta-large) to 8192 and further pretrained via [retromae](https://github.com/staoxiao/RetroMAE)"
+ },
+ "params": 567754752,
+ "e5_large_config": {
+  "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+  "architectures": [
+   "XLMRobertaModel"
+  ],
+  "model_type": "xlm-roberta",
+  "hidden_size": 1024,
+  "num_hidden_layers": 24,
+  "num_attention_heads": 16,
+  "intermediate_size": 4096,
+  "max_position_embeddings": 514,
+  "vocab_size": 250002
+ }
+}
