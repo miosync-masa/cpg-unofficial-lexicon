@@ -133,7 +133,10 @@ RULE = {"int": "count, integer; {,} from 1,000",
         "pct1": "percent, 1 decimal, ROUND_HALF_UP, no % sign",
         "m3": "mean pull / intercept, 3 decimals, ROUND_HALF_UP, minus sign only when negative",
         "rho": "Spearman rho range min--max, 2 decimals, ROUND_HALF_UP",
-        "empty": "empty string if the check passes, else \\missing{...}"}
+        "empty": "empty string if the check passes, else \\missing{...}",
+        "mio": "parameter count in millions, integer, ROUND_HALF_UP",
+        "d2": "standardised effect d, 2 decimals, ROUND_HALF_UP",
+        "ci3": "95% CI as [lower, upper], 3 decimals each, ROUND_HALF_UP"}
 
 
 def read_csv(p, **kw):
@@ -933,6 +936,60 @@ for sname, suf, keep in [("supported", "sup", {"supported"}), ("supported_or_par
             srcs = (F_MAIN if y == "pull_C_k10" else F_DE + [F_CD]) + [F_CONS1, F_AJ]
             put(f"{pre}Z{suf}{m}", f_dec(res[m]["z"], 2), srcs, q + "; z", RULE["z2"])
             put(f"{pre}P{suf}{m}", f_p(a), srcs, q + "; one-sided p, Holm across the 3 models", RULE["p"])
+
+# ------------------------------------------------------------------ 12. model size (multilingual-e5)
+# plan: docs/analysis_plan_model_size.md; pulls from embeddings/scripts/nnpm_e5.py, results from
+# analysis/analyze_model_size.py (recomputed here from the pulls)
+F_E5META = ROOT / "embeddings/results/e5_meta.json"
+F_E5 = [ROOT / f"embeddings/results/nnpm_e5_{s}.csv" for s in ("small", "base", "large")]
+F_MS = ROOT / "results/model_size_e5.json"
+ms = json.load(open(F_MS))
+e5meta = json.load(open(F_E5META))
+SZ = {"Small": "small", "Base": "base", "Large": "large"}
+for mac, sz in SZ.items():
+    put(f"Pe{mac}", f_int(hu(e5meta["models"][sz]["params"] / 1e6, 0)), F_E5META,
+        f"models.{sz}.params (counted on the loaded model) / 10^6", RULE["mio"])
+oi_e5 = read_csv("results/items_final.csv").set_index("item_id").outsider_inference
+
+
+def e5_fit(formula, d, term):
+    m = smf.mixedlm(formula, d, groups=d["tradition"], re_formula="1",
+                    vc_formula={"item": "0 + C(item_id)"}).fit(reml=True)
+    return float(m.params[term]), float(m.bse[term])
+
+
+for X, suf in [("D", ""), ("C", "C")]:
+    stack = []
+    for mac, sz in SZ.items():
+        e = read_csv(f"embeddings/results/nnpm_e5_{sz}.csv").dropna(subset=[f"pull_{X}_k10"])
+        y = e[f"pull_{X}_k10"]
+        dd = float(y.mean() / y.std(ddof=1))
+        st = next(r for r in ms["conditions"][X]["per_size"] if r["size"] == sz)
+        check(f"model size {X} {sz}: n {len(e)}, d {dd:.4f} = model_size_e5.json", len(e) == st["n"]
+              and round(dd, 4) == st["d"])
+        put(f"De{mac}{X}", f_dec(dd, 2), F_E5[list(SZ).index(mac)], f"condition {X} main set (n = {len(e)}): "
+            f"mean(pull_{X}_k10) / SD(pull_{X}_k10), ddof 1", RULE["d2"])
+        stack.append(e.assign(log10_params=np.log10(e5meta["models"][sz]["params"]),
+                              pull_std=y / y.std(ddof=1))[["item_id", "tradition", "log10_params", "pull_std"]])
+    S = pd.concat(stack, ignore_index=True)
+    S["hard"] = S.item_id.map(oi_e5).map({"inferable": 0, "inferable_with_effort": 1, "not_inferable": 1})
+    for h, pre, formula, term, data in [
+            ("H-S1", "HSone", "pull_std ~ log10_params", "log10_params", S),
+            ("H-S2", "HStwo", "pull_std ~ log10_params * hard", "log10_params:hard", S.dropna(subset=["hard"]))]:
+        st = ms["conditions"][X][h]
+        check(f"{h} {X}: random effects as planned (no fallback)", st["random_effects"].startswith("(1 | item) + "))
+        b, se = e5_fit(formula, data, term)
+        z, p = b / se, float(stats.norm.sf(b / se))
+        check(f"{h} {X}: recomputed b {b:.4f}, z {z:.4f}, p {p:.4f} match model_size_e5.json",
+              round(b, 4) == st["b"] and round(z, 4) == st["z"] and round(p, 4) == st["p_one_sided"])
+        q = (f"condition {X}, three e5 sizes stacked ({len(data)} rows); mixedlm {formula} + (1|item) + (1|tradition)"
+             f", REML; coefficient of {term}")
+        srcs = F_E5 + [F_E5META] + ([ROOT / "results/items_final.csv"] if h == "H-S2" else [])
+        put(f"{pre}B{suf}", f_dec(b, 3), srcs, q, RULE["m3"])
+        put(f"{pre}Z{suf}", f_dec(z, 2), srcs, q + "; z", RULE["z2"])
+        put(f"{pre}P{suf}", f_p(p), srcs, q + "; one-sided p", RULE["p"])
+        put(f"{pre}CI{suf}", f"[{f_dec(b - 1.96 * se, 3)}, {f_dec(b + 1.96 * se, 3)}]", srcs,
+            q + "; 95% CI, b +- 1.96 SE", RULE["ci3"])
 
 # ------------------------------------------------------------------ count chain
 chain = [("blind items", c["blind_items"]), ("with controls", c["items_with_controls"]),

@@ -1,0 +1,247 @@
+{
+ "plan": "docs/analysis_plan_model_size.md",
+ "models": {
+  "small": {
+   "name": "intfloat/multilingual-e5-small",
+   "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+   "params": 117653760,
+   "dim": 384,
+   "max_seq_length": 512,
+   "time": "2026-10-25T11:32:55+09:00"
+  },
+  "base": {
+   "name": "intfloat/multilingual-e5-base",
+   "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+   "params": 278043648,
+   "dim": 768,
+   "max_seq_length": 512,
+   "time": "2026-10-25T11:33:56+09:00"
+  },
+  "large": {
+   "name": "intfloat/multilingual-e5-large",
+   "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+   "params": 559890432,
+   "dim": 1024,
+   "max_seq_length": 512,
+   "time": "2026-10-25T11:35:31+09:00"
+  }
+ },
+ "versions": {
+  "sentence_transformers": "6.2.0",
+  "transformers": "5.20.2",
+  "torch": "2.14.1",
+  "huggingface_hub": "2.2.0"
+ },
+ "conditions": {
+  "D": {
+   "per_size": [
+    {
+     "size": "small",
+     "params": 117653760,
+     "n": 67,
+     "mean_pull": 0.0079,
+     "sd": 0.0282,
+     "d": 0.2796,
+     "intercept": 0.0069,
+     "ci95": [
+      -0.001,
+      0.0148
+     ],
+     "z": 1.7182
+    },
+    {
+     "size": "base",
+     "params": 278043648,
+     "n": 67,
+     "mean_pull": 0.0058,
+     "sd": 0.0312,
+     "d": 0.1867,
+     "intercept": 0.0057,
+     "ci95": [
+      -0.0029,
+      0.0143
+     ],
+     "z": 1.308
+    },
+    {
+     "size": "large",
+     "params": 559890432,
+     "n": 67,
+     "mean_pull": 0.0102,
+     "sd": 0.0315,
+     "d": 0.3248,
+     "intercept": 0.0102,
+     "ci95": [
+      0.0013,
+      0.019
+     ],
+     "z": 2.2542
+    }
+   ],
+   "d_ordered_small_base_large": false,
+   "H-S1": {
+    "term": "log10_params",
+    "b": 0.0549,
+    "se": 0.1034,
+    "z": 0.5312,
+    "p_one_sided": 0.2976,
+    "ci95": [
+     -0.1478,
+     0.2577
+    ],
+    "n_rows": 201,
+    "n_items": 67,
+    "n_traditions": 36,
+    "random_effects": "(1 | item) + (1 | tradition)",
+    "converged": true
+   },
+   "H-S2": {
+    "term": "log10_params:hard",
+    "b": 0.3469,
+    "se": 0.2437,
+    "z": 1.4237,
+    "p_one_sided": 0.0773,
+    "ci95": [
+     -0.1307,
+     0.8245
+    ],
+    "n_rows": 186,
+    "n_items": 62,
+    "n_traditions": 34,
+    "random_effects": "(1 | item) + (1 | tradition)",
+    "converged": true,
+    "n_hard_items": 45,
+    "n_inferable_items": 17
+   },
+   "reference_earlier_models": [
+    {
+     "model": "OpenAI text-embedding-3-large",
+     "n": 67,
+     "mean_pull": 0.051,
+     "sd": 0.1135,
+     "d": 0.4496
+    },
+    {
+     "model": "BAAI/bge-m3",
+     "n": 67,
+     "mean_pull": 0.0186,
+     "sd": 0.0941,
+     "d": 0.1975
+    },
+    {
+     "model": "gemini-embedding-001",
+     "n": 67,
+     "mean_pull": 0.0174,
+     "sd": 0.0409,
+     "d": 0.4241
+    }
+   ],
+   "interpretation_row": "2: positive slope, not significant or d not in size order"
+  },
+  "C": {
+   "per_size": [
+    {
+     "size": "small",
+     "params": 117653760,
+     "n": 94,
+     "mean_pull": 0.0074,
+     "sd": 0.0267,
+     "d": 0.2768,
+     "intercept": 0.0064,
+     "ci95": [
+      -0.0,
+      0.0129
+     ],
+     "z": 1.9522
+    },
+    {
+     "size": "base",
+     "params": 278043648,
+     "n": 94,
+     "mean_pull": 0.0073,
+     "sd": 0.0295,
+     "d": 0.2469,
+     "intercept": 0.0067,
+     "ci95": [
+      -0.0004,
+      0.0138
+     ],
+     "z": 1.8564
+    },
+    {
+     "size": "large",
+     "params": 559890432,
+     "n": 94,
+     "mean_pull": 0.0129,
+     "sd": 0.0301,
+     "d": 0.4289,
+     "intercept": 0.0126,
+     "ci95": [
+      0.0054,
+      0.0198
+     ],
+     "z": 3.4179
+    }
+   ],
+   "d_ordered_small_base_large": false,
+   "H-S1": {
+    "term": "log10_params",
+    "b": 0.213,
+    "se": 0.0906,
+    "z": 2.3509,
+    "p_one_sided": 0.0094,
+    "ci95": [
+     0.0354,
+     0.3907
+    ],
+    "n_rows": 282,
+    "n_items": 94,
+    "n_traditions": 49,
+    "random_effects": "(1 | item) + (1 | tradition)",
+    "converged": true
+   },
+   "H-S2": {
+    "term": "log10_params:hard",
+    "b": 0.2177,
+    "se": 0.215,
+    "z": 1.0125,
+    "p_one_sided": 0.1556,
+    "ci95": [
+     -0.2037,
+     0.639
+    ],
+    "n_rows": 255,
+    "n_items": 85,
+    "n_traditions": 46,
+    "random_effects": "(1 | item) + (1 | tradition)",
+    "converged": true,
+    "n_hard_items": 62,
+    "n_inferable_items": 23
+   },
+   "reference_earlier_models": [
+    {
+     "model": "OpenAI text-embedding-3-large",
+     "n": 94,
+     "mean_pull": 0.0733,
+     "sd": 0.0965,
+     "d": 0.7601
+    },
+    {
+     "model": "BAAI/bge-m3",
+     "n": 94,
+     "mean_pull": 0.0276,
+     "sd": 0.0863,
+     "d": 0.3193
+    },
+    {
+     "model": "gemini-embedding-001",
+     "n": 94,
+     "mean_pull": 0.0259,
+     "sd": 0.0346,
+     "d": 0.7498
+    }
+   ],
+   "interpretation_row": "2: positive slope, not significant or d not in size order"
+  }
+ }
+}

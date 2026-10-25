@@ -1,0 +1,36 @@
+{
+ "prefix": "query: ",
+ "n_strings": 1701,
+ "models": {
+  "small": {
+   "name": "intfloat/multilingual-e5-small",
+   "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+   "params": 117653760,
+   "dim": 384,
+   "max_seq_length": 512,
+   "time": "2026-10-25T11:32:55+09:00"
+  },
+  "base": {
+   "name": "intfloat/multilingual-e5-base",
+   "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+   "params": 278043648,
+   "dim": 768,
+   "max_seq_length": 512,
+   "time": "2026-10-25T11:33:56+09:00"
+  },
+  "large": {
+   "name": "intfloat/multilingual-e5-large",
+   "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+   "params": 559890432,
+   "dim": 1024,
+   "max_seq_length": 512,
+   "time": "2026-10-25T11:35:31+09:00"
+  }
+ },
+ "versions": {
+  "sentence_transformers": "6.2.0",
+  "transformers": "5.20.2",
+  "torch": "2.14.1",
+  "huggingface_hub": "2.2.0"
+ }
+}

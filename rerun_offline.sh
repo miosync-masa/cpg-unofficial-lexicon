@@ -42,4 +42,7 @@ $P coding/scripts/aggregate_v1_1.py $V/v1_1_gpt.csv $V/v1_1_gemini.csv $V/v1_1_c
 $P analysis/analyze_final.py > /dev/null
 # source audit: majority labels, kappa, spot-check list and sensitivity from the stored coder outputs
 $P analysis/analyze_source_audit.py > /dev/null
+# model size (multilingual-e5): analysis from the stored pulls (embeddings/scripts/nnpm_e5.py re-embeds with the
+# open models; its vectors are not in git)
+$P analysis/analyze_model_size.py > /dev/null 2>&1
 echo "offline rerun done"
