@@ -1001,6 +1001,19 @@ else:
     put("KauditAuthor", f_dec(cohen([r["author"] for r in sr], [r["majority"] for r in sr]), 2),
         [F_ASPOT, F_AJ, F_AS], q + "; Cohen's kappa", RULE["k2"])
 sr = [r for r in spot_rows if r["in_sample"] == "yes"]
+# direction of a disagreement: supported > partly > no_evidence (more to less support); contradicted is not ordered
+RANK = {"supported": 2, "partly": 1, "no_evidence": 0}
+for r in spot_rows:
+    a, b = r["author"], r["majority"]
+    r["direction"] = ("" if a == b else "not ordered" if not {a, b} <= set(RANK)
+                      else "author stricter" if RANK[a] < RANK[b] else "author more lenient")
+
+
+def dir_line(rows):
+    n = Counter(r["direction"] for r in rows if r["direction"])
+    return ", ".join(f"{k} {v}" for k, v in sorted(n.items())) or "none"
+
+
 EXTRA.append(("Source audit: author's spot check", [
     f"Drawn items: {len(spot)}; judged by the author: {len(sr)}" + (f"; pending: {', '.join(pending)}" if pending
                                                                   else "") + ".",
@@ -1008,12 +1021,16 @@ EXTRA.append(("Source audit: author's spot check", [
     f"{len(sr)}" + (f", Cohen's kappa {cohen([r['author'] for r in sr], [r['majority'] for r in sr]):.4f}" if sr
                     else "") + (" (interim: the macros stay \\missing until every drawn item is judged)."
                                 if pending else "."),
-    *(["Items judged outside the drawn 20 are shown for reference and are not counted."]
-      if any(r["in_sample"] == "no" for r in spot_rows) else []), "",
-    "| item | in sample | author | LLM majority | " + " | ".join(ATAGS) + " | same |",
-    "|---|---|---|---|" + "---|" * len(ATAGS) + "---|"] + [
+    f"Direction of the disagreements on the drawn items (supported > partly > no_evidence): {dir_line(sr)}.",
+    *([f"Items judged outside the drawn 20 (in_sample = no) are shown for reference and are not counted. For "
+       f"reference only, all {len(spot_rows)} judged items: {sum(r['author'] == r['majority'] for r in spot_rows)} "
+       f"of {len(spot_rows)} the same, Cohen's kappa "
+       f"{cohen([r['author'] for r in spot_rows], [r['majority'] for r in spot_rows]):.4f}; direction: "
+       f"{dir_line(spot_rows)}."] if any(r["in_sample"] == "no" for r in spot_rows) else []), "",
+    "| item | in sample | author | LLM majority | " + " | ".join(ATAGS) + " | same | direction |",
+    "|---|---|---|---|" + "---|" * len(ATAGS) + "---|---|"] + [
     f"| {r['item_id']} | {r['in_sample']} | {r['author']} | {r['majority']} | "
-    + " | ".join(r[t] for t in ATAGS) + f" | {'yes' if r['author'] == r['majority'] else '**no**'} |"
+    + " | ".join(r[t] for t in ATAGS) + f" | {'yes' if r['author'] == r['majority'] else '**no**'} | {r['direction']} |"
     for r in spot_rows]))
 aev = read_csv("results/source_audit_evidence.csv", dtype=str, keep_default_na=False)
 anf = aev[(aev.listed_by_agent == "yes") & (aev.agent_source == "not_found")]

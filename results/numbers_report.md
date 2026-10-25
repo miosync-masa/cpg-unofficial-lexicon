@@ -142,29 +142,36 @@ Adopted because it is the reading of the sentence in section 6.2: the host was r
 
 Drawn items: 20; judged by the author: 20.
 Agreement with the LLM majority on the judged drawn items: 15 of 20, Cohen's kappa 0.5327.
+Direction of the disagreements on the drawn items (supported > partly > no_evidence): author more lenient 1, author stricter 4.
+Items judged outside the drawn 20 (in_sample = no) are shown for reference and are not counted. For reference only, all 25 judged items: 19 of 25 the same, Cohen's kappa 0.5385; direction: author more lenient 1, author stricter 5.
 
-| item | in sample | author | LLM majority | gpt | claude | gemini | same |
-|---|---|---|---|---|---|---|---|
-| EEU_012 | yes | partly | supported | supported | supported | supported | **no** |
-| EEU_013 | yes | partly | no_evidence | no_evidence | partly | no_evidence | **no** |
-| NET_004 | yes | supported | supported | supported | supported | supported | yes |
-| NEU_010 | yes | partly | partly | partly | supported | partly | yes |
-| NEU_013 | yes | partly | partly | partly | partly | partly | yes |
-| OCE_001 | yes | partly | partly | partly | partly | partly | yes |
-| SEA_003 | yes | partly | supported | supported | supported | supported | **no** |
-| SEA_012 | yes | partly | partly | partly | partly | partly | yes |
-| T_004 | yes | supported | supported | supported | supported | supported | yes |
-| T_005 | yes | partly | partly | partly | partly | partly | yes |
-| T_020 | yes | partly | partly | partly | supported | partly | yes |
-| T_023 | yes | partly | partly | partly | partly | partly | yes |
-| T_029 | yes | partly | partly | partly | partly | partly | yes |
-| T_034 | yes | partly | supported | supported | supported | supported | **no** |
-| T_036 | yes | partly | partly | partly | partly | partly | yes |
-| T_057 | yes | supported | supported | supported | supported | supported | yes |
-| T_064 | yes | supported | supported | supported | supported | supported | yes |
-| T_067 | yes | supported | supported | supported | supported | supported | yes |
-| T_078 | yes | supported | supported | supported | supported | supported | yes |
-| T_086 | yes | partly | supported | supported | supported | partly | **no** |
+| item | in sample | author | LLM majority | gpt | claude | gemini | same | direction |
+|---|---|---|---|---|---|---|---|---|
+| AFR_007 | no | partly | partly | partly | partly | partly | yes |  |
+| EEU_007 | no | partly | partly | partly | partly | partly | yes |  |
+| EEU_012 | yes | partly | supported | supported | supported | supported | **no** | author stricter |
+| EEU_013 | yes | partly | no_evidence | no_evidence | partly | no_evidence | **no** | author more lenient |
+| NET_004 | yes | supported | supported | supported | supported | supported | yes |  |
+| NEU_010 | yes | partly | partly | partly | supported | partly | yes |  |
+| NEU_013 | yes | partly | partly | partly | partly | partly | yes |  |
+| OCE_001 | yes | partly | partly | partly | partly | partly | yes |  |
+| SEA_003 | yes | partly | supported | supported | supported | supported | **no** | author stricter |
+| SEA_012 | yes | partly | partly | partly | partly | partly | yes |  |
+| T_004 | yes | supported | supported | supported | supported | supported | yes |  |
+| T_005 | yes | partly | partly | partly | partly | partly | yes |  |
+| T_016 | no | partly | partly | supported | partly | partly | yes |  |
+| T_020 | yes | partly | partly | partly | supported | partly | yes |  |
+| T_023 | yes | partly | partly | partly | partly | partly | yes |  |
+| T_029 | yes | partly | partly | partly | partly | partly | yes |  |
+| T_034 | yes | partly | supported | supported | supported | supported | **no** | author stricter |
+| T_036 | yes | partly | partly | partly | partly | partly | yes |  |
+| T_042 | no | partly | supported | supported | supported | partly | **no** | author stricter |
+| T_047 | no | supported | supported | supported | supported | supported | yes |  |
+| T_057 | yes | supported | supported | supported | supported | supported | yes |  |
+| T_064 | yes | supported | supported | supported | supported | supported | yes |  |
+| T_067 | yes | supported | supported | supported | supported | supported | yes |  |
+| T_078 | yes | supported | supported | supported | supported | supported | yes |  |
+| T_086 | yes | partly | supported | supported | supported | partly | **no** | author stricter |
 
 ### bge-m3: base model and size (model card)
 
