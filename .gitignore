@@ -27,3 +27,5 @@ paper/*
 *.synctex.gz
 embeddings/vocab_cache/
 private/
+# multilingual-e5 vectors (docs/analysis_plan_model_size.md)
+embeddings/results/e5/
