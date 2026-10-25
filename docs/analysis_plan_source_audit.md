@@ -121,3 +121,27 @@ meaning.
   not applied to the tradition grouping of the embedding analyses.
 - **Contradicted items** (EEU_008, T_041, MAYA_003) stay in the lexicon and in every analysis, with
   `audit_flag = contradicted` (`data/audit_flags.csv`, also in `results/items_final.csv`).
+
+### Author's spot check and components (2026-10-25)
+
+- **Spot check, items.** The Japanese version of the sheet used by the author listed 15 of the 20 drawn items and 5
+  items that were not drawn (EEU_012, NEU_010, SEA_012, T_004, T_023). The author judges the 5 missing drawn items
+  (AFR_007, EEU_007, T_016, T_042, T_047) in addition. Agreement is computed on the 20 drawn items only; the 5 other
+  items are reported for reference and not counted. Until all 20 are judged, the macros stay `\missing`.
+- **Spot check, measures.** Besides the percent agreement with the LLM majority (`PauditAuthorAgree`), Cohen's kappa
+  between the author and the majority over the four labels (`KauditAuthor`); the items that differ are listed in
+  `results/numbers_report.md`. The author's labels are in `data/audit_spot_check_author.csv`.
+- **Reason codes.** The author's table also gives H, M and C (yes / partial / no), reason codes for `partly`
+  (`missing_H`, `missing_M`, `partial_M`, `missing_C_device`, `other_form`, `different_work`) and notes. These are
+  kept as an internal record outside the repository, unchanged.
+- **Components (exploratory).** With the same input as stage B, the three coders answer for every item H (host
+  named), M (covert meaning stated), C_community (placed in the community or tradition) and C_device (meaning carried
+  through the named technique), each yes / partial / no (`audit/scripts/judge_evidence.py --components`). Run
+  together with the judging again around 2026-11-01, on the input of that time. The four labels are not changed by
+  this run. Items with no quote are not sent and count as no on every component.
+- **Components → reason codes**, fixed before the run, on the majority (2 of 3) of each component (no majority:
+  `UNRESOLVED`): H = no → `missing_H`; H = partial → `other_form`; M = no → `missing_M`; M = partial → `partial_M`;
+  C_device ≠ yes → `missing_C_device`; C_community = no → `missing_C_community` (not one of the author's codes).
+  `different_work` cannot be derived from the components and is not computed. An item can have several codes.
+  Reported: the distribution of the codes over all 217 items and within each majority label, in particular the
+  number of `partial_M` items.

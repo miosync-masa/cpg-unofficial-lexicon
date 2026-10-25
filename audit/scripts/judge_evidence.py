@@ -19,6 +19,10 @@ Judging again (author's decisions after stage B): --items ID[,ID...] --run NAME 
 order, and writes audit/runs/judge_<model>_<NAME>.{csv,jsonl}. Corrections of item fields decided by the author
 (audit/corrections.csv) are applied to the input. Rows with retrieved = archive are sent as "full_text (archived
 copy)".
+
+Components (exploratory, docs/analysis_plan_source_audit.md, Amendments): --components asks, with the same input,
+for H, M, C_community and C_device, each yes / partial / no, instead of the label, and writes
+audit/runs/judge_components_<model>[_<NAME>].{csv,jsonl}. The four labels are not changed by this run.
 """
 import argparse
 import datetime as dt
@@ -42,9 +46,12 @@ ap.add_argument("--limit", type=int, default=0, help="only the first N items sen
 ap.add_argument("--no-temperature", action="store_true", help="for models that reject temperature")
 ap.add_argument("--items", default="", help="comma-separated item IDs to judge again")
 ap.add_argument("--run", default="", help="name of a judging-again run (required with --items)")
+ap.add_argument("--components", action="store_true", help="exploratory: H, M, C_community, C_device per item")
 args = ap.parse_args()
 use_temp = not args.no_temperature
 LABELS = ["supported", "partly", "contradicted", "no_evidence"]
+COMPONENTS = ["H", "M", "C_community", "C_device"]
+LEVELS = ["yes", "partial", "no"]
 
 SYSTEM = """You are a coder in a source audit for a research study. Each item claims that, in a given community or
 tradition, a given expression (the host) carries a given covert meaning. For each item you receive short passages
@@ -63,6 +70,33 @@ Give exactly one label per item:
 
 Return only a JSON array with one object per item, in the input order:
 [{"n": <the item's number>, "label": "<one of the four labels>", "reason": "<one short sentence>"}]"""
+
+
+SYSTEM_COMPONENTS = """You are a coder in a source audit for a research study. Each item claims that, in a given community
+or tradition, a given expression (the host) carries a given covert meaning through a given technique. For each item
+you receive short passages quoted verbatim from documents that were retrieved for it, each with the kind of document
+(scholarly, reference = dictionary or encyclopaedia, wikipedia, web) and whether the passage comes from the full text
+or only an abstract.
+
+Judge each item ONLY on the quoted text. Do not use any other knowledge, including what you know about the
+expression, the tradition or the documents. If the quotes do not say it, it is not there.
+
+Answer four questions per item, each with yes, partial or no:
+- H (host): does a quote name this host expression? yes = this expression (spelling, script or translation may
+  differ); partial = a longer, shorter or otherwise different form of it; no = not named.
+- M (meaning): does a quote state this covert meaning for the host? yes = the whole meaning; partial = only part of
+  it, or a related but weaker or different meaning; no = not stated.
+- C_community: does a quote place the expression or its meaning in this community or tradition? yes / partial
+  (a broader or neighbouring community) / no.
+- C_device: does a quote state that the expression carries the meaning through the technique named in the
+  tradition (for example a pun, a riddle, a kenning, a constant epithet)? yes / partial (the technique is described
+  but not tied to this expression) / no.
+
+Return only a JSON array with one object per item, in the input order:
+[{"n": <the item's number>, "H": "...", "M": "...", "C_community": "...", "C_device": "...",
+  "reason": "<one short sentence>"}]"""
+if args.components:
+    SYSTEM = SYSTEM_COMPONENTS
 
 
 def call(user_msg):
@@ -109,7 +143,11 @@ def validate(obj, n):
     if not isinstance(obj, list) or [o.get("n") for o in obj] != list(range(1, n + 1)):
         return "numbers do not match the input order"
     for o in obj:
-        if o.get("label") not in LABELS:
+        if args.components:
+            bad = [c for c in COMPONENTS if o.get(c) not in LEVELS]
+            if bad:
+                return f"{o.get('n')}: bad value for {bad}"
+        elif o.get("label") not in LABELS:
             return f"{o.get('n')}: bad label {o.get('label')!r}"
     return None
 
@@ -171,7 +209,7 @@ if args.items:
     sent = [x for x in sent if x in want]
 RUNS = ROOT / "audit/runs"
 RUNS.mkdir(parents=True, exist_ok=True)
-name = f"judge_{args.model}" + (f"_{args.run}" if args.run else "")
+name = ("judge_components_" if args.components else "judge_") + args.model + (f"_{args.run}" if args.run else "")
 OUT, LOG = RUNS / f"{name}.csv", RUNS / f"{name}.jsonl"
 done = set()
 if OUT.exists():
@@ -191,7 +229,8 @@ for s in range(0, len(todo), args.batch):
         for it in group:
             r1 = send([it], "single")
             rows.append((it, r1[0] if r1 else None))
-    pd.DataFrame([{"item_id": it, "label": o["label"] if o else "", "reason": o.get("reason", "") if o else "",
+    fields = COMPONENTS if args.components else ["label"]
+    pd.DataFrame([{"item_id": it, **{c: o[c] if o else "" for c in fields}, "reason": o.get("reason", "") if o else "",
                    "status": "ok" if o else "failed", "model": args.model} for it, o in rows]) \
         .to_csv(OUT, mode="a", header=not OUT.exists(), index=False)
     print(f"  judged {min(s + args.batch, len(todo))}/{len(todo)}")

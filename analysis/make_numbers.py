@@ -975,7 +975,46 @@ ka = fleiss_unrounded([sent[f"label_{t}"].values for t in ATAGS])
 check(f"Kaudit: recomputed kappa {ka:.4f} rounds to stored {aud['fleiss_kappa']}", round(ka, 4) == aud["fleiss_kappa"])
 put("Kaudit", f_dec(ka, 2), F_AJ, "Fleiss kappa of the stage B label, 3 coders, items sent "
     "(stored: source_audit_summary.json fleiss_kappa, 4 decimals)", RULE["k2"])
-missing("PauditAuthorAgree", "author spot check not done yet", F_AS, "spot_check_items", RULE["int"])
+# author's spot check: the 20 items drawn by analyze_source_audit.py (summary spot_check_items), four labels, against
+# the LLM majority. data/audit_spot_check_author.csv also holds items judged outside the sample (reference only).
+F_ASPOT = ROOT / "data/audit_spot_check_author.csv"
+aspot = read_csv("data/audit_spot_check_author.csv", dtype=str, keep_default_na=False).set_index("item_id")
+spot = aud["spot_check_items"]
+check("spot check: in_sample in data/audit_spot_check_author.csv marks exactly the drawn items that were judged",
+      set(aspot.index[aspot.in_sample == "yes"]) == set(spot) & set(aspot.index))
+pending = [i for i in spot if i not in aspot.index]
+q = ("author's label (data/audit_spot_check_author.csv) vs the LLM majority (results/source_audit_judgements.csv), "
+     f"the {len(spot)} items of source_audit_summary.json spot_check_items, four labels")
+spot_rows = []
+for i in sorted(aspot.index):
+    r = aj.set_index("item_id").loc[i]
+    spot_rows.append({"item_id": i, "in_sample": aspot.at[i, "in_sample"], "author": aspot.at[i, "author_label"],
+                      "majority": r.majority, **{t: r[f"label_{t}"] for t in ATAGS}})
+if pending:
+    for macro, rule in [("PauditAuthorAgree", RULE["pct1"]), ("KauditAuthor", RULE["k2"])]:
+        missing(macro, f"author's label pending for {len(pending)} of the {len(spot)} drawn items: "
+                + ", ".join(pending).replace("_", r"\_"), [F_ASPOT, F_AJ, F_AS], q, rule)
+else:
+    sr = [r for r in spot_rows if r["in_sample"] == "yes"]
+    put("PauditAuthorAgree", f_dec(100 * np.mean([r["author"] == r["majority"] for r in sr]), 1),
+        [F_ASPOT, F_AJ, F_AS], q + "; % of items with the same label", RULE["pct1"])
+    put("KauditAuthor", f_dec(cohen([r["author"] for r in sr], [r["majority"] for r in sr]), 2),
+        [F_ASPOT, F_AJ, F_AS], q + "; Cohen's kappa", RULE["k2"])
+sr = [r for r in spot_rows if r["in_sample"] == "yes"]
+EXTRA.append(("Source audit: author's spot check", [
+    f"Drawn items: {len(spot)}; judged by the author: {len(sr)}" + (f"; pending: {', '.join(pending)}" if pending
+                                                                  else "") + ".",
+    f"Agreement with the LLM majority on the judged drawn items: {sum(r['author'] == r['majority'] for r in sr)} of "
+    f"{len(sr)}" + (f", Cohen's kappa {cohen([r['author'] for r in sr], [r['majority'] for r in sr]):.4f}" if sr
+                    else "") + (" (interim: the macros stay \\missing until every drawn item is judged)."
+                                if pending else "."),
+    "Items judged outside the sample (the Japanese sheet listed them instead of drawn items) are shown for "
+    "reference and are not counted.", "",
+    "| item | in sample | author | LLM majority | " + " | ".join(ATAGS) + " | same |",
+    "|---|---|---|---|" + "---|" * len(ATAGS) + "---|"] + [
+    f"| {r['item_id']} | {r['in_sample']} | {r['author']} | {r['majority']} | "
+    + " | ".join(r[t] for t in ATAGS) + f" | {'yes' if r['author'] == r['majority'] else '**no**'} |"
+    for r in spot_rows]))
 aev = read_csv("results/source_audit_evidence.csv", dtype=str, keep_default_na=False)
 anf = aev[(aev.listed_by_agent == "yes") & (aev.agent_source == "not_found")]
 check(f"source audit: every not_found agent source has a not_found_type ({len(anf)} sources)",
