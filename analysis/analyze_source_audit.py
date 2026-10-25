@@ -11,6 +11,9 @@ Outputs: results/source_audit_judgements.csv (per coder and majority, all 217 it
 - Items with no quote (all documents failed / record_only / ai_generated, or nothing relevant) are no_evidence by
   rule and were not sent to the coders.
 - Majority of the three coders; three different labels: UNRESOLVED. Fleiss' kappa over the items sent.
+- Judging again (author's decisions after stage B): audit/runs/judge_<model>_<run>.csv replace the labels of their
+  items (runs in name order); the first-run labels and majority are kept in label_<coder>_first and majority_first.
+  Corrections of item fields (audit/corrections.csv) are applied. audit_flag comes from data/audit_flags.csv.
 - Spot check: numpy.random.default_rng(20261024); 10 items from majority supported, 10 from all other items (in
   that order of drawing; candidates in the audit order, seed 20261023); all items of a stratum if it has fewer.
 - Sensitivity: the condition C main set (k = 10) restricted to (a) majority supported, (b) supported or partly;
@@ -44,6 +47,11 @@ MODELS = {"text_embedding_3_large": "OpenAI text-embedding-3-large", "BAAI_bge_m
 r4 = lambda x: round(float(x), 4)
 
 blind = pd.read_csv(ROOT / "data/blind_items.csv", dtype=str).fillna("")
+corr = pd.read_csv(ROOT / "audit/corrections.csv", dtype=str)
+for c in corr.itertuples():
+    k = blind.index[blind.item_id == c.item_id][0]
+    assert blind.at[k, c.field] == c.old, (c.item_id, c.field)
+    blind.at[k, c.field] = c.new
 ev = pd.read_csv(ROOT / "results/source_audit_evidence.csv", dtype=str).fillna("")
 quoted = ev[(ev.ai_generated != "yes") & ((ev.quote != "") | (ev.quote_2 != ""))]
 ids = order()
@@ -61,6 +69,14 @@ for c in CODERS:
     d = pd.read_csv(ROOT / f"audit/runs/judge_{c}.csv", dtype=str).fillna("")
     d = d[d.status == "ok"].drop_duplicates("item_id", keep="last").set_index("item_id")
     assert set(d.index) == set(J.item_id[J.sent]), f"{c}: labelled items != items sent"
+    J[f"label_{TAG[c]}_first"] = J.item_id.map(d.label).fillna("")
+    J["rejudged"] = J.get("rejudged", "")
+    for f in sorted((ROOT / "audit/runs").glob(f"judge_{c}_*.csv")):
+        r = pd.read_csv(f, dtype=str).fillna("")
+        r = r[r.status == "ok"].drop_duplicates("item_id", keep="last").set_index("item_id")
+        assert set(r.index) <= set(d.index)
+        d.loc[r.index, ["label", "reason"]] = r[["label", "reason"]]
+        J.loc[J.item_id.isin(r.index), "rejudged"] = f.stem.removeprefix(f"judge_{c}_")
     J[f"label_{TAG[c]}"] = J.item_id.map(d.label).fillna("")
     J[f"reason_{TAG[c]}"] = J.item_id.map(d.reason).fillna("")
     log = [json.loads(x) for x in open(ROOT / f"audit/runs/judge_{c}.jsonl", encoding="utf-8")]
@@ -69,14 +85,17 @@ for c in CODERS:
                    "single_item_requests": sum(1 for x in log if x.get("mode") == "single")}
 
 
-def majority(row):
+def majority(row, suf=""):
     if not row.sent:
         return "no_evidence"
-    v = pd.Series([row[f"label_{TAG[c]}"] for c in CODERS]).value_counts()
+    v = pd.Series([row[f"label_{TAG[c]}{suf}"] for c in CODERS]).value_counts()
     return v.index[0] if v.iloc[0] >= 2 else "UNRESOLVED"
 
 
 J["majority"] = J.apply(majority, axis=1)
+J["majority_first"] = J.apply(majority, axis=1, suf="_first")
+flags = pd.read_csv(ROOT / "data/audit_flags.csv", dtype=str).set_index("item_id")
+J["audit_flag"] = J.item_id.map(flags.audit_flag).fillna("")
 J["rule_based"] = ~J.sent
 S = J[J.sent]
 table, _ = aggregate_raters(np.array([S[f"label_{TAG[c]}"].values for c in CODERS]).T)
@@ -95,6 +114,10 @@ summary = {
     "per_coder": {c: {k: int((S[f"label_{TAG[c]}"] == k).sum()) for k in LABELS} for c in CODERS},
     "refusals": refusals,
     "contradicted_items": J.item_id[J.majority == "contradicted"].tolist(),
+    "rejudged": {r.item_id: {"run": r.rejudged, "majority_first": r.majority_first, "majority": r.majority}
+                 for r in J[J.rejudged != ""].itertuples()},
+    "corrections": corr.to_dict(orient="records"),
+    "audit_flags": J.set_index("item_id").audit_flag[J.audit_flag.values != ""].to_dict(),
     "unresolved_items": J.item_id[J.majority == "UNRESOLVED"].tolist(),
 }
 assert sum(summary["majority"].values()) == 217
@@ -199,6 +222,11 @@ md += ["", "Per coder (items sent): " + "; ".join(
        "Refusals: " + "; ".join(f"{c}: {r['refused_requests']} of {r['requests']} requests" for c, r in refusals.items()),
        "", "Contradicted (majority): " + (", ".join(summary["contradicted_items"]) or "none"),
        "", "UNRESOLVED: " + (", ".join(summary["unresolved_items"]) or "none"), "",
+       "Judged again: " + (", ".join(f"{k} ({v['run']}: {v['majority_first']} -> {v['majority']})"
+                                     for k, v in summary["rejudged"].items()) or "none"), "",
+       "Corrections of item fields: " + ("; ".join(f"{c['item_id']} {c['field']}: {c['old']} -> {c['new']}"
+                                                   for c in summary["corrections"]) or "none"), "",
+       "audit_flag: " + (", ".join(f"{k} {v}" for k, v in summary["audit_flags"].items()) or "none"), "",
        "## Sensitivity: condition C main set (k = 10, n = 94) and condition D restricted by the audit", "",
        "Majority labels in the main set: " + ", ".join(f"{k} {v}" for k, v in sens["main_set_majority"].items()), "",
        f"Majority labels in condition D (main-set items with a k = 10 pull, n = {sens['condition_D_n']}): "

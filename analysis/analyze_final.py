@@ -8,8 +8,9 @@ Outputs: results/items_final.csv, results/final_results.json, results/final_resu
 
 items_final.csv: the items left after the T3 exclusion (SEA_012 plus the author's exclusions of 2026-10-22), one
 row each: blind-table fields, T1 clean host and control counts, condition-C pulls for the three embedding models,
-T2 consensus labels, cpg_scope and cpg_scope_two_storey, first-run consensus codes, recording status, and the T3
-proposed_action and author decision.
+T2 consensus labels, cpg_scope and cpg_scope_two_storey, first-run consensus codes, recording status, the T3
+proposed_action and author decision, and audit_flag (data/audit_flags.csv: items kept although the source audit
+majority is contradicted).
 
 Analyses (all exploratory, labelled as such in the report), on pull_C_k10, main set = T3 exclusion applied and
 low_control removed (the same set as H-C1):
@@ -92,6 +93,8 @@ assert (utt.host_unit == "utterance").all(), utt[["item_id", "host_unit"]]
 # mixed models group on the tradition labels of the pipeline (as in every earlier analysis); items without
 # stored controls have no pull and no pipeline label
 df["tradition_model"] = df.tradition_pipeline
+# author's decision of 2026-10-25: items with majority contradicted in the source audit stay, flagged
+df["audit_flag"] = df.item_id.map(pd.read_csv(ROOT / "data/audit_flags.csv").set_index("item_id").audit_flag).fillna("")
 df.to_csv(ROOT / "results/items_final.csv", index=False, encoding="utf-8")
 
 

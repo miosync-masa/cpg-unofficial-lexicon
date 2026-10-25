@@ -270,37 +270,37 @@ Merged groups:
 - OK: diagnostic C_E gem simctrl_C 0.8068 = target_blind_controls.json
 - OK: diagnostic C_E gem simctrl_E 0.8226 = target_blind_controls.json
 - OK: source audit: 217 items in the judgements
-- OK: NauditSupported 134 = source_audit_summary.json majority.supported
+- OK: NauditSupported 135 = source_audit_summary.json majority.supported
 - OK: NauditPartly 73 = source_audit_summary.json majority.partly
-- OK: NauditContradicted 4 = source_audit_summary.json majority.contradicted
+- OK: NauditContradicted 3 = source_audit_summary.json majority.contradicted
 - OK: NauditNoEvidence 6 = source_audit_summary.json majority.no_evidence
 - OK: NauditUnresolved 0 = source_audit_summary.json majority.UNRESOLVED
-- OK: Kaudit: recomputed kappa 0.6047 rounds to stored 0.6047
+- OK: Kaudit: recomputed kappa 0.6080 rounds to stored 0.608
 - OK: source audit: every not_found agent source has a not_found_type (60 sources)
-- OK: audit sensitivity supported H-C1 oai: z 5.0211, Holm p 0.0000 match source_audit_summary.json
-- OK: audit sensitivity supported H-C1 bge: z 1.7686, Holm p 0.0385 match source_audit_summary.json
-- OK: audit sensitivity supported H-C1 gem: z 5.5047, Holm p 0.0000 match source_audit_summary.json
-- OK: audit sensitivity supported H-C2 oai: z 3.2528, Holm p 0.0011 match source_audit_summary.json
-- OK: audit sensitivity supported H-C2 bge: z 1.4949, Holm p 0.0675 match source_audit_summary.json
-- OK: audit sensitivity supported H-C2 gem: z 3.8017, Holm p 0.0002 match source_audit_summary.json
-- OK: audit sensitivity supported H-D1 oai: z 2.4146, Holm p 0.0236 match source_audit_summary.json
-- OK: audit sensitivity supported H-D1 bge: z 0.8969, Holm p 0.1849 match source_audit_summary.json
-- OK: audit sensitivity supported H-D1 gem: z 2.2831, Holm p 0.0236 match source_audit_summary.json
-- OK: audit sensitivity supported H-D2 oai: z 1.5830, Holm p 0.1701 match source_audit_summary.json
-- OK: audit sensitivity supported H-D2 bge: z 0.9495, Holm p 0.3424 match source_audit_summary.json
-- OK: audit sensitivity supported H-D2 gem: z 0.9350, Holm p 0.3424 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-C1 oai: z 5.3746, Holm p 0.0000 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-C1 bge: z 2.2696, Holm p 0.0116 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-C1 gem: z 5.2635, Holm p 0.0000 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-C2 oai: z 4.2491, Holm p 0.0000 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-C2 bge: z 2.5641, Holm p 0.0052 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-C2 gem: z 4.0162, Holm p 0.0001 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-D1 oai: z 2.9110, Holm p 0.0054 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-D1 bge: z 1.0802, Holm p 0.1400 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-D1 gem: z 2.7829, Holm p 0.0054 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-D2 oai: z 2.7004, Holm p 0.0104 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-D2 bge: z 1.7596, Holm p 0.0504 match source_audit_summary.json
-- OK: audit sensitivity supported_or_partly H-D2 gem: z 1.9569, Holm p 0.0504 match source_audit_summary.json
+- OK: audit sensitivity supported H-C1 oai: z 4.9758, Holm p 0.0000 match source_audit_summary.json
+- OK: audit sensitivity supported H-C1 bge: z 1.5519, Holm p 0.0603 match source_audit_summary.json
+- OK: audit sensitivity supported H-C1 gem: z 5.1038, Holm p 0.0000 match source_audit_summary.json
+- OK: audit sensitivity supported H-C2 oai: z 3.2664, Holm p 0.0011 match source_audit_summary.json
+- OK: audit sensitivity supported H-C2 bge: z 1.2612, Holm p 0.1036 match source_audit_summary.json
+- OK: audit sensitivity supported H-C2 gem: z 3.3683, Holm p 0.0011 match source_audit_summary.json
+- OK: audit sensitivity supported H-D1 oai: z 2.3568, Holm p 0.0277 match source_audit_summary.json
+- OK: audit sensitivity supported H-D1 bge: z 0.8862, Holm p 0.1877 match source_audit_summary.json
+- OK: audit sensitivity supported H-D1 gem: z 2.1160, Holm p 0.0343 match source_audit_summary.json
+- OK: audit sensitivity supported H-D2 oai: z 1.5626, Holm p 0.1772 match source_audit_summary.json
+- OK: audit sensitivity supported H-D2 bge: z 0.9372, Holm p 0.3486 match source_audit_summary.json
+- OK: audit sensitivity supported H-D2 gem: z 0.7483, Holm p 0.3486 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-C1 oai: z 5.3626, Holm p 0.0000 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-C1 bge: z 2.1773, Holm p 0.0147 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-C1 gem: z 5.1020, Holm p 0.0000 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-C2 oai: z 4.2467, Holm p 0.0000 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-C2 bge: z 2.4756, Holm p 0.0067 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-C2 gem: z 3.8679, Holm p 0.0001 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-D1 oai: z 2.8703, Holm p 0.0062 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-D1 bge: z 1.1031, Holm p 0.1350 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-D1 gem: z 2.6706, Holm p 0.0076 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-D2 oai: z 2.6666, Holm p 0.0115 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-D2 bge: z 1.7986, Holm p 0.0669 match source_audit_summary.json
+- OK: audit sensitivity supported_or_partly H-D2 gem: z 1.8324, Holm p 0.0669 match source_audit_summary.json
 - OK: chain 217 → 213 → 209 → 185 → 94, valid 63: 217 - 4 no controls = 213; - 4 excluded with controls = 209; - 24 low_control = 185; of these 94 have 10 kept controls
 - OK: 211 after T3 (217 - 6) minus the items without controls that are not excluded (2 of MAYA_005, MET_014, NET_003, OCE_002) = 209 with controls after T3
 - OK: every interim macro is generated (except retired ones: CheckDirChan)

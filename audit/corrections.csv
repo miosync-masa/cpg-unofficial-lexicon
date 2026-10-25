@@ -1,0 +1,2 @@
+item_id,field,old,new,decided,scope,reason
+NEU_001,tradition,Old Norse kenning (skaldic poetry),Old English kenning,2026-10-25,source audit stage B input,"author: hronrád / hwælweg are Old English forms (Beowulf l. 10); two of three coders labelled the item contradicted because the quotes call it an Old English kenning"

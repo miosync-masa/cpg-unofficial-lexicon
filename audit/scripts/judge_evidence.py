@@ -14,6 +14,11 @@ out). Not sent: citation, URL, item ID (the coder sees a batch-local number), pu
 answers are sent. A batch whose output fails validation, or that a coder refuses, is resent up to 3 times; after
 that its items are sent one at a time (up to 3 times each). Every refusal is logged (field "refusal").
 Keys come from the environment: OPENAI_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY.
+
+Judging again (author's decisions after stage B): --items ID[,ID...] --run NAME sends only those items, in the audit
+order, and writes audit/runs/judge_<model>_<NAME>.{csv,jsonl}. Corrections of item fields decided by the author
+(audit/corrections.csv) are applied to the input. Rows with retrieved = archive are sent as "full_text (archived
+copy)".
 """
 import argparse
 import datetime as dt
@@ -35,6 +40,8 @@ ap.add_argument("--model", required=True)
 ap.add_argument("--batch", type=int, default=10)
 ap.add_argument("--limit", type=int, default=0, help="only the first N items sent (pilot)")
 ap.add_argument("--no-temperature", action="store_true", help="for models that reject temperature")
+ap.add_argument("--items", default="", help="comma-separated item IDs to judge again")
+ap.add_argument("--run", default="", help="name of a judging-again run (required with --items)")
 args = ap.parse_args()
 use_temp = not args.no_temperature
 LABELS = ["supported", "partly", "contradicted", "no_evidence"]
@@ -116,7 +123,8 @@ def payload(group):
             for q in (d.quote, d.quote_2):
                 if q:
                     qs.append({"document": f"D{d.doc_rank}", "source_type": d.source_type,
-                               "retrieved": d.retrieved, "quote": q})
+                               "retrieved": "full_text (archived copy)" if d.retrieved == "archive" else d.retrieved,
+                               "quote": q})
         out.append({"n": k, "host": r.host_original, "host_romanized": r.host_romanized,
                     "covert_target": r.covert_target, "tradition": r.tradition, "quotes": qs})
     return ("Judge the following items. Return a JSON array with one object per item, same order.\n\n"
@@ -147,15 +155,24 @@ def send(group, mode):
 
 
 I = pd.read_csv(ROOT / "data/blind_items.csv", dtype=str).fillna("").set_index("item_id")
+for c in pd.read_csv(ROOT / "audit/corrections.csv", dtype=str).itertuples():
+    assert I.at[c.item_id, c.field] == c.old, (c.item_id, c.field)
+    I.at[c.item_id, c.field] = c.new
 ev = pd.read_csv(ROOT / "results/source_audit_evidence.csv", dtype=str).fillna("")
 ev = ev[(ev.ai_generated != "yes") & ((ev.quote != "") | (ev.quote_2 != ""))]
 ev = ev.assign(_r=ev.doc_rank.astype(int)).sort_values(["item_id", "_r"])
 sent = [x for x in order() if x in set(ev.item_id)]
 if args.limit:
     sent = sent[:args.limit]
+if args.items:
+    assert args.run, "--run is required with --items"
+    want = set(args.items.split(","))
+    assert want <= set(sent), want - set(sent)
+    sent = [x for x in sent if x in want]
 RUNS = ROOT / "audit/runs"
 RUNS.mkdir(parents=True, exist_ok=True)
-OUT, LOG = RUNS / f"judge_{args.model}.csv", RUNS / f"judge_{args.model}.jsonl"
+name = f"judge_{args.model}" + (f"_{args.run}" if args.run else "")
+OUT, LOG = RUNS / f"{name}.csv", RUNS / f"{name}.jsonl"
 done = set()
 if OUT.exists():
     prev = pd.read_csv(OUT, dtype=str)

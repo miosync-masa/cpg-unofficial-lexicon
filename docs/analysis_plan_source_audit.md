@@ -115,3 +115,9 @@ meaning.
 - **Sensitivity in condition D.** The two restrictions are applied also to condition D: H-D1 and H-D2 recomputed
   as in `analysis/analyze_target_blind.py` on the main-set items with a k = 10 condition D pull. Macros
   `HDoneZsup*`, `HDonePsup*`, `HDtwoZsupPart*`, ..., with the model suffix.
+- **Corrections of item fields** are listed in `audit/corrections.csv` and applied to the stage B input. NEU_001:
+  tradition "Old Norse kenning (skaldic poetry)" → "Old English kenning" (hronrád / hwælweg are Old English forms);
+  the item was judged again by the three coders (`audit/runs/judge_<model>_rejudge_2026-10-25.*`). The correction is
+  not applied to the tradition grouping of the embedding analyses.
+- **Contradicted items** (EEU_008, T_041, MAYA_003) stay in the lexicon and in every analysis, with
+  `audit_flag = contradicted` (`data/audit_flags.csv`, also in `results/items_final.csv`).

@@ -7,12 +7,12 @@
   "claude-opus-5-5",
   "gemini-3.1-pro-preview"
  ],
- "fleiss_kappa": 0.6047,
- "pct_unanimous": 70.1,
+ "fleiss_kappa": 0.608,
+ "pct_unanimous": 70.6,
  "majority": {
-  "supported": 134,
+  "supported": 135,
   "partly": 73,
-  "contradicted": 4,
+  "contradicted": 3,
   "no_evidence": 6,
   "UNRESOLVED": 0
  },
@@ -25,9 +25,9 @@
    "UNRESOLVED": 0
   },
   "2": {
-   "supported": 56,
+   "supported": 57,
    "partly": 51,
-   "contradicted": 3,
+   "contradicted": 2,
    "no_evidence": 4,
    "UNRESOLVED": 0
   }
@@ -48,9 +48,9 @@
    "UNRESOLVED": 0
   },
   "scholarly": {
-   "supported": 28,
+   "supported": 29,
    "partly": 35,
-   "contradicted": 3,
+   "contradicted": 2,
    "no_evidence": 1,
    "UNRESOLVED": 0
   },
@@ -71,9 +71,9 @@
  },
  "per_coder": {
   "gpt-5.6-sol": {
-   "supported": 124,
+   "supported": 125,
    "partly": 83,
-   "contradicted": 4,
+   "contradicted": 3,
    "no_evidence": 3
   },
   "claude-opus-5-5": {
@@ -83,9 +83,9 @@
    "no_evidence": 0
   },
   "gemini-3.1-pro-preview": {
-   "supported": 115,
+   "supported": 116,
    "partly": 91,
-   "contradicted": 3,
+   "contradicted": 2,
    "no_evidence": 5
   }
  },
@@ -110,28 +110,50 @@
   }
  },
  "contradicted_items": [
-  "NEU_001",
   "EEU_008",
   "T_041",
   "MAYA_003"
  ],
+ "rejudged": {
+  "NEU_001": {
+   "run": "rejudge_2026-10-25",
+   "majority_first": "contradicted",
+   "majority": "supported"
+  }
+ },
+ "corrections": [
+  {
+   "item_id": "NEU_001",
+   "field": "tradition",
+   "old": "Old Norse kenning (skaldic poetry)",
+   "new": "Old English kenning",
+   "decided": "2026-10-25",
+   "scope": "source audit stage B input",
+   "reason": "author: hronrád / hwælweg are Old English forms (Beowulf l. 10); two of three coders labelled the item contradicted because the quotes call it an Old English kenning"
+  }
+ ],
+ "audit_flags": {
+  "EEU_008": "contradicted",
+  "T_041": "contradicted",
+  "MAYA_003": "contradicted"
+ },
  "unresolved_items": [],
  "spot_check_items": [
-  "EEU_012",
+  "AFR_007",
+  "EEU_007",
   "EEU_013",
   "NET_004",
-  "NEU_010",
   "NEU_013",
   "OCE_001",
   "SEA_003",
-  "SEA_012",
-  "T_004",
   "T_005",
+  "T_016",
   "T_020",
-  "T_023",
   "T_029",
   "T_034",
   "T_036",
+  "T_042",
+  "T_047",
   "T_057",
   "T_064",
   "T_067",
@@ -141,17 +163,17 @@
  "sensitivity": {
   "main_set_n": 94,
   "main_set_majority": {
-   "supported": 53,
+   "supported": 54,
    "partly": 35,
-   "contradicted": 3,
+   "contradicted": 2,
    "no_evidence": 3,
    "UNRESOLVED": 0
   },
   "condition_D_n": 67,
   "condition_D_majority": {
-   "supported": 38,
+   "supported": 39,
    "partly": 23,
-   "contradicted": 3,
+   "contradicted": 2,
    "no_evidence": 3,
    "UNRESOLVED": 0
   },
@@ -160,269 +182,269 @@
     "set": "supported",
     "hypothesis": "H-C1",
     "model": "OpenAI text-embedding-3-large",
-    "n": 53,
+    "n": 54,
     "n_traditions": 28,
-    "intercept": 0.0773,
-    "se": 0.0154,
-    "z": 5.0211,
+    "intercept": 0.0763,
+    "se": 0.0153,
+    "z": 4.9758,
     "p_holm": 0.0
    },
    {
     "set": "supported",
     "hypothesis": "H-C1",
     "model": "BAAI/bge-m3",
-    "n": 53,
+    "n": 54,
     "n_traditions": 28,
-    "intercept": 0.0202,
-    "se": 0.0114,
-    "z": 1.7686,
-    "p_holm": 0.0385
+    "intercept": 0.018,
+    "se": 0.0116,
+    "z": 1.5519,
+    "p_holm": 0.0603
    },
    {
     "set": "supported",
     "hypothesis": "H-C1",
     "model": "gemini-embedding-001",
-    "n": 53,
+    "n": 54,
     "n_traditions": 28,
-    "intercept": 0.0283,
-    "se": 0.0051,
-    "z": 5.5047,
+    "intercept": 0.0271,
+    "se": 0.0053,
+    "z": 5.1038,
     "p_holm": 0.0
    },
    {
     "set": "supported",
     "hypothesis": "H-C2",
     "model": "OpenAI text-embedding-3-large",
-    "n": 33,
+    "n": 34,
     "n_traditions": 21,
-    "intercept": 0.0556,
-    "se": 0.0171,
-    "z": 3.2528,
+    "intercept": 0.0551,
+    "se": 0.0169,
+    "z": 3.2664,
     "p_holm": 0.0011
    },
    {
     "set": "supported",
     "hypothesis": "H-C2",
     "model": "BAAI/bge-m3",
-    "n": 33,
+    "n": 34,
     "n_traditions": 21,
-    "intercept": 0.0223,
-    "se": 0.0149,
-    "z": 1.4949,
-    "p_holm": 0.0675
+    "intercept": 0.019,
+    "se": 0.0151,
+    "z": 1.2612,
+    "p_holm": 0.1036
    },
    {
     "set": "supported",
     "hypothesis": "H-C2",
     "model": "gemini-embedding-001",
-    "n": 33,
+    "n": 34,
     "n_traditions": 21,
-    "intercept": 0.0186,
-    "se": 0.0049,
-    "z": 3.8017,
-    "p_holm": 0.0002
+    "intercept": 0.017,
+    "se": 0.0051,
+    "z": 3.3683,
+    "p_holm": 0.0011
    },
    {
     "set": "supported",
     "hypothesis": "H-D1",
     "model": "OpenAI text-embedding-3-large",
-    "n": 38,
+    "n": 39,
     "n_traditions": 21,
-    "intercept": 0.0528,
+    "intercept": 0.0516,
     "se": 0.0219,
-    "z": 2.4146,
-    "p_holm": 0.0236
+    "z": 2.3568,
+    "p_holm": 0.0277
    },
    {
     "set": "supported",
     "hypothesis": "H-D1",
     "model": "BAAI/bge-m3",
-    "n": 38,
+    "n": 39,
     "n_traditions": 21,
-    "intercept": 0.0147,
-    "se": 0.0164,
-    "z": 0.8969,
-    "p_holm": 0.1849
+    "intercept": 0.0143,
+    "se": 0.0161,
+    "z": 0.8862,
+    "p_holm": 0.1877
    },
    {
     "set": "supported",
     "hypothesis": "H-D1",
     "model": "gemini-embedding-001",
-    "n": 38,
+    "n": 39,
     "n_traditions": 21,
-    "intercept": 0.0202,
-    "se": 0.0089,
-    "z": 2.2831,
-    "p_holm": 0.0236
+    "intercept": 0.0192,
+    "se": 0.0091,
+    "z": 2.116,
+    "p_holm": 0.0343
    },
    {
     "set": "supported",
     "hypothesis": "H-D2",
     "model": "OpenAI text-embedding-3-large",
-    "n": 26,
+    "n": 27,
     "n_traditions": 16,
-    "intercept": 0.0423,
-    "se": 0.0267,
-    "z": 1.583,
-    "p_holm": 0.1701
+    "intercept": 0.0414,
+    "se": 0.0265,
+    "z": 1.5626,
+    "p_holm": 0.1772
    },
    {
     "set": "supported",
     "hypothesis": "H-D2",
     "model": "BAAI/bge-m3",
-    "n": 26,
+    "n": 27,
     "n_traditions": 16,
-    "intercept": 0.0195,
-    "se": 0.0205,
-    "z": 0.9495,
-    "p_holm": 0.3424
+    "intercept": 0.0187,
+    "se": 0.0199,
+    "z": 0.9372,
+    "p_holm": 0.3486
    },
    {
     "set": "supported",
     "hypothesis": "H-D2",
     "model": "gemini-embedding-001",
-    "n": 26,
+    "n": 27,
     "n_traditions": 16,
-    "intercept": 0.0079,
-    "se": 0.0084,
-    "z": 0.935,
-    "p_holm": 0.3424
+    "intercept": 0.0065,
+    "se": 0.0086,
+    "z": 0.7483,
+    "p_holm": 0.3486
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-C1",
     "model": "OpenAI text-embedding-3-large",
-    "n": 88,
+    "n": 89,
     "n_traditions": 48,
-    "intercept": 0.0646,
+    "intercept": 0.0644,
     "se": 0.012,
-    "z": 5.3746,
+    "z": 5.3626,
     "p_holm": 0.0
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-C1",
     "model": "BAAI/bge-m3",
-    "n": 88,
+    "n": 89,
     "n_traditions": 48,
-    "intercept": 0.023,
-    "se": 0.0101,
-    "z": 2.2696,
-    "p_holm": 0.0116
+    "intercept": 0.0223,
+    "se": 0.0102,
+    "z": 2.1773,
+    "p_holm": 0.0147
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-C1",
     "model": "gemini-embedding-001",
-    "n": 88,
+    "n": 89,
     "n_traditions": 48,
-    "intercept": 0.0218,
-    "se": 0.0041,
-    "z": 5.2635,
+    "intercept": 0.0213,
+    "se": 0.0042,
+    "z": 5.102,
     "p_holm": 0.0
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-C2",
     "model": "OpenAI text-embedding-3-large",
-    "n": 59,
+    "n": 60,
     "n_traditions": 37,
-    "intercept": 0.0594,
+    "intercept": 0.0593,
     "se": 0.014,
-    "z": 4.2491,
+    "z": 4.2467,
     "p_holm": 0.0
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-C2",
     "model": "BAAI/bge-m3",
-    "n": 59,
+    "n": 60,
     "n_traditions": 37,
-    "intercept": 0.0326,
-    "se": 0.0127,
-    "z": 2.5641,
-    "p_holm": 0.0052
+    "intercept": 0.0318,
+    "se": 0.0128,
+    "z": 2.4756,
+    "p_holm": 0.0067
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-C2",
     "model": "gemini-embedding-001",
-    "n": 59,
+    "n": 60,
     "n_traditions": 37,
-    "intercept": 0.018,
+    "intercept": 0.0175,
     "se": 0.0045,
-    "z": 4.0162,
+    "z": 3.8679,
     "p_holm": 0.0001
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-D1",
     "model": "OpenAI text-embedding-3-large",
-    "n": 61,
+    "n": 62,
     "n_traditions": 35,
-    "intercept": 0.0478,
-    "se": 0.0164,
-    "z": 2.911,
-    "p_holm": 0.0054
+    "intercept": 0.0472,
+    "se": 0.0165,
+    "z": 2.8703,
+    "p_holm": 0.0062
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-D1",
     "model": "BAAI/bge-m3",
-    "n": 61,
+    "n": 62,
     "n_traditions": 35,
-    "intercept": 0.0149,
-    "se": 0.0138,
-    "z": 1.0802,
-    "p_holm": 0.14
+    "intercept": 0.015,
+    "se": 0.0136,
+    "z": 1.1031,
+    "p_holm": 0.135
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-D1",
     "model": "gemini-embedding-001",
-    "n": 61,
+    "n": 62,
     "n_traditions": 35,
-    "intercept": 0.0174,
-    "se": 0.0062,
-    "z": 2.7829,
-    "p_holm": 0.0054
+    "intercept": 0.0169,
+    "se": 0.0063,
+    "z": 2.6706,
+    "p_holm": 0.0076
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-D2",
     "model": "OpenAI text-embedding-3-large",
-    "n": 43,
+    "n": 44,
     "n_traditions": 26,
-    "intercept": 0.0544,
-    "se": 0.0201,
-    "z": 2.7004,
-    "p_holm": 0.0104
+    "intercept": 0.0538,
+    "se": 0.0202,
+    "z": 2.6666,
+    "p_holm": 0.0115
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-D2",
     "model": "BAAI/bge-m3",
-    "n": 43,
+    "n": 44,
     "n_traditions": 26,
-    "intercept": 0.0302,
-    "se": 0.0172,
-    "z": 1.7596,
-    "p_holm": 0.0504
+    "intercept": 0.0305,
+    "se": 0.017,
+    "z": 1.7986,
+    "p_holm": 0.0669
    },
    {
     "set": "supported_or_partly",
     "hypothesis": "H-D2",
     "model": "gemini-embedding-001",
-    "n": 43,
+    "n": 44,
     "n_traditions": 26,
-    "intercept": 0.013,
-    "se": 0.0067,
-    "z": 1.9569,
-    "p_holm": 0.0504
+    "intercept": 0.0124,
+    "se": 0.0068,
+    "z": 1.8324,
+    "p_holm": 0.0669
    }
   ],
   "verdicts": {
-   "supported H-C1": "supported",
+   "supported H-C1": "partly supported",
    "supported H-C2": "partly supported",
    "supported H-D1": "partly supported",
    "supported H-D2": "not supported",

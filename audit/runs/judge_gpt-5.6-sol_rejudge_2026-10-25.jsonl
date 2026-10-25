@@ -1,0 +1,1 @@
+{"time": "2026-10-25T11:16:22+09:00", "provider": "openai", "model": "gpt-5.6-sol", "temperature_applied": false, "mode": "batch", "attempt": 1, "item_ids": ["NEU_001"], "refusal": null, "error": null, "seconds": 3.1, "raw": "[{\"n\":1,\"label\":\"supported\",\"reason\":\"D4 explicitly states that the Old English kenning hron rade ('whale's road') means 'sea'.\"}]"}
