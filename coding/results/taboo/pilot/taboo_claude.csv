@@ -1,0 +1,11 @@
+item_id,taboo_domain,status,model
+NET_006,insult,ok,claude-opus-5-5
+T_052,none,ok,claude-opus-5-5
+T_023,none,ok,claude-opus-5-5
+NEU_004,none,ok,claude-opus-5-5
+AFR_013,none,ok,claude-opus-5-5
+T_088,none,ok,claude-opus-5-5
+NEU_011,none,ok,claude-opus-5-5
+T_005,sex,ok,claude-opus-5-5
+MET_012,none,ok,claude-opus-5-5
+T_098,none,ok,claude-opus-5-5
