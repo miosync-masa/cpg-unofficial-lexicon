@@ -1,0 +1,242 @@
+{
+ "plan": "docs/analysis_plan_taboo_domain.md",
+ "exploratory": true,
+ "kappa": {
+  "taboo_domain": 0.9139,
+  "taboo_binary": 0.9158,
+  "n_items": 217,
+  "pct_unanimous_domain": 93.5484
+ },
+ "label_counts_217": {
+  "none": 132,
+  "sex": 71,
+  "death_illness": 9,
+  "insult": 4,
+  "unresolved": 1
+ },
+ "refusals": {
+  "gpt": {
+   "requests": 22,
+   "requests_with_error": 0,
+   "requests_refused": 0,
+   "batches_refused": 0,
+   "items_in_refused_request": 0,
+   "items_resent_one_by_one": 0,
+   "items_refused_when_sent_alone": [],
+   "other_errors": []
+  },
+  "gemini": {
+   "requests": 22,
+   "requests_with_error": 0,
+   "requests_refused": 0,
+   "batches_refused": 0,
+   "items_in_refused_request": 0,
+   "items_resent_one_by_one": 0,
+   "items_refused_when_sent_alone": [],
+   "other_errors": []
+  },
+  "claude": {
+   "requests": 25,
+   "requests_with_error": 3,
+   "requests_refused": 3,
+   "batches_refused": 2,
+   "items_in_refused_request": 20,
+   "items_resent_one_by_one": 0,
+   "items_refused_when_sent_alone": [],
+   "other_errors": []
+  }
+ },
+ "refusals_by_label": [
+  {
+   "taboo_domain": "sex",
+   "n_items_217": 71,
+   "in_refused_request_gpt": 0,
+   "resent_one_by_one_gpt": 0,
+   "in_refused_request_gemini": 0,
+   "resent_one_by_one_gemini": 0,
+   "in_refused_request_claude": 2,
+   "resent_one_by_one_claude": 0,
+   "in_refused_request_any": 2
+  },
+  {
+   "taboo_domain": "excretion",
+   "n_items_217": 0,
+   "in_refused_request_gpt": 0,
+   "resent_one_by_one_gpt": 0,
+   "in_refused_request_gemini": 0,
+   "resent_one_by_one_gemini": 0,
+   "in_refused_request_claude": 0,
+   "resent_one_by_one_claude": 0,
+   "in_refused_request_any": 0
+  },
+  {
+   "taboo_domain": "death_illness",
+   "n_items_217": 9,
+   "in_refused_request_gpt": 0,
+   "resent_one_by_one_gpt": 0,
+   "in_refused_request_gemini": 0,
+   "resent_one_by_one_gemini": 0,
+   "in_refused_request_claude": 0,
+   "resent_one_by_one_claude": 0,
+   "in_refused_request_any": 0
+  },
+  {
+   "taboo_domain": "insult",
+   "n_items_217": 4,
+   "in_refused_request_gpt": 0,
+   "resent_one_by_one_gpt": 0,
+   "in_refused_request_gemini": 0,
+   "resent_one_by_one_gemini": 0,
+   "in_refused_request_claude": 2,
+   "resent_one_by_one_claude": 0,
+   "in_refused_request_any": 2
+  },
+  {
+   "taboo_domain": "drugs_crime",
+   "n_items_217": 0,
+   "in_refused_request_gpt": 0,
+   "resent_one_by_one_gpt": 0,
+   "in_refused_request_gemini": 0,
+   "resent_one_by_one_gemini": 0,
+   "in_refused_request_claude": 0,
+   "resent_one_by_one_claude": 0,
+   "in_refused_request_any": 0
+  },
+  {
+   "taboo_domain": "none",
+   "n_items_217": 132,
+   "in_refused_request_gpt": 0,
+   "resent_one_by_one_gpt": 0,
+   "in_refused_request_gemini": 0,
+   "resent_one_by_one_gemini": 0,
+   "in_refused_request_claude": 15,
+   "resent_one_by_one_claude": 0,
+   "in_refused_request_any": 15
+  },
+  {
+   "taboo_domain": "unresolved",
+   "n_items_217": 1,
+   "in_refused_request_gpt": 0,
+   "resent_one_by_one_gpt": 0,
+   "in_refused_request_gemini": 0,
+   "resent_one_by_one_gemini": 0,
+   "in_refused_request_claude": 1,
+   "resent_one_by_one_claude": 0,
+   "in_refused_request_any": 1
+  }
+ ],
+ "crosstab": {
+  "taboo": {
+   "general_dictionary": 32,
+   "cultural_reference": 43,
+   "unrecorded": 5
+  },
+  "no taboo": {
+   "general_dictionary": 38,
+   "cultural_reference": 86,
+   "unrecorded": 5
+  }
+ },
+ "main": {
+  "n": 209,
+  "n_left_out_recording_unresolved": 1,
+  "n_left_out_taboo_unresolved": 1,
+  "n_taboo": 80,
+  "n_no_taboo": 129,
+  "general_taboo": 32,
+  "general_no_taboo": 38,
+  "pct_general_taboo": 40.0,
+  "pct_general_no_taboo": 29.4574,
+  "diff_pct_points": 10.5426,
+  "ci95_pct_points_newcombe": [
+   -2.5263,
+   23.6408
+  ],
+  "fisher_p_one_sided_less": 0.9568,
+  "fisher_p_two_sided": 0.1327,
+  "odds_ratio": 1.5965,
+  "reading": "prediction does not hold"
+ },
+ "glmm": {
+  "method": "BinomialBayesMixedGLM.fit_vb (variational Bayes, default priors)",
+  "n": 209,
+  "n_traditions": 71,
+  "taboo_post_mean": -0.3804,
+  "taboo_post_sd": 0.3323,
+  "interval_mean_pm_1.96sd": [
+   -1.0317,
+   0.271
+  ],
+  "converged": true,
+  "optimizer_message": "Optimization terminated successfully."
+ },
+ "per_domain": [
+  {
+   "taboo_domain": "sex",
+   "n": 68,
+   "n_general": 30,
+   "pct_general": 44.1176
+  },
+  {
+   "taboo_domain": "excretion",
+   "n": 0,
+   "n_general": 0,
+   "pct_general": null
+  },
+  {
+   "taboo_domain": "death_illness",
+   "n": 8,
+   "n_general": 2,
+   "pct_general": 25.0
+  },
+  {
+   "taboo_domain": "insult",
+   "n": 4,
+   "n_general": 0,
+   "pct_general": 0.0
+  },
+  {
+   "taboo_domain": "drugs_crime",
+   "n": 0,
+   "n_general": 0,
+   "pct_general": null
+  },
+  {
+   "taboo_domain": "none",
+   "n": 129,
+   "n_general": 38,
+   "pct_general": 29.4574
+  }
+ ],
+ "japanese_daijisen": {
+  "n": 41,
+  "n_left_out_taboo_unresolved": 0,
+  "crosstab": {
+   "taboo": {
+    "番号つきの語義": 6,
+    "補説・用例": 0,
+    "なし": 7
+   },
+   "no taboo": {
+    "番号つきの語義": 9,
+    "補説・用例": 4,
+    "なし": 15
+   }
+  },
+  "items_taboo": {
+   "T_005": "sex",
+   "T_006": "sex",
+   "T_008": "sex",
+   "T_009": "sex",
+   "T_010": "sex",
+   "T_076": "sex",
+   "T_077": "sex",
+   "T_078": "sex",
+   "T_079": "sex",
+   "T_080": "sex",
+   "T_081": "sex",
+   "T_082": "sex",
+   "T_083": "sex"
+  }
+ }
+}

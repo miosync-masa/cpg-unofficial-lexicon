@@ -1173,6 +1173,53 @@ for X, suf in [("D", ""), ("C", "C")]:
         put(f"{pre}CI{suf}", f"[{f_dec(b - 1.96 * se, 3)}, {f_dec(b + 1.96 * se, 3)}]", srcs,
             q + "; 95% CI, b +- 1.96 SE", RULE["ci3"])
 
+# ------------------------------------------------------------------ 13. taboo domain (exploratory)
+F_TAB = ROOT / "results/taboo_results.json"
+F_TABC = ROOT / "coding/results/taboo/taboo_consensus.csv"
+tb = json.load(open(F_TAB))
+tc = read_csv("coding/results/taboo/taboo_consensus.csv").set_index("item_id")
+ta = pd.read_csv(ROOT / "results/items_final.csv").set_index("item_id")[["recording_status"]].join(
+    tc[["taboo_domain"]])
+ta = ta[(ta.recording_status != "UNRESOLVED") & (ta.taboo_domain != "unresolved")]
+ty, tn = ta[ta.taboo_domain != "none"], ta[ta.taboo_domain == "none"]
+gy, gn = int((ty.recording_status == "general_dictionary").sum()), int((tn.recording_status == "general_dictionary").sum())
+tm = tb["main"]
+check(f"taboo: {gy}/{len(ty)} and {gn}/{len(tn)} general_dictionary = taboo_results.json main",
+      (gy, len(ty), gn, len(tn)) == (tm["general_taboo"], tm["n_taboo"], tm["general_no_taboo"], tm["n_no_taboo"]))
+p1 = stats.fisher_exact([[gy, len(ty) - gy], [gn, len(tn) - gn]], alternative="less")[1]
+p2 = stats.fisher_exact([[gy, len(ty) - gy], [gn, len(tn) - gn]])[1]
+check(f"taboo: Fisher one-sided p {p1:.4f}, two-sided {p2:.4f} = taboo_results.json",
+      round(p1, 4) == tm["fisher_p_one_sided_less"] and round(p2, 4) == tm["fisher_p_two_sided"])
+SRC_T = [F_TABC, ROOT / "results/items_final.csv", F_TAB]
+qt = (f"taboo analysis set ({len(ta)} items: items_final minus recording UNRESOLVED and taboo unresolved); "
+      "taboo = consensus taboo_domain != 'none'")
+put("NtabooYes", f_int(len(ty)), SRC_T, qt + ": items with taboo", RULE["int"])
+put("NtabooNo", f_int(len(tn)), SRC_T, qt + ": items without taboo", RULE["int"])
+put("PgenTabooYes", f_dec(100 * gy / len(ty), 1), SRC_T, qt + ": % general_dictionary among taboo items", RULE["pct1"])
+put("PgenTabooNo", f_dec(100 * gn / len(tn), 1), SRC_T, qt + ": % general_dictionary among items without taboo",
+    RULE["pct1"])
+put("DgenTaboo", f_dec(100 * (gy / len(ty) - gn / len(tn)), 1), SRC_T, qt + ": difference PgenTabooYes - "
+    "PgenTabooNo, percentage points", "percentage points, 1 decimal, ROUND_HALF_UP")
+put("CIgenTaboo", "[" + ", ".join(f_dec(x, 1) for x in tm["ci95_pct_points_newcombe"]) + "]", F_TAB,
+    "taboo_results.json main.ci95_pct_points_newcombe (95% CI of DgenTaboo, Newcombe hybrid Wilson)",
+    "percentage points, 1 decimal, ROUND_HALF_UP")
+put("PgenTabooFisher", f_p(p1), SRC_T, qt + ": Fisher's exact test, one-sided (taboo lower; the predicted direction)",
+    RULE["p"])
+put("PgenTabooFisherTwo", f_p(p2), SRC_T, qt + ": Fisher's exact test, two-sided", RULE["p"])
+codes_t = [tc[f"taboo_domain_{x}"].astype(str).values for x in CODERS]
+for macro, cols, key in [("KtabooDomain", codes_t, "taboo_domain"),
+                         ("KtabooBin", [(c != "none").astype(int) for c in codes_t], "taboo_binary")]:
+    k = fleiss_unrounded(cols)
+    check(f"{macro}: kappa {k:.4f} = taboo_results.json kappa.{key}", round(k, 4) == tb["kappa"][key])
+    put(macro, f_dec(k, 2), F_TABC, f"Fleiss kappa of {key}, 3 coders, {len(tc)} items", RULE["k2"])
+rc = tb["refusals"]["claude"]
+for macro, key, txt in [("NrefReqTaboo", "requests_refused", "requests refused (stop_reason=refusal)"),
+                        ("NrefBatchTaboo", "batches_refused", "batches with at least one refused request"),
+                        ("NrefItemsSingleTaboo", "items_resent_one_by_one", "items resent one by one")]:
+    put(macro, f_int(rc[key]), [F_TAB, ROOT / "coding/results/taboo/taboo_claude.csv.jsonl"],
+        f"taboo coding, claude-opus-5-5: {txt} (taboo_results.json refusals.claude.{key}; GPT and Gemini: "
+        f"{tb['refusals']['gpt'][key]} and {tb['refusals']['gemini'][key]})", RULE["int"])
+
 # ------------------------------------------------------------------ count chain
 chain = [("blind items", c["blind_items"]), ("with controls", c["items_with_controls"]),
          ("after T3", c["after_T3"]), ("not low_control", c["after_low_control"]), ("k = 10", len(D["oai"]))]
