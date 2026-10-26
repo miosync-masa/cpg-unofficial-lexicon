@@ -755,6 +755,25 @@ put("NrefBatchSingleRec", f_int(len(fail_b)), F_RLOG, q + ": batches whose 3 att
     "by item", RULE["int"])
 put("NrefItemsSingleRec", f_int(len(singles)), F_RLOG, q + ": items resent one by one (requests with one item; "
     "= the items of NrefBatchSingleRec batches; none refused)", RULE["int"])
+# Agreement without the items resent one by one (supplement S3)
+single_ids = {r["item_ids"][0] for r in singles}
+idsx = [i for i in idsr if i not in single_ids]
+check(f"recording coding: {len(idsr)} items - {len(single_ids)} resent one by one = {len(idsx)}",
+      len(single_ids) == len(singles) and single_ids <= set(idsr) and len(idsx) == len(idsr) - len(single_ids))
+put("NexSingle", f_int(len(idsx)), F_RLOG, f"recording coding items ({len(idsr)}) minus the items Claude got one by "
+    "one (NrefItemsSingleRec)", RULE["int"])
+ex_rows = []
+for macro, field, full in [("KformStatusExSingle", "form_status", "KformStatus"),
+                           ("KrecStatusExSingle", "recording_status", "KrecStatus")]:
+    k = fleiss_unrounded([d.loc[idsx, field].astype(str).values for d in cr])
+    put(macro, f_dec(k, 2), [ROOT / f"coding/results/recording/recording_{x}.csv" for x in CODERS] + [F_RLOG],
+        f"Fleiss kappa of '{field}', 3 coders, the {len(idsx)} items not resent one by one to Claude", RULE["k2"])
+    ex_rows.append(f"| {field} | {f_dec(fleiss_unrounded([d.loc[idsr, field].astype(str).values for d in cr]), 3)} "
+                   f"(`\\{full}`) | {f_dec(k, 3)} (`\\{macro}`) |")
+EXTRA.append(("Recording coding: agreement without the items resent one by one (supplement S3)", [
+    f"Items: all {len(idsr)}; without the {len(single_ids)} items resent one by one to Claude, {len(idsx)} "
+    "(`\\NexSingle`). Fleiss kappa, 3 coders.", "",
+    f"| field | all {len(idsr)} | without the resent {len(single_ids)} |", "|---|---|---|"] + ex_rows))
 
 # ------------------------------------------------------------------ 7. positive control (first-run cpg_valid)
 vc = iwc.cpg_valid.value_counts()
