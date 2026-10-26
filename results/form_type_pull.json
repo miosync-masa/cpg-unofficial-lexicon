@@ -1,0 +1,216 @@
+{
+ "plan": "docs/analysis_plan_form_type.md",
+ "exploratory": true,
+ "conditions": {
+  "C": {
+   "n_items": 94,
+   "per_model": [
+    {
+     "model": "OpenAI text-embedding-3-large",
+     "n": 94,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 49,
+     "by_form_type": {
+      "existing_form": {
+       "n": 68,
+       "mean": 0.0714,
+       "sd": 0.086
+      },
+      "transparent_combination": {
+       "n": 26,
+       "mean": 0.0783,
+       "sd": 0.1216
+      }
+     },
+     "b_transparent": -0.0025,
+     "se": 0.0252,
+     "z": -0.0985,
+     "p_one_sided": 0.5392,
+     "ci95": [
+      -0.0519,
+      0.0469
+     ],
+     "converged": true,
+     "var_tradition": 0.004,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 1.0,
+     "reading": "prediction does not hold"
+    },
+    {
+     "model": "BAAI/bge-m3",
+     "n": 94,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 49,
+     "by_form_type": {
+      "existing_form": {
+       "n": 68,
+       "mean": 0.0189,
+       "sd": 0.0803
+      },
+      "transparent_combination": {
+       "n": 26,
+       "mean": 0.0502,
+       "sd": 0.0986
+      }
+     },
+     "b_transparent": 0.0178,
+     "se": 0.0232,
+     "z": 0.7674,
+     "p_one_sided": 0.2214,
+     "ci95": [
+      -0.0277,
+      0.0632
+     ],
+     "converged": true,
+     "var_tradition": 0.0031,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 0.6643,
+     "reading": "predicted direction, not shown"
+    },
+    {
+     "model": "gemini-embedding-001",
+     "n": 94,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 49,
+     "by_form_type": {
+      "existing_form": {
+       "n": 68,
+       "mean": 0.0279,
+       "sd": 0.0331
+      },
+      "transparent_combination": {
+       "n": 26,
+       "mean": 0.0208,
+       "sd": 0.0384
+      }
+     },
+     "b_transparent": -0.0088,
+     "se": 0.0093,
+     "z": -0.9554,
+     "p_one_sided": 0.8303,
+     "ci95": [
+      -0.027,
+      0.0093
+     ],
+     "converged": true,
+     "var_tradition": 0.0005,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 1.0,
+     "reading": "prediction does not hold"
+    }
+   ],
+   "n_models_prediction_holds": 0
+  },
+  "D": {
+   "n_items": 67,
+   "per_model": [
+    {
+     "model": "OpenAI text-embedding-3-large",
+     "n": 67,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 36,
+     "by_form_type": {
+      "existing_form": {
+       "n": 47,
+       "mean": 0.0408,
+       "sd": 0.0965
+      },
+      "transparent_combination": {
+       "n": 20,
+       "mean": 0.0749,
+       "sd": 0.1461
+      }
+     },
+     "b_transparent": 0.0303,
+     "se": 0.034,
+     "z": 0.889,
+     "p_one_sided": 0.187,
+     "ci95": [
+      -0.0364,
+      0.0969
+     ],
+     "converged": true,
+     "var_tradition": 0.0062,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 0.374,
+     "reading": "predicted direction, not shown"
+    },
+    {
+     "model": "BAAI/bge-m3",
+     "n": 67,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 36,
+     "by_form_type": {
+      "existing_form": {
+       "n": 47,
+       "mean": 0.0051,
+       "sd": 0.0842
+      },
+      "transparent_combination": {
+       "n": 20,
+       "mean": 0.0503,
+       "sd": 0.1098
+      }
+     },
+     "b_transparent": 0.0373,
+     "se": 0.0282,
+     "z": 1.3228,
+     "p_one_sided": 0.093,
+     "ci95": [
+      -0.018,
+      0.0925
+     ],
+     "converged": true,
+     "var_tradition": 0.0027,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 0.2789,
+     "reading": "predicted direction, not shown"
+    },
+    {
+     "model": "gemini-embedding-001",
+     "n": 67,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 36,
+     "by_form_type": {
+      "existing_form": {
+       "n": 47,
+       "mean": 0.0169,
+       "sd": 0.0398
+      },
+      "transparent_combination": {
+       "n": 20,
+       "mean": 0.0184,
+       "sd": 0.0446
+      }
+     },
+     "b_transparent": 0.0023,
+     "se": 0.013,
+     "z": 0.1801,
+     "p_one_sided": 0.4285,
+     "ci95": [
+      -0.0232,
+      0.0279
+     ],
+     "converged": true,
+     "var_tradition": 0.0007,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 0.4285,
+     "reading": "predicted direction, not shown"
+    }
+   ],
+   "n_models_prediction_holds": 0
+  }
+ }
+}
