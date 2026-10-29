@@ -1220,6 +1220,61 @@ for macro, key, txt in [("NrefReqTaboo", "requests_refused", "requests refused (
         f"taboo coding, claude-opus-5-5: {txt} (taboo_results.json refusals.claude.{key}; GPT and Gemini: "
         f"{tb['refusals']['gpt'][key]} and {tb['refusals']['gemini'][key]})", RULE["int"])
 
+# ------------------------------------------------------------------ 14. 三省堂国語辞典 8th ed. (author's check, 2026-10-29)
+F_SK = ROOT / "dictionary_check/sankoku_judgments.csv"
+F_RCONS = ROOT / "coding/results/recording/recording_consensus.csv"
+SK4 = ["語義として載る", "注記・用例のみ", "載らない", "見出しなし"]
+DJ3 = ["番号つきの語義", "補説・用例", "なし"]
+sk = read_csv("dictionary_check/sankoku_judgments.csv").fillna("").set_index("item_id")
+sk = sk[sk["三国_掲載"] != ""]
+rcons = read_csv("coding/results/recording/recording_consensus.csv").set_index("item_id").recording_status
+S = sk.join(rcons).join(dj.set_index("item_id")["判定"]).join(tc[["taboo_domain"]])
+check(f"三国: {len(S)} items, all with a recording consensus, a 大辞泉 判定 and a taboo label",
+      S.recording_status.notna().all() and S["判定"].notna().all() and S.taboo_domain.notna().all())
+llm = (S.recording_status == "general_dictionary").astype(int)
+s_strict = (S["三国_掲載"] == "語義として載る").astype(int)
+s_len = S["三国_掲載"].isin(["語義として載る", "注記・用例のみ"]).astype(int)
+d_strict = (S["判定"] == "番号つきの語義").astype(int)
+qs = (f"{len(S)} Japanese items with a 三国 judgement (dictionary_check/sankoku_judgments.csv, 三省堂国語辞典 8th ed., "
+      "checked by the author 2026-10-29)")
+put("NskItems", f_int(len(S)), F_SK, qs + ": items with column F filled", RULE["int"])
+for suf, s, lab in [("Strict", s_strict, "listed = 語義として載る"),
+                    ("Lenient", s_len, "listed = 語義として載る or 注記・用例のみ")]:
+    put(f"PskLLM{suf}", f_dec(100 * float((s == llm).mean()), 1), [F_SK, F_RCONS],
+        qs + f": % agreement, 三国 {lab} vs LLM majority recording_status == general_dictionary", RULE["pct1"])
+    put(f"KskLLM{suf}", f_dec(cohen(s, llm), 2), [F_SK, F_RCONS],
+        qs + f": Cohen kappa, 三国 {lab} vs LLM majority recording_status == general_dictionary", RULE["k2"])
+put("PskDjStrict", f_dec(100 * float((s_strict == d_strict).mean()), 1), [F_SK, F_DICT],
+    qs + ": % agreement, 三国 語義として載る vs 大辞泉 番号つきの語義", RULE["pct1"])
+put("KskDjStrict", f_dec(cohen(s_strict, d_strict), 2), [F_SK, F_DICT],
+    qs + ": Cohen kappa, 三国 語義として載る vs 大辞泉 番号つきの語義", RULE["k2"])
+dis = S[s_strict != d_strict]
+put("NskDjDisagree", f_int(len(dis)), [F_SK, F_DICT], qs + ": items where 三国 語義として載る and 大辞泉 番号つきの語義 "
+    "differ", RULE["int"])
+
+
+def xtab(rows, cols, rlev, clev):
+    t = pd.crosstab(rows, cols).reindex(index=rlev, columns=clev, fill_value=0)
+    return ["| | " + " | ".join(clev) + " | total |", "|---" * (len(clev) + 2) + "|"] + [
+        f"| {i} | " + " | ".join(str(int(t.loc[i, c])) for c in clev) + f" | {int(t.loc[i].sum())} |" for i in rlev]
+
+
+llm_lab = np.where(llm == 1, "LLM: general_dictionary", "LLM: other")
+EXTRA.append(("三省堂国語辞典 (8th ed.): author's check against the LLM majority and 大辞泉", [
+    f"{len(S)} items. Strict: listed = 語義として載る; lenient: also 注記・用例のみ. 見出しなし counts as not listed.", "",
+    "三国 × LLM majority (recording_status)", ""] + xtab(S["三国_掲載"], pd.Series(llm_lab, index=S.index), SK4,
+                                                       ["LLM: general_dictionary", "LLM: other"]) + [
+    "", f"- strict: agreement {f_dec(100 * float((s_strict == llm).mean()), 1)}%, kappa {f_dec(cohen(s_strict, llm), 3)}",
+    f"- lenient: agreement {f_dec(100 * float((s_len == llm).mean()), 1)}%, kappa {f_dec(cohen(s_len, llm), 3)}",
+    "", "三国 × 大辞泉", ""] + xtab(S["三国_掲載"], S["判定"], SK4, DJ3) + [
+    "", f"- strict (語義として載る vs 番号つきの語義): agreement {f_dec(100 * float((s_strict == d_strict).mean()), 1)}%, "
+    f"kappa {f_dec(cohen(s_strict, d_strict), 3)}, {len(dis)} disagreements", "",
+    "| item | 見出し語 | 三国 | 大辞泉 |", "|---|---|---|---|"] + [
+    f"| {i} | {r['見出し語']} | {r['三国_掲載']} | {r['判定']} |" for i, r in dis.iterrows()] + [
+    "", "Taboo (D3 binary) × 三国 (descriptive)", ""] + xtab(
+    pd.Series(np.where(S.taboo_domain == "none", "no taboo", "taboo"), index=S.index), S["三国_掲載"],
+    ["taboo", "no taboo"], SK4)))
+
 # ------------------------------------------------------------------ count chain
 chain = [("blind items", c["blind_items"]), ("with controls", c["items_with_controls"]),
          ("after T3", c["after_T3"]), ("not low_control", c["after_low_control"]), ("k = 10", len(D["oai"]))]
