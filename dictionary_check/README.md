@@ -42,5 +42,16 @@ The dictionary text is copyrighted. The raw HTML and the extracted entry text (`
 `private/` and are not in this repository; every entry can be checked at its URL. Photographs or scans of
 printed dictionaries are not published either.
 
-A check against 三省堂国語辞典 (from 2026-10-24) will be added in the same form: the judgement and short
-quotations of the label, such as 〔俗〕, only.
+## 三省堂国語辞典 (8th edition, 2022-01-10)
+
+`sankoku_judgments.csv` — the author's check of the same 41 headwords in the printed dictionary, 2026-10-29:
+`item_id`, `見出し語`, `引く見出し` (the headword looked up; for phrases, the entry whose idioms were checked) and
+`三国_掲載`:
+- `語義として載る`: the covert meaning is a numbered sense.
+- `注記・用例のみ`: not a sense, but in an example, a usage note or the explanation of an idiom.
+- `載らない`: the headword is there, the covert meaning is not.
+- `見出しなし`: the headword is not in the dictionary.
+
+The check was blind: the sheet gave the covert meaning but not the LLM judgements. The author's working notes on
+each entry (labels and paraphrases) are kept in `private/` and are not published. `scripts/export_sankoku.py`
+writes the public table from the filled-in sheet.
