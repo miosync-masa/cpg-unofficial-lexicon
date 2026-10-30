@@ -22,6 +22,10 @@
   python3 audit/scripts/audit_tool.py nftype ITEM RANK unspecific|specific_not_found|url_unretrievable
         not_found_type of an agent source with agent_source = not_found (author, 2026-10-25): (a) names no specific
         document, (b) a specific document that a search did not find, (c) a URL that could not be retrieved
+  python3 audit/scripts/audit_tool.py refetch ITEM RANK
+        retrieval again (plan, 2026-10-25): a failed document row is requested once more from the same URL; on
+        success the row gets the new snapshot, accessed and retrieved, and keeps its other columns; a failure is only
+        logged and leaves the row as it was
   python3 audit/scripts/audit_tool.py wayback ITEM RANK [URL]
         for a document that failed because of a server outage or a dead link (never for a refusal: 401, 403, 429):
         asks the Wayback Machine for the capture closest to 2026-03-13 and stores it; the row gets retrieved =
@@ -186,6 +190,39 @@ if __name__ == "__main__":
                     "retrieved": retrieved, "snapshot_sha256": sha, "listed_by_agent": listed})
         else:
             print("(not kept as a document; attempt logged)")
+    elif cmd == "refetch":
+        it, rank = sys.argv[2:4]
+        w, i = row(it, rank)
+        url = w.at[i, "url"]
+        assert url and w.at[i, "retrieved"] == "failed", "only for a failed document row with a URL"
+        acc = dt.datetime.now().astimezone().isoformat(timespec="seconds")
+        try:
+            r = requests.get(url, headers={"User-Agent": UA, "Accept-Language": "en,ja;q=0.8"}, timeout=40)
+            status, content, ctype = r.status_code, r.content, r.headers.get("content-type", "")
+        except Exception as e:
+            status, content, ctype = f"error {type(e).__name__}", b"", ""
+        sha, retrieved = "", "failed"
+        if status == 200 and content:
+            sha = hashlib.sha256(content).hexdigest()
+            try:
+                txt, kind = text_of(content, ctype)
+            except Exception as e:
+                txt, kind = "", "bin"
+            SNAP.mkdir(parents=True, exist_ok=True)
+            (SNAP / f"{sha}.{kind}").write_bytes(content)
+            (SNAP / f"{sha}.txt").write_text(txt, encoding="utf-8")
+            retrieved = "full_text" if len(norm(txt)) > 500 else "failed"
+            print(f"HTTP 200, {len(content)} bytes, text {len(norm(txt))} chars -> {retrieved}")
+        else:
+            print(f"not retrieved: {status}")
+        ok = retrieved != "failed"
+        log(it, {"item_id": it, "doc_rank": rank, "url": url, "accessed": acc, "status": str(status), "sha256": sha,
+                 "retrieved": retrieved, "kept": ok, "refetch": True})
+        if ok:
+            prev = w.loc[i, ["retrieved", "accessed", "snapshot_sha256"]].to_dict()
+            log(it, {"item_id": it, "doc_rank": rank, "replaced_by_refetch": prev, "time": acc})
+            w.at[i, "retrieved"], w.at[i, "accessed"], w.at[i, "snapshot_sha256"] = retrieved, acc, sha
+            save(it, w)
     elif cmd == "record":
         it, rank, typ, listed, cit, url, ret = sys.argv[2:9]
         acc = dt.datetime.now().astimezone().isoformat(timespec="seconds")

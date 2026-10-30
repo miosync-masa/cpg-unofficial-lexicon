@@ -150,3 +150,16 @@ meaning.
   `different_work` cannot be derived from the components and is not computed. An item can have several codes.
   Reported: the distribution of the codes over the items sent and within each majority label, in particular the
   number of `partial_M` items, with the items not sent (`no_evidence`) as a separate count.
+
+### Retrieval again, first run (2026-10-30)
+
+- Run on 2026-10-30, two days before the planned date, on the author's instruction.
+- Scope: the document rows with `retrieved = failed` whose last request ended in HTTP 5xx or a connection error
+  (7 rows: NAH_004/3, MET_006/2, MET_007/1, EEU_011/1, NET_003/2, MET_008/2, MET_009/3). Each was requested once more
+  from the same URL (`audit_tool.py refetch`). Failed requests of searched documents that were never kept as rows are
+  not documents of the audit and were not requested again.
+- All 7 failed again with the same kind of error.
+- Wayback Machine, for these 7 rows, for MET_001/1 (HTTP 404) and for SEA_008/2 (the address the agent gave, where
+  archive.org had answered 429 on 2026-10-25): 5 had no capture; for the other 4 (NAH_004/3, MET_007/1, MET_009/3,
+  SEA_008/2) archive.org answered HTTP 429 when the capture was requested, again after 90 seconds. Not tried further.
+- No document changed, so no item was judged again. Every request is in the attempt logs.
