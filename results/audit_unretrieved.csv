@@ -1,0 +1,10 @@
+item_id,doc_rank,first_failure,refetch_10-30,refetch_11-01,wayback
+NAH_004,3,SSLError (10-24),SSLError,SSLError,"10-25: HTTP 429 ×2, JSONDecodeError; 10-30: HTTP 429 ×2; 11-01: HTTP 429"
+MET_006,2,HTTP 520 (10-24),HTTP 520,HTTP 520,10-25: no capture; 10-30: no capture
+MET_007,1,ConnectTimeout (10-24),ConnectionError,ConnectionError,10-25: HTTP 429 ×3; 10-30: HTTP 429 ×2; 11-01: HTTP 429
+EEU_011,1,HTTP 500 (10-24),HTTP 500,HTTP 500,10-25: no capture; 10-30: no capture
+NET_003,2,ConnectionError (10-24),ConnectionError,ConnectionError,10-25: no capture; 10-30: no capture
+MET_009,3,HTTP 520 (10-24),HTTP 520,HTTP 520,10-25: no capture; 10-30: HTTP 429 ×2; 11-01: HTTP 429
+MET_008,2,ConnectionError (10-24),ConnectionError,ConnectionError,10-25: no capture; 10-30: no capture
+MET_001,1,HTTP 404 (10-24),—,—,10-25: no capture; 10-30: no capture
+SEA_008,2,no request (row recorded),—,—,10-25: HTTP 429 ×3; 10-30: HTTP 429 ×2; 11-01: HTTP 429

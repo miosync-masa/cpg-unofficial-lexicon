@@ -1275,6 +1275,28 @@ EXTRA.append(("三省堂国語辞典 (8th ed.): author's check against the LLM m
     pd.Series(np.where(S.taboo_domain == "none", "no taboo", "taboo"), index=S.index), S["三国_掲載"],
     ["taboo", "no taboo"], SK4)))
 
+# ------------------------------------------------------------------ 15. source audit components (exploratory, 2026-11-01)
+F_COMP, F_COMPJ = ROOT / "results/audit_components.csv", ROOT / "results/audit_components.json"
+cp = read_csv("results/audit_components.csv").fillna("")
+cj = json.load(open(F_COMPJ))
+cp_codes = cp.codes.str.split(";")
+n_dev = int(cp_codes.apply(lambda xs: "missing_C_device" in xs).sum())
+n_dev_sup = int((cp_codes.apply(lambda xs: "missing_C_device" in xs) & (cp.majority_label == "supported")).sum())
+n_pm = int(cp_codes.apply(lambda xs: "partial_M" in xs).sum())
+check(f"components: {len(cp)} sent, missing_C_device {n_dev} ({n_dev_sup} supported), partial_M {n_pm} "
+      "= audit_components.json",
+      (len(cp), n_dev, n_dev_sup, n_pm) == (cj["n_sent"], cj["codes"]["missing_C_device"],
+                                           cj["codes_by_label"]["missing_C_device"]["supported"],
+                                           cj["codes"]["partial_M"]))
+qc = (f"source audit components ({len(cp)} items sent; majority of 3 coders per component; reason codes as fixed "
+      "on 2026-10-25, analysis/analyze_components.py)")
+put("NcompSent", f_int(len(cp)), [F_COMP, F_COMPJ], qc + ": items sent", RULE["int"])
+put("NcompMissingDevice", f_int(n_dev), [F_COMP, F_COMPJ], qc + ": items with missing_C_device (C_device != yes)",
+    RULE["int"])
+put("NcompMissingDeviceSup", f_int(n_dev_sup), [F_COMP, F_COMPJ, ROOT / "results/source_audit_judgements.csv"],
+    qc + ": items with missing_C_device whose majority label is supported", RULE["int"])
+put("NcompPartialM", f_int(n_pm), [F_COMP, F_COMPJ], qc + ": items with partial_M (M = partial)", RULE["int"])
+
 # ------------------------------------------------------------------ count chain
 chain = [("blind items", c["blind_items"]), ("with controls", c["items_with_controls"]),
          ("after T3", c["after_T3"]), ("not low_control", c["after_low_control"]), ("k = 10", len(D["oai"]))]

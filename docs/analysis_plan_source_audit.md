@@ -173,3 +173,15 @@ meaning.
   214 items sent, 3 not sent (no quote), no refusals. Tallies by `analysis/analyze_components.py` →
   `results/audit_components.{csv,json,md}`. Three items sent have the majority label `no_evidence` (their quotes
   were judged not relevant); they are kept in the tallies under that label.
+
+### Macros added later (2026-11-01)
+
+The plan did not name macros for the components. Added on 2026-11-01, after the run, on the author's request
+(`analysis/make_numbers.py`, section 15, from `results/audit_components.*`):
+- `NcompSent`: items sent to the component judging.
+- `NcompMissingDevice`: items with the reason code `missing_C_device`.
+- `NcompMissingDeviceSup`: of these, the items whose majority label is `supported`.
+- `NcompPartialM`: items with the reason code `partial_M`.
+
+The documents that retrieval again and the Wayback Machine did not retrieve are listed in
+`results/audit_unretrieved.{csv,md}` (`analysis/list_unretrieved.py`, from the attempt logs).
