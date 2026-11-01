@@ -7,7 +7,7 @@
 | NEU_001 | tradition | Old Norse kenning (skaldic poetry) | Old English kenning | 2026-10-25 | host forms are Old English (hronrád, Beowulf l. 10) |
 | NEU_001 | language | Old Norse | Old English | 2026-11-01* | host forms are Old English (hronrád, Beowulf l. 10) |
 
-\* The language correction was added on 2026-11-01. When the item was judged again in the source audit (2026-10-25), only the tradition correction was applied; the language was sent as `Old Norse`.
+\* The language correction was added on 2026-11-01. When the item was judged again in the source audit (2026-10-25), only the tradition correction was applied; the language was not corrected to `Old English` and was sent as `Old Norse`.
 
 ## Verdicts under three groupings of the tradition intercept
 

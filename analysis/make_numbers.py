@@ -1365,7 +1365,8 @@ for i, r in lc.iterrows():
             md.append(f"| {i} | {fld} | {old} | {new} | {dec.iloc[0] if len(dec) else '2026-11-01'}"
                       f"{'' if len(dec) else '*'} | host forms are Old English (hronrád, Beowulf l. 10) |")
 md += ["", "\\* The language correction was added on 2026-11-01. When the item was judged again in the source audit "
-       "(2026-10-25), only the tradition correction was applied; the language was sent as `Old Norse`.", "",
+       "(2026-10-25), only the tradition correction was applied; the language was not corrected to `Old English` and was sent as "
+       "`Old Norse`.", "",
        "## Verdicts under three groupings of the tradition intercept", "",
        "Main set (condition C, k = 10; condition D: items with 10 kept controls). Mixed model pull ~ 1 + (1 | tradition), "
        "REML; one-sided Wald z; Holm across the 3 models; supported if p < .05. Published = the labels of "
