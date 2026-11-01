@@ -9,8 +9,9 @@ Outputs: results/items_final.csv, results/final_results.json, results/final_resu
 items_final.csv: the items left after the T3 exclusion (SEA_012 plus the author's exclusions of 2026-10-22), one
 row each: blind-table fields, T1 clean host and control counts, condition-C pulls for the three embedding models,
 T2 consensus labels, cpg_scope and cpg_scope_two_storey, first-run consensus codes, recording status, the T3
-proposed_action and author decision, and audit_flag (data/audit_flags.csv: items kept although the source audit
-majority is contradicted).
+proposed_action and author decision, audit_flag (data/audit_flags.csv: items kept although the source audit
+majority is contradicted), and tradition_corrected, language_corrected, correction_reason (data/label_corrections.csv;
+equal to tradition and language where nothing was corrected; not used by any analysis).
 
 Analyses (all exploratory, labelled as such in the report), on pull_C_k10, main set = T3 exclusion applied and
 low_control removed (the same set as H-C1):
@@ -95,6 +96,12 @@ assert (utt.host_unit == "utterance").all(), utt[["item_id", "host_unit"]]
 df["tradition_model"] = df.tradition_pipeline
 # author's decision of 2026-10-25: items with majority contradicted in the source audit stay, flagged
 df["audit_flag"] = df.item_id.map(pd.read_csv(ROOT / "data/audit_flags.csv").set_index("item_id").audit_flag).fillna("")
+# author's decision of 2026-11-01: labels found wrong after the analyses were fixed are corrected in added columns;
+# tradition and language stay as published and are what every analysis uses (data/label_corrections.csv)
+lc = pd.read_csv(ROOT / "data/label_corrections.csv").set_index("item_id")
+for c in ["tradition", "language"]:
+    df[f"{c}_corrected"] = df.item_id.map(lc[f"{c}_corrected"]).fillna(df[c])
+df["correction_reason"] = df.item_id.map(lc.correction_reason).fillna("")
 df.to_csv(ROOT / "results/items_final.csv", index=False, encoding="utf-8")
 
 

@@ -1297,6 +1297,64 @@ put("NcompMissingDeviceSup", f_int(n_dev_sup), [F_COMP, F_COMPJ, ROOT / "results
     qc + ": items with missing_C_device whose majority label is supported", RULE["int"])
 put("NcompPartialM", f_int(n_pm), [F_COMP, F_COMPJ], qc + ": items with partial_M (M = partial)", RULE["int"])
 
+# ------------------------------------------------------------------ 16. corrected labels (sensitivity, 2026-11-01)
+# author's decision of 2026-11-01: the analyses keep the published labels; the corrected labels
+# (data/label_corrections.csv) only re-group the tradition random intercept in a sensitivity analysis.
+F_LC = ROOT / "data/label_corrections.csv"
+lc = read_csv("data/label_corrections.csv").set_index("item_id")
+tcorr = traw.copy()
+tcorr.loc[lc.index] = lc.tradition_corrected
+# variant: the corrected item joined to the existing label of the same tradition in the lexicon
+tjoin = tcorr.replace({"Old English kenning": "Anglo-Saxon kenning (Beowulf)"})
+cgroups = [("published labels", traw), ("corrected labels", tcorr), ("corrected, joined to Anglo-Saxon kenning", tjoin)]
+crows = []
+for gname, tmap in cgroups:
+    for hyp, y, base, sel in [("H-C1", "pull_C_k10", D, lambda d: d),
+                              ("H-C2", "pull_C_k10", D, lambda d: d[d.cpg_valid == "yes"]),
+                              ("H-D1", "pull_D_k10", DE, lambda d: d),
+                              ("H-D2", "pull_D_k10", DE, lambda d: d[d.cpg_valid == "yes"])]:
+        dd = {m: sel(base[m]).dropna(subset=[y]).assign(trad_c=lambda d: d.item_id.map(tmap)) for m in MODELS}
+        res = {m: mixed(dd[m], y, "trad_c") for m in MODELS}
+        adj = multipletests([stats.norm.sf(res[m]["z"]) for m in MODELS], method="holm")[1]
+        for m, a in zip(MODELS, adj):
+            crows.append({"grouping": gname, "hypothesis": hyp, "model": MODEL_NAMES[m], "n": len(dd[m]),
+                          "n_groups": int(dd[m].trad_c.nunique()), "z": round(res[m]["z"], 4), "p_holm": float(a),
+                          "verdict": "supported" if a < .05 else "not supported"})
+cref = {(r["hypothesis"], r["model"]): r for r in crows if r["grouping"] == "published labels"}
+for (hyp, mn), r in cref.items():
+    pre = {"H-C1": "HCone", "H-C2": "HCtwo", "H-D1": "HDone", "H-D2": "HDtwo"}[hyp]
+    m = next(k for k, v in MODEL_NAMES.items() if v == mn)
+    check(f"corrected-label sensitivity: published-label {hyp} {m} z {r['z']:.2f} = macro {pre}Z{m}",
+          f_dec(r["z"], 2) == M[f"{pre}Z{m}"]["value"])
+cchanged = [r for r in crows if r["verdict"] != cref[(r["hypothesis"], r["model"])]["verdict"]]
+qcorr = ("verdicts (p_holm < .05) of H-C1, H-C2 (condition C) and H-D1, H-D2 (condition D), 3 models, identical "
+         "under the published and the corrected tradition labels (data/label_corrections.csv)")
+if [r for r in cchanged if r["grouping"] == "corrected labels"]:
+    missing("SensCorrSame", "verdict changes: " + "; ".join(f"{r['hypothesis']}, {r['model']}" for r in cchanged
+                                                            if r["grouping"] == "corrected labels"),
+            F_MAIN + F_DE + [F_LC], qcorr, RULE["empty"])
+else:
+    put("SensCorrSame", "", F_MAIN + F_DE + [F_LC], qcorr, RULE["empty"])
+# label counts after the correction (reported, not macros: the text keeps the published counts)
+hmap = {(r.kind, r.original_label): r.harmonised_label for r in ht.itertuples()}
+hk = {(k, hkey(k, o)): t for (k, o), t in hmap.items()}
+ncorr = {}
+for kind, col in [("tradition", "tradition_corrected"), ("language", "language_corrected")]:
+    labs = blind.set_index("item_id")[kind].copy()
+    labs.loc[lc.index] = lc[col]
+    ncorr[kind] = len({hmap.get((kind, l)) or hk.get((kind, hkey(kind, l)), l) for l in labs})
+EXTRA.append(("Corrected labels: sensitivity of the tradition grouping (data/label_corrections.csv)", [
+    "Corrections: " + "; ".join(f"{i}: tradition → {r.tradition_corrected}, language → {r.language_corrected}"
+                                for i, r in lc.iterrows()) + ".",
+    f"Label counts after the correction (strong candidates merged, as NtradLabels / Nlanguages): tradition "
+    f"{ncorr['tradition']} (published {M['NtradLabels']['value']}), language {ncorr['language']} (published "
+    f"{M['Nlanguages']['value']}).",
+    "**Verdict changes against the published labels: " + ("none.**" if not cchanged else "; ".join(
+        f"{r['grouping']}, {r['hypothesis']}, {r['model']}: {r['verdict']}" for r in cchanged) + "**"), "",
+    "| grouping | hypothesis | model | n | groups | z | p (Holm) | verdict |", "|---|---|---|---|---|---|---|---|"] + [
+    f"| {r['grouping']} | {r['hypothesis']} | {r['model']} | {r['n']} | {r['n_groups']} | {r['z']:.2f} | "
+    f"{f_p(r['p_holm'])} | {r['verdict']} |" for r in crows]))
+
 # ------------------------------------------------------------------ count chain
 chain = [("blind items", c["blind_items"]), ("with controls", c["items_with_controls"]),
          ("after T3", c["after_T3"]), ("not low_control", c["after_low_control"]), ("k = 10", len(D["oai"]))]
