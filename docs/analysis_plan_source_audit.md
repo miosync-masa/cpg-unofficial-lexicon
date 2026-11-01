@@ -194,6 +194,10 @@ The documents that retrieval again and the Wayback Machine did not retrieve are 
   (`data/label_corrections.csv`); the original columns are not overwritten. The only item with a corrected label is
   NEU_001 (the only row of `audit/corrections.csv`): tradition → `Old English kenning`, language → `Old English`.
 - Sensitivity (`analysis/make_numbers.py`, section 16): H-C1, H-C2, H-D1 and H-D2 with the tradition intercept
-  grouped by the corrected labels, 3 models, Holm as in the main analysis. Macro `SensCorrSame` (built as
-  `SensTradSame`). Also computed, not fixed in advance: NEU_001 joined to the existing label `Anglo-Saxon kenning
-  (Beowulf)` instead of a label of its own. Table in `results/numbers_report.md`.
+  grouped by the corrected labels, 3 models, Holm as in the main analysis. Also computed, not fixed in advance:
+  NEU_001 joined to the existing label `Anglo-Saxon kenning (Beowulf)` instead of a label of its own.
+- Author, 2026-11-01, after the results: the reference is the corrected labels with each corrected label its own
+  group (as requested before the run); the joined grouping is reported beside it as chosen after the results, without
+  a macro. `SensCorrSame` was dropped; added `HDtwoPoaiCorr`, `HDtwoPbgeCorr`, `HDtwoPgemCorr` (H-D2, Holm p, under
+  the corrected labels). `NtradLabels` and `Nlanguages` keep the published values. Table for supplement S4:
+  `results/sensitivity_corrected_labels.{md,json}`.

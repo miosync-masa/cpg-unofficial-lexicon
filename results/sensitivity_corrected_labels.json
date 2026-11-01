@@ -1,0 +1,387 @@
+{
+ "description": "H-C1, H-C2 (condition C) and H-D1, H-D2 (condition D) on the main set, tradition random intercept under three groupings; Holm across the 3 models; supported if p_holm < .05. Reference: corrected labels (each corrected label its own group). The joined grouping was chosen after seeing the results.",
+ "rows": [
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-C1",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 94,
+   "n_groups": 49,
+   "z": 5.3901,
+   "p_holm": 1.0562827382866401e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-C1",
+   "model": "BAAI/bge-m3",
+   "n": 94,
+   "n_groups": 49,
+   "z": 2.2285,
+   "p_holm": 0.012923592091139453,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-C1",
+   "model": "gemini-embedding-001",
+   "n": 94,
+   "n_groups": 49,
+   "z": 5.1288,
+   "p_holm": 2.915302600460908e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-C2",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 63,
+   "n_groups": 38,
+   "z": 4.2347,
+   "p_holm": 3.433003629771511e-05,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-C2",
+   "model": "BAAI/bge-m3",
+   "n": 63,
+   "n_groups": 38,
+   "z": 2.306,
+   "p_holm": 0.010555780085865671,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-C2",
+   "model": "gemini-embedding-001",
+   "n": 63,
+   "n_groups": 38,
+   "z": 4.0527,
+   "p_holm": 5.063311588011458e-05,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-D1",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 67,
+   "n_groups": 36,
+   "z": 2.8856,
+   "p_holm": 0.005353211160817633,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-D1",
+   "model": "BAAI/bge-m3",
+   "n": 67,
+   "n_groups": 36,
+   "z": 1.3345,
+   "p_holm": 0.09101394253731881,
+   "verdict": "not supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-D1",
+   "model": "gemini-embedding-001",
+   "n": 67,
+   "n_groups": 36,
+   "z": 2.914,
+   "p_holm": 0.005353211160817633,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-D2",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 47,
+   "n_groups": 27,
+   "z": 2.6038,
+   "p_holm": 0.013827473233001899,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-D2",
+   "model": "BAAI/bge-m3",
+   "n": 47,
+   "n_groups": 27,
+   "z": 1.8324,
+   "p_holm": 0.048651295810444,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "published labels",
+   "hypothesis": "H-D2",
+   "model": "gemini-embedding-001",
+   "n": 47,
+   "n_groups": 27,
+   "z": 1.9716,
+   "p_holm": 0.048651295810444,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-C1",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 94,
+   "n_groups": 50,
+   "z": 5.3612,
+   "p_holm": 1.24021787013752e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-C1",
+   "model": "BAAI/bge-m3",
+   "n": 94,
+   "n_groups": 50,
+   "z": 2.1313,
+   "p_holm": 0.016532812371638502,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-C1",
+   "model": "gemini-embedding-001",
+   "n": 94,
+   "n_groups": 50,
+   "z": 5.0092,
+   "p_holm": 5.46702290987507e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-C2",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 63,
+   "n_groups": 39,
+   "z": 4.2001,
+   "p_holm": 4.002247857087015e-05,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-C2",
+   "model": "BAAI/bge-m3",
+   "n": 63,
+   "n_groups": 39,
+   "z": 2.1688,
+   "p_holm": 0.015048145209727842,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-C2",
+   "model": "gemini-embedding-001",
+   "n": 63,
+   "n_groups": 39,
+   "z": 3.8903,
+   "p_holm": 0.0001001164692014271,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-D1",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 67,
+   "n_groups": 37,
+   "z": 2.7747,
+   "p_holm": 0.0076954303033411955,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-D1",
+   "model": "BAAI/bge-m3",
+   "n": 67,
+   "n_groups": 37,
+   "z": 1.2562,
+   "p_holm": 0.10451506912273972,
+   "verdict": "not supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-D1",
+   "model": "gemini-embedding-001",
+   "n": 67,
+   "n_groups": 37,
+   "z": 2.7987,
+   "p_holm": 0.0076954303033411955,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-D2",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 47,
+   "n_groups": 28,
+   "z": 2.4666,
+   "p_holm": 0.02046037109295945,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-D2",
+   "model": "BAAI/bge-m3",
+   "n": 47,
+   "n_groups": 28,
+   "z": 1.7284,
+   "p_holm": 0.06844010258896972,
+   "verdict": "not supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-D2",
+   "model": "gemini-embedding-001",
+   "n": 47,
+   "n_groups": 28,
+   "z": 1.8221,
+   "p_holm": 0.06844010258896972,
+   "verdict": "not supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-C1",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 94,
+   "n_groups": 49,
+   "z": 5.3734,
+   "p_holm": 1.1591854722786914e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-C1",
+   "model": "BAAI/bge-m3",
+   "n": 94,
+   "n_groups": 49,
+   "z": 2.2137,
+   "p_holm": 0.01342436629064954,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-C1",
+   "model": "gemini-embedding-001",
+   "n": 94,
+   "n_groups": 49,
+   "z": 5.1315,
+   "p_holm": 2.873749424305139e-07,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-C2",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 63,
+   "n_groups": 38,
+   "z": 4.2122,
+   "p_holm": 3.7927587480448814e-05,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-C2",
+   "model": "BAAI/bge-m3",
+   "n": 63,
+   "n_groups": 38,
+   "z": 2.2811,
+   "p_holm": 0.011272077431992695,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-C2",
+   "model": "gemini-embedding-001",
+   "n": 63,
+   "n_groups": 38,
+   "z": 4.0549,
+   "p_holm": 5.016536469363491e-05,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-D1",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 67,
+   "n_groups": 36,
+   "z": 2.8755,
+   "p_holm": 0.005321561724222126,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-D1",
+   "model": "BAAI/bge-m3",
+   "n": 67,
+   "n_groups": 36,
+   "z": 1.2907,
+   "p_holm": 0.09839717237232076,
+   "verdict": "not supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-D1",
+   "model": "gemini-embedding-001",
+   "n": 67,
+   "n_groups": 36,
+   "z": 2.9158,
+   "p_holm": 0.005321561724222126,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-D2",
+   "model": "OpenAI text-embedding-3-large",
+   "n": 47,
+   "n_groups": 27,
+   "z": 2.5914,
+   "p_holm": 0.01433693065251505,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-D2",
+   "model": "BAAI/bge-m3",
+   "n": 47,
+   "n_groups": 27,
+   "z": 1.7804,
+   "p_holm": 0.04824143760681584,
+   "verdict": "supported"
+  },
+  {
+   "grouping": "corrected, joined to Anglo-Saxon kenning",
+   "hypothesis": "H-D2",
+   "model": "gemini-embedding-001",
+   "n": 47,
+   "n_groups": 27,
+   "z": 1.9752,
+   "p_holm": 0.04824143760681584,
+   "verdict": "supported"
+  }
+ ],
+ "verdict_changes": [
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-D2",
+   "model": "BAAI/bge-m3",
+   "n": 47,
+   "n_groups": 28,
+   "z": 1.7284,
+   "p_holm": 0.06844010258896972,
+   "verdict": "not supported"
+  },
+  {
+   "grouping": "corrected labels",
+   "hypothesis": "H-D2",
+   "model": "gemini-embedding-001",
+   "n": 47,
+   "n_groups": 28,
+   "z": 1.8221,
+   "p_holm": 0.06844010258896972,
+   "verdict": "not supported"
+  }
+ ]
+}
