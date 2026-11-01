@@ -1,0 +1,215 @@
+item_id,H,M,C_community,C_device,reason,status,model
+QCH_003,yes,partial,yes,partial,"Both terms are named; the quotes give the colonial heaven/hell use and death-and-rebirth for Ukhu Pacha, but not 'upper world of life' for Hanaq Pacha, and do not explicitly frame the dual-layer overlay.",ok,claude-opus-5-5
+AFR_010,yes,partial,no,partial,"Opponents are contemptuously compared to a bull without horns, but castration and sexual humiliation are not stated, and neither Zulu nor izibongo is named.",ok,claude-opus-5-5
+T_009,partial,yes,partial,no,"The quote shows only the compound 共寝, gives a euphemistic use for intercourse, and says nothing about kakekotoba or waka.",ok,claude-opus-5-5
+NEU_007,no,partial,yes,partial,"Exeter Book riddles and an unnumbered riddle with a penis/onion double entendre are described, but Riddle 25 and its words are never named.",ok,claude-opus-5-5
+T_064,yes,yes,yes,yes,"The name, taken from use as fertilizer, is read as a wish for a good harvest (豊作の予祝) in a New Year dish.",ok,claude-opus-5-5
+AFR_011,yes,partial,yes,no,"The elephant is tied to myth-making about the Zulu king and used in a royal salute, but hidden or unrevealed power and praise-poetry technique are not stated.",ok,claude-opus-5-5
+T_048,yes,yes,yes,partial,"桔 is linked to the 吉 of 吉祥 because the character contains 吉, which is a graphic link rather than an explicitly homophonic one.",ok,claude-opus-5-5
+T_028,yes,no,partial,no,"زلف is named, but no quote states a divine-beauty meaning or īhām; the Sufi metaphors are only mentioned generally.",ok,claude-opus-5-5
+NEU_001,yes,yes,yes,yes,The quotes explicitly call the Old English 'whale's road' (hron rade) a kenning meaning 'sea'.,ok,claude-opus-5-5
+T_080,no,partial,yes,partial,"The quotes define 関係 and a close relationship as including sexual relations, but 深い関係 itself is not named and the euphemistic use is not explicitly stated.",ok,claude-opus-5-5
+T_069,partial,yes,partial,yes,"A quote calls 'coffee' a euphemism for sex in the line 'come back to my room for coffee', a variant wording, but does not identify English usage explicitly.",ok,claude-opus-5-5
+T_061,yes,yes,yes,yes,"Quotes say kurikinton (金団, golden dumplings) is a staple osechi New Year dish that wishes for 金運.",ok,claude-opus-5-5
+T_053,yes,yes,yes,yes,"A quote states that the 生 in 花生 is a 谐音 (homophone) for 生, meaning birth, used at Chinese weddings.",ok,claude-opus-5-5
+MET_006,yes,yes,partial,partial,"An Arabic lexicon glosses the phrase as 'a man of tall stature', but kinaya is only described generically in another quote and not tied to this phrase.",ok,claude-opus-5-5
+T_051,yes,yes,yes,yes,"Quotes state that 梨 is a homophone (諧音) of 离, separation, with the related Chinese taboo.",ok,claude-opus-5-5
+NEU_010,yes,partial,yes,yes,"The quote lists Exeter Book riddle 37 (bellows) as having double entendre, but never says the double meaning is sexual.",ok,claude-opus-5-5
+OCE_001,no,partial,partial,partial,"Quotes describe songs that encode landmarks, waterholes and food sources, but never name inma or tie it explicitly to the tradition.",ok,claude-opus-5-5
+NEU_011,yes,yes,yes,no,"A dictionary glosses bánhús as body and cites Beowulf, but nowhere calls it a kenning.",ok,claude-opus-5-5
+T_016,yes,yes,partial,partial,"A dictionary defines kāma as desire and lust; a separate scholarly quote mentions poems that conarrate sensual love and asceticism, without naming kāma.",ok,claude-opus-5-5
+T_035,yes,yes,partial,no,"French dictionaries give jouir as 'avoir un orgasme', but say nothing about double entendre.",ok,claude-opus-5-5
+EEU_003,yes,partial,yes,yes,"The riddle is quoted as bordering on bawdiness, with a falsely innocent answer (eyelids), but no sexual encounter is stated.",ok,claude-opus-5-5
+T_025,yes,partial,partial,partial,"Šarāb is named and wine stands for mystical spiritual seeking, but neither ecstasy nor īhām is stated, and Arabic/Persian is not named.",ok,claude-opus-5-5
+AFR_009,no,no,partial,no,The izibongo abstract mentions male virility generally but never names the bull.,ok,claude-opus-5-5
+SEA_007,yes,partial,yes,yes,"The deo tonal pun (cliff/to have sex) and the sexual Three Mountain Pass poem by Ho Xuan Huong are given, but female genitalia are not explicitly stated.",ok,claude-opus-5-5
+AFR_014,yes,partial,partial,yes,"The proverb's universal-death meaning and its use to warn the proud are stated, but no explicit leveling critique, and Akan is not named.",ok,claude-opus-5-5
+T_013,yes,partial,no,no,"Dictionary senses give scattering away and dying, but there is no mention of waka or kakekotoba.",ok,claude-opus-5-5
+QCH_002,yes,yes,yes,yes,The original Quechua ambivalent spirit and the later Spanish Christianized devil are both stated.,ok,claude-opus-5-5
+AFR_013,yes,partial,yes,yes,"The Akan proverb and its diaspora cultural-reclamation use are given, but colonial and assimilation critiques are not tied to it.",ok,claude-opus-5-5
+T_046,yes,yes,yes,yes,Lu (deer) is stated as a Chinese homophone for emoluments (禄).,ok,claude-opus-5-5
+NAH_003,yes,yes,yes,partial,"Teoatl tlachinolli is glossed as war or battle (metaphor) and as pestilence or war, but the difrasismo technique is not named.",ok,claude-opus-5-5
+T_047,yes,yes,yes,yes,The quotes state that 魚 yú is homophonous with 餘 'surplus' in Chinese New Year symbolism.,ok,claude-opus-5-5
+NEU_003,no,no,partial,partial,"The quote gives a different skaldic blood kenning (sárgymir), not valbjórr or hrælœkr.",ok,claude-opus-5-5
+T_004,yes,yes,partial,no,"かしわ is given as an alternate name for chicken meat (used in Kansai), but it is not framed as a game-meat euphemism.",ok,claude-opus-5-5
+NEU_014,no,partial,partial,partial,The quotes show sexual Finnish riddles in general but do not name the churning riddle.,ok,claude-opus-5-5
+OCE_004,yes,yes,yes,no,"The abstract says Native Hawaiians redefined the song as the Queen's farewell to her kingdom against colonial erasure, but it calls this resignification, not kaona.",ok,claude-opus-5-5
+MET_016,yes,yes,yes,yes,"The article describes bahâr's season, leaf and flower senses and their tevriye uses in classical poetry.",ok,claude-opus-5-5
+T_011,yes,partial,partial,partial,"ふる appears as a double-use word, but paired as 経る/降る; the rejection sense appears only in a dictionary gloss.",ok,claude-opus-5-5
+T_091,yes,yes,yes,partial,"The web quote says 飲みに行く refers to alcohol in Japanese, but it does not call this a euphemism.",ok,claude-opus-5-5
+SEA_010,yes,yes,yes,partial,"Maskumambang is said to represent the fetus in the womb in tembang macapat, but the naming/floating device is not explained.",ok,claude-opus-5-5
+T_032,yes,yes,partial,partial,"خرابات is described as a mystical term meaning tavern, place of worship and ruin in Persian literature, but īhām is not named.",ok,claude-opus-5-5
+T_007,yes,yes,yes,partial,"露 is called a symbol of impermanence in waka, and it leads to 懸詞 with accompanying verbs, but the ephemerality comes from symbolism, not stated as a pivot-word pun.",ok,claude-opus-5-5
+AFR_006,no,partial,partial,no,"The quotes mention Ṣàngó breathing fire and his temper, but not the phrase 'fire in his mouth', oríkì, or the name or word dimensions.",ok,claude-opus-5-5
+T_092,yes,no,partial,no,"The phrase is named only as a general request to go out together, with no drinking sense or euphemism stated.",ok,claude-opus-5-5
+NEU_004,yes,yes,yes,yes,The Skáldskaparmál passage says skalds kenna poetry as Kvasis blóð and dverga mjǫð.,ok,claude-opus-5-5
+EEU_004,yes,no,partial,partial,"A variant of the riddle text appears, but no quote gives it an erotic meaning; riddles and erotic riddles are discussed only generally.",ok,claude-opus-5-5
+T_059,yes,yes,partial,yes,"マダイ is auspicious because it sounds like めでたい and is used at celebration meals, but osechi is not named.",ok,claude-opus-5-5
+NEU_015,yes,partial,no,no,"The Sampo is interpreted as the world pillar and a mill, but not as a drum, and the quotes do not place it in Finnish Kalevala poetry.",ok,claude-opus-5-5
+MAYA_002,yes,partial,partial,yes,"Che tunich is called a difrasismo meaning war or conflict, but the quote does not specify Yucatec or the Chilam Balam.",ok,claude-opus-5-5
+NEU_008,yes,yes,yes,yes,Riddle 44 is described as an Old English riddle with the solution key that evokes a penis through sexual double entendre.,ok,claude-opus-5-5
+NEU_002,yes,partial,yes,yes,"Hrafn-vín is given as a skaldic kenning for battle and death, but 'blood' is not stated as its meaning.",ok,claude-opus-5-5
+SEA_012,yes,partial,no,yes,"The abstract lists vowel or consonant changing as a type of erotic double meaning giving sexual suggestion, but it does not mention Thai luk thung or specific body parts or acts.",ok,claude-opus-5-5
+AFR_007,yes,partial,partial,partial,"The axe is said to symbolize balanced justice, striking down wrongdoers and sexuality, but male/female force and oríkì are not mentioned.",ok,claude-opus-5-5
+NEU_005,yes,yes,yes,yes,Wikipedia explicitly glosses grennir gunn-más as a kenning meaning 'warrior' from Glymdrápa.,ok,claude-opus-5-5
+T_093,partial,partial,partial,no,"Only 二軒目 is explained, as the second venue of a drinking night; the full phrase and its euphemistic use are not stated.",ok,claude-opus-5-5
+T_068,yes,yes,partial,partial,"The reference states the phrase implies an expectation of sexual activity, but it does not explicitly call it an English euphemism.",ok,claude-opus-5-5
+T_085,no,no,no,no,"The quote only covers 'hit' meaning 'go to', with examples like 'hit the club', and does not mention 'hit the bar' or drinking.",ok,claude-opus-5-5
+MAYA_005,partial,partial,yes,partial,"Tulum murals are said to use metaphorical dualisms, celestial bands and solar motifs that reinforce political power, but cosmic time totality and an explicit day/night pairing are not stated.",ok,claude-opus-5-5
+T_040,yes,yes,partial,no,The French dictionary gives the sense of a love affair (having a mistress or lover) but does not present it as a double entendre.,ok,claude-opus-5-5
+NET_001,yes,yes,yes,yes,The sources tie the Korean film line to a sexual metaphor comparable to 'Netflix and chill'.,ok,claude-opus-5-5
+T_074,yes,yes,partial,no,"'Hookup' is defined as an informal sexual encounter, but it is not described as an English euphemism.",ok,claude-opus-5-5
+MET_005,yes,partial,partial,partial,"Abū Zayd is said to deceive through linguistic skill, and al-Ḥarīrī praises ambiguity, but tawriya and grammatically true surface statements are never named.",ok,claude-opus-5-5
+T_095,yes,partial,yes,no,"乾杯 is described as the opening signal when people gather to drink, but it is not presented as a euphemism.",ok,claude-opus-5-5
+AFR_003,no,partial,yes,partial,"Qene is said to subtly insult through layered meanings, but fikir is never named.",ok,claude-opus-5-5
+T_015,yes,yes,partial,no,"The Sanskrit rati is glossed as sexual pleasure, with no mention of śleṣa or double meaning.",ok,claude-opus-5-5
+NAH_001,yes,partial,yes,yes,"The quote calls it a difrasismo meaning poetry, art and beauty, but says nothing of highest truth or teotl.",ok,claude-opus-5-5
+T_037,yes,yes,partial,no,"The French dictionary gives the sexual sense as a popular/vulgar meaning, not as a double entendre.",ok,claude-opus-5-5
+T_031,yes,yes,partial,no,"The nightingale symbolizes the lover and the soul in Persian poetry, but īhām is not mentioned.",ok,claude-opus-5-5
+NAH_002,yes,yes,partial,partial,"The Nahuatl expression is called a metaphor for commoners, but difrasismo is not named.",ok,claude-opus-5-5
+NET_002,yes,yes,yes,yes,The emojis are used on social media as suggestive icons for the penis and the buttocks.,ok,claude-opus-5-5
+T_063,yes,yes,partial,yes,"Red-and-white kamaboko signals celebration through colour symbolism and evokes the New Year sunrise, but osechi is not named.",ok,claude-opus-5-5
+MET_012,yes,yes,yes,yes,"The quote names Fuzûlî's pejorative surface meaning and the hidden reading of fuzûl as the plural of fazl 'learning', and calls this tevriyye in Ottoman Divan poetry.",ok,claude-opus-5-5
+SEA_003,yes,partial,no,partial,"The squirrel (tupai) is said to imply a seducer, but fickleness is absent and neither Malay nor pantun is named in the quote.",ok,claude-opus-5-5
+NEU_006,yes,yes,yes,partial,"Valr is said to mean 'horse' in Old Norse poetry through a mythological horse's name, but the quote does not call this a kenning.",ok,claude-opus-5-5
+NET_007,yes,yes,partial,yes,"The phrase is called an Internet slang euphemism for sexual activity with a romantic prospect, but AAVE origin is not mentioned.",ok,claude-opus-5-5
+EEU_002,no,no,yes,partial,"The abstract only mentions Russian erotic riddles in general, not this riddle or its meaning.",ok,claude-opus-5-5
+NAH_004,yes,partial,partial,partial,"The phrase is glossed as a metaphor for writings, books and codices, but wisdom and authority are absent, Nahuatl is not explicitly named and difrasismo is not named.",ok,claude-opus-5-5
+QCH_006,yes,partial,partial,partial,"Songs addressed to sacred beings and apus are said to address both the being and the people, but there is no covert framing and Quechua is not named.",ok,claude-opus-5-5
+MET_004,no,no,no,partial,"Tawriya is defined in general terms, but badr is never mentioned.",ok,claude-opus-5-5
+AFR_008,partial,partial,partial,partial,"Yoruba royal praises are said to contain criticism and to drive kings to suicide, but the term oríkì and the specific mechanism are not stated.",ok,claude-opus-5-5
+T_045,yes,partial,yes,partial,"Bats are said to be Chinese symbols sharing the meaning of fu, but 'fortune' and homophony are not stated explicitly.",ok,claude-opus-5-5
+AFR_001,yes,yes,yes,yes,"D2 says the qene hides in 'meskel', meaning cross and also 'to hang with a rope'; D1 names wax-and-gold ambiguity as qene's device.",ok,claude-opus-5-5
+T_023,yes,yes,partial,partial,"Sanskrit dictionary entries give 'confluence' for saṃgama, but śleṣa is described only generally and not tied to this word.",ok,claude-opus-5-5
+EEU_007,no,no,no,partial,"Quotes define the constant epithet and discuss the term 'черкасы' socially, but never name the host or state the prestige meaning.",ok,claude-opus-5-5
+SEA_002,yes,yes,no,partial,"The flower and the bee are said to indicate a girl and her lover as recurring symbols, but the quote does not name the pantun.",ok,claude-opus-5-5
+T_066,yes,partial,yes,yes,"Gobō in osechi expresses a wish for 'stability of life' through its deep roots, which is close to but not exactly 安泰.",ok,claude-opus-5-5
+T_089,yes,yes,partial,no,"Nightcap is glossed as the last drink before bed, but no quote calls it a euphemism.",ok,claude-opus-5-5
+T_094,partial,yes,yes,partial,"Variants 'エンドレスもう1杯' and 'あと1杯だけ' imply endless continued drinking, but the device is not named as a euphemism.",ok,claude-opus-5-5
+AFR_004,yes,partial,yes,yes,Òjó is an àmútọ̀runwá name for a child born with the cord around the neck; the danger is not stated.,ok,claude-opus-5-5
+T_073,yes,yes,yes,partial,"The dictionary glosses 'sleep together' as 'to have sex', marked informal but not explicitly called a euphemism.",ok,claude-opus-5-5
+MET_002,yes,yes,yes,yes,"The scholarly quote explains tawriya in الجفون, with eyelids as the near meaning and the sheathing of swords as the far meaning.",ok,claude-opus-5-5
+MET_010,yes,partial,yes,yes,"The quotes name 'the hand of God' and tie kinaya to exegesis that avoids anthropomorphism, but they never state power or beneficence.",ok,claude-opus-5-5
+T_096,yes,yes,partial,yes,"The depth of a bow is said to express respect as a gesture, but no specific cross-cultural framing is given.",ok,claude-opus-5-5
+EEU_010,yes,yes,partial,yes,"Horse-watering is an erotic symbol in songs and a Russian tale (well = vulva, horse = penis), but nothing places it in Polish tradition.",ok,claude-opus-5-5
+T_033,yes,yes,yes,no,"The rend is described as a symbol of true spirituality beyond legalistic religion in Hafez, but īhām is not mentioned.",ok,claude-opus-5-5
+T_079,yes,yes,yes,no,"The dictionary gives 体 as the body as a sexual object, with '体の関係がある' as an example, but does not call it a euphemism.",ok,claude-opus-5-5
+T_020,yes,yes,partial,no,"Śṛṅgāra is identified as the erotic rasa, but there is no mention of śleṣa.",ok,claude-opus-5-5
+T_049,yes,yes,yes,yes,The quotes cite 'lotus'/'love' wordplay in Southern Dynasties songs and homophonic puns.,ok,claude-opus-5-5
+NAH_005,yes,yes,yes,yes,"The difrasismo 'rostro, corazón' is said to symbolize personality and moral physiognomy.",ok,claude-opus-5-5
+NET_004,yes,yes,yes,yes,The quotes describe wordplay on cào nǐ mā and the mascot role for netizens fighting for free expression.,ok,claude-opus-5-5
+SEA_005,no,no,no,partial,Kain is not named; the quote only lists other recurring symbols without naming pantun.,ok,claude-opus-5-5
+T_038,yes,yes,partial,no,"A French dictionary gives connaître the biblical sense of carnal commerce, but frames it as a special sense or periphrasis, not as double entendre.",ok,claude-opus-5-5
+T_052,yes,yes,yes,yes,"The quote says apples are given on Christmas Eve in mainland China because 苹 is homophonous (谐音) with 平, meaning 平平安安.",ok,claude-opus-5-5
+T_036,no,no,partial,no,The quotes discuss the expression 'petite mort' as orgasm but never name 'mourir' or tie the meaning to it.,ok,claude-opus-5-5
+T_021,yes,yes,partial,no,"Dictionaries give keli as amorous sport with a Gītagovinda citation, but say nothing of śleṣa.",ok,claude-opus-5-5
+T_024,yes,yes,partial,no,"Āliṅgana is glossed as embracing a sexual partner in the Kāmasūtra, with no mention of śleṣa.",ok,claude-opus-5-5
+T_022,yes,partial,partial,no,"Milana is glossed only as union or meeting, not specifically sexual union, and nothing ties it to śleṣa.",ok,claude-opus-5-5
+T_060,no,partial,partial,partial,"The quotes describe an auspicious New Year food that gives 見通し, but never name 蓮根.",ok,claude-opus-5-5
+T_088,yes,yes,partial,partial,"A dictionary marks 'liquid lunch' as humorous for alcoholic drinks instead of food, without calling it a euphemism.",ok,claude-opus-5-5
+T_050,yes,yes,yes,yes,"A quote states that 枣 zǎo sounds like 早 zǎo, early, and links it to the wedding wish 早生贵子.",ok,claude-opus-5-5
+T_067,yes,yes,yes,yes,Nishime is named as an osechi dish whose ingredients cooked in one pot express the wish for family harmony.,ok,claude-opus-5-5
+T_017,yes,yes,no,no,"The quote glosses Madana as one who intoxicates with love, but it does not mention Sanskrit śleṣa or any pun.",ok,claude-opus-5-5
+T_044,yes,yes,partial,no,"A French dictionary gives 'commerce' in a bad sense as an illicit sexual liaison, but it does not frame this as double entendre.",ok,claude-opus-5-5
+OCE_005,yes,yes,yes,partial,"The quote says pua can poetically refer to children in a Hawaiian song context, but it does not name kaona.",ok,claude-opus-5-5
+T_054,yes,yes,yes,yes,"The quote states that 扇 and 善 are homophones (谐音), so the fan symbolises goodness.",ok,claude-opus-5-5
+T_003,partial,yes,partial,partial,"桜 appears only within 桜肉, defined as horse meat named for its colour, with no game-meat euphemism framing.",ok,claude-opus-5-5
+MAYA_004,no,partial,yes,partial,"The riddle text is not quoted; only the fried-egg answer appears, alongside a general description of the Suywa riddles.",ok,claude-opus-5-5
+EEU_014,no,no,yes,partial,"The quote gives a different obscene Belarusian riddle, not this one.",ok,claude-opus-5-5
+NEU_017,yes,partial,partial,partial,"Dúnadh is defined as ending on the same sound or line, not as semantic equivalence or circular time, and Irish tradition is not named.",ok,claude-opus-5-5
+T_010,yes,partial,partial,no,"The dictionary gives 'infatuated with women' for 乱れる, with no mention of waka or kakekotoba.",ok,claude-opus-5-5
+MET_008,yes,yes,partial,partial,"The Arabic quote explains that the phrase implies generosity through a chain of implication, but kinaya is only discussed separately in another quote.",ok,claude-opus-5-5
+NET_005,yes,partial,partial,partial,"D3 names 5月35日 as a play on the June 4 incident, and D1 mentions netizen code words for June 4, but no quote states that May 35th is such a code word.",ok,claude-opus-5-5
+EEU_008,yes,partial,yes,yes,"The quotes give 'добрый молодец' as a constant epithet of epic heroes meaning brave or physical and moral qualities, not the liminal-status schema.",ok,claude-opus-5-5
+T_014,yes,partial,no,partial,"The dictionary gives 'wrap or surround' rather than 'embrace', and the kakekotoba trope is described only in general, not for this word.",ok,claude-opus-5-5
+T_101,yes,yes,yes,yes,"D3 and D2 describe standing or a moment of silence as a gesture done in mourning, across several countries.",ok,claude-opus-5-5
+SEA_014,yes,yes,yes,yes,D4 says Vietnamese folk songs and poems align con cò with poor farmers dying at the hands of the rich and with toiling women.,ok,claude-opus-5-5
+OCE_008,no,no,partial,partial,"The quote only mentions tuna appearing in whakataukī generally, not this proverb or its meaning.",ok,claude-opus-5-5
+SEA_011,yes,partial,partial,yes,"D2 calls the 'itchy ear' a double-entendre in a Thai song, but does not state the sexual meaning or the luk thung genre.",ok,claude-opus-5-5
+SEA_015,yes,partial,yes,partial,"D2 names Phleng Choi as playful, teasing male-female exchanges, with no explicit erotic or courtship meaning.",ok,claude-opus-5-5
+NEU_012,yes,yes,no,partial,"The list glosses 'battle-sweat' as blood, but names neither the kenning device nor the Anglo-Saxon or Beowulf context.",ok,claude-opus-5-5
+MET_001,yes,yes,yes,partial,"D6 gives spring as a meaning of عين, and tawriya is described, but D5's tawriya example on أعين uses different near and far meanings.",ok,claude-opus-5-5
+MET_007,yes,partial,yes,yes,"D4 names أيادي بيضاء (the plural form) as a kinaya for goodness and peace, which is weaker than generosity.",ok,claude-opus-5-5
+MAYA_001,no,no,partial,partial,Ch'ab ak'ab is never named; the quotes only mention Maya bloodletting in general and describe diphrasis without tying it to this pair.,ok,claude-opus-5-5
+T_041,yes,partial,partial,no,"Affaire is named, but the romantic sense appears only in 'affaire de cœur' (galanterie), and no double entendre is stated.",ok,claude-opus-5-5
+T_002,yes,yes,partial,partial,"紅葉 is glossed as deer meat via its association with deer, but it is not explicitly called a euphemism.",ok,claude-opus-5-5
+T_056,no,yes,yes,yes,"The quotes give the 'many children' reading meaning descendants' prosperity for New Year dishes, but the string 数の子 itself is not quoted.",ok,claude-opus-5-5
+T_001,yes,yes,yes,yes,"牡丹 is called an early-modern 隠語 for boar meat during the meat ban, derived by wordplay on 獅子に牡丹.",ok,claude-opus-5-5
+NET_003,partial,partial,yes,yes,"Unalive, le dollar bean and corn are attested as algospeak to evade moderation; seggs and grape are absent.",ok,claude-opus-5-5
+EEU_009,yes,partial,partial,partial,"руки белые appear under the epithet белый as a universal positive sign, with no class meaning, no bylina and no explicit link to the constant epithet.",ok,claude-opus-5-5
+T_055,no,partial,yes,yes,"The entry gives a まめ pun (diligent, healthy) for New Year food, but 黒豆 is not quoted by name.",ok,claude-opus-5-5
+AFR_015,no,partial,yes,partial,"Akan death euphemisms framed as a journey are attested, but the specific phrases are not named.",ok,claude-opus-5-5
+T_012,yes,yes,yes,yes,"Both dictionaries state that in waka nagame (眺め) is used pivoting (掛けて) on 長雨, long rain.",ok,claude-opus-5-5
+T_072,yes,partial,yes,no,"The phrase is attested in the US as an invitation to sexual dalliance, but the quote does not call it a euphemism.",ok,claude-opus-5-5
+T_034,yes,yes,yes,no,"The saba wind is a messenger bearing messages from the beloved in Hafez and Arabic usage, but īhām is not mentioned.",ok,claude-opus-5-5
+SEA_009,yes,yes,yes,yes,Javanese sasmita in tembang (STM) are embedded syllables or words such as -kur- that signal the meter of the next pupuh.,ok,claude-opus-5-5
+T_075,yes,yes,yes,no,"The dictionary gives the informal English sense of getting someone to have sex, but does not name euphemism.",ok,claude-opus-5-5
+T_042,yes,yes,partial,no,"A French dictionary defines amant as a sexual partner outside marriage, but no double entendre is stated.",ok,claude-opus-5-5
+EEU_012,yes,partial,yes,yes,"Czech pea-throwing to predict children and the Polish pea straw wreath for lost innocence are described, but eating peas as extramarital sex is not.",ok,claude-opus-5-5
+QCH_001,no,no,yes,partial,"Quechua semantic parallelism is described in general, but the host verse and its meaning are absent.",ok,claude-opus-5-5
+SEA_008,yes,partial,partial,partial,"Betel and areca are named as engagement and wedding gifts and as appearing in folk verse, but no conjugal meaning or Vietnamese setting is stated.",ok,claude-opus-5-5
+T_070,yes,yes,yes,no,"The English dictionary sense is to stay overnight and have sex, but euphemism is not named.",ok,claude-opus-5-5
+T_097,yes,yes,partial,partial,"A dictionary gives shaking hands as a gesture showing agreement, but only in English usage, not as a cross-cultural ritual.",ok,claude-opus-5-5
+MET_011,yes,yes,partial,partial,"The quotes give wajh as symbolically referring to God's presence everywhere in an Islamic and Quranic context, but kinaya is never named.",ok,claude-opus-5-5
+T_065,no,yes,yes,yes,"Taro as a New Year symbol of descendants' prosperity is explained by its daughter corms, but 里芋 itself is not named in the quote.",ok,claude-opus-5-5
+T_086,partial,partial,partial,no,"Only variants appear ('crack a coldie', a longer copypasta phrase) about drinking beer with friends, and none is called a euphemism.",ok,claude-opus-5-5
+EEU_011,partial,partial,partial,partial,"Plowing a cabbage field appears inside a Polish riddle called an allegory of coitus, not in folk lyric, and without the full woman-as-field mapping.",ok,claude-opus-5-5
+T_076,yes,yes,yes,partial,"A dictionary glosses 床を共にする alongside 性交, but it is not labelled a euphemism.",ok,claude-opus-5-5
+SEA_013,yes,partial,yes,partial,"The Malay song about the little goat is said by some to be flirtatious, and Malay love metaphors are described but not tied to the goat.",ok,claude-opus-5-5
+T_057,yes,yes,yes,yes,Shrimp is a New Year symbol of longevity because its bent body resembles an old person.,ok,claude-opus-5-5
+T_077,yes,yes,yes,partial,"A dictionary gives 手を出す as 'to have relations with a woman', but does not call it a euphemism.",ok,claude-opus-5-5
+T_058,partial,yes,partial,yes,"Kelp is a pun (語呂合わせ) on よろこぶ for celebrations, but the host appears only within 昆布巻き and New Year is not specified.",ok,claude-opus-5-5
+QCH_004,yes,partial,yes,partial,"Quotes name riddle games among Quechua speakers and link them to sexual development and skill, but never say riddles encode sexual meanings through innocent objects.",ok,claude-opus-5-5
+T_078,yes,yes,yes,partial,"A Japanese web source says the 'line' crossed means a physical relationship, but the quotes do not call the phrase a euphemism.",ok,claude-opus-5-5
+SEA_006,yes,yes,no,partial,"The jackfruit verse is a sexual invitation in the woman's voice, and D1 notes fruit symbols and double entendre, but no quote names Vietnamese Nôm poetry or Ho Xuan Huong.",ok,claude-opus-5-5
+NAH_007,yes,partial,no,partial,"The dictionary glosses the phrase as a reference to warriors and 'something of a metaphor', but Nahuatl and difrasismo are not named.",ok,claude-opus-5-5
+T_087,yes,yes,partial,no,"Wikipedia ties happy hour to discounted drinking and cocktail hours, but does not call it a euphemism.",ok,claude-opus-5-5
+SEA_004,yes,yes,no,partial,"Bunga kiambang is given as a recurring symbol for love that will not take root, but the quoted text does not name Malay pantun.",ok,claude-opus-5-5
+MAYA_006,yes,yes,yes,yes,u-tal-kab is read as an earth-touching metaphor that substitutes for the Classic Maya birth verb siy-.,ok,claude-opus-5-5
+OCE_006,yes,yes,yes,partial,"Sanoe is the Hawaiian word for drifting mist alluding to the lover, tied to the Likelike–Iaukea affair, but kaona is not named.",ok,claude-opus-5-5
+T_039,yes,yes,partial,no,A French dictionary gives the sexual sense of coucher but does not describe it as a double entendre.,ok,claude-opus-5-5
+MAYA_003,yes,partial,partial,yes,"The chhen/actun pair is called a difrasismo in the Cuceb meaning settlements, while only ch'een alone is called an underworld portal.",ok,claude-opus-5-5
+T_102,yes,partial,partial,yes,"Clasped hands in prayer are tied to adoration and loyalty to God, close to but not exactly devotion, and only in Christian and medieval contexts.",ok,claude-opus-5-5
+NEU_009,yes,yes,yes,yes,"Riddle 45 is named, its overt solution is dough, and a woman gripping evokes an erect penis as sexual double entendre among Old English riddles.",ok,claude-opus-5-5
+T_083,yes,yes,yes,partial,"Japanese quotes present お泊り as a smart way to invite sex, but do not call it a euphemism.",ok,claude-opus-5-5
+T_081,yes,yes,yes,partial,"The quote says 大人の関係 is used to express a physical relationship, without naming the euphemistic technique.",ok,claude-opus-5-5
+SEA_001,yes,yes,yes,yes,"Selasih implies lover because it rhymes with kekasih, illustrated in a quoted pantun.",ok,claude-opus-5-5
+AFR_005,yes,yes,partial,no,"Àje is a Yoruba word glossed as witch and female spiritual power, but neither oríkì nor tonal homophony is mentioned.",ok,claude-opus-5-5
+MET_009,yes,yes,partial,partial,"A morning sleeper means a well-off woman in Arabic rhetoric through an inferred figurative meaning, but kinaya is not named.",ok,claude-opus-5-5
+T_071,yes,yes,yes,partial,'Come back to my place' is said to be obviously for sex; the indirect-request framing is attached to 'coffee' rather than this phrase.,ok,claude-opus-5-5
+MET_014,yes,partial,partial,yes,"Rüzgâr is used in both its real sense and the sense of time (not fate or fortune), next to a definition of tevriye that is not explicitly tied to it.",ok,claude-opus-5-5
+T_103,yes,yes,yes,yes,"Salutes are described as a gauge of loyalty and as homage across the US, naval and Nazi contexts.",ok,claude-opus-5-5
+T_019,yes,yes,no,no,"The dictionary entry gives vilāsa as amorous pastime and dalliance, but the quote names neither Sanskrit nor śleṣa.",ok,claude-opus-5-5
+EEU_015,yes,partial,partial,no,"The krasota leaving the bride is linked to her no longer being a maiden, but defloration is not stated, the community is not named and euphemism is not described.",ok,claude-opus-5-5
+NEU_013,yes,partial,partial,partial,"A riddle with the answer 'kaiwo' (well) contains bodily imagery, but no quote states a sexual meaning for it; sexual Finnic riddles are mentioned only in general.",ok,claude-opus-5-5
+T_062,yes,yes,yes,yes,"The web quote says datemaki's scroll-like shape expresses a wish for academic success, and the dictionary places it in New Year cuisine.",ok,claude-opus-5-5
+T_027,yes,partial,partial,partial,"Mastī and wine terms are said to express mystical ideas symbolically in Persian poetry, but spiritual ecstasy and īhām are not stated.",ok,claude-opus-5-5
+T_026,yes,yes,yes,no,"The Persian dictionary glosses sāqī as God giving the wine of love and as the mediator of divine grace, with Hafez named, but īhām is not mentioned.",ok,claude-opus-5-5
+T_043,yes,yes,partial,no,"French sources define galant as a seducer or lover, but double entendre is not mentioned.",ok,claude-opus-5-5
+T_006,partial,partial,partial,no,"Only the longer phrase 夜の営み is given as a euphemism for sex, and kakekotoba is not mentioned.",ok,claude-opus-5-5
+T_090,yes,yes,yes,no,"The Japanese dictionary defines 一杯やる as having a drink, but does not call it a euphemism.",ok,claude-opus-5-5
+AFR_002,no,no,yes,partial,"Qene's hidden meanings and its criticism of authority are described, but hodam and the stated meaning do not appear.",ok,claude-opus-5-5
+MET_013,yes,yes,partial,partial,The quote glosses gülüverdi as both 'güldü' and 'gül verdi' in a Turkish couplet but never names tevriye.,ok,claude-opus-5-5
+T_029,yes,partial,no,no,"The mole is glossed as the point of divine Unity, but the quotes name neither a Persian/Arabic tradition nor īhām.",ok,claude-opus-5-5
+T_099,yes,yes,partial,yes,"Tipping one's hat is described as a cultural gesture of respect and greeting, though not explicitly as cross-cultural.",ok,claude-opus-5-5
+MET_015,yes,yes,partial,partial,The quote glosses kande as 'nerede' and 'kan içinde' in a Turkish verse but never names tevriye.,ok,claude-opus-5-5
+OCE_002,yes,partial,yes,partial,"The quotes give the pursuit story and sexual avoidance, but navigation is stated only for songlines in general, not this one.",ok,claude-opus-5-5
+T_008,yes,partial,no,yes,"Dictionaries give 濡れる as sexual relations and call it a word hung (かけたる) on that meaning, but say nothing of waka, and relations rather than arousal.",ok,claude-opus-5-5
+T_030,yes,partial,no,no,"The rose is called a metaphor and simile for the beloved and her face, but the quotes name neither a Persian tradition nor īhām.",ok,claude-opus-5-5
+NEU_016,yes,no,yes,no,"The birth of fire is named within Kalevala metre, but no quote ties it to shamanic initiation or descent.",ok,claude-opus-5-5
+T_098,yes,yes,partial,yes,"Raising a glass is described as a toast offered at celebrations, without a cross-cultural framing.",ok,claude-opus-5-5
+EEU_013,no,no,yes,partial,"The only quote is a different Belarusian obscene riddle with an innocent answer, not this verse.",ok,claude-opus-5-5
+OCE_003,yes,yes,yes,yes,D2 says that in Hawaiian chant kaona the lehua blossom may refer to a lover or a warrior.,ok,claude-opus-5-5
+AFR_012,yes,partial,yes,yes,"D1 says Mqhayi's praise poem for the Prince of Wales attacks colonial Britain in imbongi style, but it does not mention the oppression of Black South Africans.",ok,claude-opus-5-5
+T_005,yes,partial,partial,no,"The quotes give あふ as the union of man and woman, including in Man'yōshū and Kokinshū verse, but no quote mentions kakekotoba or an explicit sexual sense.",ok,claude-opus-5-5
+NAH_006,yes,yes,yes,yes,"D3 calls in atl in tepetl a difrasismo, water-hill, meaning 'city', equivalent to altepetl.",ok,claude-opus-5-5
+T_100,yes,yes,partial,yes,"D1 says kneeling before a lord suggested servitude and surrender in feudal Europe, and that kneeling conveys deference, but only European and primate contexts are cited.",ok,claude-opus-5-5
+QCH_005,yes,partial,yes,yes,"D1 says the kintu bridges humans with the Apus and Pachamama and that its leaves represent the three worlds, but it does not call it a covert prayer.",ok,claude-opus-5-5
+NEU_018,yes,partial,no,no,"The poem text sets the cat's hunting beside the scholar's craft, but no quote interprets this, places it in an Irish setting or mentions dúnad.",ok,claude-opus-5-5
+NAH_008,yes,partial,yes,no,"D3, a Nahuatl source, says the phrase was used of someone who could keep a secret, but no quote calls it a difrasismo.",ok,claude-opus-5-5
+OCE_007,yes,partial,yes,yes,"D5 gives the Māori proverb with its literal sense, but no quote ties it to legal arguments over land alienation.",ok,claude-opus-5-5
+NET_006,yes,yes,yes,yes,"D1 and D4 say 304 read upside down on a calculator spells 'hoe', internet slang for a promiscuous woman.",ok,claude-opus-5-5
+MET_003,no,no,no,partial,"The quote describes al-Qazwini's definition of a pun with an immediate and a remote meaning, but never names karākī or its meanings.",ok,claude-opus-5-5
+T_018,yes,partial,partial,no,"Rasa is defined as aesthetic sentiment and śṛṅgāra is the erotic rasa in the Nāṭyaśāstra, but no quote mentions śleṣa wordplay giving rasa an erotic sense.",ok,claude-opus-5-5
+EEU_006,yes,partial,partial,no,"Mati Syra Zemlya is called an East Slavic earth deity and linked to a bogatyr, but there is nothing on the oath or fertility aspects or on the constant epithet.",ok,claude-opus-5-5
+T_084,yes,partial,yes,no,"It is defined as an English (UK/US) idiom meaning to go for or have a drink, but is not described as a euphemism.",ok,claude-opus-5-5

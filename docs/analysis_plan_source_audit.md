@@ -163,3 +163,13 @@ meaning.
   archive.org had answered 429 on 2026-10-25): 5 had no capture; for the other 4 (NAH_004/3, MET_007/1, MET_009/3,
   SEA_008/2) archive.org answered HTTP 429 when the capture was requested, again after 90 seconds. Not tried further.
 - No document changed, so no item was judged again. Every request is in the attempt logs.
+
+### Retrieval again, second run, and components (2026-11-01)
+
+- The same 7 rows were requested once more from the same URL: all failed again with the same kind of error. The
+  4 Wayback captures that archive.org had refused (HTTP 429) were requested once more: 429 again. Not tried further.
+  No document changed, so no item was judged again.
+- The components were then judged on this input by the three coders (`audit/runs/judge_components_<model>.*`):
+  214 items sent, 3 not sent (no quote), no refusals. Tallies by `analysis/analyze_components.py` →
+  `results/audit_components.{csv,json,md}`. Three items sent have the majority label `no_evidence` (their quotes
+  were judged not relevant); they are kept in the tallies under that label.

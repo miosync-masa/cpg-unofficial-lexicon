@@ -1,0 +1,84 @@
+{
+ "n_sent": 214,
+ "n_no_evidence": 3,
+ "components": {
+  "H": {
+   "yes": 170,
+   "partial": 9,
+   "no": 30,
+   "UNRESOLVED": 5
+  },
+  "M": {
+   "yes": 118,
+   "partial": 72,
+   "no": 21,
+   "UNRESOLVED": 3
+  },
+  "C_community": {
+   "yes": 98,
+   "partial": 73,
+   "no": 35,
+   "UNRESOLVED": 8
+  },
+  "C_device": {
+   "yes": 80,
+   "partial": 58,
+   "no": 70,
+   "UNRESOLVED": 6
+  }
+ },
+ "codes": {
+  "missing_H": 30,
+  "other_form": 9,
+  "missing_M": 21,
+  "partial_M": 72,
+  "missing_C_device": 128,
+  "missing_C_community": 35
+ },
+ "codes_by_label": {
+  "missing_H": {
+   "supported": 9,
+   "partly": 19,
+   "contradicted": 0,
+   "no_evidence": 2
+  },
+  "other_form": {
+   "supported": 4,
+   "partly": 5,
+   "contradicted": 0,
+   "no_evidence": 0
+  },
+  "missing_M": {
+   "supported": 0,
+   "partly": 18,
+   "contradicted": 0,
+   "no_evidence": 3
+  },
+  "partial_M": {
+   "supported": 26,
+   "partly": 43,
+   "contradicted": 3,
+   "no_evidence": 0
+  },
+  "missing_C_device": {
+   "supported": 67,
+   "partly": 57,
+   "contradicted": 1,
+   "no_evidence": 3
+  },
+  "missing_C_community": {
+   "supported": 20,
+   "partly": 13,
+   "contradicted": 1,
+   "no_evidence": 1
+  }
+ },
+ "n_without_code": 47,
+ "n_by_label": {
+  "supported": 135,
+  "partly": 73,
+  "contradicted": 3,
+  "no_evidence": 3
+ },
+ "n_label_other": 0
+}
