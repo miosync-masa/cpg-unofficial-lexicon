@@ -109,3 +109,29 @@ Because the models differ in cosine scale, models are compared by % positive and
 - Counts reconcile: items analysed = 213 minus `UNRESOLVED` labels, stated explicitly.
 - Every number in the report is produced by the analysis script; no hand-typed statistics.
 - Scripts rerun end to end give identical outputs (fixed seeds; the LLM calls are not rerun for this check).
+
+## Sensitivity: H1 and H2 in condition U for all three models (added 2026-11-03, before the run)
+
+This section was written and committed before the analysis below was run.
+
+**Why.** The analysis in section 6 used two kinds of pull. For OpenAI it used `pull_index`, the pull stored by the
+earlier pipeline (the host as embedded there, often romanised or with a gloss). For bge-m3 and gemini it used
+`pull_bge_B` and `pull_gem_B`, the condition-U pulls (in the files: condition B, `pull_B_k10` of
+`embeddings/scripts/nnpm_replicate.py`: the host as `host_original`, the stored controls, k = 10). A reviewer pointed
+out that the three models were therefore not given the same host strings. This analysis gives all three the same
+condition.
+
+**What changes.** Only the pull columns: `pull_B_k10` from `embeddings/results/nnpm_<model>.csv` for the three
+models. For bge-m3 and gemini these are the values already used (the script checks that they are equal), so only the
+OpenAI column changes.
+
+**What stays the same.** The items (213 with pulls), the consensus labels, steps 1–4 of section 6, the sensitivity
+subset of step 5 (unanimous `recording_status`), Holm across the three models, and the decision rules for H1 and H2
+in `analysis/analyze_recording.py`. No hypothesis is added or changed.
+
+**Report.** The verdicts of H1 and H2 next to those of section 6, for the majority labels and for the unanimous
+subset; every change of verdict is named. The analysis of section 6 stays the main analysis; this one is a
+sensitivity analysis.
+
+**Script and output.** `analysis/analyze_recording.py` writes `results/recording_conditionU.json` and
+`results/recording_conditionU.md`; its other outputs do not change.
