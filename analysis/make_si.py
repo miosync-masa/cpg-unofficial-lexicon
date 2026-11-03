@@ -631,9 +631,18 @@ t_str = table("S3_dictionary_daijisen", "tab:S3-daijisen-strict",
               f"itself). Agreement {p_str}\\%, Cohen's $\\kappa$ = {k_str}",
               ["dictionary_check/daijisen_judgments.csv", "coding/results/recording/recording_consensus.csv"],
               ["Daijisen"] + LLMH + ["Total"], xtab_rows(str_, llm, RB, LLM2), colspec="lrrr", midrules=(2,))
-write_tables("S3_dictionary_daijisen", [t_len, t_str],
+sn_ = np.where(dj["判定"].isin(["番号つきの語義", "補説・用例"]), "recorded", "not recorded")
+p_sn = f_dec(100 * np.mean(sn_ == llm_b), 1)
+k_sn = f_dec(cohen(sn_, llm_b), 2)
+t_sn = table("S3_dictionary_daijisen", "tab:S3-daijisen-sense-or-note",
+             "As the first table, broadest criterion (recorded = a numbered sense, or the covert meaning in a "
+             f"supplementary note or an example, \\ja{{補説・用例}}). Agreement {p_sn}\\%, Cohen's $\\kappa$ = {k_sn}",
              ["dictionary_check/daijisen_judgments.csv", "coding/results/recording/recording_consensus.csv"],
-             "crosstabs recomputed; agreement and kappa checked against PdictAgree*, Kdict*; no dictionary text")
+             ["Daijisen"] + LLMH + ["Total"], xtab_rows(sn_, llm, RB, LLM2), colspec="lrrr", midrules=(2,))
+write_tables("S3_dictionary_daijisen", [t_len, t_str, t_sn],
+             ["dictionary_check/daijisen_judgments.csv", "coding/results/recording/recording_consensus.csv"],
+             "crosstabs recomputed; agreement and kappa checked against PdictAgree*, Kdict* (the third criterion has "
+             "no macro); no dictionary text")
 
 sk = read_csv("dictionary_check/sankoku_judgments.csv", dtype=str).fillna("")
 sk = sk[sk["三国_掲載"] != ""]
@@ -761,14 +770,16 @@ for h in ["H-C1", "H-C2"]:
         r = tb["condition_C_reference"][h][tag]
         k = [k for k, (t, n) in EMB.items() if t == tag][0]
         pre = {"H-C1": "HCone", "H-C2": "HCtwo"}[h]
-        rows.append(["C", h, name, str(r["n"]), str(r["n_traditions"]), f4(r["intercept"], 3), mac(f"{pre}CI{k}"),
+        rows.append(["C", h, name, str(r["n"]), str(r["n_traditions"]), same(f4(r["intercept"], 3), f"{pre}B{k}"),
+                     mac(f"{pre}CI{k}"),
                      same(f_dec(r["z"], 2), f"{pre}Z{k}"), p_mac(f"{pre}P{k}")])
 for r in tb["rows"]:
     k = [k for k, (t, n) in EMB.items() if t == r["model"]][0]
     pre = {"H-D1": "HDone", "H-D2": "HDtwo", "H-E1": "HEone", "H-E2": "HEtwo"}[r["hypothesis"]]
     ci = mac(f"{pre}CI{k}")
     rows.append([r["condition"], r["hypothesis"], EMB_BY_TAG[r["model"]], str(r["n"]), str(r["n_groups"]),
-                 f4(r["intercept"], 3), ci, same(f_dec(r["z"], 2), f"{pre}Z{k}"), p_mac(f"{pre}P{k}")])
+                 same(f4(r["intercept"], 3), f"{pre}B{k}"), ci, same(f_dec(r["z"], 2), f"{pre}Z{k}"),
+                 p_mac(f"{pre}P{k}")])
 write_tables("S4_conditions_D_E", [table(
     "S4_conditions_D_E", "tab:S4-conditions",
     "Intercepts of the pull under the three kinds of control words: C (LLM, covert target excluded), D (LLM, "
@@ -779,8 +790,8 @@ write_tables("S4_conditions_D_E", [table(
     ["results/target_blind_controls.json"], ["Cond.", "Hyp.", "Model", "n", "Trad.", "Intercept", "95\\% CI", "z",
                                              "p (Holm)"], rows,
     colspec="llp{0.2\\linewidth}rrrlrr", size=r"\footnotesize", midrules=tuple(range(3, len(rows), 3)))],
-    ["results/target_blind_controls.json"], "condition_C_reference and rows; CI, z and p checked against the HC*/HD*/HE* "
-    "macros")
+    ["results/target_blind_controls.json"], "condition_C_reference and rows; intercept, CI, z and p checked against the "
+    "HC*/HD*/HE* macros")
 
 ms5 = load_unrounded("results/model_size_e5.json", "results/model_size_e5_unrounded.json")
 parts = []
@@ -816,6 +827,299 @@ for cond in ["C", "D"]:
 write_tables("S4_model_size", parts, ["results/model_size_e5.json", "results/model_size_e5_unrounded.json"],
              "per_size, reference_earlier_models, H-S1, H-S2 from the unrounded results (checked against the stored "
              "ones); parameters, d and H-S values checked against the Pe*, De*, HSone*, HStwo* macros")
+
+
+# ------------------------------------------------------------------ S4 additions (review, 2026-11-03)
+from statsmodels.stats.multitest import multipletests
+
+
+def holm(ps):
+    return [float(a) for a in multipletests(ps, method="holm")[1]]
+
+
+FEWER = []   # cells of values stored with 4 decimals shown with other decimals because the storage fixes no more
+
+
+def fixed(ends, places, alt):
+    """the value at `places` decimals if every possible unrounded value gives it, else at `alt` decimals (checked)"""
+    for pl in (places, alt):
+        if len({hu(e, pl) for e in ends}) == 1:
+            if pl != places:
+                FEWER.append(pl)
+            return f_dec(ends[0], pl) + ("$^\\ddagger$" if pl != places else "")
+    raise AssertionError(f"not fixed at {places} or {alt} decimals: {ends}")
+
+
+def ci_stored(b, se):
+    """95% CI b +- 1.96 SE from b and SE stored with 4 decimals: 3 decimals where the storage fixes them, else 2"""
+    bounds = []
+    for sign in (-1, 1):
+        ends = [b + sign * 1.96 * se] + [b + db + sign * 1.96 * (se + ds) for db in (-5e-5, 5e-5) for ds in (-5e-5, 5e-5)]
+        bounds.append(fixed(ends, 3, 2))
+    return f"[{bounds[0]}, {bounds[1]}]"
+
+
+def z_stored(z):
+    """z stored with 4 decimals: 2 decimals unless the stored value is half-way, then 3 (fixed by the storage)"""
+    return fixed([z, z - 5e-5, z + 5e-5], 2, 3)
+
+
+T1SRC = ["results/t1_results.json", "results/t1_results_unrounded.json"]
+t1u = load_unrounded(*T1SRC)
+KEY = {t: k for k, (t, n) in EMB.items()}
+HPRE = {"H-C1": "HCone", "H-C2": "HCtwo"}
+
+# before and after the decisions of 2026-10-22
+pre_h = load("results/before_decisions_2026-10-22/t1_results.json")["hypotheses"]
+fr = load("results/final_results.json")
+ba = fr["hypotheses_before_after_decisions"]
+rows = []
+for h in ["H-C1", "H-C2"]:
+    for phase in ["before", "after"]:
+        for i, (tag, name) in enumerate(EMB.values()):
+            k = KEY[tag]
+            st = ba[h][phase]["per_model"][tag]
+            if phase == "before":
+                r = pre_h[h]["per_model"][tag]
+                assert (r["n"], r["z"], r["p_holm"]) == (st["n"], st["z"], st["p_holm"]), (h, tag)
+                if h == "H-C1":
+                    assert f_int(r["n"]) == mac("NkTenPre") and f4(r["z"], 2) == mac(f"HConeZ{k}Pre")
+                cells = [f4(r["intercept"], 3), ci_stored(r["intercept"], r["se"]), z_stored(r["z"]),
+                         p_cell(r["p_holm"], 4)]
+            else:
+                r = t1u["hypotheses"][h]["per_model"][tag]
+                assert (r["n"], round(r["z"], 4), round(r["p_holm"], 4)) == (st["n"], st["z"], st["p_holm"])
+                pre = HPRE[h]
+                assert f_ci(r["intercept"] - 1.96 * r["se"], r["intercept"] + 1.96 * r["se"]) == mac(f"{pre}CI{k}")
+                cells = [same(f_dec(r["intercept"], 3), f"{pre}B{k}"), mac(f"{pre}CI{k}"),
+                         same(f_dec(r["z"], 2), f"{pre}Z{k}"), p_mac(f"{pre}P{k}")]
+            v = ba[h][phase]
+            rows.append([h if i == 0 else "", phase if i == 0 else "", name, str(r["n"]), str(r["n_traditions"])]
+                        + cells + [f"{v['verdict']} ({v['n_models_holm_p05']}/3)" if i == 0 else ""])
+assert not ba["H-C1"]["verdict_changed"] and not ba["H-C2"]["verdict_changed"]
+write_tables("S4_before_after_decisions", [table(
+    "S4_before_after_decisions", "tab:S4-before-after",
+    "H-C1 and H-C2 (condition C, k = 10) before and after the author's decisions of 2026-10-22 (exclusions, "
+    "adoption of the first form, the scope set by form\\_type). The decisions were taken after the first results "
+    "had been seen. Mixed model pull $\\sim$ 1 + (1 | tradition), REML; 95\\% CI = intercept $\\pm$ 1.96 SE; "
+    "one-sided p, Holm across the three models; supported if all three models have p $<$ .05",
+    ["results/final_results.json", "results/before_decisions_2026-10-22/t1_results.json", "results/t1_results.json"],
+    ["Hyp.", "Results", "Model", "n", "Trad.", "Intercept", "95\\% CI", "z", "p (Holm)", "Verdict"], rows,
+    colspec="llp{0.19\\linewidth}rrrlrrl", size=r"\footnotesize", midrules=tuple(range(3, len(rows), 3)),
+    notes=["Before: the results file fixed before the decisions (intercept, SE and z stored with 4 decimals; no "
+           "unrounded results exist). After: the main analysis (the values of the main text)."]
+    + (["$^\\ddagger$ The stored values fix this value only at the number of decimals shown."] if FEWER else []))],
+    ["results/final_results.json", "results/before_decisions_2026-10-22/t1_results.json"] + T1SRC,
+    "hypotheses_before_after_decisions; before from the fixed file (4 decimals; CI bounds checked to be fixed at 3 "
+    "decimals), after from the unrounded results and checked against the HCone*/HCtwo* macros")
+
+# k = all, 3, 5, 10
+KS = [("10 (main)", lambda a: a["B_vs_C"]["C_k10_main"], "k10"), ("3", lambda a: a["sensitivity"]["k3_main"], "k3"),
+      ("5", lambda a: a["sensitivity"]["k5_main"], "k5"), ("all kept", lambda a: a["sensitivity"]["kall_main"], "kall")]
+rows = []
+for lab, get, fk in KS:
+    rs = [get(t1u["analyses"][tag]) for tag, _ in EMB.values()]
+    adj = holm([r["mixed"]["p_one_sided"] for r in rs])
+    for i, ((tag, name), r, a) in enumerate(zip(EMB.values(), rs, adj)):
+        k, mx = KEY[tag], r["mixed"]
+        st = fr["tests"]["all_main"][fk]["per_model"][k]
+        assert (mx["n"], round(mx["z"], 4), round(a, 4)) == (st["n"], st["z"], st["p_holm"]), (fk, k)
+        ci = f_ci(mx["intercept"] - 1.96 * mx["se"], mx["intercept"] + 1.96 * mx["se"])
+        if fk == "k10":
+            assert ci == mac(f"HConeCI{k}") and f_p(a) == mac(f"HConeP{k}")
+            same(f_dec(mx["intercept"], 3), f"HConeB{k}")
+        rows.append([lab if i == 0 else "", name, str(r["n"]), str(mx["n_traditions"]), f_dec(r["mean"], 3),
+                     f"{r['pct_positive']:.1f}", f_dec(mx["intercept"], 3), ci, f_dec(mx["z"], 2), p_cell(a)])
+write_tables("S4_k_sensitivity", [table(
+    "S4_k_sensitivity", "tab:S4-k",
+    "H-C1 (condition C, main set) with the pull computed from the first k kept controls. k = 10 is the main analysis "
+    "(fixed in advance; only items with all ten controls kept); k = 3, 5 and all kept controls (up to ten) use every "
+    "main-set item with at least that many. Mean and \\% $>$ 0 over the items; mixed model pull $\\sim$ 1 + "
+    "(1 | tradition), REML; 95\\% CI = intercept $\\pm$ 1.96 SE; one-sided p, Holm across the three models",
+    ["results/t1_results.json", "results/final_results.json"],
+    ["k", "Model", "n", "Trad.", "Mean", "\\% $>$ 0", "Intercept", "95\\% CI", "z", "p (Holm)"], rows,
+    colspec="lp{0.19\\linewidth}rrrrrlrr", size=r"\footnotesize", midrules=tuple(range(3, len(rows), 3)))],
+    T1SRC + ["results/final_results.json"], "analyses.*.B_vs_C.C_k10_main and sensitivity.k3/k5/kall_main from the "
+    "unrounded results; Holm recomputed and checked against final_results.json tests.all_main; k = 10 checked against "
+    "the HCone* macros")
+
+# hosts: condition U (host_original) against condition C (clean_host), 213 items with controls
+GLOSS = re.compile(r"[(（]|\s—\s")
+
+
+def strip_gloss(s):
+    return re.sub(r"\s+—\s.*$", "", re.sub(r"\s*[(（][^)）]*[)）]", "", s)).strip()
+
+
+def host_change(r):
+    h, c = r.host_original, r.clean_host
+    if h == c:
+        return "same"
+    if r.clean_host_source == "first_form_T3":
+        return "first_form"
+    if strip_gloss(h) == c:
+        return "gloss"
+    if c in [strip_gloss(p) for p in re.split(r"\s*/\s*", h)] + [p.strip() for p in re.split(r"\s*/\s*", strip_gloss(h))]:
+        return "one_form"
+    if re.sub(r"[\s/]+", "", h).casefold() == re.sub(r"[\s/]+", "", c).casefold():
+        return "layout"
+    return "other"
+
+
+hb = read_csv("embeddings/results/nnpm_text_embedding_3_large.csv").rename(columns={"id": "item_id"})
+hc = read_csv("embeddings/controls/clean_hosts.csv", dtype=str)
+for tag, _ in EMB.values():   # the same host strings in the three models
+    assert (read_csv(f"embeddings/results/nnpm_{tag}.csv").host_original.values == hb.host_original.values).all()
+    cc = read_csv(f"embeddings/results/nnpm_C_{tag}.csv").set_index("item_id").clean_host
+    assert (cc == hc.set_index("item_id").clean_host.reindex(cc.index)).all()
+hx = hb.merge(hc, on="item_id")
+assert len(hx) == 213
+hx["change"] = hx.apply(host_change, axis=1)
+HCH = hx.change.value_counts().to_dict()
+N_GLOSS_U = int(hx.host_original.str.contains(GLOSS).sum())
+OTHER_IDS = sorted(hx[hx.change == "other"].item_id)
+excl_ids = set(read_csv("data/exclusions.csv").item_id)
+
+# condition U, H-C1-type test
+BLK = [("all items after the exclusions", lambda a: a["B_vs_C"]["B_k10_all_after_T3"]),
+       ("main-set items (as H-C1)", lambda a: a["B_vs_C"]["same_items"]["B_k10"])]
+rows = []
+for lab, get in BLK:
+    rs = [get(t1u["analyses"][tag]) for tag, _ in EMB.values()]
+    adj = holm([r["mixed"]["p_one_sided"] for r in rs])
+    for i, ((tag, name), r, a) in enumerate(zip(EMB.values(), rs, adj)):
+        mx = r["mixed"]
+        if lab.startswith("main"):
+            same(f_dec(r["mean"], 3), f"MeanBsame{KEY[tag].capitalize()}")
+        rows.append([lab if i == 0 else "", name, str(r["n"]), str(mx["n_traditions"]), f_dec(r["mean"], 3),
+                     f"{r['pct_positive']:.1f}", f_dec(mx["intercept"], 3),
+                     f_ci(mx["intercept"] - 1.96 * mx["se"], mx["intercept"] + 1.96 * mx["se"]), f_dec(mx["z"], 2),
+                     p_cell(a)])
+n_u_excl = int(hx.item_id.isin(excl_ids).sum())
+write_tables("S4_condition_U", [table(
+    "S4_condition_U", "tab:S4-condition-U",
+    "The H-C1 test in condition U: the host as stored (host\\_original), the stored controls, the first ten "
+    f"(pull\\_B\\_k10). All items: the {213 - n_u_excl} items with stored controls that remain after the exclusions "
+    "(low\\_control items included); main-set items: the items of the H-C1 test. Mixed model pull $\\sim$ 1 + "
+    "(1 | tradition), REML; 95\\% CI = intercept $\\pm$ 1.96 SE; one-sided p, Holm across the three models",
+    ["results/t1_results.json"],
+    ["Items", "Model", "n", "Trad.", "Mean", "\\% $>$ 0", "Intercept", "95\\% CI", "z", "p (Holm)"], rows,
+    colspec="p{0.15\\linewidth}p{0.19\\linewidth}rrrrrlrr", size=r"\footnotesize", midrules=(3,),
+    notes=[f"In {N_GLOSS_U} of the 213 items with stored controls, the stored host string of condition U contains an "
+           "explanation in parentheses or after a dash (S5, Table~\\ref{tab:S5-inputs})."])],
+    T1SRC + ["embeddings/results/nnpm_text_embedding_3_large.csv"],
+    "analyses.*.B_vs_C (B_k10_all_after_T3, same_items.B_k10) from the unrounded results; Holm recomputed; main-set "
+    "means checked against MeanBsame*")
+
+# direction and primary channel (main set)
+rows, mids = [], []
+for var, lab in [("direction", "Direction"), ("primary_channel", "Primary channel")]:
+    levels = sorted({lv for tag, _ in EMB.values() for lv, g in t1u["analyses"][tag][f"by_{var}"].items() if g["n"]},
+                    key=lambda lv: (lv == "UNRESOLVED", lv))
+    if rows:
+        mids.append(len(rows))
+    for j, lv in enumerate(levels):
+        gs = [t1u["analyses"][tag][f"by_{var}"][lv] for tag, _ in EMB.values()]
+        assert len({g["n"] for g in gs}) == 1
+        rows.append([lab if j == 0 else "", tex(lv), str(gs[0]["n"])]
+                    + [f"{f_dec(g['mean'], 3)} ({g['pct_positive']:.1f})" for g in gs])
+write_tables("S4_direction_channel", [table(
+    "S4_direction_channel", "tab:S4-direction-channel",
+    "Mean pull (condition C, k = 10, main set) by the first-run consensus direction (R, E, S) and primary channel "
+    "(codebook in S2), with the \\% of items with pull $>$ 0 in parentheses. Descriptive only",
+    ["results/t1_results.json"],
+    ["Variable", "Level", "n"] + [n for _, n in EMB.values()], rows,
+    colspec="llrp{0.19\\linewidth}p{0.19\\linewidth}p{0.19\\linewidth}", size=r"\footnotesize", midrules=tuple(mids))],
+    T1SRC, "analyses.*.by_direction, by_primary_channel from the unrounded results")
+
+# traditions (main set)
+itf = read_csv("results/items_final.csv")
+ms = itf[(itf.low_control == 0) & itf.pull_C_k10_oai.notna()]
+assert f_int(len(ms)) == mac("NkTen") and not ms.item_id.isin(excl_ids).any()
+assert ms.groupby("tradition").tradition_pipeline.nunique().max() == 1
+assert ms.groupby("tradition_pipeline").tradition.nunique().max() == 1
+tested = {tag: {r["tradition"]: r for r in t1u["analyses"][tag]["by_tradition_n3"]["rows"]} for tag, _ in EMB.values()}
+rows = []
+for tr, g in sorted(ms.groupby("tradition"), key=lambda x: (-len(x[1]), x[0].casefold())):
+    tp = g.tradition_pipeline.iloc[0]
+    cells = []
+    for tag, _ in EMB.values():
+        x = g[f"pull_C_k10_{KEY[tag]}"]
+        if tp in tested[tag]:
+            assert len(x) == tested[tag][tp]["n"] and abs(x.mean() - tested[tag][tp]["mean"]) < 1e-12
+        cells.append(f_dec(x.mean(), 3))
+    tests = [f"{p_cell(tested[tag][tp]['p_one_sided'])} ({p_cell(tested[tag][tp]['q_bh'])})" if tp in tested[tag]
+             else "--" for tag, _ in EMB.values()]
+    rows.append([tex(tr), str(len(g))] + cells + tests)
+assert all(len(tested[tag]) == sum(len(g) >= 3 for _, g in ms.groupby("tradition")) for tag, _ in EMB.values())
+assert len(rows) == ms.tradition.nunique() == t1u["hypotheses"]["H-C1"]["per_model"]["text_embedding_3_large"]["n_traditions"]
+summ_t = "; ".join(f"{n}: {b['tested']} tested, {b['p05']} with p $<$ .05, {b['bh_q05']} with q $<$ .05"
+                   for (tag, n), b in zip(EMB.values(), [t1u["analyses"][t]["by_tradition_n3"] for t, _ in EMB.values()]))
+SH = {"oai": "OpenAI", "bge": "bge-m3", "gem": "Gemini"}
+write_tables("S4_traditions", [table(
+    "S4_traditions", "tab:S4-traditions",
+    f"Mean pull by tradition (condition C, k = 10, main set; {len(rows)} traditions, published labels). Traditions "
+    "with at least three items were tested one by one: one-sided one-sample t test, p with the Benjamini--Hochberg q "
+    "across the tested traditions of the model in parentheses",
+    ["results/t1_results.json", "results/items_final.csv"],
+    ["Tradition", "n"] + [f"Mean {SH[k]}" for k in EMB] + [f"p (q) {SH[k]}" for k in EMB], rows,
+    colspec="p{0.27\\linewidth}rrrrlll", long=True, size=r"\scriptsize",
+    notes=[f"Tests: {summ_t}. The q values were computed from the p values as stored (4 decimals)."])],
+    T1SRC + ["results/items_final.csv"], "means recomputed from items_final.csv (checked against the tested rows); "
+    "tests = analyses.*.by_tradition_n3 from the unrounded results")
+
+# H1 and H2 in condition U (sensitivity, plan of 2026-11-03)
+ru = load_unrounded("results/recording_conditionU.json", "results/recording_conditionU_unrounded.json")
+rm = load("results/recording_results.json")
+UC = {"pull_oai_U": EMB["oai"][1], "pull_bge_U": EMB["bge"][1], "pull_gem_U": EMB["gem"][1]}
+LABS = [("majority", "main", "verdicts_main"), ("unanimous", "sensitivity_unanimous", "verdicts_sensitivity")]
+h1rows, h2rows = [], []
+yn = lambda b: "yes" if b else "no"
+d4 = lambda x, pl=3: "--" if x is None else f_dec(x, pl)
+p4 = lambda p: "--" if p is None else p_cell(p)
+for lab, blk, vk in LABS:
+    for i, (col, name) in enumerate(UC.items()):
+        t, v1 = ru[blk][col]["trend"], ru[vk]["H1"]["per_model"][col]
+        h1rows.append([lab if i == 0 else "", name, str(ru[blk][col]["n_existing_resolved"]),
+                       f"{d4(t['slope'])} ({d4(t['se'])})", p4(t["p_one_sided"]), p4(v1["trend_p_holm"]),
+                       yn(v1["order_ok"]), yn(v1["all_groups_positive"]), yn(v1["passes"])])
+        h2, v2 = ru[blk][col]["h2_unrecorded_existing"], ru[vk]["H2"]["per_model"][col]
+        h2rows.append([lab if i == 0 else "", name, str(h2["n"]), str(h2["n_traditions"]), d4(h2["mean"]),
+                       f"{h2['pct_positive']:.1f}", f"{d4(h2.get('mixed_intercept'))} ({d4(h2.get('mixed_se'))})",
+                       p4(h2.get("p_mixed_one_sided")), p4(v2["p_holm"])])
+nose = [(lab, UC[col], ru[blk][col]["h2_unrecorded_existing"]) for lab, blk, _ in LABS for col in UC
+        if ru[blk][col]["h2_unrecorded_existing"].get("mixed_se") is None]
+NOSE = "".join(f"--: {name}, {lab} labels: the mixed model gave no standard error ({h['n']} items, {h['n_traditions']} "
+               "traditions), so it has no p and Holm runs over the other two models. " for lab, name, h in nose).strip()
+vline = lambda h, key: "; ".join(
+    f"{lab}: {rm[vk][h]['verdict']} ({rm[vk][h][key]}/3) $\\to$ {ru[vk][h]['verdict']} ({ru[vk][h][key]}/3)"
+    for lab, _, vk in LABS)
+assert ru["openai_main_vs_U"]["n_identical"] == 0
+RSRC = ["results/recording_conditionU.json", "results/recording_results.json"]
+RSRC_M = RSRC + ["results/recording_conditionU_unrounded.json"]
+CAPU = ("in condition U for all three models (pull\\_B\\_k10: the host as stored, the stored controls, the first "
+        "ten; sensitivity analysis fixed on 2026-11-03 before it was run). The main analysis used, for OpenAI, the "
+        "pull of the earlier pipeline. Items on an existing form with a resolved recording status; majority labels "
+        "and the subset on which all three coders agree")
+write_tables("S4_H1H2_conditionU", [
+    table("S4_H1H2_conditionU", "tab:S4-H1-U",
+          "H1 (recording gradient) " + CAPU + ". Trend: mixed model pull $\\sim$ level + (1 | tradition) with "
+          "unrecorded = 0, cultural reference = 1, general dictionary = 2; one-sided p, Holm across the three models. "
+          "A model passes if the trend is positive with Holm p $<$ .05, the means are ordered and every group mean is "
+          "above 0 (one-sided t, p $<$ .05)", RSRC,
+          ["Labels", "Model", "n", "Slope (SE)", "p", "p (Holm)", "Ordered", "All $>$ 0", "Passes"], h1rows,
+          colspec="lp{0.19\\linewidth}rlrrlll", size=r"\footnotesize", midrules=(3,),
+          notes=["Verdict, main analysis $\\to$ condition U (models passing): " + vline("H1", "models_passing") + "."]),
+    table("S4_H1H2_conditionU", "tab:S4-H2-U",
+          "H2 (unrecorded items have pull $>$ 0) " + CAPU + ". Mixed model pull $\\sim$ 1 + (1 | tradition) on the "
+          "unrecorded items; one-sided p, Holm across the models with a result; supported if two or more models have "
+          "Holm p $<$ .05", RSRC,
+          ["Labels", "Model", "n", "Trad.", "Mean", "\\% $>$ 0", "Intercept (SE)", "p", "p (Holm)"], h2rows,
+          colspec="lp{0.19\\linewidth}rrrrlrr", size=r"\footnotesize", midrules=(3,),
+          notes=["Verdict, main analysis $\\to$ condition U (models with Holm p $<$ .05): "
+                 + vline("H2", "models_sig_holm") + ". " + NOSE])],
+    RSRC_M, "recording_conditionU from the unrounded results (checked against the stored ones) and the verdicts of "
+    "recording_results.json")
 
 
 # ================================================================== S5 models and settings
@@ -906,6 +1210,70 @@ write_tables("S5_models", [table(
     ["embeddings/results/logs/controls_D.jsonl", "embeddings/results/bge_m3_meta.json", "results/model_size_e5.json",
      "dictionary_check/daijisen_judgments.csv", "legacy/v1_submission/scripts/archaeology/cpg_archaeology.py"],
     "settings from the scripts and logs (temperature_applied, max_tokens); dates = min to max of the logged times")
+
+
+# analysis inputs: host string, controls and columns per analysis
+oai_b = read_csv("embeddings/results/nnpm_text_embedding_3_large.csv").rename(columns={"id": "item_id"})
+iw = read_csv("results/items_with_consensus.csv").merge(oai_b[["item_id", "pull_openai", "pull_B_k10"]], on="item_id")
+assert len(iw) == 213 and (iw.pull_index == iw.pull_openai).all()
+dif = (iw.pull_index - iw.pull_B_k10).abs()
+n_same3 = int((iw.pull_index.map(lambda x: hu(x, 3)) == iw.pull_B_k10.map(lambda x: hu(x, 3))).sum())
+for col, tag in [("pull_bge_B", "BAAI_bge_m3"), ("pull_gem_B", "gemini_embedding_001")]:
+    b = read_csv(f"embeddings/results/nnpm_{tag}.csv").rename(columns={"id": "item_id"})
+    assert (iw[["item_id", col]].merge(b[["item_id", "pull_B_k10"]], on="item_id").pipe(
+        lambda x: x[col] == x.pull_B_k10)).all()
+HOST = {"C": "checked host (clean\\_host: the coders' majority form; first form where the author adopted it)",
+        "U": "host as stored (host\\_original: original script; may contain an explanation)",
+        "A": "host as embedded by the earlier pipeline (host\\_pipeline: often romanised, sometimes with a gloss)"}
+CTRL = {"S": "stored controls, first ten", "C": "stored controls cleaned by R1--R4, first ten kept",
+        "D": "controls generated without the covert target (condition D), cleaned, first ten kept",
+        "E": "nearest vocabulary words in the model's space (condition E), cleaned, first ten kept"}
+FILES = {"C": "nnpm\\_C\\_$\\langle$model$\\rangle$.csv", "U": "nnpm\\_$\\langle$model$\\rangle$.csv", "DE": "nnpm\\_DE\\_$\\langle$model$\\rangle$.csv"}
+rows = [
+    ["H-C1, H-C2 (main analysis)", HOST["C"], CTRL["C"], "pull\\_C\\_k10 (" + FILES["C"] + ")"],
+    ["k sensitivity", HOST["C"], "as H-C1, first 3, 5 or all kept", "pull\\_C\\_k3, pull\\_C\\_k5, pull\\_C\\_kall ("
+     + FILES["C"] + ")"],
+    ["Direction, channel, traditions; tradition grouping and corrected labels; form type; source audit subsets",
+     HOST["C"], CTRL["C"] + "; condition D where stated", "pull\\_C\\_k10; pull\\_D\\_k10 (" + FILES["DE"] + ")"],
+    ["H-D1, H-D2", HOST["C"], CTRL["D"], "pull\\_D\\_k10 (" + FILES["DE"] + ")"],
+    ["H-E1, H-E2", HOST["C"], CTRL["E"], "pull\\_E\\_k10 (" + FILES["DE"] + ")"],
+    ["Model size (multilingual-e5)", HOST["C"], "conditions C and D, as above", "pull\\_C\\_k10, pull\\_D\\_k10 "
+     "(nnpm\\_e5\\_$\\langle$size$\\rangle$.csv)"],
+    ["Condition U test (S4)", HOST["U"], CTRL["S"], "pull\\_B\\_k10 (" + FILES["U"] + ")"],
+    ["H1--H3, recording status (main analysis)", "OpenAI: " + HOST["A"] + "; bge-m3, Gemini: " + HOST["U"],
+     "OpenAI: the controls of the earlier pipeline (data/control\\_cache.json); bge-m3, Gemini: " + CTRL["S"],
+     "pull\\_index, pull\\_bge\\_B, pull\\_gem\\_B (results/items\\_with\\_consensus.csv)"],
+    ["H1, H2 in condition U (S4)", HOST["U"], CTRL["S"], "pull\\_B\\_k10 (" + FILES["U"] + ")"],
+    ["Condition A (earlier pipeline, S4 comparison)", HOST["A"], CTRL["S"], "pull\\_A\\_k10 (" + FILES["U"] + ")"],
+]
+cnt = lambda k: HCH.get(k, 0)
+assert sum(HCH.values()) == 213 and set(HCH) <= {"same", "gloss", "one_form", "first_form", "layout", "other"}
+notes = [
+    f"Host strings, condition U $\\to$ C (213 items with stored controls): {cnt('same')} the same, "
+    f"{213 - cnt('same')} changed: explanation in parentheses or after a dash removed {cnt('gloss')}; one of several "
+    f"forms kept {cnt('one_form')}; first form adopted by the author {cnt('first_form')}; line breaks, slashes or "
+    f"capitals only {cnt('layout')}; another form chosen by the coders {cnt('other')} ("
+    + ", ".join(tex(i) for i in OTHER_IDS) + ").",
+    f"Condition U: the stored host string contains an explanation in parentheses or after a dash in {N_GLOSS_U} of "
+    "the 213 items.",
+    f"OpenAI, recording status: pull\\_index (earlier pipeline) and pull\\_B\\_k10 (condition U) differ in all "
+    f"{len(iw)} items (none identical; {int((dif < 1e-4).sum())} differ by less than 0.0001, {n_same3} agree "
+    f"at 3 decimals; largest difference {f_dec(dif.max(), 3)}). For bge-m3 and Gemini, pull\\_bge\\_B and "
+    "pull\\_gem\\_B are the condition U pulls (identical).",
+    "Files in embeddings/results/; $\\langle$model$\\rangle$ = text\\_embedding\\_3\\_large, BAAI\\_bge\\_m3, gemini\\_embedding\\_001.",
+]
+write_tables("S5_analysis_inputs", [table(
+    "S5_analysis_inputs", "tab:S5-inputs",
+    "Inputs of each analysis: the host string embedded, the control words and the pull column used",
+    ["embeddings/results", "results/items_with_consensus.csv", "embeddings/controls/clean_hosts.csv"],
+    ["Analysis", "Host string", "Controls", "Column (file)"], rows,
+    colspec="p{0.2\\linewidth}p{0.27\\linewidth}p{0.22\\linewidth}p{0.22\\linewidth}", long=True,
+    size=r"\footnotesize", notes=notes)],
+    ["embeddings/results/nnpm_text_embedding_3_large.csv", "embeddings/results/nnpm_BAAI_bge_m3.csv",
+     "embeddings/results/nnpm_gemini_embedding_001.csv", "embeddings/controls/clean_hosts.csv",
+     "results/items_with_consensus.csv"],
+    "host strings compared per item (categories by rule, in order: first form, explanation removed, one of several "
+    "forms, layout only, other); pull_index compared with pull_B_k10")
 
 
 # ================================================================== S6 exploratory
