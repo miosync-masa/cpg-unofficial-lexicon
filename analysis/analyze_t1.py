@@ -6,6 +6,8 @@ Inputs : embeddings/results/nnpm_C_<model>.csv (condition C), embeddings/results
          embeddings/controls/controls_summary.csv (low_control), data/exclusions.csv, coding/results/first_run/consensus_codes.csv (first run),
          coding/results/recording/recording_consensus.csv
 Outputs: results/t1_results.json, results/t1_results.md. No random numbers are used (seed fixed anyway).
+         With --unrounded: results/t1_results_unrounded.json only (the same results without rounding, for
+         analysis/make_si.py).
 
 Hypotheses, fixed in the analysis plan (2026-10-22) before condition C was computed:
   H-C1  T3 exclusions applied, low_control items removed: mean pull_C_k10 > 0. Per model, mixed model
@@ -16,6 +18,7 @@ k rule: an item with fewer than k kept controls has no pull for that k, so pull_
 10 kept controls. pull_C_kall (all kept controls, up to 10) is reported as an extra sensitivity analysis.
 """
 import json
+import sys
 import warnings
 from pathlib import Path
 
@@ -31,7 +34,11 @@ ROOT = Path(__file__).resolve().parents[1]
 MODELS = {"text_embedding_3_large": "OpenAI text-embedding-3-large",
           "BAAI_bge_m3": "BAAI/bge-m3",
           "gemini_embedding_001": "gemini-embedding-001"}
-r4 = lambda x: None if x is None or (isinstance(x, float) and np.isnan(x)) else round(float(x), 4)
+# --unrounded: the same results without rounding, for the supplement tables (analysis/make_si.py), which need the
+# unrounded value where a stored 4-decimal value is half-way at the precision of the main text
+UNROUNDED = "--unrounded" in sys.argv
+r4 = lambda x: None if x is None or (isinstance(x, float) and np.isnan(x)) else (float(x) if UNROUNDED else
+                                                                                  round(float(x), 4))
 
 
 def describe(x):
@@ -151,7 +158,8 @@ for tag, d in D.items():
             trad.append({"tradition": tr, "n": int(len(g)), "mean": r4(g.pull_C_k10.mean()),
                          "p_one_sided": r4(stats.ttest_1samp(g.pull_C_k10, 0, alternative="greater").pvalue)})
     if trad:
-        q = multipletests([t["p_one_sided"] for t in trad], method="fdr_bh")[1]
+        # BH on the p values as stored (4 decimals), as in the first run; also with --unrounded
+        q = multipletests([round(t["p_one_sided"], 4) for t in trad], method="fdr_bh")[1]
         for t, qq in zip(trad, q):
             t["q_bh"] = r4(qq)
     a["by_tradition_n3"] = {"tested": len(trad), "p05": int(sum(t["p_one_sided"] < .05 for t in trad)),
@@ -172,6 +180,9 @@ for i in range(3):
         sp[f"{tags[i]} ~ {tags[j]}"] = {"n": int(len(x)),
                                          "rho": r4(stats.spearmanr(x.iloc[:, 1], x.iloc[:, 2]).statistic)}
 R["spearman_between_models_C_k10"] = sp
+if UNROUNDED:
+    json.dump(R, open(ROOT / "results/t1_results_unrounded.json", "w"), ensure_ascii=False, indent=1)
+    sys.exit(0)
 json.dump(R, open(ROOT / "results/t1_results.json", "w"), ensure_ascii=False, indent=1)
 
 # ------------------------------------------------------------ markdown
