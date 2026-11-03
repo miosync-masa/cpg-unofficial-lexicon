@@ -83,3 +83,9 @@ target at all. The results are reported whatever they are.
   p_holm, verdict`, and the diagnostic table.
 - Control lists: `data/controls_D.json`, `data/controls_E_<model>.json`.
 - Macros in `paper/numbers.tex` through `analysis/make_numbers.py`.
+
+### Macros added later (2026-11-03)
+
+Added after the run, for the intercepts in Table 6 (`analysis/make_numbers.py`, section 10; the values of
+`results/target_blind_controls.json`): `HDtwoBoai`, `HDtwoBbge`, `HDtwoBgem` and `HEtwoBoai`, `HEtwoBbge`,
+`HEtwoBgem`, the intercepts of the H-D2 and H-E2 mixed models, in the format of `HDoneB*` and `HEoneB*`.

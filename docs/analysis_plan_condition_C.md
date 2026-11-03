@@ -93,3 +93,9 @@ The following rules are applied **in order** to the controls of each item (`data
 - Item counts reconcile at every step (exclusions, `low_control` and `UNRESOLVED` counts stated).
 - Everything except the LLM and embedding API calls rerun from the start gives identical outputs.
 - The report ends with a list of the points that need a decision (including the `ask_author` items).
+
+### Macros added later (2026-11-03)
+
+Added after the run, for the intercepts in Table 6 (`analysis/make_numbers.py`, section 5; the values of
+`results/t1_results.json`): `HCtwoBoai`, `HCtwoBbge`, `HCtwoBgem`, the intercepts of the H-C2 mixed models, in the
+format of `HConeB*`.

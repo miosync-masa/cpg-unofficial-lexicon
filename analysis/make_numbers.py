@@ -550,10 +550,9 @@ for hyp, pre in [("H-C1", "HCone"), ("H-C2", "HCtwo")]:
         put(f"{pre}CI{m}", f_ci(fit[hyp][m]), F_MAIN + [F_CONS1],
             f"95% CI of the intercept, b +- 1.96 SE (Wald, two-sided), of the {hyp} mixed model; {sub} "
             f"(= hypotheses.{hyp}.per_model.{MODELS[m]}.intercept, se)", RULE["ci3"])
-    if hyp == "H-C1":
-        for m in MODELS:
-            put(f"HConeB{m}", f_dec(fit[hyp][m]["b"], 3), F_MAIN,
-                f"intercept of the H-C1 mixed model (= hypotheses.H-C1.per_model.{MODELS[m]}.intercept)", RULE["m3"])
+    for m in MODELS:   # HCtwoB* added 2026-11-03 (Table 6)
+        put(f"{pre}B{m}", f_dec(fit[hyp][m]["b"], 3), F_MAIN + ([] if hyp == "H-C1" else [F_CONS1]),
+            f"intercept of the {hyp} mixed model (= hypotheses.{hyp}.per_model.{MODELS[m]}.intercept)", RULE["m3"])
 # macro order as in the interim file: HConeZ*, HConeP*, HConeB*, HCtwoZ*, HCtwoP* (sorting happens at write time)
 
 # sensitivity: unit of the tradition random intercept. The pipeline's tradition labels (used in fit above and in
@@ -919,8 +918,7 @@ for X, srcs in [("D", F_DE + [F_CD, F_CONS1]), ("E", F_DE + F_CE + [F_CONS1])]:
             put(f"{pre}Z{m}", f_dec(res[m]["z"], 2), srcs, q + "; z", RULE["z2"])
             put(f"{pre}P{m}", f_p(a), srcs, q + "; one-sided p, Holm across the 3 models", RULE["p"])
             put(f"{pre}CI{m}", f_ci(res[m]), srcs, q + "; 95% CI of the intercept, b +- 1.96 SE", RULE["ci3"])
-            if hyp.endswith("1"):
-                put(f"{pre}B{m}", f_dec(res[m]["b"], 3), srcs, q + "; intercept", RULE["m3"])
+            put(f"{pre}B{m}", f_dec(res[m]["b"], 3), srcs, q + "; intercept", RULE["m3"])   # H*twoB: 2026-11-03
 nD = {int(DE[m].pull_D_k10.notna().sum()) for m in MODELS}
 check("condition D: the same items have a k = 10 pull in the three models", len(nD) == 1)
 put("NkTenD", f_int(nD.pop()), F_DE + [F_CD], "count(pull_D_k10 present) among the 94 main-set items", RULE["int"])
