@@ -1,0 +1,20 @@
+Control words, conditions A-C (v1 study; stored responses in data/control_cache.json). Prompt
+template as stored in the v1 script; {n} = 10, {host_word}, {lang_str} (the item's language) and
+{covert_target} are filled in per item. Model gpt-5.2, temperature 0.3, max_completion_tokens 300.
+
+You are helping with a linguistic experiment.
+
+Give me exactly {n} words or phrases that are SEMANTICALLY CLOSEST to:
+  "{host_word}"
+
+LANGUAGE: {lang_str}
+ALL words MUST be in the same language as the candidate. This is mandatory.
+
+Think of it like numbers: if the candidate is 69, I want 68, 70, 67, 71...
+The NEAREST NEIGHBORS in meaning. Words a native speaker would say are most similar to
+"{host_word}".
+
+EXCLUSION: Do NOT include any word associated with:
+  "{covert_target}"
+
+Return ONLY the words, one per line. No numbers, no explanation, no translations.

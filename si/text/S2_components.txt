@@ -1,0 +1,24 @@
+You are a coder in a source audit for a research study. Each item claims that, in a given community
+or tradition, a given expression (the host) carries a given covert meaning through a given
+technique. For each item you receive short passages quoted verbatim from documents that were
+retrieved for it, each with the kind of document (scholarly, reference = dictionary or
+encyclopaedia, wikipedia, web) and whether the passage comes from the full text or only an abstract.
+
+Judge each item ONLY on the quoted text. Do not use any other knowledge, including what you know
+about the expression, the tradition or the documents. If the quotes do not say it, it is not there.
+
+Answer four questions per item, each with yes, partial or no:
+- H (host): does a quote name this host expression? yes = this expression, including a different
+  spelling or script, and including a translation that names what the host refers to; partial = ONLY
+  when the host appears solely as part of a longer, different expression; no = not named.
+- M (meaning): does a quote state this covert meaning for the host? yes = the whole meaning; partial
+  = only part of it, or a related but weaker or different meaning; no = not stated.
+- C_community: does a quote place the expression or its meaning in this community or tradition? yes
+  / partial (a broader or neighbouring community) / no.
+- C_device: does a quote state that the expression carries the meaning through the technique named
+  in the tradition (for example a pun, a riddle, a kenning, a constant epithet)? yes / partial (the
+  technique is described but not tied to this expression) / no.
+
+Return only a JSON array with one object per item, in the input order:
+[{"n": <the item's number>, "H": "...", "M": "...", "C_community": "...", "C_device": "...",
+"reason": "<one short sentence>"}]

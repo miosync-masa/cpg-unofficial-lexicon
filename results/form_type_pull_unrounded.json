@@ -1,0 +1,216 @@
+{
+ "plan": "docs/analysis_plan_form_type.md",
+ "exploratory": true,
+ "conditions": {
+  "C": {
+   "n_items": 94,
+   "per_model": [
+    {
+     "model": "OpenAI text-embedding-3-large",
+     "n": 94,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 49,
+     "by_form_type": {
+      "existing_form": {
+       "n": 68,
+       "mean": 0.07144808121683868,
+       "sd": 0.08595831295434696
+      },
+      "transparent_combination": {
+       "n": 26,
+       "mean": 0.07827621216180392,
+       "sd": 0.12161463160906827
+      }
+     },
+     "b_transparent": -0.002482548466053873,
+     "se": 0.025211426787847078,
+     "z": -0.0984691777638924,
+     "p_one_sided": 0.5392201272143984,
+     "ci95": [
+      -0.05189694497023414,
+      0.0469318480381264
+     ],
+     "converged": true,
+     "var_tradition": 0.003968369529673059,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 1.0,
+     "reading": "prediction does not hold"
+    },
+    {
+     "model": "BAAI/bge-m3",
+     "n": 94,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 49,
+     "by_form_type": {
+      "existing_form": {
+       "n": 68,
+       "mean": 0.018928989208814678,
+       "sd": 0.0802576802333851
+      },
+      "transparent_combination": {
+       "n": 26,
+       "mean": 0.050152972537660566,
+       "sd": 0.0986175077080452
+      }
+     },
+     "b_transparent": 0.017790674311558834,
+     "se": 0.02318418739870556,
+     "z": 0.7673624270545768,
+     "p_one_sided": 0.22143303066268966,
+     "ci95": [
+      -0.02765033298990406,
+      0.06323168161302173
+     ],
+     "converged": true,
+     "var_tradition": 0.003089483200424833,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 0.6642990919880689,
+     "reading": "predicted direction, not shown"
+    },
+    {
+     "model": "gemini-embedding-001",
+     "n": 94,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 49,
+     "by_form_type": {
+      "existing_form": {
+       "n": 68,
+       "mean": 0.027861195511911865,
+       "sd": 0.03308998908509628
+      },
+      "transparent_combination": {
+       "n": 26,
+       "mean": 0.02082553387793382,
+       "sd": 0.038373346931461
+      }
+     },
+     "b_transparent": -0.008841966164496364,
+     "se": 0.00925499918404193,
+     "z": -0.95537190103077,
+     "p_one_sided": 0.8303051707311624,
+     "ci95": [
+      -0.026981764565218547,
+      0.009297832236225819
+     ],
+     "converged": true,
+     "var_tradition": 0.00046530199129459377,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 1.0,
+     "reading": "prediction does not hold"
+    }
+   ],
+   "n_models_prediction_holds": 0
+  },
+  "D": {
+   "n_items": 67,
+   "per_model": [
+    {
+     "model": "OpenAI text-embedding-3-large",
+     "n": 67,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 36,
+     "by_form_type": {
+      "existing_form": {
+       "n": 47,
+       "mean": 0.04084912460960889,
+       "sd": 0.09649475418022072
+      },
+      "transparent_combination": {
+       "n": 20,
+       "mean": 0.07494944819249766,
+       "sd": 0.14609682136020688
+      }
+     },
+     "b_transparent": 0.030251643938573818,
+     "se": 0.034029501935834705,
+     "z": 0.88898285950866,
+     "p_one_sided": 0.18700614586691444,
+     "ci95": [
+      -0.03644617985566221,
+      0.09694946773280985
+     ],
+     "converged": true,
+     "var_tradition": 0.0061947942500613935,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 0.3740122917338289,
+     "reading": "predicted direction, not shown"
+    },
+    {
+     "model": "BAAI/bge-m3",
+     "n": 67,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 36,
+     "by_form_type": {
+      "existing_form": {
+       "n": 47,
+       "mean": 0.005088723667624298,
+       "sd": 0.08424114504640927
+      },
+      "transparent_combination": {
+       "n": 20,
+       "mean": 0.050278172420375834,
+       "sd": 0.10976228709687703
+      }
+     },
+     "b_transparent": 0.03729216070470501,
+     "se": 0.028191768730962477,
+     "z": 1.3228031579213313,
+     "p_one_sided": 0.09295042339543153,
+     "ci95": [
+      -0.017963706007981445,
+      0.09254802741739146
+     ],
+     "converged": true,
+     "var_tradition": 0.002744340905659376,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 0.2788512701862946,
+     "reading": "predicted direction, not shown"
+    },
+    {
+     "model": "gemini-embedding-001",
+     "n": 67,
+     "n_other_form_type_left_out": 0,
+     "n_traditions": 36,
+     "by_form_type": {
+      "existing_form": {
+       "n": 47,
+       "mean": 0.01689930947252714,
+       "sd": 0.03977252112091306
+      },
+      "transparent_combination": {
+       "n": 20,
+       "mean": 0.01844846822853939,
+       "sd": 0.04461164803672685
+      }
+     },
+     "b_transparent": 0.0023464124361682968,
+     "se": 0.0130253497766149,
+     "z": 0.18014199053456018,
+     "p_one_sided": 0.428520549056416,
+     "ci95": [
+      -0.023183273125996905,
+      0.0278760979983335
+     ],
+     "converged": true,
+     "var_tradition": 0.0007362226454086317,
+     "warnings": [
+      "The MLE may be on the boundary of the parameter space."
+     ],
+     "p_holm": 0.428520549056416,
+     "reading": "predicted direction, not shown"
+    }
+   ],
+   "n_models_prediction_holds": 0
+  }
+ }
+}

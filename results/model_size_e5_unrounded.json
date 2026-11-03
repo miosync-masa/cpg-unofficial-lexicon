@@ -1,0 +1,247 @@
+{
+ "plan": "docs/analysis_plan_model_size.md",
+ "models": {
+  "small": {
+   "name": "intfloat/multilingual-e5-small",
+   "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+   "params": 117653760,
+   "dim": 384,
+   "max_seq_length": 512,
+   "time": "2026-10-25T11:32:55+09:00"
+  },
+  "base": {
+   "name": "intfloat/multilingual-e5-base",
+   "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+   "params": 278043648,
+   "dim": 768,
+   "max_seq_length": 512,
+   "time": "2026-10-25T11:33:56+09:00"
+  },
+  "large": {
+   "name": "intfloat/multilingual-e5-large",
+   "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+   "params": 559890432,
+   "dim": 1024,
+   "max_seq_length": 512,
+   "time": "2026-10-25T11:35:31+09:00"
+  }
+ },
+ "versions": {
+  "sentence_transformers": "6.2.0",
+  "transformers": "5.20.2",
+  "torch": "2.14.1",
+  "huggingface_hub": "2.2.0"
+ },
+ "conditions": {
+  "D": {
+   "per_size": [
+    {
+     "size": "small",
+     "params": 117653760,
+     "n": 67,
+     "mean_pull": 0.007877885405697027,
+     "sd": 0.02817793623947152,
+     "d": 0.27957637985785927,
+     "intercept": 0.00689702248724967,
+     "ci95": [
+      -0.0009704541211718373,
+      0.014764499095671178
+     ],
+     "z": 1.7182337803889032
+    },
+    {
+     "size": "base",
+     "params": 278043648,
+     "n": 67,
+     "mean_pull": 0.005831487143217627,
+     "sd": 0.031242445147027436,
+     "d": 0.186652712864648,
+     "intercept": 0.005731547441503625,
+     "ci95": [
+      -0.0028570646651603863,
+      0.014320159548167637
+     ],
+     "z": 1.3079916575380828
+    },
+    {
+     "size": "large",
+     "params": 559890432,
+     "n": 67,
+     "mean_pull": 0.01023897840015923,
+     "sd": 0.03152049237008907,
+     "d": 0.3248356110666395,
+     "intercept": 0.010168785095447233,
+     "ci95": [
+      0.001327053145612534,
+      0.019010517045281932
+     ],
+     "z": 2.254175867370554
+    }
+   ],
+   "d_ordered_small_base_large": false,
+   "H-S1": {
+    "term": "log10_params",
+    "b": 0.05494351480891693,
+    "se": 0.10343314084764212,
+    "z": 0.5311983602030339,
+    "p_one_sided": 0.2976406645925154,
+    "ci95": [
+     -0.14778544125246162,
+     0.2576724708702955
+    ],
+    "n_rows": 201,
+    "n_items": 67,
+    "n_traditions": 36,
+    "random_effects": "(1 | item) + (1 | tradition)",
+    "converged": true
+   },
+   "H-S2": {
+    "term": "log10_params:hard",
+    "b": 0.3468995534867838,
+    "se": 0.24366761738015277,
+    "z": 1.4236588235094694,
+    "p_one_sided": 0.07727262940861244,
+    "ci95": [
+     -0.13068897657831563,
+     0.8244880835518833
+    ],
+    "n_rows": 186,
+    "n_items": 62,
+    "n_traditions": 34,
+    "random_effects": "(1 | item) + (1 | tradition)",
+    "converged": true,
+    "n_hard_items": 45,
+    "n_inferable_items": 17
+   },
+   "reference_earlier_models": [
+    {
+     "model": "OpenAI text-embedding-3-large",
+     "n": 67,
+     "mean_pull": 0.05102832567912793,
+     "sd": 0.11349627094800936,
+     "d": 0.4496035442653715
+    },
+    {
+     "model": "BAAI/bge-m3",
+     "n": 67,
+     "mean_pull": 0.018578111355012816,
+     "sd": 0.09406637270429352,
+     "d": 0.19750002919124832
+    },
+    {
+     "model": "gemini-embedding-001",
+     "n": 67,
+     "mean_pull": 0.017361744922083037,
+     "sd": 0.04093837050972384,
+     "d": 0.42409467465147904
+    }
+   ],
+   "interpretation_row": "2: positive slope, not significant or d not in size order"
+  },
+  "C": {
+   "per_size": [
+    {
+     "size": "small",
+     "params": 117653760,
+     "n": 94,
+     "mean_pull": 0.007401149323646057,
+     "sd": 0.02673367683255128,
+     "d": 0.27684741496666554,
+     "intercept": 0.0064490479492338324,
+     "ci95": [
+      -2.5828575440116873e-05,
+      0.012923924473907781
+     ],
+     "z": 1.9521814713115047
+    },
+    {
+     "size": "base",
+     "params": 278043648,
+     "n": 94,
+     "mean_pull": 0.007274382926048117,
+     "sd": 0.029458654693802055,
+     "d": 0.24693534045119203,
+     "intercept": 0.0066979726698900306,
+     "ci95": [
+      -0.00037363495289853034,
+      0.013769580292678591
+     ],
+     "z": 1.856441580649756
+    },
+    {
+     "size": "large",
+     "params": 559890432,
+     "n": 94,
+     "mean_pull": 0.012893601934960539,
+     "sd": 0.030059648718980293,
+     "d": 0.42893388593790344,
+     "intercept": 0.012577452029254057,
+     "ci95": [
+      0.005364837086236306,
+      0.019790066972271807
+     ],
+     "z": 3.4178735690309376
+    }
+   ],
+   "d_ordered_small_base_large": false,
+   "H-S1": {
+    "term": "log10_params",
+    "b": 0.2130370013428326,
+    "se": 0.0906209749939419,
+    "z": 2.3508575289227944,
+    "p_one_sided": 0.0093651019595265,
+    "ci95": [
+     0.035419890354706496,
+     0.3906541123309587
+    ],
+    "n_rows": 282,
+    "n_items": 94,
+    "n_traditions": 49,
+    "random_effects": "(1 | item) + (1 | tradition)",
+    "converged": true
+   },
+   "H-S2": {
+    "term": "log10_params:hard",
+    "b": 0.21766452111255555,
+    "se": 0.21497129684211816,
+    "z": 1.0125282970796579,
+    "p_one_sided": 0.15564276196262988,
+    "ci95": [
+     -0.20367922069799602,
+     0.6390082629231071
+    ],
+    "n_rows": 255,
+    "n_items": 85,
+    "n_traditions": 46,
+    "random_effects": "(1 | item) + (1 | tradition)",
+    "converged": true,
+    "n_hard_items": 62,
+    "n_inferable_items": 23
+   },
+   "reference_earlier_models": [
+    {
+     "model": "OpenAI text-embedding-3-large",
+     "n": 94,
+     "mean_pull": 0.0733367131803397,
+     "sd": 0.0964800718543233,
+     "d": 0.760122912129169
+    },
+    {
+     "model": "BAAI/bge-m3",
+     "n": 94,
+     "mean_pull": 0.027565410129559282,
+     "sd": 0.08632516777379957,
+     "d": 0.31932066673521853
+    },
+    {
+     "model": "gemini-embedding-001",
+     "n": 94,
+     "mean_pull": 0.025915161442939216,
+     "sd": 0.034564160302982566,
+     "d": 0.7497697388211388
+    }
+   ],
+   "interpretation_row": "2: positive slope, not significant or d not in size order"
+  }
+ }
+}

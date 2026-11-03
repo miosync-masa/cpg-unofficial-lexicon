@@ -1061,6 +1061,7 @@ for macro, v in [("NnotFoundUnspecific", "unspecific"), ("NnotFoundSpecific", "s
         f"not_found, not_found_type == {v}) in source_audit_evidence.csv (types: docs/analysis_plan_source_audit.md, "
         "Amendments)", RULE["int"])
 amaj = aj.set_index("item_id").majority
+aud_unr = []      # unrounded rows for the supplement (analysis/make_si.py)
 for sname, suf, keep in [("supported", "sup", {"supported"}), ("supported_or_partly", "supPart", {"supported", "partly"})]:
     for hyp, pre, y, base, sel in [("H-C1", "HCone", "pull_C_k10", D, lambda d: d),
                                    ("H-C2", "HCtwo", "pull_C_k10", D, lambda d: d[d.cpg_valid == "yes"]),
@@ -1081,6 +1082,11 @@ for sname, suf, keep in [("supported", "sup", {"supported"}), ("supported_or_par
             put(f"{pre}Z{suf}{m}", f_dec(res[m]["z"], 2), srcs, q + "; z", RULE["z2"])
             put(f"{pre}P{suf}{m}", f_p(a), srcs, q + "; one-sided p, Holm across the 3 models", RULE["p"])
             put(f"{pre}CI{suf}{m}", f_ci(res[m]), srcs, q + "; 95% CI of the intercept, b +- 1.96 SE", RULE["ci3"])
+            aud_unr.append({"set": sname, "hypothesis": hyp, "model": MODEL_NAMES[m], "intercept": res[m]["b"],
+                            "se": res[m]["se"], "z": res[m]["z"], "p_holm": float(a)})
+json.dump({"description": "source_audit_summary.json sensitivity rows without rounding (written by "
+                          "analysis/make_numbers.py for analysis/make_si.py)", "rows": aud_unr},
+          open(ROOT / "results/source_audit_sensitivity_unrounded.json", "w"), indent=1)
 
 # ------------------------------------------------------------------ 12. model size (multilingual-e5)
 # plan: docs/analysis_plan_model_size.md; pulls from embeddings/scripts/nnpm_e5.py, results from

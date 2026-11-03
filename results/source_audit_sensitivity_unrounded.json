@@ -1,0 +1,221 @@
+{
+ "description": "source_audit_summary.json sensitivity rows without rounding (written by analysis/make_numbers.py for analysis/make_si.py)",
+ "rows": [
+  {
+   "set": "supported",
+   "hypothesis": "H-C1",
+   "model": "OpenAI text-embedding-3-large",
+   "intercept": 0.07631725392466539,
+   "se": 0.01533780301600577,
+   "z": 4.975761772727456,
+   "p_holm": 6.499153800000048e-07
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-C1",
+   "model": "BAAI/bge-m3",
+   "intercept": 0.017982326590432,
+   "se": 0.011587529960208207,
+   "z": 1.5518688324590004,
+   "p_holm": 0.06034680593312785
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-C1",
+   "model": "gemini-embedding-001",
+   "intercept": 0.027083911973111913,
+   "se": 0.005306636780656241,
+   "z": 5.103780999641472,
+   "p_holm": 4.994003123215497e-07
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-C2",
+   "model": "OpenAI text-embedding-3-large",
+   "intercept": 0.05510505843809194,
+   "se": 0.016870117315855308,
+   "z": 3.2664300672231654,
+   "p_holm": 0.0011344756455429876
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-C2",
+   "model": "BAAI/bge-m3",
+   "intercept": 0.018996444760101646,
+   "se": 0.015062654706348894,
+   "z": 1.2611618025137803,
+   "p_holm": 0.10362527880397665
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-C2",
+   "model": "gemini-embedding-001",
+   "intercept": 0.01704501545962264,
+   "se": 0.005060412394412403,
+   "z": 3.3683056105157303,
+   "p_holm": 0.0011344756455429876
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-D1",
+   "model": "OpenAI text-embedding-3-large",
+   "intercept": 0.05162453164665114,
+   "se": 0.021904742494622466,
+   "z": 2.3567741852854365,
+   "p_holm": 0.027651679553298694
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-D1",
+   "model": "BAAI/bge-m3",
+   "intercept": 0.014291959707508088,
+   "se": 0.016126592355692446,
+   "z": 0.8862355662176356,
+   "p_holm": 0.18774530097704717
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-D1",
+   "model": "gemini-embedding-001",
+   "intercept": 0.019236248946930053,
+   "se": 0.00909096845170875,
+   "z": 2.115973567515173,
+   "p_holm": 0.03434705570959782
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-D2",
+   "model": "OpenAI text-embedding-3-large",
+   "intercept": 0.04141328548252293,
+   "se": 0.026503521674613364,
+   "z": 1.562557836311656,
+   "p_holm": 0.17723494823765668
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-D2",
+   "model": "BAAI/bge-m3",
+   "intercept": 0.01868977795451388,
+   "se": 0.019941306044632748,
+   "z": 0.9372394121369136,
+   "p_holm": 0.34863542080705767
+  },
+  {
+   "set": "supported",
+   "hypothesis": "H-D2",
+   "model": "gemini-embedding-001",
+   "intercept": 0.006470089491889823,
+   "se": 0.008646312517709687,
+   "z": 0.7483062263407151,
+   "p_holm": 0.34863542080705767
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-C1",
+   "model": "OpenAI text-embedding-3-large",
+   "intercept": 0.06435070910748474,
+   "se": 0.011999800340863136,
+   "z": 5.362648317434925,
+   "p_holm": 1.2301587011818847e-07
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-C1",
+   "model": "BAAI/bge-m3",
+   "intercept": 0.02228971207411287,
+   "se": 0.010237243732724057,
+   "z": 2.1773157556913745,
+   "p_holm": 0.014728508208963377
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-C1",
+   "model": "gemini-embedding-001",
+   "intercept": 0.02131237642586529,
+   "se": 0.004177264398599112,
+   "z": 5.1019936475681575,
+   "p_holm": 3.3609403526667494e-07
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-C2",
+   "model": "OpenAI text-embedding-3-large",
+   "intercept": 0.05926644897820486,
+   "se": 0.01395571946605827,
+   "z": 4.246749809090595,
+   "p_holm": 3.253408893765728e-05
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-C2",
+   "model": "BAAI/bge-m3",
+   "intercept": 0.03180783275660609,
+   "se": 0.012848410004489448,
+   "z": 2.4756240457373253,
+   "p_holm": 0.006650177484221976
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-C2",
+   "model": "gemini-embedding-001",
+   "intercept": 0.01751605561215131,
+   "se": 0.004528560619341844,
+   "z": 3.8679079479114926,
+   "p_holm": 0.0001097730858087519
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-D1",
+   "model": "OpenAI text-embedding-3-large",
+   "intercept": 0.04721886231344442,
+   "se": 0.01645106684823768,
+   "z": 2.8702614091257397,
+   "p_holm": 0.006151988727711064
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-D1",
+   "model": "BAAI/bge-m3",
+   "intercept": 0.01503110681858331,
+   "se": 0.013626804934941126,
+   "z": 1.1030543763080771,
+   "p_holm": 0.13500177601371294
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-D1",
+   "model": "gemini-embedding-001",
+   "intercept": 0.01692775114279858,
+   "se": 0.006338664329781213,
+   "z": 2.670554909062816,
+   "p_holm": 0.007572598499345613
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-D2",
+   "model": "OpenAI text-embedding-3-large",
+   "intercept": 0.05383571952020453,
+   "se": 0.020188753686943107,
+   "z": 2.6666192651120557,
+   "p_holm": 0.01149276236755737
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-D2",
+   "model": "BAAI/bge-m3",
+   "intercept": 0.03052979966191095,
+   "se": 0.016973814020415555,
+   "z": 1.7986411083089926,
+   "p_holm": 0.06688969933690236
+  },
+  {
+   "set": "supported_or_partly",
+   "hypothesis": "H-D2",
+   "model": "gemini-embedding-001",
+   "intercept": 0.012409241267525371,
+   "se": 0.006772071341042083,
+   "z": 1.8324144331320413,
+   "p_holm": 0.06688969933690236
+  }
+ ]
+}

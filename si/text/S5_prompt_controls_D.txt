@@ -1,0 +1,16 @@
+Control words, condition D: the prompt of conditions A-C without the two EXCLUSION lines (no covert
+target). Model gpt-5.2, temperature 0.3, max_completion_tokens 300. The prompt as sent for the first
+item of the log (the host word and the language change per item):
+
+You are helping with a linguistic experiment.
+
+Give me exactly 10 words or phrases that are SEMANTICALLY CLOSEST to:
+  "fikir"
+
+LANGUAGE: Amharic
+ALL words MUST be in the same language as the candidate. This is mandatory.
+
+Think of it like numbers: if the candidate is 69, I want 68, 70, 67, 71...
+The NEAREST NEIGHBORS in meaning. Words a native speaker would say are most similar to "fikir".
+
+Return ONLY the words, one per line. No numbers, no explanation, no translations.

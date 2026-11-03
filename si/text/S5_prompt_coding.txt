@@ -1,0 +1,54 @@
+=== first run ===
+
+System prompt: the text of the codebook file for this run (supplement S2), preceded by:
+
+You are an expert in comparative linguistics, rhetoric and folklore acting as a blind coder for a
+research study. Follow the codebook exactly. Output only valid JSON.
+
+User message (one per batch of 10 items; a failed batch is retried up to 3 times):
+
+Code the following items. Return a JSON array with one object per item, same order.
+<JSON array of the items, with the fields: item_id, language, tradition, host_original,
+host_romanized, covert_target, source_reference>
+
+=== form and boundary (v1.1) ===
+
+System prompt: the text of the codebook file for this run (supplement S2), preceded by:
+
+You are an expert in comparative linguistics, rhetoric and folklore acting as a blind coder for a
+research study. Follow the codebook exactly. Output only valid JSON.
+
+User message (one per batch of 10 items; a failed batch is retried up to 3 times):
+
+Code the following items. Return a JSON array with one object per item, same order.
+<JSON array of the items, with the fields: item_id, language, tradition, host_original,
+host_romanized, covert_target, source_reference>
+
+=== recording status ===
+
+System prompt: the text of the codebook file for this run (supplement S2), preceded by:
+
+You are an expert in comparative linguistics, rhetoric and folklore acting as a blind coder for a
+research study. Follow the codebook exactly. Output only valid JSON.
+
+User message (one per batch of 10 items; a failed batch is retried up to 3 times; the items of the 2
+batches that claude-opus-5-5 refused 3 times were then sent one item per request (batch size 1)):
+
+Code the following items. Return a JSON array with one object per item, same order.
+<JSON array of the items, with the fields: item_id, language, tradition, host_original,
+host_romanized, covert_target, source_reference>
+
+=== taboo domain ===
+
+System prompt: the text of the codebook file for this run (supplement S2), preceded by:
+
+You are an expert in comparative linguistics, rhetoric and folklore acting as a blind coder for a
+research study. Follow the codebook exactly. Output only valid JSON.
+
+User message (one per batch of 10 items; a failed batch is retried up to 3 times, then its items are
+sent one at a time):
+
+Code the following items. Return a JSON array with one object per item, same order.
+<JSON array of the items, with the fields: item_id, language, tradition, host_original,
+host_romanized, covert_target>
+
