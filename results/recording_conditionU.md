@@ -47,9 +47,9 @@ Verdict changes: H2 (majority labels): not supported -> supported; H2 (unanimous
 
 | model | n | b cultural vs unrec. (SE, p) | b general vs unrec. (SE, p) | trend slope (SE) | p one-sided | p Holm | order ok | all groups > 0 | passes |
 |---|---|---|---|---|---|---|---|---|---|
-| pull_oai_U | 203 | 0.054 (0.027, 0.050) | 0.059 (0.026, 0.025) | 0.019 (0.011) | 0.037 | 0.078 | no | no | no |
+| pull_oai_U | 203 | 0.054 (0.027, 0.050) | 0.059 (0.026, 0.025) | 0.019 (0.011) | 0.037 | 0.078 | no | yes | no |
 | pull_bge_U | 203 | 0.061 (0.025, 0.015) | 0.031 (0.024, 0.200) | -0.003 (0.010) | 0.629 | 0.629 | no | no | no |
-| pull_gem_U | 203 | 0.011 (0.009, 0.251) | 0.017 (0.009, 0.069) | 0.007 (0.004) | 0.026 | 0.078 | yes | no | no |
+| pull_gem_U | 203 | 0.011 (0.009, 0.251) | 0.017 (0.009, 0.069) | 0.007 (0.004) | 0.026 | 0.078 | yes | yes | no |
 
 ### H2 — unrecorded CPG detectable: **supported** (2/3 models p_Holm < .05; 2/3 before correction)
 
@@ -98,9 +98,9 @@ Verdict changes: H2 (majority labels): not supported -> supported; H2 (unanimous
 
 | model | n | b cultural vs unrec. (SE, p) | b general vs unrec. (SE, p) | trend slope (SE) | p one-sided | p Holm | order ok | all groups > 0 | passes |
 |---|---|---|---|---|---|---|---|---|---|
-| pull_oai_U | 173 | 0.074 (0.036, 0.039) | 0.065 (0.033, 0.048) | 0.013 (0.013) | 0.147 | 0.293 | no | no | no |
-| pull_bge_U | 173 | 0.090 (0.032, 0.005) | 0.042 (0.030, 0.155) | -0.012 (0.012) | 0.843 | 0.843 | no | no | no |
-| pull_gem_U | 173 | 0.015 (0.013, 0.238) | 0.019 (0.012, 0.105) | 0.007 (0.004) | 0.059 | 0.178 | yes | no | no |
+| pull_oai_U | 173 | 0.074 (0.036, 0.039) | 0.065 (0.033, 0.048) | 0.013 (0.013) | 0.147 | 0.293 | no | yes | no |
+| pull_bge_U | 173 | 0.090 (0.032, 0.005) | 0.042 (0.030, 0.155) | -0.012 (0.012) | 0.843 | 0.843 | no | yes | no |
+| pull_gem_U | 173 | 0.015 (0.013, 0.238) | 0.019 (0.012, 0.105) | 0.007 (0.004) | 0.059 | 0.178 | yes | yes | no |
 
 ### H2 — unrecorded CPG detectable: **supported** (2/3 models p_Holm < .05; 2/3 before correction)
 

@@ -68,7 +68,7 @@ Consensus `recording_status` × first-run consensus `cpg_valid`:
 |---|---|---|---|---|---|---|---|---|---|
 | pull_index | 203 | 0.023 (0.034, 0.499) | 0.010 (0.033, 0.759) | -0.003 (0.013) | 0.599 | 1.000 | no | no | no |
 | pull_bge_B | 203 | 0.061 (0.025, 0.015) | 0.031 (0.024, 0.200) | -0.003 (0.010) | 0.629 | 1.000 | no | no | no |
-| pull_gem_B | 203 | 0.011 (0.009, 0.251) | 0.017 (0.009, 0.069) | 0.007 (0.004) | 0.026 | 0.078 | yes | no | no |
+| pull_gem_B | 203 | 0.011 (0.009, 0.251) | 0.017 (0.009, 0.069) | 0.007 (0.004) | 0.026 | 0.078 | yes | yes | no |
 
 ### H2 — unrecorded CPG detectable: **not supported** (0/3 models p_Holm < .05; 1/3 before correction)
 
@@ -118,8 +118,8 @@ Consensus `recording_status` × first-run consensus `cpg_valid`:
 | model | n | b cultural vs unrec. (SE, p) | b general vs unrec. (SE, p) | trend slope (SE) | p one-sided | p Holm | order ok | all groups > 0 | passes |
 |---|---|---|---|---|---|---|---|---|---|
 | pull_index | 173 | 0.039 (0.045, 0.391) | 0.013 (0.043, 0.756) | -0.010 (0.015) | 0.748 | 1.000 | no | no | no |
-| pull_bge_B | 173 | 0.090 (0.032, 0.005) | 0.042 (0.030, 0.155) | -0.012 (0.012) | 0.843 | 1.000 | no | no | no |
-| pull_gem_B | 173 | 0.015 (0.013, 0.238) | 0.019 (0.012, 0.105) | 0.007 (0.004) | 0.059 | 0.178 | yes | no | no |
+| pull_bge_B | 173 | 0.090 (0.032, 0.005) | 0.042 (0.030, 0.155) | -0.012 (0.012) | 0.843 | 1.000 | no | yes | no |
+| pull_gem_B | 173 | 0.015 (0.013, 0.238) | 0.019 (0.012, 0.105) | 0.007 (0.004) | 0.059 | 0.178 | yes | yes | no |
 
 ### H2 — unrecorded CPG detectable: **mixed** (1/3 models p_Holm < .05; 1/3 before correction)
 

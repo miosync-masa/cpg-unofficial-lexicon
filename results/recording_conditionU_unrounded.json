@@ -1,0 +1,771 @@
+{
+ "plan": "docs/analysis_plan_recording_status.md, Sensitivity: H1 and H2 in condition U (2026-11-03)",
+ "pull_columns": {
+  "pull_oai_U": "OpenAI text-embedding-3-large (condition U, k=10)",
+  "pull_bge_U": "BAAI/bge-m3 (condition U, k=10)",
+  "pull_gem_U": "gemini-embedding-001 (condition U, k=10)"
+ },
+ "source": {
+  "pull_oai_U": "embeddings/results/nnpm_text_embedding_3_large.csv pull_B_k10",
+  "pull_bge_U": "embeddings/results/nnpm_BAAI_bge_m3.csv pull_B_k10",
+  "pull_gem_U": "embeddings/results/nnpm_gemini_embedding_001.csv pull_B_k10"
+ },
+ "openai_main_vs_U": {
+  "n": 213,
+  "n_identical": 0,
+  "max_abs_diff": 0.38548320701291916
+ },
+ "main": {
+  "pull_oai_U": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 204,
+     "mean": 0.07932954719600879,
+     "sd": 0.08876143661076934,
+     "pct_positive": 84.8,
+     "t": 12.765144531251826,
+     "p_t_one_sided": 4.399281736852104e-28,
+     "p_wilcoxon_one_sided": 3.0482309917824418e-27
+    },
+    "novel_form": {
+     "n": 9,
+     "mean": 0.09948854969377158,
+     "sd": 0.13618479790882945,
+     "pct_positive": 77.8,
+     "t": 2.191622366551707,
+     "p_t_one_sided": 0.029884804297731552,
+     "p_wilcoxon_one_sided": 0.02734375
+    }
+   },
+   "existing_by_recording_status": {
+    "UNRESOLVED": {
+     "n": 1,
+     "mean": 0.1480275491356538,
+     "sd": null,
+     "pct_positive": 100.0,
+     "t": null,
+     "p_t_one_sided": null,
+     "p_wilcoxon_one_sided": null
+    },
+    "cultural_reference": {
+     "n": 126,
+     "mean": 0.0862391749282442,
+     "sd": 0.08979816277876627,
+     "pct_positive": 88.1,
+     "t": 10.780090680514085,
+     "p_t_one_sided": 7.306112072252187e-20,
+     "p_wilcoxon_one_sided": 5.0242574733596315e-19
+    },
+    "general_dictionary": {
+     "n": 67,
+     "mean": 0.07418694972206612,
+     "sd": 0.09021049614044961,
+     "pct_positive": 80.6,
+     "t": 6.731437920470453,
+     "p_t_one_sided": 2.425629927998919e-09,
+     "p_wilcoxon_one_sided": 4.379506115870889e-09
+    },
+    "unrecorded": {
+     "n": 10,
+     "mean": 0.01985384065129392,
+     "sd": 0.026680003284483337,
+     "pct_positive": 70.0,
+     "t": 2.353198989171166,
+     "p_t_one_sided": 0.021539362782755315,
+     "p_wilcoxon_one_sided": 0.0322265625
+    }
+   },
+   "n_existing_resolved": 203,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.05362706647062093,
+     "se": 0.027414313266948608,
+     "p_two_sided": 0.05044509138546603
+    },
+    "general_dictionary": {
+     "b": 0.058549525737959546,
+     "se": 0.026106679481325692,
+     "p_two_sided": 0.0249159796217539
+    },
+    "intercept_unrecorded": {
+     "b": 0.04308398245233462,
+     "se": 0.02731857771992737
+    }
+   },
+   "trend": {
+    "slope": 0.0193124830064475,
+    "se": 0.010803698246759311,
+    "z": 1.7875807492346885,
+    "p_one_sided": 0.03692183680694647
+   },
+   "h2_unrecorded_existing": {
+    "n": 10,
+    "mean": 0.01985384065129392,
+    "sd": 0.026680003284483337,
+    "pct_positive": 70.0,
+    "t": 2.353198989171166,
+    "p_t_one_sided": 0.021539362782755315,
+    "p_wilcoxon_one_sided": 0.0322265625,
+    "mixed_intercept": 0.019847691720940357,
+    "mixed_se": 0.008394583287582285,
+    "mixed_z": 2.364345083132372,
+    "p_mixed_one_sided": 0.009030989819036455,
+    "n_traditions": 6
+   }
+  },
+  "pull_bge_U": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 204,
+     "mean": 0.04078889646596973,
+     "sd": 0.08137257197041176,
+     "pct_positive": 71.1,
+     "t": 7.159439052679441,
+     "p_t_one_sided": 7.276301885573066e-12,
+     "p_wilcoxon_one_sided": 1.6930537206038128e-11
+    },
+    "novel_form": {
+     "n": 9,
+     "mean": 0.017645681121665903,
+     "sd": 0.06652197410521717,
+     "pct_positive": 66.7,
+     "t": 0.7957828082682529,
+     "p_t_one_sided": 0.22456211856885047,
+     "p_wilcoxon_one_sided": 0.1796875
+    }
+   },
+   "existing_by_recording_status": {
+    "UNRESOLVED": {
+     "n": 1,
+     "mean": 0.0725386895464952,
+     "sd": null,
+     "pct_positive": 100.0,
+     "t": null,
+     "p_t_one_sided": null,
+     "p_wilcoxon_one_sided": null
+    },
+    "cultural_reference": {
+     "n": 126,
+     "mean": 0.05644405746373937,
+     "sd": 0.08657190946950526,
+     "pct_positive": 76.2,
+     "t": 7.318574552976191,
+     "p_t_one_sided": 1.3351701901933819e-11,
+     "p_wilcoxon_one_sided": 2.6815252663841125e-11
+    },
+    "general_dictionary": {
+     "n": 67,
+     "mean": 0.015206384011089365,
+     "sd": 0.06841503806585947,
+     "pct_positive": 59.7,
+     "t": 1.8193312615788806,
+     "p_t_one_sided": 0.03669849872506304,
+     "p_wilcoxon_one_sided": 0.03222839032595159
+    },
+    "unrecorded": {
+     "n": 10,
+     "mean": 0.01176172203371825,
+     "sd": 0.03978041049090045,
+     "pct_positive": 80.0,
+     "t": 0.9349785578719783,
+     "p_t_one_sided": 0.18710273046532688,
+     "p_wilcoxon_one_sided": 0.0654296875
+    }
+   },
+   "n_existing_resolved": 203,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.06092485332228915,
+     "se": 0.02516529553486775,
+     "p_two_sided": 0.015478430838972213
+    },
+    "general_dictionary": {
+     "b": 0.030855742603015157,
+     "se": 0.024096991281228598,
+     "p_two_sided": 0.20037597738673973
+    },
+    "intercept_unrecorded": {
+     "b": 0.011953795872260805,
+     "se": 0.025061380548735482
+    }
+   },
+   "trend": {
+    "slope": -0.003331611708004709,
+    "se": 0.0101535988968791,
+    "z": -0.3281212643754071,
+    "p_one_sided": 0.6285900116948923
+   },
+   "h2_unrecorded_existing": {
+    "n": 10,
+    "mean": 0.01176172203371825,
+    "sd": 0.03978041049090045,
+    "pct_positive": 80.0,
+    "t": 0.9349785578719783,
+    "p_t_one_sided": 0.18710273046532688,
+    "p_wilcoxon_one_sided": 0.0654296875,
+    "mixed_intercept": 0.0016939886672249032,
+    "mixed_se": 0.016622165032381037,
+    "mixed_z": 0.10191143355422747,
+    "p_mixed_one_sided": 0.4594134872764847,
+    "n_traditions": 6
+   }
+  },
+  "pull_gem_U": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 204,
+     "mean": 0.023781230333226374,
+     "sd": 0.028010968871227997,
+     "pct_positive": 87.3,
+     "t": 12.126103538094645,
+     "p_t_one_sided": 4.118052785006294e-26,
+     "p_wilcoxon_one_sided": 1.1742776507031292e-27
+    },
+    "novel_form": {
+     "n": 9,
+     "mean": 0.01865029836869929,
+     "sd": 0.04093259684140132,
+     "pct_positive": 55.6,
+     "t": 1.3669031389063073,
+     "p_t_one_sided": 0.10441471512812811,
+     "p_wilcoxon_one_sided": 0.1796875
+    }
+   },
+   "existing_by_recording_status": {
+    "UNRESOLVED": {
+     "n": 1,
+     "mean": 0.0226522816475474,
+     "sd": null,
+     "pct_positive": 100.0,
+     "t": null,
+     "p_t_one_sided": null,
+     "p_wilcoxon_one_sided": null
+    },
+    "cultural_reference": {
+     "n": 126,
+     "mean": 0.022105112288994797,
+     "sd": 0.028319807839173233,
+     "pct_positive": 82.5,
+     "t": 8.761686218136369,
+     "p_t_one_sided": 5.751005876776262e-15,
+     "p_wilcoxon_one_sided": 3.37604472465563e-16
+    },
+    "general_dictionary": {
+     "n": 67,
+     "mean": 0.028523890898401096,
+     "sd": 0.028619345608956827,
+     "pct_positive": 95.5,
+     "t": 8.158051991123951,
+     "p_t_one_sided": 6.902158934145754e-12,
+     "p_wilcoxon_one_sided": 8.259636878877636e-12
+    },
+    "unrecorded": {
+     "n": 10,
+     "mean": 0.01323738677244152,
+     "sd": 0.014880485037027392,
+     "pct_positive": 90.0,
+     "t": 2.81310000079557,
+     "p_t_one_sided": 0.010137076093935807,
+     "p_wilcoxon_one_sided": 0.013671875
+    }
+   },
+   "n_existing_resolved": 203,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.010818614207021671,
+     "se": 0.009420634396709768,
+     "p_two_sided": 0.25080532797242927
+    },
+    "general_dictionary": {
+     "b": 0.016655734894571787,
+     "se": 0.009142063199689719,
+     "p_two_sided": 0.06847331524632538
+    },
+    "intercept_unrecorded": {
+     "b": 0.012766151804601186,
+     "se": 0.009249738512284129
+    }
+   },
+   "trend": {
+    "slope": 0.00723610810899683,
+    "se": 0.003727764348068785,
+    "z": 1.9411388256732447,
+    "p_one_sided": 0.026120720408243134
+   },
+   "h2_unrecorded_existing": {
+    "n": 10,
+    "mean": 0.01323738677244152,
+    "sd": 0.014880485037027392,
+    "pct_positive": 90.0,
+    "t": 2.81310000079557,
+    "p_t_one_sided": 0.010137076093935807,
+    "p_wilcoxon_one_sided": 0.013671875,
+    "mixed_intercept": 0.012467750104316241,
+    "mixed_se": 0.006249848114716601,
+    "mixed_z": 1.994888495763323,
+    "p_mixed_one_sided": 0.023027521258241014,
+    "n_traditions": 6
+   }
+  }
+ },
+ "sensitivity_unanimous": {
+  "pull_oai_U": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 173,
+     "mean": 0.08259035537396905,
+     "sd": 0.09003150983774055,
+     "pct_positive": 86.1,
+     "t": 12.065848084567087,
+     "p_t_one_sided": 5.552773950347195e-25,
+     "p_wilcoxon_one_sided": 1.8938379235999506e-24
+    },
+    "novel_form": {
+     "n": 6,
+     "mean": 0.10284606044728672,
+     "sd": 0.1624830802197987,
+     "pct_positive": 66.7,
+     "t": 1.5504406354834157,
+     "p_t_one_sided": 0.09086448104581514,
+     "p_wilcoxon_one_sided": 0.15625
+    }
+   },
+   "existing_by_recording_status": {
+    "cultural_reference": {
+     "n": 113,
+     "mean": 0.08862750510352084,
+     "sd": 0.09132595634176259,
+     "pct_positive": 88.5,
+     "t": 10.316051865295233,
+     "p_t_one_sided": 3.0428071016747707e-18,
+     "p_wilcoxon_one_sided": 1.4229251739306253e-17
+    },
+    "general_dictionary": {
+     "n": 54,
+     "mean": 0.076260438900653,
+     "sd": 0.09015580523207108,
+     "pct_positive": 81.5,
+     "t": 6.2158780253734385,
+     "p_t_one_sided": 4.09660095684248e-08,
+     "p_wilcoxon_one_sided": 5.03600660337376e-08
+    },
+    "unrecorded": {
+     "n": 6,
+     "mean": 0.02585995039392128,
+     "sd": 0.027083668414514338,
+     "pct_positive": 83.3,
+     "t": 2.338814752467049,
+     "p_t_one_sided": 0.03323905082902885,
+     "p_wilcoxon_one_sided": 0.046875
+    }
+   },
+   "n_existing_resolved": 173,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.07404595031520239,
+     "se": 0.03581471940937198,
+     "p_two_sided": 0.03868964540499552
+    },
+    "general_dictionary": {
+     "b": 0.06509866259758688,
+     "se": 0.03294369870872085,
+     "p_two_sided": 0.04814819751519689
+    },
+    "intercept_unrecorded": {
+     "b": 0.02396262318601187,
+     "se": 0.035234133279396854
+    }
+   },
+   "trend": {
+    "slope": 0.013377267779753524,
+    "se": 0.01272507355470959,
+    "z": 1.0512526880288684,
+    "p_one_sided": 0.14657127514954182
+   },
+   "h2_unrecorded_existing": {
+    "n": 6,
+    "mean": 0.02585995039392128,
+    "sd": 0.027083668414514338,
+    "pct_positive": 83.3,
+    "t": 2.338814752467049,
+    "p_t_one_sided": 0.03323905082902885,
+    "p_wilcoxon_one_sided": 0.046875,
+    "mixed_intercept": 0.025859950924025543,
+    "mixed_se": 0.009925880333243573,
+    "mixed_z": 2.6053055301720573,
+    "p_mixed_one_sided": 0.004589618272544268,
+    "n_traditions": 3
+   }
+  },
+  "pull_bge_U": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 173,
+     "mean": 0.04526506331379489,
+     "sd": 0.08096737340841309,
+     "pct_positive": 72.3,
+     "t": 7.353195839444344,
+     "p_t_one_sided": 3.768669125009017e-12,
+     "p_wilcoxon_one_sided": 6.290716154084919e-12
+    },
+    "novel_form": {
+     "n": 6,
+     "mean": 0.003631707623858716,
+     "sd": 0.07373296073239473,
+     "pct_positive": 50.0,
+     "t": 0.12064930643048208,
+     "p_t_one_sided": 0.4543335851778865,
+     "p_wilcoxon_one_sided": 0.5
+    }
+   },
+   "existing_by_recording_status": {
+    "cultural_reference": {
+     "n": 113,
+     "mean": 0.06072035327033695,
+     "sd": 0.086667438531301,
+     "pct_positive": 77.0,
+     "t": 7.447620698185548,
+     "p_t_one_sided": 1.0569605978665465e-11,
+     "p_wilcoxon_one_sided": 2.1487599728423072e-11
+    },
+    "general_dictionary": {
+     "n": 54,
+     "mean": 0.01565271416176918,
+     "sd": 0.06242137235216839,
+     "pct_positive": 61.1,
+     "t": 1.8426940008459476,
+     "p_t_one_sided": 0.035484942368376696,
+     "p_wilcoxon_one_sided": 0.025066666139877198
+    },
+    "unrecorded": {
+     "n": 6,
+     "mean": 0.02070157816715107,
+     "sd": 0.01922917496979155,
+     "pct_positive": 83.3,
+     "t": 2.6370503913725853,
+     "p_t_one_sided": 0.023069869521554806,
+     "p_wilcoxon_one_sided": 0.03125
+    }
+   },
+   "n_existing_resolved": 173,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.09038402442086813,
+     "se": 0.03219519339288579,
+     "p_two_sided": 0.004994685121869085
+    },
+    "general_dictionary": {
+     "b": 0.04211473312272953,
+     "se": 0.029638796387174073,
+     "p_two_sided": 0.1553363436718575
+    },
+    "intercept_unrecorded": {
+     "b": -0.013280300116668446,
+     "se": 0.031581088386831484
+    }
+   },
+   "trend": {
+    "slope": -0.011938581871774571,
+    "se": 0.011838893649047584,
+    "z": -1.0084204002233779,
+    "p_one_sided": 0.8433736582704653
+   },
+   "h2_unrecorded_existing": {
+    "n": 6,
+    "mean": 0.02070157816715107,
+    "sd": 0.01922917496979155,
+    "pct_positive": 83.3,
+    "t": 2.6370503913725853,
+    "p_t_one_sided": 0.023069869521554806,
+    "p_wilcoxon_one_sided": 0.03125,
+    "mixed_intercept": 0.020701577049137845,
+    "mixed_se": 0.006887796051744089,
+    "mixed_z": 3.005544428670461,
+    "p_mixed_one_sided": 0.001325529317329791,
+    "n_traditions": 3
+   }
+  },
+  "pull_gem_U": {
+   "by_form_status": {
+    "existing_form": {
+     "n": 173,
+     "mean": 0.024072927742403813,
+     "sd": 0.028923324278603346,
+     "pct_positive": 86.1,
+     "t": 10.94721775930489,
+     "p_t_one_sided": 8.415166725447344e-22,
+     "p_wilcoxon_one_sided": 1.5524819434922595e-23
+    },
+    "novel_form": {
+     "n": 6,
+     "mean": 0.01804057982026953,
+     "sd": 0.05002282864561725,
+     "pct_positive": 33.3,
+     "t": 0.8834009675197192,
+     "p_t_one_sided": 0.20873264165924532,
+     "p_wilcoxon_one_sided": 0.5
+    }
+   },
+   "existing_by_recording_status": {
+    "cultural_reference": {
+     "n": 113,
+     "mean": 0.021866361845321296,
+     "sd": 0.029050060580065908,
+     "pct_positive": 80.5,
+     "t": 8.001450260977581,
+     "p_t_one_sided": 6.205984326593416e-13,
+     "p_wilcoxon_one_sided": 4.565773686225487e-14
+    },
+    "general_dictionary": {
+     "n": 54,
+     "mean": 0.029597935470777784,
+     "sd": 0.029567222022083013,
+     "pct_positive": 96.3,
+     "t": 7.356102574237133,
+     "p_t_one_sided": 6.027552741766026e-10,
+     "p_wilcoxon_one_sided": 3.6232405304053364e-10
+    },
+    "unrecorded": {
+     "n": 6,
+     "mean": 0.015904849248758735,
+     "sd": 0.009359961738088117,
+     "pct_positive": 100.0,
+     "t": 4.162278242742587,
+     "p_t_one_sided": 0.004402312362814345,
+     "p_wilcoxon_one_sided": 0.015625
+    }
+   },
+   "n_existing_resolved": 173,
+   "mixed_levels": {
+    "cultural_reference": {
+     "b": 0.014815651016063665,
+     "se": 0.012557438133642712,
+     "p_two_sided": 0.23806755692176418
+    },
+    "general_dictionary": {
+     "b": 0.01901586338657965,
+     "se": 0.011743927062021747,
+     "p_two_sided": 0.1054024671874445
+    },
+    "intercept_unrecorded": {
+     "b": 0.008032785939784277,
+     "se": 0.012286598232206302
+    }
+   },
+   "trend": {
+    "slope": 0.006866163222611242,
+    "se": 0.0043960632076187126,
+    "z": 1.5618891035760492,
+    "p_one_sided": 0.05915705793790344
+   },
+   "h2_unrecorded_existing": {
+    "n": 6,
+    "mean": 0.015904849248758735,
+    "sd": 0.009359961738088117,
+    "pct_positive": 100.0,
+    "t": 4.162278242742587,
+    "p_t_one_sided": 0.004402312362814345,
+    "p_wilcoxon_one_sided": 0.015625,
+    "mixed_intercept": 0.01590484210514799,
+    "mixed_se": null,
+    "mixed_z": null,
+    "p_mixed_one_sided": null,
+    "n_traditions": 3
+   }
+  }
+ },
+ "verdicts_main": {
+  "H1": {
+   "verdict": "not supported",
+   "models_passing": 0,
+   "per_model": {
+    "pull_oai_U": {
+     "trend_p_holm": 0.07830000000000001,
+     "trend_ok": false,
+     "order_ok": false,
+     "all_groups_positive": true,
+     "means": {
+      "unrecorded": 0.01985384065129392,
+      "cultural_reference": 0.0862391749282442,
+      "general_dictionary": 0.07418694972206612
+     },
+     "passes": false
+    },
+    "pull_bge_U": {
+     "trend_p_holm": 0.6286,
+     "trend_ok": false,
+     "order_ok": false,
+     "all_groups_positive": false,
+     "means": {
+      "unrecorded": 0.01176172203371825,
+      "cultural_reference": 0.05644405746373937,
+      "general_dictionary": 0.015206384011089365
+     },
+     "passes": false
+    },
+    "pull_gem_U": {
+     "trend_p_holm": 0.07830000000000001,
+     "trend_ok": false,
+     "order_ok": true,
+     "all_groups_positive": true,
+     "means": {
+      "unrecorded": 0.01323738677244152,
+      "cultural_reference": 0.022105112288994797,
+      "general_dictionary": 0.028523890898401096
+     },
+     "passes": false
+    }
+   }
+  },
+  "H2": {
+   "verdict": "supported",
+   "models_sig_holm": 2,
+   "models_sig_raw": 2,
+   "per_model": {
+    "pull_oai_U": {
+     "p_mixed_one_sided": 0.009030989819036455,
+     "p_holm": 0.026999999999999996
+    },
+    "pull_bge_U": {
+     "p_mixed_one_sided": 0.4594134872764847,
+     "p_holm": 0.4594
+    },
+    "pull_gem_U": {
+     "p_mixed_one_sided": 0.023027521258241014,
+     "p_holm": 0.046
+    }
+   }
+  },
+  "H3": {
+   "verdict": "procedural rule applied (no inferential test, per spec)",
+   "novel_form_descriptives": {
+    "pull_oai_U": {
+     "n": 9,
+     "mean": 0.09948854969377158,
+     "sd": 0.13618479790882945,
+     "pct_positive": 77.8,
+     "t": 2.191622366551707,
+     "p_t_one_sided": 0.029884804297731552,
+     "p_wilcoxon_one_sided": 0.02734375
+    },
+    "pull_bge_U": {
+     "n": 9,
+     "mean": 0.017645681121665903,
+     "sd": 0.06652197410521717,
+     "pct_positive": 66.7,
+     "t": 0.7957828082682529,
+     "p_t_one_sided": 0.22456211856885047,
+     "p_wilcoxon_one_sided": 0.1796875
+    },
+    "pull_gem_U": {
+     "n": 9,
+     "mean": 0.01865029836869929,
+     "sd": 0.04093259684140132,
+     "pct_positive": 55.6,
+     "t": 1.3669031389063073,
+     "p_t_one_sided": 0.10441471512812811,
+     "p_wilcoxon_one_sided": 0.1796875
+    }
+   }
+  }
+ },
+ "verdicts_sensitivity": {
+  "H1": {
+   "verdict": "not supported",
+   "models_passing": 0,
+   "per_model": {
+    "pull_oai_U": {
+     "trend_p_holm": 0.2932,
+     "trend_ok": false,
+     "order_ok": false,
+     "all_groups_positive": true,
+     "means": {
+      "unrecorded": 0.02585995039392128,
+      "cultural_reference": 0.08862750510352084,
+      "general_dictionary": 0.076260438900653
+     },
+     "passes": false
+    },
+    "pull_bge_U": {
+     "trend_p_holm": 0.8434,
+     "trend_ok": false,
+     "order_ok": false,
+     "all_groups_positive": true,
+     "means": {
+      "unrecorded": 0.02070157816715107,
+      "cultural_reference": 0.06072035327033695,
+      "general_dictionary": 0.01565271416176918
+     },
+     "passes": false
+    },
+    "pull_gem_U": {
+     "trend_p_holm": 0.1776,
+     "trend_ok": false,
+     "order_ok": true,
+     "all_groups_positive": true,
+     "means": {
+      "unrecorded": 0.015904849248758735,
+      "cultural_reference": 0.021866361845321296,
+      "general_dictionary": 0.029597935470777784
+     },
+     "passes": false
+    }
+   }
+  },
+  "H2": {
+   "verdict": "supported",
+   "models_sig_holm": 2,
+   "models_sig_raw": 2,
+   "per_model": {
+    "pull_oai_U": {
+     "p_mixed_one_sided": 0.004589618272544268,
+     "p_holm": 0.0046
+    },
+    "pull_bge_U": {
+     "p_mixed_one_sided": 0.001325529317329791,
+     "p_holm": 0.0026
+    },
+    "pull_gem_U": {
+     "p_mixed_one_sided": null,
+     "p_holm": null
+    }
+   }
+  },
+  "H3": {
+   "verdict": "procedural rule applied (no inferential test, per spec)",
+   "novel_form_descriptives": {
+    "pull_oai_U": {
+     "n": 6,
+     "mean": 0.10284606044728672,
+     "sd": 0.1624830802197987,
+     "pct_positive": 66.7,
+     "t": 1.5504406354834157,
+     "p_t_one_sided": 0.09086448104581514,
+     "p_wilcoxon_one_sided": 0.15625
+    },
+    "pull_bge_U": {
+     "n": 6,
+     "mean": 0.003631707623858716,
+     "sd": 0.07373296073239473,
+     "pct_positive": 50.0,
+     "t": 0.12064930643048208,
+     "p_t_one_sided": 0.4543335851778865,
+     "p_wilcoxon_one_sided": 0.5
+    },
+    "pull_gem_U": {
+     "n": 6,
+     "mean": 0.01804057982026953,
+     "sd": 0.05002282864561725,
+     "pct_positive": 33.3,
+     "t": 0.8834009675197192,
+     "p_t_one_sided": 0.20873264165924532,
+     "p_wilcoxon_one_sided": 0.5
+    }
+   }
+  }
+ },
+ "verdict_changes": [
+  "H2 (majority labels): not supported -> supported",
+  "H2 (unanimous): mixed -> supported"
+ ]
+}

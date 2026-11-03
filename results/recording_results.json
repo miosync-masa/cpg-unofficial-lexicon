@@ -695,7 +695,7 @@
      "trend_p_holm": 0.0783,
      "trend_ok": false,
      "order_ok": true,
-     "all_groups_positive": false,
+     "all_groups_positive": true,
      "means": {
       "unrecorded": 0.0132,
       "cultural_reference": 0.0221,
@@ -778,7 +778,7 @@
      "trend_p_holm": 1.0,
      "trend_ok": false,
      "order_ok": false,
-     "all_groups_positive": false,
+     "all_groups_positive": true,
      "means": {
       "unrecorded": 0.0207,
       "cultural_reference": 0.0607,
@@ -790,7 +790,7 @@
      "trend_p_holm": 0.1776,
      "trend_ok": false,
      "order_ok": true,
-     "all_groups_positive": false,
+     "all_groups_positive": true,
      "means": {
       "unrecorded": 0.0159,
       "cultural_reference": 0.0219,

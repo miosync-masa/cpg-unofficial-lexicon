@@ -9,6 +9,8 @@ Outputs: results/recording_results.json, results/recording_results.md, and secti
          Sensitivity in condition U (docs/analysis_plan_recording_status.md, added 2026-11-03): the same analysis
          with pull_B_k10 of embeddings/results/nnpm_<model>.csv for all three models ->
          results/recording_conditionU.json, results/recording_conditionU.md.
+         With --unrounded: results/recording_conditionU_unrounded.json only (the condition U results without
+         rounding, for analysis/make_si.py); nothing else is written.
 
 Decision rules (fixed in this script before the full coding results were inspected):
   H1, per embedding model: supported if (a) the ordered trend slope is positive with Holm-adjusted one-sided
@@ -23,6 +25,7 @@ Decision rules (fixed in this script before the full coding results were inspect
 """
 import json
 import re
+import sys
 import warnings
 from pathlib import Path
 
@@ -38,7 +41,10 @@ PULLS = {"pull_index": "OpenAI text-embedding-3-large (original)",
          "pull_bge_B": "BAAI/bge-m3 (original script, k=10)",
          "pull_gem_B": "gemini-embedding-001 (original script, k=10)"}
 LEVELS = ["unrecorded", "cultural_reference", "general_dictionary"]
-r4 = lambda x: None if x is None or (isinstance(x, float) and np.isnan(x)) else round(float(x), 4)
+# --unrounded: without rounding, for the supplement tables (analysis/make_si.py)
+UNROUNDED = "--unrounded" in sys.argv
+r4 = lambda x: None if x is None or (isinstance(x, float) and np.isnan(x)) else (float(x) if UNROUNDED else
+                                                                                  round(float(x), 4))
 
 items = pd.read_csv(ROOT / "results/items_with_consensus.csv")
 rec = pd.read_csv(ROOT / "coding/results/recording/recording_consensus.csv")
@@ -113,7 +119,8 @@ def holm(ps):
     ok = [i for i, p in enumerate(ps) if p is not None]
     adj = [None] * len(ps)
     if ok:
-        for i, a in zip(ok, multipletests([ps[i] for i in ok], method="holm")[1]):
+        # Holm on the p values as stored (4 decimals); also with --unrounded
+        for i, a in zip(ok, multipletests([round(ps[i], 4) for i in ok], method="holm")[1]):
             adj[i] = r4(a)
     return adj
 
@@ -129,7 +136,9 @@ def verdicts(block, cols=None):
         means = {lv: g.get(lv, {}).get("mean") for lv in LEVELS}
         order = None not in means.values() and \
             means["general_dictionary"] >= means["cultural_reference"] > means["unrecorded"]
-        pos = all((g.get(lv, {}).get("p_t_one_sided") or 1) < .05 for lv in LEVELS)
+        # fixed 2026-11-03: a p stored as 0.0 (< .00005) was read as missing ("or 1"), so all_groups_positive was
+        # False whenever a group had p < .00005; the verdicts did not change (no model passed the trend condition)
+        pos = all(g.get(lv, {}).get("p_t_one_sided") is not None and g[lv]["p_t_one_sided"] < .05 for lv in LEVELS)
         trend_ok = padj is not None and padj < .05 and (block[c]["trend"].get("slope") or 0) > 0
         h1[c] = {"trend_p_holm": padj, "trend_ok": bool(trend_ok), "order_ok": bool(order),
                  "all_groups_positive": bool(pos), "means": means, "passes": bool(trend_ok and order and pos)}
@@ -170,7 +179,8 @@ R["verdicts_sensitivity"] = verdicts(R["sensitivity_unanimous"])
 nov = df[df.form_status == "novel_form"][["item_id", "host", "target", "tradition", "recording_status",
                                           "pull_index", "pull_bge_B", "pull_gem_B"]]
 R["novel_form_items"] = nov.round(4).to_dict("records")
-json.dump(R, open(ROOT / "results/recording_results.json", "w"), ensure_ascii=False, indent=1, default=str)
+if not UNROUNDED:
+    json.dump(R, open(ROOT / "results/recording_results.json", "w"), ensure_ascii=False, indent=1, default=str)
 
 # ------------------------------------------------------------------ markdown report
 f = lambda x, d=3: "–" if x is None else (f"{x:.{d}f}" if isinstance(x, float) else str(x))
@@ -261,7 +271,8 @@ L += ["## novel_form items (slang / not-CPG boundary discussion)", "",
 for r in R["novel_form_items"]:
     L.append(f"| {r['item_id']} | {r['host']} | {r['target']} | {r['tradition']} | {r['recording_status']} | "
              f"{f(r['pull_index'])} | {f(r['pull_bge_B'])} | {f(r['pull_gem_B'])} |")
-(ROOT / "results/recording_results.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+if not UNROUNDED:
+    (ROOT / "results/recording_results.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
 # ------------------------------------------------------------------ section 12 of verified_numbers.md
 vm, vs = R["verdicts_main"], R["verdicts_sensitivity"]
@@ -291,8 +302,9 @@ head, sep, rest = txt.partition("\n## 12. Recording status")
 nxt = re.search(r"\n## \d+\. ", rest) if sep else None  # keep later sections (e.g. 13) on rerun
 tail = rest[nxt.start():] if nxt else ""
 txt = head.rstrip("\n") + "\n\n" + "\n".join(S).rstrip("\n") + "\n" + tail
-vn.write_text(txt, encoding="utf-8")
-print("\n".join(S))
+if not UNROUNDED:
+    vn.write_text(txt, encoding="utf-8")
+    print("\n".join(S))
 
 # ------------------------------------------------------------------ sensitivity: condition U for all three models
 # plan: docs/analysis_plan_recording_status.md, "Sensitivity: H1 and H2 in condition U" (fixed 2026-11-03)
@@ -319,6 +331,10 @@ U["verdicts_sensitivity"] = verdicts(U["sensitivity_unanimous"], list(PULLS_U))
 U["verdict_changes"] = [f"{h} ({lab}): {R[k][h]['verdict']} -> {U[k][h]['verdict']}"
                         for lab, k in [("majority labels", "verdicts_main"), ("unanimous", "verdicts_sensitivity")]
                         for h in ["H1", "H2"] if R[k][h]["verdict"] != U[k][h]["verdict"]]
+if UNROUNDED:
+    json.dump(U, open(ROOT / "results/recording_conditionU_unrounded.json", "w"), ensure_ascii=False, indent=1,
+              default=str)
+    sys.exit(0)
 json.dump(U, open(ROOT / "results/recording_conditionU.json", "w"), ensure_ascii=False, indent=1, default=str)
 L = ["# Recording status: H1 and H2 in condition U for all three models (sensitivity; generated by "
      "analyze_recording.py)", "",
